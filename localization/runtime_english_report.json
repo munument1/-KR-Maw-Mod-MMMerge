@@ -1,0 +1,13 @@
+{
+  "scanned_lua_files": 89,
+  "high_confidence_runtime_english_occurrences": 13,
+  "by_sink": {
+    "display_name": 1,
+    "event_hint": 1,
+    "message": 3,
+    "question": 3,
+    "status": 4,
+    "ui_tooltip": 1
+  },
+  "policy": "Audit-only high-confidence scan of effective runtime Lua. Review rows before making this a strict CI gate."
+}
