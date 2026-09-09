@@ -6,6 +6,11 @@ MMExtension display tables/fields and Skillz display helpers; internal keys and
 control values remain unpatchable. It also follows a short, single-variable data
 flow when a string variable is passed directly to a proven skill-description
 sink before that variable is reassigned.
+
+MAW 4.5's ``checktext`` helper is also a proven item-tooltip producer: every
+entry in its ``bonus2txt`` table is returned from ``checktext`` and then written
+to ``t.Description``. Only that named table inside that named function is
+promoted; other generic tables remain untouched.
 """
 
 from __future__ import annotations
@@ -113,13 +118,64 @@ def discover_display_variable_lines(root: Path) -> set[tuple[str, int]]:
     return safe
 
 
+def discover_item_enchant_description_lines(root: Path) -> set[tuple[str, int]]:
+    """Return lines belonging to MAW 4.5's proven ``bonus2txt`` tooltip table.
+
+    ``checktext(MaxCharges, bonus2, it)`` returns ``bonus2txt[bonus2]`` and its
+    callers append that value to ``t.Description``. We intentionally scope this
+    recognizer to the one known file/function/table instead of promoting generic
+    indexed string tables.
+    """
+    rel = "Scripts/General/zzMaw-Items.lua"
+    path = root / rel
+    if not path.exists():
+        return set()
+
+    try:
+        lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return set()
+
+    safe: set[tuple[str, int]] = set()
+    in_checktext = False
+    in_bonus_table = False
+
+    for i, line in enumerate(lines, 1):
+        stripped = line.strip()
+
+        if not in_checktext:
+            if re.match(r"function\s+checktext\s*\(", stripped):
+                in_checktext = True
+            continue
+
+        if not in_bonus_table:
+            if re.match(r"bonus2txt\s*=\s*\{", stripped):
+                in_bonus_table = True
+            elif stripped == "end":
+                break
+            continue
+
+        # The 4.5 table contains only flat indexed entries. Stop at its closing
+        # brace, before ``return bonus2txt[bonus2]``.
+        if stripped == "}":
+            break
+        if lua_string_values(line):
+            safe.add((rel, i))
+
+    return safe
+
+
 def mark(row: dict[str, str], reason: str) -> bool:
     row["patchable"] = "yes"
     row["reason"] = reason
     return True
 
 
-def promote(row: dict[str, str], variable_display_lines: set[tuple[str, int]]) -> bool:
+def promote(
+    row: dict[str, str],
+    variable_display_lines: set[tuple[str, int]],
+    item_enchant_lines: set[tuple[str, int]],
+) -> bool:
     if row.get("patchable") != "no" or row.get("reason") != "uncertain_context":
         return False
     source = row.get("source", "")
@@ -166,6 +222,8 @@ def promote(row: dict[str, str], variable_display_lines: set[tuple[str, int]]) -
         key = ("", 0)
     if key in variable_display_lines:
         return mark(row, "proven_display_variable_flow")
+    if key in item_enchant_lines:
+        return mark(row, "proven_item_enchant_description")
 
     if re.search(
         r"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=",
@@ -193,22 +251,25 @@ def main() -> int:
     report_path = root / args.report
     rows = read_rows(occ_path)
     variable_display_lines = discover_display_variable_lines(root)
+    item_enchant_lines = discover_item_enchant_description_lines(root)
 
     promoted = 0
     for row in rows:
-        promoted += int(promote(row, variable_display_lines))
+        promoted += int(promote(row, variable_display_lines, item_enchant_lines))
     write_rows(occ_path, rows)
 
     report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
     report["patchability_reasons"] = dict(sorted(Counter(r.get("reason", "") for r in rows).items()))
     report["proven_display_promotions"] = promoted
     report["proven_display_variable_lines"] = len(variable_display_lines)
+    report["proven_item_enchant_description_lines"] = len(item_enchant_lines)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(json.dumps({
         "promoted_occurrences": promoted,
         "patchable_occurrences": sum(r.get("patchable") == "yes" for r in rows),
         "display_variable_lines": len(variable_display_lines),
+        "item_enchant_description_lines": len(item_enchant_lines),
     }, ensure_ascii=False, indent=2))
     return 0
 
