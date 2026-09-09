@@ -1,9 +1,5 @@
 source	category	uncertain_occurrences	all_occurrences	reasons	files	mmmerge_status	mmmerge_suggestion	sample_context
-HP	skill	4	10	engine_event_key_context:4; internal_lookup_literal:2; uncertain_context:4	Scripts/General/zzClasses.lua; Scripts/General/zzMAW-Skills.lua; Scripts/General/zzMaw-Monsters.lua	exact	생명력	"evt[healTarget].Add(""HP"",healValue)"
-Expert	spell	2	4	internal_table_key_literal:2; uncertain_context:2	Scripts/General/zzMaw-Spells.lua	exact	전문가	"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
-Master	spell	2	8	internal_table_key_literal:2; table_schema_not_reviewed:4; uncertain_context:2	Scripts/General/zzMaw-Spells.lua	ambiguous	달인 || 마스터	"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
 Uncom.	item	1	3	internal_lookup_literal:2; uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"createSwitch(340, ""Loot Filter"", ""lootFilter"", {""OFF"",""Common"", ""Uncom."", ""Rare"", ""Epic"",""Ancient"",""Primordial""})"
 Broodling	skill	3	8	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodling"""
 Broodlord	skill	2	3	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodlord"""
 Omnipotent	skill	2	17	comparison_control_literal:15; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Omnipotent"""
-%sRes	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%sRes"",baseString)"

@@ -561,7 +561,7 @@ function events.GameInitialized2()
 				gm=string.format("%s\t" .. tab+9 .. "%s|",gm,skillAC[i][4])
 			end
 			if res then
-				baseString=string.format("%sRes",baseString)
+				baseString=string.format("%s저항",baseString)
 				normal=string.format("%s\t" .. tab+30 .. "%s",normal,skillResistance[i][1])
 				expert=string.format("%s\t" .. tab+30 .. "%s",expert,skillResistance[i][2])
 				master=string.format("%s\t" .. tab+30 .. "%s",master,skillResistance[i][3])

@@ -1673,7 +1673,7 @@ maw-00f2a94b750e	translated	skill	%s shoots fire arrows, dealing highest between
 maw-bd2aa1daab14	translated	skill	%s usable with Leather Armor	%s 가죽 갑옷 착용 시 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	695	1	회피 마스터 효과
 maw-b814f42a8c77	translated	skill	%s usable with Unarm.	%s 맨손 전투와 함께 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	682	1	지팡이 그랜드마스터 효과
 maw-29bafc9a3c98	excluded	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	543	4	수치/퍼센트 서식 전용 문자열
-maw-f9b26d772d4f	untranslated	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	
+maw-f9b26d772d4f	excluded	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	전역 번역 금지; localization/scoped_overrides.tsv에서 기술 상세창 occurrence만 %s저항으로 처리
 maw-908093bbf3f4	excluded	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	서식 전용 문자열
 maw-84d1ceb266d3	excluded	skill	([^%s]+)		%s	Scripts/General/BountyHunt.lua	215	13	Internal engine/control/comment literal only; not player-facing localization.
 maw-4b7ec923d00c	translated	skill	"(calculated after resistances)
@@ -1834,7 +1834,7 @@ maw-9dd13a7dcc16	excluded	skill	GetPerceptionTotalSkill			Scripts/Core/events.lu
 maw-7d2cde45714f	excluded	skill	GetPlayerSkillMastery			Scripts/Structs/After/RemoveSkillValueLimits.lua	144	1	Internal engine/control literal only; not player-facing localization.
 maw-f672c345dffe	excluded	skill	GetSkill			Scripts/Core/events.lua	1908	1	Internal engine/control literal only; not player-facing localization.
 maw-ebabbf34ceff	translated	skill	Grants bonus to Meditation skill for 6 hours.	6시간 동안 명상 기술에 보너스를 부여합니다.		Scripts/General/zzAlchemy.lua	480	1	물약 효과 툴팁
-maw-5200bdfc01a1	untranslated	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	
+maw-5200bdfc01a1	excluded	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	엔진 이벤트/공식 내부 키와 공용 약어; 전역 한글 치환 시 로직 손상 위험
 maw-bc4de4436fe9	excluded	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-d777daa9c06f	excluded	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-e8fbfeac40bd	translated	skill	Increase your regeneration by 1% per every 1% of hp lost	잃은 생명력 1%마다 재생량이 1% 증가합니다		Scripts/General/zzMAW-Skills.lua	2575	1	재생 숙련 효과
@@ -2183,7 +2183,7 @@ Progress toward learning "	"원소술사는 책 대신 실전을 통해 새로�
 
 다음 주문 습득 진행도: "		Scripts/General/zzClasses.lua	1804	1	원소술사 주문 학습 설명 조각
 maw-151a59608f88	translated	spell	Empower Magic	마법 강화		Scripts/General/zzMaw-Spells.lua	3013	1	주문 이름
-maw-d7a501f83242	untranslated	spell	Expert			Scripts/General/zzClasses.lua	1356	4	
+maw-d7a501f83242	excluded	spell	Expert			Scripts/General/zzClasses.lua	1356	4	전역 번역 금지; SpellPoints/설명 필드 내부 키 유지, 주문서 표시 occurrence만 scoped 번역
 maw-2d9b9235fd08	translated	spell	Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	깃털처럼 가벼운 책장에서 정전기가 웅웅거립니다. 소용돌이치는 대기의 인장이 글줄을 바람에 흩뜨리지만, 대기 마법에 숙련된 자에게는 다시 제자리를 찾습니다.		Scripts/General/zzMaw-Spells.lua	3409	1	대기 마법서 설명
 maw-6db9b21ef9ea	translated	spell	Fire Magic Book	화염 마법서		Scripts/General/zzMaw-Spells.lua	3399	1	마법서 이름
 maw-58f60e582d1c	translated	spell	Frostbite	동상		Scripts/General/zzClasses.lua	1384	1	MAW 주문명
@@ -2226,7 +2226,7 @@ maw-790ca77669c6	translated	spell	Leeches 	생명력 흡수: 		Scripts/General/z
 maw-dfccc06f1441	excluded	spell	light			Scripts/General/zzMaw-Spells.lua	3355	1	마법 계열 내부 조회용 소문자 키
 maw-4a97653f1cb6	translated	spell	Light Magic Book	빛 마법서		Scripts/General/zzMaw-Spells.lua	3406	1	마법서 이름
 maw-79f0d3d89615	translated	spell	Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.	여백을 빽빽하게 채운 문양이 스스로 순서를 바꿉니다. 사고의 자물쇠가 글을 수수께끼처럼 뒤섞지만, 정신 마법을 익힌 자라면 올바르게 정렬할 수 있습니다.		Scripts/General/zzMaw-Spells.lua	3413	1	정신 마법서 설명
-maw-78f3842f0201	untranslated	spell	Master			Data/Tables/Class Extra.txt	26	8	
+maw-78f3842f0201	excluded	spell	Master			Data/Tables/Class Extra.txt	26	8	전역 번역 금지; SpellPoints/테이블 내부 키 유지, 주문서 표시 occurrence만 scoped 번역
 maw-d42a1814d6b6	translated	spell	"Melee Power: %s
 Ranged Power: %s
 Spell Power: %s"	"근접 위력: %s

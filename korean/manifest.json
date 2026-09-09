@@ -4,6 +4,8 @@
   "translated_entries": 1033,
   "translated_entries_with_patchable_occurrences": 1025,
   "patchable_occurrences_targeted": 1331,
+  "scoped_override_rows": 3,
+  "scoped_occurrences_targeted": 3,
   "skipped_unpatchable_occurrences_for_translated_sources": 82,
   "changed_files": [
     {
@@ -36,7 +38,7 @@
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 146
+      "replacements": 147
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -56,7 +58,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 245
+      "replacements": 247
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
