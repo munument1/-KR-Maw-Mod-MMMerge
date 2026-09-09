@@ -172,7 +172,7 @@
   "lod_overlay": {
     "path": "Data/zzzMawKO.T.lod",
     "exists": true,
-    "bytes": 194632,
+    "bytes": 195803,
     "source_archive": "Data/zMaw.T.lod",
     "source_archive_blob_sha": "f250f60d68982ce6e7df105554c47323bb105f0e",
     "archive_type": "mm8loclod",
@@ -189,7 +189,7 @@
       "mapstats.txt",
       "rnditems.txt"
     ],
-    "localized_fields": 7854,
+    "localized_fields": 8586,
     "replacements": {
       "ITEMS.txt": 6583,
       "MONSTERS.txt": 651,
@@ -198,17 +198,13 @@
       "class.txt": 106,
       "SPCITEMS.TXT": 146,
       "rnditems.txt": 0,
-      "POTION.TXT": 0,
-      "POTNOTES.TXT": 0
+      "POTION.TXT": 366,
+      "POTNOTES.TXT": 366
     },
     "pending_schema_review": [
-      "POTION.TXT",
-      "POTNOTES.TXT",
       "rnditems.txt"
     ],
     "untouched_byte_preserved": [
-      "POTION.TXT",
-      "POTNOTES.TXT",
       "rnditems.txt"
     ],
     "roundtrip_policy": "zMaw LOD workflow extracts the generated archive and byte-compares all 9 staged resources before committing it."
