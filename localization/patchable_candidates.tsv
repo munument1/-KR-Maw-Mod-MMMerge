@@ -1066,7 +1066,7 @@ Recovery time: "	"
 
 This Ability requires "	"
 
-이 능력을 사용하려면 콤보 포인트 "	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
+이 능력을 사용하려면 "	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
 "
 
 You need at least "	"

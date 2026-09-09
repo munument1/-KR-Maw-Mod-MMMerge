@@ -3552,7 +3552,7 @@ maw-182be7411220	translated	tooltip	"
 
 This Ability requires "	"
 
-이 능력을 사용하려면 콤보 포인트 "		Scripts/General/zzClasses.lua	2150	1	암살 능력 툴팁 조각
+이 능력을 사용하려면 "		Scripts/General/zzClasses.lua	2150	1	QA: 뒤의 숫자 + ' 콤보 포인트가 필요합니다.'와 자연스럽게 결합되도록 중복 표현 제거
 maw-09ca3bd88609	translated	tooltip	"
 
 You need at least "	"

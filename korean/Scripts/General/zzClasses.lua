@@ -2147,7 +2147,7 @@ function assassinSkills(isAssassin, pl)
 		
 		for key, value in pairs(assassinSpells) do
 			if assassinSpells[key].StackCost>0 then
-				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\n이 능력을 사용하려면 콤보 포인트 " .. assassinSpells[key].StackCost .. " 콤보 포인트가 필요합니다."
+				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\n이 능력을 사용하려면 " .. assassinSpells[key].StackCost .. " 콤보 포인트가 필요합니다."
 			end
 		end
 		
