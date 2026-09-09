@@ -7,9 +7,9 @@
   "patchable_unique_sources": 303,
   "unpatchable_occurrences": 5814,
   "status": {
-    "excluded": 1919,
-    "translated": 1022,
-    "untranslated": 85
+    "excluded": 1933,
+    "translated": 1031,
+    "untranslated": 62
   },
   "categories": {
     "class": 37,
@@ -94,7 +94,7 @@
   "lua_comment_literal_occurrences": 66,
   "individual_literal_refinements": 4,
   "internal_only_unique_sources": 1905,
-  "internal_only_newly_excluded": 134,
+  "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 2185,
   "reviewed_batch026_internal_refinements": 183,
@@ -116,8 +116,8 @@
   "proven_settings_header_promotions": 2,
   "reviewed_bulk_display_promotions": 108,
   "reviewed_batch026_display_promotions": 21,
-  "uncertain_review_unique_sources": 75,
-  "uncertain_review_occurrences": 100,
+  "uncertain_review_unique_sources": 62,
+  "uncertain_review_occurrences": 84,
   "uncertain_review_exact_mmmerge_matches": 5,
   "uncertain_review_ambiguous_mmmerge_matches": 1
 }

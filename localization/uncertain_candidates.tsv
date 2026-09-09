@@ -31,25 +31,19 @@ omnipotent	monster	1	2	comparison_control_literal:1; uncertain_context:1	Scripts
 Pic	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"if Game.MapStats[Map.MapStatsIndex][""Monster"" .. v .. ""Pic""] .. "" B"" == mon.Picture then"
 PlayerAC	monster	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"t.AC = math.max(ApplyMultiplier(""PlayerAC"", t.AC, result), 0)"
 Broodling	skill	3	8	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodling"""
-"%s	075AC|"	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t075AC|"",baseString)"
 Broodlord	skill	2	3	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodlord"""
 Omnipotent	skill	2	17	comparison_control_literal:15; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Omnipotent"""
-"%s	0"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
 %sRes	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%sRes"",baseString)"
-Speed|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
 spell	spell	6	7	comparison_control_literal:1; uncertain_context:6	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua; Scripts/General/zzMaw-Stats.lua			"critChance, critMult, success=getCritInfo(pl,""spell"")"
 TargetIndex	spell	2	2	uncertain_context:2	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
 "#	Note	Continent	Bolster kind	Spells	Summons	Level shift
 "	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"BolsterTxt:write(""#	Note	Continent	Bolster kind	Spells	Summons	Level shift\n"")"
 "#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)
 "	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"BolsterTxt:write(""#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)\n"")"
-"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
-Each point in the skill increases damage and increases recovery time by 3%."	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
 CanMonsterCastSpell	spell	1	2	reviewed_internal_api_literal:1; uncertain_context:1	Scripts/Core/events.lua			"Conditional(hooks, ""CanMonsterCastSpell"")"
 checkMapCompletition	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Timers.lua			"MawAddTimer(""checkMapCompletition"", 10, checkMapCompletition) -- double-check this name/spelling"
 earth	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
 GM	spell	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
-Increases spell damage and healing at the expense of higher mana cost and cast time.	spell	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
 light	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
 Novice	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 shotgun	spell	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzClasses.lua			"vars.elementalistSpellBinds[index][i]=""shotgun"""
@@ -58,58 +52,9 @@ spirit	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local n
 string	spell	1	10	comparison_control_literal:8; lua_comment_literal:1; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"require(""string"")"
 TargetRosterId	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
 water	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
-%d+	status	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"Message(message:gsub(""%d+"", |contents| contents==tostring(learningRequirementsNormal[skillM]) and req or cost or contents))"
-"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
-
-Proficiency in Plate, Sword, Mace, and Shield (can't dual wield)
-3 HP and 1 mana points gained per level
-
-Abilities:
-
-Gods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added per point in Light and Mind)
-
-Holy Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)
-
-Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[53]=""Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his pre"
-"The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:
-
-Spell Damage: 10% per stack
-Spell Recovery Speed: 5% per stack
-Mana Cost: 1 + 7.5% of the total.
-
-After a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.
-
-Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[62] = ""The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: 1 + 7.5% of the total"
-"The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.
-You can check following values by checking magic schools description in skills menu.
- - Each school will provide a unique bonus. There is strength in diversifying as well as specialization
- - Each point in Air will reduce damage a % pr rank reduced by level
- - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses are already strong
- - Each point in spirit will increase healing and spell damage by a %
- - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.
- - Each point in Earth will increase melee damage by a flat amount
- - Each point in Body will heal by flat amount
- - Each point in mind will restore a flat amount of mana"	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[59] = ""The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.\nYou can check following values by checking magic schools description in skills menu.\n - Each school will provide a unique bonus. There is strength in diversifying as well as specialization\n - Each point in Air will reduce damage a % pr rank reduced by level\n - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses "
-"This class combines the evil forces with brute power, making it powerful and versatile.
- Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
-
-Frost:
-
-Increases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.
-
-Blood:
-
-This skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Additionally, it endows their attacks with a leech effect, converting a portion of the damage dealt into health recovery.
-
-Unholy:
-
-It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
 tooltip	tooltip	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local damage=calcFireAuraDamage(pl, t.Item, 0, false, false, ""tooltip"")"
-%lu	ui	2	2	uncertain_context:2	Scripts/General/BountyHunt.lua			"local text = Game.NPCText[133]:replace(""%lu"", tostring(RewardByMon(MonId)))"
 BolsterAmount	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
 Mode	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
-%%d	ui	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"t.Text=t.Text:gsub(""%d+"", ""%%d""):format(cost)"
-446561746820436f756e743a20	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"deathCounter.Text=_H""446561746820436f756e743a20""..vars.MadnessDeathCounter"
 BolsterFineTuning	ui	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"local ScreenId = CustomUI.NewSettingsPage(""BolsterFineTuning"", ""MAW SETTINGS"", ""ExSetScr2"")"
 ExSetScr	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"local ExSetScr = NewSettingsPage(""MergeExtraSettings"", "" General settings"", ""ExSetScr"")"
 ExSetScr2	ui	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"local ScreenId = CustomUI.NewSettingsPage(""BolsterFineTuning"", ""MAW SETTINGS"", ""ExSetScr2"")"

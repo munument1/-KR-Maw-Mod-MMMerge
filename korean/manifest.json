@@ -1,10 +1,10 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 1022,
+  "translated_entries": 1031,
   "translated_entries_with_patchable_occurrences": 1014,
   "patchable_occurrences_targeted": 1319,
-  "skipped_unpatchable_occurrences_for_translated_sources": 82,
+  "skipped_unpatchable_occurrences_for_translated_sources": 92,
   "changed_files": [
     {
       "file": "Scripts/General/AdaptiveMonstersStats.lua",
@@ -180,6 +180,21 @@
     },
     {
       "type": "translated_source_has_no_patchable_occurrence",
+      "source": "% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.\nEach point in the skill increases damage and increases recovery time by 3%.",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "%s\t075AC|",
+      "unpatchable_occurrences": 2
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "446561746820436f756e743a20",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
       "source": "Ascended ",
       "unpatchable_occurrences": 1
     },
@@ -190,12 +205,42 @@
     },
     {
       "type": "translated_source_has_no_patchable_occurrence",
+      "source": "Increases spell damage and healing at the expense of higher mana cost and cast time.",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
       "source": "Inventory number ",
       "unpatchable_occurrences": 2
     },
     {
       "type": "translated_source_has_no_patchable_occurrence",
       "source": "Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically.",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.\n\nProficiency in Plate, Sword, Mace, and Shield (can't dual wield)\n3 HP and 1 mana points gained per level\n\nAbilities:\n\nGods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added per point in Light and Mind)\n\nHoly Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)\n\nDivine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown.",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "Speed|",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: 1 + 7.5% of the total.\n\nAfter a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.\n\nSpells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells.",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.\nYou can check following values by checking magic schools description in skills menu.\n - Each school will provide a unique bonus. There is strength in diversifying as well as specialization\n - Each point in Air will reduce damage a % pr rank reduced by level\n - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses are already strong\n - Each point in spirit will increase healing and spell damage by a %\n - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.\n - Each point in Earth will increase melee damage by a flat amount\n - Each point in Body will heal by flat amount\n - Each point in mind will restore a flat amount of mana",
+      "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Additionally, it endows their attacks with a leech effect, converting a portion of the damage dealt into health recovery.\n\nUnholy:\n\nIt amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated.",
       "unpatchable_occurrences": 1
     },
     {

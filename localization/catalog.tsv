@@ -409,7 +409,7 @@ maw-c3ca5f787365	translated	item	sleep	수면		Scripts/General/zzMaw-Items.lua	1
 maw-68b55f23c0fb	translated	item	Sleep and Unconscious Immunity	수면 및 의식불명 면역		Scripts/General/zzMaw-Items.lua	1279	1	특수 아이템 효과 설명
 maw-597e5a16ff16	translated	item	Solarstone	태양석		Scripts/General/zzMaw-Items.lua	4565	1	제작 보석 상태 메시지
 maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Stats.txt	12	6	기존 MMMerge 능력치 용어
-maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
+maw-2747aac69844	excluded	item	Spell			Data/Tables/Spells2.txt	1	8	테이블 열/내부 키로만 사용
 maw-bec5022aa7fd	translated	item	spell drain	주문력 흡수		Scripts/General/zzMaw-Items.lua	1256	1	면역 발동 상태 메시지의 동적 상태명
 maw-3c6614c31d79	translated	item	Spell Points	주문력		Scripts/General/zzMaw-Items.lua	1868	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-fdc17f7064c4	translated	item	Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).	주문으로 대상의 생명력을 흡수하고 주문 시전 속도가 증가합니다. (보조 손에 장비하면 적용되지 않습니다.)		Scripts/General/zzMaw-Items.lua	2044	1	아이템 마법부여 설명
@@ -547,7 +547,7 @@ maw-fd6e306257f8	excluded	map	History3			Scripts/Maps/7out02.lua	25	1	Internal e
 maw-a6cc696fd267	excluded	map	History6			Scripts/Maps/out03.lua	11	1	Internal engine/control literal only; not player-facing localization.
 maw-a5e6194e64e8	excluded	map	Initiating map load			Scripts/Maps/BrBase.lua	1057	1	Internal engine/control literal only; not player-facing localization.
 maw-300d29fd5f32	untranslated	map	Inventory			Scripts/General/zzzzMalekith-Randomizer.lua	86	45	
-maw-d632dba903a8	untranslated	map	Invisible			Data/Tables/ObjList.txt	1	2	
+maw-d632dba903a8	excluded	map	Invisible			Data/Tables/ObjList.txt	1	2	ObjList/이벤트 구조 필드; 표시 문자열 아님
 maw-f1fdc869d585	translated	map	Jadame	제이덤		Scripts/Maps/7out02.lua	132	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-901de5b26f33	excluded	map	MainCondition			Scripts/Maps/outb3.lua	35	1	Internal engine/control literal only; not player-facing localization.
 maw-82b084acec80	excluded	map	MAP_LOAD			Scripts/Maps/BrBase.lua	1029	2	Internal engine/control literal only; not player-facing localization.
@@ -1616,8 +1616,8 @@ maw-f5cb16b30cd5	translated	skill	% of monster Hit points as fire damage.	%만�
 maw-41559b59261e	translated	skill	%% speed	%% 속도		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-347cd9c53ff7	excluded	skill	%s		%s	Scripts/General/zzMAW-Skills.lua	565	7	숫자 이름 string.format 서식 전용
 maw-539335ea1fbf	excluded	skill	"%s	"		%s	Scripts/General/zzMAW-Skills.lua	527	28	스킬 설명 표 정렬용 서식 문자열
-maw-f9cac35ff8e0	untranslated	skill	"%s	0"		%s	Scripts/General/zzMAW-Skills.lua	526	1	
-maw-33af5cacd7e6	untranslated	skill	"%s	075AC|"		%s	Scripts/General/zzMAW-Skills.lua	611	2	
+maw-f9cac35ff8e0	excluded	skill	"%s	0"		%s	Scripts/General/zzMAW-Skills.lua	526	1	기술 UI 정렬용 포맷; 번역 요소 없음
+maw-33af5cacd7e6	translated	skill	"%s	075AC|"	"%s	075방어도|"	%s	Scripts/General/zzMAW-Skills.lua	611	2	기술 상세 표 방어도 라벨; 포맷/탭 보존
 maw-245e64ea1852	translated	skill	"%s
 
 Current bonuses at skill %s:
@@ -1943,7 +1943,7 @@ maw-a6852004e745	translated	skill	"Shield skill provides great defense against b
 Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	"방패 기술은 물리 공격과 마법 공격 모두에 뛰어난 방어력을 제공합니다.
 
 방패 기술은 방패에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	590	1	방패 기술 설명
-maw-ec9f630c8693	untranslated	skill	Skill			Data/Tables/Extra Skillz.txt	1	7	
+maw-ec9f630c8693	excluded	skill	Skill			Data/Tables/Extra Skillz.txt	1	7	테이블 열/내부 키로만 사용
 maw-595e6f796a09	translated	skill	Skill reset info	기술 초기화 안내		Scripts/Global/zzMAWRespec.lua	14	1	기술 초기화 NPC 토픽
 maw-e09212c7d3ea	excluded	skill	Skills			Scripts/General/zzMaw-Monsters.lua	3147	1	Internal engine/control literal only; not player-facing localization.
 maw-04ad3555eeac	translated	skill	Skills adds 	기술 보너스: 		Scripts/General/zzMAW-Skills.lua	691	4	무기 전문가 숙련 설명 조각
@@ -1951,7 +1951,7 @@ maw-c1c7f7e81f44	translated	skill	"Skills adds 3 dmg, 3 atk, 2% speed
 Each 10 points in armsmaster increase all the melee weapon skills by 1"	"기술 보너스: 피해 3, 공격 3, 속도 2%
 무기 전문가 기술 10포인트마다 모든 근접 무기 기술이 1 증가합니다."		Scripts/General/zzMAW-Skills.lua	2693	1	무기 전문가 동적 설명
 maw-7707f6812879	excluded	skill	SP			Scripts/General/zzMAW-Skills.lua	865	2	Internal engine/control/comment literal only; not player-facing localization.
-maw-3d0e83b4f7be	untranslated	skill	Speed|			Scripts/General/zzMAW-Skills.lua	534	1	
+maw-3d0e83b4f7be	translated	skill	Speed|	속도|		Scripts/General/zzMAW-Skills.lua	534	1	기술 상세 표 속도 라벨
 maw-249f056b552d	excluded	skill	Stacks			Scripts/General/zzMAW-Skills.lua	1121	12	Internal engine/control literal only; not player-facing localization.
 maw-e81ea1b3be50	translated	skill	Subtlety	기민함		Scripts/General/zzClasses.lua	2105	1	암살자 회피 스킬명
 maw-1d06f1d00475	translated	skill	"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
@@ -2041,8 +2041,9 @@ maw-c5fb409edfff	untranslated	spell	"#	Note	Continent	Bolster kind	Spells	Summon
 "			Scripts/General/AdaptiveMonstersStats.lua	171	1	
 maw-0978c0a32195	untranslated	spell	"#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)
 "			Scripts/General/AdaptiveMonstersStats.lua	116	1	
-maw-04a318e009f9	untranslated	spell	"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
-Each point in the skill increases damage and increases recovery time by 3%."			Scripts/General/zzClasses.lua	494	1	
+maw-04a318e009f9	translated	spell	"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
+Each point in the skill increases damage and increases recovery time by 3%."	"%씩 증가합니다(드래곤 능력 기술의 초보, 전문가, 마스터, 그랜드마스터 단계에서 기술 포인트당).
+기술 포인트마다 피해가 증가하고 회복 시간이 3% 증가합니다."		Scripts/General/zzClasses.lua	494	1	드래곤 능력 설명의 동적 수치 뒤 문장
 maw-b5734db76175	translated	spell	% of Melee damage	% (근접 공격 피해 기준)		Scripts/General/zzClasses.lua	1377	4	연결형 주문 피해 설명 후행 조각
 maw-3153fe797154	translated	spell	"%s
 
@@ -2213,7 +2214,7 @@ maw-c7db2e9edfcd	translated	spell	Icy Touch	얼음의 손길		Scripts/General/zz
 maw-31010d130c93	translated	spell	Increases damage by 10 plus 1 per skill point	피해량이 10 + 기술 포인트당 1만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	721	1	주문 숙련 설명
 maw-28f5ba6a17bf	translated	spell	Increases damage by 10 plus 1.5 per skill point	피해량이 10 + 기술 포인트당 1.5만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	722	1	주문 숙련 설명
 maw-63f63821464a	translated	spell	Increases damage by 10 plus 2 per skill point	피해량이 10 + 기술 포인트당 2만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	723	1	주문 숙련 설명
-maw-a36128b8bdaf	untranslated	spell	Increases spell damage and healing at the expense of higher mana cost and cast time.			Scripts/General/zzMAW-Skills.lua	1335	1	
+maw-a36128b8bdaf	translated	spell	Increases spell damage and healing at the expense of higher mana cost and cast time.	마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.		Scripts/General/zzMAW-Skills.lua	1335	1	승천 기술 설명
 maw-bcea47734e3b	translated	spell	"Increases spell damage and healing at the expense of higher mana cost and cast time.
 "	"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.
 "		Scripts/General/zzMAW-Skills.lua	1463	1	승천 기술 설명
@@ -2281,10 +2282,10 @@ maw-a742d05a19a5	translated	spell	Spell hits up to 4 times	최대 4회 적중합
 maw-e628e7dc1b0d	excluded	spell	SpellFirst			Scripts/Structs/extraEditableDescriptions.lua	550	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-e11663dfde25	excluded	spell	SpellMastery			Scripts/General/AdaptiveMonstersStats.lua	733	4	Internal engine/control/comment literal only; not player-facing localization.
 maw-84301d0d3217	excluded	spell	SpellPoints			Scripts/General/zzClasses.lua	1369	14	Internal engine/control/comment literal only; not player-facing localization.
-maw-11509485a262	untranslated	spell	SpellPointsExpert			Data/Tables/Spells2.txt	1	6	
-maw-507917d6e74d	untranslated	spell	SpellPointsGM			Data/Tables/Spells2.txt	1	11	
-maw-aabe239306fb	untranslated	spell	SpellPointsMaster			Data/Tables/Spells2.txt	1	8	
-maw-2cb9ecbb3f26	untranslated	spell	SpellPointsNormal			Data/Tables/Spells2.txt	1	5	
+maw-11509485a262	excluded	spell	SpellPointsExpert			Data/Tables/Spells2.txt	1	6	Spells2 구조 필드
+maw-507917d6e74d	excluded	spell	SpellPointsGM			Data/Tables/Spells2.txt	1	11	Spells2 구조 필드
+maw-aabe239306fb	excluded	spell	SpellPointsMaster			Data/Tables/Spells2.txt	1	8	Spells2 구조 필드
+maw-2cb9ecbb3f26	excluded	spell	SpellPointsNormal			Data/Tables/Spells2.txt	1	5	Spells2 구조 필드
 maw-f2cbd9ebed77	excluded	spell	SpellSecond			Scripts/Structs/extraEditableDescriptions.lua	553	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-e2231a88184b	excluded	spell	SpellSkill			Scripts/General/AdaptiveMonstersStats.lua	732	4	Internal engine/control/comment literal only; not player-facing localization.
 maw-b40d51318efc	untranslated	spell	spirit			Scripts/General/zzMaw-Spells.lua	3355	1	
@@ -2342,7 +2343,7 @@ maw-bf61b9828dc8	translated	status	 on attack disabled	 공격 시 발동 비활
 maw-5e6fd93c345e	translated	status	 required)	)		Scripts/General/zzAlchemy.lua	841	2	필요 레벨 메시지 후행 조각
 maw-6f10ee9e1e8e	translated	status	 will not be sorted with C	번은 C키 정렬에서 제외됩니다		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
 maw-26995675bf1a	translated	status	 will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당		Scripts/General/zzMaw-Item-Sorter.lua	54	1	인벤토리 정렬 메시지 조각
-maw-b30c9ccdc32b	untranslated	status	%d+		%d	Scripts/General/zzMAW-Skills.lua	1760	2	
+maw-b30c9ccdc32b	excluded	status	%d+		%d	Scripts/General/zzMAW-Skills.lua	1760	2	정규식 숫자 패턴; 표시 문자열 아님
 maw-ac5cf24fbebd	translated	status	%s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	%s	Scripts/General/zzMAW-Skills.lua	738	1	전투 기술 상태 메시지
 maw-2dce602f934a	translated	status	%s created	%s 제작 완료	%s	Scripts/General/zzMaw-Items.lua	4598	1	제작 상태 메시지
 maw-c71f2230e35f	translated	status	%s hits %s for %s points!%s	%s이(가) %s에게 %s의 피해를 입혔습니다!%s	%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	257	1	실제 근접 전투 상태 메시지; 자리표시자 순서 보존
@@ -2788,7 +2789,7 @@ maw-eb0755f64902	excluded	table	Dwarf zombie (conditional portrait)			Data/Table
 maw-7f9be91f9ee0	excluded	table	Dwarf(9)			Data/Tables/Race Skills.txt	1	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-a27abca4eb09	excluded	table	E/1/2			Data/Tables/Race Skills.txt	5	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-e7401c3ccc73	excluded	table	eagle statuette			Data/Tables/ObjList.txt	363	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-a074430f352b	untranslated	table	Earth			Data/Tables/Class Skills.txt	17	8	
+maw-a074430f352b	excluded	table	Earth			Data/Tables/Class Skills.txt	17	8	클래스/오브젝트 구조 및 내부 조회값; 표시명은 기존 MMMerge 데이터에서 별도 처리
 maw-da3a93e088c8	excluded	table	ElecBall			Data/Tables/ObjList.txt	576	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-e2276682b035	excluded	table	ElecTrap			Data/Tables/ObjList.txt	439	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-aa58e5ef131f	excluded	table	ElecX			Data/Tables/ObjList.txt	557	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -2922,7 +2923,7 @@ maw-07e9b82b81c1	excluded	table	Green Potion			Data/Tables/ObjList.txt	64	2	Audi
 maw-856a71ef8e00	excluded	table	GreenBall			Data/Tables/ObjList.txt	577	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-1ef117e1917a	excluded	table	Ground Wyvern Horn			Data/Tables/ObjList.txt	123	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-5ef7db31448f	excluded	table	Guardian Helm			Data/Tables/Complex item pictures.txt	88	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-c858040fb8bc	untranslated	table	Halberd			Data/Tables/ObjList.txt	12	3	
+maw-c858040fb8bc	excluded	table	Halberd			Data/Tables/ObjList.txt	12	3	ObjList/무기 판정 구조값; 아이템 표시명과 별도
 maw-ab7b8ea47ead	excluded	table	Hammer			Data/Tables/ObjList.txt	17	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-ac8e322df6a7	excluded	table	Hammerhands			Data/Tables/Spells2.txt	75	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-efb07758faa8	excluded	table	Harden Item			Data/Tables/Potion settings.txt	18	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3596,7 +3597,7 @@ maw-00ffcb9a7047	excluded	table	WarriorMage			Data/Tables/Class HP SP.txt	3	5	Au
 maw-4c8f0979e81f	excluded	table	WarTroll			Data/Tables/Class HP SP.txt	41	3	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-9a109c08574e	excluded	table	Wasp Stingers			Data/Tables/ObjList.txt	125	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-f58b1ce02c6a	excluded	table	Wasp Wing			Data/Tables/ObjList.txt	55	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-de9b1be49dae	untranslated	table	Water			Data/Tables/Class Skills.txt	16	8	
+maw-de9b1be49dae	excluded	table	Water			Data/Tables/Class Skills.txt	16	8	클래스/오브젝트 구조 및 내부 조회값; 표시명은 기존 MMMerge 데이터에서 별도 처리
 maw-f1ac1f265fec	excluded	table	Water Breathing			Data/Tables/Potion settings.txt	17	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-3240fea8e7a7	excluded	table	Water Walk			Data/Tables/Spells2.txt	29	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-08ff8cc125cc	excluded	table	Wealthy Hat			Data/Tables/ObjList.txt	263	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3992,7 +3993,7 @@ maw-643fc1ad80e5	translated	tooltip	"Reserve a percentage of your mana.
 When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."	"마나의 일정 비율을 점유합니다.
 고통 반사가 활성화된 캐릭터를 몬스터가 공격하면, 몬스터는 그 캐릭터에게 준 피해와 같은 양의 피해를 받습니다."		Scripts/General/zzMaw-Spells.lua	3081	1	주문 설명
 maw-1ba00dbce0f6	translated	tooltip	Restores 	주문력 회복: 		Scripts/General/zzAlchemy.lua	419	2	물약 설명 조각
-maw-3c7bacac8039	untranslated	tooltip	"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
+maw-3c7bacac8039	translated	tooltip	"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
 
 Proficiency in Plate, Sword, Mace, and Shield (can't dual wield)
 3 HP and 1 mana points gained per level
@@ -4003,7 +4004,18 @@ Gods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added
 
 Holy Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)
 
-Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."			Scripts/General/zzClasses.lua	160	1	
+Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."	"세라핌은 신들의 축복을 받아 범인과는 다른 초월적인 힘을 지닌 신성한 전사입니다. 그의 기원은 수수께끼에 싸여 있지만, 인간계에서 신들의 뜻을 수행하도록 선택받았다고 전해집니다. 어떤 이는 인간과 천사의 사이에서 태어났다고 수군거리고, 또 어떤 이는 신들이 직접 창조했다고 믿습니다. 기원이 무엇이든 세라핌이 휘두르는 힘은 부정할 수 없으며, 전장에서 그의 존재는 신의 의지를 증명합니다.
+
+판금 갑옷, 검, 철퇴, 방패에 능숙함 (쌍수 사용 불가)
+레벨당 생명력 3, 마나 1 획득
+
+능력:
+
+신의 분노: 공격 시 빛 기술에 따라 추가 마법 피해를 줍니다 (빛과 정신 기술 포인트당 피해 +2)
+
+신성한 일격: 공격 시 육체 기술에 따라 파티에서 가장 부상당한 아군을 치유합니다 (육체와 영혼 기술 포인트당 2)
+
+신성한 보호: 치명적인 공격을 받을 때 최대 생명력의 25%를 회복합니다. 재사용 대기시간 5분."		Scripts/General/zzClasses.lua	160	1	세라핌 직업 설명
 maw-913758904779	translated	tooltip	Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신 폭발과 비슷하지만 훨씬 강력한 정신 마법으로 단일 대상을 공격합니다. 정신 충격은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2111	1	정신 충격 주문 설명
 maw-0a4e49ab66a5	translated	tooltip	Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic.	파티 전체에 화염, 공기, 물, 대지, 정신, 육체 보호와 낙하 완화, 마법의 눈을 동시에 시전합니다. 각 효과는 빛 마법 기술 수치의 두 배로 적용됩니다.		Scripts/General/zzMaw-Spells.lua	746	1	보호의 날 주문 설명
 maw-2f8051d794e2	excluded	tooltip	SkillDescriptionsExpert			Scripts/Structs/extraEditableDescriptions.lua	43	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -4020,7 +4032,7 @@ maw-90a3b0639ae9	translated	tooltip	Summons a swarm of biting, stinging insects 
 maw-43c99ac54e2c	translated	tooltip	Summons flaming rocks from the sky which fall in a large radius surrounding your chosen target.  Try not to be near the victim when you use this spell.  A single meteor does %s points of damage plus %s per point of skill in Fire Magic.  This spell only works outdoors.	하늘에서 불타는 바위를 소환해 지정한 대상 주변의 넓은 범위에 떨어뜨립니다. 시전할 때 대상 가까이에 있지 않는 것이 좋습니다. 운석 하나당 %s + 화염 마법 기술 포인트당 %s의 피해를 줍니다. 야외에서만 사용할 수 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2091	1	운석 소나기 주문 설명
 maw-da362fd07a3c	translated	tooltip	Sunray is the second most devastating damage spell in the game. It does %s points of damage plus 1-%s points per point of skill in Light Magic, by concentrating the light of the sun on one unfortunate creature. Indoors it can be cast at any time; outdoors it only works during the day.	게임에서 두 번째로 강력한 피해 주문입니다. 태양빛을 한 대상에게 집중하여 %s의 기본 피해와 빛 마법 기술 포인트당 1-%s의 추가 피해를 줍니다. 실내에서는 언제든 시전할 수 있지만, 야외에서는 낮에만 사용할 수 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2118	1	태양 광선 주문 설명
 maw-0d03154f8f14	translated	tooltip	Temporarily increases all seven stats on all your characters by 1 per skill in Light Magic.  This spell lasts until you rest.	파티원 모두의 일곱 능력치를 빛 마법 기술 포인트당 1만큼 일시적으로 증가시킵니다. 휴식할 때까지 지속됩니다.		Scripts/General/zzMaw-Spells.lua	740	1	능력치 강화 주문 설명
-maw-35e0e8f9fd61	untranslated	tooltip	"The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:
+maw-35e0e8f9fd61	translated	tooltip	"The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:
 
 Spell Damage: 10% per stack
 Spell Recovery Speed: 5% per stack
@@ -4028,8 +4040,16 @@ Mana Cost: 1 + 7.5% of the total.
 
 After a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.
 
-Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."			Scripts/General/zzClasses.lua	1521	1	
-maw-4623aaef40dd	untranslated	tooltip	"The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.
+Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."	"원소술사는 가장 큰 마나량을 지닌 주문 시전자이며, 책이 아니라 같은 원소 계열의 주문을 직접 시전하면서 주문을 익힙니다. 승천을 직접 배울 수는 없지만 승천 레벨은 네 원소 계열 기술 레벨 합계를 4로 나눈 값에 따라 결정됩니다. 기본 주문 회복 시간은 50% 더 길지만, 마법을 시전하면 중첩을 얻어 다음 효과가 증가합니다:
+
+주문 피해: 중첩당 10%
+주문 회복 속도: 중첩당 5%
+마나 소모: 1 + 총량의 7.5%
+
+몇 초 동안 주문을 시전하지 않으면 중첩이 50%씩 감소합니다. 활이나 근접 무기로 피해를 주거나 주문서를 사용하면 집중이 깨져 모든 중첩이 즉시 초기화됩니다.
+
+주문은 무작위로 시전되지만 단일 대상, 광역 효과, 산탄형의 세 범주로 나뉩니다. 지정한 빠른 시전 주문에 따라 로테이션이 조정됩니다. 예를 들어 화염구를 빠른 시전 주문으로 설정하면 광역 주문을 자동으로 우선합니다."		Scripts/General/zzClasses.lua	1521	1	원소술사 직업 설명
+maw-4623aaef40dd	translated	tooltip	"The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.
 You can check following values by checking magic schools description in skills menu.
  - Each school will provide a unique bonus. There is strength in diversifying as well as specialization
  - Each point in Air will reduce damage a % pr rank reduced by level
@@ -4038,9 +4058,18 @@ You can check following values by checking magic schools description in skills m
  - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.
  - Each point in Earth will increase melee damage by a flat amount
  - Each point in Body will heal by flat amount
- - Each point in mind will restore a flat amount of mana"			Scripts/General/zzClasses.lua	966	1	
+ - Each point in mind will restore a flat amount of mana"	"주술사는 마법 지식으로 무예를 강화하는 신비한 전사입니다.
+기술 메뉴의 마법 계열 설명에서 다음 수치를 확인할 수 있습니다.
+ - 각 마법 계열은 고유한 보너스를 제공합니다. 여러 계열에 분산 투자하는 것과 한 계열에 집중하는 것 모두 장점이 있습니다.
+ - 공기 기술 포인트마다 받는 피해를 일정 비율 감소시키며, 효과는 레벨에 따라 감소합니다.
+ - 물 기술 포인트마다 받는 피해를 고정 수치로 감소시킵니다. 따라서 약한 적을 상대하거나 이미 방어력이 높은 경우 물이 더 효과적입니다.
+ - 영혼 기술 포인트마다 치유량과 주문 피해가 일정 비율 증가합니다.
+ - 화염은 몬스터의 현재 생명력에 비례한 화염 피해를 주며 저항을 일부 관통합니다. 보스 처치에 특화됩니다.
+ - 대지 기술 포인트마다 근접 피해가 고정 수치로 증가합니다.
+ - 육체 기술 포인트마다 고정 수치만큼 치유합니다.
+ - 정신 기술 포인트마다 고정 수치만큼 마나를 회복합니다."		Scripts/General/zzClasses.lua	966	1	주술사 직업 설명
 maw-47690b30aff6	translated	tooltip	This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.		Scripts/General/zzClasses.lua	477	2	용 숨결 주문 설명
-maw-b25c51ddac4f	untranslated	tooltip	"This class combines the evil forces with brute power, making it powerful and versatile.
+maw-b25c51ddac4f	translated	tooltip	"This class combines the evil forces with brute power, making it powerful and versatile.
  Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
 
 Frost:
@@ -4053,7 +4082,20 @@ This skill fortifies their resilience, reducing physical damage taken by 1% per 
 
 Unholy:
 
-It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."			Scripts/General/zzClasses.lua	1073	1	
+It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	"이 직업은 사악한 힘과 강인한 육체를 결합해 강력하면서도 다재다능합니다.
+ 냉기/혈기/부정 기술을 전문가/마스터/그랜드마스터로 올리면 새로운 주문을 자동으로 해금합니다. 단, 죽음의 기사는 주문서로 주문을 배울 수 없습니다.
+
+냉기:
+
+초보/마스터/그랜드마스터 단계에서 피해가 각각 1/2/3 증가하며, 투자한 기술 포인트마다 공격 속도가 1% 증가합니다.
+
+혈기:
+
+생존력을 강화해 기술 포인트당 받는 물리 피해를 1% 감소시킵니다. 또한 공격에 생명력 흡수 효과를 부여해 준 피해의 일부를 생명력으로 회복합니다.
+
+부정:
+
+초보/마스터/그랜드마스터 단계에서 피해가 각각 1/2/3 증가하며, 투자한 기술 포인트마다 받는 마법 피해가 1% 감소합니다."		Scripts/General/zzClasses.lua	1073	1	죽음의 기사 직업 설명
 maw-1ff214ae0f09	translated	tooltip	This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.	이 무시무시한 능력은 다크 엘프가 어둠과 화염의 힘을 결합한 위험한 다크파이어를 다루게 합니다. 다크파이어에 맞은 대상은 화염 저항과 어둠 저항 중 더 낮은 수치로 저항합니다. 피해량은 %s의 기본 피해 + 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2125	1	다크파이어 능력 설명
 maw-8601b402d801	translated	tooltip	This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.	시야 안의 모든 생물에게서 생명력을 빼앗습니다. 아군과 적군을 가리지 않습니다. 영혼 흡수는 공동 생명과 비슷한 방식으로 빼앗은 생명력을 파티에 나눠 줍니다. 피해량(및 회복량)은 %s + 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2123	1	영혼 흡수 주문 설명
 maw-fd4fc93cc199	translated	tooltip	This is the strongest single damage spell available to death knights and deals damage equal to 	죽음의 기사가 사용할 수 있는 가장 강력한 단일 대상 피해 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1385	1	동상 주문 설명 앞부분
@@ -4183,8 +4225,8 @@ maw-880efb921b0e	translated	ui	 General settings	 일반 설정		Scripts/General
 maw-b15869c959e3	translated	ui	 Randomizer	 무작위화		Scripts/General/zzzzMalekith-Randomizer.lua	395	1	무작위화 UI 제목
 maw-7b618f6314b4	excluded	ui	"""] = 
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	Internal engine/control/comment literal only; not player-facing localization.
-maw-ef6a39857a0b	untranslated	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	
-maw-b34bcfd49892	untranslated	ui	%lu			Scripts/General/BountyHunt.lua	11	2	
+maw-ef6a39857a0b	excluded	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	런타임 format 자리표시자 템플릿; 표시 문자열 아님
+maw-b34bcfd49892	excluded	ui	%lu			Scripts/General/BountyHunt.lua	11	2	기존 NPC 텍스트 자리표시자 치환용; 표시 문자열 아님
 maw-fb7711e92c7f	translated	ui	"%s
 
 Bonus healing: %s%s
@@ -4285,7 +4327,7 @@ Ranged Damage done in current map: %s"	"%s
 maw-d093cb076c31	translated	ui	"%s
 Total Ranged Damage done: %s"	"%s
 총 원거리 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	578	1	전체 피해 통계; 자리표시자 보존
-maw-66934fbcd7ba	untranslated	ui	446561746820436f756e743a20			Scripts/General/zzMaw-Monsters.lua	2617	1	
+maw-66934fbcd7ba	translated	ui	446561746820436f756e743a20	ec82aceba79d20ed9a9fec88983a20		Scripts/General/zzMaw-Monsters.lua	2617	1	_H가 hex를 바이트로 복원함; UTF-8 hex는 런타임에서 '사망 횟수: '로 표시
 maw-959b2aad9b04	excluded	ui	\f00000			Scripts/Structs/extraEditableDescriptions.lua	59	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-3cfb15d89074	translated	ui	"Beyond
 Madness"	"광란을
