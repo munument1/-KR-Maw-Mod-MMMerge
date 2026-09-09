@@ -93,6 +93,17 @@ RESPEC_UI = {
     "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required",
 }
 
+# Values are looked up by condition id and then inserted into the already
+# localized "Enchantment protects %s from %s" status message. They are display
+# data, not comparison/control tokens. Lower-case "fear" is intentionally not
+# listed yet because the broad extractor currently filters that four-letter
+# token before this promotion pass; that extractor gap is tracked separately.
+PROTECTION_STATUS_NAMES = {
+    "disease", "curse", "insanity", "spell drain", "paralysis",
+    "poison", "weakness", "sleep", "unconscious", "stone",
+    "premature ageing", "death", "eradication",
+}
+
 
 def read_rows(path: Path):
     with path.open("r", encoding="utf-8-sig", newline="") as f:
@@ -133,6 +144,8 @@ def promote(row: dict[str, str]) -> bool:
         reason = "reviewed_maw_settings_header"
     elif file == "Scripts/Global/zzMAWRespec.lua" and source in RESPEC_UI:
         reason = "reviewed_respec_ui"
+    elif file == "Scripts/General/zzMaw-Items.lua" and source in PROTECTION_STATUS_NAMES:
+        reason = "reviewed_immunity_status_name"
     elif file == "Scripts/General/zzMaw-Maps.lua" and source == "Map Level: ":
         reason = "reviewed_map_level_label"
     elif file == "Scripts/General/zzMaw-Monsters.lua" and source == "\nLevel Recommended:\n":
