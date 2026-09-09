@@ -54,6 +54,23 @@ TELELOCATOR_UI = {
     "World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n",
 }
 
+ARENA_UI = {
+    "It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!",
+    "Endless Arena",
+    "Start Level ",
+    "Let's get started!",
+}
+
+SERIOUS_MAW_MONSTER_NAMES = {
+    "Serpent Mother",
+    "Captain Sharp-Tooth",
+    "Captain Strong-Scale",
+    "Captain Finch",
+    "Mountain Man",
+    "Huge Orc",
+    "Naga Empress",
+}
+
 
 def read_rows(path: Path):
     with path.open("r", encoding="utf-8-sig", newline="") as f:
@@ -84,6 +101,10 @@ def promote(row: dict[str, str]) -> bool:
         reason = "reviewed_multiplayer_experience_ui"
     elif file == "Scripts/Global/Quest_SavingGoobers.lua" and source in TELELOCATOR_UI:
         reason = "reviewed_telelocator_ui"
+    elif file == "Scripts/Global/zzMaw_Arena.lua" and source in ARENA_UI:
+        reason = "reviewed_arena_ui"
+    elif file == "Scripts/General/zSERIOUSMAW.lua" and source in SERIOUS_MAW_MONSTER_NAMES:
+        reason = "reviewed_monster_display_name"
 
     if not reason:
         return False
