@@ -35,3 +35,124 @@ Enroth	엔로스	translated	MMMerge PO 정확 일치 + 표시 문맥 확인
 Jadame	제이덤	translated	MMMerge PO 정확 일치 + 표시 문맥 확인
 Empty Barrel	빈 통	translated	MMMerge PO 정확 일치 + 표시 문맥 확인
 Emerald Island	에메랄드 섬	translated	MMMerge PO 정확 일치 + 표시 문맥 확인
+  heals 	 → 	translated	회복 메시지 조각; 한국어 조사 회피
+ cover 	 → 엄호: 	translated	엄호 상태 메시지 조각
+ crafting items	개의 제작 재료	translated	순간이동 상태 메시지 조각
+ Exp, 	 경험치, 	translated	맵 완료 보상 메시지 조각
+ filtered)	 필터됨)	translated	아이템 필터 메시지 조각
+ for 	: 회복량 	translated	회복 메시지 조각
+ Gold and a Crafting Material	 금화 및 제작 재료	translated	맵 완료 보상 메시지 조각
+ gold! (	 금화! (	translated	아이템 필터 메시지 조각
+ heals 	 → 	translated	회복 메시지 조각
+ heals the party for 	: 파티 회복량 	translated	회복 메시지 조각
+ heals you for 	: 회복량 	translated	회복 메시지 조각
+ Hit points	 생명력	translated	회복 상태 메시지 조각
+ hit points	 생명력	translated	회복 상태 메시지 조각
+ hit points (crit)	 생명력 (치명타)	translated	회복 상태 메시지 조각
+ Hit points(crit)	 생명력 (치명타)	translated	회복 상태 메시지 조각
+ hit points(crit)	 생명력 (치명타)	translated	회복 상태 메시지 조각
+ monsters	마리의 몬스터	translated	순간이동 상태 메시지 조각
+ monsters and 	마리의 몬스터와 	translated	순간이동 상태 메시지 조각
+ on attack activated	 공격 시 발동 활성화	translated	주문 발동 상태 메시지
+ on attack disabled	 공격 시 발동 비활성화	translated	주문 발동 상태 메시지
+ required)	)	translated	필요 레벨 메시지 후행 조각
+ will not be sorted with C	번은 C키 정렬에서 제외됩니다	translated	인벤토리 정렬 메시지 조각
+ will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당	translated	인벤토리 정렬 메시지 조각
+%s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	translated	전투 기술 상태 메시지
+%s created	%s 제작 완료	translated	제작 상태 메시지
+%s's poison effect expired	%s: 독 효과가 끝났습니다	translated	독 효과 상태 메시지
+'s bags sorted	의 모든 가방	translated	가방 정렬 메시지 조각
+*Swap*	*교대*	translated	전투 상태 메시지
++50 Fire Resistance temporary.	일시적으로 화염 저항 +50.	translated	맵 상태 메시지
+Access have been destroyed	접근로가 파괴되었습니다	translated	맵 상태 메시지
+All 	정렬 완료: 	translated	가방 정렬 메시지 조각
+All buffs have been removed	모든 버프가 제거되었습니다	translated	버프 상태 메시지
+All inventories have been sorted	모든 인벤토리를 정렬했습니다	translated	인벤토리 정렬 메시지
+All Party bags sorted	파티의 모든 가방을 정렬했습니다	translated	가방 정렬 메시지
+Bow Disabled	활 사용 비활성화	translated	전투 설정 상태 메시지
+Bow Enabled	활 사용 활성화	translated	전투 설정 상태 메시지
+Buff Disabled	버프 비활성화	translated	주문 상태 메시지
+Can't benefit anymore	더 이상 효과를 받을 수 없습니다	translated	물약 상태 메시지
+Can't teleport now	지금은 순간이동할 수 없습니다	translated	순간이동 상태 메시지
+Charge has %s seconds of cooldown	돌진 재사용 대기시간이 %s초 남았습니다	translated	기술 재사용 대기시간
+Convert %s into %s? (U)	%s을(를) %s(으)로 변환하시겠습니까? (U)	translated	제작 변환 안내
+Cover Disabled	엄호 비활성화	translated	전투 기술 상태 메시지
+Cover Enabled	엄호 활성화	translated	전투 기술 상태 메시지
+Current map data reset.	현재 맵 데이터를 초기화했습니다.	translated	맵 데이터 상태 메시지
+Curse Immunity	저주 면역	translated	물약 효과 상태 메시지
+Disease Immunity	질병 면역	translated	물약 효과 상태 메시지
+Disintegrated	소멸됨	translated	전투 상태 메시지
+Divine Protection saves you from lethal damage	신성한 보호가 치명적인 피해로부터 당신을 구했습니다	translated	전투 상태 메시지
+Dungeon Completed!	던전 완료!	translated	던전 완료 메시지
+Dungeon Completed!\nReset is possible again.	던전 완료!\n이제 다시 초기화할 수 있습니다.	translated	던전 완료/초기화 메시지
+Elementalist Rotation Disabled	원소술사 로테이션 비활성화	translated	직업 기술 상태 메시지
+Elementalist Rotation Enabled	원소술사 로테이션 활성화	translated	직업 기술 상태 메시지
+Elementalists learn their spells through practice	원소술사는 실전을 통해 주문을 익힙니다	translated	직업 안내 메시지
+empty	비어 있음	translated	맵 상태 메시지
+Enchantment protects %s from %s	마법 부여가 %s을(를) %s(으)로부터 보호합니다	translated	마법 부여 상태 메시지
+Entering will reset the dungeon	입장하면 던전이 초기화됩니다	translated	던전 초기화 경고
+Fear Immunity	공포 면역	translated	물약 효과 상태 메시지
+Fly is allowed without restrictions here	이곳에서는 제한 없이 비행할 수 있습니다	translated	비행 상태 메시지
+Forced Sleep Immunity	강제 수면 면역	translated	물약 효과 상태 메시지
+Gem power is not enough	보석의 힘이 부족합니다	translated	제작 상태 메시지
+Goblin Reinforcements	고블린 증원군	translated	맵 이벤트 메시지
+Health Potion has %s seconds of cooldown remaining	생명력 물약 재사용 대기시간이 %s초 남았습니다	translated	물약 재사용 대기시간
+Health Potion heals for %s hit points	생명력 물약으로 생명력 %s 회복	translated	물약 회복 메시지
+Host saved the game.	호스트가 게임을 저장했습니다.	translated	멀티플레이 상태 메시지
+In the night the deads rise	밤이 되면 망자들이 일어납니다	translated	맵 이벤트 메시지
+Insanity Immunity	광기 면역	translated	물약 효과 상태 메시지
+Invalid Item	잘못된 아이템	translated	아이템 상태 메시지
+Inventory number 	인벤토리 	translated	인벤토리 정렬 메시지 조각
+Inventory sorted	인벤토리를 정렬했습니다	translated	인벤토리 정렬 메시지
+It's a trap!	함정이다!	translated	맵 이벤트 메시지
+It's an ambush!	매복이다!	translated	맵 이벤트 메시지
+Item power reached its limit	아이템 위력이 한계에 도달했습니다	translated	제작 상태 메시지
+Legendary power saves you from lethal damage	전설의 힘이 치명적인 피해로부터 당신을 구했습니다	translated	전투 상태 메시지
+Loading now will count as death, are you sure to proceed?	지금 불러오면 사망으로 처리됩니다. 계속하시겠습니까?	translated	난이도 경고 메시지
+Madness is not a place for cowards	광기는 겁쟁이가 올 곳이 아닙니다	translated	난이도 상태 메시지
+Mana Potion has %s seconds of cooldown remaining	마나 물약 재사용 대기시간이 %s초 남았습니다	translated	물약 재사용 대기시간
+Mana Potion restores %s mana	마나 물약으로 마나 %s 회복	translated	물약 회복 메시지
+Mana Shield Disabled	마나 방패 비활성화	translated	전투 기술 상태 메시지
+Mana Shield Enabled	마나 방패 활성화	translated	전투 기술 상태 메시지
+Map Completed! You gain 	맵 완료! 획득: 	translated	맵 완료 보상 메시지 조각
+Map data reset, press Y to continue...	맵 데이터 초기화 완료. 계속하려면 Y를 누르세요...	translated	맵 데이터 상태 메시지
+Monsters are weakened and can no longer resurrect	몬스터들이 약화되어 더 이상 부활할 수 없습니다	translated	던전 상태 메시지
+Monsters swarming...	몬스터들이 몰려옵니다...	translated	맵 이벤트 메시지
+No alchemy preference when sorting	정렬 시 연금술 우선 대상 없음	translated	인벤토리 정렬 설정
+No enchants	마법 부여 없음	translated	제작 상태 메시지
+No gem to upgrade	업그레이드할 보석이 없습니다	translated	제작 상태 메시지
+Noises from the throne room	왕좌실에서 소리가 들려옵니다	translated	맵 이벤트 메시지
+Not enough disarm skill	함정 해제 기술이 부족합니다	translated	아이템 상태 메시지
+Not enough food	식량이 부족합니다	translated	게임 상태 메시지
+Not enough Hit Points	생명력이 부족합니다	translated	주문 상태 메시지
+Not enough Mana	마나가 부족합니다	translated	주문 상태 메시지
+Out of range	사정거리 밖입니다	translated	전투 기술 상태 메시지
+Paralysis Immunity	마비 면역	translated	물약 효과 상태 메시지
+Petrify Immunity	석화 면역	translated	물약 효과 상태 메시지
+Player %s left the game.	플레이어 %s님이 게임을 떠났습니다.	translated	멀티플레이 상태 메시지
+Player must be active to consume the potion	물약을 마시려면 해당 캐릭터가 활성 상태여야 합니다	translated	물약 상태 메시지
+Poison Immunity	독 면역	translated	물약 효과 상태 메시지
+Press R to refresh new items (20000 gold)	새 아이템 갱신: R (20,000 금화)	translated	상점 갱신 안내
+Queen Arrived!	여왕이 도착했습니다!	translated	맵 이벤트 메시지
+Refreshing!	갱신 중!	translated	맵 이벤트 메시지
+Repaired	수리 완료	translated	수리 상태 메시지
+Resistance Ignored	저항 무시	translated	전투 상태 메시지
+Shared Life heals for 	생명 공유 회복량: 	translated	회복 메시지 조각
+Teleported 	순간이동: 	translated	순간이동 상태 메시지 조각
+The night is dark and full of terrors	밤은 어둡고 공포로 가득하다	translated	맵 이벤트 메시지
+This potion has not enough power	이 물약의 위력이 부족합니다	translated	물약 상태 메시지
+This skill has reached its limit	이 기술은 한계에 도달했습니다	translated	기술 상태 메시지
+This skill is already as good as it will ever get	이 기술은 이미 최대치입니다	translated	기술 상태 메시지
+Unconscious Immunity	의식불명 면역	translated	물약 효과 상태 메시지
+Weakness Immunity	쇠약 면역	translated	물약 효과 상태 메시지
+You found 	획득: 	translated	아이템 필터 메시지 조각
+You Heal for 	회복량: 	translated	회복 메시지 조각
+You heal the party for 	파티 회복량: 	translated	회복 메시지 조각
+YOU LEARNED RETALIATION!!	반격을 습득했습니다!!	translated	기술 습득 메시지
+You must prove your worth first	먼저 자신의 가치를 증명해야 합니다	translated	맵 이벤트 메시지
+You need a key to teleport to Emerald Island.	에메랄드 섬으로 순간이동하려면 열쇠가 필요합니다.	translated	순간이동 안내
+You need a key to teleport to Erathia.	에라시아로 순간이동하려면 열쇠가 필요합니다.	translated	순간이동 안내
+You need a key to teleport to Evenmorn Island.	이븐모른 섬으로 순간이동하려면 열쇠가 필요합니다.	translated	순간이동 안내
+You need a key to use this hub. Talk to Illene Farswell.	이 허브를 사용하려면 열쇠가 필요합니다. 일린 파스웰과 대화하세요.	translated	순간이동 허브 안내
+You need to gain more exp. to benefit from this potion	이 물약의 효과를 받으려면 경험치를 더 쌓아야 합니다	translated	물약 상태 메시지
+Your level is too low (Level 	레벨이 너무 낮습니다 (필요 레벨 	translated	필요 레벨 메시지 조각
