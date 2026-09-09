@@ -2,9 +2,9 @@
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
   "translated_entries": 320,
-  "translated_entries_with_patchable_occurrences": 297,
-  "patchable_occurrences_targeted": 423,
-  "skipped_unpatchable_occurrences_for_translated_sources": 104,
+  "translated_entries_with_patchable_occurrences": 318,
+  "patchable_occurrences_targeted": 455,
+  "skipped_unpatchable_occurrences_for_translated_sources": 72,
   "changed_files": [
     {
       "file": "Scripts/General/BountyHunt.lua",
@@ -20,11 +20,11 @@
     },
     {
       "file": "Scripts/General/zzAlchemy.lua",
-      "replacements": 47
+      "replacements": 48
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 25
+      "replacements": 45
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
@@ -36,7 +36,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 56
+      "replacements": 57
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
@@ -44,15 +44,15 @@
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 28
+      "replacements": 30
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 93
+      "replacements": 99
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
-      "replacements": 42
+      "replacements": 43
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
@@ -108,7 +108,7 @@
     },
     {
       "file": "Scripts/Maps/7d29.lua",
-      "replacements": 1
+      "replacements": 2
     },
     {
       "file": "Scripts/Maps/7out01.lua",
@@ -155,113 +155,8 @@
     },
     {
       "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Air Magic",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Attack",
-      "unpatchable_occurrences": 5
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Body Magic",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Book",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Cleric of Baa",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Damage",
-      "unpatchable_occurrences": 5
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Dark Magic",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Dodging",
-      "unpatchable_occurrences": 7
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Earth Magic",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
       "source": "Emerald Island",
       "unpatchable_occurrences": 5
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Fire Magic",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Goblin King",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Longsword",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Potion Bottle",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Priest of Baa",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Quick Spell",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Shoot",
-      "unpatchable_occurrences": 2
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.",
-      "unpatchable_occurrences": 2
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "This spell is as good as it will ever get!",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Water Magic",
-      "unpatchable_occurrences": 2
     }
   ],
   "validation_errors": [],

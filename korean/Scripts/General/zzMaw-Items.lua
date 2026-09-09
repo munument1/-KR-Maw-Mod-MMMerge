@@ -330,7 +330,7 @@ end
 --create tables to calculate special enchant
 function events.GameInitialized2()
 	Game.ItemsTxt[67].NotIdentifiedName="Mace"
-	Game.ItemsTxt[804].NotIdentifiedName="Longsword"
+	Game.ItemsTxt[804].NotIdentifiedName="장검"
 	--calculate totals by enchant type
 	totBonus2={}
 	for k=0,3 do

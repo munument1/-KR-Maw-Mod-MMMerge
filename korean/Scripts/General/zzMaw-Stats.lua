@@ -1490,7 +1490,7 @@ function events.Tick()
 		Game.GlobalTxt[172]=string.format("활력: %s\n\n\n\n\n\n\n\n",StrColor(0,255,0,vitality))
 	else
 		Game.GlobalTxt[47]="Condition"
-		Game.GlobalTxt[172]="Quick Spell"
+		Game.GlobalTxt[172]="퀵스펠"
 	end
 end
 

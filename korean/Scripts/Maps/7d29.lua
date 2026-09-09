@@ -39,7 +39,7 @@ function events.LoadMap()
 	end
 end
 
-Game.PlaceMonTxt[300]="Goblin King"
+Game.PlaceMonTxt[300]="고블린 왕"
 evt.map[1000] = function()  
 	if not vars.goblingKing and not vars.goblingKing then
 		if evt.CheckMonstersKilled{CheckType = 1, Id = 56, Count = 0, InvisibleAsDead = 0} then

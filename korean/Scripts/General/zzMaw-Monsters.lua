@@ -3787,8 +3787,8 @@ end
 
 --fix to The Temple of BAA in MM7
 function events.GameInitialized2()
-	Game.PlaceMonTxt[211]="Cleric of Baa"
-	Game.PlaceMonTxt[212]="Priest of Baa"
+	Game.PlaceMonTxt[211]="바의 성직자"
+	Game.PlaceMonTxt[212]="바의 사제"
 	Game.PlaceMonTxt[213]="Cardinal of Baa"
 	Game.PlaceMonTxt[214]="High Cardinal"
 end

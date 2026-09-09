@@ -474,7 +474,7 @@ local dragonScales={
 
 function events.GameInitialized2()
 	--fire blast tooltip
-	Game.SpellsTxt[123].Description="This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs."
+	Game.SpellsTxt[123].Description="이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다."
 	Game.SpellsTxt[123].Expert="Deals damage equal to 70% of breath damage"
 	Game.SpellsTxt[123].Master="Deals damage equal to 85% of breath damage"
 	Game.SpellsTxt[123].GM="Deals damage equal to 100% of breath damage"
@@ -828,21 +828,21 @@ function dragonSkill(dragon, index)
 			Game.GlobalTxt[18] = "Attack         +" .. pl:GetMeleeAttack() .. "\n                 " .. shortenNumber(pl:GetMeleeDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetMeleeDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 			Game.GlobalTxt[203]="Shoot         +" .. pl:GetRangedAttack() .. "\n                 " .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		else
-			Game.GlobalTxt[18]="Attack"
-			Game.GlobalTxt[53]="Damage"
-			Game.GlobalTxt[203]="Shoot"
+			Game.GlobalTxt[18]="근접"
+			Game.GlobalTxt[53]="피해량"
+			Game.GlobalTxt[203]="원거리"
 		end
 	else
-		Game.GlobalTxt[18]="Attack"
-		Game.GlobalTxt[53]="Damage"
-		Game.GlobalTxt[203]="Shoot"
+		Game.GlobalTxt[18]="근접"
+		Game.GlobalTxt[53]="피해량"
+		Game.GlobalTxt[203]="원거리"
 		Skillz.setName(33,"Unarmed")
 		Skillz.setDesc(33,1,unarmedText)
 		Game.SkillDesNormal[33]=unarmedTextN
 		Game.SkillDesExpert[33]=unarmedTextE
 		Game.SkillDesMaster[33]=unarmedTextM
 		Game.SkillDesGM[33]=unarmedTextGM
-		Skillz.setName(32,"Dodging")
+		Skillz.setName(32,"회피")
 		Skillz.setDesc(32,1,dodgeText)
 		Game.SkillDesNormal[32]=dodgeTextN
 		Game.SkillDesExpert[32]=dodgeTextE
@@ -1404,16 +1404,16 @@ function dkSkills(isDK, id)
 		local leech=math.max(FHP^0.5* bloodS^1.5/70, bloodS*2)
 		Game.SpellsTxt[68].Name="피 흡수"
 		Game.SpellsTxt[68].Description="Activating this spell imbues the knight body with blood, leeching life upon attacking at the cost of 6 spell points."
-		Game.SpellsTxt[68].Normal="Leeches " .. round(leech * 1.25) .. " Hit Points"
-		Game.SpellsTxt[68].Expert="Leeches " .. round(leech * 1.5) .. " Hit Points"
-		Game.SpellsTxt[68].Master="Leeches " .. round(leech * 1.75) .. " Hit Points"
-		Game.SpellsTxt[68].GM="Leeches " .. round(leech * 2) .. " Hit Points"
+		Game.SpellsTxt[68].Normal="Leeches " .. round(leech * 1.25) .. " 생명력"
+		Game.SpellsTxt[68].Expert="Leeches " .. round(leech * 1.5) .. " 생명력"
+		Game.SpellsTxt[68].Master="Leeches " .. round(leech * 1.75) .. " 생명력"
+		Game.SpellsTxt[68].GM="Leeches " .. round(leech * 2) .. " 생명력"
 		
 		-- Spell 74: Superior Blood Leech
 		Game.SpellsTxt[74].Name="상급 피 흡수"
 		Game.SpellsTxt[74].Description="Activating this spell imbues the knight essence with blood, leeching a superior amount of life upon attacking at the cost of 12 spell points."
 		Game.SpellsTxt[74].Master="n/a"
-		Game.SpellsTxt[74].GM="Leeches " .. round(leech * 4) .. " Hit Points"
+		Game.SpellsTxt[74].GM="Leeches " .. round(leech * 4) .. " 생명력"
 		
 		-- Spell 76: Asphyxiate (no entry in DKDamageMult, but description mentions 110% and 140%)
 		local mult76= DKDamageMult[76]
@@ -1469,9 +1469,9 @@ function dkSkills(isDK, id)
 				Game.SpellsTxt[key][key2]=value2
 			end
 		end
-		Skillz.setName(14, "Water Magic")
-		Skillz.setName(18, "Body Magic")
-		Skillz.setName(20, "Dark Magic")
+		Skillz.setName(14, "물 마법")
+		Skillz.setName(18, "육체 마법")
+		Skillz.setName(20, "어둠 마법")
 	end
 end
 
@@ -2162,10 +2162,10 @@ function assassinSkills(isAssassin, pl)
 				Game.SpellsTxt[key][key2]=value2
 			end
 		end
-		Skillz.setName(12, "Fire Magic")
-		Skillz.setName(13, "Air Magic")
-		Skillz.setName(14, "Water Magic")
-		Skillz.setName(15, "Earth Magic")
+		Skillz.setName(12, "화염 마법")
+		Skillz.setName(13, "공기 마법")
+		Skillz.setName(14, "물 마법")
+		Skillz.setName(15, "대지 마법")
 	end
 end
 function events.CanLearnSpell(t)

@@ -1417,7 +1417,7 @@ function events.GameInitialized2()
 	
 	--potion
 	Game.ItemsTxt[1069].Name="무한 물약"
-	Game.ItemsTxt[1069].NotIdentifiedName="Potion Bottle"
+	Game.ItemsTxt[1069].NotIdentifiedName="물약병"
 	Game.ItemsTxt[1069].Notes="This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions."
 	Game.ItemsTxt[1069].Picture="item280"
 	Game.ItemsTxt[1069].Skill=40

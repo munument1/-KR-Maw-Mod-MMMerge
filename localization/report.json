@@ -36,12 +36,15 @@
     "internal_lookup_literal": 1,
     "internal_table_key_literal": 1675,
     "known_display_name_assignment": 20,
+    "proven_game_display_assignment": 148,
+    "proven_item_display_name": 5,
+    "proven_skill_display_name": 23,
     "question_call": 4,
     "settings_display_table": 13,
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 1692
+    "uncertain_context": 1516
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -53,8 +56,9 @@
   "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 1825,
-  "uncertain_review_unique_sources": 1213,
-  "uncertain_review_occurrences": 1619,
+  "proven_display_promotions": 176,
+  "uncertain_review_unique_sources": 1100,
+  "uncertain_review_occurrences": 1476,
   "uncertain_review_exact_mmmerge_matches": 31,
-  "uncertain_review_ambiguous_mmmerge_matches": 15
+  "uncertain_review_ambiguous_mmmerge_matches": 13
 }
