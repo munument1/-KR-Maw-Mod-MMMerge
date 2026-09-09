@@ -9,6 +9,7 @@ on:
       - 'Scripts/**'
       - 'Data/Tables/**'
       - 'tools/extract_maw_strings.py'
+      - 'tools/classify_structural_tables.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/import_mmmerge_memory.py'
@@ -41,6 +42,9 @@ jobs:
 
       - name: Build localization catalog
         run: python tools/extract_maw_strings.py --root . --translations localization/all_translations.tsv --check
+
+      - name: Classify audited structural tables
+        run: python tools/classify_structural_tables.py --root .
 
       - name: Refine individual string patchability
         run: python tools/refine_patchability.py --root .
