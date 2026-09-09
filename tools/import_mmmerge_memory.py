@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 MMMERGE_REPO = "munument1/-KR-MMMerge"
-MMMERGE_COMMIT = "9479900600403300fac0fcadc3c7abdd8d3e2e57"
+MMMERGE_COMMIT = "01b13c9f3c3d4db33ee650ef489fbbdf58765d7e"
 MMMERGE_PO_PATH = "translations/ko/mmmerge.po"
 MMMERGE_PO_URL = f"https://raw.githubusercontent.com/{MMMERGE_REPO}/{MMMERGE_COMMIT}/{MMMERGE_PO_PATH}"
 
