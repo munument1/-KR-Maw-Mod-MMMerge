@@ -1,0 +1,42 @@
+source	translation	status	notes
+Lunar Shard	달의 파편	translated	제작 보석 상태 메시지
+Fire Topaz	화염 토파즈	translated	제작 보석 상태 메시지
+Amethyst Chunk	자수정 덩어리	translated	제작 보석 상태 메시지
+Amber Droplet	호박 방울	translated	제작 보석 상태 메시지
+Royal Amethyst	왕실 자수정	translated	제작 보석 상태 메시지
+Gemcutter's Ruby	보석세공사의 루비	translated	제작 보석 상태 메시지
+Solarstone	태양석	translated	제작 보석 상태 메시지
+Erudite Crystal	현자의 수정	translated	제작 보석 상태 메시지
+Erathian Sapphire	에라시아 사파이어	translated	제작 보석 상태 메시지
+Queen's Diamond	여왕의 다이아몬드	translated	제작 보석 상태 메시지
+Ascended Lunar Shard	승천한 달의 파편	translated	승천 제작 보석
+Ascended Topaz	승천한 토파즈	translated	승천 제작 보석
+Ascended Amethyst	승천한 자수정	translated	승천 제작 보석
+Ascended Amber	승천한 호박	translated	승천 제작 보석
+Ascended Purple Amethyst	승천한 보라 자수정	translated	승천 제작 보석
+Ascended Ruby	승천한 루비	translated	승천 제작 보석
+Ascended Solarstone	승천한 태양석	translated	승천 제작 보석
+Ascended Amber Droplet	승천한 호박 방울	translated	승천 제작 보석
+Ascended Sapphire	승천한 사파이어	translated	승천 제작 보석
+Ascended Diamond	승천한 다이아몬드	translated	승천 제작 보석
+ - Corrupted bag #	 - 손상된 가방 #	translated	저장 무결성 경고 조각
+ - Corrupted item #	 - 손상된 아이템 #	translated	저장 무결성 경고 조각
+ in bag #	, 가방 #	translated	저장 무결성 경고 조각
+\n\nSummary:\n	\n\n요약:\n	translated	저장 무결성 경고 요약
+Total corrupted bags: 	손상된 가방 수: 	translated	저장 무결성 경고
+Total corrupted items: 	손상된 아이템 수: 	translated	저장 무결성 경고
+WARNING!!!\n\nDURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). \nDown below a list of corrupted items:\n\n	경고!!!\n\n자동 저장 중 손상된 아이템/가방이 감지되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 계속 플레이할 수 있지만 권장하지 않습니다.\n아래는 손상된 아이템 목록입니다:\n\n	translated	자동 저장 손상 경고
+WARNING!!!\n\nSAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). \nDown below a list of corrupted items:\n\n	경고!!!\n\n손상된 아이템/가방이 감지되어 저장이 중단되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 다시 저장할 수 있습니다(이번에는 경고가 표시되지 않습니다).\n아래는 손상된 아이템 목록입니다:\n\n	translated	저장 중단 손상 경고
+%s (speaking with %s)	%s (대화 상대: %s)	translated	멀티플레이 집 UI
+Player	플레이어	translated	멀티플레이 기본 이름
+Other players in house:	집 안의 다른 플레이어:	translated	멀티플레이 집 UI
+%s: %s grants you %s exp.	%s: %s에게서 경험치 %s을 획득했습니다.	translated	멀티플레이 퀘스트 경험치 알림
+Locate item	아이템 찾기	translated	텔레로케이터 NPC 토픽
+Locate person	사람 찾기	translated	텔레로케이터 NPC 토픽
+Locate monster	몬스터 찾기	translated	텔레로케이터 NPC 토픽
+Targets found. Realms: Attuned. Time: Attuned.\n\n	대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.\n\n	translated	텔레로케이터 검색 결과
+\nRealms: Detached. Time: Detached.	\n영역: 분리됨. 시간: 분리됨.	translated	텔레로케이터 검색 결과
+\n\nRealms: Detached. Time: Detached.	\n\n영역: 분리됨. 시간: 분리됨.	translated	텔레로케이터 검색 결과
+%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: in %s.\n	%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s\n대상 상태: %s에 있음.\n	translated	텔레로케이터 아이템 검색 결과
+%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s.	%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s.	translated	텔레로케이터 인물 검색 결과
+World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n	세계: 엔로스. 영역: %s. 지점: %s. 연도: %s\n대상 상태: %s, 유형: %s, 상태: %s.\n	translated	텔레로케이터 몬스터 검색 결과
