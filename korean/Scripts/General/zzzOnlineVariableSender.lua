@@ -98,7 +98,7 @@ function events.MultiplayerInitialized()
           pl.HP = math.min(GetMaxHP(pl), (pl.HP or 0) + (t.Amount or 0))
           mem.call(0x4A6FCE, 1, mem.call(0x42D747, 1, mem.u4[0x75CE00]), const.Spells.Heal, id)
           evt.PlaySound(16010)
-          Game.ShowStatusText((t.HealerName or "Ally") .. ": 회복량 " .. tostring(t.Amount or 0) .. " Hit Points")
+          Game.ShowStatusText((t.HealerName or "동료") .. ": 회복량 " .. tostring(t.Amount or 0) .. " 생명력")
         end
 
         return
@@ -326,8 +326,8 @@ function events.Tick()
         local maxHP= GetMaxHP(pl)
         local FSP  = (vars.MAWSETTINGS.buffRework=="ON" and vars.currentManaPool and vars.currentManaPool[0]) and vars.currentManaPool[0] or pl:GetFullSP()
         Game.ShowStatusText(
-          StrColor(0,255,0,  "Health: " .. tostring(Party[0].HP) .. "/" .. tostring(round(maxHP))) ..
-          StrColor(50,50,255,"  Mana: "   .. tostring(Party[0].SP) .. "/" .. tostring(round(FSP)))
+          StrColor(0,255,0,  "생명력: " .. tostring(Party[0].HP) .. "/" .. tostring(round(maxHP))) ..
+          StrColor(50,50,255,"  마나: "   .. tostring(Party[0].SP) .. "/" .. tostring(round(FSP)))
         )
       end
     end

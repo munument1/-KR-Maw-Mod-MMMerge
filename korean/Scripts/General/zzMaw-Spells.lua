@@ -701,7 +701,7 @@ end
 --Tooltips and mana cost fix--
 ------------------------------
 function events.GameInitialized2()
-	Game.SpellsTxt[18].Name="Chain Lightning"
+	Game.SpellsTxt[18].Name="연쇄 번개"
 	Game.SpellsTxt[18].Expert="Spell hits up to 2 times"
 	Game.SpellsTxt[18].Master="Spell hits up to 3 times"
 	Game.SpellsTxt[18].GM="Spell hits up to 4 times"
@@ -723,7 +723,7 @@ function events.GameInitialized2()
 	Game.SpellsTxt[51].GM="Increases damage by 10 plus 2 per skill point"
 
 	--greater heal
-	Game.SpellsTxt[74].Name="Greater Heal"
+	Game.SpellsTxt[74].Name="대치유"
 	Game.SpellsTxt[74].ShortName="Greater Heal"
 	Game.SpellsTxt[74].Normal="n/a\n"
 	Game.SpellsTxt[74].Expert="n/a\n"
@@ -2240,34 +2240,34 @@ function ascension(customIndex)
 				if buffSpell[sp] then
 					local cost, percent=getBuffCost(pl, sp)
 					percent=round(percent*10000)/100
-					local txt=StrColor(255,0,0,"\nNot Active")
+					local txt=StrColor(255,0,0,"\n비활성")
 					if vars.mawbuff[sp] then
 						for j=0, Party.High do
 							if Party[j]:GetIndex()==vars.mawbuff[sp] then
-								txt=StrColor(0,255,0,"\nActive (" .. Party[j].Name .. ")")
+								txt=StrColor(0,255,0,"\n활성 (" .. Party[j].Name .. ")")
 							end
 						end
 					end
 					if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 32) then
-						Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. "\n\nHealth Reserved: " .. StrColor(0,255,0,percent .. "%" .. txt)
+						Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. "\n\n예약 생명력: " .. StrColor(0,255,0,percent .. "%" .. txt)
 					else
-						Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. "\n\nMana Reserved: " .. StrColor(0,100,255,percent .. "%" .. txt)
+						Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. "\n\n예약 마나: " .. StrColor(0,100,255,percent .. "%" .. txt)
 					end					
 				elseif utilitySpell[sp] then
 					local cost, percent=getBuffCost(pl, sp)
 					cost=round(cost)
-					local txt=StrColor(255,0,0,"\nNot Active")
+					local txt=StrColor(255,0,0,"\n비활성")
 					if vars.mawbuff[sp] then
 						for j=0, Party.High do
 							if Party[j]:GetIndex()==vars.mawbuff[sp] then
-								txt=StrColor(0,255,0,"\nActive(" .. Party[j].Name .. ")")
+								txt=StrColor(0,255,0,"\n활성(" .. Party[j].Name .. ")")
 							end
 						end
 					end
 					if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 32) then
-						Game.SpellsTxt[sp].Description=oldSpellTooltips[sp] .. "\n\nHealth Reserved: " .. StrColor(0,255,0,cost .. txt)
+						Game.SpellsTxt[sp].Description=oldSpellTooltips[sp] .. "\n\n예약 생명력: " .. StrColor(0,255,0,cost .. txt)
 					else
-						Game.SpellsTxt[sp].Description=oldSpellTooltips[sp] .. "\n\nMana Reserved: " .. StrColor(0,100,255,cost .. txt)
+						Game.SpellsTxt[sp].Description=oldSpellTooltips[sp] .. "\n\n예약 마나: " .. StrColor(0,100,255,cost .. txt)
 					end			
 				end
 				for v=1,4 do
@@ -2309,10 +2309,10 @@ function ascension(customIndex)
 			local tier=i%11==0 and 11 or i%11
 			local learnableSpells={{1,2,3,4},{5,6,7},{8,9,10},{11}}
 			if not pl.Spells[i] then
-				local txt=StrColor(255,0,0,"\n\nCan't learn")
+				local txt=StrColor(255,0,0,"\n\n습득 불가")
 				for k=1,capMastery do
 					if table.find(learnableSpells[k],tier) then
-						txt=StrColor(255,0,0,"\n\nNot Learned")
+						txt=StrColor(255,0,0,"\n\n미습득")
 					end
 				end
 				
@@ -3443,7 +3443,7 @@ function events.BuildItemInformationBox(t)
 		end
 		if t.Description then
 			local name=Skillz.getName(t.Item.Number-959)
-			t.Description=t.Description .. StrColor(255,0,0, "\n\nYou need at least " .. mastery[m] .. " skill in " ..  name .. " to open the book")
+			t.Description=t.Description .. StrColor(255,0,0, "\n\n이 책을 열려면 최소 " .. mastery[m] .. " 단계 이상의 " ..  name .. " 기술이 필요합니다")
 		end
 	end
 end

@@ -594,16 +594,16 @@ function events.Action(t)
 			local it=pl:GetActiveItem(3)
 			if it then
 				local skill=it:T().Skill
-				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "\n\nCurrent AC from items: " .. StrColor(255,255,100,armorAC) .. "\n"))
-				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "Bonus AC: " .. StrColor(255,255,100,itemArmorClassBonus1) .. "\n"))
-				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "Bonus Resistances: " .. StrColor(255,255,100,itemResistanceBonus1) .. "\n"))
+				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "\n\n아이템으로 얻는 현재 방어력: " .. StrColor(255,255,100,armorAC) .. "\n"))
+				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "추가 방어력: " .. StrColor(255,255,100,itemArmorClassBonus1) .. "\n"))
+				Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "추가 저항: " .. StrColor(255,255,100,itemResistanceBonus1) .. "\n"))
 			end
 			local it=pl:GetActiveItem(0)
 			if it then
 				local skill=it:T().Skill
 				if skill==8 then
-					Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "\n\nBonus AC: " .. StrColor(255,255,100,itemArmorClassBonus2) .. "\n"))
-					Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "Bonus Resistances: " .. StrColor(255,255,100,itemResistanceBonus2) .. "\n"))
+					Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "\n\n추가 방어력: " .. StrColor(255,255,100,itemArmorClassBonus2) .. "\n"))
+					Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. "추가 저항: " .. StrColor(255,255,100,itemResistanceBonus2) .. "\n"))
 				end	
 			end
 			
@@ -1371,7 +1371,7 @@ function events.Tick()
 		else
 			spRegen = round((spRegen)*100)/100
 		end
-		txt= string.format("%s\n\nIncreases spell points based on SP per level and mastery\n\nCurrent SP Regeneration: %s\nNext Level Bonus: %s SP Regen\n",baseMedStr,StrColor(60,60,255,spRegen),StrColor(60,60,255,"+" .. spRegen2))
+		txt= string.format("%s\n\n레벨당 주문력과 숙련도에 따라 주문력 재생이 증가합니다.\n\n현재 주문력 재생: %s\n다음 레벨 보너스: 주문력 재생 %s\n",baseMedStr,StrColor(60,60,255,spRegen),StrColor(60,60,255,"+" .. spRegen2))
 		Skillz.setDesc(28,1,txt)
 		
 		--ascension tooltip

@@ -1730,13 +1730,13 @@ function events.BuildItemInformationBox(t)
 				bonus=bonus+1
 			end
 			if t.Item.BonusExpireTime==1 then
-				t.Name=StrColor(255,128,0,"Ancient " .. t.Name)
+				t.Name=StrColor(255,128,0,"고대 " .. t.Name)
 			elseif t.Item.BonusExpireTime==2 then
-				t.Name=StrColor(255,0,0,"Primordial " .. t.Name)
+				t.Name=StrColor(255,0,0,"태고의 " .. t.Name)
 			elseif t.Item.BonusExpireTime>=100 and t.Item.BonusExpireTime<=200 then
-				t.Name=StrColor(120, 240, 255,"Celestial " .. t.Name)
+				t.Name=StrColor(120, 240, 255,"천상의 " .. t.Name)
 			elseif legendaryEffects[t.Item.BonusExpireTime] then
-				t.Name=StrColor(255,255,30,"Legendary " .. t.Name)
+				t.Name=StrColor(255,255,30,"전설의 " .. t.Name)
 			elseif bonus==3 then
 				t.Name=StrColor(163,53,238,t.Name)
 			elseif bonus==2 then
@@ -1816,7 +1816,7 @@ function events.BuildItemInformationBox(t)
 			end
 			if t.Item.Bonus>0 and t.Item.BonusStrength>0 then
 				if not extraDescription and not vars.extraShown then
-					t.Description = t.Description .. "\n\n" .. StrColor(100,100,100,"Press alt to show craftable stats")
+					t.Description = t.Description .. "\n\n" .. StrColor(100,100,100,"제작 가능한 능력치를 보려면 Alt를 누르세요")
 				end
 			end
 		end
@@ -1858,15 +1858,15 @@ end
 function events.GameInitialized2()
 	itemStatName = {}
 	itemStatName[1] = StrColor(255, 0, 0, "힘")
-	itemStatName[2] = StrColor(255, 128, 0, "Intellect")
+	itemStatName[2] = StrColor(255, 128, 0, "지능")
 	itemStatName[3] = StrColor(0, 127, 255, "인격")
-	itemStatName[4] = StrColor(0, 255, 0, "Endurance")
+	itemStatName[4] = StrColor(0, 255, 0, "인내력")
 	itemStatName[5] = StrColor(255, 255, 0, "정확도")
-	itemStatName[6] = StrColor(127, 0, 255, "Speed")
-	itemStatName[7] = StrColor(255, 255, 255, "Luck")
+	itemStatName[6] = StrColor(127, 0, 255, "민첩성")
+	itemStatName[7] = StrColor(255, 255, 255, "운")
 	itemStatName[8] = StrColor(0, 255, 0, "생명력")
 	itemStatName[9] = StrColor(0, 100, 255, "주문력")
-	itemStatName[10] = StrColor(230, 204, 128, "Armor Class")
+	itemStatName[10] = StrColor(230, 204, 128, "방어력")
 	itemStatName[11] = StrColor(255, 70, 70, "화염 저항")
 	itemStatName[12] = StrColor(173, 216, 230, "공기 저항")
 	itemStatName[13] = StrColor(100, 180, 255, "물 저항")
@@ -1874,7 +1874,7 @@ function events.GameInitialized2()
 	itemStatName[15] = StrColor(200, 200, 255, "정신 저항")
 	itemStatName[16] = StrColor(255, 192, 203, "육체 저항")
 	itemStatName[17] = StrColor(255,255,153, "연금술 기술")
-	itemStatName[18] = StrColor(255,255,153, "Repair skill")
+	itemStatName[18] = StrColor(255,255,153, "수리 기술")
 	itemStatName[19] = StrColor(255,255,153, "함정 해제 기술")
 	itemStatName[20] = StrColor(255,255,153, "아이템 감정 기술")
 	itemStatName[21] = StrColor(255,255,153, "몬스터 감정 기술")
@@ -2347,9 +2347,9 @@ local modifiedBookValuesMM6 =
 
 function events.GameInitialized2()
 	--greater heal book 
-	Game.ItemsTxt[473].Name="Greater Heal"
-	Game.ItemsTxt[1275].Name="Greater Heal"
-	Game.ItemsTxt[1989].Name="Greater Heal"
+	Game.ItemsTxt[473].Name="대치유"
+	Game.ItemsTxt[1275].Name="대치유"
+	Game.ItemsTxt[1989].Name="대치유"
 	--add crafting material price
 	for i=1,20 do
 		Game.ItemsTxt[1040+i].Value=i*1000
@@ -2497,7 +2497,7 @@ function events.BuildItemInformationBox(t)
 			txt="\n\nScale with player level, up to level 900."
 		end
 		if t.Item.BonusExpireTime>=1 then
-			txt=StrColor(120, 240, 255,"\n\nArtifact Level: " .. t.Item.BonusExpireTime)
+			txt=StrColor(120, 240, 255,"\n\n유물 레벨: " .. t.Item.BonusExpireTime)
 		end
 		t.Description = t.Description .. txt
 	end
@@ -2754,14 +2754,14 @@ function events.BuildItemInformationBox(t)
 			local increaseDPSPercent=round(math.max(newDPS1, newDPS2, newDPS3)/math.max(oldDPS1, oldDPS2, oldDPS3)*10000-10000)/100
 			local increaseVitalityPercent=round(newVitality/oldVitality*10000-10000)/100
 			if increaseDPSPercent<0 then
-				t.Description = t.Description .. "\n\n" .. "Power: " .. StrColor(255,0,0,increaseDPSPercent .. "%")
+				t.Description = t.Description .. "\n\n" .. "위력: " .. StrColor(255,0,0,increaseDPSPercent .. "%")
 			elseif increaseDPSPercent>0 then
-				t.Description = t.Description .. "\n\n" .. "Power: " .. StrColor(0,255,0,"+" .. increaseDPSPercent .. "%")
+				t.Description = t.Description .. "\n\n" .. "위력: " .. StrColor(0,255,0,"+" .. increaseDPSPercent .. "%")
 			end
 			if increaseVitalityPercent<0 then
-				t.Description = t.Description .. "\n" .. "Vitality: " .. StrColor(255,0,0, increaseVitalityPercent .. "%")
+				t.Description = t.Description .. "\n" .. "활력: " .. StrColor(255,0,0, increaseVitalityPercent .. "%")
 			elseif increaseVitalityPercent>0 then
-				t.Description = t.Description .. "\n" .. "Vitality: " .. StrColor(0,255,0,"+" .. increaseVitalityPercent .. "%")
+				t.Description = t.Description .. "\n" .. "활력: " .. StrColor(0,255,0,"+" .. increaseVitalityPercent .. "%")
 			end
 			--restore item
 			it.BodyLocation=itemBackup["BodyLocation"]
@@ -2809,9 +2809,9 @@ function events.BuildItemInformationBox(t)
 				txt=StrColor(255,0,0,txt)
 			end
 			if t.Item.BonusExpireTime>100 and t.Item.BonusExpireTime<200 then
-				txt=StrColor(120, 240, 255,"\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600.")
+				txt=StrColor(120, 240, 255,"\n\n천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 600레벨까지 적용됩니다.")
 				if vars.madnessMode then
-					txt=StrColor(120, 240, 255,"\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000.")
+					txt=StrColor(120, 240, 255,"\n\n천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 1000레벨까지 적용됩니다.")
 				end
 			end
 			t.Description = t.Description .. txt
@@ -4705,7 +4705,7 @@ function events.BuildItemInformationBox(t)
 			if vars.MAWSETTINGS.buffRework=="ON" and vars.mawbuff[91] then --vampiric aura
 				local s, m, level=getBuffSkill(91)
 				if m>=1 then
-					t.Description=StrColor(255,255,153,"Vampiric Aura: damage done will restore player HP.\n\n") .. t.Description
+					t.Description=StrColor(255,255,153,"흡혈 오라: 가한 피해에 따라 플레이어의 생명력이 회복됩니다.\n\n") .. t.Description
 				end
 			end
 		end

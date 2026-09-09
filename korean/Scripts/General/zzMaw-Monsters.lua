@@ -2887,7 +2887,7 @@ function nightmare()
 		return
 	end
 	if Game.BolsterAmount==250 then
-			answer=Question("You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)")		if answer=="yes" or answer=="Yes" or answer=="YES" then
+			answer=Question("악몽 모드를 활성화했습니다. 몬스터가 훨씬 강해지고 전투 중 저장하거나 순간이동으로 빠져나갈 수 없지만, 발견하는 아이템도 훨씬 강력해집니다.\n던전의 몬스터 대부분을 처치하기 전에 떠나면 몬스터가 다시 생성됩니다.\n던전을 클리어하면 추가 보상을 받습니다.\n다시 생성된 몬스터는 경험치와 전리품을 적게 주며, 진정한 악몽을 활성화하면 되돌릴 수 없습니다. 정말 진행하시겠습니까? (yes/no 입력)")		if answer=="yes" or answer=="Yes" or answer=="YES" then
 			vars.trueNightmare=true
 			Game.BolsterAmount=300
 			Sleep(1)

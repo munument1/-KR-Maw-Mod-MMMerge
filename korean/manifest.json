@@ -1,26 +1,30 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 157,
-  "translated_entries_with_patchable_occurrences": 155,
-  "patchable_occurrences_targeted": 251,
-  "skipped_unpatchable_occurrences_for_translated_sources": 42,
+  "translated_entries": 240,
+  "translated_entries_with_patchable_occurrences": 238,
+  "patchable_occurrences_targeted": 352,
+  "skipped_unpatchable_occurrences_for_translated_sources": 66,
   "changed_files": [
     {
       "file": "Scripts/General/MenuExtraSettings.lua",
       "replacements": 12
     },
     {
+      "file": "Scripts/General/NPCFollowers.lua",
+      "replacements": 2
+    },
+    {
       "file": "Scripts/General/zzAlchemy.lua",
-      "replacements": 22
+      "replacements": 47
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 5
+      "replacements": 14
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 20
+      "replacements": 26
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -28,23 +32,23 @@
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 32
+      "replacements": 54
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
-      "replacements": 2
+      "replacements": 7
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 26
+      "replacements": 27
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 78
+      "replacements": 93
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
-      "replacements": 4
+      "replacements": 7
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
@@ -52,7 +56,11 @@
     },
     {
       "file": "Scripts/General/zzzOnlineVariableSender.lua",
-      "replacements": 1
+      "replacements": 5
+    },
+    {
+      "file": "Scripts/Global/Quest_SavingGoobers.lua",
+      "replacements": 3
     },
     {
       "file": "Scripts/Global/zzMAWPotions.lua",
@@ -68,6 +76,10 @@
     },
     {
       "file": "Scripts/Global/zzMaw_Mapping.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Maps/7d20.lua",
       "replacements": 1
     },
     {
@@ -112,7 +124,7 @@
     },
     {
       "file": "Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua",
-      "replacements": 2
+      "replacements": 7
     }
   ],
   "warnings": [

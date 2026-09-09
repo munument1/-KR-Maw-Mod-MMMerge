@@ -72,28 +72,41 @@ maw-aeddfe22a01f	untranslated	class	Tick			Scripts/General/zzClasses.lua	1484	3
 maw-417ced4d83f0	untranslated	class	totalDuration			Scripts/General/zzClasses.lua	866	1	
 maw-b0b73dfa2619	untranslated	class	totalForce			Scripts/General/zzClasses.lua	866	1	
 maw-f099e38eb393	untranslated	class	Ultimate 			Scripts/General/zzClasses.lua	98	1	
-maw-ae24a945c0d5	untranslated	item	"
+maw-ae24a945c0d5	translated	item	"
 
-Artifact Level: "			Scripts/General/zzMaw-Items.lua	2500	1	
-maw-0968edf89220	untranslated	item	"
+Artifact Level: "	"
 
-Bonus AC: "			Scripts/General/zzMAW-Skills.lua	605	1	
-maw-b11fcd927849	untranslated	item	"
+유물 레벨: "		Scripts/General/zzMaw-Items.lua	2500	1	아이템 툴팁
+maw-0968edf89220	translated	item	"
 
-Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000."			Scripts/General/zzMaw-Items.lua	2814	1	
-maw-f051a63b6b28	untranslated	item	"
+Bonus AC: "	"
 
-Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600."			Scripts/General/zzMaw-Items.lua	2812	1	
-maw-0c5e39bde9d5	untranslated	item	"
+추가 방어력: "		Scripts/General/zzMAW-Skills.lua	605	1	스킬 설명
+maw-b11fcd927849	translated	item	"
 
-Current AC from items: "			Scripts/General/zzMAW-Skills.lua	597	1	
+Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000."	"
+
+천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 1000레벨까지 적용됩니다."		Scripts/General/zzMaw-Items.lua	2814	1	천상 아이템 설명
+maw-f051a63b6b28	translated	item	"
+
+Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600."	"
+
+천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 600레벨까지 적용됩니다."		Scripts/General/zzMaw-Items.lua	2812	1	천상 아이템 설명
+maw-0c5e39bde9d5	translated	item	"
+
+Current AC from items: "	"
+
+아이템으로 얻는 현재 방어력: "		Scripts/General/zzMAW-Skills.lua	597	1	스킬 설명
 maw-4b6f075b0000	untranslated	item	"
 
 Item Bonus Power: "			Scripts/General/zzMaw-Items.lua	1839	1	
-maw-04e85c28a52b	untranslated	item	"
+maw-04e85c28a52b	translated	item	"
 
 Item Modifier:
-Two Handed Weapons: "			Scripts/General/zzAlchemy.lua	719	1	
+Two Handed Weapons: "	"
+
+아이템 보정치:
+양손 무기: "		Scripts/General/zzAlchemy.lua	719	1	연금술 설명
 maw-74f707e4e26c	untranslated	item	"
 
 Level Required: "			Scripts/General/zzMaw-Items.lua	2802	1	
@@ -147,9 +160,9 @@ maw-a5f8e6eb0d8a	untranslated	item	 to all Seven Statistics.			Scripts/General/z
 maw-1996ede22cbc	untranslated	item	 to Endurance, Armor, Hit points.			Scripts/General/zzMaw-Items.lua	2046	1	
 maw-10b488c55e16	untranslated	item	 to Seven Stats, HP, SP, Armor, Resistances.			Scripts/General/zzMaw-Items.lua	2045	2	
 maw-a9eab90264a9	untranslated	item	 to spell damage and +			Scripts/General/zzMaw-Items.lua	2043	1	
-maw-d6e950b44a53	untranslated	item	% craft items drop chances 		% c	Scripts/General/zzMaw-Maps.lua	2086	1	
-maw-a49609a5231f	untranslated	item	% item quality 		% i	Scripts/General/zzMaw-Maps.lua	2086	1	
-maw-abdb923af06a	untranslated	item	% monster density			Scripts/General/zzMaw-Maps.lua	2086	1	
+maw-d6e950b44a53	translated	item	% craft items drop chances 	% 제작 재료 드롭 확률 		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
+maw-a49609a5231f	translated	item	% item quality 	% 아이템 품질 		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
+maw-abdb923af06a	translated	item	% monster density	% 몬스터 밀도		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
 maw-9638f701de3f	untranslated	item	(%d+)		%d	Scripts/General/zzMaw-Items.lua	2492	1	
 maw-ac71687e6681	untranslated	item	7item192			Scripts/General/zzMaw-Spells.lua	3289	1	
 maw-2c40f0c45c24	untranslated	item	7item193			Scripts/General/zzMaw-Spells.lua	3290	1	
@@ -161,10 +174,10 @@ maw-ddd068101243	untranslated	item	Air			Scripts/General/zzMaw-Items.lua	4258	1
 maw-2b43cb83d2c0	untranslated	item	Air Magic Skill +			Scripts/General/zzMaw-Items.lua	2032	1	
 maw-fc703d7f3f16	translated	item	Air Resistance	공기 저항		Data/Tables/Spells2.txt	16	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-85c3b29e673f	translated	item	Alchemy skill	연금술 기술		Scripts/General/zzMaw-Items.lua	1876	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-c4c29e7aed76	untranslated	item	Ally			Scripts/General/zzMaw-Monsters.lua	2326	3	
+maw-c4c29e7aed76	translated	item	Ally	동료		Scripts/General/zzMaw-Monsters.lua	2326	3	멀티플레이 회복자 기본명
 maw-a7c94b10b666	untranslated	item	Ancient			Scripts/General/zzMaw-Items.lua	461	2	
-maw-d1745b2ab5cc	untranslated	item	Ancient 			Scripts/General/zzMaw-Items.lua	1733	1	
-maw-8261e56f515b	untranslated	item	Armor Class			Scripts/General/zzMaw-Items.lua	1869	2	
+maw-d1745b2ab5cc	translated	item	Ancient 	고대 		Scripts/General/zzMaw-Items.lua	1733	1	아이템 등급 접두어
+maw-8261e56f515b	translated	item	Armor Class	방어력		Scripts/General/zzMaw-Items.lua	1869	2	기존 MMMerge 능력치 용어
 maw-ff2b4cfa1b74	untranslated	item	Armor: +			Scripts/General/zzMaw-Items.lua	1478	2	
 maw-1b811f3888ba	untranslated	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	
 maw-65e9268e6bfb	translated	item	Armsmaster skill	무기 전문가 기술		Scripts/General/zzMaw-Items.lua	1881	2	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -176,14 +189,14 @@ maw-bef685960d0b	untranslated	item	Ascended Ruby			Scripts/General/zzMaw-Items.l
 maw-60347ffcca9c	untranslated	item	Ascended Sapphire			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-0828378541e3	untranslated	item	Ascended Topaz			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-249a5adae437	untranslated	item	Attack: +			Scripts/General/zzMaw-Items.lua	1506	2	
-maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger		% s	Scripts/General/zzMaw-Items.lua	1376	1	
+maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger			Scripts/General/zzMaw-Items.lua	1376	1	
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-bee8f9b9eeaf	untranslated	item	Body Magic Skill +			Scripts/General/zzMaw-Items.lua	2033	1	
 maw-2657e3448e5a	translated	item	Body Resistance	육체 저항		Data/Tables/Spells2.txt	71	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e8e87b3b9240	untranslated	item	BodyLocation			Scripts/General/zzMaw-Items.lua	2713	2	
 maw-4d963cfab70d	untranslated	item	Bonus			Scripts/General/zzMaw-Item-Sorter.lua	87	8	
-maw-a2d599d80f9d	untranslated	item	Bonus AC: 			Scripts/General/zzMAW-Skills.lua	598	1	
-maw-10e8a7da9eec	untranslated	item	Bonus Resistances: 			Scripts/General/zzMAW-Skills.lua	599	2	
+maw-a2d599d80f9d	translated	item	Bonus AC: 	추가 방어력: 		Scripts/General/zzMAW-Skills.lua	598	1	스킬 설명
+maw-10e8a7da9eec	translated	item	Bonus Resistances: 	추가 저항: 		Scripts/General/zzMAW-Skills.lua	599	2	스킬 설명
 maw-56e435683ee1	untranslated	item	Bonus2			Scripts/General/zzMaw-Item-Sorter.lua	88	7	
 maw-8fac58419cfd	untranslated	item	BonusExpireTime			Scripts/General/zzMaw-Item-Sorter.lua	89	7	
 maw-b659b7855673	untranslated	item	BonusStrength			Scripts/General/zzMaw-Item-Sorter.lua	90	7	
@@ -198,19 +211,19 @@ maw-1d3419544e86	untranslated	item	CalcItemValue			Scripts/Structs/extraEditable
 maw-81c77df4cdd0	untranslated	item	CalcStatBonusByItems			Scripts/Core/events.lua	1869	1	
 maw-e2ed9286499b	untranslated	item	CanIdentifyItem			Scripts/General/ExtraEvents.lua	421	1	
 maw-4abcee850355	untranslated	item	CanRepairItem			Scripts/General/ExtraEvents.lua	450	1	
-maw-d024bd3137d0	untranslated	item	Celestial 			Scripts/General/zzMaw-Items.lua	1737	1	
+maw-d024bd3137d0	translated	item	Celestial 	천상의 		Scripts/General/zzMaw-Items.lua	1737	1	아이템 등급 접두어
 maw-cfc370a20b05	untranslated	item	Charges			Scripts/General/zzMaw-Item-Sorter.lua	92	7	
 maw-7de90a65241a	untranslated	item	Common			Scripts/General/zzMaw-Items.lua	461	2	
 maw-2f4979324e03	untranslated	item	Condition			Scripts/General/zzMaw-Item-Sorter.lua	93	7	
 maw-f032f4de767e	untranslated	item	Crafting Item			Scripts/General/zzAlchemy.lua	1410	1	
-maw-5cc5b9edc5f5	untranslated	item	Crit chance increased by 10% and crit chance over 100% increases total damage		% a % i	Scripts/General/zzMaw-Items.lua	1368	1	
+maw-5cc5b9edc5f5	untranslated	item	Crit chance increased by 10% and crit chance over 100% increases total damage			Scripts/General/zzMaw-Items.lua	1368	1	
 maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	1	
 maw-6c3828d38527	untranslated	item	Damage: 			Scripts/General/zzMaw-Items.lua	1506	2	
 maw-71db089ac027	untranslated	item	Dark Magic Skill +			Scripts/General/zzMaw-Items.lua	2034	1	
 maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-c45e1332c406	untranslated	item	Death and Eradication Immunity			Scripts/General/zzMaw-Items.lua	1281	1	
 maw-7505d64a54e0	untranslated	item	default			Scripts/General/pseudoSpawnpoint.lua	55	5	
-maw-154f885b3a41	untranslated	item	Dimension Map			Scripts/General/zzMaw-Maps.lua	1914	1	
+maw-154f885b3a41	translated	item	Dimension Map	차원 지도		Scripts/General/zzMaw-Maps.lua	1914	1	MAW 아이템명
 maw-76af4ec46125	translated	item	Disarm skill	함정 해제 기술		Scripts/General/zzMaw-Items.lua	1878	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4be181e4cac8	untranslated	item	disease			Scripts/General/zzMaw-Items.lua	1255	3	
 maw-ba1ff3be0f0c	untranslated	item	Disease and Curse Immunity			Scripts/General/zzMaw-Items.lua	1275	1	
@@ -219,8 +232,8 @@ maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMa
 maw-40089dc04e07	untranslated	item	Each attack reduces monster resistances by 1			Scripts/General/zzMaw-Items.lua	1386	1	
 maw-4d7b02dec590	untranslated	item	Earth Magic Skill +			Scripts/General/zzMaw-Items.lua	2035	1	
 maw-f3b8bd9acc81	translated	item	Earth Resistance	대지 저항		Data/Tables/Spells2.txt	38	3	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-ac75574810d6	untranslated	item	Endless Potion			Scripts/General/zzAlchemy.lua	1419	1	
-maw-cf6427142652	untranslated	item	Endurance			Data/Tables/Class Starting Stats.txt	8	4	
+maw-ac75574810d6	translated	item	Endless Potion	무한 물약		Scripts/General/zzAlchemy.lua	1419	1	MAW 아이템명
+maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting Stats.txt	8	4	기존 MMMerge 능력치 용어
 maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	
 maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-54c81b0a7634	untranslated	item	Explosive Impact! (half damage)			Scripts/General/zzMaw-Items.lua	1274	2	
@@ -236,7 +249,7 @@ maw-f50c8c159fdc	untranslated	item	"Grant 1 enchant to an unenchanted item, base
 Require at least 20 power to work.
 "			Scripts/General/zzAlchemy.lua	486	1	
 maw-965850f0c879	translated	item	Great might	강대한 힘		Scripts/General/zzMaw-Items.lua	1884	1	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-4ccaf5230f3a	untranslated	item	Greater Heal			Scripts/General/zzMaw-Items.lua	2350	5	
+maw-4ccaf5230f3a	translated	item	Greater Heal	대치유		Scripts/General/zzMaw-Items.lua	2350	5	기존 MMMerge 주문 용어
 maw-bdec310b7e9d	untranslated	item	Hardened			Scripts/General/zzMaw-Item-Sorter.lua	94	7	
 maw-5a3199f1e727	untranslated	item	Heavy, yet seemingly light as a feather in skilled hands, Excalibur confers great might upon its wielder.  Opponents do not easily walk away from blows struck by this legendary weapon.  (Special Powers:  +			Scripts/General/zzMaw-Items.lua	2482	1	
 maw-125dcf82b273	translated	item	Hit Points	생명력		Scripts/General/zzMaw-Items.lua	1867	4	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -245,7 +258,7 @@ maw-73ef8997e9d8	translated	item	ID Monster skill	몬스터 감정 기술		Scrip
 maw-dbdb8b7d61ff	untranslated	item	Identified			Scripts/General/zzMaw-Item-Sorter.lua	95	7	
 maw-9bf0f8ff5f5d	untranslated	item	identify			Scripts/General/zzMaw-Items.lua	4533	4	
 maw-eaa6a5241bcd	untranslated	item	Immunity to all status effects from monsters			Scripts/General/zzMaw-Items.lua	1367	1	
-maw-d377d83f7ddd	untranslated	item	Increase melee damage by 5% for each enemy in the nearbies		% f	Scripts/General/zzMaw-Items.lua	1377	1	
+maw-d377d83f7ddd	untranslated	item	Increase melee damage by 5% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1377	1	
 maw-569ea1cd4f01	untranslated	item	Increase Melee weapon skill by 10			Scripts/General/zzMaw-Items.lua	1390	1	
 maw-87498a8b590b	untranslated	item	Increase the effect of resistances base enchants by 50%			Scripts/General/zzMaw-Items.lua	1371	1	
 maw-2032e6152f7f	untranslated	item	Increases Ascension Skill level by 10			Scripts/General/zzMaw-Items.lua	1381	1	
@@ -253,7 +266,7 @@ maw-d2147f191411	untranslated	item	"Increases item's roughness, making it more r
 "			Scripts/General/zzAlchemy.lua	484	1	
 maw-a159cdb85f6f	untranslated	item	insanity			Scripts/General/zzMaw-Items.lua	1256	1	
 maw-f951f6d3da95	untranslated	item	Insanity and SP drain Immunity			Scripts/General/zzMaw-Items.lua	1276	1	
-maw-e8d4bafc56e1	untranslated	item	Intellect			Data/Tables/Class Starting Stats.txt	4	4	
+maw-e8d4bafc56e1	translated	item	Intellect	지능		Data/Tables/Class Starting Stats.txt	4	4	기존 MMMerge 능력치 용어
 maw-869d847d171a	untranslated	item	item182			Scripts/General/zzAlchemy.lua	7	1	
 maw-203104e1992f	untranslated	item	item209			Scripts/General/zzMaw-Spells.lua	3290	1	
 maw-14c265704093	untranslated	item	item210			Scripts/General/zzMaw-Spells.lua	3289	1	
@@ -261,17 +274,17 @@ maw-c7857a25fa7f	untranslated	item	item280			Scripts/General/zzAlchemy.lua	1422	
 maw-ee2105329f31	untranslated	item	ItemAdditionalDamage			Scripts/Core/events.lua	2342	1	
 maw-51d750b72c62	untranslated	item	ItemGenerated			Scripts/Core/events.lua	2196	1	
 maw-44d25b5d1b6d	untranslated	item	Items			Scripts/General/zzAlchemy.lua	1303	36	
-maw-3e1561e2a89a	untranslated	item	Killing a Monster Restores 10% of Health and Mana		% o	Scripts/General/zzMaw-Items.lua	1380	1	
+maw-3e1561e2a89a	untranslated	item	Killing a Monster Restores 10% of Health and Mana			Scripts/General/zzMaw-Items.lua	1380	1	
 maw-e77589efb2dc	untranslated	item	Killing a monster with a single-target attack halves the recovery time			Scripts/General/zzMaw-Items.lua	1365	1	
 maw-a8b7dd52190d	untranslated	item	Leech also restores Mana, but its effect is halved			Scripts/General/zzMaw-Items.lua	1388	1	
 maw-9b1a119b3361	untranslated	item	Leech overhealing heals the most injured party member instead			Scripts/General/zzMaw-Items.lua	1384	1	
 maw-b7e8916505bf	untranslated	item	Legendary			Scripts/General/zzMaw-Items.lua	461	2	
-maw-888b9e5fb8ac	untranslated	item	Legendary 			Scripts/General/zzMaw-Items.lua	1739	1	
+maw-888b9e5fb8ac	translated	item	Legendary 	전설의 		Scripts/General/zzMaw-Items.lua	1739	1	아이템 등급 접두어
 maw-2f14d8a3258f	untranslated	item	Light Magic Skill +			Scripts/General/zzMaw-Items.lua	2037	1	
 maw-a520c0870cdf	untranslated	item	Locate item			Scripts/Global/Quest_SavingGoobers.lua	856	1	
 maw-d219c68101f5	untranslated	item	Location			Scripts/General/zzMaw-MultiBag.lua	197	1	
 maw-e7f79931cf1c	untranslated	item	Longsword			Scripts/General/zzMaw-Items.lua	333	1	
-maw-1c295a8aa571	untranslated	item	Luck			Scripts/General/zzMaw-Items.lua	1866	2	
+maw-1c295a8aa571	translated	item	Luck	운		Scripts/General/zzMaw-Items.lua	1866	2	기존 MMMerge 능력치 용어
 maw-099db9f7dc17	untranslated	item	LUCK			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-b2efd3606c37	untranslated	item	Mace			Scripts/General/zzMaw-Items.lua	332	1	
 maw-054968202fd2	untranslated	item	MaxCharges			Scripts/General/zzMaw-Item-Sorter.lua	96	7	
@@ -298,12 +311,12 @@ maw-2981a383917f	translated	item	Personality	인격		Data/Tables/Class Starting 
 maw-e6aa09fd40ce	untranslated	item	poison			Scripts/General/zzMaw-Items.lua	1258	3	
 maw-ff11ae2fd1e0	untranslated	item	Poison and weakness Immunity			Scripts/General/zzMaw-Items.lua	1278	1	
 maw-0fff6c603c71	untranslated	item	Potion Bottle			Scripts/General/zzAlchemy.lua	1420	1	
-maw-d5f5800b1e69	untranslated	item	Potion Deleted in Austerity			Scripts/General/zzAlchemy.lua	17	3	
-maw-ce1b7d972262	untranslated	item	Potion Deleted in MAW			Scripts/General/zzAlchemy.lua	11	1	
+maw-d5f5800b1e69	translated	item	Potion Deleted in Austerity	절제 모드에서 삭제된 물약		Scripts/General/zzAlchemy.lua	17	3	내부 대체 아이템 표시명
+maw-ce1b7d972262	translated	item	Potion Deleted in MAW	MAW에서 삭제된 물약		Scripts/General/zzAlchemy.lua	11	1	내부 대체 아이템 표시명
 maw-b573f24e55d6	untranslated	item	power			Scripts/General/zzMaw-Items.lua	2265	2	
 maw-231709218cf1	untranslated	item	premature ageing			Scripts/General/zzMaw-Items.lua	1260	1	
 maw-e81582b9da67	untranslated	item	Primordial			Scripts/General/zzMaw-Items.lua	461	2	
-maw-5b252caa0860	untranslated	item	Primordial 			Scripts/General/zzMaw-Items.lua	1735	1	
+maw-5b252caa0860	translated	item	Primordial 	태고의 		Scripts/General/zzMaw-Items.lua	1735	1	아이템 등급 접두어
 maw-a6a535b865db	untranslated	item	Ranged			Scripts/General/zzMAW-Skills.lua	352	7	
 maw-cce370d2f978	untranslated	item	Rare			Scripts/General/zzMaw-Items.lua	461	2	
 maw-51b0953b5b08	untranslated	item	"Recipes:
@@ -319,19 +332,19 @@ Add Yellow: Water Breathing
 Add Orange: Magic Protection
 Add Green: Enchant Item"			Scripts/General/zzAlchemy.lua	518	1	
 maw-e936025d6e54	untranslated	item	Reduce all damage taken by 10%			Scripts/General/zzMaw-Items.lua	1374	1	
-maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies		% f	Scripts/General/zzMaw-Items.lua	1378	1	
+maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1378	1	
 maw-b6d59589a7b6	untranslated	item	Reduces Physical damage taken by 15%			Scripts/General/zzMaw-Items.lua	1282	1	
 maw-21b8369fde47	untranslated	item	Refundable			Scripts/General/zzMaw-Item-Sorter.lua	99	7	
 maw-52d57e33f655	untranslated	item	Regenerates Hit Points and Meditation Skill +			Scripts/General/zzMaw-Items.lua	2061	1	
 maw-e8a7d6f2bc41	untranslated	item	repair			Scripts/General/zzMaw-Items.lua	4533	3	
-maw-e081e3c7a2aa	untranslated	item	Repair skill			Scripts/General/zzMaw-Items.lua	1877	2	
+maw-e081e3c7a2aa	translated	item	Repair skill	수리 기술		Scripts/General/zzMaw-Items.lua	1877	2	기존 MMMerge 스킬 용어
 maw-15d2977134a7	untranslated	item	ResistanceBase			Scripts/General/zzMaw-Items.lua	4271	1	
 maw-36527bea3870	untranslated	item	ResistanceBonus			Scripts/General/zzMaw-Items.lua	4271	1	
 maw-5a0bd452507d	untranslated	item	respawn			Scripts/General/zzMaw-Monsters.lua	2326	2	
 maw-c3ca5f787365	untranslated	item	sleep			Scripts/General/zzMaw-Items.lua	1259	1	
 maw-68b55f23c0fb	untranslated	item	Sleep and Unconscious Immunity			Scripts/General/zzMaw-Items.lua	1279	1	
 maw-597e5a16ff16	untranslated	item	Solarstone			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-2d2cb022bc3d	untranslated	item	Speed			Data/Tables/Class Starting Stats.txt	12	6	
+maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Stats.txt	12	6	기존 MMMerge 능력치 용어
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
 maw-bec5022aa7fd	untranslated	item	spell drain			Scripts/General/zzMaw-Items.lua	1256	1	
 maw-3c6614c31d79	translated	item	Spell Points	주문력		Scripts/General/zzMaw-Items.lua	1868	2	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -340,7 +353,7 @@ maw-868eb07bb6ca	untranslated	item	Spirit Magic Skill +			Scripts/General/zzMaw-
 maw-678dd8a69cfc	untranslated	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	
 maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	1	
 maw-c1988ff4c89d	untranslated	item	Stone and premature ageing Immunity			Scripts/General/zzMaw-Items.lua	1280	1	
-maw-5c17772bd576	untranslated	item	Successfully covering an ally restores 3% of your HP		% o	Scripts/General/zzMaw-Items.lua	1379	1	
+maw-5c17772bd576	untranslated	item	Successfully covering an ally restores 3% of your HP			Scripts/General/zzMaw-Items.lua	1379	1	
 maw-4caf562d9a79	untranslated	item	TemporaryBonus			Scripts/General/zzMaw-Item-Sorter.lua	101	7	
 maw-e326ae491ddf	untranslated	item	The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.			Scripts/General/zzAlchemy.lua	1403	1	
 maw-5218d84b844a	untranslated	item	"This Eye allows to add a Special enchant to any equipment that has already 2 base enchants
@@ -380,12 +393,15 @@ maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	12
 maw-fb360f9c09ac	untranslated	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
 maw-5397e0583f14	untranslated	item	Yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
 maw-8fff039853f5	untranslated	item	YES			Scripts/General/zzMaw-Monsters.lua	2895	1	
-maw-b50c97f9f151	untranslated	item	"You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
+maw-b50c97f9f151	translated	item	"You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
 Leaving a dungeon before killing most of them will cause monsters to respawn.
 Clearing a dungeon will grant you extra rewards.
-Respawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"			Scripts/General/zzMaw-Monsters.lua	2895	1	
+Respawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"	"악몽 모드를 활성화했습니다. 몬스터가 훨씬 강해지고 전투 중 저장하거나 순간이동으로 빠져나갈 수 없지만, 발견하는 아이템도 훨씬 강력해집니다.
+던전의 몬스터 대부분을 처치하기 전에 떠나면 몬스터가 다시 생성됩니다.
+던전을 클리어하면 추가 보상을 받습니다.
+다시 생성된 몬스터는 경험치와 전리품을 적게 주며, 진정한 악몽을 활성화하면 되돌릴 수 없습니다. 정말 진행하시겠습니까? (yes/no 입력)"		Scripts/General/zzMaw-Monsters.lua	2895	1	yes/no 입력 토큰 보존
 maw-2b32b1b45260	untranslated	item	"Your hits deal 2% of current monster HP as physical damage (1% for AoE, multi-hit spells and arrows).
-Damage is increased by weapon base attack speed or Ascensions for spells."		% f % o	Scripts/General/zzMaw-Items.lua	1373	1	
+Damage is increased by weapon base attack speed or Ascensions for spells."			Scripts/General/zzMaw-Items.lua	1373	1	
 maw-2906e6541c50	untranslated	item	Your weapon enchants can deal critical damage			Scripts/General/zzMaw-Items.lua	1382	1	
 maw-f01fcc19ca95	untranslated	item	Your weapon enchants scale with the highest between might/int./pers.			Scripts/General/zzMaw-Items.lua	1375	1	
 maw-d778d9e96111	untranslated	map	"""overrept"""			Scripts/Maps/out03.lua	5	1	
@@ -499,39 +515,43 @@ maw-a32d202b1ada	untranslated	map	torch01			Scripts/Maps/BrBase.lua	644	1
 maw-f152a5fbe9dc	untranslated	map	trashheap			Scripts/Maps/BrBase.lua	443	1	
 maw-2038bdec9210	untranslated	map	Up			Scripts/Maps/BrBase.lua	1016	3	
 maw-965536c6dc0d	untranslated	map	WaterResistance			Scripts/Maps/outb1.lua	51	3	
-maw-fa0ae8943c6b	untranslated	map	Wine Rack			Scripts/Maps/7d20.lua	2	1	
+maw-fa0ae8943c6b	translated	map	Wine Rack	와인 선반		Scripts/Maps/7d20.lua	2	1	맵 힌트
 maw-e85e950b3fd4	untranslated	misc	"	            %s%s "		%s %s	Scripts/General/zzMaw-Stats.lua	1063	6	
 maw-ca13c639b45e	untranslated	misc	"
 
 Summary:
 "			Scripts/General/zzMaw-Item-Sorter.lua	730	1	
-maw-98ffa61e0f17	untranslated	misc	"
-Body Armor: "			Scripts/General/zzAlchemy.lua	720	1	
-maw-00628d9c97b9	untranslated	misc	"
-Bonus: "			Scripts/General/zzAlchemy.lua	718	1	
+maw-98ffa61e0f17	translated	misc	"
+Body Armor: "	"
+갑옷: "		Scripts/General/zzAlchemy.lua	720	1	연금술 아이템 보정치
+maw-00628d9c97b9	translated	misc	"
+Bonus: "	"
+보너스: "		Scripts/General/zzAlchemy.lua	718	1	연금술 아이템 보정치
 maw-1c7713b80d7f	untranslated	misc	"
 call absolute "			Scripts/Core/events.lua	396	1	
-maw-a0dd38423fc8	untranslated	misc	"
-Helm-Boots-Gloves-Bow: "			Scripts/General/zzAlchemy.lua	721	1	
+maw-a0dd38423fc8	translated	misc	"
+Helm-Boots-Gloves-Bow: "	"
+투구-장화-장갑-활: "		Scripts/General/zzAlchemy.lua	721	1	연금술 아이템 보정치
 maw-6b65945a62a3	untranslated	misc	"
 Realms: Detached. Time: Detached."			Scripts/Global/Quest_SavingGoobers.lua	796	2	
-maw-cf1e3bbc96ac	untranslated	misc	"
-Rings: "			Scripts/General/zzAlchemy.lua	722	1	
+maw-cf1e3bbc96ac	translated	misc	"
+Rings: "	"
+반지: "		Scripts/General/zzAlchemy.lua	722	1	연금술 아이템 보정치
 maw-82efa5f5f529	untranslated	misc	  (Shift=très lent • Alt=fichier • Ctrl=auto on/off)			Scripts/General/zzBossSync.lua	437	1	
 maw-b3b226842bea	untranslated	misc	  *local-scan*			Scripts/General/zzBossSync.lua	348	1	
-maw-b2f4f29c7181	untranslated	misc	  Mana: 			Scripts/General/zzzOnlineVariableSender.lua	330	1	
+maw-b2f4f29c7181	translated	misc	  Mana: 	  마나: 		Scripts/General/zzzOnlineVariableSender.lua	330	1	멀티플레이 상태 표시
 maw-7bb5778862de	untranslated	misc	 - Corrupted bag #			Scripts/General/zzMaw-Item-Sorter.lua	714	1	
 maw-574c5a59fabd	untranslated	misc	 Map			Scripts/General/zzMaw-Maps.lua	2089	1	
-maw-acd09cd9a879	untranslated	misc	% chance to miss attacks		% c	Scripts/General/zzMaw-Maps.lua	2125	1	
-maw-0ff5fd36f573	untranslated	misc	% increased HP and damage		% i	Scripts/General/zzMaw-Maps.lua	2113	1	
-maw-03650d10fe45	untranslated	misc	%%%%lu			Scripts/General/NPCFollowers.lua	919	1	
+maw-acd09cd9a879	untranslated	misc	% chance to miss attacks			Scripts/General/zzMaw-Maps.lua	2125	1	
+maw-0ff5fd36f573	untranslated	misc	% increased HP and damage			Scripts/General/zzMaw-Maps.lua	2113	1	
+maw-03650d10fe45	untranslated	misc	%%%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
 maw-609237732286	untranslated	misc	%%([%w_]*)%%			Scripts/Core/events.lua	125	1	
-maw-a3b38a4f2af0	untranslated	misc	%%lu			Scripts/General/NPCFollowers.lua	919	1	
+maw-a3b38a4f2af0	untranslated	misc	%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
 maw-11bdf2a7d771	untranslated	misc	%.10f		%.10f	Scripts/General/zz_Maw-initialize.lua	383	1	
 maw-5a2c485d7ed9	untranslated	misc	%1%%d		%1% %d	Scripts/General/NPCFollowers.lua	919	1	
 maw-32bdec8af86b	untranslated	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	
-maw-964cbd0f1639	untranslated	misc	%code% %p%, ecx, eax		% % %c	Scripts/Core/events.lua	645	1	
-maw-550b8663ac2f	untranslated	misc	%code% %p%, edx, edi		% % %c	Scripts/Core/events.lua	643	2	
+maw-964cbd0f1639	untranslated	misc	%code% %p%, ecx, eax		%p	Scripts/Core/events.lua	645	1	
+maw-550b8663ac2f	untranslated	misc	%code% %p%, edx, edi		%p	Scripts/Core/events.lua	643	2	
 maw-8c986ccf14ec	untranslated	misc	"%d:	reason: %s		x: %d	y: %d	z: %d"		%d %d %d %d %s	Scripts/General/pseudoSpawnpoint.lua	103	1	
 maw-7d0b2d311ab6	untranslated	misc	%s (speaking with %s)		%s %s	Scripts/Modules/Multiplayer/UI/House.lua	25	1	
 maw-74db3d6c0d4f	untranslated	misc	%s hits %s for %s points!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	241	1	
@@ -547,12 +567,12 @@ maw-131caaf5aa47	untranslated	misc	%s: invalid player pointer in GetPlayerFromPt
 maw-652fe0e19471	untranslated	misc	%s: x:%d, y:%d		%d %d %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	129	1	
 maw-8bee13bb62c8	untranslated	misc	'): fn must be a function, got 			Scripts/General/zzMaw-Timers.lua	52	1	
 maw-c5bf10e53b42	untranslated	misc	(%d+)%-(%d+)		%d %d	Scripts/General/pseudoSpawnpoint.lua	4	1	
-maw-233b77e8d179	untranslated	misc	([^%%])%%lu			Scripts/General/NPCFollowers.lua	919	1	
-maw-9f209cfe3568	untranslated	misc	(client save) 			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	501	1	
-maw-ff2bf6b9082b	untranslated	misc	(current) 			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	483	1	
-maw-b0724dc76229	untranslated	misc	(host save) 			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	621	1	
-maw-751c71701653	untranslated	misc	(last choice) 			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	474	1	
-maw-81221f371890	untranslated	misc	(Most relevant) 			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	604	1	
+maw-233b77e8d179	untranslated	misc	([^%%])%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
+maw-9f209cfe3568	translated	misc	(client save) 	(클라이언트 저장) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	501	1	멀티플레이 저장 선택
+maw-ff2bf6b9082b	translated	misc	(current) 	(현재) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	483	1	멀티플레이 저장 선택
+maw-b0724dc76229	translated	misc	(host save) 	(호스트 저장) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	621	1	멀티플레이 저장 선택
+maw-751c71701653	translated	misc	(last choice) 	(마지막 선택) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	474	1	멀티플레이 저장 선택
+maw-81221f371890	translated	misc	(Most relevant) 	(가장 관련 높음) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	604	1	멀티플레이 저장 선택
 maw-ce850e3d4ae5	untranslated	misc	*a			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	26	2	
 maw-735631aad579	untranslated	misc	0x%X		%X	Scripts/Structs/After/RemoveSkillValueLimits.lua	43	14	
 maw-7a842fbeda72	untranslated	misc	6Flower01			Scripts/General/zzMaw-Maps.lua	24	1	
@@ -595,7 +615,7 @@ maw-13f1aeb33fbf	untranslated	misc	Amethyst Chunk			Scripts/General/zzAlchemy.lu
 maw-3fdbe3bcaa7b	untranslated	misc	Archibald's Mirror			Scripts/General/zzAlchemy.lua	1392	1	
 maw-3ae596139053	untranslated	misc	Armor: +50			Scripts/Structs/extraEditableDescriptions.lua	172	1	
 maw-6076a3719d53	untranslated	misc	armor: +X			Scripts/Structs/extraEditableDescriptions.lua	22	1	
-maw-8c9c02e80eb3	untranslated	misc	Ascended 			Scripts/General/zzAlchemy.lua	695	1	
+maw-8c9c02e80eb3	translated	misc	Ascended 	승천한 		Scripts/General/zzAlchemy.lua	695	1	아이템 등급 접두어
 maw-60d9195d2d43	untranslated	misc	Ascended Amber Droplet			Scripts/General/zzAlchemy.lua	1382	2	
 maw-f368a3b16649	untranslated	misc	Ascended Amethyst Chunk			Scripts/General/zzAlchemy.lua	1381	1	
 maw-cacddf34db52	untranslated	misc	Ascended Erathian Sapphire			Scripts/General/zzAlchemy.lua	1387	1	
@@ -635,7 +655,7 @@ maw-904d7adeda6b	untranslated	misc	Cures and prevents Curse and Paralysis for 6 
 maw-3dbdc5de0943	untranslated	misc	Cures and prevents Disease and Poison for 6 hours.			Scripts/General/zzAlchemy.lua	473	1	
 maw-1b344a249b02	untranslated	misc	Cures and prevents Fear and Insanity for 6 hours.			Scripts/General/zzAlchemy.lua	475	1	
 maw-f7a5005cf8c3	untranslated	misc	Cures and prevents Weakness and inducted Sleep for 6 hours.			Scripts/General/zzAlchemy.lua	472	1	
-maw-367b80c6e31b	untranslated	misc	Currently Active Legendary effects:			Scripts/General/zzMaw-Stats.lua	532	1	
+maw-367b80c6e31b	translated	misc	Currently Active Legendary effects:	현재 활성화된 전설 효과:		Scripts/General/zzMaw-Stats.lua	532	1	전설 효과 UI
 maw-bbc5432a15ee	untranslated	misc	Damage on Friendly Units			Scripts/General/zz_Maw-initialize.lua	559	1	
 maw-9ae2b0cfdd1b	untranslated	misc	Damage: 1d1+1			Scripts/Structs/extraEditableDescriptions.lua	22	1	
 maw-c5a1bf33495a	untranslated	misc	Day-o-Gods			Scripts/General/MiscTweaks.lua	190	1	
@@ -643,7 +663,7 @@ maw-df653779161b	untranslated	misc	débil			Scripts/General/zzMaw-Multiplayer.lu
 maw-47aa9a09e447	untranslated	misc	Emerald of Power			Scripts/General/zzAlchemy.lua	1393	1	
 maw-dd399f98d057	translated	misc	Empty Barrel	빈 통		Scripts/General/zzMaw-Maps.lua	202	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-16d5a6e22e05	untranslated	misc	Endless Arena			Scripts/Global/zzMaw_Arena.lua	28	1	
-maw-100a74eeab74	untranslated	misc	Enter the data.			Scripts/Global/Quest_SavingGoobers.lua	705	3	
+maw-100a74eeab74	translated	misc	Enter the data.	데이터를 입력하세요.		Scripts/Global/Quest_SavingGoobers.lua	705	3	퀘스트 질문
 maw-d4788aabcb87	untranslated	misc	Erathian Sapphire			Scripts/General/zzAlchemy.lua	1377	2	
 maw-3f826de2410f	untranslated	misc	Error in HitPlayer handler: invalid player slot: %s / [0, %s]		%s %s	Scripts/Core/events.lua	2620	1	
 maw-448ef6b2ab89	untranslated	misc	Error loading settings file, using fallback defaults...			Scripts/General/zz_Maw-initialize.lua	256	1	
@@ -675,7 +695,7 @@ maw-17461354dc91	untranslated	misc	Grant 500 Experience point per Power to the p
 maw-3745903c5e25	untranslated	misc	Have data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
 maw-44fcaf7ec76a	untranslated	misc	Healing reduced by 			Scripts/General/zzMaw-Maps.lua	2126	1	
 maw-8ebf33b72b32	untranslated	misc	Heals based on the potion's power of hit points.			Scripts/General/zzAlchemy.lua	495	1	
-maw-5aba2c1279d0	untranslated	misc	Health: 			Scripts/General/zzzOnlineVariableSender.lua	329	1	
+maw-5aba2c1279d0	translated	misc	Health: 	생명력: 		Scripts/General/zzzOnlineVariableSender.lua	329	1	멀티플레이 상태 표시
 maw-035135c6e9e5	untranslated	misc	Homing Projectiles			Scripts/General/zz_Maw-initialize.lua	558	1	
 maw-c49d222d591a	untranslated	misc	Huge Orc			Scripts/General/zSERIOUSMAW.lua	15	1	
 maw-7402ad17f5ee	untranslated	misc	I want to reset			Scripts/Global/zzMAWRespec.lua	29	1	
@@ -758,8 +778,8 @@ maw-9cba2131e8e6	untranslated	misc	Negative attacker ref in events.lua Who(i, ac
 maw-a390180a7a3b	untranslated	misc	NewBountyHuntCreated			Scripts/General/BountyHunt.lua	237	1	
 maw-834b79bc4037	untranslated	misc	No data by this id.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
 maw-8be99f7a7111	untranslated	misc	no enchants			Scripts/General/zzAlchemy.lua	820	2	
-maw-fa6225094649	untranslated	misc	NPC %d		%d	Scripts/General/NPCFollowers.lua	352	1	
-maw-a360a1cd7706	untranslated	misc	NPC PANEL			Scripts/General/NPCFollowers.lua	347	1	
+maw-fa6225094649	translated	misc	NPC %d	NPC %d	%d	Scripts/General/NPCFollowers.lua	352	1	NPC 패널 라벨; 자리표시자 보존
+maw-a360a1cd7706	translated	misc	NPC PANEL	NPC 패널		Scripts/General/NPCFollowers.lua	347	1	키 바인딩 라벨
 maw-7af8a5f64e75	untranslated	misc	Number of digits needs to be at least 1			Scripts/General/zz_Maw-initialize.lua	327	2	
 maw-a848b5e88b83	untranslated	misc	Openning file: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	22	4	
 maw-16460f6ae435	untranslated	misc	Option 1			Scripts/General/zz_Maw-initialize.lua	486	1	
@@ -891,7 +911,7 @@ maw-52fb6815a8a2	untranslated	misc	test ah, 0x10			Scripts/Structs/After/RemoveS
 maw-20dcabcc16bb	untranslated	misc	test byte ptr [ebp-0xF], 			Scripts/Structs/After/RemoveSkillValueLimits.lua	189	12	
 maw-c07c425eaa7c	untranslated	misc	Total corrupted bags: 			Scripts/General/zzMaw-Item-Sorter.lua	731	1	
 maw-f91360c5d46d	untranslated	misc	Unknown tileset file 			Scripts/General/pseudoSpawnpoint.lua	91	1	
-maw-99d7e5d5f0aa	untranslated	misc	"Vitality: %s
+maw-99d7e5d5f0aa	translated	misc	"Vitality: %s
 
 
 
@@ -899,7 +919,15 @@ maw-99d7e5d5f0aa	untranslated	misc	"Vitality: %s
 
 
 
-"		%s	Scripts/General/zzMaw-Stats.lua	1490	1	
+"	"활력: %s
+
+
+
+
+
+
+
+"	%s	Scripts/General/zzMaw-Stats.lua	1490	1	능력치 UI; 자리표시자 보존
 maw-138ef10f9d41	untranslated	misc	"World: Enroth. Realm: %s. Landmark: %s. Year: %s
 Targets' status: %s, type: %s, state: %s.
 "		%s %s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	836	1	
@@ -913,20 +941,20 @@ maw-bcde19b28495	untranslated	monster	 .. lowerLimit .. 			Scripts/General/zzMaw
 maw-f9634f630e00	untranslated	monster	 .. name .. 			Scripts/General/zzMaw-Monsters.lua	2158	1	
 maw-ac0850f11704	untranslated	monster	 .. upperLimit .. 			Scripts/General/zzMaw-Monsters.lua	2114	1	
 maw-efc3a760fc96	untranslated	monster	% be an higher tier			Scripts/General/zzMaw-Maps.lua	2112	1	
-maw-e7609c84e7cd	untranslated	monster	% chance to become a boss		% c	Scripts/General/zzMaw-Maps.lua	2114	1	
-maw-438cf5ad4573	untranslated	monster	% chance to cast dragon breath		% c	Scripts/General/zzMaw-Maps.lua	2099	1	
-maw-f18e09e14f37	untranslated	monster	% chance to cast fireball		% c	Scripts/General/zzMaw-Maps.lua	2098	1	
-maw-6adb5b469b80	untranslated	monster	% chance to deal energy damage		% c	Scripts/General/zzMaw-Maps.lua	2109	1	
-maw-0ab027a0ccad	untranslated	monster	% chance to ignore status resistance		% c	Scripts/General/zzMaw-Maps.lua	2103	1	
-maw-080cef3ea03f	untranslated	monster	% chance to summon a monster upon death		% c	Scripts/General/zzMaw-Maps.lua	2104	1	
-maw-bfafe911ed8b	untranslated	monster	% critical chance		% c	Scripts/General/zzMaw-Maps.lua	2097	1	
-maw-b9828d92f9e2	untranslated	monster	% extra chance to resist control effects		% e	Scripts/General/zzMaw-Maps.lua	2108	1	
-maw-61c6bd4da1b6	untranslated	monster	% increased damage		% i	Scripts/General/zzMaw-Maps.lua	2096	1	
-maw-5f7ff24fee9d	untranslated	monster	% increased HP		% i	Scripts/General/zzMaw-Maps.lua	2110	1	
-maw-6f9218415237	untranslated	monster	% increased movement speed		% i	Scripts/General/zzMaw-Maps.lua	2106	1	
-maw-ceed6fe6e754	untranslated	monster	% of magic damage		% o	Scripts/General/zzMaw-Maps.lua	2101	1	
-maw-ca4557c883fa	untranslated	monster	% of physical damage		% o	Scripts/General/zzMaw-Maps.lua	2100	1	
-maw-c1a5c33c4a70	untranslated	monster	% of player hp as damage		% o	Scripts/General/zzMaw-Maps.lua	2105	1	
+maw-e7609c84e7cd	untranslated	monster	% chance to become a boss			Scripts/General/zzMaw-Maps.lua	2114	1	
+maw-438cf5ad4573	untranslated	monster	% chance to cast dragon breath			Scripts/General/zzMaw-Maps.lua	2099	1	
+maw-f18e09e14f37	untranslated	monster	% chance to cast fireball			Scripts/General/zzMaw-Maps.lua	2098	1	
+maw-6adb5b469b80	untranslated	monster	% chance to deal energy damage			Scripts/General/zzMaw-Maps.lua	2109	1	
+maw-0ab027a0ccad	untranslated	monster	% chance to ignore status resistance			Scripts/General/zzMaw-Maps.lua	2103	1	
+maw-080cef3ea03f	untranslated	monster	% chance to summon a monster upon death			Scripts/General/zzMaw-Maps.lua	2104	1	
+maw-bfafe911ed8b	untranslated	monster	% critical chance			Scripts/General/zzMaw-Maps.lua	2097	1	
+maw-b9828d92f9e2	untranslated	monster	% extra chance to resist control effects			Scripts/General/zzMaw-Maps.lua	2108	1	
+maw-61c6bd4da1b6	untranslated	monster	% increased damage			Scripts/General/zzMaw-Maps.lua	2096	1	
+maw-5f7ff24fee9d	untranslated	monster	% increased HP			Scripts/General/zzMaw-Maps.lua	2110	1	
+maw-6f9218415237	untranslated	monster	% increased movement speed			Scripts/General/zzMaw-Maps.lua	2106	1	
+maw-ceed6fe6e754	untranslated	monster	% of magic damage			Scripts/General/zzMaw-Maps.lua	2101	1	
+maw-ca4557c883fa	untranslated	monster	% of physical damage			Scripts/General/zzMaw-Maps.lua	2100	1	
+maw-c1a5c33c4a70	untranslated	monster	% of player hp as damage			Scripts/General/zzMaw-Maps.lua	2105	1	
 maw-d2f7095b04b3	untranslated	monster	%HP per second			Scripts/General/zzMaw-Maps.lua	2102	1	
 maw-932438202666	untranslated	monster	%s: Monster with incorrect Id (%s) at %s %s %s		%s %s %s %s %s	Scripts/General/AdaptiveMonstersStats.lua	854	1	
 maw-d9a8b676271a	untranslated	monster	(%-?%d+)$		%d	Scripts/General/zzMaw-Monsters.lua	2453	2	
@@ -1209,7 +1237,7 @@ maw-9f9bb757695a	untranslated	monster	The Breeding Zone			Scripts/General/zzMaw-
 maw-80b7ce10406a	untranslated	monster	The Crypt of Korbu			Scripts/General/zzMaw-Monsters.lua	1235	2	
 maw-dbd0baf8ba8d	untranslated	monster	The Dragon Caves			Scripts/General/zzMaw-Monsters.lua	1528	2	
 maw-596211474aef	untranslated	monster	The Dragon's Lair			Scripts/General/zzMaw-Monsters.lua	1110	4	
-maw-30bff372a694	untranslated	monster	The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)			Scripts/General/zzMaw-Maps.lua	141	1	
+maw-30bff372a694	translated	monster	The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)	이 던전은 이미 클리어했지만 초기화하여 더 강한 몬스터에게 다시 도전할 수 있습니다. 초기화 후에는 클리어 보상을 받을 수 없습니다. 던전을 초기화하시겠습니까? (yes/no 입력)		Scripts/General/zzMaw-Maps.lua	141	1	yes/no 입력 토큰 보존
 maw-f8da4fc05886	untranslated	monster	The Erathian Sewers			Scripts/General/zzMaw-Monsters.lua	1387	2	
 maw-d0f32754152e	untranslated	monster	The Hall of the Pit			Scripts/General/zzMaw-Monsters.lua	1447	2	
 maw-05fbff6c05d0	untranslated	monster	The Hall under the Hill			Scripts/General/zzMaw-Monsters.lua	1375	2	
@@ -1282,7 +1310,7 @@ Every 7 Skill level adds 1 level into ascension.
 Reduce all damage taken by "			Scripts/General/zzClasses.lua	1039	2	
 maw-56bbe4224d60	untranslated	skill	"
 
-Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."		% p	Scripts/General/zzMaw-Stats.lua	375	1	
+Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."			Scripts/General/zzMaw-Stats.lua	375	1	
 maw-4522e2803e51	untranslated	skill	"
 
 Master will grant 1% to drop random reagents from Monsters.
@@ -1320,7 +1348,7 @@ This skill increases the damage gained from weapon by a percentage when equippin
 At Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.
 
 Your full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.
-"		% p	Scripts/General/zzMAW-Skills.lua	485	1	
+"			Scripts/General/zzMAW-Skills.lua	485	1	
 maw-d5be30b6422f	untranslated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.
 Crit chance will get lower as monsters grow stronger, up to level 600."			Scripts/General/zzMAW-Skills.lua	487	1	
@@ -1331,12 +1359,12 @@ maw-687e8f4a102e	untranslated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.
 
 Spear skill raises AC by X% per skill point, counting an extra +10 effective skill.
-"		% p	Scripts/General/zzMAW-Skills.lua	489	1	
+"			Scripts/General/zzMAW-Skills.lua	489	1	
 maw-7029497de0dc	untranslated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.
 
 Your full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.
-"		% p	Scripts/General/zzMAW-Skills.lua	486	1	
+"			Scripts/General/zzMAW-Skills.lua	486	1	
 maw-71b422eebba7	untranslated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.
 "			Scripts/General/zzMAW-Skills.lua	488	1	
@@ -1357,7 +1385,7 @@ maw-07ee0aeb6aee	untranslated	skill	"%
 
 Press P to enable/disable
 "			Scripts/General/zzMAW-Skills.lua	2097	2	
-maw-f5cb16b30cd5	untranslated	skill	% of monster Hit points as fire damage.		% o	Scripts/General/zzClasses.lua	1036	1	
+maw-f5cb16b30cd5	untranslated	skill	% of monster Hit points as fire damage.			Scripts/General/zzClasses.lua	1036	1	
 maw-41559b59261e	untranslated	skill	%% speed			Scripts/General/zzMAW-Skills.lua	692	3	
 maw-347cd9c53ff7	untranslated	skill	%s		%s	Scripts/General/zzMAW-Skills.lua	565	7	
 maw-539335ea1fbf	untranslated	skill	"%s	"		%s	Scripts/General/zzMAW-Skills.lua	527	28	
@@ -1404,27 +1432,27 @@ maw-00f2a94b750e	untranslated	skill	%s shoots fire arrows, dealing highest betwe
 maw-bd2aa1daab14	untranslated	skill	%s usable with Leather Armor		%s	Scripts/General/zzMAW-Skills.lua	695	1	
 maw-b814f42a8c77	untranslated	skill	%s usable with Unarm.		%s	Scripts/General/zzMAW-Skills.lua	682	1	
 maw-29bafc9a3c98	untranslated	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	543	4	
-maw-f9b26d772d4f	untranslated	skill	%sRes		%s	Scripts/General/zzMAW-Skills.lua	564	1	
+maw-f9b26d772d4f	untranslated	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	
 maw-908093bbf3f4	untranslated	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	
 maw-84d1ceb266d3	untranslated	skill	([^%s]+)		%s	Scripts/General/BountyHunt.lua	215	13	
 maw-4b7ec923d00c	untranslated	skill	"(calculated after resistances)
 "			Scripts/General/zzClasses.lua	1046	1	
-maw-75446e835954	untranslated	skill	Absorb up to 25% damage		% d	Scripts/General/zzMAW-Skills.lua	2478	1	
-maw-edaf46202584	untranslated	skill	Absorb up to 50% damage		% d	Scripts/General/zzMAW-Skills.lua	2479	1	
-maw-b53ba9e43224	untranslated	skill	Absorb up to 75% damage		% d	Scripts/General/zzMAW-Skills.lua	2480	1	
+maw-75446e835954	untranslated	skill	Absorb up to 25% damage			Scripts/General/zzMAW-Skills.lua	2478	1	
+maw-edaf46202584	untranslated	skill	Absorb up to 50% damage			Scripts/General/zzMAW-Skills.lua	2479	1	
+maw-b53ba9e43224	untranslated	skill	Absorb up to 75% damage			Scripts/General/zzMAW-Skills.lua	2480	1	
 maw-80cc252aa544	untranslated	skill	AC|			Scripts/General/zzMAW-Skills.lua	557	1	
 maw-89736fc25d09	untranslated	skill	Adamantite			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-1b684e0e7237	untranslated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
-"		% p	Scripts/General/zzMAW-Skills.lua	2540	1	
+"			Scripts/General/zzMAW-Skills.lua	2540	1	
 maw-21abf3a9d1fd	untranslated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
 
 Damage done depends on 2 coefficients, multiplied then by skill level:
 
-Melee Power coefficient: "		% p	Scripts/General/zzMAW-Skills.lua	2134	1	
+Melee Power coefficient: "			Scripts/General/zzMAW-Skills.lua	2134	1	
 maw-bbec938dae2f	untranslated	skill	Air Magic			Scripts/General/zzClasses.lua	2166	1	
 maw-53ad7869dac0	untranslated	skill	All damage is absorbed by mana			Scripts/General/zzMAW-Skills.lua	2481	1	
 maw-f9363b18c988	untranslated	skill	"Allow use to Cover Physical damage
@@ -1467,7 +1495,7 @@ maw-57b5a5dea337	untranslated	skill	"Combat is the skill that allows you to endu
 
 Each attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.
 
-"		% c % p	Scripts/General/zzClasses.lua	2109	1	
+"			Scripts/General/zzClasses.lua	2109	1	
 maw-8b656a5dd9d5	untranslated	skill	Cover			Scripts/General/zzMAW-Skills.lua	2046	1	
 maw-f656eb28d0a2	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
@@ -1475,21 +1503,21 @@ Grants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, s
 
 
 Press P to enable/disable
-"		% c	Scripts/General/zzMAW-Skills.lua	2047	1	
+"			Scripts/General/zzMAW-Skills.lua	2047	1	
 maw-84a1cb449d28	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 
 Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
 
-Current cover chance: "		% c	Scripts/General/zzMAW-Skills.lua	2097	1	
+Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2097	1	
 maw-e3808a8b98b0	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 8-20-30.
 
 Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
 
-Current cover chance: "		% c	Scripts/General/zzMAW-Skills.lua	2099	1	
+Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2099	1	
 maw-3711ef38c87d	untranslated	skill	Current Damage reduction per Mana: 			Scripts/General/zzMAW-Skills.lua	2118	2	
 maw-baa7b94348d2	untranslated	skill	Current Reduction: 			Scripts/General/zzClasses.lua	1457	2	
 maw-b3ec68d9a6c8	untranslated	skill	Dark Magic			Scripts/General/zzClasses.lua	1474	1	
@@ -1521,11 +1549,11 @@ maw-ebabbf34ceff	untranslated	skill	Grants bonus to Meditation skill for 6 hours
 maw-5200bdfc01a1	untranslated	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	
 maw-bc4de4436fe9	untranslated	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	
 maw-d777daa9c06f	untranslated	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	
-maw-e8fbfeac40bd	untranslated	skill	Increase your regeneration by 1% per every 1% of hp lost		% o % p	Scripts/General/zzMAW-Skills.lua	2575	1	
-maw-9f6c0df8b5f6	untranslated	skill	Increased Attack speed by 1% per Skill		% p	Scripts/General/zzClasses.lua	436	1	
-maw-daab9922b845	untranslated	skill	Increased Attack speed by 2% per Skill		% p	Scripts/General/zzClasses.lua	437	1	
-maw-6c0c573a0a4e	untranslated	skill	Increased Attack speed by 3% per Skill		% p	Scripts/General/zzClasses.lua	438	1	
-maw-5ea4107586d3	untranslated	skill	Increased Attack speed by 4% per Skill		% p	Scripts/General/zzClasses.lua	439	1	
+maw-e8fbfeac40bd	untranslated	skill	Increase your regeneration by 1% per every 1% of hp lost			Scripts/General/zzMAW-Skills.lua	2575	1	
+maw-9f6c0df8b5f6	untranslated	skill	Increased Attack speed by 1% per Skill			Scripts/General/zzClasses.lua	436	1	
+maw-daab9922b845	untranslated	skill	Increased Attack speed by 2% per Skill			Scripts/General/zzClasses.lua	437	1	
+maw-6c0c573a0a4e	untranslated	skill	Increased Attack speed by 3% per Skill			Scripts/General/zzClasses.lua	438	1	
+maw-5ea4107586d3	untranslated	skill	Increased Attack speed by 4% per Skill			Scripts/General/zzClasses.lua	439	1	
 maw-49cb5d5ca418	untranslated	skill	Increases damage by 2 per Skill point			Scripts/General/zzClasses.lua	426	1	
 maw-f893dfeaa800	untranslated	skill	Increases damage by 3 per Skill point			Scripts/General/zzClasses.lua	427	1	
 maw-3cb0bec33487	untranslated	skill	Increases damage by 4 per Skill point			Scripts/General/zzClasses.lua	428	1	
@@ -1546,10 +1574,10 @@ maw-22fa84df37d6	untranslated	skill	Mana cost reduced by 12.5%.			Scripts/Genera
 maw-c338ab5388a4	untranslated	skill	Mana cost reduced by 25%			Scripts/General/zzMAW-Skills.lua	1466	1	
 maw-0a4e4b7336a4	untranslated	skill	Mana cost reduced by 37.5%			Scripts/General/zzMAW-Skills.lua	1467	1	
 maw-01908de91882	untranslated	skill	Mana cost reduced by 50%			Scripts/General/zzMAW-Skills.lua	1468	1	
-maw-34785d352a98	untranslated	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5		% p	Scripts/General/zzMAW-Skills.lua	2510	1	
-maw-0555f787e247	untranslated	skill	Mana is increased by 3% per skill level, cost divisor increased by 1		% p	Scripts/General/zzMAW-Skills.lua	2511	1	
-maw-7302af587b8b	untranslated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5		% p	Scripts/General/zzMAW-Skills.lua	2512	1	
-maw-b11a712a7bb7	untranslated	skill	Mana is increased by 5% per skill level, cost divisor increased by 2		% p	Scripts/General/zzMAW-Skills.lua	2513	1	
+maw-34785d352a98	untranslated	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5			Scripts/General/zzMAW-Skills.lua	2510	1	
+maw-0555f787e247	untranslated	skill	Mana is increased by 3% per skill level, cost divisor increased by 1			Scripts/General/zzMAW-Skills.lua	2511	1	
+maw-7302af587b8b	untranslated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5			Scripts/General/zzMAW-Skills.lua	2512	1	
+maw-b11a712a7bb7	untranslated	skill	Mana is increased by 5% per skill level, cost divisor increased by 2			Scripts/General/zzMAW-Skills.lua	2513	1	
 maw-bf1e13de8fdf	untranslated	skill	Mana Shield			Scripts/General/zzMAW-Skills.lua	2476	1	
 maw-cbafc012d625	untranslated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
@@ -1585,7 +1613,7 @@ maw-83e4da82cd41	untranslated	skill	"Poisoning is the art of mastering toxins th
 
 Each attack deals bonus water damage equal to 0.1% of the target's HP per skill point.
 
-"		% o	Scripts/General/zzClasses.lua	2111	1	
+"			Scripts/General/zzClasses.lua	2111	1	
 maw-b1990861729d	untranslated	skill	Poisons			Scripts/General/zzClasses.lua	2106	1	
 maw-176436bc329f	untranslated	skill	Puller			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-085171c8bf3e	untranslated	skill	Reduces traps and lava damage by 10%.			Scripts/General/zzMAW-Skills.lua	1470	1	
@@ -1607,7 +1635,7 @@ maw-595e6f796a09	untranslated	skill	Skill reset info			Scripts/Global/zzMAWRespe
 maw-e09212c7d3ea	untranslated	skill	Skills			Scripts/General/zzMaw-Monsters.lua	3147	1	
 maw-04ad3555eeac	untranslated	skill	Skills adds 			Scripts/General/zzMAW-Skills.lua	691	4	
 maw-c1c7f7e81f44	untranslated	skill	"Skills adds 3 dmg, 3 atk, 2% speed
-Each 10 points in armsmaster increase all the melee weapon skills by 1"		% s	Scripts/General/zzMAW-Skills.lua	2693	1	
+Each 10 points in armsmaster increase all the melee weapon skills by 1"			Scripts/General/zzMAW-Skills.lua	2693	1	
 maw-7707f6812879	untranslated	skill	SP			Scripts/General/zzMAW-Skills.lua	865	2	
 maw-3d0e83b4f7be	untranslated	skill	Speed|			Scripts/General/zzMAW-Skills.lua	534	1	
 maw-249f056b552d	untranslated	skill	Stacks			Scripts/General/zzMAW-Skills.lua	1121	12	
@@ -1616,13 +1644,13 @@ maw-1d06f1d00475	untranslated	skill	"Subtlety manipulates the boundary between l
 
 Energy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.
 
-"		% p	Scripts/General/zzClasses.lua	2110	1	
+"			Scripts/General/zzClasses.lua	2110	1	
 maw-19e9d2245f60	untranslated	skill	Summoner			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-13529394f788	untranslated	skill	Swapper			Scripts/General/zzMaw-Monsters.lua	3177	3	
 maw-112ab020698e	untranslated	skill	Swift			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-d387f71bdbc2	untranslated	skill	TeachSkill			Scripts/General/zzMAW-Skills.lua	1752	1	
 maw-9695e5c63098	untranslated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
-"		% p	Scripts/General/zzClasses.lua	1454	1	
+"			Scripts/General/zzClasses.lua	1454	1	
 maw-347e88fe61c6	untranslated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.
 "			Scripts/General/zzClasses.lua	1459	1	
 maw-8c46bff5c136	untranslated	skill	"This skill is only available to death knights and reduces physical damage taken.
@@ -1644,11 +1672,13 @@ maw-7915063e5e14	untranslated	skill	You regenerate 12 energy per second			Script
 maw-b051b32d9a1f	untranslated	skill	You regenerate 14 energy per second			Scripts/General/zzClasses.lua	2132	1	
 maw-37625d1989c3	untranslated	skill	You regenerate 8 energy per second			Scripts/General/zzClasses.lua	2117	1	
 maw-177e50af5d81	untranslated	skill	Your next attack deals additional damage, multiplied by skill level			Scripts/General/zzMAW-Skills.lua	2541	1	
-maw-f5cbe7ee2108	untranslated	skill	Your next attack has a 25% chance to stun the enemy for 2 seconds		% c	Scripts/General/zzMAW-Skills.lua	2543	1	
+maw-f5cbe7ee2108	untranslated	skill	Your next attack has a 25% chance to stun the enemy for 2 seconds			Scripts/General/zzMAW-Skills.lua	2543	1	
 maw-b2d89e6f8305	untranslated	skill	Your next attack recovery time is reduced by 30%			Scripts/General/zzMAW-Skills.lua	2542	1	
-maw-4c3ed26b6734	untranslated	spell	"
+maw-4c3ed26b6734	translated	spell	"
 
-Can't learn"			Scripts/General/zzMaw-Spells.lua	2312	1	
+Can't learn"	"
+
+습득 불가"		Scripts/General/zzMaw-Spells.lua	2312	1	주문 상태
 maw-58b40a5e7a2c	untranslated	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
@@ -1657,16 +1687,21 @@ maw-e58bf5ff5a06	untranslated	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
 Melee attacks restore "			Scripts/General/zzClasses.lua	1055	2	
-maw-4662e610e43b	untranslated	spell	"
+maw-4662e610e43b	translated	spell	"
 
-Not Learned"			Scripts/General/zzMaw-Spells.lua	2315	1	
-maw-5d1b887ea9d7	untranslated	spell	"
-Active ("			Scripts/General/zzMaw-Spells.lua	2247	1	
-maw-f62c536c3aca	untranslated	spell	"
-Active("			Scripts/General/zzMaw-Spells.lua	2263	1	
-maw-8b72f4c9216e	untranslated	spell	"
-Not Active"			Scripts/General/zzMaw-Spells.lua	2243	2	
-maw-478883517eb5	untranslated	spell	 Hit Points			Scripts/General/zzAlchemy.lua	416	8	
+Not Learned"	"
+
+미습득"		Scripts/General/zzMaw-Spells.lua	2315	1	주문 상태
+maw-5d1b887ea9d7	translated	spell	"
+Active ("	"
+활성 ("		Scripts/General/zzMaw-Spells.lua	2247	1	주문 상태
+maw-f62c536c3aca	translated	spell	"
+Active("	"
+활성("		Scripts/General/zzMaw-Spells.lua	2263	1	주문 상태
+maw-8b72f4c9216e	translated	spell	"
+Not Active"	"
+비활성"		Scripts/General/zzMaw-Spells.lua	2243	2	주문 상태
+maw-478883517eb5	translated	spell	 Hit Points	 생명력		Scripts/General/zzAlchemy.lua	416	8	아이템/주문 설명 조각
 maw-b3c72c8ec255	untranslated	spell	" Spell Points
 "			Scripts/General/zzClasses.lua	1055	1	
 maw-c5fb409edfff	untranslated	spell	"#	Note	Continent	Bolster kind	Spells	Summons	Level shift
@@ -1674,15 +1709,21 @@ maw-c5fb409edfff	untranslated	spell	"#	Note	Continent	Bolster kind	Spells	Summon
 maw-0978c0a32195	untranslated	spell	"#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)
 "			Scripts/General/AdaptiveMonstersStats.lua	116	1	
 maw-04a318e009f9	untranslated	spell	"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
-Each point in the skill increases damage and increases recovery time by 3%."		% a	Scripts/General/zzClasses.lua	494	1	
-maw-b5734db76175	untranslated	spell	% of Melee damage		% o	Scripts/General/zzClasses.lua	1377	4	
-maw-3153fe797154	untranslated	spell	"%s
+Each point in the skill increases damage and increases recovery time by 3%."			Scripts/General/zzClasses.lua	494	1	
+maw-b5734db76175	untranslated	spell	% of Melee damage			Scripts/General/zzClasses.lua	1377	4	
+maw-3153fe797154	translated	spell	"%s
 
 Increases spell points based on SP per level and mastery
 
 Current SP Regeneration: %s
 Next Level Bonus: %s SP Regen
-"		%s %s %s	Scripts/General/zzMAW-Skills.lua	1374	1	
+"	"%s
+
+레벨당 주문력과 숙련도에 따라 주문력 재생이 증가합니다.
+
+현재 주문력 재생: %s
+다음 레벨 보너스: 주문력 재생 %s
+"	%s %s %s	Scripts/General/zzMAW-Skills.lua	1374	1	명상 스킬 설명; 자리표시자 보존
 maw-34240f29269c	untranslated	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill"		%s %s %s	Scripts/General/zzMaw-Spells.lua	2209	5	
 maw-339f786746eb	untranslated	spell	"%s Mana cost: 
@@ -1717,23 +1758,23 @@ maw-935d91b8e953	untranslated	spell	All stats increased by 15+1.5 per skill			Sc
 maw-e99c70428f3e	untranslated	spell	All stats increased by 20+2 per skill			Scripts/General/zzMaw-Spells.lua	743	1	
 maw-554ad32ce774	untranslated	spell	Allow use to Cover Spells damage			Scripts/General/zzMAW-Skills.lua	2050	1	
 maw-f3762b6b3022	untranslated	spell	AllowNewSpell			Scripts/General/AdaptiveMonstersStats.lua	764	1	
-maw-512da2e32544	untranslated	spell	Asphyxiate			Scripts/General/zzClasses.lua	1420	1	
+maw-512da2e32544	translated	spell	Asphyxiate	질식		Scripts/General/zzClasses.lua	1420	1	MAW 주문명
 maw-6000be5eddfc	untranslated	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
 Such attacks also grant 1 combo point, allowing the assassin to cast offensive spells.
 Bow has 50% chance and energy cost.
 
 Higher levels also grant more starting energy, ideal for high burst damage in short engagements.
 
-"		% c % f	Scripts/General/zzClasses.lua	2112	1	
+"			Scripts/General/zzClasses.lua	2112	1	
 maw-077fe9c54ed5	untranslated	spell	Base			Scripts/General/zzMaw-Items.lua	4264	33	
 maw-6feeb259c205	untranslated	spell	BaseCost			Scripts/General/zzMaw-Spells.lua	1306	13	
-maw-382da73f22da	untranslated	spell	Blood Leech			Scripts/General/zzClasses.lua	1405	1	
+maw-382da73f22da	translated	spell	Blood Leech	피 흡수		Scripts/General/zzClasses.lua	1405	1	MAW 주문명
 maw-260d8bb6cec2	untranslated	spell	Body Magic Book			Scripts/General/zzMaw-Spells.lua	3405	1	
 maw-f69f233005f1	untranslated	spell	Book			Scripts/General/zzMaw-Spells.lua	3360	1	
 maw-72cc519ce0b0	untranslated	spell	CalcSpellDamage			Scripts/Core/events.lua	279	1	
 maw-5df90c8dfc70	untranslated	spell	CanLearnSpell			Scripts/Core/events.lua	2070	1	
 maw-7f1d5575b816	untranslated	spell	CanMonsterCastSpell			Scripts/Core/events.lua	2425	2	
-maw-b1f1770d9a38	untranslated	spell	Chain Lightning			Scripts/General/zzMaw-Spells.lua	704	1	
+maw-b1f1770d9a38	translated	spell	Chain Lightning	연쇄 번개		Scripts/General/zzMaw-Spells.lua	704	1	MAW 재정의 주문명
 maw-8757a00d5f02	untranslated	spell	ChanceMult			Scripts/General/zzMaw-Spells.lua	1306	13	
 maw-c1e392347e2e	untranslated	spell	checkMapCompletition			Scripts/General/zzMaw-Timers.lua	92	1	
 maw-f55add79d406	untranslated	spell	cmp dword ptr [eax + 0x19C], edx			Scripts/General/SpellsTweaks.lua	181	1	
@@ -1746,12 +1787,12 @@ maw-f1d72e76b5c8	untranslated	spell	DamageKind			Scripts/General/zzMaw-Spells.lu
 maw-ae9008ed3698	untranslated	spell	Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.			Scripts/General/zzMaw-Spells.lua	3410	1	
 maw-8955fcd1e6c2	untranslated	spell	Dark Magic Book			Scripts/General/zzMaw-Spells.lua	3407	1	
 maw-b8b86d3aa45b	untranslated	spell	Deals damage equal to 			Scripts/General/zzClasses.lua	1377	4	
-maw-59ce8a66facd	untranslated	spell	Deals damage equal to 100% of breath damage		% o	Scripts/General/zzClasses.lua	480	1	
-maw-b57a69a618e6	untranslated	spell	Deals damage equal to 70% of breath damage		% o	Scripts/General/zzClasses.lua	478	1	
-maw-55990b59f4f6	untranslated	spell	Deals damage equal to 85% of breath damage		% o	Scripts/General/zzClasses.lua	479	1	
-maw-66fc89b25ff8	untranslated	spell	Death Breath			Scripts/General/zzClasses.lua	1442	1	
-maw-0a37ec4c0df7	untranslated	spell	Death Coil			Scripts/General/zzClasses.lua	1427	1	
-maw-f22bb3958c52	untranslated	spell	Death Grasp			Scripts/General/zzClasses.lua	1434	1	
+maw-59ce8a66facd	untranslated	spell	Deals damage equal to 100% of breath damage			Scripts/General/zzClasses.lua	480	1	
+maw-b57a69a618e6	untranslated	spell	Deals damage equal to 70% of breath damage			Scripts/General/zzClasses.lua	478	1	
+maw-55990b59f4f6	untranslated	spell	Deals damage equal to 85% of breath damage			Scripts/General/zzClasses.lua	479	1	
+maw-66fc89b25ff8	translated	spell	Death Breath	죽음의 숨결		Scripts/General/zzClasses.lua	1442	1	MAW 주문명
+maw-0a37ec4c0df7	translated	spell	Death Coil	죽음의 고리		Scripts/General/zzClasses.lua	1427	1	MAW 주문명
+maw-f22bb3958c52	translated	spell	Death Grasp	죽음의 손아귀		Scripts/General/zzClasses.lua	1434	1	MAW 주문명
 maw-0a8703f9c37d	untranslated	spell	Debuff			Scripts/General/zzMaw-Spells.lua	1307	12	
 maw-b4c200bb0d1f	untranslated	spell	Delay			Scripts/General/zzClasses.lua	1298	3	
 maw-9785e1464ea2	untranslated	spell	"Dragons are powerful creatures with innate abilities.
@@ -1780,7 +1821,7 @@ maw-151a59608f88	untranslated	spell	Empower Magic			Scripts/General/zzMaw-Spells
 maw-d7a501f83242	untranslated	spell	Expert			Scripts/General/zzClasses.lua	1356	4	
 maw-2d9b9235fd08	untranslated	spell	Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.			Scripts/General/zzMaw-Spells.lua	3409	1	
 maw-6db9b21ef9ea	untranslated	spell	Fire Magic Book			Scripts/General/zzMaw-Spells.lua	3399	1	
-maw-58f60e582d1c	untranslated	spell	Frostbite			Scripts/General/zzClasses.lua	1384	1	
+maw-58f60e582d1c	translated	spell	Frostbite	동상		Scripts/General/zzClasses.lua	1384	1	MAW 주문명
 maw-1fb2f39c778c	untranslated	spell	GetSpellSkill			Scripts/General/ExtraEvents.lua	503	1	
 maw-a66864f45a5a	untranslated	spell	GM			Scripts/General/zzClasses.lua	1358	3	
 maw-7fef960c0f73	untranslated	spell	Grandmaster			Scripts/General/zzMaw-Spells.lua	3424	1	
@@ -1799,8 +1840,8 @@ Require 20 power to work.
 "			Scripts/General/zzAlchemy.lua	479	1	
 maw-9924ac014435	untranslated	spell	HealingSpellPower			Scripts/General/zzMaw-Spells.lua	958	1	
 maw-a81d65fc7582	untranslated	spell	Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.			Scripts/General/zzMaw-Spells.lua	3411	1	
-maw-81879b13e55a	untranslated	spell	Ice Bomb			Scripts/General/zzClasses.lua	1392	1	
-maw-c7db2e9edfcd	untranslated	spell	Icy Touch			Scripts/General/zzClasses.lua	1375	1	
+maw-81879b13e55a	translated	spell	Ice Bomb	얼음 폭탄		Scripts/General/zzClasses.lua	1392	1	MAW 주문명
+maw-c7db2e9edfcd	translated	spell	Icy Touch	얼음의 손길		Scripts/General/zzClasses.lua	1375	1	MAW 주문명
 maw-31010d130c93	untranslated	spell	Increases damage by 10 plus 1 per skill point			Scripts/General/zzMaw-Spells.lua	721	1	
 maw-28f5ba6a17bf	untranslated	spell	Increases damage by 10 plus 1.5 per skill point			Scripts/General/zzMaw-Spells.lua	722	1	
 maw-63f63821464a	untranslated	spell	Increases damage by 10 plus 2 per skill point			Scripts/General/zzMaw-Spells.lua	723	1	
@@ -1816,9 +1857,11 @@ maw-dfccc06f1441	untranslated	spell	light			Scripts/General/zzMaw-Spells.lua	335
 maw-4a97653f1cb6	untranslated	spell	Light Magic Book			Scripts/General/zzMaw-Spells.lua	3406	1	
 maw-79f0d3d89615	untranslated	spell	Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.			Scripts/General/zzMaw-Spells.lua	3413	1	
 maw-78f3842f0201	untranslated	spell	Master			Data/Tables/Class Extra.txt	26	8	
-maw-d42a1814d6b6	untranslated	spell	"Melee Power: %s
+maw-d42a1814d6b6	translated	spell	"Melee Power: %s
 Ranged Power: %s
-Spell Power: %s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	521	1	
+Spell Power: %s"	"근접 위력: %s
+원거리 위력: %s
+주문 위력: %s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	521	1	전투 능력치; 자리표시자 보존
 maw-3c9b44ede5e6	untranslated	spell	Mind Magic Book			Scripts/General/zzMaw-Spells.lua	3404	1	
 maw-0649982d2fdb	untranslated	spell	Monster looses the ability to deal ranged damage			Scripts/General/zzClasses.lua	1438	1	
 maw-d25cbef0630c	untranslated	spell	Monster slows by 1/2 of speed			Scripts/General/zzClasses.lua	1378	1	
@@ -1878,7 +1921,7 @@ maw-e2231a88184b	untranslated	spell	SpellSkill			Scripts/General/AdaptiveMonster
 maw-b40d51318efc	untranslated	spell	spirit			Scripts/General/zzMaw-Spells.lua	3355	1	
 maw-493fda54af1e	untranslated	spell	Spirit Magic Book			Scripts/General/zzMaw-Spells.lua	3403	1	
 maw-ecb252044b5e	untranslated	spell	string			Scripts/General/zzMaw-Items.lua	2478	10	
-maw-f777d89464c8	untranslated	spell	Superior Blood Leech			Scripts/General/zzClasses.lua	1413	1	
+maw-f777d89464c8	translated	spell	Superior Blood Leech	상급 피 흡수		Scripts/General/zzClasses.lua	1413	1	MAW 주문명
 maw-c3ee137d4f22	untranslated	spell	table			Scripts/General/AdaptiveMonstersStats.lua	674	23	
 maw-825e2643a3e6	untranslated	spell	TargetIndex			Scripts/General/zzMaw-Spells.lua	65	2	
 maw-cf6173037914	untranslated	spell	TargetRosterId			Scripts/General/zzMaw-Spells.lua	65	1	
@@ -3235,52 +3278,62 @@ maw-addb02e7a811	untranslated	table	Zombie(10)			Data/Tables/Race Skills.txt	1	2
 maw-80dc19c8fa35	untranslated	tooltip	"
 
 Can benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50
-Current amount: "		% o	Scripts/General/zzAlchemy.lua	449	1	
+Current amount: "			Scripts/General/zzAlchemy.lua	449	1	
 maw-c4d4148a3add	untranslated	tooltip	"
 
 Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "			Scripts/General/zzMaw-Spells.lua	2301	1	
 maw-da6128e46ead	untranslated	tooltip	"
 
 Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."			Scripts/General/zzMaw-Spells.lua	713	1	
-maw-a666f8a2a848	untranslated	tooltip	"
+maw-a666f8a2a848	translated	tooltip	"
 
-Health Reserved: "			Scripts/General/zzMaw-Spells.lua	2252	2	
-maw-b16cac477df4	untranslated	tooltip	"
+Health Reserved: "	"
 
-Increases Charges by "			Scripts/General/zzAlchemy.lua	745	1	
-maw-f82ab8f8a68d	untranslated	tooltip	"
+예약 생명력: "		Scripts/General/zzMaw-Spells.lua	2252	2	주문 툴팁
+maw-b16cac477df4	translated	tooltip	"
 
-Mana Reserved: "			Scripts/General/zzMaw-Spells.lua	2254	2	
-maw-f45cfae365c4	untranslated	tooltip	"
+Increases Charges by "	"
 
-Press alt to show recipe list"			Scripts/General/zzAlchemy.lua	464	1	
+충전 횟수 증가: "		Scripts/General/zzAlchemy.lua	745	1	연금술 툴팁
+maw-f82ab8f8a68d	translated	tooltip	"
+
+Mana Reserved: "	"
+
+예약 마나: "		Scripts/General/zzMaw-Spells.lua	2254	2	주문 툴팁
+maw-f45cfae365c4	translated	tooltip	"
+
+Press alt to show recipe list"	"
+
+조합법 목록을 보려면 Alt를 누르세요"		Scripts/General/zzAlchemy.lua	464	1	연금술 툴팁
 maw-e886c82c9925	untranslated	tooltip	"
 
 Recovery time: "			Scripts/General/zzMaw-Spells.lua	2297	4	
 maw-182be7411220	untranslated	tooltip	"
 
 This Ability requires "			Scripts/General/zzClasses.lua	2150	1	
-maw-09ca3bd88609	untranslated	tooltip	"
+maw-09ca3bd88609	translated	tooltip	"
 
-You need at least "			Scripts/General/zzMaw-Spells.lua	3446	1	
+You need at least "	"
+
+이 책을 열려면 최소 "		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
 maw-650dfcafffc2	untranslated	tooltip	"
 Levels: "			Scripts/General/zzAlchemy.lua	449	1	
 maw-2729c11e8541	untranslated	tooltip	"
 The Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.
 
 (right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"			Scripts/General/zzAlchemy.lua	737	1	
-maw-564868e32581	untranslated	tooltip	 bonus to Meditation skill for 6 hours.			Scripts/General/zzAlchemy.lua	422	1	
+maw-564868e32581	translated	tooltip	 bonus to Meditation skill for 6 hours.	 (6시간)		Scripts/General/zzAlchemy.lua	422	1	명상 보너스 조각
 maw-25b1dc1d2e83	untranslated	tooltip	 Combo Points to be casted.			Scripts/General/zzClasses.lua	2150	1	
 maw-a797649a8169	untranslated	tooltip	" resistance. Control duration against bosses is halved.
 
 Recovery time: "			Scripts/General/zzMaw-Spells.lua	2301	1	
-maw-b65147dd3a81	untranslated	tooltip	 skill in 			Scripts/General/zzMaw-Spells.lua	3446	1	
-maw-bf2e7de97098	untranslated	tooltip	 Spell Points			Scripts/General/zzAlchemy.lua	419	2	
-maw-162ac29e9a70	untranslated	tooltip	 to open the book			Scripts/General/zzMaw-Spells.lua	3446	1	
-maw-cf27f2cd748c	untranslated	tooltip	% and making him unable to act for 4 seconds		% a	Scripts/General/zzClasses.lua	1421	1	
-maw-af634980b8e7	untranslated	tooltip	% of current weapon damage.		% o	Scripts/General/zzClasses.lua	1376	3	
-maw-389c10ec5573	untranslated	tooltip	% of the base weapon damage		% o	Scripts/General/zzClasses.lua	1428	1	
-maw-23e4814d86f5	untranslated	tooltip	% of weapon damage		% o	Scripts/General/zzClasses.lua	1443	1	
+maw-b65147dd3a81	translated	tooltip	 skill in 	 단계 이상의 		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
+maw-bf2e7de97098	translated	tooltip	 Spell Points	 주문력		Scripts/General/zzAlchemy.lua	419	2	연금술 툴팁 조각
+maw-162ac29e9a70	translated	tooltip	 to open the book	 기술이 필요합니다		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
+maw-cf27f2cd748c	untranslated	tooltip	% and making him unable to act for 4 seconds			Scripts/General/zzClasses.lua	1421	1	
+maw-af634980b8e7	untranslated	tooltip	% of current weapon damage.			Scripts/General/zzClasses.lua	1376	3	
+maw-389c10ec5573	untranslated	tooltip	% of the base weapon damage			Scripts/General/zzClasses.lua	1428	1	
+maw-23e4814d86f5	untranslated	tooltip	% of weapon damage			Scripts/General/zzClasses.lua	1443	1	
 maw-3e09c757f9d4	untranslated	tooltip	"%s
 	070Each spear attack reduces physical resistance, increasing damage by: %s%%
 Increased by 50%% with Halberds"		%s %s	Scripts/General/zzMAW-Skills.lua	1407	1	
@@ -3325,8 +3378,8 @@ maw-79e5fe65b538	untranslated	tooltip	Calls stars from the heavens to smite and 
 maw-c5ebafbe73a6	untranslated	tooltip	Calls upon the power of heaven to undo the evil magic that extends the lives of the undead, inflicting %s points of damage plus 1-%s per point of skill in Light Magic upon a single, unlucky target.  This spell only works on the undead.		%s %s	Scripts/General/zzMaw-Spells.lua	2116	1	
 maw-de573e54df84	untranslated	tooltip	Causes 1-%s points of damage per point of skill, 5 spikes maximum		%s	Scripts/General/zzMaw-Spells.lua	2085	3	
 maw-18ba1f5b2c6e	untranslated	tooltip	Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants			Scripts/General/zzMaw-Spells.lua	2952	1	
-maw-7d45f149038b	untranslated	tooltip	Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment			Scripts/General/zzAlchemy.lua	739	1	
-maw-def4e8ac8c44	untranslated	tooltip	Charges: 			Scripts/General/zzAlchemy.lua	457	1	
+maw-7d45f149038b	translated	tooltip	Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment	천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다		Scripts/General/zzAlchemy.lua	739	1	천상 오브 설명
+maw-def4e8ac8c44	translated	tooltip	Charges: 	충전 횟수: 		Scripts/General/zzAlchemy.lua	457	1	연금술 툴팁
 maw-54a2be81842c	untranslated	tooltip	"Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.
 Using this map will teleport you to the entrance."			Scripts/General/zzMaw-Maps.lua	2162	1	
 maw-38be6c8c98ef	untranslated	tooltip	Damage 1-%s per point of skill		%s	Scripts/General/zzMaw-Spells.lua	2127	2	
@@ -3350,11 +3403,11 @@ maw-e5cd75207156	untranslated	tooltip	"Fires a rotating, razor-thin metal blade 
 
 Blades is the only spell capable to deal Physical damage."		%s	Scripts/General/zzMaw-Spells.lua	2104	1	
 maw-4427a655fa7e	untranslated	tooltip	Flying Fist throws a heavy magical force at a single opponent that does %s points of damage plus 1-%s per point of skill in Body Magic.		%s %s	Scripts/General/zzMaw-Spells.lua	2113	2	
-maw-a31c549795f4	untranslated	tooltip	Grants 			Scripts/General/zzAlchemy.lua	422	1	
+maw-a31c549795f4	translated	tooltip	Grants 	명상 기술 보너스 +		Scripts/General/zzAlchemy.lua	422	1	명상 물약 설명 조각
 maw-0cf3c2a8447c	untranslated	tooltip	"Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
 
 At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"			Scripts/General/zzMaw-Spells.lua	997	1	
-maw-90c0d611d15e	untranslated	tooltip	Heals 			Scripts/General/zzAlchemy.lua	416	2	
+maw-90c0d611d15e	translated	tooltip	Heals 	생명력 회복: 		Scripts/General/zzAlchemy.lua	416	2	물약 설명 조각
 maw-7dcf7871f711	untranslated	tooltip	"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
 Lasts for 2 hours plus 1 hour per point of skill"			Scripts/General/zzMaw-Spells.lua	720	1	
 maw-30dd1cb6f8b6	untranslated	tooltip	Host have closed the game			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	708	1	
@@ -3379,8 +3432,8 @@ Adds the following legendary power to an item:"			Scripts/General/zzAlchemy.lua	
 maw-4fd500d1538e	untranslated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
 
 Right click a legendary item to store its power"			Scripts/General/zzAlchemy.lua	728	1	
-maw-121a00d89940	untranslated	tooltip	Power: 			Scripts/General/zzAlchemy.lua	615	4	
-maw-cc56042a8cdb	untranslated	tooltip	Press alt to show craftable stats			Scripts/General/zzMaw-Items.lua	1819	1	
+maw-121a00d89940	translated	tooltip	Power: 	위력: 		Scripts/General/zzAlchemy.lua	615	4	아이템 툴팁
+maw-cc56042a8cdb	translated	tooltip	Press alt to show craftable stats	제작 가능한 능력치를 보려면 Alt를 누르세요		Scripts/General/zzMaw-Items.lua	1819	1	아이템 툴팁
 maw-c9bec7b88407	untranslated	tooltip	Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken.			Scripts/General/zzMaw-Spells.lua	732	1	
 maw-997847b4799b	untranslated	tooltip	Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.		%s %s	Scripts/General/zzMaw-Spells.lua	2105	1	
 maw-8b2b08919ea9	untranslated	tooltip	"Reserve a flat amount of mana
@@ -3454,7 +3507,7 @@ While the base effects remain consistent, each additional 3 levels in Light Magi
 This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3062	1	
 maw-643fc1ad80e5	untranslated	tooltip	"Reserve a percentage of your mana.
 When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."			Scripts/General/zzMaw-Spells.lua	3081	1	
-maw-1ba00dbce0f6	untranslated	tooltip	Restores 			Scripts/General/zzAlchemy.lua	419	2	
+maw-1ba00dbce0f6	translated	tooltip	Restores 	주문력 회복: 		Scripts/General/zzAlchemy.lua	419	2	물약 설명 조각
 maw-3c7bacac8039	untranslated	tooltip	"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
 
 Proficiency in Plate, Sword, Mace, and Shield (can't dual wield)
@@ -3466,7 +3519,7 @@ Gods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added
 
 Holy Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)
 
-Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."		% o	Scripts/General/zzClasses.lua	160	1	
+Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."			Scripts/General/zzClasses.lua	160	1	
 maw-913758904779	untranslated	tooltip	Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.		%s %s	Scripts/General/zzMaw-Spells.lua	2111	1	
 maw-0a4e49ab66a5	untranslated	tooltip	Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic.			Scripts/General/zzMaw-Spells.lua	746	1	
 maw-2f8051d794e2	untranslated	tooltip	SkillDescriptionsExpert			Scripts/Structs/extraEditableDescriptions.lua	43	1	
@@ -3491,7 +3544,7 @@ Mana Cost: 1 + 7.5% of the total.
 
 After a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.
 
-Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."		% hi % o % p % p	Scripts/General/zzClasses.lua	1521	1	
+Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."			Scripts/General/zzClasses.lua	1521	1	
 maw-4623aaef40dd	untranslated	tooltip	"The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.
 You can check following values by checking magic schools description in skills menu.
  - Each school will provide a unique bonus. There is strength in diversifying as well as specialization
@@ -3501,7 +3554,7 @@ You can check following values by checking magic schools description in skills m
  - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.
  - Each point in Earth will increase melee damage by a flat amount
  - Each point in Body will heal by flat amount
- - Each point in mind will restore a flat amount of mana"		% o % p	Scripts/General/zzClasses.lua	966	1	
+ - Each point in mind will restore a flat amount of mana"			Scripts/General/zzClasses.lua	966	1	
 maw-47690b30aff6	untranslated	tooltip	This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.			Scripts/General/zzClasses.lua	477	2	
 maw-b25c51ddac4f	untranslated	tooltip	"This class combines the evil forces with brute power, making it powerful and versatile.
  Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
@@ -3516,7 +3569,7 @@ This skill fortifies their resilience, reducing physical damage taken by 1% per 
 
 Unholy:
 
-It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."		% f % f % p	Scripts/General/zzClasses.lua	1073	1	
+It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."			Scripts/General/zzClasses.lua	1073	1	
 maw-1ff214ae0f09	untranslated	tooltip	This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.		%s %s	Scripts/General/zzMaw-Spells.lua	2125	1	
 maw-8601b402d801	untranslated	tooltip	This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.		%s %s	Scripts/General/zzMaw-Spells.lua	2123	1	
 maw-fd4fc93cc199	untranslated	tooltip	This is the strongest single damage spell available to death knights and deals damage equal to 			Scripts/General/zzClasses.lua	1385	1	
@@ -3527,10 +3580,12 @@ maw-b1274cce740a	untranslated	tooltip	This spell weakens the link between a targ
 maw-298d71390c0c	untranslated	tooltip	"Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.
 Deals damage equal to "			Scripts/General/zzClasses.lua	1393	1	
 maw-83916160e91f	untranslated	tooltip	tooltip			Scripts/General/zzMaw-Items.lua	2256	3	
-maw-714cca80cbf4	untranslated	tooltip	"Vampiric Aura: damage done will restore player HP.
+maw-714cca80cbf4	translated	tooltip	"Vampiric Aura: damage done will restore player HP.
 
-"			Scripts/General/zzMaw-Items.lua	4708	1	
-maw-3571fcf17456	untranslated	tooltip	Vitality: 			Scripts/General/zzMaw-Items.lua	2762	2	
+"	"흡혈 오라: 가한 피해에 따라 플레이어의 생명력이 회복됩니다.
+
+"		Scripts/General/zzMaw-Items.lua	4708	1	아이템 툴팁
+maw-3571fcf17456	translated	tooltip	Vitality: 	활력: 		Scripts/General/zzMaw-Items.lua	2762	2	아이템 툴팁
 maw-24277300a2da	untranslated	ui	"
 
 Bolster Level in MM6: "			Scripts/General/zzMaw-Stats.lua	551	2	
@@ -3547,7 +3602,7 @@ Damage is reduced by an amount equal to % shown.
 
 Light resistance is equal to the lowest between Mind and Body resistances.
 Dark resistance is equal to the lowest between elemental resistances.
-Energy resistance is equal to the lowest resistance."		% s	Scripts/General/zzMaw-Stats.lua	743	1	
+Energy resistance is equal to the lowest resistance."			Scripts/General/zzMaw-Stats.lua	743	1	
 maw-5470a2089a61	untranslated	ui	"
 
 Experience: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
@@ -3602,7 +3657,7 @@ maw-880efb921b0e	translated	ui	 General settings	 일반 설정		Scripts/General
 maw-b15869c959e3	untranslated	ui	 Randomizer			Scripts/General/zzzzMalekith-Randomizer.lua	395	1	
 maw-7b618f6314b4	untranslated	ui	"""] = 
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
-maw-ef6a39857a0b	untranslated	ui	%%d			Scripts/General/zzMAW-Skills.lua	1796	1	
+maw-ef6a39857a0b	untranslated	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	
 maw-b34bcfd49892	untranslated	ui	%lu		%lu	Scripts/General/BountyHunt.lua	11	2	
 maw-fb7711e92c7f	untranslated	ui	"%s
 

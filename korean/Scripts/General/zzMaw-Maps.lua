@@ -138,7 +138,7 @@ function canResetDungeon(mapFileName)
 end
 
 --used in maps
-resetTxt="The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)"
+resetTxt="이 던전은 이미 클리어했지만 초기화하여 더 강한 몬스터에게 다시 도전할 수 있습니다. 초기화 후에는 클리어 보상을 받을 수 없습니다. 던전을 초기화하시겠습니까? (yes/no 입력)"
 local possibleAnswers={"yes", "Yes", "YES", " yes", " Yes", " YES"} 
 function resetMap(dungeonId)
 	--if canResetDungeon(dungeonId) and not vars.resetDungeon and not questionAsked and not vars.onlineMode then
@@ -1911,7 +1911,7 @@ function events.GameInitialized2()
 		baseSpawnMonsters[i][2]=Game.MapStats[i].Monster2Pic
 		baseSpawnMonsters[i][3]=Game.MapStats[i].Monster3Pic
 	end
-	Game.ItemsTxt[290].Name="Dimension Map"
+	Game.ItemsTxt[290].Name="차원 지도"
 end
 
 --needed for chest/objects loot
@@ -2083,7 +2083,7 @@ function events.BuildItemInformationBox(t)
 		else
 			power=it.Bonus
 		end
-		t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,"\n+" .. round((it.MaxCharges*power+power*20)/8*1.5) .. "% craft items drop chances "  .. "\n+" .. round((it.MaxCharges*power+power*20)/4) .. "% item quality " .. "%\n+" .. round((it.MaxCharges*power+power*20)/3) .. "% monster density")	
+		t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,"\n+" .. round((it.MaxCharges*power+power*20)/8*1.5) .. "% 제작 재료 드롭 확률 "  .. "\n+" .. round((it.MaxCharges*power+power*20)/4) .. "% 아이템 품질 " .. "%\n+" .. round((it.MaxCharges*power+power*20)/3) .. "% 몬스터 밀도")	
 	end
 	if it.Number==290 and t.Name then
 		t.Name=Game.MapStats[it.BonusStrength].Name .. " Map"

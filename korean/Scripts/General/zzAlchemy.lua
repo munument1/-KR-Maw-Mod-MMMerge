@@ -8,19 +8,19 @@ function events.GameInitialized2()
 	end
 	
 	for i=264,299 do
-		Game.ItemsTxt[i].Name="Potion Deleted in MAW"
+		Game.ItemsTxt[i].Name="MAW에서 삭제된 물약"
 	end
 end
 function events.LoadMap()
 	if vars.AusterityMode then
 		for i=232,237 do
-			Game.ItemsTxt[i].Name="Potion Deleted in Austerity"
+			Game.ItemsTxt[i].Name="절제 모드에서 삭제된 물약"
 		end
 		for i=252,256 do
-			Game.ItemsTxt[i].Name="Potion Deleted in Austerity"
+			Game.ItemsTxt[i].Name="절제 모드에서 삭제된 물약"
 		end
 		for i=261,263 do
-			Game.ItemsTxt[i].Name="Potion Deleted in Austerity"
+			Game.ItemsTxt[i].Name="절제 모드에서 삭제된 물약"
 		end
 	else
 		for i=232,263 do
@@ -413,19 +413,19 @@ function events.BuildItemInformationBox(t)
 		t.Description="This potion has been removed"
 	end
 	if t.Item.Number==222 then
-		t.Description=StrColor(255,255,153,"Heals " .. round(t.Item.Bonus^1.75)+10 .. " Hit Points") .. "\n" .. t.Description
+		t.Description=StrColor(255,255,153,"생명력 회복: " .. round(t.Item.Bonus^1.75)+10 .. " 생명력") .. "\n" .. t.Description
 	end
 	if t.Item.Number==223 then
-		t.Description=StrColor(255,255,153,"Restores " .. round(t.Item.Bonus^1.6*2/3)+10 .. " Spell Points") .. "\n" .. t.Description
+		t.Description=StrColor(255,255,153,"주문력 회복: " .. round(t.Item.Bonus^1.6*2/3)+10 .. " 주문력") .. "\n" .. t.Description
 	end
 	if t.Item.Number==232 then
-		t.Description="Grants " .. StrColor(0,0,200,math.ceil(t.Item.Bonus^0.5/1.5) + 1) .. " bonus to Meditation skill for 6 hours."
+		t.Description="명상 기술 보너스 +" .. StrColor(0,0,200,math.ceil(t.Item.Bonus^0.5/1.5) + 1) .. " (6시간)"
 	end
 	if t.Item.Number==247 then
-		t.Description=StrColor(255,255,153,"Heals " .. round(t.Item.Bonus^1.75*1.5)+20 .. " Hit Points") .. "\n" .. t.Description
+		t.Description=StrColor(255,255,153,"생명력 회복: " .. round(t.Item.Bonus^1.75*1.5)+20 .. " 생명력") .. "\n" .. t.Description
 	end
 	if t.Item.Number==248 then
-		t.Description=StrColor(255,255,153,"Restores " .. round(t.Item.Bonus^1.6)+20 .. " Spell Points") .. "\n" .. t.Description
+		t.Description=StrColor(255,255,153,"주문력 회복: " .. round(t.Item.Bonus^1.6)+20 .. " 주문력") .. "\n" .. t.Description
 	end
 	if t.Item.Number==259 then
 		local id=Game.CurrentPlayer
@@ -454,14 +454,14 @@ function events.BuildItemInformationBox(t)
 		if charges==-1 then
 			charges=5
 		end
-		t.Description=StrColor(255,255,153,"Charges: " .. charges) .. "\n\n" .. t.Description
+		t.Description=StrColor(255,255,153,"충전 횟수: " .. charges) .. "\n\n" .. t.Description
 	end
 	
 	if potionRecipeText[t.Item.Number] then
 		if extraDescription then
 			t.Description=t.Description .. "\n\n" .. potionRecipeText[t.Item.Number]
 		else
-			t.Description=t.Description .. StrColor(100,100,100,"\n\nPress alt to show recipe list")
+			t.Description=t.Description .. StrColor(100,100,100,"\n\n조합법 목록을 보려면 Alt를 누르세요")
 		end
 	end
 end
@@ -692,7 +692,7 @@ function events.BuildItemInformationBox(t)
 		--[[
 		if t.Name then
 			if t.Item.BonusStrength==1 then
-				t.Name=StrColor(178,255,255, "Ascended " .. t.Name) 
+				t.Name=StrColor(178,255,255, "승천한 " .. t.Name) 
 			end
 		end
 		]]
@@ -715,11 +715,11 @@ function events.BuildItemInformationBox(t)
 			
 			t.Description = "A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)\nAncient, Primordial and Legendary items have increased Max power.\n\nIt is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.\n\nMax Power: " 
 			.. StrColor(255, 128, 0, tostring(round(tier * 6))) --.. " (65% on AC)"
-			.. "\nBonus: " .. StrColor(255, 128, 0, tostring(power)) 
-			.. "\n\nItem Modifier:\nTwo Handed Weapons: " .. StrColor(255, 128, 0, twoHanded)
-			.. "\nBody Armor: " .. StrColor(255, 128, 0, bodyArmor)
-			.. "\nHelm-Boots-Gloves-Bow: " .. StrColor(255, 128, 0, helmEtc)
-			.. "\nRings: " .. StrColor(255, 128, 0, rings)
+			.. "\n보너스: " .. StrColor(255, 128, 0, tostring(power)) 
+			.. "\n\n아이템 보정치:\n양손 무기: " .. StrColor(255, 128, 0, twoHanded)
+			.. "\n갑옷: " .. StrColor(255, 128, 0, bodyArmor)
+			.. "\n투구-장화-장갑-활: " .. StrColor(255, 128, 0, helmEtc)
+			.. "\n반지: " .. StrColor(255, 128, 0, rings)
 		end
 	end
 	if t.Item.Number==1067 then
@@ -736,13 +736,13 @@ function events.BuildItemInformationBox(t)
 		if t.Description then				
 			t.Description="\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"
 			if t.Item.BonusStrength==1 then
-				t.Description = t.Description .. "\n\n" .. StrColor(120, 240, 255,"Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment")
+				t.Description = t.Description .. "\n\n" .. StrColor(120, 240, 255,"천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다")
 			end
 		end
 	end
 	if t.Item.Number==1069 then
 		if t.Description then				
-			t.Description=t.Description .. StrColor(255,255,30, "\n\nIncreases Charges by " .. t.Item.BonusStrength)
+			t.Description=t.Description .. StrColor(255,255,30, "\n\n충전 횟수 증가: " .. t.Item.BonusStrength)
 		end
 	end
 end
@@ -1416,7 +1416,7 @@ function events.GameInitialized2()
 	Game.ItemsTxt[1068].SpriteIndex=411
 	
 	--potion
-	Game.ItemsTxt[1069].Name="Endless Potion"
+	Game.ItemsTxt[1069].Name="무한 물약"
 	Game.ItemsTxt[1069].NotIdentifiedName="Potion Bottle"
 	Game.ItemsTxt[1069].Notes="This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions."
 	Game.ItemsTxt[1069].Picture="item280"

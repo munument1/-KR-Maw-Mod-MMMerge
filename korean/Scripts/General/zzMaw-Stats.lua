@@ -518,7 +518,7 @@ function events.BuildStatInformationBox(t)
 		local pl=Party[i]
 		--get spell and its damage
 		DPS1, DPS2, DPS3, vitality=calcPowerVitality(pl)
-		local txt=string.format("Melee Power: %s\nRanged Power: %s\nSpell Power: %s",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))
+		local txt=string.format("근접 위력: %s\n원거리 위력: %s\n주문 위력: %s",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))
 			
 		t.Text=string.format("%s\n%s",t.Text,txt)
 		
@@ -529,7 +529,7 @@ function events.BuildStatInformationBox(t)
 		local pl=Party[i]
 		local id=pl:GetIndex()
 		--check and add equipped legendaries
-		local legTxt="Currently Active Legendary effects:"
+		local legTxt="현재 활성화된 전설 효과:"
 		for i=1,#legendaryEffects-10 do
 			local legId=i+10
 			if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], legId) then
@@ -1487,7 +1487,7 @@ function events.Tick()
 		else
 		    Game.GlobalTxt[47]=string.format("M/R:%s/%s\n\n\n\n\n\n\n",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))
 		end
-		Game.GlobalTxt[172]=string.format("Vitality: %s\n\n\n\n\n\n\n\n",StrColor(0,255,0,vitality))
+		Game.GlobalTxt[172]=string.format("활력: %s\n\n\n\n\n\n\n\n",StrColor(0,255,0,vitality))
 	else
 		Game.GlobalTxt[47]="Condition"
 		Game.GlobalTxt[172]="Quick Spell"

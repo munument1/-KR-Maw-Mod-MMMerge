@@ -471,7 +471,7 @@ local last_choice
 
 local function last_character_choice()
 	if last_choice then
-		last_choice.Name = StrColor(46,237,218, "(last choice) ") .. StrColor(250,250,250) .. last_choice.data.player_name
+		last_choice.Name = StrColor(46,237,218, "(마지막 선택) ") .. StrColor(250,250,250) .. last_choice.data.player_name
 		last_choice.Map = Game.MapStats[last_choice.data.at_map].Name
 		return last_choice
 	end
@@ -480,7 +480,7 @@ CharChoice.last_character_choice = last_character_choice
 
 local function current_character_choice()
 	return {
-		Name = StrColor(213,70,191, "(current) ") .. StrColor(250,250,250) .. Party[0].Name,
+		Name = StrColor(213,70,191, "(현재) ") .. StrColor(250,250,250) .. Party[0].Name,
 		ClassId = Party[0].Class,
 		PicId = Game.CharacterPortraits[Party[0].Face].NPCPic,
 		Level = Party[0].LevelBase,
@@ -498,7 +498,7 @@ local function character_choice(PartyData)
 	end
 
 	return {
-		Name = StrColor(46,237,218, "(client save) ") .. StrColor(250,250,250) .. PartyData.player_name,
+		Name = StrColor(46,237,218, "(클라이언트 저장) ") .. StrColor(250,250,250) .. PartyData.player_name,
 		ClassId = PartyData.player_class_id,
 		PicId = PartyData.player_pic,
 		Level = PartyData.level,
@@ -601,7 +601,7 @@ local function process_character_choice(callback, callback_delay, MoveToMapParam
 		handler(1)
 	else
 		LogEvent("SAVE_LOAD", "Received character data from server. Suggesting choice.")
-		choices[1].Name = StrColor(235,235,50, "(Most relevant) ") .. choices[1].Name
+		choices[1].Name = StrColor(235,235,50, "(가장 관련 높음) ") .. choices[1].Name
 		Multiplayer.SelectCharacter(choices, handler)
 	end
 end
@@ -618,7 +618,7 @@ local function request_host_saved_characters()
 
 	local last_game = response.handler_result
 	return {
-		Name = StrColor(95,235,50, "(host save) ") .. StrColor(250,250,250) .. last_game.player_name,
+		Name = StrColor(95,235,50, "(호스트 저장) ") .. StrColor(250,250,250) .. last_game.player_name,
 		ClassId = last_game.player_class_id,
 		PicId = last_game.player_pic,
 		Level = last_game.level,
