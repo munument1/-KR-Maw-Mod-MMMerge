@@ -151,7 +151,7 @@ def discover_item_enchant_description_lines(root: Path) -> set[tuple[str, int]]:
         if not in_bonus_table:
             if re.match(r"bonus2txt\s*=\s*\{", stripped):
                 in_bonus_table = True
-            elif stripped == "end":
+            elif re.match(r"(?:local\s+)?function\s+", stripped):
                 break
             continue
 
