@@ -438,7 +438,7 @@ maw-3033edec5fa1	excluded	item	Two-Handed Axe			Scripts/General/zzMaw-Items.lua	
 maw-fdf3f280c840	excluded	item	Two-Handed Sword			Scripts/General/zzMaw-Items.lua	1202	1	Internal engine/control literal only; not player-facing localization.
 maw-3deb74565196	excluded	item	Type			Scripts/General/zzMaw-Items.lua	2220	14	Internal engine/control literal only; not player-facing localization.
 maw-bd03227258e3	translated	item	Unarmed skill	맨손 전투 기술		Scripts/General/zzMaw-Items.lua	1883	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-40f2133dc6ab	untranslated	item	Uncom.			Scripts/General/zzMaw-Items.lua	461	3	
+maw-40f2133dc6ab	excluded	item	Uncom.			Scripts/General/zzMaw-Items.lua	461	3	저장/비교용 lootFilter 값은 영어 유지; 생성 overlay의 설정 표시 helper에서 고급으로 렌더링
 maw-56394eec2a7b	translated	item	unconscious	의식불명		Scripts/General/zzMaw-Items.lua	1259	1	면역 발동 상태 메시지의 동적 상태명
 maw-4408ab2d1ad0	excluded	item	UseMouseItem			Scripts/Core/events.lua	2048	1	Internal engine/control literal only; not player-facing localization.
 maw-8ccdbd65065b	translated	item	"WARNING!!!
@@ -1731,8 +1731,8 @@ maw-24652e28b940	translated	skill	Blood	혈마법		Scripts/General/zzClasses.lua
 maw-b01262c9360e	translated	skill	Body Magic	육체 마법		Scripts/General/zzClasses.lua	1473	1	Skillz.setName 표시명
 maw-619b87bbb4ea	excluded	skill	bonusSpeedMelee			Scripts/General/zzMAW-Skills.lua	357	1	Internal engine/control literal only; not player-facing localization.
 maw-27f96dca33a7	excluded	skill	bonusSpeedRanged			Scripts/General/zzMAW-Skills.lua	353	1	Internal engine/control literal only; not player-facing localization.
-maw-c35678b78637	untranslated	skill	Broodling			Scripts/General/zzAlchemy.lua	1259	8	
-maw-fe3e99c07f8a	untranslated	skill	Broodlord			Scripts/General/zzMaw-Monsters.lua	3115	3	
+maw-c35678b78637	excluded	skill	Broodling			Scripts/General/zzAlchemy.lua	1259	8	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [군체하수인] 표시 + GetMawBossSkill 역변환
+maw-fe3e99c07f8a	excluded	skill	Broodlord			Scripts/General/zzMaw-Monsters.lua	3115	3	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [군체군주] 표시 + GetMawBossSkill 역변환
 maw-dfbe0e034b19	excluded	skill	BuildSkillInformationBox			Scripts/Structs/extraEditableDescriptions.lua	54	1	Internal engine/control literal only; not player-facing localization.
 maw-18278917acef	translated	skill	"By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. 
 
@@ -1909,7 +1909,7 @@ maw-7fdc3862734e	translated	skill	Melee attack costs 40 energy	근접 공격에 
 maw-bfc71b4321ca	translated	skill	Melee attack costs 45 energy	근접 공격에 에너지 45를 소모합니다		Scripts/General/zzClasses.lua	2115	1	스킬 숙련 효과
 maw-bc450c26c1e8	translated	skill	Melee attacks heal on hit	근접 공격 적중 시 생명력을 회복합니다		Scripts/General/zzClasses.lua	431	1	스킬 숙련 효과
 maw-0a893ece8e46	translated	skill	Misc	기타		Scripts/General/zzMAW-Skills.lua	2063	2	기타 기술 UI
-maw-cf844749e1e5	untranslated	skill	Omnipotent			Scripts/General/BountyHunt.lua	216	17	
+maw-cf844749e1e5	excluded	skill	Omnipotent			Scripts/General/BountyHunt.lua	216	17	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [전능] 표시 + GetMawBossSkill 역변환
 maw-8eacd5e0337a	excluded	skill	Plagueborn			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-92e872e4e20e	translated	skill	"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
 

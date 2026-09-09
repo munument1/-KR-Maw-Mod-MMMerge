@@ -1,5 +1,1 @@
 source_escaped	category	occurrences	patchable_occurrences	uncertain_occurrences	reasons	files	sample_context_escaped
-Uncom.	item	3	0	1	internal_lookup_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua; Scripts/General/zz_Maw-initialize.lua	local tierList={"Common", "Uncom.", "Rare", "Epic", "Ancient", "Primordial", "Legendary", [0]="OFF"}
-Broodling	skill	8	0	3	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Maps.lua; Scripts/General/zzMaw-Monsters.lua	if skill=="Broodling" then
-Broodlord	skill	3	0	2	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua	skill = "Broodlord"
-Omnipotent	skill	17	0	2	comparison_control_literal:15; uncertain_context:2	Scripts/General/BountyHunt.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Spells.lua; Scripts/General/zzMaw-Stats.lua	if monsterSkill=="Omnipotent" then
