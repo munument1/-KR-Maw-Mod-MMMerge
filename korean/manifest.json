@@ -1,10 +1,10 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 912,
-  "translated_entries_with_patchable_occurrences": 911,
-  "patchable_occurrences_targeted": 1199,
-  "skipped_unpatchable_occurrences_for_translated_sources": 71,
+  "translated_entries": 953,
+  "translated_entries_with_patchable_occurrences": 952,
+  "patchable_occurrences_targeted": 1243,
+  "skipped_unpatchable_occurrences_for_translated_sources": 83,
   "changed_files": [
     {
       "file": "Scripts/General/AdaptiveMonstersStats.lua",
@@ -36,11 +36,11 @@
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
-      "replacements": 13
+      "replacements": 21
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 204
+      "replacements": 224
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
@@ -76,7 +76,7 @@
     },
     {
       "file": "Scripts/Global/Quest_SavingGoobers.lua",
-      "replacements": 13
+      "replacements": 25
     },
     {
       "file": "Scripts/Global/zzMAWPotions.lua",
@@ -147,12 +147,20 @@
       "replacements": 1
     },
     {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua",
+      "replacements": 1
+    },
+    {
       "file": "Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua",
       "replacements": 8
     },
     {
       "file": "Scripts/Modules/Multiplayer/UI/GlobalMap.lua",
       "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/House.lua",
+      "replacements": 3
     }
   ],
   "warnings": [

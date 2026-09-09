@@ -711,13 +711,13 @@ function events.CanSaveGame(t)
 				for key, value in pairs(bags) do
 					if isnan(value) then
 						brokenBags = brokenBags + 1
-						txt = txt .. "\n" .. pl.Name .. " - Corrupted bag #" .. key
+						txt = txt .. "\n" .. pl.Name .. " - 손상된 가방 #" .. key
 						bugFound = true
 					elseif type(value)=="table" then
 						for bag, item in pairs(value) do
 							if isnan(item) then
 								brokenItems = brokenItems + 1
-								txt = txt .. "\n" .. pl.Name .. " - Corrupted item #" .. bag .. " in bag #" .. key
+								txt = txt .. "\n" .. pl.Name .. " - 손상된 아이템 #" .. bag .. ", 가방 #" .. key
 								bugFound = true
 							end
 						end
@@ -727,13 +727,13 @@ function events.CanSaveGame(t)
 		end
 
 		if bugFound then
-			txt = txt .. "\n\nSummary:\n" ..
-				  "Total corrupted bags: " .. brokenBags .. "\n" ..
-				  "Total corrupted items: " .. brokenItems
+			txt = txt .. "\n\n요약:\n" ..
+				  "손상된 가방 수: " .. brokenBags .. "\n" ..
+				  "손상된 아이템 수: " .. brokenItems
 			if t.SaveKind ==1 then
-				txt="WARNING!!!\n\nDURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). \nDown below a list of corrupted items:\n\n" .. txt
+				txt="경고!!!\n\n자동 저장 중 손상된 아이템/가방이 감지되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 계속 플레이할 수 있지만 권장하지 않습니다.\n아래는 손상된 아이템 목록입니다:\n\n" .. txt
 			else
-				txt="WARNING!!!\n\nSAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). \nDown below a list of corrupted items:\n\n" .. txt
+				txt="경고!!!\n\n손상된 아이템/가방이 감지되어 저장이 중단되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 다시 저장할 수 있습니다(이번에는 경고가 표시되지 않습니다).\n아래는 손상된 아이템 목록입니다:\n\n" .. txt
 				t.Result=false
 			end
 			debug.Message(txt)

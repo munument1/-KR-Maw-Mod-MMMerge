@@ -164,7 +164,7 @@ maw-02219f4d1f51	translated	item	"
 Attack Speed: "	"
 공격 속도: "		Scripts/General/zzMaw-Items.lua	2552	2	아이템 정보창 공격 속도
 maw-45425af9f0d2	translated	item	 +X	 +X		Scripts/General/zzMaw-Items.lua	1705	1	마법부여 미리보기 형식 토큰 유지
-maw-5c2d44bdc878	untranslated	item	 - Corrupted item #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
+maw-5c2d44bdc878	translated	item	 - Corrupted item #	 - 손상된 아이템 #		Scripts/General/zzMaw-Item-Sorter.lua	720	1	저장 무결성 경고 조각
 maw-296498801eda	translated	item	 Armor.	 방어력.		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
 maw-70364f2b0837	translated	item	 attacks and +	 공격), +		Scripts/General/zzMaw-Items.lua	2049	1	화염 무기 마법부여 설명 조각
 maw-0b7385a3815f	translated	item	 Aura: adds 	 오라: 모든 공격에 		Scripts/General/zzMaw-Items.lua	4699	1	화염 오라 조합 문자열
@@ -180,7 +180,7 @@ maw-6eb59489bcbb	translated	item	" Fire Damage to any attack
 "		Scripts/General/zzMaw-Items.lua	4699	1	화염 오라 조합 문자열; 줄바꿈 유지
 maw-fc9d83e4d0ea	translated	item	 Fire Resistance and Regenerate Hit points over time.	 화염 저항 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2053	1	아이템 마법부여 설명 조각
 maw-76e2c8fd1d31	translated	item	 Hit points and Regenerate Hit points over time.	 생명력 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2047	1	아이템 마법부여 설명 조각
-maw-fc6baca8cc26	untranslated	item	 in bag #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
+maw-fc6baca8cc26	translated	item	 in bag #	, 가방 #		Scripts/General/zzMaw-Item-Sorter.lua	720	1	저장 무결성 경고 조각
 maw-ac1801ec9062	translated	item	 Intellect and Accuracy.	 지능 및 정확도.		Scripts/General/zzMaw-Items.lua	2065	1	아이템 마법부여 설명 조각
 maw-3d01fd505175	translated	item	 Intellect and Luck.	 지능 및 행운.		Scripts/General/zzMaw-Items.lua	2052	1	아이템 마법부여 설명 조각
 maw-5f49ae2cff07	translated	item	 Intellect and Might.	 지능 및 힘.		Scripts/General/zzMaw-Items.lua	2064	1	아이템 마법부여 설명 조각
@@ -228,13 +228,13 @@ maw-8261e56f515b	translated	item	Armor Class	방어력		Scripts/General/zzMaw-It
 maw-ff2b4cfa1b74	translated	item	Armor: +	방어력: +		Scripts/General/zzMaw-Items.lua	1478	2	아이템 정보창 기본 수치
 maw-1b811f3888ba	untranslated	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	
 maw-65e9268e6bfb	translated	item	Armsmaster skill	무기 전문가 기술		Scripts/General/zzMaw-Items.lua	1881	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-0487dae31788	untranslated	item	Ascended Amber			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-58750c204795	untranslated	item	Ascended Amethyst			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-8f508775a894	untranslated	item	Ascended Diamond			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-dbc37444ee2e	untranslated	item	Ascended Purple Amethyst			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-bef685960d0b	untranslated	item	Ascended Ruby			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-60347ffcca9c	untranslated	item	Ascended Sapphire			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-0828378541e3	untranslated	item	Ascended Topaz			Scripts/General/zzMaw-Items.lua	4565	1	
+maw-0487dae31788	translated	item	Ascended Amber	승천한 호박		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-58750c204795	translated	item	Ascended Amethyst	승천한 자수정		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-8f508775a894	translated	item	Ascended Diamond	승천한 다이아몬드		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-dbc37444ee2e	translated	item	Ascended Purple Amethyst	승천한 보라 자수정		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-bef685960d0b	translated	item	Ascended Ruby	승천한 루비		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-60347ffcca9c	translated	item	Ascended Sapphire	승천한 사파이어		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
+maw-0828378541e3	translated	item	Ascended Topaz	승천한 토파즈		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
 maw-249a5adae437	translated	item	Attack: +	공격: +		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
 maw-03619d622196	translated	item	Base enchants on this items are 50% stronger	이 아이템의 기본 마법부여 효과가 50% 강해집니다		Scripts/General/zzMaw-Items.lua	1376	1	전설 아이템 효과
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
@@ -332,7 +332,7 @@ maw-9b1a119b3361	translated	item	Leech overhealing heals the most injured party 
 maw-b7e8916505bf	untranslated	item	Legendary			Scripts/General/zzMaw-Items.lua	461	2	
 maw-888b9e5fb8ac	translated	item	Legendary 	전설의 		Scripts/General/zzMaw-Items.lua	1739	1	아이템 등급 접두어
 maw-2f14d8a3258f	translated	item	Light Magic Skill +	빛 마법 기술 +		Scripts/General/zzMaw-Items.lua	2037	1	아이템 마법부여 기술 보너스
-maw-a520c0870cdf	untranslated	item	Locate item			Scripts/Global/Quest_SavingGoobers.lua	856	1	
+maw-a520c0870cdf	translated	item	Locate item	아이템 찾기		Scripts/Global/Quest_SavingGoobers.lua	856	1	텔레로케이터 NPC 토픽
 maw-d219c68101f5	untranslated	item	Location			Scripts/General/zzMaw-MultiBag.lua	197	1	
 maw-e7f79931cf1c	translated	item	Longsword	장검		Scripts/General/zzMaw-Items.lua	333	1	미감정 아이템 이름
 maw-1c295a8aa571	translated	item	Luck	운		Scripts/General/zzMaw-Items.lua	1866	2	기존 MMMerge 능력치 용어
@@ -406,7 +406,7 @@ maw-36527bea3870	untranslated	item	ResistanceBonus			Scripts/General/zzMaw-Items
 maw-5a0bd452507d	untranslated	item	respawn			Scripts/General/zzMaw-Monsters.lua	2326	2	
 maw-c3ca5f787365	untranslated	item	sleep			Scripts/General/zzMaw-Items.lua	1259	1	
 maw-68b55f23c0fb	translated	item	Sleep and Unconscious Immunity	수면 및 의식불명 면역		Scripts/General/zzMaw-Items.lua	1279	1	특수 아이템 효과 설명
-maw-597e5a16ff16	untranslated	item	Solarstone			Scripts/General/zzMaw-Items.lua	4565	1	
+maw-597e5a16ff16	translated	item	Solarstone	태양석		Scripts/General/zzMaw-Items.lua	4565	1	제작 보석 상태 메시지
 maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Stats.txt	12	6	기존 MMMerge 능력치 용어
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
 maw-bec5022aa7fd	untranslated	item	spell drain			Scripts/General/zzMaw-Items.lua	1256	1	
@@ -427,7 +427,7 @@ maw-4da24ed1b797	translated	item	"This Hourglass allows to add a second base enc
 (기본 마법부여가 있는 아이템을 우클릭하여 사용)"		Scripts/General/zzAlchemy.lua	1402	1	제작 아이템 설명
 maw-ec4424ca07ba	translated	item	This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.	이 아이템은 보호, 명상, 재생, 마법 보호, 챔피언, 팔라딘, 신성한 축복, 신성한 저항 물약의 사용 횟수를 늘릴 수 있게 합니다.		Scripts/General/zzAlchemy.lua	1421	1	제작 아이템 설명
 maw-a4adbda992bf	translated	item	Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher	죽음/소멸 판정에 사용하는 생명력 임계값은 더 높은 경우 주문력에 마나 방패 효율을 곱한 값을 대신 사용합니다		Scripts/General/zzMaw-Items.lua	1387	1	전설 아이템 효과
-maw-c8dd9fd68894	untranslated	item	Total corrupted items: 			Scripts/General/zzMaw-Item-Sorter.lua	732	1	
+maw-c8dd9fd68894	translated	item	Total corrupted items: 	손상된 아이템 수: 		Scripts/General/zzMaw-Item-Sorter.lua	732	1	저장 무결성 경고
 maw-409161bbc266	untranslated	item	totalBaseHP			Scripts/General/zzMaw-Items.lua	3576	1	
 maw-eee3c1d6ea51	untranslated	item	totalBBBonus			Scripts/General/zzMaw-Items.lua	3575	1	
 maw-c4b536d541f5	untranslated	item	totalEnduranceBonus			Scripts/General/zzMaw-Items.lua	3574	1	
@@ -440,18 +440,28 @@ maw-bd03227258e3	translated	item	Unarmed skill	맨손 전투 기술		Scripts/Gen
 maw-40f2133dc6ab	untranslated	item	Uncom.			Scripts/General/zzMaw-Items.lua	461	3	
 maw-56394eec2a7b	untranslated	item	unconscious			Scripts/General/zzMaw-Items.lua	1259	1	
 maw-4408ab2d1ad0	untranslated	item	UseMouseItem			Scripts/Core/events.lua	2048	1	
-maw-8ccdbd65065b	untranslated	item	"WARNING!!!
+maw-8ccdbd65065b	translated	item	"WARNING!!!
 
 DURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). 
 Down below a list of corrupted items:
 
-"			Scripts/General/zzMaw-Item-Sorter.lua	734	1	
-maw-7fd6fd2d5770	untranslated	item	"WARNING!!!
+"	"경고!!!
+
+자동 저장 중 손상된 아이템/가방이 감지되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 계속 플레이할 수 있지만 권장하지 않습니다.
+아래는 손상된 아이템 목록입니다:
+
+"		Scripts/General/zzMaw-Item-Sorter.lua	734	1	자동 저장 손상 경고
+maw-7fd6fd2d5770	translated	item	"WARNING!!!
 
 SAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). 
 Down below a list of corrupted items:
 
-"			Scripts/General/zzMaw-Item-Sorter.lua	736	1	
+"	"경고!!!
+
+손상된 아이템/가방이 감지되어 저장이 중단되었습니다! 아이템이나 가방이 손상되지 않은 이전 저장을 불러오거나 가방을 직접 확인하십시오. 누락된 아이템이나 가방이 없다면 다시 저장할 수 있습니다(이번에는 경고가 표시되지 않습니다).
+아래는 손상된 아이템 목록입니다:
+
+"		Scripts/General/zzMaw-Item-Sorter.lua	736	1	저장 중단 손상 경고
 maw-b83051d62e09	translated	item	Water Magic Skill +	물 마법 기술 +		Scripts/General/zzMaw-Items.lua	2040	1	아이템 마법부여 기술 보너스
 maw-8fabae26c6ea	translated	item	Water Resistance	물 저항		Data/Tables/Spells2.txt	27	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	1258	1	
@@ -583,10 +593,13 @@ maw-2038bdec9210	untranslated	map	Up			Scripts/Maps/BrBase.lua	1016	3
 maw-965536c6dc0d	excluded	map	WaterResistance			Scripts/Maps/outb1.lua	51	3	Internal engine/control literal only; not player-facing localization.
 maw-fa0ae8943c6b	translated	map	Wine Rack	와인 선반		Scripts/Maps/7d20.lua	2	1	맵 힌트
 maw-e85e950b3fd4	excluded	misc	"	            %s%s "		%s %s	Scripts/General/zzMaw-Stats.lua	1063	6	서식 전용 문자열; 번역 금지
-maw-ca13c639b45e	untranslated	misc	"
+maw-ca13c639b45e	translated	misc	"
 
 Summary:
-"			Scripts/General/zzMaw-Item-Sorter.lua	730	1	
+"	"
+
+요약:
+"		Scripts/General/zzMaw-Item-Sorter.lua	730	1	저장 무결성 경고 요약
 maw-98ffa61e0f17	translated	misc	"
 Body Armor: "	"
 갑옷: "		Scripts/General/zzAlchemy.lua	720	1	연금술 아이템 보정치
@@ -598,15 +611,16 @@ call absolute "			Scripts/Core/events.lua	396	1
 maw-a0dd38423fc8	translated	misc	"
 Helm-Boots-Gloves-Bow: "	"
 투구-장화-장갑-활: "		Scripts/General/zzAlchemy.lua	721	1	연금술 아이템 보정치
-maw-6b65945a62a3	untranslated	misc	"
-Realms: Detached. Time: Detached."			Scripts/Global/Quest_SavingGoobers.lua	796	2	
+maw-6b65945a62a3	translated	misc	"
+Realms: Detached. Time: Detached."	"
+영역: 분리됨. 시간: 분리됨."		Scripts/Global/Quest_SavingGoobers.lua	796	2	텔레로케이터 검색 결과
 maw-cf1e3bbc96ac	translated	misc	"
 Rings: "	"
 반지: "		Scripts/General/zzAlchemy.lua	722	1	연금술 아이템 보정치
 maw-82efa5f5f529	untranslated	misc	  (Shift=très lent • Alt=fichier • Ctrl=auto on/off)			Scripts/General/zzBossSync.lua	437	1	
 maw-b3b226842bea	untranslated	misc	  *local-scan*			Scripts/General/zzBossSync.lua	348	1	
 maw-b2f4f29c7181	translated	misc	  Mana: 	  마나: 		Scripts/General/zzzOnlineVariableSender.lua	330	1	멀티플레이 상태 표시
-maw-7bb5778862de	untranslated	misc	 - Corrupted bag #			Scripts/General/zzMaw-Item-Sorter.lua	714	1	
+maw-7bb5778862de	translated	misc	 - Corrupted bag #	 - 손상된 가방 #		Scripts/General/zzMaw-Item-Sorter.lua	714	1	저장 무결성 경고 조각
 maw-574c5a59fabd	translated	misc	 Map	 지도		Scripts/General/zzMaw-Maps.lua	2089	1	지도 아이템 이름 접미사
 maw-acd09cd9a879	translated	misc	% chance to miss attacks	% 확률로 공격이 빗나감		Scripts/General/zzMaw-Maps.lua	2125	1	지도 어픽스 설명 조각
 maw-0ff5fd36f573	translated	misc	% increased HP and damage	% 생명력 및 피해 증가		Scripts/General/zzMaw-Maps.lua	2113	1	지도 어픽스 설명 조각
@@ -619,16 +633,18 @@ maw-32bdec8af86b	excluded	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	�
 maw-964cbd0f1639	untranslated	misc	%code% %p%, ecx, eax		%p	Scripts/Core/events.lua	645	1	
 maw-550b8663ac2f	untranslated	misc	%code% %p%, edx, edi		%p	Scripts/Core/events.lua	643	2	
 maw-8c986ccf14ec	untranslated	misc	"%d:	reason: %s		x: %d	y: %d	z: %d"		%d %d %d %d %s	Scripts/General/pseudoSpawnpoint.lua	103	1	
-maw-7d0b2d311ab6	untranslated	misc	%s (speaking with %s)		%s %s	Scripts/Modules/Multiplayer/UI/House.lua	25	1	
+maw-7d0b2d311ab6	translated	misc	%s (speaking with %s)	%s (대화 상대: %s)	%s %s	Scripts/Modules/Multiplayer/UI/House.lua	25	1	멀티플레이 집 UI
 maw-74db3d6c0d4f	untranslated	misc	%s hits %s for %s points!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	241	1	
 maw-6f83e775a593	untranslated	misc	%s inflicts %s points killing %s!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	244	1	
 maw-bea7887cc512	untranslated	misc	%s shoots %s for %s points!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	239	1	
-maw-5ec3f7975643	untranslated	misc	"%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s
+maw-5ec3f7975643	translated	misc	"%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s
 Targets' status: in %s.
-"		%s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	783	1	
-maw-efc3a23cca83	untranslated	misc	%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s.		%s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	734	1	
+"	"%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s
+대상 상태: %s에 있음.
+"	%s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	783	1	텔레로케이터 아이템 검색 결과
+maw-efc3a23cca83	translated	misc	%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s.	%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s.	%s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	734	1	텔레로케이터 인물 검색 결과
 maw-d9cd377026b0	untranslated	misc	%s: %s		%s %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	131	1	
-maw-0048f7a3bc1f	untranslated	misc	%s: %s grants you %s exp.		%s %s %s	Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua	75	1	
+maw-0048f7a3bc1f	translated	misc	%s: %s grants you %s exp.	%s: %s에게서 경험치 %s을 획득했습니다.	%s %s %s	Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua	75	1	멀티플레이 퀘스트 경험치 알림
 maw-131caaf5aa47	untranslated	misc	%s: invalid player pointer in GetPlayerFromPtr - 0x%X		%X %s	Scripts/Structs/After/RemoveSkillValueLimits.lua	14	1	
 maw-652fe0e19471	untranslated	misc	%s: x:%d, y:%d		%d %d %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	129	1	
 maw-8bee13bb62c8	untranslated	misc	'): fn must be a function, got 			Scripts/General/zzMaw-Timers.lua	52	1	
@@ -680,22 +696,22 @@ Require 40 power to work.
 "	"무기에 무작위 2단계 원소 피해 마법부여를 추가합니다.
 작동하려면 위력 40이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	491	1	물약 효과 툴팁
-maw-c6ab40827038	untranslated	misc	Amber Droplet			Scripts/General/zzAlchemy.lua	1372	2	
-maw-13f1aeb33fbf	untranslated	misc	Amethyst Chunk			Scripts/General/zzAlchemy.lua	1371	2	
+maw-c6ab40827038	translated	misc	Amber Droplet	호박 방울		Scripts/General/zzAlchemy.lua	1372	2	제작 보석 상태 메시지
+maw-13f1aeb33fbf	translated	misc	Amethyst Chunk	자수정 덩어리		Scripts/General/zzAlchemy.lua	1371	2	제작 보석 상태 메시지
 maw-3fdbe3bcaa7b	untranslated	misc	Archibald's Mirror			Scripts/General/zzAlchemy.lua	1392	1	
 maw-3ae596139053	untranslated	misc	Armor: +50			Scripts/Structs/extraEditableDescriptions.lua	172	1	
 maw-6076a3719d53	untranslated	misc	armor: +X			Scripts/Structs/extraEditableDescriptions.lua	22	1	
 maw-8c9c02e80eb3	translated	misc	Ascended 	승천한 		Scripts/General/zzAlchemy.lua	695	1	아이템 등급 접두어
-maw-60d9195d2d43	untranslated	misc	Ascended Amber Droplet			Scripts/General/zzAlchemy.lua	1382	2	
+maw-60d9195d2d43	translated	misc	Ascended Amber Droplet	승천한 호박 방울		Scripts/General/zzAlchemy.lua	1382	2	승천 제작 보석
 maw-f368a3b16649	untranslated	misc	Ascended Amethyst Chunk			Scripts/General/zzAlchemy.lua	1381	1	
 maw-cacddf34db52	untranslated	misc	Ascended Erathian Sapphire			Scripts/General/zzAlchemy.lua	1387	1	
 maw-25e47276626a	untranslated	misc	Ascended Erudite Crystal			Scripts/General/zzAlchemy.lua	1386	1	
 maw-102497c860d1	untranslated	misc	Ascended Fire Topaz			Scripts/General/zzAlchemy.lua	1380	1	
 maw-5731dcf11343	untranslated	misc	Ascended Gemcutter's Ruby			Scripts/General/zzAlchemy.lua	1384	1	
-maw-99d67418c07a	untranslated	misc	Ascended Lunar Shard			Scripts/General/zzAlchemy.lua	1379	2	
+maw-99d67418c07a	translated	misc	Ascended Lunar Shard	승천한 달의 파편		Scripts/General/zzAlchemy.lua	1379	2	승천 제작 보석
 maw-bfb1d6833e66	untranslated	misc	Ascended Queen's Diamond			Scripts/General/zzAlchemy.lua	1388	1	
 maw-ffb5b015dc26	untranslated	misc	Ascended Royal Amethyst			Scripts/General/zzAlchemy.lua	1383	1	
-maw-bbd6905c8bde	untranslated	misc	Ascended Solarstone			Scripts/General/zzAlchemy.lua	1385	2	
+maw-bbd6905c8bde	translated	misc	Ascended Solarstone	승천한 태양석		Scripts/General/zzAlchemy.lua	1385	2	승천 제작 보석
 maw-77d2a7b7868c	untranslated	misc	Asking server for possibly saved character data (save id: %s).		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	612	1	
 maw-676112784baf	untranslated	misc	Aucun boss détecté.			Scripts/General/zzBossSync.lua	390	1	
 maw-0495f7740210	untranslated	misc	BOSS %d/%d — %s		%d %d %s	Scripts/General/zzBossSync.lua	393	1	
@@ -736,14 +752,14 @@ maw-47aa9a09e447	untranslated	misc	Emerald of Power			Scripts/General/zzAlchemy.
 maw-dd399f98d057	translated	misc	Empty Barrel	빈 통		Scripts/General/zzMaw-Maps.lua	202	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-16d5a6e22e05	untranslated	misc	Endless Arena			Scripts/Global/zzMaw_Arena.lua	28	1	
 maw-100a74eeab74	translated	misc	Enter the data.	데이터를 입력하세요.		Scripts/Global/Quest_SavingGoobers.lua	705	3	퀘스트 질문
-maw-d4788aabcb87	untranslated	misc	Erathian Sapphire			Scripts/General/zzAlchemy.lua	1377	2	
+maw-d4788aabcb87	translated	misc	Erathian Sapphire	에라시아 사파이어		Scripts/General/zzAlchemy.lua	1377	2	제작 보석 상태 메시지
 maw-3f826de2410f	untranslated	misc	Error in HitPlayer handler: invalid player slot: %s / [0, %s]		%s %s	Scripts/Core/events.lua	2620	1	
 maw-448ef6b2ab89	untranslated	misc	Error loading settings file, using fallback defaults...			Scripts/General/zz_Maw-initialize.lua	256	1	
 maw-fe0a5dcac0c5	untranslated	misc	"Error while decoding %s:
 %s"		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	761	1	
 maw-cb4e21f329a9	untranslated	misc	Error while loading Multiplayer Global data from file: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	32	1	
 maw-7b4835401911	untranslated	misc	Error: Could not create MAWSettings.lua file			Scripts/General/zz_Maw-initialize.lua	237	1	
-maw-39e381e0962b	untranslated	misc	Erudite Crystal			Scripts/General/zzAlchemy.lua	1376	2	
+maw-39e381e0962b	translated	misc	Erudite Crystal	현자의 수정		Scripts/General/zzAlchemy.lua	1376	2	제작 보석 상태 메시지
 maw-26ba32c4f7e7	untranslated	misc	evtnpc-b			Scripts/General/NPCFollowers.lua	369	3	
 maw-95000bbd422e	untranslated	misc	Executing MoveToMap callback.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	517	1	
 maw-e647d6120b93	untranslated	misc	Existing game id is invalid (%s), replacing it by new one: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	114	1	
@@ -751,7 +767,7 @@ maw-bf4ad099524a	untranslated	misc	Existing save id is invalid (%s), replacing i
 maw-7732502cc68e	untranslated	misc	Eye of Void			Scripts/General/zzAlchemy.lua	1389	1	
 maw-d4c5d6bd02d1	untranslated	misc	File closed: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	30	3	
 maw-a24a9455bb0a	untranslated	misc	File closed: %s, bytes written: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	743	1	
-maw-4b3164e2923a	untranslated	misc	Fire Topaz			Scripts/General/zzAlchemy.lua	1370	2	
+maw-4b3164e2923a	translated	misc	Fire Topaz	화염 토파즈		Scripts/General/zzAlchemy.lua	1370	2	제작 보석 상태 메시지
 maw-33dc34c83336	translated	misc	"Fix caracter age at 20.
 Require 50 power to work.
 "	"캐릭터의 나이를 20세로 고정합니다.
@@ -766,7 +782,7 @@ maw-b9a44faa0600	untranslated	misc	Following you would be foolish			Scripts/Gene
 maw-3e53e030126e	untranslated	misc	Game id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	110	1	
 maw-29dbcc161804	untranslated	misc	Game id set, old: %s, new: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	102	1	
 maw-d3ec207ca65b	untranslated	misc	Gathering game data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	187	1	
-maw-5c8291287a2a	untranslated	misc	Gemcutter's Ruby			Scripts/General/zzAlchemy.lua	1374	2	
+maw-5c8291287a2a	translated	misc	Gemcutter's Ruby	보석세공사의 루비		Scripts/General/zzAlchemy.lua	1374	2	제작 보석 상태 메시지
 maw-17461354dc91	translated	misc	Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.		Scripts/General/zzAlchemy.lua	507	1	물약 효과 툴팁
 maw-3745903c5e25	untranslated	misc	Have data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
 maw-44fcaf7ec76a	translated	misc	Healing reduced by 	치유량 감소: 		Scripts/General/zzMaw-Maps.lua	2126	1	지도 어픽스 설명 조각
@@ -812,11 +828,11 @@ maw-59ecd6298b23	untranslated	misc	jmp absolute 0x4b2eaf			Scripts/General/NPCFo
 maw-6fe876322cdd	translated	misc	Leech reduced by 	흡수량 감소: 		Scripts/General/zzMaw-Maps.lua	2127	1	지도 어픽스 설명 조각
 maw-754db38e2607	untranslated	misc	Let's get started!			Scripts/Global/zzMaw_Arena.lua	41	1	
 maw-464e644f9fdf	untranslated	misc	Loading MAW settings from 			Scripts/General/zz_Maw-initialize.lua	249	1	
-maw-b28cfe6e81db	untranslated	misc	Locate person			Scripts/Global/Quest_SavingGoobers.lua	866	1	
+maw-b28cfe6e81db	translated	misc	Locate person	사람 찾기		Scripts/Global/Quest_SavingGoobers.lua	866	1	텔레로케이터 NPC 토픽
 maw-bcf88a2c0113	untranslated	misc	Loot Filter			Scripts/General/zz_Maw-initialize.lua	560	1	
 maw-3fb1e21dd9e0	untranslated	misc	luadata.bin			Scripts/Core/events.lua	960	1	
 maw-d68bc2d8f542	untranslated	misc	luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0			Scripts/Core/events.lua	900	1	
-maw-80006c438938	untranslated	misc	Lunar Shard			Scripts/General/zzAlchemy.lua	1369	2	
+maw-80006c438938	translated	misc	Lunar Shard	달의 파편		Scripts/General/zzAlchemy.lua	1369	2	제작 보석 상태 메시지
 maw-05e15f37331b	untranslated	misc	M&M6 Projectiles			Scripts/General/zz_Maw-initialize.lua	557	1	
 maw-6bb62125199b	translated	misc	"M/R/S:%s/%s/%s
 
@@ -876,7 +892,7 @@ maw-16460f6ae435	untranslated	misc	Option 1			Scripts/General/zz_Maw-initialize.
 maw-e3b484a8502d	untranslated	misc	Option 2			Scripts/General/zz_Maw-initialize.lua	486	1	
 maw-2881db58455b	untranslated	misc	or edx, 			Scripts/Structs/After/RemoveSkillValueLimits.lua	938	1	
 maw-c0059019f56d	untranslated	misc	Orb of Creation			Scripts/General/zzAlchemy.lua	1395	1	
-maw-f7710482d67d	untranslated	misc	Other players in house:			Scripts/Modules/Multiplayer/UI/House.lua	34	1	
+maw-f7710482d67d	translated	misc	Other players in house:	집 안의 다른 플레이어:		Scripts/Modules/Multiplayer/UI/House.lua	34	1	멀티플레이 집 UI
 maw-f4e4537df7b9	untranslated	misc	Pandora's Cube			Scripts/General/zzAlchemy.lua	1391	1	
 maw-a9522ff60c04	untranslated	misc	Party Start			Scripts/General/zzMaw-Maps.lua	1894	1	
 maw-f1806a7c8371	untranslated	misc	Pearl of Memory			Scripts/General/zzAlchemy.lua	1394	1	
@@ -919,7 +935,7 @@ Require 50 power to work.
 "	"무기에 무작위 3단계 원소 피해 마법부여를 영구적으로 추가합니다.
 작동하려면 위력 50이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	503	1	물약 효과 툴팁
-maw-e53407cfe1a5	untranslated	misc	Player			Scripts/Modules/Multiplayer/UI/House.lua	25	1	
+maw-e53407cfe1a5	translated	misc	Player	플레이어		Scripts/Modules/Multiplayer/UI/House.lua	25	1	멀티플레이 기본 이름
 maw-a39c96a53ebb	translated	misc	Players armor reduced by 	플레이어 방어력 감소: 		Scripts/General/zzMaw-Maps.lua	2123	1	지도 어픽스 설명 조각
 maw-7f02e5429dfc	translated	misc	Players attack speed reduced by 	플레이어 공격 속도 감소: 		Scripts/General/zzMaw-Maps.lua	2121	1	지도 어픽스 설명 조각
 maw-6609a7a4b10d	translated	misc	Players critical chance reduced by 	플레이어 치명타 확률 감소: 		Scripts/General/zzMaw-Maps.lua	2115	1	지도 어픽스 설명 조각
@@ -943,7 +959,7 @@ maw-3630684e30da	untranslated	misc	push 0x0			Scripts/General/MiscTweaks.lua	56	
 maw-30502456b3e6	untranslated	misc	push 0x7f			Scripts/General/MiscTweaks.lua	84	1	
 maw-ae2fb541cf92	untranslated	misc	push 4			Scripts/General/MiscTweaks.lua	174	1	
 maw-30d0a8d45e37	untranslated	misc	push eax			Scripts/General/NPCFollowers.lua	669	1	
-maw-e8abbc3c5d19	untranslated	misc	Queen's Diamond			Scripts/General/zzAlchemy.lua	1378	2	
+maw-e8abbc3c5d19	translated	misc	Queen's Diamond	여왕의 다이아몬드		Scripts/General/zzAlchemy.lua	1378	2	제작 보석 상태 메시지
 maw-6087cd6598d4	untranslated	misc	Received character data from server. Suggesting choice.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	603	1	
 maw-873b735ebc63	untranslated	misc	Received game id from server: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	194	1	
 maw-e6b7d996cf7b	untranslated	misc	Received host map data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	342	1	
@@ -1026,7 +1042,7 @@ Require 40 power to work.
 작동하려면 위력 40이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	494	1	물약 효과 툴팁
 maw-7f000fb0d62e	untranslated	misc	resetting			Scripts/General/zzMaw-Maps.lua	114	2	
-maw-e327189cc78d	untranslated	misc	Royal Amethyst			Scripts/General/zzAlchemy.lua	1373	2	
+maw-e327189cc78d	translated	misc	Royal Amethyst	왕실 자수정		Scripts/General/zzAlchemy.lua	1373	2	제작 보석 상태 메시지
 maw-e2cb58c6600a	untranslated	misc	Save id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	131	1	
 maw-17ec106941ee	untranslated	misc	Saves/MultiplayerAutosave.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	10	1	
 maw-febcc382b490	untranslated	misc	Saves/MultiplayerGames.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	9	1	
@@ -1039,16 +1055,18 @@ maw-4372d664c31f	untranslated	misc	Start Level 			Scripts/Global/zzMaw_Arena.lua
 maw-d9d7aed80bfd	untranslated	misc	sub dword [ds:0x509cac], 			Scripts/General/MiscTweaks.lua	537	1	
 maw-8535b82f6998	untranslated	misc	SV1_			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	87	1	
 maw-65f82b3122c0	untranslated	misc	Synchronization/%s		%s	Scripts/Modules/Multiplayer/Synchronization.lua	1	1	
-maw-e96b06f09b6b	untranslated	misc	"Targets found. Realms: Attuned. Time: Attuned.
+maw-e96b06f09b6b	translated	misc	"Targets found. Realms: Attuned. Time: Attuned.
 
-"			Scripts/Global/Quest_SavingGoobers.lua	754	3	
+"	"대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.
+
+"		Scripts/Global/Quest_SavingGoobers.lua	754	3	텔레로케이터 검색 결과
 maw-f83b305141e4	translated	misc	Telelocator	텔레로케이터		Scripts/Global/Quest_SavingGoobers.lua	627	1	NPC 표시명
 maw-54a29ed6e03d	translated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 인내력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	490	1	물약 효과 툴팁
 maw-5421d4f3edd5	translated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지능과 성격이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	489	1	물약 효과 툴팁
 maw-df9472ca68e2	translated	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	6시간 동안 힘과 정확도가 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	488	1	물약 효과 툴팁
 maw-52fb6815a8a2	untranslated	misc	test ah, 0x10			Scripts/Structs/After/RemoveSkillValueLimits.lua	455	1	
 maw-20dcabcc16bb	untranslated	misc	test byte ptr [ebp-0xF], 			Scripts/Structs/After/RemoveSkillValueLimits.lua	189	12	
-maw-c07c425eaa7c	untranslated	misc	Total corrupted bags: 			Scripts/General/zzMaw-Item-Sorter.lua	731	1	
+maw-c07c425eaa7c	translated	misc	Total corrupted bags: 	손상된 가방 수: 		Scripts/General/zzMaw-Item-Sorter.lua	731	1	저장 무결성 경고
 maw-f91360c5d46d	untranslated	misc	Unknown tileset file 			Scripts/General/pseudoSpawnpoint.lua	91	1	
 maw-99d7e5d5f0aa	translated	misc	"Vitality: %s
 
@@ -1067,9 +1085,11 @@ maw-99d7e5d5f0aa	translated	misc	"Vitality: %s
 
 
 "	%s	Scripts/General/zzMaw-Stats.lua	1490	1	능력치 UI; 자리표시자 보존
-maw-138ef10f9d41	untranslated	misc	"World: Enroth. Realm: %s. Landmark: %s. Year: %s
+maw-138ef10f9d41	translated	misc	"World: Enroth. Realm: %s. Landmark: %s. Year: %s
 Targets' status: %s, type: %s, state: %s.
-"		%s %s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	836	1	
+"	"세계: 엔로스. 영역: %s. 지점: %s. 연도: %s
+대상 상태: %s, 유형: %s, 상태: %s.
+"	%s %s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	836	1	텔레로케이터 몬스터 검색 결과
 maw-ee1a9c00001b	untranslated	misc	x = %d, y = %d		%d %d	Scripts/General/pseudoSpawnpoint.lua	143	1	
 maw-ec24b30cf351	untranslated	misc	x = %d, y = %d, z = %d		%d %d %d	Scripts/General/pseudoSpawnpoint.lua	142	1	
 maw-db290079ce7d	untranslated	misc	xor eax, eax			Scripts/Core/events.lua	1217	1	
@@ -1254,7 +1274,7 @@ maw-7c7f5d049fad	untranslated	monster	Level			Scripts/General/zzMaw-Monsters.lua
 maw-31500c6def68	untranslated	monster	Lizardmen Warrior			Scripts/General/zzMaw-Monsters.lua	853	1	
 maw-2d3e36d2481c	untranslated	monster	LoadMap			Scripts/General/zzMaw-Monsters.lua	3459	1	
 maw-6c6b189003d5	untranslated	monster	loadstring			Scripts/General/zzMaw-Monsters.lua	3469	1	
-maw-31ab8d86e807	untranslated	monster	Locate monster			Scripts/Global/Quest_SavingGoobers.lua	876	1	
+maw-31ab8d86e807	translated	monster	Locate monster	몬스터 찾기		Scripts/Global/Quest_SavingGoobers.lua	876	1	텔레로케이터 NPC 토픽
 maw-785ca397a09a	untranslated	monster	Lord Markham's Manor			Scripts/General/zzMaw-Monsters.lua	1429	2	
 maw-a124947cbd2d	untranslated	monster	Low			Scripts/General/zzMaw-Monsters.lua	1125	210	
 maw-997b9784da28	untranslated	monster	Mad Necromancer's Lab 			Scripts/General/zzMaw-Monsters.lua	1217	2	
@@ -2259,9 +2279,11 @@ maw-134fe9c4cffb	translated	spell	This spell is as good as it will ever get!	이
 maw-5620c14ea2e7	translated	spell	Vampiric Aura	흡혈의 오라		Scripts/General/zzMaw-Spells.lua	3088	1	주문 이름
 maw-6d5a45920a15	untranslated	spell	water			Scripts/General/zzMaw-Spells.lua	3355	1	
 maw-fe2775bc4c97	translated	spell	Water Magic Book	물 마법서		Scripts/General/zzMaw-Spells.lua	3401	1	마법서 이름
-maw-9b5f2d931fc6	untranslated	status	"
+maw-9b5f2d931fc6	translated	status	"
 
-Realms: Detached. Time: Detached."			Scripts/Global/Quest_SavingGoobers.lua	754	1	
+Realms: Detached. Time: Detached."	"
+
+영역: 분리됨. 시간: 분리됨."		Scripts/Global/Quest_SavingGoobers.lua	754	1	텔레로케이터 검색 결과
 maw-b339d770026a	excluded	status	"
 
 Subsequent spawn failure reasons:

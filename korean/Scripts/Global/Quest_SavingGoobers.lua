@@ -731,7 +731,7 @@ local function TelelocateItem()
 	end
 
 	local MapsExtra	= Game.Bolster.Maps
-	local FString	= "%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s."
+	local FString	= "%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s."
 	local Messages = {}
 	for i, v in pairs(ItemsMatch) do
 		local MapId = vars.LastItemLocation[i]
@@ -751,7 +751,7 @@ local function TelelocateItem()
 		return
 	end
 
-	CurMes = "Targets found. Realms: Attuned. Time: Attuned.\n\n" .. table.concat(Messages, "\n") .. "\n\nRealms: Detached. Time: Detached."
+	CurMes = "대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.\n\n" .. table.concat(Messages, "\n") .. "\n\n영역: 분리됨. 시간: 분리됨."
 	QSet.TeleCharged = false
 	Message(CurMes)
 
@@ -780,7 +780,7 @@ local function TelelocateNPC()
 	end
 
 	local MapsExtra	= Game.Bolster.Maps
-	local FString	= "%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: in %s.\n"
+	local FString	= "%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s\n대상 상태: %s에 있음.\n"
 	local HouseMap	= Game.HousesExtra[Found.House].Map
 	local HouseCont	= MapsExtra[HouseMap].Continent
 	local CurHouse	= Game.Houses[Found.House]
@@ -793,7 +793,7 @@ local function TelelocateNPC()
 			tostring(Game.Year),
 			CurHouse.Name)
 
-	CurMes = "Targets found. Realms: Attuned. Time: Attuned.\n\n" .. CurMes .. "\nRealms: Detached. Time: Detached."
+	CurMes = "대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.\n\n" .. CurMes .. "\n영역: 분리됨. 시간: 분리됨."
 	QSet.TeleCharged = false
 	Message(CurMes)
 
@@ -833,7 +833,7 @@ local function TelelocateMon()
 
 	local MonMap = vars.LastMonsterLocation[FoundId]
 	local MapsExtra	= Game.Bolster.Maps
-	local FString	= "World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n"
+	local FString	= "세계: 엔로스. 영역: %s. 지점: %s. 연도: %s\n대상 상태: %s, 유형: %s, 상태: %s.\n"
 	local MonCont	= MapsExtra[MonMap].Continent
 
 	CurMes =
@@ -845,7 +845,7 @@ local function TelelocateMon()
 			table.find(const.Bolster.MonsterType, Game.Bolster.Monsters[FoundId].Type) or "Unknown",
 			select(Game.HostileTxt[math.ceil(FoundId/3)][0] + 1, "Peaceful", "Wimpy", "Rude", "Agressive",	"Berserk") or "Unknown")
 
-	CurMes = "Targets found. Realms: Attuned. Time: Attuned.\n\n" .. CurMes .. "\nRealms: Detached. Time: Detached."
+	CurMes = "대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.\n\n" .. CurMes .. "\n영역: 분리됨. 시간: 분리됨."
 	QSet.TeleCharged = false
 	Message(CurMes)
 
@@ -853,7 +853,7 @@ end
 
 
 NPCTopic{
-	Topic	= "Locate item",
+	Topic	= "아이템 찾기",
 	NPC		= TeleNPCId,
 	Slot	= 0,
 	Branch	= "",
@@ -863,7 +863,7 @@ NPCTopic{
 }
 
 NPCTopic{
-	Topic	= "Locate person",
+	Topic	= "사람 찾기",
 	NPC		= TeleNPCId,
 	Slot	= 1,
 	Branch	= "",
@@ -873,7 +873,7 @@ NPCTopic{
 }
 
 NPCTopic{
-	Topic	= "Locate monster",
+	Topic	= "몬스터 찾기",
 	NPC		= TeleNPCId,
 	Slot	= 2,
 	Branch	= "",

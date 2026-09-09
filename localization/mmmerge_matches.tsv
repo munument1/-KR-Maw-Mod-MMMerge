@@ -28,6 +28,7 @@ Enroth	엔로스	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at l
 Goblin King	고블린 왕	exact	safe_candidate	map	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Jadame	제이덤	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Empty Barrel	빈 통	exact	safe_candidate	misc	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Player	플레이어	exact	safe_candidate	misc	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Armor Halved	방어력 절반	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Cleric of Baa	바의 성직자	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Damage Halved	피해량 절반	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -137,7 +138,6 @@ Awards	업적	exact	no_patchable_occurrence	map	3	0	1	Exact PO match exists, but
 Bucket	양동이	exact	no_patchable_occurrence	map	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Exit	나가기	exact	no_patchable_occurrence	map	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Inventory	인벤토리	exact	no_patchable_occurrence	map	45	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Player	플레이어	exact	no_patchable_occurrence	misc	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Abandoned Pirate Keep	버려진 해적 성채	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Abandoned Temple	버려진 신전	exact	no_patchable_occurrence	monster	4	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Agar's Laboratory	에이거의 연구소	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

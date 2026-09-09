@@ -5,7 +5,6 @@ Bow	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua	exact	활	"weap
 Inventory	map	3	45	engine_event_key_context:42; uncertain_context:3	Scripts/Global/Quest_SavingGoobers.lua; Scripts/Maps/7d37.lua; Scripts/Maps/7out02.lua	exact	인벤토리	"evt[0].Add{""Inventory"", TeleItemId}"
 Bucket	map	1	1	uncertain_context:1	Scripts/Maps/BrBase.lua	exact	양동이	"""bag01"", ""Bucket"", ""floursac"", ""bigbarel"", ""7dec03"","
 Exit	map	1	1	uncertain_context:1	Scripts/Maps/BrBase.lua	exact	나가기	"SetEnterExit(ExitCell, ""Exit"")"
-Player	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/House.lua	exact	플레이어	"local msg = (""%s (speaking with %s)""):format(v.name or ""Player"", Game.NPC[v.talking_to].Name)"
 Dagger Wound Island	monster	1	5	internal_table_key_literal:4; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	exact	대거 운드 섬	"Name = ""Dagger Wound Island"","
 Insane	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	exact	광기	"MAWBOLSTER[600]=""Insane"""
 Magic	monster	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	exact	마법	"Magic 		= GetProp(Words[8], ""Magic"", CurId),"
@@ -43,21 +42,12 @@ GotItem	item	2	2	uncertain_context:2	Scripts/General/ExtraEvents.lua			"events.c
 Legendary	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
 Primordial	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
 Rare	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
- - Corrupted item #	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt = txt .. ""\n"" .. pl.Name .. "" - Corrupted item #"" .. bag .. "" in bag #"" .. key"
- in bag #	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt = txt .. ""\n"" .. pl.Name .. "" - Corrupted item #"" .. bag .. "" in bag #"" .. key"
  Might)	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[2023]= ""Heavy, yet seemingly light as a feather in skilled hands, Excalibur confers great might upon its wielder.  Opponents do not easily walk away from blows struck by this legendary weapon.  (Special Powers:  +"" .. round(30*lvl) .. "" Might)"","
  Spell Points)	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[2024]= ""Traditionally carried by the High Druid, but lost during struggles over religious doctrine, Merlin acts as a reservoir of spell power the wielder can draw upon at any time.  Merlin is enchanted with swiftness, and rains blows upon enemies much faster than an ordinary staff. (Special Powers:  Swiftness and +"" .. round(40*lvl) .. "" Spell Points)"","
 (%d+)	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"pattern = ""(%d+)"""
 7item192	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"booksPic={""item210"",""7item192"",""book4""}"
 7item193	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"booksPicGM={""item209"",""7item193"",""book5""}"
 ^%u	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"if string.match(enchString, ""^%u"") then"
-Ascended Amber	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Amethyst	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Diamond	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Purple Amethyst	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Ruby	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Sapphire	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Topaz	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
 book4	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"booksPic={""item210"",""7item192"",""book4""}"
 book5	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"booksPicGM={""item209"",""7item193"",""book5""}"
 BuildItemInformationBox	item	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"events.cocall(""BuildItemInformationBox"", t)"
@@ -79,7 +69,6 @@ item210	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"booksPi
 item280	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.ItemsTxt[1069].Picture=""item280"""
 ItemAdditionalDamage	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""ItemAdditionalDamage"", t)"
 ItemGenerated	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""ItemGenerated"", t)"
-Locate item	item	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Topic	= ""Locate item"","
 LUCK	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
 Melee	item	1	14	internal_table_key_literal:13; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local weaponType=""Melee"""
 ModifyItemDamage	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""ModifyItemDamage"", t)"
@@ -89,25 +78,11 @@ premature ageing	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			
 ResistanceBase	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"tab[i]=pl[stats[i] .. ""ResistanceBase""] + pl[stats[i]  .. ""ResistanceBonus""]"
 ResistanceBonus	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"tab[i]=pl[stats[i] .. ""ResistanceBase""] + pl[stats[i]  .. ""ResistanceBonus""]"
 sleep	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[22] = { [3] = ""sleep"", [13] = ""unconscious"" },"
-Solarstone	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
 spell drain	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[19] = { [5] = ""insanity"", [22] = ""spell drain"" },"
 stone	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[23] = { [15] = ""stone"", [21] = ""premature ageing"" },"
-Total corrupted items: 	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"""Total corrupted items: "" .. brokenItems"
 Traditionally carried by the High Druid, but lost during struggles over religious doctrine, Merlin acts as a reservoir of spell power the wielder can draw upon at any time.  Merlin is enchanted with swiftness, and rains blows upon enemies much faster than an ordinary staff. (Special Powers:  Swiftness and +	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[2024]= ""Traditionally carried by the High Druid, but lost during struggles over religious doctrine, Merlin acts as a reservoir of spell power the wielder can draw upon at any time.  Merlin is enchanted with swiftness, and rains blows upon enemies much faster than an ordinary staff. (Special Powers:  Swiftness and +"" .. round(40*lvl) .. "" Spell Points)"","
 unconscious	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[22] = { [3] = ""sleep"", [13] = ""unconscious"" },"
 UseMouseItem	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""UseMouseItem"", t)"
-"WARNING!!!
-
-DURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). 
-Down below a list of corrupted items:
-
-"	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt=""WARNING!!!\n\nDURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). \nDown below a list of corrupted items:\n\n"" .. txt"
-"WARNING!!!
-
-SAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). 
-Down below a list of corrupted items:
-
-"	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt=""WARNING!!!\n\nSAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). \nDown below a list of corrupted items:\n\n"" .. txt"
 weakness	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[21] = { [6] = ""poison"", [7] = ""poison"", [8] = ""poison"", [2] = ""weakness"" },"
 t1swbu	map	12	12	uncertain_context:12	Scripts/Maps/outb2.lua; Scripts/Maps/outc1.lua; Scripts/Maps/outc2.lua; Scripts/Maps/outd1.lua; Scripts/Maps/oute2.lua; Scripts/Maps/oute3.lua			"StdQuestsFunctions.SetTextureOutdoors(61, 42, ""t1swbu"")"
 All	map	7	50	engine_event_key_context:43; uncertain_context:7	Scripts/General/zzMAW-Skills.lua; Scripts/Maps/pyramid.lua			"evt.FaceExpression{Player = ""All"", Frame = 46}"
@@ -172,40 +147,18 @@ Openning file: %s	misc	4	4	uncertain_context:4	Scripts/Modules/Multiplayer/Synch
 evtnpc-b	misc	3	3	uncertain_context:3	Scripts/General/NPCFollowers.lua			"IconUp = ""evtnpc-b"","
 File closed: %s	misc	3	3	uncertain_context:3	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""INTERNAL"", ""File closed: %s"", DataFilePath)"
 jmp absolute 	misc	3	3	uncertain_context:3	Scripts/General/BountyHunt.lua; Scripts/General/ExtraEvents.lua; Scripts/General/NPCFollowers.lua			"mem.asmpatch(0x4bae73, ""jmp absolute "" .. NewCode)"
-"Targets found. Realms: Attuned. Time: Attuned.
-
-"	misc	3	3	uncertain_context:3	Scripts/Global/Quest_SavingGoobers.lua			"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. table.concat(Messages, ""\n"") .. ""\n\nRealms: Detached. Time: Detached."""
-"
-Realms: Detached. Time: Detached."	misc	2	2	uncertain_context:2	Scripts/Global/Quest_SavingGoobers.lua			"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. CurMes .. ""\nRealms: Detached. Time: Detached."""
 %code% %p%, edx, edi	misc	2	2	uncertain_context:2	Scripts/Core/events.lua			hooks.asmpatch(0x40E2F7, '%code% %p%, edx, edi')  -- quests
 *a	misc	2	2	uncertain_context:2	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"local bin = file:read(""*a"")"
-Amber Droplet	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Amber Droplet"","
-Amethyst Chunk	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Amethyst Chunk"","
-Ascended Amber Droplet	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Ascended Amber Droplet"","
-Ascended Lunar Shard	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Ascended Lunar Shard"","
-Ascended Solarstone	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Ascended Solarstone"","
 Could not open file %s	misc	2	2	uncertain_context:2	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""INTERNAL"", ""Could not open file %s"", AutosaveFilePath)"
 Could not open file: %s	misc	2	2	uncertain_context:2	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""INTERNAL"", ""Could not open file: %s"", DataFilePath)"
-Erathian Sapphire	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Erathian Sapphire"","
-Erudite Crystal	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Erudite Crystal"","
-Fire Topaz	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Fire Topaz"","
-Gemcutter's Ruby	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Gemcutter's Ruby"","
 jmp absolute 0x48ec2d	misc	2	2	uncertain_context:2	Scripts/General/MiscTweaks.lua			"mem.asmpatch(0x48e7b7, ""jmp absolute 0x48ec2d"")"
-Lunar Shard	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Lunar Shard"","
 Missing text	misc	2	2	uncertain_context:2	Scripts/Structs/extraEditableDescriptions.lua			"call(0x44AAE3, 2, entry[1], entry[2], entry[3], entry[4], params.Color or entry[5], assert(params.Text, ""Missing text""), params.ReduceLineHeight or 3)"
 Number of digits needs to be at least 1	misc	2	2	uncertain_context:2	Scripts/General/zz_Maw-initialize.lua			"error(""Number of digits needs to be at least 1"")"
 push 0x0	misc	2	2	uncertain_context:2	Scripts/General/MiscTweaks.lua			"mem.asmpatch(0x446ee6, ""push 0x0"")"
-Queen's Diamond	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Queen's Diamond"","
-Royal Amethyst	misc	2	2	uncertain_context:2	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua			"""Royal Amethyst"","
-"
-
-Summary:
-"	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt = txt .. ""\n\nSummary:\n"" .."
 "
 call absolute "	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			mem.asmhook(p, 'pushad'..'\ncall absolute '..mm78(0x443FB8, 0x440DBC)..'\npopad')
   (Shift=très lent • Alt=fichier • Ctrl=auto on/off)	misc	1	1	uncertain_context:1	Scripts/General/zzBossSync.lua			"local head = ""BOSS DEBUG "" .. _last_dump_hdr .. ""  (Shift=très lent • Alt=fichier • Ctrl=auto on/off)"""
   *local-scan*	misc	1	1	uncertain_context:1	Scripts/General/zzBossSync.lua			"(mapvars and mapvars.bossSet) and ""  *local-scan*"" or """"))"
- - Corrupted bag #	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt = txt .. ""\n"" .. pl.Name .. "" - Corrupted bag #"" .. key"
 %%%%lu	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"strgsub(strgsub(Game.GlobalTxt[466], ""%%lu"", ""%%%%lu"", 1), ""([^%%])%%lu"", ""%1%%d"")"
 %%([%w_]*)%%	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"return code:gsub(""%%([%w_]*)%%"", t.ref)"
 %%lu	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"strgsub(strgsub(Game.GlobalTxt[466], ""%%lu"", ""%%%%lu"", 1), ""([^%%])%%lu"", ""%1%%d"")"
@@ -213,16 +166,10 @@ call absolute "	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			mem.asmho
 %1%%d	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"strgsub(strgsub(Game.GlobalTxt[466], ""%%lu"", ""%%%%lu"", 1), ""([^%%])%%lu"", ""%1%%d"")"
 %code% %p%, ecx, eax	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			hooks.asmpatch(0x416426, '%code% %p%, ecx, eax')  -- awards
 "%d:	reason: %s		x: %d	y: %d	z: %d"	misc	1	1	uncertain_context:1	Scripts/General/pseudoSpawnpoint.lua			"table.insert(t2, string.format(""%d:	reason: %s		x: %d	y: %d	z: %d"", i, unpack(v)))"
-%s (speaking with %s)	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/House.lua			"local msg = (""%s (speaking with %s)""):format(v.name or ""Player"", Game.NPC[v.talking_to].Name)"
 %s hits %s for %s points!	misc	1	1	uncertain_context:1	Scripts/Global/zzMAWStatusMsg.lua			"msg=string.format(""%s hits %s for %s points!"", name, msgTxt, monName)"
 %s inflicts %s points killing %s!	misc	1	1	uncertain_context:1	Scripts/Global/zzMAWStatusMsg.lua			"msg=string.format(""%s inflicts %s points killing %s!"", name, msgTxt, monName)"
 %s shoots %s for %s points!	misc	1	1	uncertain_context:1	Scripts/Global/zzMAWStatusMsg.lua			"msg=string.format(""%s shoots %s for %s points!"", name, msgTxt, monName)"
-"%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s
-Targets' status: in %s.
-"	misc	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"local FString	= ""%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: in %s.\n"""
-%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s.	misc	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"local FString	= ""%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s."""
 %s: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/GlobalMap.lua			"table.insert(texts, (""%s: %s""):format(name, Game.MapStats[client.map].Name))"
-%s: %s grants you %s exp.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua			"local msg = (""%s: %s grants you %s exp.""):format(t[2], t[3], t[1])"
 %s: invalid player pointer in GetPlayerFromPtr - 0x%X	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"MF.Log(Merge.Log.Error, ""%s: invalid player pointer in GetPlayerFromPtr - 0x%X"", LogId, ptr)"
 %s: x:%d, y:%d	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/GlobalMap.lua			"table.insert(texts, (""%s: x:%d, y:%d""):format(name, mon.X, mon.Y))"
 '): fn must be a function, got 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Timers.lua			"assert(type(fn) == ""function"", ""MawAddTimer('""..tostring(name)..""'): fn must be a function, got ""..type(fn))"
@@ -334,7 +281,6 @@ jmp absolute 0x48e8fc	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lu
 jmp absolute 0x4b2eaf	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"mem.asmpatch(0x4b2e83, ""jmp absolute 0x4b2eaf"")"
 Let's get started!	misc	1	1	uncertain_context:1	Scripts/Global/zzMaw_Arena.lua			"Ungive = ""Let's get started!"","
 Loading MAW settings from 	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"print(""Loading MAW settings from "" .. settingsPath)"
-Locate person	misc	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Topic	= ""Locate person"","
 Loot Filter	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"createSwitch(340, ""Loot Filter"", ""lootFilter"", {""OFF"",""Common"", ""Uncom."", ""Rare"", ""Epic"",""Ancient"",""Primordial""})"
 luadata.bin	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"local f = call(offsets.FindFileInLod, 1, offsets.SaveGameLod, ""luadata.bin"", 1)"
 luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"mem.copy(savehdr, ""luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"", 0x20)"
@@ -362,7 +308,6 @@ Option 1	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"O
 Option 2	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"Options = Options or {""Option 1"", ""Option 2""},"
 or edx, 	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"mem.asmpatch(0x4B5B9E, ""or edx, "" .. MasterBitVStr)"
 Orb of Creation	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Orb of Creation"","
-Other players in house:	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/House.lua			"ShowTextRight(""Other players in house:"", baseX + 76, baseY - (count - 1) * lineHeight - 20)"
 Pandora's Cube	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Pandora's Cube"","
 Pearl of Memory	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Pearl of Memory"","
 Processing game data.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""EVENTS"", ""Processing game data."")"
@@ -392,11 +337,7 @@ sub dword [ds:0x509cac], 	misc	1	1	uncertain_context:1	Scripts/General/MiscTweak
 SV1_	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"local SAVE_VERSION_TOKEN = ""SV1_"""
 Synchronization/%s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization.lua			"local folder = ""Synchronization/%s"""
 test ah, 0x10	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"mem.asmpatch(0x426242, ""test ah, 0x10"")"
-Total corrupted bags: 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"""Total corrupted bags: "" .. brokenBags .. ""\n"" .."
 Unknown tileset file 	misc	1	1	uncertain_context:1	Scripts/General/pseudoSpawnpoint.lua			"local tilesetsFile = ""Tile"" .. (Game.Version == 8 and (tilesetFileSuffixes[Map.TilesetsFile] or error(""Unknown tileset file "" .. Map.TilesetsFile)) or """") .. ""Bin"""
-"World: Enroth. Realm: %s. Landmark: %s. Year: %s
-Targets' status: %s, type: %s, state: %s.
-"	misc	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"local FString	= ""World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n"""
 x = %d, y = %d	misc	1	1	uncertain_context:1	Scripts/General/pseudoSpawnpoint.lua			"print(string.format(""x = %d, y = %d"", Party.X, Party.Y))"
 x = %d, y = %d, z = %d	misc	1	1	uncertain_context:1	Scripts/General/pseudoSpawnpoint.lua			"print(string.format(""x = %d, y = %d, z = %d"", XYZ(Party)))"
 xor eax, eax	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"mem.asmpatch(mm78(0x44E1B9, 0x44B8A5), ""xor eax, eax"", 3)"
@@ -462,7 +403,6 @@ IsMonsterOfKind	monster	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua	
 Lizardmen Warrior	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Monster1Pic = ""Lizardmen Warrior"","
 LoadMap	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"events.Remove(""LoadMap"", c1)"
 loadstring	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"local oldLoadstringIndex, oldLoadstring = debug.findupvalue(oldDoDebug, ""loadstring"")"
-Locate monster	monster	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Topic	= ""Locate monster"","
 Mad.	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"MAWBOLSTER[600]=""Mad."""
 "mkdir -p ""%s"" 2>/dev/null"	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"or  ('mkdir -p ""%s"" 2>/dev/null'):format(_J)"
 monster	monster	1	1	uncertain_context:1	Scripts/General/BountyHunt.lua			"local contents = Yellow(MonName or ""monster"")"
@@ -616,9 +556,6 @@ spirit	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local n
 TargetRosterId	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
 water	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
 %d+	status	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"Message(message:gsub(""%d+"", |contents| contents==tostring(learningRequirementsNormal[skillM]) and req or cost or contents))"
-"
-
-Realms: Detached. Time: Detached."	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. table.concat(Messages, ""\n"") .. ""\n\nRealms: Detached. Time: Detached."""
  is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there.	status	1	1	uncertain_context:1	Scripts/General/zzMaw-MultiBag.lua			"debug.Message(pl.Name .. ""'s bag number "" .. bag .. "" is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there."")"
 " might have been corrupted, contact Malekith on discord (or in bug report in discord) and copy paste this message and the following ones.
 Keep in mind that corrupted item might have been just some 'random' unexpected value with no actual consequences, so if you don't notice anything missing, you can continue playing normally.

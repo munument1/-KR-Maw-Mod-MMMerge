@@ -4562,7 +4562,7 @@ end
 
 --convert gems, from lower to highest
 --NAMES
-local craftingNames={"Lunar Shard", "Fire Topaz", "Amethyst Chunk", "Amber Droplet", "Royal Amethyst", "Gemcutter's Ruby", "Solarstone", "Erudite Crystal", "Erathian Sapphire", "Queen's Diamond","Ascended Lunar Shard", "Ascended Topaz", "Ascended Amethyst", "Ascended Amber", "Ascended Purple Amethyst", "Ascended Ruby", "Ascended Solarstone", "Ascended Amber Droplet", "Ascended Sapphire", "Ascended Diamond"}
+local craftingNames={"달의 파편", "화염 토파즈", "자수정 덩어리", "호박 방울", "왕실 자수정", "보석세공사의 루비", "태양석", "현자의 수정", "에라시아 사파이어", "여왕의 다이아몬드","승천한 달의 파편", "승천한 토파즈", "승천한 자수정", "승천한 호박", "승천한 보라 자수정", "승천한 루비", "승천한 태양석", "승천한 호박 방울", "승천한 사파이어", "승천한 다이아몬드"}
 function events.KeyDown(t)
 	if t.Key ~=85 then
 		gemUpgrading=false
