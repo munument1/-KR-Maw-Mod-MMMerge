@@ -12,6 +12,7 @@ on:
       - 'tools/classify_structural_tables.py'
       - 'tools/classify_internal_literals.py'
       - 'tools/refine_uncertain_internal.py'
+      - 'tools/promote_display_literals.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -57,6 +58,9 @@ jobs:
 
       - name: Refine uncertain internal literals
         run: python tools/refine_uncertain_internal.py --root .
+
+      - name: Promote proven display assignments
+        run: python tools/promote_display_literals.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
