@@ -27,6 +27,7 @@ on:
       - 'tools/promote_reviewed_display_strings.py'
       - 'tools/promote_batch026_display.py'
       - 'tools/promote_batch027_display.py'
+      - 'tools/promote_batch028_display.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -121,6 +122,9 @@ jobs:
 
       - name: Promote batch 027 reviewed display strings
         run: python tools/promote_batch027_display.py --root .
+
+      - name: Promote batch 028 mastery labels
+        run: python tools/promote_batch028_display.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
