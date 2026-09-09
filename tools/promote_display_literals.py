@@ -2,10 +2,10 @@
 """Promote uncertain Lua literals only when they belong to proven display APIs.
 
 This pass is intentionally conservative. It recognizes text written directly to
-MMExtension display tables/fields and Skillz.setName; internal keys and control
-values remain unpatchable. For a proven display assignment, every quoted text
-fragment on the assignment RHS is display text, including fragments around a
-concatenated numeric value.
+MMExtension display tables/fields and Skillz display helpers; internal keys and
+control values remain unpatchable. For a proven display assignment, every quoted
+text fragment on the assignment RHS is display text, including fragments around
+a concatenated numeric value.
 """
 
 from __future__ import annotations
@@ -32,6 +32,12 @@ def write_rows(path: Path, rows):
         writer.writerows(rows)
 
 
+def mark(row: dict[str, str], reason: str) -> bool:
+    row["patchable"] = "yes"
+    row["reason"] = reason
+    return True
+
+
 def promote(row: dict[str, str]) -> bool:
     if row.get("patchable") != "no" or row.get("reason") != "uncertain_context":
         return False
@@ -41,29 +47,46 @@ def promote(row: dict[str, str]) -> bool:
         return False
     q = re.escape(source)
 
-    # All quoted fragments on the RHS of these known player-visible display
-    # assignments are display text. This also catches suffixes in expressions
-    # like "Deals ... " .. value .. "% of melee damage".
+    # All quoted fragments on the RHS of known player-visible text tables are
+    # display text. This catches fragments around concatenated numeric values.
     if re.search(
-        rf"Game\.(?:GlobalTxt|PlaceMonTxt|SpellsTxt)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
+        rf"Game\.(?:GlobalTxt|PlaceMonTxt|NPCText|ClassNames)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
         context,
     ):
-        row["patchable"] = "yes"
-        row["reason"] = "proven_game_display_assignment"
-        return True
+        return mark(row, "proven_game_display_assignment")
 
-    # Skillz.setName(id, "Name") updates the skill name shown by the UI.
+    # Spell text fields are player-facing: Name, Description and mastery text.
+    if re.search(
+        rf"Game\.SpellsTxt\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
+        context,
+    ):
+        return mark(row, "proven_game_display_assignment")
+
+    # NPC names are displayed in dialogue and multiplayer UI.
+    if re.search(
+        rf"Game\.NPC\s*\[[^\]]+\]\.Name\s*=.*['\"]{q}['\"]",
+        context,
+    ):
+        return mark(row, "proven_npc_display_name")
+
+    # Skillz.setName/Skillz.setDesc feed the skills UI directly.
     if re.search(rf"\bSkillz\.setName\s*\([^,]+,\s*['\"]{q}['\"]", context):
-        row["patchable"] = "yes"
-        row["reason"] = "proven_skill_display_name"
-        return True
+        return mark(row, "proven_skill_display_name")
+    if re.search(rf"\bSkillz\.setDesc\s*\(.*['\"]{q}['\"]", context):
+        return mark(row, "proven_skill_display_description")
 
-    # Item NotIdentifiedName is directly shown before identification. Allow
-    # either Game.ItemsTxt[...] or a local alias such as txt[...].
-    if re.search(rf"(?:Game\.ItemsTxt\s*\[[^\]]+\]|[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\])\.NotIdentifiedName\s*=.*['\"]{q}['\"]", context):
-        row["patchable"] = "yes"
-        row["reason"] = "proven_item_display_name"
-        return True
+    # Item names/descriptions are shown in inventory/tooltips. Allow either the
+    # canonical Game.ItemsTxt table or a local alias for NotIdentifiedName.
+    if re.search(
+        rf"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=.*['\"]{q}['\"]",
+        context,
+    ):
+        return mark(row, "proven_item_display_text")
+    if re.search(
+        rf"[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\]\.NotIdentifiedName\s*=.*['\"]{q}['\"]",
+        context,
+    ):
+        return mark(row, "proven_item_display_name")
 
     return False
 
