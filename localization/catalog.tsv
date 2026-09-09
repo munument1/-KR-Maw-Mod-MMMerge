@@ -722,9 +722,9 @@ maw-b14b0399f11e	excluded	misc	BountyHuntRewardClaimed			Scripts/General/BountyH
 maw-ccfc12b79b83	translated	misc	Buff effects reduced by 	버프 효과 감소: 		Scripts/General/zzMaw-Maps.lua	2128	1	지도 어픽스 설명 조각
 maw-d273c41b7794	untranslated	misc	Buff Rework			Scripts/General/zz_Maw-initialize.lua	556	1	
 maw-1ed518a36cb7	excluded	misc	Calling ProcessPartySaveData event.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	536	1	Internal engine/control literal only; not player-facing localization.
-maw-dc911511eae1	untranslated	misc	Captain Finch			Scripts/General/zSERIOUSMAW.lua	11	1	
-maw-19392061eef2	untranslated	misc	Captain Sharp-Tooth			Scripts/General/zSERIOUSMAW.lua	7	1	
-maw-415b97f18bb9	untranslated	misc	Captain Strong-Scale			Scripts/General/zSERIOUSMAW.lua	9	1	
+maw-dc911511eae1	translated	misc	Captain Finch	핀치 대장		Scripts/General/zSERIOUSMAW.lua	11	1	Game.PlaceMonTxt 몬스터명
+maw-19392061eef2	translated	misc	Captain Sharp-Tooth	날카로운 이빨 대장		Scripts/General/zSERIOUSMAW.lua	7	1	Game.PlaceMonTxt 몬스터명
+maw-415b97f18bb9	translated	misc	Captain Strong-Scale	단단한 비늘 대장		Scripts/General/zSERIOUSMAW.lua	9	1	Game.PlaceMonTxt 몬스터명
 maw-28a4eb69540a	untranslated	misc	Celestial Orb			Scripts/General/zzAlchemy.lua	1396	1	
 maw-0ccd534dede1	excluded	misc	Character choice made.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	530	1	Internal engine/control literal only; not player-facing localization.
 maw-034631d65fae	untranslated	misc	Charge telelocator			Scripts/Global/Quest_SavingGoobers.lua	640	1	
@@ -750,7 +750,7 @@ maw-c5a1bf33495a	untranslated	misc	Day-o-Gods			Scripts/General/MiscTweaks.lua	1
 maw-df653779161b	untranslated	misc	débil			Scripts/General/zzMaw-Multiplayer.lua	206	1	
 maw-47aa9a09e447	untranslated	misc	Emerald of Power			Scripts/General/zzAlchemy.lua	1393	1	
 maw-dd399f98d057	translated	misc	Empty Barrel	빈 통		Scripts/General/zzMaw-Maps.lua	202	1	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-16d5a6e22e05	untranslated	misc	Endless Arena			Scripts/Global/zzMaw_Arena.lua	28	1	
+maw-16d5a6e22e05	translated	misc	Endless Arena	끝없는 투기장		Scripts/Global/zzMaw_Arena.lua	28	1	투기장 토픽
 maw-100a74eeab74	translated	misc	Enter the data.	데이터를 입력하세요.		Scripts/Global/Quest_SavingGoobers.lua	705	3	퀘스트 질문
 maw-d4788aabcb87	translated	misc	Erathian Sapphire	에라시아 사파이어		Scripts/General/zzAlchemy.lua	1377	2	제작 보석 상태 메시지
 maw-3f826de2410f	untranslated	misc	Error in HitPlayer handler: invalid player slot: %s / [0, %s]		%s %s	Scripts/Core/events.lua	2620	1	
@@ -789,7 +789,7 @@ maw-44fcaf7ec76a	translated	misc	Healing reduced by 	치유량 감소: 		Scripts
 maw-8ebf33b72b32	translated	misc	Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.		Scripts/General/zzAlchemy.lua	495	1	물약 효과 툴팁
 maw-5aba2c1279d0	translated	misc	Health: 	생명력: 		Scripts/General/zzzOnlineVariableSender.lua	329	1	멀티플레이 상태 표시
 maw-035135c6e9e5	untranslated	misc	Homing Projectiles			Scripts/General/zz_Maw-initialize.lua	558	1	
-maw-c49d222d591a	untranslated	misc	Huge Orc			Scripts/General/zSERIOUSMAW.lua	15	1	
+maw-c49d222d591a	translated	misc	Huge Orc	거대 오크		Scripts/General/zSERIOUSMAW.lua	15	1	Game.PlaceMonTxt 몬스터명
 maw-7402ad17f5ee	untranslated	misc	I want to reset			Scripts/Global/zzMAWRespec.lua	29	1	
 maw-e8e3b6bb3537	excluded	misc	I'm client. Leaving the game.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	443	1	Internal engine/control literal only; not player-facing localization.
 maw-3a0b9b3d3991	excluded	misc	I'm host, saving game. Sent save data requests: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	419	1	Internal engine/control literal only; not player-facing localization.
@@ -808,7 +808,7 @@ maw-8db72e2f2f04	translated	misc	Increases temporary Fire, Air, Water and Earth 
 maw-5e1a8bc9afac	translated	misc	Increases temporary Mind and Body resistance. (Light)	정신 및 육체 저항을 일시적으로 증가시킵니다. (빛)		Scripts/General/zzAlchemy.lua	498	1	물약 효과 툴팁
 maw-3a329e5c2a67	untranslated	misc	Init finished: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	960	1	
 maw-3db41f99e546	untranslated	misc	Init started: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	3	1	
-maw-5b4e36d25e6c	untranslated	misc	It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!			Scripts/Global/zzMaw_Arena.lua	22	1	
+maw-5b4e36d25e6c	translated	misc	It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!	끝없는 파도 모드는 처음인 것 같군요. 이 모드에서는 적의 무리가 계속 나타나며 시간이 갈수록 강해집니다. 레벨을 하나 클리어할 때마다 진행 상황이 저장되고, 가장 최근 체크포인트에서 다시 시작할 수 있습니다. 끝없는 도전에 대비하십시오!		Scripts/Global/zzMaw_Arena.lua	22	1	끝없는 투기장 안내
 maw-14ca9edbc960	excluded	misc	jmp 0x447def - 0x447dba			Scripts/General/MiscTweaks.lua	26	1	Internal engine/control literal only; not player-facing localization.
 maw-761909de0133	excluded	misc	jmp 0x454FC6 - 0x454FB2			Scripts/Core/events.lua	1000	1	Internal engine/control literal only; not player-facing localization.
 maw-2919aea89ea1	excluded	misc	jmp 0x455361 - 0x45534D			Scripts/Core/events.lua	999	1	Internal engine/control literal only; not player-facing localization.
@@ -826,7 +826,7 @@ maw-8bc3a6feeaad	excluded	misc	jmp absolute 0x48e8fc			Scripts/General/MiscTweak
 maw-31be11f1b886	excluded	misc	jmp absolute 0x48ec2d			Scripts/General/MiscTweaks.lua	36	2	Internal engine/control literal only; not player-facing localization.
 maw-59ecd6298b23	excluded	misc	jmp absolute 0x4b2eaf			Scripts/General/NPCFollowers.lua	913	1	Internal engine/control literal only; not player-facing localization.
 maw-6fe876322cdd	translated	misc	Leech reduced by 	흡수량 감소: 		Scripts/General/zzMaw-Maps.lua	2127	1	지도 어픽스 설명 조각
-maw-754db38e2607	untranslated	misc	Let's get started!			Scripts/Global/zzMaw_Arena.lua	41	1	
+maw-754db38e2607	translated	misc	Let's get started!	시작하지!		Scripts/Global/zzMaw_Arena.lua	41	1	투기장 NPC 대사
 maw-464e644f9fdf	excluded	misc	Loading MAW settings from 			Scripts/General/zz_Maw-initialize.lua	249	1	Internal engine/control literal only; not player-facing localization.
 maw-b28cfe6e81db	translated	misc	Locate person	사람 찾기		Scripts/Global/Quest_SavingGoobers.lua	866	1	텔레로케이터 NPC 토픽
 maw-bcf88a2c0113	untranslated	misc	Loot Filter			Scripts/General/zz_Maw-initialize.lua	560	1	
@@ -872,14 +872,14 @@ maw-bf7e78fb3aa1	untranslated	misc	mawBossNamesReq			Scripts/General/zzBossSync.
 maw-4527d8e08e83	excluded	misc	MAWSettings.lua not found, creating default file...			Scripts/General/zz_Maw-initialize.lua	260	1	Internal engine/control literal only; not player-facing localization.
 maw-9f0953eb3a47	excluded	misc	Missing game_id in server init data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	651	1	Internal engine/control literal only; not player-facing localization.
 maw-03a503e013e8	excluded	misc	Missing text			Scripts/Structs/extraEditableDescriptions.lua	596	2	Internal engine/control literal only; not player-facing localization.
-maw-032ed6be6753	untranslated	misc	Mountain Man			Scripts/General/zSERIOUSMAW.lua	13	1	
+maw-032ed6be6753	translated	misc	Mountain Man	산사람		Scripts/General/zSERIOUSMAW.lua	13	1	Game.PlaceMonTxt 몬스터명
 maw-c3d0682617af	untranslated	misc	mov [%p%], eax		%p	Scripts/Core/events.lua	685	1	
 maw-731520ee36ed	excluded	misc	mov eax, ecx			Scripts/Core/events.lua	1148	1	Internal engine/control literal only; not player-facing localization.
 maw-42a420da0db8	excluded	misc	mov edx, dword [ds:0xB2155C]			Scripts/General/MiscTweaks.lua	82	1	Internal engine/control literal only; not player-facing localization.
 maw-6e9a86524f7f	untranslated	misc	mov edx, eax			Scripts/Structs/extraEditableDescriptions.lua	213	1	
 maw-0ec9fdc7af44	excluded	misc	movzx eax, word [ds:edi+0x4c]			Scripts/General/MiscTweaks.lua	20	1	Internal engine/control literal only; not player-facing localization.
 maw-91b8f0b72cb2	untranslated	misc	MUI_			Scripts/General/zz_Maw-initialize.lua	470	1	
-maw-6b717c68429a	untranslated	misc	Naga Empress			Scripts/General/zSERIOUSMAW.lua	16	1	
+maw-6b717c68429a	translated	misc	Naga Empress	나가 여제		Scripts/General/zSERIOUSMAW.lua	16	1	Game.PlaceMonTxt 몬스터명
 maw-9cba2131e8e6	untranslated	misc	Negative attacker ref in events.lua Who(i, action): %s		%s	Scripts/Core/events.lua	2470	1	
 maw-a390180a7a3b	excluded	misc	NewBountyHuntCreated			Scripts/General/BountyHunt.lua	237	1	Internal engine/control literal only; not player-facing localization.
 maw-834b79bc4037	excluded	misc	No data by this id.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	Internal engine/control literal only; not player-facing localization.
@@ -1048,10 +1048,10 @@ maw-17ec106941ee	untranslated	misc	Saves/MultiplayerAutosave.bin			Scripts/Modul
 maw-febcc382b490	untranslated	misc	Saves/MultiplayerGames.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	9	1	
 maw-7c779c370257	excluded	misc	Saving multiplayer global data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	56	1	Internal engine/control literal only; not player-facing localization.
 maw-6e7c817c5a46	excluded	misc	sendBossToHost			Scripts/General/zzMaw-Multiplayer.lua	818	1	Internal engine/control literal only; not player-facing localization.
-maw-7ae1313e5144	untranslated	misc	Serpent Mother			Scripts/General/zSERIOUSMAW.lua	4	1	
+maw-7ae1313e5144	translated	misc	Serpent Mother	뱀의 어머니		Scripts/General/zSERIOUSMAW.lua	4	1	Game.PlaceMonTxt 몬스터명
 maw-4d976c303caf	untranslated	misc	SG_Activate!			Scripts/Global/Quest_SavingGoobers.lua	513	1	
 maw-950baa8f936f	excluded	misc	ShareMapvarsToHost			Scripts/General/zzzOnlineVariableSender.lua	421	1	Internal engine/control literal only; not player-facing localization.
-maw-4372d664c31f	untranslated	misc	Start Level 			Scripts/Global/zzMaw_Arena.lua	40	1	
+maw-4372d664c31f	translated	misc	Start Level 	도전 레벨 		Scripts/Global/zzMaw_Arena.lua	40	1	투기장 시작 토픽 접두어
 maw-d9d7aed80bfd	untranslated	misc	sub dword [ds:0x509cac], 			Scripts/General/MiscTweaks.lua	537	1	
 maw-8535b82f6998	untranslated	misc	SV1_			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	87	1	
 maw-65f82b3122c0	untranslated	misc	Synchronization/%s		%s	Scripts/Modules/Multiplayer/Synchronization.lua	1	1	

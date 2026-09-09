@@ -452,6 +452,9 @@ Ascended Solarstone	승천한 태양석	translated	misc	1	reviewed_crafting_stat
 Boss density increased by 	보스 밀도 증가: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[16]=""Boss density increased by "" .. getMapAffixPower(16, power) .. ""%"","
 Bosses have 	보스: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[18]=""Bosses have "" .. getMapAffixPower(18, power) .. ""% increased HP and damage"","
 Buff effects reduced by 	버프 효과 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[33]=""Buff effects reduced by "" .. getMapAffixPower(33, power) .. ""%"","
+Captain Finch	핀치 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[203]=""Captain Finch"""
+Captain Sharp-Tooth	날카로운 이빨 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[201]=""Captain Sharp-Tooth"""
+Captain Strong-Scale	단단한 비늘 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[202]=""Captain Strong-Scale"""
 "Cures and prevent Stoned condition for 6 hours.
 Require 20 power to work.
 "	"석화를 치료하고 6시간 동안 석화를 방지합니다.
@@ -463,6 +466,7 @@ Cures and prevents Fear and Insanity for 6 hours.	공포와 광기를 치료하�
 Cures and prevents Weakness and inducted Sleep for 6 hours.	약화와 강제 수면을 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
 Currently Active Legendary effects:	현재 활성화된 전설 효과:	translated	misc	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local legTxt=""Currently Active Legendary effects:"""
 Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
+Endless Arena	끝없는 투기장	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Topic = ""Endless Arena"","
 Enter the data.	데이터를 입력하세요.	translated	misc	3	question_call:3	Scripts/Global/Quest_SavingGoobers.lua	"Answer = Question(""Enter the data."")"
 Erathian Sapphire	에라시아 사파이어	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
 Erudite Crystal	현자의 수정	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
@@ -482,6 +486,7 @@ Grant 500 Experience point per Power to the player.	플레이어에게 위력 1�
 Healing reduced by 	치유량 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[31]=""Healing reduced by "" .. getMapAffixPower(31, power) .. ""%"","
 Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[247] = ""Heals based on the potion's power of hit points."","
 Health: 	생명력: 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(0,255,0,  ""Health: "" .. tostring(Party[0].HP) .. ""/"" .. tostring(round(maxHP))) .."
+Huge Orc	거대 오크	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[304]=""Huge Orc"""
 Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	6시간 동안 모든 저항이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
 Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	6시간 동안 7대 능력치가 모두 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
 Increases Attack by 5+(0.5 x Power) for 6 Hours	6시간 동안 공격력이 5 + (0.5 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
@@ -489,7 +494,9 @@ Increases Melee damage by 5+(0.5 x Power) for 6 Hours	6시간 동안 근접 피�
 Increases Speed for 6 Hours	6시간 동안 속도가 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[228] = ""Increases Speed for 6 Hours"","
 Increases temporary Fire, Air, Water and Earth resistance. (Dark)	화염, 공기, 물, 대지 저항을 일시적으로 증가시킵니다. (어둠)	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[249] = ""Increases temporary Fire, Air, Water and Earth resistance. (Dark)"","
 Increases temporary Mind and Body resistance. (Light)	정신 및 육체 저항을 일시적으로 증가시킵니다. (빛)	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[250] = ""Increases temporary Mind and Body resistance. (Light)"","
+It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!	끝없는 파도 모드는 처음인 것 같군요. 이 모드에서는 적의 무리가 계속 나타나며 시간이 갈수록 강해집니다. 레벨을 하나 클리어할 때마다 진행 상황이 저장되고, 가장 최근 체크포인트에서 다시 시작할 수 있습니다. 끝없는 도전에 대비하십시오!	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"local txt=""It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!"""
 Leech reduced by 	흡수량 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[32]=""Leech reduced by "" .. getMapAffixPower(32, power) .. ""%"","
+Let's get started!	시작하지!	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Ungive = ""Let's get started!"","
 Locate person	사람 찾기	translated	misc	1	reviewed_telelocator_ui:1	Scripts/Global/Quest_SavingGoobers.lua	"Topic	= ""Locate person"","
 Lunar Shard	달의 파편	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
 "M/R/S:%s/%s/%s
@@ -522,6 +529,8 @@ Lunar Shard	달의 파편	translated	misc	1	reviewed_crafting_status_name:1	Scri
 
 
 "	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
+Mountain Man	산사람	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[204]=""Mountain Man"""
+Naga Empress	나가 여제	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[205]=""Naga Empress"""
 NPC %d	NPC %d	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"Label = strformat(""NPC %d"", i),"
 NPC PANEL	NPC 패널	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"MF.RegisterExtraKeyBind({DefKey = 0x30, RegValue = ""xkey_npcpanel"", Label = ""NPC PANEL"","
 Other players in house:	집 안의 다른 플레이어:	translated	misc	1	reviewed_multiplayer_house_ui:1	Scripts/Modules/Multiplayer/UI/House.lua	"ShowTextRight(""Other players in house:"", baseX + 76, baseY - (count - 1) * lineHeight - 20)"
@@ -657,6 +666,8 @@ Require 40 power to work.
 작동하려면 위력 40이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
 Royal Amethyst	왕실 자수정	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Serpent Mother	뱀의 어머니	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[200]=""Serpent Mother"""
+Start Level 	도전 레벨 	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Topic = ""Start Level ""  .. vars.highestArenaWave+1,"
 "Targets found. Realms: Attuned. Time: Attuned.
 
 "	"대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.

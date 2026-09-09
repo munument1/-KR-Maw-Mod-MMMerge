@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1687,
-    "translated": 953,
-    "untranslated": 385
+    "translated": 964,
+    "untranslated": 374
   },
   "categories": {
     "class": 37,
@@ -64,9 +64,11 @@
     "proven_spelltxt_alias_display": 32,
     "proven_stat_tooltip_text": 21,
     "question_call": 4,
+    "reviewed_arena_ui": 4,
     "reviewed_crafting_status_name": 20,
     "reviewed_internal_api_literal": 253,
     "reviewed_item_corruption_message": 8,
+    "reviewed_monster_display_name": 7,
     "reviewed_multiplayer_experience_ui": 1,
     "reviewed_multiplayer_house_ui": 3,
     "reviewed_telelocator_ui": 12,
@@ -74,7 +76,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 603
+    "uncertain_context": 592
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -83,7 +85,7 @@
   "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
   "individual_literal_refinements": 5,
   "internal_only_unique_sources": 1673,
-  "internal_only_newly_excluded": 489,
+  "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 2078,
   "proven_display_promotions": 464,
@@ -102,9 +104,9 @@
   "proven_item_enchantment_label_lines": 27,
   "proven_item_enchantment_label_promotions": 31,
   "proven_settings_header_promotions": 2,
-  "reviewed_bulk_display_promotions": 44,
-  "uncertain_review_unique_sources": 377,
-  "uncertain_review_occurrences": 547,
+  "reviewed_bulk_display_promotions": 55,
+  "uncertain_review_unique_sources": 366,
+  "uncertain_review_occurrences": 536,
   "uncertain_review_exact_mmmerge_matches": 15,
   "uncertain_review_ambiguous_mmmerge_matches": 7
 }

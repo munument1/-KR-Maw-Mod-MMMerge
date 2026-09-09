@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 953,
-  "translated_entries_with_patchable_occurrences": 952,
-  "patchable_occurrences_targeted": 1243,
+  "translated_entries": 964,
+  "translated_entries_with_patchable_occurrences": 963,
+  "patchable_occurrences_targeted": 1254,
   "skipped_unpatchable_occurrences_for_translated_sources": 83,
   "changed_files": [
     {
@@ -21,6 +21,10 @@
     {
       "file": "Scripts/General/NPCFollowers.lua",
       "replacements": 3
+    },
+    {
+      "file": "Scripts/General/zSERIOUSMAW.lua",
+      "replacements": 7
     },
     {
       "file": "Scripts/General/zzAlchemy.lua",
@@ -92,7 +96,7 @@
     },
     {
       "file": "Scripts/Global/zzMaw_Arena.lua",
-      "replacements": 3
+      "replacements": 7
     },
     {
       "file": "Scripts/Global/zzMaw_Legendaries.lua",

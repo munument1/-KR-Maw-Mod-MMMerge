@@ -19,13 +19,13 @@ function events.LoadMap()
 end
 
 function arenaTopic()
-	local txt="It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!"
+	local txt="끝없는 파도 모드는 처음인 것 같군요. 이 모드에서는 적의 무리가 계속 나타나며 시간이 갈수록 강해집니다. 레벨을 하나 클리어할 때마다 진행 상황이 저장되고, 가장 최근 체크포인트에서 다시 시작할 수 있습니다. 끝없는 도전에 대비하십시오!"
 	QuestNPC = 313
 	Quest{
 		Slot = 1,
 		Ungive = function(t) startArena() end,
 		Texts = {
-			Topic = "Endless Arena",
+			Topic = "끝없는 투기장",
 			Ungive = txt,
 		}
 	}
@@ -37,8 +37,8 @@ function startArena()
 	Slot = 1,
 	Ungive = function(t) arenaStarted() end,
 	Texts = {
-		  Topic = "Start Level "  .. vars.highestArenaWave+1,
-		  Ungive = "Let's get started!",
+		  Topic = "도전 레벨 "  .. vars.highestArenaWave+1,
+		  Ungive = "시작하지!",
 		}
 	}
 end
