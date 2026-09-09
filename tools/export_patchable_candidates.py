@@ -66,13 +66,21 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(rows)
 
-    pending = sum(1 for r in rows if r["status"] == "untranslated")
+    pending_rows = [r for r in rows if r["status"] == "untranslated"]
+    pending = len(pending_rows)
     excluded = sum(1 for r in rows if r["status"] == "excluded")
     translated = sum(1 for r in rows if r["status"] == "translated")
     print(f"patchable unique sources: {len(rows)}")
     print(f"pending patchable sources: {pending}")
     print(f"excluded patchable sources: {excluded}")
     print(f"translated patchable sources: {translated}")
+    if pending_rows:
+        print("pending patchable detail:")
+        for r in pending_rows:
+            context = r["sample_context"].replace("\n", "\\n").replace("\r", "")
+            if len(context) > 220:
+                context = context[:217] + "..."
+            print(f"- [{r['category']}] {r['source']!r} | {r['reasons']} | {context}")
     return 2 if args.check and pending else 0
 
 
