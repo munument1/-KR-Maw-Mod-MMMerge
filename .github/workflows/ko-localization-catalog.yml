@@ -11,6 +11,7 @@ on:
       - 'tools/extract_maw_strings.py'
       - 'tools/classify_structural_tables.py'
       - 'tools/classify_internal_literals.py'
+      - 'tools/refine_uncertain_internal.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -53,6 +54,9 @@ jobs:
 
       - name: Classify internal engine literals
         run: python tools/classify_internal_literals.py --root .
+
+      - name: Refine uncertain internal literals
+        run: python tools/refine_uncertain_internal.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
