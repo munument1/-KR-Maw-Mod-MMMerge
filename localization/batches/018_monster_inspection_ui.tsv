@@ -1,0 +1,10 @@
+source	translation	status	notes
+\n\nCurrent Health: 	\n\n현재 생명력: 	translated	몬스터 감정창
+\n\nExperience: 	\n\n경험치: 	translated	몬스터 감정창
+Bounty	현상금	translated	현상금 UI 제목
+Cold\01200000\t070	냉기\01200000\t070	translated	저항 표시; 제어 코드 보존
+Elec\01200000\t070	전기\01200000\t070	translated	저항 표시; 제어 코드 보존
+Fire\01200000\t070	화염\01200000\t070	translated	저항 표시; 제어 코드 보존
+Level:          	레벨:          	translated	몬스터 감정창; 정렬 공백 보존
+Magic\01200000\t070	마법\01200000\t070	translated	저항 표시; 제어 코드 보존
+Poison\01200000\t070	중독\01200000\t070	translated	저항 표시; 제어 코드 보존
