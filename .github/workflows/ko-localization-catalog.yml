@@ -68,6 +68,9 @@ jobs:
       - name: Refine uncertain internal literals
         run: python tools/refine_uncertain_internal.py --root .
 
+      - name: Reclassify refined internal literals
+        run: python tools/classify_internal_literals.py --root .
+
       - name: Promote proven display assignments
         run: python tools/promote_display_literals.py --root .
 
