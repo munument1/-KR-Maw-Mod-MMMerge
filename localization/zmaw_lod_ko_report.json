@@ -22,20 +22,27 @@
     "mapstats.txt": 207,
     "class.txt": 106,
     "SPCITEMS.TXT": 146,
-    "POTION.TXT": 0,
-    "POTNOTES.TXT": 0,
+    "POTION.TXT": 366,
+    "POTNOTES.TXT": 366,
     "rnditems.txt": 0
   },
-  "total_localized_fields": 7854,
+  "total_localized_fields": 8586,
   "untouched_pending_schema_review": [
-    "POTION.TXT",
-    "POTNOTES.TXT",
     "rnditems.txt"
   ],
   "untouched_byte_preserved": [
-    "POTION.TXT",
-    "POTNOTES.TXT",
     "rnditems.txt"
   ],
-  "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit pinned MMMerge Korean runtime text; untouched tables are copied byte-for-byte; localized tables use the existing Korean CP949/DBCS encoding convention."
+  "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit Korean text; POTION/POTNOTES localize only Name/Description/Effect while preserving recipe/control matrices; rnditems remains byte-for-byte MAW 4.5 data.",
+  "potion_display_localization": {
+    "rows_per_table": 122,
+    "columns": [
+      "Name",
+      "Description",
+      "Effect"
+    ],
+    "matrix_columns_preserved": true,
+    "validation_errors": [],
+    "review_file": "localization/zmaw_potion_ko.tsv"
+  }
 }
