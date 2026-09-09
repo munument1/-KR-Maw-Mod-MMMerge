@@ -2086,46 +2086,46 @@ function events.BuildItemInformationBox(t)
 		t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,"\n+" .. round((it.MaxCharges*power+power*20)/8*1.5) .. "% 제작 재료 드롭 확률 "  .. "\n+" .. round((it.MaxCharges*power+power*20)/4) .. "% 아이템 품질 " .. "%\n+" .. round((it.MaxCharges*power+power*20)/3) .. "% 몬스터 밀도")	
 	end
 	if it.Number==290 and t.Name then
-		t.Name=Game.MapStats[it.BonusStrength].Name .. " Map"
+		t.Name=Game.MapStats[it.BonusStrength].Name .. " 지도"
 	end
 	
 	if it.Number==290 and t.Description then
 		local power=it.MaxCharges
 		mapAffixes={
 			[0]="",
-			[1]="Monsters deal " .. getMapAffixPower(1, power) .. "% increased damage",
-			[2]="Monsters have " .. getMapAffixPower(2, power) .. "% critical chance",
-			[3]="Monsters have " .. getMapAffixPower(3, power) .. "% chance to cast fireball",
-			[4]="Monsters have " .. getMapAffixPower(4, power) .. "% chance to cast dragon breath",
-			[5]="Monsters reflect " .. getMapAffixPower(5, power) .. "% of physical damage",
-			[6]="Monsters reflect " .. getMapAffixPower(6, power) .. "% of magic damage",
-			[7]="Monsters regenerate " .. getMapAffixPower(7, power) .. "%HP per second",
-			[8]="Monsters have " .. getMapAffixPower(8, power) .. "% chance to ignore status resistance",
-			[9]="Monsters have " .. getMapAffixPower(9, power) .. "% chance to summon a monster upon death",
-			[10]="Monsters deal " .. getMapAffixPower(10, power) .. "% of player hp as damage",
-			[11]="Monsters have " .. getMapAffixPower(11, power) .. "% increased movement speed",
-			[12]="Monsters resistances are increased by " .. getMapAffixPower(12, power),
-			[13]="Monsters have " .. getMapAffixPower(13, power) .. "% extra chance to resist control effects",
-			[14]="Monsters have " .. getMapAffixPower(14, power) .. "% chance to deal energy damage",
-			[15]="Monsters have " .. getMapAffixPower(15, power) .. "% increased HP",
-			[16]="Boss density increased by " .. getMapAffixPower(16, power) .. "%",
-			[17]="Monsters have " .. getMapAffixPower(17, power) .. "% be an higher tier",
-			[18]="Bosses have " .. getMapAffixPower(18, power) .. "% increased HP and damage",
-			[19]="Monsters have " .. getMapAffixPower(19, power) .. "% chance to become a boss",
-			[20]="Players critical chance reduced by " .. getMapAffixPower(20, power) .. "%",
-			[21]="Players critical damage reduced by " .. getMapAffixPower(21, power) .. "%",
-			[22]="Players HP/SP regen reduced by " .. getMapAffixPower(22, power) .. "%",
-			[23]="Players physical damage reduced by " .. getMapAffixPower(23, power) .. "%",
-			[24]="Players magic damage reduced by " .. getMapAffixPower(24, power) .. "%",
-			[25]="Players movement speed reduced by " .. getMapAffixPower(25, power) .. "%",
-			[26]="Players attack speed reduced by " .. getMapAffixPower(26, power) .. "%",
-			[27]="Players spell recovery speed increased by " .. getMapAffixPower(27, power) .. "%",
-			[28]="Players armor reduced by " .. getMapAffixPower(28, power) .. "%",
-			[29]="Players resistances reduced by " .. getMapAffixPower(29, power) .. "%",
-			[30]="Players have a " .. getMapAffixPower(30, power) .. "% chance to miss attacks",
-			[31]="Healing reduced by " .. getMapAffixPower(31, power) .. "%",
-			[32]="Leech reduced by " .. getMapAffixPower(32, power) .. "%",
-			[33]="Buff effects reduced by " .. getMapAffixPower(33, power) .. "%",
+			[1]="몬스터가 " .. getMapAffixPower(1, power) .. "% 증가한 피해를 줌",
+			[2]="몬스터: " .. getMapAffixPower(2, power) .. "% 치명타 확률",
+			[3]="몬스터: " .. getMapAffixPower(3, power) .. "% 확률로 화염구 시전",
+			[4]="몬스터: " .. getMapAffixPower(4, power) .. "% 확률로 드래곤 브레스 시전",
+			[5]="몬스터가 " .. getMapAffixPower(5, power) .. "%의 물리 피해를 반사",
+			[6]="몬스터가 " .. getMapAffixPower(6, power) .. "%의 마법 피해를 반사",
+			[7]="몬스터가 초당 " .. getMapAffixPower(7, power) .. "% 생명력 재생",
+			[8]="몬스터: " .. getMapAffixPower(8, power) .. "% 확률로 상태 저항 무시",
+			[9]="몬스터: " .. getMapAffixPower(9, power) .. "% 확률로 사망 시 몬스터 소환",
+			[10]="몬스터가 " .. getMapAffixPower(10, power) .. "%의 플레이어 생명력을 피해로 줌",
+			[11]="몬스터: " .. getMapAffixPower(11, power) .. "% 이동 속도 증가",
+			[12]="몬스터 저항 증가: " .. getMapAffixPower(12, power),
+			[13]="몬스터: " .. getMapAffixPower(13, power) .. "% 추가 제어 효과 저항 확률",
+			[14]="몬스터: " .. getMapAffixPower(14, power) .. "% 확률로 에너지 피해를 줌",
+			[15]="몬스터: " .. getMapAffixPower(15, power) .. "% 생명력 증가",
+			[16]="보스 밀도 증가: " .. getMapAffixPower(16, power) .. "%",
+			[17]="몬스터: " .. getMapAffixPower(17, power) .. "% 확률로 더 높은 등급이 됨",
+			[18]="보스: " .. getMapAffixPower(18, power) .. "% 생명력 및 피해 증가",
+			[19]="몬스터: " .. getMapAffixPower(19, power) .. "% 확률로 보스가 됨",
+			[20]="플레이어 치명타 확률 감소: " .. getMapAffixPower(20, power) .. "%",
+			[21]="플레이어 치명타 피해 감소: " .. getMapAffixPower(21, power) .. "%",
+			[22]="플레이어 생명력/주문력 재생 감소: " .. getMapAffixPower(22, power) .. "%",
+			[23]="플레이어 물리 피해 감소: " .. getMapAffixPower(23, power) .. "%",
+			[24]="플레이어 마법 피해 감소: " .. getMapAffixPower(24, power) .. "%",
+			[25]="플레이어 이동 속도 감소: " .. getMapAffixPower(25, power) .. "%",
+			[26]="플레이어 공격 속도 감소: " .. getMapAffixPower(26, power) .. "%",
+			[27]="플레이어 주문 회복 속도 증가: " .. getMapAffixPower(27, power) .. "%",
+			[28]="플레이어 방어력 감소: " .. getMapAffixPower(28, power) .. "%",
+			[29]="플레이어 저항 감소: " .. getMapAffixPower(29, power) .. "%",
+			[30]="플레이어는 " .. getMapAffixPower(30, power) .. "% 확률로 공격이 빗나감",
+			[31]="치유량 감소: " .. getMapAffixPower(31, power) .. "%",
+			[32]="흡수량 감소: " .. getMapAffixPower(32, power) .. "%",
+			[33]="버프 효과 감소: " .. getMapAffixPower(33, power) .. "%",
 		}
 		
 		local txt=""
@@ -2159,7 +2159,7 @@ function events.BuildItemInformationBox(t)
 		if it.BonusExpireTime>0 then
 			txt=StrColor(255,255,153,"- " .. mapAffixes[it.BonusExpireTime]) .. "\n\n" .. txt
 		end
-		t.Description="\n" .. txt .. "Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.\nUsing this map will teleport you to the entrance."
+		t.Description="\n" .. txt .. "창조자의 모래시계와 공허의 눈으로 새로운 어픽스를 해금할 수 있습니다. 판도라의 상자로 지도를 변경하고, 힘의 에메랄드로 지도 레벨을 높일 수 있습니다.\n이 지도를 사용하면 입구로 순간이동합니다."
 	end
 end
 

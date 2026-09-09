@@ -591,9 +591,9 @@ maw-82efa5f5f529	untranslated	misc	  (Shift=très lent • Alt=fichier • Ctrl=
 maw-b3b226842bea	untranslated	misc	  *local-scan*			Scripts/General/zzBossSync.lua	348	1	
 maw-b2f4f29c7181	translated	misc	  Mana: 	  마나: 		Scripts/General/zzzOnlineVariableSender.lua	330	1	멀티플레이 상태 표시
 maw-7bb5778862de	untranslated	misc	 - Corrupted bag #			Scripts/General/zzMaw-Item-Sorter.lua	714	1	
-maw-574c5a59fabd	untranslated	misc	 Map			Scripts/General/zzMaw-Maps.lua	2089	1	
-maw-acd09cd9a879	untranslated	misc	% chance to miss attacks			Scripts/General/zzMaw-Maps.lua	2125	1	
-maw-0ff5fd36f573	untranslated	misc	% increased HP and damage			Scripts/General/zzMaw-Maps.lua	2113	1	
+maw-574c5a59fabd	translated	misc	 Map	 지도		Scripts/General/zzMaw-Maps.lua	2089	1	지도 아이템 이름 접미사
+maw-acd09cd9a879	translated	misc	% chance to miss attacks	% 확률로 공격이 빗나감		Scripts/General/zzMaw-Maps.lua	2125	1	지도 어픽스 설명 조각
+maw-0ff5fd36f573	translated	misc	% increased HP and damage	% 생명력 및 피해 증가		Scripts/General/zzMaw-Maps.lua	2113	1	지도 어픽스 설명 조각
 maw-03650d10fe45	untranslated	misc	%%%%lu			Scripts/General/NPCFollowers.lua	919	1	
 maw-609237732286	untranslated	misc	%%([%w_]*)%%			Scripts/Core/events.lua	125	1	
 maw-a3b38a4f2af0	untranslated	misc	%%lu			Scripts/General/NPCFollowers.lua	919	1	
@@ -684,10 +684,10 @@ maw-77d2a7b7868c	untranslated	misc	Asking server for possibly saved character da
 maw-676112784baf	untranslated	misc	Aucun boss détecté.			Scripts/General/zzBossSync.lua	390	1	
 maw-0495f7740210	untranslated	misc	BOSS %d/%d — %s		%d %d %s	Scripts/General/zzBossSync.lua	393	1	
 maw-b3f3cc38b4b5	untranslated	misc	BOSS DEBUG 			Scripts/General/zzBossSync.lua	437	1	
-maw-121ace02a4b1	untranslated	misc	Boss density increased by 			Scripts/General/zzMaw-Maps.lua	2111	1	
-maw-48563408570f	untranslated	misc	Bosses have 			Scripts/General/zzMaw-Maps.lua	2113	1	
+maw-121ace02a4b1	translated	misc	Boss density increased by 	보스 밀도 증가: 		Scripts/General/zzMaw-Maps.lua	2111	1	지도 어픽스 설명 조각
+maw-48563408570f	translated	misc	Bosses have 	보스: 		Scripts/General/zzMaw-Maps.lua	2113	1	지도 어픽스 설명 조각
 maw-b14b0399f11e	untranslated	misc	BountyHuntRewardClaimed			Scripts/General/BountyHunt.lua	182	1	
-maw-ccfc12b79b83	untranslated	misc	Buff effects reduced by 			Scripts/General/zzMaw-Maps.lua	2128	1	
+maw-ccfc12b79b83	translated	misc	Buff effects reduced by 	버프 효과 감소: 		Scripts/General/zzMaw-Maps.lua	2128	1	지도 어픽스 설명 조각
 maw-d273c41b7794	untranslated	misc	Buff Rework			Scripts/General/zz_Maw-initialize.lua	556	1	
 maw-1ed518a36cb7	untranslated	misc	Calling ProcessPartySaveData event.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	536	1	
 maw-dc911511eae1	untranslated	misc	Captain Finch			Scripts/General/zSERIOUSMAW.lua	11	1	
@@ -753,7 +753,7 @@ maw-d3ec207ca65b	untranslated	misc	Gathering game data.			Scripts/Modules/Multip
 maw-5c8291287a2a	untranslated	misc	Gemcutter's Ruby			Scripts/General/zzAlchemy.lua	1374	2	
 maw-17461354dc91	translated	misc	Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.		Scripts/General/zzAlchemy.lua	507	1	물약 효과 툴팁
 maw-3745903c5e25	untranslated	misc	Have data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
-maw-44fcaf7ec76a	untranslated	misc	Healing reduced by 			Scripts/General/zzMaw-Maps.lua	2126	1	
+maw-44fcaf7ec76a	translated	misc	Healing reduced by 	치유량 감소: 		Scripts/General/zzMaw-Maps.lua	2126	1	지도 어픽스 설명 조각
 maw-8ebf33b72b32	translated	misc	Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.		Scripts/General/zzAlchemy.lua	495	1	물약 효과 툴팁
 maw-5aba2c1279d0	translated	misc	Health: 	생명력: 		Scripts/General/zzzOnlineVariableSender.lua	329	1	멀티플레이 상태 표시
 maw-035135c6e9e5	untranslated	misc	Homing Projectiles			Scripts/General/zz_Maw-initialize.lua	558	1	
@@ -793,7 +793,7 @@ maw-3a823670020a	untranslated	misc	jmp absolute 0x48e890			Scripts/General/MiscT
 maw-8bc3a6feeaad	untranslated	misc	jmp absolute 0x48e8fc			Scripts/General/MiscTweaks.lua	42	1	
 maw-31be11f1b886	untranslated	misc	jmp absolute 0x48ec2d			Scripts/General/MiscTweaks.lua	36	2	
 maw-59ecd6298b23	untranslated	misc	jmp absolute 0x4b2eaf			Scripts/General/NPCFollowers.lua	913	1	
-maw-6fe876322cdd	untranslated	misc	Leech reduced by 			Scripts/General/zzMaw-Maps.lua	2127	1	
+maw-6fe876322cdd	translated	misc	Leech reduced by 	흡수량 감소: 		Scripts/General/zzMaw-Maps.lua	2127	1	지도 어픽스 설명 조각
 maw-754db38e2607	untranslated	misc	Let's get started!			Scripts/Global/zzMaw_Arena.lua	41	1	
 maw-464e644f9fdf	untranslated	misc	Loading MAW settings from 			Scripts/General/zz_Maw-initialize.lua	249	1	
 maw-b28cfe6e81db	untranslated	misc	Locate person			Scripts/Global/Quest_SavingGoobers.lua	866	1	
@@ -904,16 +904,16 @@ Require 50 power to work.
 작동하려면 위력 50이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	503	1	물약 효과 툴팁
 maw-e53407cfe1a5	untranslated	misc	Player			Scripts/Modules/Multiplayer/UI/House.lua	25	1	
-maw-a39c96a53ebb	untranslated	misc	Players armor reduced by 			Scripts/General/zzMaw-Maps.lua	2123	1	
-maw-7f02e5429dfc	untranslated	misc	Players attack speed reduced by 			Scripts/General/zzMaw-Maps.lua	2121	1	
-maw-6609a7a4b10d	untranslated	misc	Players critical chance reduced by 			Scripts/General/zzMaw-Maps.lua	2115	1	
-maw-182e841645f5	untranslated	misc	Players critical damage reduced by 			Scripts/General/zzMaw-Maps.lua	2116	1	
-maw-1cdaba2298c5	untranslated	misc	Players have a 			Scripts/General/zzMaw-Maps.lua	2125	1	
-maw-aab7bf1d1514	untranslated	misc	Players HP/SP regen reduced by 			Scripts/General/zzMaw-Maps.lua	2117	1	
-maw-75ef7763d89a	untranslated	misc	Players magic damage reduced by 			Scripts/General/zzMaw-Maps.lua	2119	1	
-maw-7838f94d8b3d	untranslated	misc	Players movement speed reduced by 			Scripts/General/zzMaw-Maps.lua	2120	1	
-maw-7f3884b71aeb	untranslated	misc	Players physical damage reduced by 			Scripts/General/zzMaw-Maps.lua	2118	1	
-maw-c65369ea936a	untranslated	misc	Players resistances reduced by 			Scripts/General/zzMaw-Maps.lua	2124	1	
+maw-a39c96a53ebb	translated	misc	Players armor reduced by 	플레이어 방어력 감소: 		Scripts/General/zzMaw-Maps.lua	2123	1	지도 어픽스 설명 조각
+maw-7f02e5429dfc	translated	misc	Players attack speed reduced by 	플레이어 공격 속도 감소: 		Scripts/General/zzMaw-Maps.lua	2121	1	지도 어픽스 설명 조각
+maw-6609a7a4b10d	translated	misc	Players critical chance reduced by 	플레이어 치명타 확률 감소: 		Scripts/General/zzMaw-Maps.lua	2115	1	지도 어픽스 설명 조각
+maw-182e841645f5	translated	misc	Players critical damage reduced by 	플레이어 치명타 피해 감소: 		Scripts/General/zzMaw-Maps.lua	2116	1	지도 어픽스 설명 조각
+maw-1cdaba2298c5	translated	misc	Players have a 	플레이어는 		Scripts/General/zzMaw-Maps.lua	2125	1	지도 어픽스 설명 조각
+maw-aab7bf1d1514	translated	misc	Players HP/SP regen reduced by 	플레이어 생명력/주문력 재생 감소: 		Scripts/General/zzMaw-Maps.lua	2117	1	지도 어픽스 설명 조각
+maw-75ef7763d89a	translated	misc	Players magic damage reduced by 	플레이어 마법 피해 감소: 		Scripts/General/zzMaw-Maps.lua	2119	1	지도 어픽스 설명 조각
+maw-7838f94d8b3d	translated	misc	Players movement speed reduced by 	플레이어 이동 속도 감소: 		Scripts/General/zzMaw-Maps.lua	2120	1	지도 어픽스 설명 조각
+maw-7f3884b71aeb	translated	misc	Players physical damage reduced by 	플레이어 물리 피해 감소: 		Scripts/General/zzMaw-Maps.lua	2118	1	지도 어픽스 설명 조각
+maw-c65369ea936a	translated	misc	Players resistances reduced by 	플레이어 저항 감소: 		Scripts/General/zzMaw-Maps.lua	2124	1	지도 어픽스 설명 조각
 maw-23451f937782	translated	misc	"Prevents drowning damage for 6 hours.
 Require 20 power to work.
 "	"6시간 동안 익사 피해를 방지합니다.
@@ -1063,22 +1063,22 @@ Level Recommended:
 maw-bcde19b28495	untranslated	monster	 .. lowerLimit .. 			Scripts/General/zzMaw-Monsters.lua	2114	2	
 maw-f9634f630e00	untranslated	monster	 .. name .. 			Scripts/General/zzMaw-Monsters.lua	2158	1	
 maw-ac0850f11704	untranslated	monster	 .. upperLimit .. 			Scripts/General/zzMaw-Monsters.lua	2114	1	
-maw-efc3a760fc96	untranslated	monster	% be an higher tier			Scripts/General/zzMaw-Maps.lua	2112	1	
-maw-e7609c84e7cd	untranslated	monster	% chance to become a boss			Scripts/General/zzMaw-Maps.lua	2114	1	
-maw-438cf5ad4573	untranslated	monster	% chance to cast dragon breath			Scripts/General/zzMaw-Maps.lua	2099	1	
-maw-f18e09e14f37	untranslated	monster	% chance to cast fireball			Scripts/General/zzMaw-Maps.lua	2098	1	
-maw-6adb5b469b80	untranslated	monster	% chance to deal energy damage			Scripts/General/zzMaw-Maps.lua	2109	1	
-maw-0ab027a0ccad	untranslated	monster	% chance to ignore status resistance			Scripts/General/zzMaw-Maps.lua	2103	1	
-maw-080cef3ea03f	untranslated	monster	% chance to summon a monster upon death			Scripts/General/zzMaw-Maps.lua	2104	1	
-maw-bfafe911ed8b	untranslated	monster	% critical chance			Scripts/General/zzMaw-Maps.lua	2097	1	
-maw-b9828d92f9e2	untranslated	monster	% extra chance to resist control effects			Scripts/General/zzMaw-Maps.lua	2108	1	
-maw-61c6bd4da1b6	untranslated	monster	% increased damage			Scripts/General/zzMaw-Maps.lua	2096	1	
-maw-5f7ff24fee9d	untranslated	monster	% increased HP			Scripts/General/zzMaw-Maps.lua	2110	1	
-maw-6f9218415237	untranslated	monster	% increased movement speed			Scripts/General/zzMaw-Maps.lua	2106	1	
-maw-ceed6fe6e754	untranslated	monster	% of magic damage			Scripts/General/zzMaw-Maps.lua	2101	1	
-maw-ca4557c883fa	untranslated	monster	% of physical damage			Scripts/General/zzMaw-Maps.lua	2100	1	
-maw-c1a5c33c4a70	untranslated	monster	% of player hp as damage			Scripts/General/zzMaw-Maps.lua	2105	1	
-maw-d2f7095b04b3	untranslated	monster	%HP per second			Scripts/General/zzMaw-Maps.lua	2102	1	
+maw-efc3a760fc96	translated	monster	% be an higher tier	% 확률로 더 높은 등급이 됨		Scripts/General/zzMaw-Maps.lua	2112	1	지도 어픽스 설명 조각; 원문 문법 오류 보정
+maw-e7609c84e7cd	translated	monster	% chance to become a boss	% 확률로 보스가 됨		Scripts/General/zzMaw-Maps.lua	2114	1	지도 어픽스 설명 조각
+maw-438cf5ad4573	translated	monster	% chance to cast dragon breath	% 확률로 드래곤 브레스 시전		Scripts/General/zzMaw-Maps.lua	2099	1	지도 어픽스 설명 조각
+maw-f18e09e14f37	translated	monster	% chance to cast fireball	% 확률로 화염구 시전		Scripts/General/zzMaw-Maps.lua	2098	1	지도 어픽스 설명 조각
+maw-6adb5b469b80	translated	monster	% chance to deal energy damage	% 확률로 에너지 피해를 줌		Scripts/General/zzMaw-Maps.lua	2109	1	지도 어픽스 설명 조각
+maw-0ab027a0ccad	translated	monster	% chance to ignore status resistance	% 확률로 상태 저항 무시		Scripts/General/zzMaw-Maps.lua	2103	1	지도 어픽스 설명 조각
+maw-080cef3ea03f	translated	monster	% chance to summon a monster upon death	% 확률로 사망 시 몬스터 소환		Scripts/General/zzMaw-Maps.lua	2104	1	지도 어픽스 설명 조각
+maw-bfafe911ed8b	translated	monster	% critical chance	% 치명타 확률		Scripts/General/zzMaw-Maps.lua	2097	1	지도 어픽스 설명 조각
+maw-b9828d92f9e2	translated	monster	% extra chance to resist control effects	% 추가 제어 효과 저항 확률		Scripts/General/zzMaw-Maps.lua	2108	1	지도 어픽스 설명 조각
+maw-61c6bd4da1b6	translated	monster	% increased damage	% 증가한 피해를 줌		Scripts/General/zzMaw-Maps.lua	2096	1	지도 어픽스 설명 조각
+maw-5f7ff24fee9d	translated	monster	% increased HP	% 생명력 증가		Scripts/General/zzMaw-Maps.lua	2110	1	지도 어픽스 설명 조각
+maw-6f9218415237	translated	monster	% increased movement speed	% 이동 속도 증가		Scripts/General/zzMaw-Maps.lua	2106	1	지도 어픽스 설명 조각
+maw-ceed6fe6e754	translated	monster	% of magic damage	%의 마법 피해를 반사		Scripts/General/zzMaw-Maps.lua	2101	1	지도 어픽스 설명 조각
+maw-ca4557c883fa	translated	monster	% of physical damage	%의 물리 피해를 반사		Scripts/General/zzMaw-Maps.lua	2100	1	지도 어픽스 설명 조각
+maw-c1a5c33c4a70	translated	monster	% of player hp as damage	%의 플레이어 생명력을 피해로 줌		Scripts/General/zzMaw-Maps.lua	2105	1	지도 어픽스 설명 조각
+maw-d2f7095b04b3	translated	monster	%HP per second	% 생명력 재생		Scripts/General/zzMaw-Maps.lua	2102	1	지도 어픽스 설명 조각
 maw-932438202666	untranslated	monster	%s: Monster with incorrect Id (%s) at %s %s %s		%s %s %s %s %s	Scripts/General/AdaptiveMonstersStats.lua	854	1	
 maw-d9a8b676271a	untranslated	monster	(%-?%d+)$		%d	Scripts/General/zzMaw-Monsters.lua	2453	2	
 maw-13ed9932366c	untranslated	monster	, type: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	
@@ -1262,11 +1262,11 @@ maw-0b2a8791a917	untranslated	monster	MonsterInfoPictureChanged			Scripts/Core/e
 maw-dde09f89e11d	untranslated	monster	MonsterKilled			Scripts/Core/events.lua	2243	2	
 maw-df29e5726790	untranslated	monster	MonsterKillExp			Scripts/Core/events.lua	2268	1	
 maw-43bfeb7d4615	untranslated	monster	MONSTERS			Scripts/Modules/Multiplayer/Synchronization/Monsters/Ownership.lua	156	2	
-maw-6f99a49212c6	untranslated	monster	Monsters deal 			Scripts/General/zzMaw-Maps.lua	2096	2	
-maw-981b9541fd32	untranslated	monster	Monsters have 			Scripts/General/zzMaw-Maps.lua	2097	11	
-maw-8b1cbae89de2	untranslated	monster	Monsters reflect 			Scripts/General/zzMaw-Maps.lua	2100	2	
-maw-5954770f5e24	untranslated	monster	Monsters regenerate 			Scripts/General/zzMaw-Maps.lua	2102	1	
-maw-da7a3a129e3d	untranslated	monster	Monsters resistances are increased by 			Scripts/General/zzMaw-Maps.lua	2107	1	
+maw-6f99a49212c6	translated	monster	Monsters deal 	몬스터가 		Scripts/General/zzMaw-Maps.lua	2096	2	지도 어픽스 설명 조각
+maw-981b9541fd32	translated	monster	Monsters have 	몬스터: 		Scripts/General/zzMaw-Maps.lua	2097	11	지도 어픽스 설명 조각
+maw-8b1cbae89de2	translated	monster	Monsters reflect 	몬스터가 		Scripts/General/zzMaw-Maps.lua	2100	2	지도 어픽스 설명 조각
+maw-5954770f5e24	translated	monster	Monsters regenerate 	몬스터가 초당 		Scripts/General/zzMaw-Maps.lua	2102	1	지도 어픽스 설명 조각
+maw-da7a3a129e3d	translated	monster	Monsters resistances are increased by 	몬스터 저항 증가: 		Scripts/General/zzMaw-Maps.lua	2107	1	지도 어픽스 설명 조각
 maw-a6644d832c3d	untranslated	monster	MonsterSpriteScale			Scripts/General/zMaw-hooks.lua	13	1	
 maw-1488d3f760af	untranslated	monster	MonstersProcessed			Scripts/General/ExtraEvents.lua	713	1	
 maw-c467d78cbc9f	untranslated	monster	MonsterType			Scripts/General/AdaptiveMonstersStats.lua	129	2	
@@ -2193,7 +2193,7 @@ maw-0ed60680e4c3	untranslated	spell	PartyDies			Scripts/General/zzMaw-Spells.lua
 maw-5ad5209a4774	untranslated	spell	PlayerCastSpell			Scripts/General/ExtraEvents.lua	857	2	
 maw-fb012e567f5a	untranslated	spell	PlayerCastSpellFirst			Scripts/General/ExtraEvents.lua	856	1	
 maw-4691ee23b450	untranslated	spell	PlayerCastSpellLast			Scripts/General/ExtraEvents.lua	858	1	
-maw-1b671c136e12	untranslated	spell	Players spell recovery speed increased by 			Scripts/General/zzMaw-Maps.lua	2122	1	
+maw-1b671c136e12	translated	spell	Players spell recovery speed increased by 	플레이어 주문 회복 속도 증가: 		Scripts/General/zzMaw-Maps.lua	2122	1	지도 어픽스 설명 조각
 maw-571a4ca76edb	translated	spell	Quick Spell	퀵스펠		Scripts/General/zzMaw-Stats.lua	1493	1	Game.GlobalTxt 표시명
 maw-3ce95e4ab179	translated	spell	Removes Death and Eradication with no time limit	시간 제한 없이 죽음과 소멸을 제거합니다		Scripts/General/zzMaw-Spells.lua	2196	1	주문 숙련 설명
 maw-3020835da920	translated	spell	Restores based on the potion's power of spell points.	물약의 위력에 따라 주문력을 회복합니다.		Scripts/General/zzAlchemy.lua	496	1	물약 효과 툴팁
@@ -3704,8 +3704,9 @@ maw-de573e54df84	translated	tooltip	Causes 1-%s points of damage per point of sk
 maw-18ba1f5b2c6e	untranslated	tooltip	Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants			Scripts/General/zzMaw-Spells.lua	2952	1	
 maw-7d45f149038b	translated	tooltip	Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment	천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다		Scripts/General/zzAlchemy.lua	739	1	천상 오브 설명
 maw-def4e8ac8c44	translated	tooltip	Charges: 	충전 횟수: 		Scripts/General/zzAlchemy.lua	457	1	연금술 툴팁
-maw-54a2be81842c	untranslated	tooltip	"Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.
-Using this map will teleport you to the entrance."			Scripts/General/zzMaw-Maps.lua	2162	1	
+maw-54a2be81842c	translated	tooltip	"Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.
+Using this map will teleport you to the entrance."	"창조자의 모래시계와 공허의 눈으로 새로운 어픽스를 해금할 수 있습니다. 판도라의 상자로 지도를 변경하고, 힘의 에메랄드로 지도 레벨을 높일 수 있습니다.
+이 지도를 사용하면 입구로 순간이동합니다."		Scripts/General/zzMaw-Maps.lua	2162	1	지도 아이템 사용법 설명
 maw-38be6c8c98ef	translated	tooltip	Damage 1-%s per point of skill	기술 포인트당 피해 1-%s	%s	Scripts/General/zzMaw-Spells.lua	2127	2	주문 숙련 설명
 maw-55f8ebc805e6	untranslated	tooltip	Description			Scripts/General/zzClasses.lua	1354	3	
 maw-6bbad1895edc	translated	tooltip	Directly inflicts magical damage upon a single creature.  Harm does %s points of damage plus 1-%s per point of skill in Body Magic.	단일 대상에게 직접 마법 피해를 줍니다. 해악은 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2112	1	해악 주문 설명
