@@ -1,0 +1,23 @@
+{
+  "base": "MAW MMMerge 4.5",
+  "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
+  "unique_active_candidates": 3025,
+  "occurrences": 6244,
+  "status": {
+    "untranslated": 3025
+  },
+  "categories": {
+    "class": 37,
+    "item": 260,
+    "map": 112,
+    "misc": 309,
+    "monster": 352,
+    "skill": 215,
+    "spell": 182,
+    "status": 166,
+    "table": 1150,
+    "tooltip": 147,
+    "ui": 95
+  },
+  "placeholder_mismatches": []
+}
