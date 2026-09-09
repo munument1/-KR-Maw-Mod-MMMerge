@@ -491,7 +491,7 @@ function events.GameInitialized2()
 	Game.Classes.SPFactor[11]=0
 	Game.Classes.SPStats[11]=3
 	
-	Skillz.setDesc(23,1,"Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by " .. dragonBreath.Damage[1] .. "-" .. dragonBreath.Damage[2] .. "-" .. dragonBreath.Damage[3] .. "-" .. dragonBreath.Damage[4] .. "% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.\nEach point in the skill increases damage and increases recovery time by 3%."  )
+	Skillz.setDesc(23,1,"드래곤은 타고난 능력을 지닌 강력한 생물입니다.\n다크 엘프와 뱀파이어의 종족 능력처럼 드래곤 능력은 주문처럼 사용하지만 기술처럼 습득합니다. 드래곤은 처음부터 공포를 사용할 수 있고, 전문가·마스터·그랜드마스터 단계에서 두 번째 브레스 무기, 비행, 윙 버핏을 차례로 얻습니다.\n\n브레스 피해는 레벨당 20 + 2이며(최대 600레벨, 광기에서는 900레벨), 총 피해 증가율은 " .. dragonBreath.Damage[1] .. "-" .. dragonBreath.Damage[2] .. "-" .. dragonBreath.Damage[3] .. "-" .. dragonBreath.Damage[4] .. "% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.\nEach point in the skill increases damage and increases recovery time by 3%."  )
 	
 	function events.CalcStatBonusByItems(t)
 		if Game.CharacterPortraits[t.Player.Face].Race~=const.Race.Dragon then return end
@@ -824,7 +824,7 @@ function dragonSkill(dragon, index)
 			
 		end
 		if Game.CurrentCharScreen==100 and Game.CurrentScreen==7 then
-			Game.GlobalTxt[53] = "Damage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			Game.GlobalTxt[53] = "피해\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 			Game.GlobalTxt[18] = "근접         +" .. pl:GetMeleeAttack() .. "\n                 " .. shortenNumber(pl:GetMeleeDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetMeleeDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 			Game.GlobalTxt[203]="원거리         +" .. pl:GetRangedAttack() .. "\n                 " .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		else
@@ -1390,7 +1390,7 @@ function dkSkills(isDK, id)
 		-- Spell 32: Ice Bomb
 		local mult32 = DKDamageMult[32]
 		Game.SpellsTxt[32].Name="얼음 폭탄"
-		Game.SpellsTxt[32].Description="Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to " .. (mult32[1]*100) .. "% (현재 무기 피해 기준)."
+		Game.SpellsTxt[32].Description="충돌하면 산산이 부서지는 얼음 폭탄을 던집니다. 큰 적이나 여러 적을 상대할 때 특히 효과적입니다.\n피해량은 현재 무기 피해의 " .. (mult32[1]*100) .. "% (현재 무기 피해 기준)."
 		Game.SpellsTxt[32].Expert="n/a"
 		Game.SpellsTxt[32].Master="n/a"
 		Game.SpellsTxt[32].GM="타격당 피해량: " .. (mult32[4]*100) .. "% (근접 공격 피해 기준)"
@@ -1440,7 +1440,7 @@ function dkSkills(isDK, id)
 		-- Spell 97: Death Breath
 		local mult97 = DKDamageMult[97]
 		Game.SpellsTxt[97].Name="죽음의 숨결"
-		Game.SpellsTxt[97].Description="A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to " .. (mult97[1]*100) .. "% (무기 피해 기준)"
+		Game.SpellsTxt[97].Description="치명적인 폭발을 일으켜 범위 내 모든 몬스터에게 막대한 피해를 줍니다. 근접전에서도 안전하게 사용할 수 있습니다.\n피해량은 무기 피해의 " .. (mult97[1]*100) .. "% (무기 피해 기준)"
 		Game.SpellsTxt[97].Expert="n/a"
 		Game.SpellsTxt[97].Master="n/a"
 		Game.SpellsTxt[97].GM="이 주문은 이미 최고의 성능을 발휘하고 있습니다!"
@@ -1801,9 +1801,9 @@ local function elementalistSkills(isElementalist, id)
 				local low=spellRequirements[currentTier]
 				local high=spellRequirements[currentTier+1]
 				local percentageProgression=math.floor((progression-low)/(high-low)*10000)/100
-				Skillz.setDesc(i,5, "Effects vary per spell \n\n" .. rotationText .. "Elementalists learn new spells with practice instead of books.\n\nProgress toward learning " .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. ": " .. percentageProgression .."%")
+				Skillz.setDesc(i,5, "효과는 주문마다 다릅니다.\n\n" .. rotationText .. "원소술사는 책 대신 실전을 통해 새로운 주문을 익힙니다.\n\n다음 주문 습득 진행도: " .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. ": " .. percentageProgression .."%")
 			else
-				Skillz.setDesc(i,5, "Effects vary per spell \n\n" .. rotationText .. "Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned.")
+				Skillz.setDesc(i,5, "효과는 주문마다 다릅니다.\n\n" .. rotationText .. "원소술사는 책 대신 실전을 통해 새로운 주문을 익힙니다.\n\n이 계통에서 배울 수 있는 주문을 모두 습득했습니다.")
 			end
 		end
 	else
@@ -2106,10 +2106,10 @@ function assassinSkills(isAssassin, pl)
 		Skillz.setName(14, "독")
 		Skillz.setName(15, "암살")
 		
-		Skillz.setDesc(12,1,"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.\n\nEach attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.\n\n");
-		Skillz.setDesc(13,1,"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.\n\n");
-		Skillz.setDesc(14,1,"Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.\n\nEach attack deals bonus water damage equal to 0.1% of the target's HP per skill point.\n\n");
-		Skillz.setDesc(15,1,"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n");
+		Skillz.setDesc(12,1,"전투 기술은 에너지 회복을 강화하여 장기전에 버틸 수 있게 합니다.\n\n공격할 때마다 기본 10%에 기술 포인트당 1%를 더한 확률로 에너지 15를 회복합니다.\n\n");
+		Skillz.setDesc(13,1,"교묘함은 삶과 죽음의 경계를 다루어 적을 처치할 때 에너지를 얻고 속도를 높입니다.\n\n에너지를 소모하는 공격은 중첩 1회를 부여하며, 중첩당 교묘함 기술 포인트마다 공격 속도가 1% 증가합니다. 최대 5회 중첩됩니다.\n\n");
+		Skillz.setDesc(14,1,"독은 스스로 독을 시험하며 독성을 다루는 법을 익혀 고통을 활력으로 바꾸는 기술입니다. 기술 레벨이 높을수록 에너지 재생이 증가합니다.\n\n공격할 때마다 기술 포인트당 대상 생명력의 0.1%에 해당하는 추가 물 피해를 줍니다.\n\n");
+		Skillz.setDesc(15,1,"암살은 고립된 대상을 반응하기 전에 제거하는 데 특화된 기술입니다. 에너지를 소모하는 공격이나 주문은 기술 포인트당 피해가 4-6-8-10 증가하지만, 대상 주변의 적 하나당 효과가 20% 감소합니다(최대 4명).\n이런 공격은 콤보 포인트 1을 부여하여 암살자가 공격 주문을 사용할 수 있게 합니다.\n활 공격은 50% 확률로 적용되며 에너지를 소모합니다.\n\n기술 레벨이 높을수록 시작 에너지도 증가하여 짧은 전투에서 강력한 순간 화력을 내기 좋습니다.\n\n");
 
 		
 		Skillz.setDesc(12,2,"근접 공격에 에너지 45를 소모합니다")
@@ -2134,11 +2134,11 @@ function assassinSkills(isAssassin, pl)
 		
 		Game.SpellsTxt[6].Description=string.format("단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[6].DamageMult*100)
 		Game.SpellsTxt[7].Description=string.format("지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 발동할 때까지 유지됩니다. 화염 가시는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[7].DamageMult*100)
-		Game.SpellsTxt[18].Description=string.format("Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.\n\nThe spell then arcs to a second target, hitting it as well.",assassinSpells[18].DamageMult*100)
+		Game.SpellsTxt[18].Description=string.format("번개 화살은 시전자의 손에서 대상 하나에게 전기를 방출합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.\n\n그 후 번개가 두 번째 대상으로 튀어 추가로 명중합니다.",assassinSpells[18].DamageMult*100)
 		Game.SpellsTxt[24].Description=string.format("파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[24].DamageMult*100)
 		Game.SpellsTxt[29].Description=string.format("단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[29].DamageMult*100)
 		Game.SpellsTxt[34].Description=string.format("마법의 힘으로 괴물을 강타하여 기절에서 회복할 때까지 다른 행동을 하지 못하게 합니다. 또한 괴물을 조금 뒤로 밀쳐 도망칠 기회를 줍니다. 대지 마법 숙련도가 높을수록 효과가 강해집니다. 기절은 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[34].DamageMult*100)
-		Game.SpellsTxt[39].Description=string.format("Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.\n\nBlades is the only spell capable to deal Physical damage.",assassinSpells[39].DamageMult*100)
+		Game.SpellsTxt[39].Description=string.format("회전하는 면도날처럼 얇은 금속 칼날을 몬스터 하나에게 발사합니다. 칼날은 근접 공격 피해의 %s%%만큼 피해를 줍니다.\n\n칼날은 물리 피해를 줄 수 있는 유일한 주문입니다.",assassinSpells[39].DamageMult*100)
 		Game.SpellsTxt[44].Description=string.format("순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[44].DamageMult*100)
 		
 		Game.SpellsTxt[18].Expert="최대 2회 적중합니다"
@@ -2147,7 +2147,7 @@ function assassinSkills(isAssassin, pl)
 		
 		for key, value in pairs(assassinSpells) do
 			if assassinSpells[key].StackCost>0 then
-				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\nThis Ability requires " .. assassinSpells[key].StackCost .. " 콤보 포인트가 필요합니다."
+				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\n이 능력을 사용하려면 콤보 포인트 " .. assassinSpells[key].StackCost .. " 콤보 포인트가 필요합니다."
 			end
 		end
 		

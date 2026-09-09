@@ -481,14 +481,14 @@ end
 --AUTO GENERATING TOOLTIPS
 ------------------------
 function events.GameInitialized2()
-	Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. "\nThe paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.\n")
-	Skillz.setDesc(0,1,Skillz.getDesc(0,1) .. "\nThis skill increases the damage gained from weapon by a percentage when equipping a staff.\nAt Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.\n\nYour full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.\n")
-	Skillz.setDesc(1,1,Skillz.getDesc(1,1) .. "\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.\n\nYour full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.\n")
-	Skillz.setDesc(2,1,Skillz.getDesc(2,1) .. "\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.\nCrit chance will get lower as monsters grow stronger, up to level 600.")
-	Skillz.setDesc(3,1,Skillz.getDesc(3,1) .. "\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.\n")
-	Skillz.setDesc(4,1,Skillz.getDesc(4,1) .. "\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.\n\nSpear skill raises AC by X% per skill point, counting an extra +10 effective skill.\n")
-	Skillz.setDesc(5,1,Skillz.getDesc(5,1) .. "\nThis skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.\n")
-	Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. "\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.\n")
+	Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. "\n일반 몬스터에게는 마비가 5초, 보스에게는 2초 동안 지속됩니다. 기절은 마비 지속시간의 절반 동안 지속됩니다. 효과 적용 확률은 기술 레벨과 몬스터 레벨에 따라 달라집니다.\n")
+	Skillz.setDesc(0,1,Skillz.getDesc(0,1) .. "\n지팡이를 장비하면 무기로 얻는 피해가 일정 비율만큼 증가합니다.\n그랜드마스터 단계에서는 지팡이와 맨손 전투 기술을 함께 적용할 수 있으며, 지팡이 기술은 절반의 효율로 피해를 증가시킵니다.\n\n전체 지팡이 공격 수치는 기술 포인트당 방어력과 모든 저항을 X% 높이며, 유효 기술에 +10이 추가됩니다. 저항 보너스는 파티 전체에 적용됩니다.\n")
+	Skillz.setDesc(1,1,Skillz.getDesc(1,1) .. "\n검을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.\n\n전체 검 공격 수치는 기술 포인트당 방어력을 X% 높이며, 유효 기술에 +10이 추가됩니다.\n")
+	Skillz.setDesc(2,1,Skillz.getDesc(2,1) .. "\n단검을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.\n몬스터가 강해질수록 치명타 확률이 낮아지며, 이 보정은 600레벨까지 적용됩니다.")
+	Skillz.setDesc(3,1,Skillz.getDesc(3,1) .. "\n도끼를 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.\n")
+	Skillz.setDesc(4,1,Skillz.getDesc(4,1) .. "\n창을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.\n\n창 기술은 기술 포인트당 방어력을 X% 높이며, 유효 기술에 +10이 추가됩니다.\n")
+	Skillz.setDesc(5,1,Skillz.getDesc(5,1) .. "\n활을 장비하면 활 기술의 포인트당 무기 +1 피해로 얻는 피해 증가량이 일정 비율만큼 증가합니다.\n")
+	Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. "\n철퇴를 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.\n")
 	for i=0,33 do
 		if i<=7 or i==33 then
 			attack=false
@@ -587,10 +587,10 @@ function events.Action(t)
 			local index=pl:GetIndex()
 			itemStats(index)
 			--base descriptions
-			Skillz.setDesc(8,1,"Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount.")
-			Skillz.setDesc(9,1,"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.\n\nLeather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount.")
-			Skillz.setDesc(10,1,"Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.\n\nChain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount.")
-			Skillz.setDesc(11,1,"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.\n\nPlate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount.")
+			Skillz.setDesc(8,1,"방패 기술은 물리 공격과 마법 공격 모두에 뛰어난 방어력을 제공합니다.\n\n방패 기술은 방패에서 얻는 방어력과 저항을 일정 비율만큼 높입니다.")
+			Skillz.setDesc(9,1,"가죽 갑옷은 착용할 수 있는 가장 가벼운 방어구입니다. 사슬이나 판금 갑옷보다 보호력은 낮지만 행동 속도 감소도 가장 적습니다.\n\n가죽 갑옷을 장비하면 가죽 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다.")
+			Skillz.setDesc(10,1,"사슬 갑옷은 중간 무게의 방어구입니다. 가죽 갑옷보다 보호력이 높고 판금 갑옷보다는 낮지만, 가죽 갑옷보다 행동을 더 느리게 만듭니다.\n\n사슬 갑옷을 장비하면 사슬 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다.")
+			Skillz.setDesc(11,1,"판금 갑옷은 가장 무거운 방어구입니다. 가장 높은 보호력을 제공하지만 가죽이나 사슬 갑옷보다 행동을 더 느리게 만듭니다.\n\n판금 갑옷을 장비하면 판금 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다.")
 			local it=pl:GetActiveItem(3)
 			if it then
 				local skill=it:T().Skill
@@ -695,7 +695,7 @@ function events.GameInitialized2()
 	Game.SkillDesMaster[const.Skills.Dodging]=string.format("%s usable with Leather Armor",Game.SkillDesGM[const.Skills.Dodging])
 	Game.SkillDesGM[const.Skills.Dodging]=string.format("%s 0.5%% dodge chance",Game.SkillDesGM[const.Skills.Dodging])
 	--Game.SkillDesGM[const.Skills.Unarmed]=string.format("%s 0.5%% dodge chance",Game.SkillDesGM[const.Skills.Unarmed])	
-	Skillz.setDesc(35,1,"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.\nThis skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.\n\nDamage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.\n")
+	Skillz.setDesc(35,1,"무기 전문가 기술은 전사의 노련한 전투 기법을 나타내며, 지팡이를 제외한 모든 무기의 숙련도를 강화합니다.\n이 기술은 더 빠르고 매끄럽게 공격하며 더 강력한 타격을 가할 수 있게 합니다.\n\n무기 전문가 기술이 더하는 피해는 무기 기술에 비례하므로 숙련될수록 효과가 커집니다.\n")
 	baseSpearTooltip=Game.SkillDesGM[const.Skills.Spear]
 	maceGMtxt=Game.SkillDesGM[6] --used for mace tooltip
 end
@@ -1460,7 +1460,7 @@ function events.LoadMap()
 end
 
 function events.GameInitialized2()
-	Skillz.setDesc(const.Skills.Learning,1,"Increases spell damage and healing at the expense of higher mana cost and cast time.\n")
+	Skillz.setDesc(const.Skills.Learning,1,"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.\n")
 	Skillz.setName(const.Skills.Learning, "승천")
 	Game.SkillDesNormal[const.Skills.Learning]= "Mana cost reduced by 12.5%."
 	Game.SkillDesExpert[const.Skills.Learning]= "Mana cost reduced by 25%"
@@ -2044,8 +2044,8 @@ function events.GameInitialized2()
 	local coverSkill=50
 	Skillz.new_armor(coverSkill)
 	Skillz.setName(coverSkill, "엄호")
-	Skillz.setDesc(coverSkill, 1, "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n")
-	Skillz.setDesc(coverSkill, 2, "Allow use to Cover Physical damage\n")
+	Skillz.setDesc(coverSkill, 1, "엄호는 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 자신에게 집중시켜 피해에 취약한 동료를 지킵니다.\n\n아군을 엄호할 확률은 기본 10%에 기술 포인트당 1%가 추가되며 최대 40%입니다. 다만 최대 레벨에 도달하면 무언가가 일어날 수도 있습니다...\n\n\nP키로 활성화/비활성화\n")
+	Skillz.setDesc(coverSkill, 2, "물리 피해를 엄호할 수 있습니다\n")
 	Skillz.setDesc(coverSkill, 3, "투사체 피해도 엄호할 수 있습니다")
 	Skillz.setDesc(coverSkill, 4, "주문 피해도 엄호할 수 있습니다")
 	Skillz.setDesc(coverSkill, 5, "공격하면 다음 엄호 확률이 15% 증가합니다")
@@ -2474,7 +2474,7 @@ function events.GameInitialized2()
 	local manaSkill=51
 	Skillz.new_armor(manaSkill)
 	Skillz.setName(manaSkill, "마나 방패")
-	Skillz.setDesc(manaSkill, 1, "Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n")
+	Skillz.setDesc(manaSkill, 1, "마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다(광기 모드에서는 8-20-32).\n\n숙련도가 높을수록 마나 효율이 증가합니다.\n")
 	Skillz.setDesc(manaSkill, 2, "피해를 최대 25% 흡수합니다")
 	Skillz.setDesc(manaSkill, 3, "피해를 최대 50% 흡수합니다")
 	Skillz.setDesc(manaSkill, 4, "피해를 최대 75% 흡수합니다")
@@ -2506,7 +2506,7 @@ function events.GameInitialized2()
 	local Enlightenment=52
 	Skillz.new_magic(Enlightenment)
 	Skillz.setName(Enlightenment, "깨달음")
-	Skillz.setDesc(Enlightenment, 1, "Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n")
+	Skillz.setDesc(Enlightenment, 1, "깨달음은 마나의 잠재력을 끌어내 최대 마나를 늘리고 버프가 예약하는 마나를 줄여 주문을 더 자유롭고 자주 사용할 수 있게 합니다.\n\n버프 비용은 레벨당 얻는 마나량을 기준으로 나뉩니다. 숙련도가 높아질수록 나누는 값은 커지지만 전체 마나량은 변하지 않습니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.\n")
 	Skillz.setDesc(Enlightenment, 2, "기술 레벨당 마나가 2% 증가하고 소모 비용 제수가 0.5 증가합니다")
 	Skillz.setDesc(Enlightenment, 3, "기술 레벨당 마나가 3% 증가하고 소모 비용 제수가 1 증가합니다")
 	Skillz.setDesc(Enlightenment, 4, "기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다")
@@ -2537,7 +2537,7 @@ function events.GameInitialized2()
 	local Retaliation=53
 	Skillz.new_armor(Retaliation)
 	Skillz.setName(Retaliation, "반격")
-	Skillz.setDesc(Retaliation, 1, "After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n")
+	Skillz.setDesc(Retaliation, 1, "엄호의 경지에 이르러 동료를 해치려는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.\n\n전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.\n")
 	Skillz.setDesc(Retaliation, 2, "다음 공격이 기술 레벨에 비례한 추가 피해를 줍니다")
 	Skillz.setDesc(Retaliation, 3, "다음 공격의 회복 시간이 30% 감소합니다")
 	Skillz.setDesc(Retaliation, 4, "다음 공격이 25% 확률로 적을 2초 동안 기절시킵니다")

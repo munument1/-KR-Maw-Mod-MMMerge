@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 488,
-  "translated_entries_with_patchable_occurrences": 486,
-  "patchable_occurrences_targeted": 655,
+  "translated_entries": 536,
+  "translated_entries_with_patchable_occurrences": 534,
+  "patchable_occurrences_targeted": 714,
   "skipped_unpatchable_occurrences_for_translated_sources": 79,
   "changed_files": [
     {
@@ -20,15 +20,15 @@
     },
     {
       "file": "Scripts/General/zzAlchemy.lua",
-      "replacements": 49
+      "replacements": 50
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 142
+      "replacements": 157
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 66
+      "replacements": 85
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -48,7 +48,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 172
+      "replacements": 196
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",

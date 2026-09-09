@@ -710,14 +710,14 @@ function events.GameInitialized2()
 	Game.SpellsTxt[19].Master="지속시간: 15분 + 기술 포인트당 1.5분"
 	Game.SpellsTxt[19].GM="지속시간: 30분 + 기술 포인트당 3분"
 	--curse
-	Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. "\n\nExpert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit.")
+	Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. "\n\n전문가는 기술 포인트당 1시간, 마스터는 기술 포인트당 1일의 제한이 있으며 그랜드마스터는 시간 제한이 없습니다.")
 	Game.SpellsTxt[49].Normal="n/a\n"
-	Game.SpellsTxt[49].Expert="5 Mana cost: \ncures 12 + 2 HP per point of skill\n1 hour limit\n"
-	Game.SpellsTxt[49].Master="8 Mana cost: \ncures 24 + 4 HP per point of skill\n1 day limit\n"
-	Game.SpellsTxt[49].GM="16 Mana cost: \ncures 36 + 6 HP per point of skill\nno limit\n"
+	Game.SpellsTxt[49].Expert="마나 소모: 5\n기술 포인트당 생명력 12 + 2 회복\n제한 시간 1시간\n"
+	Game.SpellsTxt[49].Master="마나 소모: 8\n기술 포인트당 생명력 24 + 4 회복\n제한 시간 1일\n"
+	Game.SpellsTxt[49].GM="마나 소모: 16\n기술 포인트당 생명력 36 + 6 회복\n시간 제한 없음\n"
 	
 	--heroism
-	Game.SpellsTxt[51].Description="Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.\nLasts for 2 hours plus 1 hour per point of skill"
+	Game.SpellsTxt[51].Description="영웅심은 공격 명중 시 주는 피해를 10 + 정신 마법 기술 포인트당 1만큼 증가시킵니다. 이 주문은 파티 전체에 적용됩니다.\n기본 2시간에 기술 포인트당 1시간 동안 지속됩니다."
 	Game.SpellsTxt[51].Expert="피해량이 10 + 기술 포인트당 1만큼 증가합니다"
 	Game.SpellsTxt[51].Master="피해량이 10 + 기술 포인트당 1.5만큼 증가합니다"
 	Game.SpellsTxt[51].GM="피해량이 10 + 기술 포인트당 2만큼 증가합니다"
@@ -994,7 +994,7 @@ function events.LoadMap()
 end
 
 function events.GameInitialized2()
-	Game.SpellsTxt[21].Description= "Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\n\nAt higher difficulties, with the exception of few places, attacking monsters will cancel the effect"
+	Game.SpellsTxt[21].Description= "캐릭터들에게 비행 능력을 부여합니다! 이 주문은 비용이 매우 높고 야외에서만 작동하지만 매우 유용합니다. 비행 중에는(땅에 닿지 않은 동안) 5분마다 주문력 1을 소모합니다.\n\n고난도에서는 일부 지역을 제외하고 몬스터를 공격하면 효과가 해제됩니다."
 end
 
 --WHEN GM ELEMENTAL BUFFS WILL BE GRANTED PASSIVELY
@@ -2092,7 +2092,7 @@ function ascension(customIndex)
 		Game.SpellsTxt[10].Description=string.format("시야 안의 모든 몬스터를 불태우되 파티원은 제외합니다. 한두 번만 시전해도 약하거나 중간 정도의 적이 가득한 방을 정리할 수 있습니다. 각 몬스터는 %s + 화염 마법 기술 포인트당 %s의 피해를 받습니다. 실내에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,10),diceMaxTooltip(s, m,10))
 		Game.SpellsTxt[11].Description=string.format("가장 강력한 단일 대상 피해 주문 중 하나입니다. 소각은 한 대상에게 막대한 피해를 주며, 매우 강한 몬스터만이 살아남을 수 있습니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,11),diceMaxTooltip(s, m,11))
 		Game.SpellsTxt[15].Description=string.format("작은 번개 구체 여러 개를 발사합니다. 구체는 무언가에 부딪히거나 사라질 때까지 튕겨 다니므로 이동 경로를 예측하기 어렵습니다. 작은 몬스터가 많은 방에서 특히 유용합니다. 구체 하나당 피해량은 공기 마법 기술 포인트당 1-%s입니다.",diceMaxTooltip(s, m,15))
-		Game.SpellsTxt[18].Description=string.format("Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.\n\nThe spell then arcs to a second target, hitting it as well.",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))
+		Game.SpellsTxt[18].Description=string.format("번개 화살은 시전자의 손에서 대상 하나에게 전기를 방출합니다. 항상 명중하며 공기 마법 기술 포인트당 %s + 1-%s의 피해를 줍니다.\n\n그 후 번개가 두 번째 대상으로 튀어 추가로 명중합니다.",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))
 		Game.SpellsTxt[20].Description=string.format("단일 대상 주변의 공기를 파괴해 급격한 공기 유입과 충격파를 일으킵니다. 피해량은 %s + 공기 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,20),diceMaxTooltip(s, m,20))
 		Game.SpellsTxt[22].Description=string.format("하늘의 별을 불러 적을 강타하고 불태웁니다. 20개의 별이 떨어지며, 별 하나당 %s + 공기 마법 기술 포인트당 %s의 피해를 줍니다. 폭발에 휘말리지 않게 주의하십시오. 야외에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,22),diceMaxTooltip(s, m,22))
 		Game.SpellsTxt[24].Description=string.format("파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,24),diceMaxTooltip(s, m,24))
@@ -2101,7 +2101,7 @@ function ascension(customIndex)
 		Game.SpellsTxt[32].Description=string.format("시전자가 바라보는 방향으로 얼음 구체를 발사합니다. 충돌하면 산산이 부서져 시전자 방향을 제외한 모든 방향으로 7개의 얼음 파편을 날립니다. 파편은 생물에 맞거나 녹을 때까지 튕겨 다닙니다. 파편 하나당 %s의 기본 피해와 물 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,32),diceMaxTooltip(s, m,32))
 		Game.SpellsTxt[34].Description="마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다."
 		Game.SpellsTxt[37].Description=string.format("물고 쏘는 벌레 떼를 소환해 단일 대상을 괴롭힙니다. 벌레 떼는 %s의 기본 피해와 대지 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,37),diceMaxTooltip(s, m,37))
-		Game.SpellsTxt[39].Description=string.format("Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.\n\nBlades is the only spell capable to deal Physical damage.",diceMaxTooltip(s, m,39))
+		Game.SpellsTxt[39].Description=string.format("회전하는 면도날처럼 얇은 금속 칼날을 몬스터 하나에게 발사합니다. 칼날은 대지 마법 기술 포인트당 1-%s의 피해를 줍니다.\n\n칼날은 물리 피해를 줄 수 있는 유일한 주문입니다.",diceMaxTooltip(s, m,39))
 		Game.SpellsTxt[41].Description=string.format("마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,41),diceMaxTooltip(s, m,41))
 		Game.SpellsTxt[43].Description=string.format("마법의 돌을 공중에서 폭발시켜 폭발성 대지 파편을 비처럼 떨어뜨립니다. 파편 하나당 피해량은 대지 마법 기술 포인트당 1-%s입니다. 야외에서만 사용할 수 있습니다.",diceMaxTooltip(s, m,43))
 		--Game.SpellsTxt[44].Description=string.format("Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of the monster's hit points plus another %s%% per point of skill in Earth Magic.  The bigger they are, the harder they fall.",dmgAddTooltip(s, m,44),diceMaxTooltip(s, m,44))
@@ -2180,9 +2180,9 @@ function ascension(customIndex)
 		Game.Spells[49]["SpellPointsExpert"]=math.ceil(sp.Cost[2])
 		Game.Spells[49]["SpellPointsMaster"]=math.ceil(sp.Cost[3])
 		Game.Spells[49]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[49].Expert=string.format("%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n",sp.Cost[2], sp.Base[2], sp.Scaling[2])
-		Game.SpellsTxt[49].Master=string.format("%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n",sp.Cost[3], sp.Base[3], sp.Scaling[3])
-		Game.SpellsTxt[49].GM=string.format("%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n",sp.Cost[4], sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[49].Expert=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복\n제한 시간 1일\n",sp.Cost[2], sp.Base[2], sp.Scaling[2])
+		Game.SpellsTxt[49].Master=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복\n제한 시간 1일\n",sp.Cost[3], sp.Base[3], sp.Scaling[3])
+		Game.SpellsTxt[49].GM=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복\n제한 시간 1일\n",sp.Cost[4], sp.Base[4], sp.Scaling[4])
 
 		--shared life
 		local sp=healingSpells[54]
@@ -2206,22 +2206,22 @@ function ascension(customIndex)
 		Game.Spells[68]["SpellPointsExpert"]=math.ceil(sp.Cost[2])
 		Game.Spells[68]["SpellPointsMaster"]=math.ceil(sp.Cost[3])
 		Game.Spells[68]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[68].Normal=string.format("%s Mana cost: \ncures %s + %s HP per point of skill",sp.Cost[1], sp.Base[1], sp.Scaling[1])
-		Game.SpellsTxt[68].Expert=string.format("%s Mana cost: \ncures %s + %s HP per point of skill",sp.Cost[2], sp.Base[2], sp.Scaling[2])
-		Game.SpellsTxt[68].Master=string.format("%s Mana cost: \ncures %s + %s HP per point of skill",sp.Cost[3], sp.Base[3], sp.Scaling[3])
-		Game.SpellsTxt[68].GM=string.format("%s Mana cost: \ncures %s + %s HP per point of skill",sp.Cost[4], sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[68].Normal=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복",sp.Cost[1], sp.Base[1], sp.Scaling[1])
+		Game.SpellsTxt[68].Expert=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복",sp.Cost[2], sp.Base[2], sp.Scaling[2])
+		Game.SpellsTxt[68].Master=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복",sp.Cost[3], sp.Base[3], sp.Scaling[3])
+		Game.SpellsTxt[68].GM=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복",sp.Cost[4], sp.Base[4], sp.Scaling[4])
 		
 		--greater heal
 		local sp=healingSpells[74]
 		Game.Spells[74]["SpellPointsMaster"]=math.ceil(sp.Cost[3])
 		Game.Spells[74]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[74].Master=string.format("%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n",sp.Cost[3], sp.Base[3], sp.Scaling[3])
-		Game.SpellsTxt[74].GM=string.format("%s Mana cost: \ncures %s + %s HP per point of skill\nno limit\n",sp.Cost[4], sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[74].Master=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복\n제한 시간 1일\n",sp.Cost[3], sp.Base[3], sp.Scaling[3])
+		Game.SpellsTxt[74].GM=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복\n시간 제한 없음\n",sp.Cost[4], sp.Base[4], sp.Scaling[4])
 		
 		--power heal
 		local sp=healingSpells[77]
 		Game.Spells[77]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[77].GM=string.format("%s Mana cost: \ncures %s + %s HP per point of skill",sp.Cost[4], sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[77].GM=string.format("마나 소모: %s\n기술 포인트당 생명력 %s + %s 회복",sp.Cost[4], sp.Base[4], sp.Scaling[4])
 		
 		--ADD CAST RECOVERY TIME 
 		
@@ -2294,15 +2294,15 @@ function ascension(customIndex)
 			if magicM>0 then
 				local speed=getSpellDelay(pl,i)
 				if table.find(spells, i) then
-					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\nRecovery time: " .. speed
+					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\n회복 시간: " .. speed
 				elseif healingSpells[i] then
-					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\nRecovery time: " .. speed
+					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\n회복 시간: " .. speed
 				elseif CCMAP[i] and i~=122 then
-					Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. "\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against " .. round(pl.LevelBase/2) .. " resistance. Control duration against bosses is halved.\n\nRecovery time: " .. speed
+					Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. "\n\n제어 주문의 지속시간은 몬스터 저항에 따라 감소하고 승천에 따라 증가합니다. 회복 시간은 주문 기술에 따라 감소합니다. 표시된 지속시간은 저항 " .. round(pl.LevelBase/2) .. "인 대상을 기준으로 합니다. 보스에게는 제어 지속시간이 절반으로 줄어듭니다.\n\n회복 시간: " .. speed
 				elseif buffSpell and (buffSpell[i] or utilitySpell[i]) then
-					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\nRecovery time: " .. oldTable[i][magicM]
+					Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. "\n\n회복 시간: " .. oldTable[i][magicM]
 				else
-					Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. "\n\nRecovery time: " .. oldTable[i][magicM]
+					Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. "\n\n회복 시간: " .. oldTable[i][magicM]
 				end
 			end
 			local capMastery=Skillz.MasteryLimit(pl,skill)

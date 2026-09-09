@@ -683,7 +683,7 @@ reagentDropTable[3]={202,207,212,217,1004,1009,1014,1019}
 reagentDropTable[4]={203,208,213,218,1005,1010,1015,1020}
 reagentDropTable[5]={204,209,214,219,1006,1011,1016,1021}
 function events.GameInitialized2()
-	Skillz.setDesc(const.Skills.Alchemy,1,Skillz.getDesc(const.Skills.Alchemy,1) .. "\n\nMaster will grant 1% to drop random reagents from Monsters.\nAt GM this chance is doubled.")
+	Skillz.setDesc(const.Skills.Alchemy,1,Skillz.getDesc(const.Skills.Alchemy,1) .. "\n\n마스터 단계에서는 몬스터에게서 무작위 재료가 떨어질 확률이 1% 생깁니다.\n그랜드마스터 단계에서는 이 확률이 두 배가 됩니다.")
 	Game.SkillDesMaster[const.Skills.Alchemy]="Allows to make white potions. Power when mixing will be increased to 1.5 per skill point."
 	Game.SkillDesGM[const.Skills.Alchemy]="Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level."
 end

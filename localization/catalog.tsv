@@ -51,7 +51,7 @@ maw-8996eb86c11b	translated	class	Current heal from Body: 	육체 마법으로 �
 maw-1b1ac2652b80	untranslated	class	currentForce			Scripts/General/zzClasses.lua	866	1	
 maw-7bf6d1d3a58a	translated	class	Damage	피해량		Scripts/General/zzClasses.lua	462	5	Game.GlobalTxt 피해 표시
 maw-54198309009a	untranslated	class	damage			Scripts/General/zzClasses.lua	1156	9	
-maw-560fe3e00686	untranslated	class	"Damage
+maw-560fe3e00686	translated	class	"Damage
 
 
 
@@ -66,7 +66,22 @@ maw-560fe3e00686	untranslated	class	"Damage
 
 
 
-"			Scripts/General/zzClasses.lua	827	1	
+"	"피해
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"		Scripts/General/zzClasses.lua	827	1	줄바꿈 포함 능력치 UI
 maw-e573ad9a62ae	translated	class	Damage reduction: 	피해 감소: 		Scripts/General/zzClasses.lua	401	1	세라프 능력치 표시
 maw-08f0a732529a	untranslated	class	DamageMult			Scripts/General/zzClasses.lua	2180	22	
 maw-d1e85b725202	untranslated	class	directionX			Scripts/General/zzClasses.lua	866	1	
@@ -1345,10 +1360,13 @@ Reduce all damage taken by "			Scripts/General/zzClasses.lua	1039	2
 maw-56bbe4224d60	untranslated	skill	"
 
 Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."			Scripts/General/zzMaw-Stats.lua	375	1	
-maw-4522e2803e51	untranslated	skill	"
+maw-4522e2803e51	translated	skill	"
 
 Master will grant 1% to drop random reagents from Monsters.
-At GM this chance is doubled."			Scripts/General/zzAlchemy.lua	686	1	
+At GM this chance is doubled."	"
+
+마스터 단계에서는 몬스터에게서 무작위 재료가 떨어질 확률이 1% 생깁니다.
+그랜드마스터 단계에서는 이 확률이 두 배가 됩니다."		Scripts/General/zzAlchemy.lua	686	1	연금술 기술 설명
 maw-7c3efcea2530	untranslated	skill	"
 
 Melee Life Leech vs equal level: %s
@@ -1380,37 +1398,60 @@ Currently enabled
 maw-565b2e1fded7	translated	skill	"
 Knights can learn up to a Supreme level, which is learned automatically at skill level "	"
 기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 "		Scripts/General/zzMAW-Skills.lua	2691	1	기사 최상위 숙련 설명 조각
-maw-0523695451dd	untranslated	skill	"
+maw-0523695451dd	translated	skill	"
 The paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.
-"			Scripts/General/zzMAW-Skills.lua	484	1	
-maw-178e59cf5e6a	untranslated	skill	"
+"	"
+일반 몬스터에게는 마비가 5초, 보스에게는 2초 동안 지속됩니다. 기절은 마비 지속시간의 절반 동안 지속됩니다. 효과 적용 확률은 기술 레벨과 몬스터 레벨에 따라 달라집니다.
+"		Scripts/General/zzMAW-Skills.lua	484	1	철퇴 기술 추가 설명
+maw-178e59cf5e6a	translated	skill	"
 This skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.
-"			Scripts/General/zzMAW-Skills.lua	490	1	
-maw-4dc0c3f9a6ff	untranslated	skill	"
+"	"
+활을 장비하면 활 기술의 포인트당 무기 +1 피해로 얻는 피해 증가량이 일정 비율만큼 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	490	1	활 기술 추가 설명
+maw-4dc0c3f9a6ff	translated	skill	"
 This skill increases the damage gained from weapon by a percentage when equipping a staff.
 At Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.
 
 Your full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.
-"			Scripts/General/zzMAW-Skills.lua	485	1	
-maw-d5be30b6422f	untranslated	skill	"
+"	"
+지팡이를 장비하면 무기로 얻는 피해가 일정 비율만큼 증가합니다.
+그랜드마스터 단계에서는 지팡이와 맨손 전투 기술을 함께 적용할 수 있으며, 지팡이 기술은 절반의 효율로 피해를 증가시킵니다.
+
+전체 지팡이 공격 수치는 기술 포인트당 방어력과 모든 저항을 X% 높이며, 유효 기술에 +10이 추가됩니다. 저항 보너스는 파티 전체에 적용됩니다.
+"		Scripts/General/zzMAW-Skills.lua	485	1	지팡이 기술 추가 설명
+maw-d5be30b6422f	translated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.
-Crit chance will get lower as monsters grow stronger, up to level 600."			Scripts/General/zzMAW-Skills.lua	487	1	
-maw-ad60bd6b65f0	untranslated	skill	"
+Crit chance will get lower as monsters grow stronger, up to level 600."	"
+단검을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.
+몬스터가 강해질수록 치명타 확률이 낮아지며, 이 보정은 600레벨까지 적용됩니다."		Scripts/General/zzMAW-Skills.lua	487	1	단검 기술 추가 설명
+maw-ad60bd6b65f0	translated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.
-"			Scripts/General/zzMAW-Skills.lua	491	1	
-maw-687e8f4a102e	untranslated	skill	"
+"	"
+철퇴를 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	491	1	철퇴 기술 추가 설명
+maw-687e8f4a102e	translated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.
 
 Spear skill raises AC by X% per skill point, counting an extra +10 effective skill.
-"			Scripts/General/zzMAW-Skills.lua	489	1	
-maw-7029497de0dc	untranslated	skill	"
+"	"
+창을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.
+
+창 기술은 기술 포인트당 방어력을 X% 높이며, 유효 기술에 +10이 추가됩니다.
+"		Scripts/General/zzMAW-Skills.lua	489	1	창 기술 추가 설명
+maw-7029497de0dc	translated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.
 
 Your full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.
-"			Scripts/General/zzMAW-Skills.lua	486	1	
-maw-71b422eebba7	untranslated	skill	"
+"	"
+검을 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.
+
+전체 검 공격 수치는 기술 포인트당 방어력을 X% 높이며, 유효 기술에 +10이 추가됩니다.
+"		Scripts/General/zzMAW-Skills.lua	486	1	검 기술 추가 설명
+maw-71b422eebba7	translated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.
-"			Scripts/General/zzMAW-Skills.lua	488	1	
+"	"
+도끼를 장비하면 무기, 무기 전문가, 특수 능력으로 얻는 피해가 일정 비율만큼 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	488	1	도끼 기술 추가 설명
 maw-cf74ce2f43ce	translated	skill	"
 Vitality coefficient: "	"
 활력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 계수
@@ -1489,10 +1530,13 @@ maw-edaf46202584	translated	skill	Absorb up to 50% damage	피해를 최대 50% �
 maw-b53ba9e43224	translated	skill	Absorb up to 75% damage	피해를 최대 75% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2480	1	마나 방패 숙련 효과
 maw-80cc252aa544	untranslated	skill	AC|			Scripts/General/zzMAW-Skills.lua	557	1	
 maw-89736fc25d09	untranslated	skill	Adamantite			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-1b684e0e7237	untranslated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
+maw-1b684e0e7237	translated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
-"			Scripts/General/zzMAW-Skills.lua	2540	1	
+"	"엄호의 경지에 이르러 동료를 해치려는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.
+
+전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.
+"		Scripts/General/zzMAW-Skills.lua	2540	1	반격 기술 설명
 maw-21abf3a9d1fd	translated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
@@ -1508,16 +1552,21 @@ Melee Power coefficient: "	"엄호의 경지에 이르러, 동료를 공격하�
 근접 위력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 본문
 maw-bbec938dae2f	translated	skill	Air Magic	공기 마법		Scripts/General/zzClasses.lua	2166	1	Skillz.setName 표시명
 maw-53ad7869dac0	translated	skill	All damage is absorbed by mana	모든 피해를 마나로 흡수합니다		Scripts/General/zzMAW-Skills.lua	2481	1	마나 방패 숙련 효과
-maw-f9363b18c988	untranslated	skill	"Allow use to Cover Physical damage
-"			Scripts/General/zzMAW-Skills.lua	2048	1	
+maw-f9363b18c988	translated	skill	"Allow use to Cover Physical damage
+"	"물리 피해를 엄호할 수 있습니다
+"		Scripts/General/zzMAW-Skills.lua	2048	1	엄호 숙련 효과
 maw-60b1f591790d	translated	skill	Allow use to Cover Projectiles damage	투사체 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2049	1	엄호 숙련 효과
 maw-04e874e5383b	untranslated	skill	Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.			Scripts/General/zzAlchemy.lua	688	1	
 maw-a672568b736a	untranslated	skill	Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.			Scripts/General/zzAlchemy.lua	687	1	
-maw-43a3e83ba69f	untranslated	skill	"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.
+maw-43a3e83ba69f	translated	skill	"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.
 This skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.
 
 Damage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.
-"			Scripts/General/zzMAW-Skills.lua	698	1	
+"	"무기 전문가 기술은 전사의 노련한 전투 기법을 나타내며, 지팡이를 제외한 모든 무기의 숙련도를 강화합니다.
+이 기술은 더 빠르고 매끄럽게 공격하며 더 강력한 타격을 가할 수 있게 합니다.
+
+무기 전문가 기술이 더하는 피해는 무기 기술에 비례하므로 숙련될수록 효과가 커집니다.
+"		Scripts/General/zzMAW-Skills.lua	698	1	무기 전문가 기술 설명
 maw-2de8f87cb665	translated	skill	Ascension	승천		Scripts/General/zzMAW-Skills.lua	1464	1	MAW 스킬명
 maw-01c14ed50231	translated	skill	Assassination	암살		Scripts/General/zzClasses.lua	2107	1	MAW 스킬명
 maw-4c6ddbffd5ce	translated	skill	Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다		Scripts/General/zzMAW-Skills.lua	2051	1	엄호 숙련 효과
@@ -1537,26 +1586,38 @@ Once your skill grows to the necessary level, mastery of it shall be bestowed up
 
 For this service, a tribute of 1000 gold for each level you have achieved shall be required"			Scripts/Global/zzMAWRespec.lua	15	1	
 maw-cec78e853644	untranslated	skill	CalcStatBonusBySkills			Scripts/Core/events.lua	1895	1	
-maw-978a084c3175	untranslated	skill	"Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.
+maw-978a084c3175	translated	skill	"Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.
 
-Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."			Scripts/General/zzMAW-Skills.lua	592	1	
+Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."	"사슬 갑옷은 중간 무게의 방어구입니다. 가죽 갑옷보다 보호력이 높고 판금 갑옷보다는 낮지만, 가죽 갑옷보다 행동을 더 느리게 만듭니다.
+
+사슬 갑옷을 장비하면 사슬 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	592	1	사슬 갑옷 기술 설명
 maw-826b07e8e3ae	untranslated	skill	Chance			Scripts/General/zzMAW-Skills.lua	1083	2	
 maw-df5e8635a295	untranslated	skill	Chance to Paralyze: 			Scripts/General/zzMAW-Skills.lua	2465	1	
 maw-c713960107a1	untranslated	skill	Chance to Stun: 			Scripts/General/zzMAW-Skills.lua	2463	1	
 maw-af169bb89cfb	translated	skill	Combat	전투		Scripts/General/zzClasses.lua	2104	1	암살자 스킬명
-maw-57b5a5dea337	untranslated	skill	"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
+maw-57b5a5dea337	translated	skill	"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
 
 Each attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.
 
-"			Scripts/General/zzClasses.lua	2109	1	
+"	"전투 기술은 에너지 회복을 강화하여 장기전에 버틸 수 있게 합니다.
+
+공격할 때마다 기본 10%에 기술 포인트당 1%를 더한 확률로 에너지 15를 회복합니다.
+
+"		Scripts/General/zzClasses.lua	2109	1	전투 기술 설명
 maw-8b656a5dd9d5	translated	skill	Cover	엄호		Scripts/General/zzMAW-Skills.lua	2046	1	MAW 방어 스킬명
-maw-f656eb28d0a2	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
+maw-f656eb28d0a2	translated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 Grants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...
 
 
 Press P to enable/disable
-"			Scripts/General/zzMAW-Skills.lua	2047	1	
+"	"엄호는 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 자신에게 집중시켜 피해에 취약한 동료를 지킵니다.
+
+아군을 엄호할 확률은 기본 10%에 기술 포인트당 1%가 추가되며 최대 40%입니다. 다만 최대 레벨에 도달하면 무언가가 일어날 수도 있습니다...
+
+
+P키로 활성화/비활성화
+"		Scripts/General/zzMAW-Skills.lua	2047	1	엄호 기술 설명
 maw-84a1cb449d28	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
@@ -1619,9 +1680,11 @@ maw-40544d9bf0bd	translated	skill	Killing a monster restores 10 energy	몬스터
 maw-f11808504cd5	translated	skill	Killing a monster restores 15 energy	몬스터 처치 시 에너지 15를 회복합니다		Scripts/General/zzClasses.lua	2121	1	스킬 숙련 효과
 maw-c39a1eb5778a	translated	skill	Killing a monster restores 20 energy	몬스터 처치 시 에너지 20을 회복합니다		Scripts/General/zzClasses.lua	2126	1	스킬 숙련 효과
 maw-1acaae4a2aff	translated	skill	Killing a monster restores 25 energy	몬스터 처치 시 에너지 25를 회복합니다		Scripts/General/zzClasses.lua	2131	1	스킬 숙련 효과
-maw-44c58b0340ce	untranslated	skill	"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.
+maw-44c58b0340ce	translated	skill	"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.
 
-Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."			Scripts/General/zzMAW-Skills.lua	591	1	
+Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."	"가죽 갑옷은 착용할 수 있는 가장 가벼운 방어구입니다. 사슬이나 판금 갑옷보다 보호력은 낮지만 행동 속도 감소도 가장 적습니다.
+
+가죽 갑옷을 장비하면 가죽 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	591	1	가죽 갑옷 기술 설명
 maw-7182aec4321c	untranslated	skill	Leecher			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-22fa84df37d6	untranslated	skill	Mana cost reduced by 12.5%.			Scripts/General/zzMAW-Skills.lua	1465	1	
 maw-c338ab5388a4	untranslated	skill	Mana cost reduced by 25%			Scripts/General/zzMAW-Skills.lua	1466	1	
@@ -1632,12 +1695,17 @@ maw-0555f787e247	translated	skill	Mana is increased by 3% per skill level, cost 
 maw-7302af587b8b	translated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5	기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다		Scripts/General/zzMAW-Skills.lua	2512	1	깨달음 숙련 효과
 maw-b11a712a7bb7	translated	skill	Mana is increased by 5% per skill level, cost divisor increased by 2	기술 레벨당 마나가 5% 증가하고 소모 비용 제수가 2 증가합니다		Scripts/General/zzMAW-Skills.lua	2513	1	깨달음 숙련 효과
 maw-bf1e13de8fdf	translated	skill	Mana Shield	마나 방패		Scripts/General/zzMAW-Skills.lua	2476	1	MAW 방어 스킬명
-maw-cbafc012d625	untranslated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+maw-cbafc012d625	translated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).
 
 Mastery increase its mana efficience.
-"			Scripts/General/zzMAW-Skills.lua	2477	1	
+"	"마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다(광기 모드에서는 8-20-32).
+
+숙련도가 높을수록 마나 효율이 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	2477	1	마나 방패 기술 설명
 maw-5006c2e9fbd4	translated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
@@ -1669,14 +1737,20 @@ maw-bc450c26c1e8	translated	skill	Melee attacks heal on hit	근접 공격 적중
 maw-0a893ece8e46	translated	skill	Misc	기타		Scripts/General/zzMAW-Skills.lua	2063	2	기타 기술 UI
 maw-cf844749e1e5	untranslated	skill	Omnipotent			Scripts/General/BountyHunt.lua	216	17	
 maw-8eacd5e0337a	untranslated	skill	Plagueborn			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-92e872e4e20e	untranslated	skill	"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
+maw-92e872e4e20e	translated	skill	"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
 
-Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."			Scripts/General/zzMAW-Skills.lua	593	1	
-maw-83e4da82cd41	untranslated	skill	"Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.
+Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."	"판금 갑옷은 가장 무거운 방어구입니다. 가장 높은 보호력을 제공하지만 가죽이나 사슬 갑옷보다 행동을 더 느리게 만듭니다.
+
+판금 갑옷을 장비하면 판금 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	593	1	판금 갑옷 기술 설명
+maw-83e4da82cd41	translated	skill	"Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.
 
 Each attack deals bonus water damage equal to 0.1% of the target's HP per skill point.
 
-"			Scripts/General/zzClasses.lua	2111	1	
+"	"독은 스스로 독을 시험하며 독성을 다루는 법을 익혀 고통을 활력으로 바꾸는 기술입니다. 기술 레벨이 높을수록 에너지 재생이 증가합니다.
+
+공격할 때마다 기술 포인트당 대상 생명력의 0.1%에 해당하는 추가 물 피해를 줍니다.
+
+"		Scripts/General/zzClasses.lua	2111	1	독 기술 설명
 maw-b1990861729d	translated	skill	Poisons	독		Scripts/General/zzClasses.lua	2106	1	암살자 스킬명
 maw-176436bc329f	untranslated	skill	Puller			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-085171c8bf3e	untranslated	skill	Reduces traps and lava damage by 10%.			Scripts/General/zzMAW-Skills.lua	1470	1	
@@ -1690,9 +1764,11 @@ maw-c6b40b4993cf	translated	skill	Retaliation	반격		Scripts/General/zzMAW-Skil
 maw-a5b46b9f3ae4	translated	skill	Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit	반격은 최대 3회 중첩되며, 한 번의 강력한 공격으로 모든 중첩을 소모할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2544	1	반격 숙련 효과
 maw-0b414bdcb7b9	translated	skill	Scales	비늘		Scripts/General/zzClasses.lua	806	1	드래곤 스킬명
 maw-aa0e7e86b7aa	untranslated	skill	Shadow			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-a6852004e745	untranslated	skill	"Shield skill provides great defense against both physical and magical attacks.
+maw-a6852004e745	translated	skill	"Shield skill provides great defense against both physical and magical attacks.
 
-Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."			Scripts/General/zzMAW-Skills.lua	590	1	
+Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	"방패 기술은 물리 공격과 마법 공격 모두에 뛰어난 방어력을 제공합니다.
+
+방패 기술은 방패에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	590	1	방패 기술 설명
 maw-ec9f630c8693	untranslated	skill	Skill			Data/Tables/Extra Skillz.txt	1	7	
 maw-595e6f796a09	untranslated	skill	Skill reset info			Scripts/Global/zzMAWRespec.lua	14	1	
 maw-e09212c7d3ea	untranslated	skill	Skills			Scripts/General/zzMaw-Monsters.lua	3147	1	
@@ -1703,11 +1779,15 @@ maw-7707f6812879	untranslated	skill	SP			Scripts/General/zzMAW-Skills.lua	865	2
 maw-3d0e83b4f7be	untranslated	skill	Speed|			Scripts/General/zzMAW-Skills.lua	534	1	
 maw-249f056b552d	untranslated	skill	Stacks			Scripts/General/zzMAW-Skills.lua	1121	12	
 maw-e81ea1b3be50	translated	skill	Subtlety	기민함		Scripts/General/zzClasses.lua	2105	1	암살자 회피 스킬명
-maw-1d06f1d00475	untranslated	skill	"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
+maw-1d06f1d00475	translated	skill	"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
 
 Energy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.
 
-"			Scripts/General/zzClasses.lua	2110	1	
+"	"교묘함은 삶과 죽음의 경계를 다루어 적을 처치할 때 에너지를 얻고 속도를 높입니다.
+
+에너지를 소모하는 공격은 중첩 1회를 부여하며, 중첩당 교묘함 기술 포인트마다 공격 속도가 1% 증가합니다. 최대 5회 중첩됩니다.
+
+"		Scripts/General/zzClasses.lua	2110	1	교묘함 기술 설명
 maw-19e9d2245f60	untranslated	skill	Summoner			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-13529394f788	untranslated	skill	Swapper			Scripts/General/zzMaw-Monsters.lua	3177	3	
 maw-112ab020698e	untranslated	skill	Swift			Scripts/General/zzMaw-Monsters.lua	3177	2	
@@ -1721,12 +1801,17 @@ maw-8c46bff5c136	untranslated	skill	"This skill is only available to death knigh
 maw-dc9dacafa603	untranslated	skill	Thorn			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-e88d3c5da733	translated	skill	Triple healing effect	회복 효과가 3배가 됩니다		Scripts/General/zzClasses.lua	433	1	스킬 숙련 효과
 maw-2a8dbafc6266	translated	skill	Unholy	사악함		Scripts/General/zzClasses.lua	1452	1	죽음의 기사 스킬명
-maw-f08ed9a7b187	untranslated	skill	"Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.
+maw-f08ed9a7b187	translated	skill	"Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.
 
 The cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
-"			Scripts/General/zzMAW-Skills.lua	2509	1	
+"	"깨달음은 마나의 잠재력을 끌어내 최대 마나를 늘리고 버프가 예약하는 마나를 줄여 주문을 더 자유롭고 자주 사용할 수 있게 합니다.
+
+버프 비용은 레벨당 얻는 마나량을 기준으로 나뉩니다. 숙련도가 높아질수록 나누는 값은 커지지만 전체 마나량은 변하지 않습니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
+"		Scripts/General/zzMAW-Skills.lua	2509	1	깨달음 기술 설명
 maw-f9bb62f972ac	untranslated	skill	Venomous			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-fb7fcba97ab8	translated	skill	Water Magic	물 마법		Scripts/General/zzClasses.lua	1472	2	Skillz.setName 표시명
 maw-0627ec58a510	translated	skill	You don't meet the requirements, and cannot be taught until you do.	요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.		Scripts/General/zzMAW-Skills.lua	2276	1	스킬 교육 거절 대사
@@ -1787,28 +1872,44 @@ Next Level Bonus: %s SP Regen
 현재 주문력 재생: %s
 다음 레벨 보너스: 주문력 재생 %s
 "	%s %s %s	Scripts/General/zzMAW-Skills.lua	1374	1	명상 스킬 설명; 자리표시자 보존
-maw-34240f29269c	untranslated	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"		%s %s %s	Scripts/General/zzMaw-Spells.lua	2209	5	
-maw-339f786746eb	untranslated	spell	"%s Mana cost: 
+maw-34240f29269c	translated	spell	"%s Mana cost: 
+cures %s + %s HP per point of skill"	"마나 소모: %s
+기술 포인트당 생명력 %s + %s 회복"	%s %s %s	Scripts/General/zzMaw-Spells.lua	2209	5	치유 주문 숙련 설명
+maw-339f786746eb	translated	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 1 day limit
-"		%s %s %s	Scripts/General/zzMaw-Spells.lua	2183	4	
-maw-5bf25d99575c	untranslated	spell	"%s Mana cost: 
+"	"마나 소모: %s
+기술 포인트당 생명력 %s + %s 회복
+제한 시간 1일
+"	%s %s %s	Scripts/General/zzMaw-Spells.lua	2183	4	치유 주문 숙련 설명
+maw-5bf25d99575c	translated	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 no limit
-"		%s %s %s	Scripts/General/zzMaw-Spells.lua	2219	1	
-maw-d6255d1819c5	untranslated	spell	"16 Mana cost: 
+"	"마나 소모: %s
+기술 포인트당 생명력 %s + %s 회복
+시간 제한 없음
+"	%s %s %s	Scripts/General/zzMaw-Spells.lua	2219	1	치유 주문 숙련 설명
+maw-d6255d1819c5	translated	spell	"16 Mana cost: 
 cures 36 + 6 HP per point of skill
 no limit
-"			Scripts/General/zzMaw-Spells.lua	717	1	
-maw-b81f7eef53da	untranslated	spell	"5 Mana cost: 
+"	"마나 소모: 16
+기술 포인트당 생명력 36 + 6 회복
+시간 제한 없음
+"		Scripts/General/zzMaw-Spells.lua	717	1	치유 주문 숙련 설명
+maw-b81f7eef53da	translated	spell	"5 Mana cost: 
 cures 12 + 2 HP per point of skill
 1 hour limit
-"			Scripts/General/zzMaw-Spells.lua	715	1	
-maw-0197e3f89ff1	untranslated	spell	"8 Mana cost: 
+"	"마나 소모: 5
+기술 포인트당 생명력 12 + 2 회복
+제한 시간 1시간
+"		Scripts/General/zzMaw-Spells.lua	715	1	치유 주문 숙련 설명
+maw-0197e3f89ff1	translated	spell	"8 Mana cost: 
 cures 24 + 4 HP per point of skill
 1 day limit
-"			Scripts/General/zzMaw-Spells.lua	716	1	
+"	"마나 소모: 8
+기술 포인트당 생명력 24 + 4 회복
+제한 시간 1일
+"		Scripts/General/zzMaw-Spells.lua	716	1	치유 주문 숙련 설명
 maw-fa7f64b02a17	untranslated	spell	A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.			Scripts/General/zzMaw-Spells.lua	3412	1	
 maw-62e736ba86bd	untranslated	spell	A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.			Scripts/General/zzMaw-Spells.lua	3415	1	
 maw-2a8bd8b9c280	untranslated	spell	A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.			Scripts/General/zzMaw-Spells.lua	3408	1	
@@ -1822,13 +1923,19 @@ maw-e99c70428f3e	translated	spell	All stats increased by 20+2 per skill	모든 �
 maw-554ad32ce774	translated	spell	Allow use to Cover Spells damage	주문 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2050	1	엄호 숙련 효과
 maw-f3762b6b3022	untranslated	spell	AllowNewSpell			Scripts/General/AdaptiveMonstersStats.lua	764	1	
 maw-512da2e32544	translated	spell	Asphyxiate	질식		Scripts/General/zzClasses.lua	1420	1	MAW 주문명
-maw-6000be5eddfc	untranslated	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
+maw-6000be5eddfc	translated	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
 Such attacks also grant 1 combo point, allowing the assassin to cast offensive spells.
 Bow has 50% chance and energy cost.
 
 Higher levels also grant more starting energy, ideal for high burst damage in short engagements.
 
-"			Scripts/General/zzClasses.lua	2112	1	
+"	"암살은 고립된 대상을 반응하기 전에 제거하는 데 특화된 기술입니다. 에너지를 소모하는 공격이나 주문은 기술 포인트당 피해가 4-6-8-10 증가하지만, 대상 주변의 적 하나당 효과가 20% 감소합니다(최대 4명).
+이런 공격은 콤보 포인트 1을 부여하여 암살자가 공격 주문을 사용할 수 있게 합니다.
+활 공격은 50% 확률로 적용되며 에너지를 소모합니다.
+
+기술 레벨이 높을수록 시작 에너지도 증가하여 짧은 전투에서 강력한 순간 화력을 내기 좋습니다.
+
+"		Scripts/General/zzClasses.lua	2112	1	암살 기술 설명
 maw-077fe9c54ed5	untranslated	spell	Base			Scripts/General/zzMaw-Items.lua	4264	33	
 maw-6feeb259c205	untranslated	spell	BaseCost			Scripts/General/zzMaw-Spells.lua	1306	13	
 maw-382da73f22da	translated	spell	Blood Leech	피 흡수		Scripts/General/zzClasses.lua	1405	1	MAW 주문명
@@ -1858,10 +1965,13 @@ maw-0a37ec4c0df7	translated	spell	Death Coil	죽음의 고리		Scripts/General/z
 maw-f22bb3958c52	translated	spell	Death Grasp	죽음의 손아귀		Scripts/General/zzClasses.lua	1434	1	MAW 주문명
 maw-0a8703f9c37d	untranslated	spell	Debuff			Scripts/General/zzMaw-Spells.lua	1307	12	
 maw-b4c200bb0d1f	untranslated	spell	Delay			Scripts/General/zzClasses.lua	1298	3	
-maw-9785e1464ea2	untranslated	spell	"Dragons are powerful creatures with innate abilities.
+maw-9785e1464ea2	translated	spell	"Dragons are powerful creatures with innate abilities.
 Like the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.
 
-Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "			Scripts/General/zzClasses.lua	494	1	
+Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "	"드래곤은 타고난 능력을 지닌 강력한 생물입니다.
+다크 엘프와 뱀파이어의 종족 능력처럼 드래곤 능력은 주문처럼 사용하지만 기술처럼 습득합니다. 드래곤은 처음부터 공포를 사용할 수 있고, 전문가·마스터·그랜드마스터 단계에서 두 번째 브레스 무기, 비행, 윙 버핏을 차례로 얻습니다.
+
+브레스 피해는 레벨당 20 + 2이며(최대 600레벨, 광기에서는 900레벨), 총 피해 증가율은 "		Scripts/General/zzClasses.lua	494	1	드래곤 능력 설명 앞부분
 maw-1370004da76f	untranslated	spell	Duration			Scripts/General/zzMaw-Spells.lua	1306	13	
 maw-95a0fff77158	translated	spell	Duration 15+1.5 minutes per point of skill	지속시간: 15분 + 기술 포인트당 1.5분		Scripts/General/zzMaw-Spells.lua	710	2	주문 숙련 설명
 maw-320bc2070e43	translated	spell	Duration 30+3 minutes per point of skill	지속시간: 30분 + 기술 포인트당 3분		Scripts/General/zzMaw-Spells.lua	711	1	주문 숙련 설명
@@ -1871,15 +1981,21 @@ maw-44d476274f1e	untranslated	spell	earth			Scripts/General/zzMaw-Spells.lua	335
 maw-4b580a9a8212	untranslated	spell	Earth Magic Book			Scripts/General/zzMaw-Spells.lua	3402	1	
 maw-29b59ba836d1	translated	spell	Effect is now passive	이제 효과가 지속 효과로 적용됩니다		Scripts/General/zzMaw-Spells.lua	737	1	주문 숙련 설명
 maw-a6e1d9fa2b6b	translated	spell	Effects vary per spell	효과는 주문마다 다릅니다		Scripts/General/zzClasses.lua	443	7	주문 숙련 공통 설명
-maw-52396a9d6c9e	untranslated	spell	"Effects vary per spell 
+maw-52396a9d6c9e	translated	spell	"Effects vary per spell 
 
-"			Scripts/General/zzClasses.lua	1804	2	
-maw-cca67580b6a3	untranslated	spell	"Elementalists learn new spells with practice instead of books.
+"	"효과는 주문마다 다릅니다.
 
-All the available spells of this school have been learned."			Scripts/General/zzClasses.lua	1806	1	
-maw-628b389433d7	untranslated	spell	"Elementalists learn new spells with practice instead of books.
+"		Scripts/General/zzClasses.lua	1804	2	원소술사 숙련 설명
+maw-cca67580b6a3	translated	spell	"Elementalists learn new spells with practice instead of books.
 
-Progress toward learning "			Scripts/General/zzClasses.lua	1804	1	
+All the available spells of this school have been learned."	"원소술사는 책 대신 실전을 통해 새로운 주문을 익힙니다.
+
+이 계통에서 배울 수 있는 주문을 모두 습득했습니다."		Scripts/General/zzClasses.lua	1806	1	원소술사 주문 학습 설명
+maw-628b389433d7	translated	spell	"Elementalists learn new spells with practice instead of books.
+
+Progress toward learning "	"원소술사는 책 대신 실전을 통해 새로운 주문을 익힙니다.
+
+다음 주문 습득 진행도: "		Scripts/General/zzClasses.lua	1804	1	원소술사 주문 학습 설명 조각
 maw-151a59608f88	untranslated	spell	Empower Magic			Scripts/General/zzMaw-Spells.lua	3013	1	
 maw-d7a501f83242	untranslated	spell	Expert			Scripts/General/zzClasses.lua	1356	4	
 maw-2d9b9235fd08	untranslated	spell	Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.			Scripts/General/zzMaw-Spells.lua	3409	1	
@@ -1909,8 +2025,9 @@ maw-31010d130c93	translated	spell	Increases damage by 10 plus 1 per skill point	
 maw-28f5ba6a17bf	translated	spell	Increases damage by 10 plus 1.5 per skill point	피해량이 10 + 기술 포인트당 1.5만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	722	1	주문 숙련 설명
 maw-63f63821464a	translated	spell	Increases damage by 10 plus 2 per skill point	피해량이 10 + 기술 포인트당 2만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	723	1	주문 숙련 설명
 maw-a36128b8bdaf	untranslated	spell	Increases spell damage and healing at the expense of higher mana cost and cast time.			Scripts/General/zzMAW-Skills.lua	1335	1	
-maw-bcea47734e3b	untranslated	spell	"Increases spell damage and healing at the expense of higher mana cost and cast time.
-"			Scripts/General/zzMAW-Skills.lua	1463	1	
+maw-bcea47734e3b	translated	spell	"Increases spell damage and healing at the expense of higher mana cost and cast time.
+"	"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	1463	1	승천 기술 설명
 maw-df83636b672f	untranslated	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.			Scripts/General/zzMaw-Spells.lua	3416	1	
 maw-e0f25f1d61cb	untranslated	spell	Insanity			Scripts/General/zzMaw-Monsters.lua	3846	1	
 maw-a47e171274de	untranslated	spell	jge absolute 0x42735B			Scripts/General/SpellsTweaks.lua	115	1	
@@ -3342,12 +3459,16 @@ maw-80dc19c8fa35	untranslated	tooltip	"
 
 Can benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50
 Current amount: "			Scripts/General/zzAlchemy.lua	449	1	
-maw-c4d4148a3add	untranslated	tooltip	"
+maw-c4d4148a3add	translated	tooltip	"
 
-Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "			Scripts/General/zzMaw-Spells.lua	2301	1	
-maw-da6128e46ead	untranslated	tooltip	"
+Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "	"
 
-Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."			Scripts/General/zzMaw-Spells.lua	713	1	
+제어 주문의 지속시간은 몬스터 저항에 따라 감소하고 승천에 따라 증가합니다. 회복 시간은 주문 기술에 따라 감소합니다. 표시된 지속시간은 저항 "		Scripts/General/zzMaw-Spells.lua	2301	1	제어 주문 툴팁 조각
+maw-da6128e46ead	translated	tooltip	"
+
+Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."	"
+
+전문가는 기술 포인트당 1시간, 마스터는 기술 포인트당 1일의 제한이 있으며 그랜드마스터는 시간 제한이 없습니다."		Scripts/General/zzMaw-Spells.lua	713	1	치유 주문 제한 설명
 maw-a666f8a2a848	translated	tooltip	"
 
 Health Reserved: "	"
@@ -3368,12 +3489,16 @@ maw-f45cfae365c4	translated	tooltip	"
 Press alt to show recipe list"	"
 
 조합법 목록을 보려면 Alt를 누르세요"		Scripts/General/zzAlchemy.lua	464	1	연금술 툴팁
-maw-e886c82c9925	untranslated	tooltip	"
+maw-e886c82c9925	translated	tooltip	"
 
-Recovery time: "			Scripts/General/zzMaw-Spells.lua	2297	4	
-maw-182be7411220	untranslated	tooltip	"
+Recovery time: "	"
 
-This Ability requires "			Scripts/General/zzClasses.lua	2150	1	
+회복 시간: "		Scripts/General/zzMaw-Spells.lua	2297	4	주문 툴팁 조각
+maw-182be7411220	translated	tooltip	"
+
+This Ability requires "	"
+
+이 능력을 사용하려면 콤보 포인트 "		Scripts/General/zzClasses.lua	2150	1	암살 능력 툴팁 조각
 maw-09ca3bd88609	translated	tooltip	"
 
 You need at least "	"
@@ -3387,9 +3512,11 @@ The Celestial Orb allows the transfer of celestial essence from one item to anot
 (right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"			Scripts/General/zzAlchemy.lua	737	1	
 maw-564868e32581	translated	tooltip	 bonus to Meditation skill for 6 hours.	 (6시간)		Scripts/General/zzAlchemy.lua	422	1	명상 보너스 조각
 maw-25b1dc1d2e83	translated	tooltip	 Combo Points to be casted.	 콤보 포인트가 필요합니다.		Scripts/General/zzClasses.lua	2150	1	연결형 암살자 능력 설명 후행 조각
-maw-a797649a8169	untranslated	tooltip	" resistance. Control duration against bosses is halved.
+maw-a797649a8169	translated	tooltip	" resistance. Control duration against bosses is halved.
 
-Recovery time: "			Scripts/General/zzMaw-Spells.lua	2301	1	
+Recovery time: "	"인 대상을 기준으로 합니다. 보스에게는 제어 지속시간이 절반으로 줄어듭니다.
+
+회복 시간: "		Scripts/General/zzMaw-Spells.lua	2301	1	제어 주문 툴팁 조각
 maw-b65147dd3a81	translated	tooltip	 skill in 	 단계 이상의 		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
 maw-bf2e7de97098	translated	tooltip	 Spell Points	 주문력		Scripts/General/zzAlchemy.lua	419	2	연금술 툴팁 조각
 maw-162ac29e9a70	translated	tooltip	 to open the book	 기술이 필요합니다		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
@@ -3421,8 +3548,9 @@ Health bonus from Endurance: %s%s
 
 Flat HP bonus from Endurance: %s"		%s %s %s %s	Scripts/General/zzMaw-Stats.lua	408	1	
 maw-bef2836ddf6b	translated	tooltip	A deadly spell capable to heal the caster upon hitting the target by an amount equal to double the Life leech enchant. Deals damage equal to 	대상을 적중하면 생명력 흡수 마법 부여 효과의 두 배만큼 시전자의 생명력을 회복시키는 치명적인 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1428	1	죽음의 고리 설명 앞부분
-maw-0d30277d7411	untranslated	tooltip	"A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.
-Deals damage equal to "			Scripts/General/zzClasses.lua	1443	1	
+maw-0d30277d7411	translated	tooltip	"A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.
+Deals damage equal to "	"치명적인 폭발을 일으켜 범위 내 모든 몬스터에게 막대한 피해를 줍니다. 근접전에서도 안전하게 사용할 수 있습니다.
+피해량은 무기 피해의 "		Scripts/General/zzClasses.lua	1443	1	죽음의 숨결 설명 조각
 maw-33a8b31d1d58	translated	tooltip	A poisonous cloud of noxious gases is formed in front of the caster and moves slowly away from your characters.  The cloud does %s points of damage plus 1-%s per point of skill in Dark Magic and lasts until something runs into it.	시전자 앞에 유독 가스 구름을 만들어 파티에서 천천히 멀어지게 합니다. 구름은 %s의 기본 피해와 어둠 마법 기술 포인트당 1-%s의 추가 피해를 주며, 대상과 충돌할 때까지 유지됩니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2119	1	독성 구름 주문 설명
 maw-d78b4b317e24	untranslated	tooltip	"A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)
 Ancient, Primordial and Legendary items have increased Max power.
@@ -3459,20 +3587,27 @@ maw-bb3862151eb4	translated	tooltip	Fires a blast of hot, jagged metal in front 
 maw-aeb58d1df797	translated	tooltip	Fires a bolt of ice at a single target.  The missile does %s + 1-%s points of damage per point of skill in Water Magic.	단일 대상에게 얼음 화살을 발사합니다. %s + 물 마법 기술 포인트당 1-%s의 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2099	1	얼음 화살 주문 설명
 maw-630efc832e44	translated	tooltip	Fires a bolt of light at a single target that does %s + 1-%s points of damage per point of skill in light magic.  Damage vs. Undead is doubled.	단일 대상에게 빛의 화살을 발사하여 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게는 피해가 두 배입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2115	1	빛의 화살 주문 설명
 maw-1e776e9cbd7f	translated	tooltip	Fires a bolt of mental force which damages a single target's nervous system.  Mind Blast does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신력의 화살로 단일 대상의 신경계를 공격합니다. 정신 폭발은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2110	1	정신 폭발 주문 설명
-maw-65e8b982519d	untranslated	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.
+maw-65e8b982519d	translated	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.
 
-Blades is the only spell capable to deal Physical damage."		%s	Scripts/General/zzClasses.lua	2141	1	
-maw-e5cd75207156	untranslated	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.
+Blades is the only spell capable to deal Physical damage."	"회전하는 면도날처럼 얇은 금속 칼날을 몬스터 하나에게 발사합니다. 칼날은 근접 공격 피해의 %s%%만큼 피해를 줍니다.
 
-Blades is the only spell capable to deal Physical damage."		%s	Scripts/General/zzMaw-Spells.lua	2104	1	
+칼날은 물리 피해를 줄 수 있는 유일한 주문입니다."	%s	Scripts/General/zzClasses.lua	2141	1	칼날 주문 설명
+maw-e5cd75207156	translated	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.
+
+Blades is the only spell capable to deal Physical damage."	"회전하는 면도날처럼 얇은 금속 칼날을 몬스터 하나에게 발사합니다. 칼날은 대지 마법 기술 포인트당 1-%s의 피해를 줍니다.
+
+칼날은 물리 피해를 줄 수 있는 유일한 주문입니다."	%s	Scripts/General/zzMaw-Spells.lua	2104	1	칼날 주문 설명
 maw-4427a655fa7e	translated	tooltip	Flying Fist throws a heavy magical force at a single opponent that does %s points of damage plus 1-%s per point of skill in Body Magic.	강력한 마법의 주먹을 단일 대상에게 날려 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2113	2	비행 주먹 주문 설명
 maw-a31c549795f4	translated	tooltip	Grants 	명상 기술 보너스 +		Scripts/General/zzAlchemy.lua	422	1	명상 물약 설명 조각
-maw-0cf3c2a8447c	untranslated	tooltip	"Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
+maw-0cf3c2a8447c	translated	tooltip	"Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
 
-At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"			Scripts/General/zzMaw-Spells.lua	997	1	
+At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"	"캐릭터들에게 비행 능력을 부여합니다! 이 주문은 비용이 매우 높고 야외에서만 작동하지만 매우 유용합니다. 비행 중에는(땅에 닿지 않은 동안) 5분마다 주문력 1을 소모합니다.
+
+고난도에서는 일부 지역을 제외하고 몬스터를 공격하면 효과가 해제됩니다."		Scripts/General/zzMaw-Spells.lua	997	1	비행 주문 설명
 maw-90c0d611d15e	translated	tooltip	Heals 	생명력 회복: 		Scripts/General/zzAlchemy.lua	416	2	물약 설명 조각
-maw-7dcf7871f711	untranslated	tooltip	"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
-Lasts for 2 hours plus 1 hour per point of skill"			Scripts/General/zzMaw-Spells.lua	720	1	
+maw-7dcf7871f711	translated	tooltip	"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
+Lasts for 2 hours plus 1 hour per point of skill"	"영웅심은 공격 명중 시 주는 피해를 10 + 정신 마법 기술 포인트당 1만큼 증가시킵니다. 이 주문은 파티 전체에 적용됩니다.
+기본 2시간에 기술 포인트당 1시간 동안 지속됩니다."		Scripts/General/zzMaw-Spells.lua	720	1	영웅심 주문 설명
 maw-30dd1cb6f8b6	untranslated	tooltip	Host have closed the game			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	708	1	
 maw-59e7b4f19542	translated	tooltip	Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic.	단일 대상 주변의 공기를 파괴해 급격한 공기 유입과 충격파를 일으킵니다. 피해량은 %s + 공기 마법 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2096	1	내파 주문 설명
 maw-1d74ca0611e0	translated	tooltip	Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage.	순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2142	1	암살자 질량 왜곡 설명
@@ -3482,12 +3617,16 @@ maw-de68a13a192f	translated	tooltip	Inflicts %s points of damage plus %s per poi
 maw-01bf2ed139ac	translated	tooltip	Launches a burst of fire at a single target.  Damage is %s+1-%s points of damage per point of skill in Fire Magic.   Firebolt is safe, effective and has a low casting cost.	단일 대상에게 화염탄을 발사합니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다. 화염탄은 안전하고 효율적이며 주문 소모가 적습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2081	1	화염탄 주문 설명
 maw-01a32f6089bb	translated	tooltip	Launches a magical stone which bursts in air, sending shards of explosive earth raining to the ground.  The damage is 1-%s per point of skill in Earth Magic for each shard.  This spell can only be used outdoors.	마법의 돌을 공중에서 폭발시켜 폭발성 대지 파편을 비처럼 떨어뜨립니다. 파편 하나당 피해량은 대지 마법 기술 포인트당 1-%s입니다. 야외에서만 사용할 수 있습니다.	%s	Scripts/General/zzMaw-Spells.lua	2106	1	죽음의 꽃 주문 설명
 maw-d23f39ab8394	translated	tooltip	Lifedrain allows the vampire to damage his or her target and simultaneously heal based on the damage done in the Lifedrain.  This ability does 1-%s points of damage per skill.	흡혈은 뱀파이어가 대상에게 피해를 주는 동시에, 입힌 피해에 따라 자신을 회복하게 합니다. 피해량은 기술 포인트당 1-%s입니다.	%s	Scripts/General/zzMaw-Spells.lua	2126	1	흡혈 능력 설명
-maw-fa8202a1871e	untranslated	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.
+maw-fa8202a1871e	translated	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.
 
-The spell then arcs to a second target, hitting it as well."		%s %s	Scripts/General/zzMaw-Spells.lua	2095	1	
-maw-6488e3b34379	untranslated	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.
+The spell then arcs to a second target, hitting it as well."	"번개 화살은 시전자의 손에서 대상 하나에게 전기를 방출합니다. 항상 명중하며 공기 마법 기술 포인트당 %s + 1-%s의 피해를 줍니다.
 
-The spell then arcs to a second target, hitting it as well."		%s	Scripts/General/zzClasses.lua	2137	1	
+그 후 번개가 두 번째 대상으로 튀어 추가로 명중합니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2095	1	번개 화살 주문 설명
+maw-6488e3b34379	translated	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.
+
+The spell then arcs to a second target, hitting it as well."	"번개 화살은 시전자의 손에서 대상 하나에게 전기를 방출합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.
+
+그 후 번개가 두 번째 대상으로 튀어 추가로 명중합니다."	%s	Scripts/General/zzClasses.lua	2137	1	암살자 번개 화살 설명
 maw-14b7e8740fd0	translated	tooltip	Mistform allows the vampire to reduce physical damage by 75%.  However, a vampire in Mistform cannot perform any physical attacks.  Vampires in Mistform are able to use spells and abilities and are affected by spells and abilities.	안개 형상은 뱀파이어가 받는 물리 피해를 75% 줄입니다. 대신 안개 형상에서는 물리 공격을 할 수 없습니다. 주문과 능력은 사용할 수 있으며, 주문과 능력의 영향도 정상적으로 받습니다.		Scripts/General/zzMaw-Spells.lua	751	1	안개 형상 설명
 maw-5ab5c5730937	untranslated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
 
@@ -3640,8 +3779,9 @@ maw-86e05999e779	untranslated	tooltip	This potion has been removed			Scripts/Gen
 maw-d4415bc2801b	translated	tooltip	This spell is exclusive to Death Knights and deals damage equal to 	죽음의 기사 전용 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1376	1	얼음의 손길 주문 설명 앞부분
 maw-d90c20c41d63	translated	tooltip	This spell is the town killer. Armageddon inflicts %s points of damage plus %s point of damage for every point of Dark skill your character has to every creature on the map, including all your characters. It can only be cast three times per day and only outdoors.	도시를 초토화하는 주문입니다. 아마겟돈은 맵의 모든 생물과 파티원 전원에게 %s + 캐릭터의 어둠 기술 포인트당 %s의 피해를 줍니다. 하루에 세 번만, 야외에서만 시전할 수 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2122	1	아마겟돈 주문 설명
 maw-b1274cce740a	translated	tooltip	This spell weakens the link between a target's body and soul, causing %s + 2-%s points of damage per point of skill in Spirit Magic to all monsters near the caster.	대상의 육체와 영혼 사이의 연결을 약화시켜 시전자 주변의 모든 몬스터에게 %s + 영혼 마법 기술 포인트당 2-%s의 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2109	1	영혼 채찍 주문 설명
-maw-298d71390c0c	untranslated	tooltip	"Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.
-Deals damage equal to "			Scripts/General/zzClasses.lua	1393	1	
+maw-298d71390c0c	translated	tooltip	"Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.
+Deals damage equal to "	"충돌하면 산산이 부서지는 얼음 폭탄을 던집니다. 큰 적이나 여러 적을 상대할 때 특히 효과적입니다.
+피해량은 현재 무기 피해의 "		Scripts/General/zzClasses.lua	1393	1	얼음 폭탄 설명 조각
 maw-83916160e91f	untranslated	tooltip	tooltip			Scripts/General/zzMaw-Items.lua	2256	3	
 maw-714cca80cbf4	translated	tooltip	"Vampiric Aura: damage done will restore player HP.
 
