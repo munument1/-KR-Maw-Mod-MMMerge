@@ -702,7 +702,7 @@ maw-13f1aeb33fbf	translated	misc	Amethyst Chunk	자수정 덩어리		Scripts/Gen
 maw-3fdbe3bcaa7b	translated	misc	Archibald's Mirror	아치발드의 거울		Scripts/General/zzAlchemy.lua	1392	1	제작 아이템 이름
 maw-3ae596139053	excluded	misc	Armor: +50			Scripts/Structs/extraEditableDescriptions.lua	172	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-6076a3719d53	excluded	misc	armor: +X			Scripts/Structs/extraEditableDescriptions.lua	22	1	Internal engine/control/comment literal only; not player-facing localization.
-maw-8c9c02e80eb3	translated	misc	Ascended 	승천한 		Scripts/General/zzAlchemy.lua	695	1	아이템 등급 접두어
+maw-8c9c02e80eb3	excluded	misc	Ascended 	승천한 		Scripts/General/zzAlchemy.lua	695	1	Inactive Lua block-comment code; old ascended-name recolor implementation disabled.
 maw-60d9195d2d43	translated	misc	Ascended Amber Droplet	승천한 호박 방울		Scripts/General/zzAlchemy.lua	1382	2	승천 제작 보석
 maw-f368a3b16649	translated	misc	Ascended Amethyst Chunk	승천한 자수정 덩어리		Scripts/General/zzAlchemy.lua	1381	1	승천 제작 아이템 이름
 maw-cacddf34db52	translated	misc	Ascended Erathian Sapphire	승천한 에라시아 사파이어		Scripts/General/zzAlchemy.lua	1387	1	승천 제작 아이템 이름
@@ -1094,11 +1094,11 @@ Targets' status: %s, type: %s, state: %s.
 maw-ee1a9c00001b	excluded	misc	x = %d, y = %d		%d %d	Scripts/General/pseudoSpawnpoint.lua	143	1	Internal engine/control literal only; not player-facing localization.
 maw-ec24b30cf351	excluded	misc	x = %d, y = %d, z = %d		%d %d %d	Scripts/General/pseudoSpawnpoint.lua	142	1	Internal engine/control literal only; not player-facing localization.
 maw-db290079ce7d	excluded	misc	xor eax, eax			Scripts/Core/events.lua	1217	1	Internal engine/control literal only; not player-facing localization.
-maw-8f9a11a1c13d	translated	monster	"
+maw-8f9a11a1c13d	excluded	monster	"
 Level Recommended:
 "	"
 권장 레벨:
-"		Scripts/General/zzMaw-Monsters.lua	2924	1	추천 레벨 표시; 줄바꿈 보존
+"		Scripts/General/zzMaw-Monsters.lua	2924	1	Inactive Lua block-comment code; dungeon recommendation feature disabled in MAW 4.5.
 maw-bcde19b28495	excluded	monster	 .. lowerLimit .. 			Scripts/General/zzMaw-Monsters.lua	2114	2	보정 데이터 생성 코드 조각
 maw-f9634f630e00	excluded	monster	 .. name .. 			Scripts/General/zzMaw-Monsters.lua	2158	1	보정 데이터 생성 코드 조각
 maw-ac0850f11704	excluded	monster	 .. upperLimit .. 			Scripts/General/zzMaw-Monsters.lua	2114	1	보정 데이터 생성 코드 조각
@@ -1236,7 +1236,7 @@ maw-99851db098a8	excluded	monster	Dragoons' Caverns			Scripts/General/zzMaw-Mons
 maw-3e9f329bcddf	excluded	monster	Dragoons' Keep			Scripts/General/zzMaw-Monsters.lua	1610	2	Internal engine/control literal only; not player-facing localization.
 maw-1758e871d8bc	excluded	monster	Druid Circle			Scripts/General/zzMaw-Monsters.lua	1226	2	Internal engine/control literal only; not player-facing localization.
 maw-bd902f508bc5	excluded	monster	Eel Infested Waters			Scripts/General/zzMaw-Monsters.lua	1574	2	Internal engine/control literal only; not player-facing localization.
-maw-1cf6937c2ef9	translated	monster	Emerald Island	에메랄드 섬		Scripts/General/zzMaw-Monsters.lua	1108	5	MMMerge PO 정확 일치 + 표시 문맥 확인
+maw-1cf6937c2ef9	excluded	monster	Emerald Island	에메랄드 섬		Scripts/General/zzMaw-Monsters.lua	1108	5	Map progression/bolster lookup key in this MAW file, not display copy.
 maw-9441f6c1c8d6	translated	monster	Eradication	소멸		Scripts/General/zzMaw-Monsters.lua	3849	1	몬스터 정보창 상태명
 maw-2ec744a3dc22	excluded	monster	Erathia			Scripts/General/zzMaw-Monsters.lua	1399	2	Internal engine/control literal only; not player-facing localization.
 maw-c7c88ab8c2a3	excluded	monster	Error in attacker recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2498	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -2298,7 +2298,7 @@ maw-cf6173037914	excluded	spell	TargetRosterId			Scripts/General/zzMaw-Spells.lu
 maw-5e83789be88e	excluded	spell	Temple			Scripts/General/zzMaw-Spells.lua	2449	5	버프 출처/신전 상태 내부 sentinel
 maw-d892a797ad07	translated	spell	Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.	약초 향이 나는 두꺼운 양피지가 맥박에 맞춰 따뜻해집니다. 활력의 결계가 책장을 뻣뻣하게 굳혀 두었지만, 육체 마법 수행자의 안정된 손길에는 부드럽게 풀립니다.		Scripts/General/zzMaw-Spells.lua	3414	1	육체 마법서 설명
 maw-8f4074b5271e	translated	spell	This spell is as good as it will ever be!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzClasses.lua	1446	1	주문 숙련 설명
-maw-134fe9c4cffb	translated	spell	This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzMaw-Spells.lua	3300	1	주문 숙련 설명
+maw-134fe9c4cffb	excluded	spell	This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzMaw-Spells.lua	3300	1	Inactive Lua block-comment code; old spell-book rework disabled.
 maw-5620c14ea2e7	translated	spell	Vampiric Aura	흡혈의 오라		Scripts/General/zzMaw-Spells.lua	3088	1	주문 이름
 maw-6d5a45920a15	excluded	spell	water			Scripts/General/zzMaw-Spells.lua	3355	1	마법 계열 내부 조회용 소문자 키
 maw-fe2775bc4c97	translated	spell	Water Magic Book	물 마법서		Scripts/General/zzMaw-Spells.lua	3401	1	마법서 이름
@@ -2341,7 +2341,7 @@ maw-70b52d51656e	translated	status	 monsters and 	마리의 몬스터와 		Scrip
 maw-a533d45fdbb4	translated	status	 on attack activated	 공격 시 발동 활성화		Scripts/General/zzClasses.lua	1269	2	주문 발동 상태 메시지
 maw-bf61b9828dc8	translated	status	 on attack disabled	 공격 시 발동 비활성화		Scripts/General/zzClasses.lua	1267	2	주문 발동 상태 메시지
 maw-5e6fd93c345e	translated	status	 required)	)		Scripts/General/zzAlchemy.lua	841	2	필요 레벨 메시지 후행 조각
-maw-6f10ee9e1e8e	translated	status	 will not be sorted with C	번은 C키 정렬에서 제외됩니다		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
+maw-6f10ee9e1e8e	excluded	status	 will not be sorted with C	번은 C키 정렬에서 제외됩니다		Scripts/General/zzMaw-Item-Sorter.lua	417	2	Inactive Lua block-comment code; old inventory-lock hotkey implementation disabled.
 maw-26995675bf1a	translated	status	 will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당		Scripts/General/zzMaw-Item-Sorter.lua	54	1	인벤토리 정렬 메시지 조각
 maw-b30c9ccdc32b	excluded	status	%d+		%d	Scripts/General/zzMAW-Skills.lua	1760	2	정규식 숫자 패턴; 표시 문자열 아님
 maw-ac5cf24fbebd	translated	status	%s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	%s	Scripts/General/zzMAW-Skills.lua	738	1	전투 기술 상태 메시지
@@ -2437,7 +2437,7 @@ maw-f7b693d91fe6	translated	status	In the night the deads rise	밤이 되면 망
 maw-6be2751cd0b7	translated	status	Insanity Immunity	광기 면역		Scripts/General/zzAlchemy.lua	373	1	물약 효과 상태 메시지
 maw-b4e6a310890f	excluded	status	Intro			Scripts/Global/Quest_SavingGoobers.lua	131	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-29c9c73400f5	translated	status	Invalid Item	잘못된 아이템		Scripts/General/zzAlchemy.lua	1118	1	아이템 상태 메시지
-maw-4d118c92089d	translated	status	Inventory number 	인벤토리 		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
+maw-4d118c92089d	excluded	status	Inventory number 	인벤토리 		Scripts/General/zzMaw-Item-Sorter.lua	417	2	Inactive Lua block-comment code; old inventory-lock hotkey implementation disabled.
 maw-e466e0284119	translated	status	Inventory sorted	인벤토리를 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	43	1	인벤토리 정렬 메시지
 maw-dea8c4a3a02a	excluded	status	IsArena			Scripts/Core/events.lua	494	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-885835a02aaa	translated	status	It's a trap!	함정이다!		Scripts/Maps/7d21.lua	7	1	맵 이벤트 메시지
@@ -2490,7 +2490,7 @@ maw-7694fdee9a86	translated	status	Teleported 	순간이동: 		Scripts/General/z
 maw-028bcab4ba45	translated	status	The night is dark and full of terrors	밤은 어둡고 공포로 가득하다		Scripts/Maps/7out05.lua	26	1	맵 이벤트 메시지
 maw-43064c742ef5	translated	status	This potion has not enough power	이 물약의 위력이 부족합니다		Scripts/General/zzAlchemy.lua	103	5	물약 상태 메시지
 maw-73ecdec3d0ad	translated	status	This skill has reached its limit	이 기술은 한계에 도달했습니다		Scripts/General/zzMAW-Skills.lua	2204	3	기술 상태 메시지
-maw-ce0b6b3b08f8	translated	status	This skill is already as good as it will ever get	이 기술은 이미 최대치입니다		Scripts/General/zzMAW-Skills.lua	956	1	기술 상태 메시지
+maw-ce0b6b3b08f8	excluded	status	This skill is already as good as it will ever get	이 기술은 이미 최대치입니다		Scripts/General/zzMAW-Skills.lua	956	1	Inactive Lua block-comment code; old shared-skill cap handler disabled.
 maw-a0af80748d88	translated	status	Unconscious Immunity	의식불명 면역		Scripts/General/zzAlchemy.lua	393	1	물약 효과 상태 메시지
 maw-fdca59bb6706	excluded	status	Unknown attack message type			Scripts/General/zzMaw-Stats.lua	1254	1	Internal engine/control literal only; not player-facing localization.
 maw-8e9ac396678f	translated	status	We have no more items to trade for kegs	술통으로 교환할 아이템이 더 이상 없습니다		Scripts/Global/GLOBAL.lua	648	3	교환 메시지
@@ -3878,11 +3878,11 @@ maw-121a00d89940	translated	tooltip	Power: 	위력: 		Scripts/General/zzAlchemy.
 maw-cc56042a8cdb	translated	tooltip	Press alt to show craftable stats	제작 가능한 능력치를 보려면 Alt를 누르세요		Scripts/General/zzMaw-Items.lua	1819	1	아이템 툴팁
 maw-c9bec7b88407	translated	tooltip	Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken.	마법으로부터의 보호는 파티 전체에 적용되어 일부 주문과 몬스터 능력이 유발하는 약화 상태에 면역을 부여합니다. 대상 상태는 독, 질병, 석화, 마비, 약화입니다. 효과를 한 번 막을 때마다 주문이 약해집니다. 육체 마법 기술 포인트당 1회의 공격을 막을 수 있으며 최대 10회까지 유지되고, 그 뒤에는 효과가 사라집니다.		Scripts/General/zzMaw-Spells.lua	732	1	마법으로부터의 보호 설명
 maw-997847b4799b	translated	tooltip	Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.	마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2105	1	암석 폭발 주문 설명
-maw-8b2b08919ea9	translated	tooltip	"Reserve a flat amount of mana
+maw-8b2b08919ea9	excluded	tooltip	"Reserve a flat amount of mana
 Invisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.
 This effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."	"일정량의 마나를 점유합니다.
 투명화는 주변 생물의 정신에 작용해, 말을 걸거나 공격하지 않는 한 파티를 알아차리지 못하게 합니다. 명중 여부와 관계없이 공격하면 주문이 해제됩니다. 적대적인 몬스터가 주변에 있을 때는 시전할 수 없습니다.
-이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다."		Scripts/General/zzMaw-Spells.lua	3106	1	주문 설명
+이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다."		Scripts/General/zzMaw-Spells.lua	3106	1	Inactive Lua block-comment code; invisibility description override disabled.
 maw-e8e0913b691a	translated	tooltip	"Reserve a flat amount of mana
 Only useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.
 This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유합니다.

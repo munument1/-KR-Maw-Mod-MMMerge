@@ -7,8 +7,8 @@
   "patchable_unique_sources": 303,
   "unpatchable_occurrences": 5814,
   "status": {
-    "excluded": 1993,
-    "translated": 1033
+    "excluded": 2001,
+    "translated": 1025
   },
   "categories": {
     "class": 37,
@@ -119,6 +119,8 @@
   "reviewed_batch026_display_promotions": 21,
   "reviewed_batch027_display_promotions": 10,
   "reviewed_batch028_display_promotions": 2,
+  "reviewed_nonruntime_exclusions": 8,
+  "reviewed_nonruntime_validation_errors": [],
   "uncertain_review_unique_sources": 0,
   "uncertain_review_occurrences": 0,
   "uncertain_review_exact_mmmerge_matches": 0,

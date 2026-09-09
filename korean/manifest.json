@@ -1,12 +1,12 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 1033,
+  "translated_entries": 1025,
   "translated_entries_with_patchable_occurrences": 1025,
   "patchable_occurrences_targeted": 1331,
   "scoped_override_rows": 3,
   "scoped_occurrences_targeted": 3,
-  "skipped_unpatchable_occurrences_for_translated_sources": 82,
+  "skipped_unpatchable_occurrences_for_translated_sources": 68,
   "changed_files": [
     {
       "file": "Scripts/General/AdaptiveMonstersStats.lua",
@@ -169,48 +169,7 @@
       "replacements": 3
     }
   ],
-  "warnings": [
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "\nLevel Recommended:\n",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": " will not be sorted with C",
-      "unpatchable_occurrences": 2
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Ascended ",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Emerald Island",
-      "unpatchable_occurrences": 5
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Inventory number ",
-      "unpatchable_occurrences": 2
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically.",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "This skill is already as good as it will ever get",
-      "unpatchable_occurrences": 1
-    },
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": "This spell is as good as it will ever get!",
-      "unpatchable_occurrences": 1
-    }
-  ],
+  "warnings": [],
   "validation_errors": [],
   "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed.",
   "runtime_i18n_fixes": [
