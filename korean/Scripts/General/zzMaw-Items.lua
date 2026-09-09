@@ -1763,7 +1763,7 @@ function events.BuildItemInformationBox(t)
 						end
 					end
 					local dmg=math.min(count*5,100)
-					legText=legText .. "\nCurrent bonus Damage: " .. dmg .. "%"
+					legText=legText .. "\n현재 추가 피해: " .. dmg .. "%"
 				elseif t.Item.BonusExpireTime%100==22 then
 					local count=0
 					for i=0, Map.Monsters.High do
@@ -1775,7 +1775,7 @@ function events.BuildItemInformationBox(t)
 						end
 					end
 					local red=round(math.min(1-0.97^count,0.5)*10000)/100
-					legText=legText .. "\nCurrent Reduction: " .. red .. "%"
+					legText=legText .. "\n현재 피해 감소: " .. red .. "%"
 				end
 				t.Description = StrColor(255,255,30,legText) .. t.Description
 			end

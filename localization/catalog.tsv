@@ -1,26 +1,43 @@
 id	status	category	source	translation	placeholders	first_file	first_line	occurrences	notes
-maw-298b76148c59	untranslated	class	"
+maw-298b76148c59	translated	class	"
 
 Light Magic quickens the Seraphim's strikes, increasing attack speed.
 
 Its radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.
-"			Scripts/General/zzClasses.lua	417	1	
-maw-9de960e7f949	untranslated	class	"
+"	"
+
+빛 마법은 세라핌의 공격을 가속하여 공격 속도를 높입니다.
+
+그 빛은 칼날을 매우 가볍게 만들어 양손검도 한 손으로 사용할 수 있게 하며, 다른 손에는 방패를 들 수 있습니다.
+"		Scripts/General/zzClasses.lua	417	1	세라핌 빛 마법 설명
+maw-9de960e7f949	translated	class	"
 
 Seraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows
-"			Scripts/General/zzClasses.lua	401	1	
-maw-9fb746df06ca	untranslated	class	"
+"	"
+
+세라프의 영혼은 세라프의 결의를 강화하여 가벼운 공격은 흘려내고 강한 공격의 피해를 줄입니다.
+"		Scripts/General/zzClasses.lua	401	1	세라프 영혼 설명
+maw-9fb746df06ca	translated	class	"
 
 Seraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).
 
-"			Scripts/General/zzClasses.lua	414	1	
-maw-3a6d65ad5596	untranslated	class	"
+"	"
+
+세라핌의 공격 시 피해는 정신 마법에 따라 증가하고 힘에 비례합니다(무기 속도와 무기 피해 배율이 적용됩니다).
+
+"		Scripts/General/zzClasses.lua	414	1	세라핌 정신 마법 설명
+maw-3a6d65ad5596	translated	class	"
 
 Seraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).
 
-"			Scripts/General/zzClasses.lua	408	1	
-maw-15b04565ed76	untranslated	class	" (applied after resistances)
-"			Scripts/General/zzClasses.lua	401	1	
+"	"
+
+세라핌의 공격 시 회복량은 육체 마법에 따라 증가하고 인격에 비례합니다(무기 속도 배율이 적용됩니다).
+
+"		Scripts/General/zzClasses.lua	408	1	세라핌 육체 마법 설명
+maw-15b04565ed76	translated	class	" (applied after resistances)
+"	" (저항 적용 후 계산)
+"		Scripts/General/zzClasses.lua	401	1	세라프 피해 감소 설명 조각
 maw-2c39ec4a0977	untranslated	class	%s      %s|		%s %s	Scripts/General/zzClasses.lua	667	4	
 maw-8306811ab44f	untranslated	class	%s     %s|		%s %s	Scripts/General/zzClasses.lua	669	4	
 maw-f554a37086c3	untranslated	class	%s    %s		%s %s	Scripts/General/zzClasses.lua	673	8	
@@ -29,8 +46,8 @@ maw-b1fb3bec6fdb	untranslated	class	AC			Scripts/General/AdaptiveMonstersStats.l
 maw-1b81f28b5afb	untranslated	class	Attack			Scripts/General/zzClasses.lua	461	5	
 maw-5b4786e077ad	untranslated	class	Attack         +			Scripts/General/zzClasses.lua	828	1	
 maw-3854c81b2cf3	untranslated	class	Character %s has invalid class id: %s. Resetted to %s		%s %s %s	Scripts/General/NPCMercenaries.lua	742	1	
-maw-44f50a38ac6d	untranslated	class	Current damage from Mind: 			Scripts/General/zzClasses.lua	414	1	
-maw-8996eb86c11b	untranslated	class	Current heal from Body: 			Scripts/General/zzClasses.lua	408	1	
+maw-44f50a38ac6d	translated	class	Current damage from Mind: 	정신 마법으로 얻는 현재 피해: 		Scripts/General/zzClasses.lua	414	1	세라핌 능력치 표시
+maw-8996eb86c11b	translated	class	Current heal from Body: 	육체 마법으로 얻는 현재 회복량: 		Scripts/General/zzClasses.lua	408	1	세라핌 능력치 표시
 maw-1b1ac2652b80	untranslated	class	currentForce			Scripts/General/zzClasses.lua	866	1	
 maw-7bf6d1d3a58a	untranslated	class	Damage			Scripts/General/zzClasses.lua	462	5	
 maw-54198309009a	untranslated	class	damage			Scripts/General/zzClasses.lua	1156	9	
@@ -50,7 +67,7 @@ maw-560fe3e00686	untranslated	class	"Damage
 
 
 "			Scripts/General/zzClasses.lua	827	1	
-maw-e573ad9a62ae	untranslated	class	Damage reduction: 			Scripts/General/zzClasses.lua	401	1	
+maw-e573ad9a62ae	translated	class	Damage reduction: 	피해 감소: 		Scripts/General/zzClasses.lua	401	1	세라프 능력치 표시
 maw-08f0a732529a	untranslated	class	DamageMult			Scripts/General/zzClasses.lua	2180	22	
 maw-d1e85b725202	untranslated	class	directionX			Scripts/General/zzClasses.lua	866	1	
 maw-4c7f9ddae830	untranslated	class	directionY			Scripts/General/zzClasses.lua	866	1	
@@ -516,7 +533,7 @@ maw-f152a5fbe9dc	untranslated	map	trashheap			Scripts/Maps/BrBase.lua	443	1
 maw-2038bdec9210	untranslated	map	Up			Scripts/Maps/BrBase.lua	1016	3	
 maw-965536c6dc0d	untranslated	map	WaterResistance			Scripts/Maps/outb1.lua	51	3	
 maw-fa0ae8943c6b	translated	map	Wine Rack	와인 선반		Scripts/Maps/7d20.lua	2	1	맵 힌트
-maw-e85e950b3fd4	untranslated	misc	"	            %s%s "		%s %s	Scripts/General/zzMaw-Stats.lua	1063	6	
+maw-e85e950b3fd4	excluded	misc	"	            %s%s "		%s %s	Scripts/General/zzMaw-Stats.lua	1063	6	서식 전용 문자열; 번역 금지
 maw-ca13c639b45e	untranslated	misc	"
 
 Summary:
@@ -549,7 +566,7 @@ maw-609237732286	untranslated	misc	%%([%w_]*)%%			Scripts/Core/events.lua	125	1
 maw-a3b38a4f2af0	untranslated	misc	%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
 maw-11bdf2a7d771	untranslated	misc	%.10f		%.10f	Scripts/General/zz_Maw-initialize.lua	383	1	
 maw-5a2c485d7ed9	untranslated	misc	%1%%d		%1% %d	Scripts/General/NPCFollowers.lua	919	1	
-maw-32bdec8af86b	untranslated	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	
+maw-32bdec8af86b	excluded	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	폭 지정 숫자 서식; 번역 금지
 maw-964cbd0f1639	untranslated	misc	%code% %p%, ecx, eax		%p	Scripts/Core/events.lua	645	1	
 maw-550b8663ac2f	untranslated	misc	%code% %p%, edx, edi		%p	Scripts/Core/events.lua	643	2	
 maw-8c986ccf14ec	untranslated	misc	"%d:	reason: %s		x: %d	y: %d	z: %d"		%d %d %d %d %s	Scripts/General/pseudoSpawnpoint.lua	103	1	
@@ -742,22 +759,36 @@ maw-3fb1e21dd9e0	untranslated	misc	luadata.bin			Scripts/Core/events.lua	960	1
 maw-d68bc2d8f542	untranslated	misc	luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0			Scripts/Core/events.lua	900	1	
 maw-80006c438938	untranslated	misc	Lunar Shard			Scripts/General/zzAlchemy.lua	1369	2	
 maw-05e15f37331b	untranslated	misc	M&M6 Projectiles			Scripts/General/zz_Maw-initialize.lua	557	1	
-maw-6bb62125199b	untranslated	misc	"M/R/S:%s/%s/%s
+maw-6bb62125199b	translated	misc	"M/R/S:%s/%s/%s
 
 
 
 
 
 
-"		%s %s %s	Scripts/General/zzMaw-Stats.lua	1486	1	
-maw-6aad3f548482	untranslated	misc	"M/R:%s/%s
+"	"근/원/주:%s/%s/%s
 
 
 
 
 
 
-"		%s %s	Scripts/General/zzMaw-Stats.lua	1488	1	
+"	%s %s %s	Scripts/General/zzMaw-Stats.lua	1486	1	근접/원거리/주문 위력 요약; 자리표시자 보존
+maw-6aad3f548482	translated	misc	"M/R:%s/%s
+
+
+
+
+
+
+"	"근/원:%s/%s
+
+
+
+
+
+
+"	%s %s	Scripts/General/zzMaw-Stats.lua	1488	1	근접/원거리 위력 요약; 자리표시자 보존
 maw-b3786fc6d1db	untranslated	misc	Map differs, changing map.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	352	1	
 maw-6d1848d53de8	untranslated	misc	Map is same, requesting host data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	338	1	
 maw-8ac08679e128	untranslated	misc	Map Level: 			Scripts/General/zzMaw-Maps.lua	2068	1	
@@ -1291,10 +1322,13 @@ maw-4c7efa882c5b	untranslated	monster	Wimpy Pirate Warrior Male			Scripts/Genera
 maw-6afba0389e63	untranslated	monster	Wromthrax's Cave			Scripts/General/zzMaw-Monsters.lua	1525	2	
 maw-5e4d854d71c8	untranslated	monster	Yaardrake's Cave			Scripts/General/zzMaw-Monsters.lua	1301	2	
 maw-544a7ced425d	untranslated	monster	Zokarr's Tomb			Scripts/General/zzMaw-Monsters.lua	1378	2	
-maw-be3e57a166c1	untranslated	skill	"
+maw-be3e57a166c1	translated	skill	"
 
 Balancing power and vitality leads to the highest damage.
-"			Scripts/General/zzMAW-Skills.lua	2134	1	
+"	"
+
+위력과 활력을 균형 있게 높이면 가장 높은 피해를 낼 수 있습니다.
+"		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 설명
 maw-2b7c4fd09217	untranslated	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
@@ -1320,23 +1354,32 @@ maw-7c3efcea2530	untranslated	skill	"
 Melee Life Leech vs equal level: %s
 Next Level Bonus: %s
 (lower against higher level monsters)"		%s %s	Scripts/General/zzMAW-Skills.lua	1352	1	
-maw-0c00f6a83ef5	untranslated	skill	"
+maw-0c00f6a83ef5	translated	skill	"
 
-Press M to enable/disable"			Scripts/General/zzMAW-Skills.lua	2118	2	
-maw-04249a82123e	untranslated	skill	"
+Press M to enable/disable"	"
 
-Total Damage: "			Scripts/General/zzMAW-Skills.lua	2134	1	
+M키로 활성화/비활성화"		Scripts/General/zzMAW-Skills.lua	2118	2	기술 토글 안내
+maw-04249a82123e	translated	skill	"
+
+Total Damage: "	"
+
+총 피해: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 피해 표시
 maw-ef99b6292346	untranslated	skill	"
 ------------------------------------------------------------
             Attack| Dmg|"			Scripts/General/zzClasses.lua	800	1	
-maw-a312328e3e40	untranslated	skill	"
+maw-a312328e3e40	translated	skill	"
 Currently disabled
-"			Scripts/General/zzMAW-Skills.lua	2105	2	
-maw-06ca36b86c43	untranslated	skill	"
+"	"
+현재 비활성화됨
+"		Scripts/General/zzMAW-Skills.lua	2105	2	기술 상태 표시
+maw-06ca36b86c43	translated	skill	"
 Currently enabled
-"			Scripts/General/zzMAW-Skills.lua	2102	2	
-maw-565b2e1fded7	untranslated	skill	"
-Knights can learn up to a Supreme level, which is learned automatically at skill level "			Scripts/General/zzMAW-Skills.lua	2691	1	
+"	"
+현재 활성화됨
+"		Scripts/General/zzMAW-Skills.lua	2102	2	기술 상태 표시
+maw-565b2e1fded7	translated	skill	"
+Knights can learn up to a Supreme level, which is learned automatically at skill level "	"
+기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 "		Scripts/General/zzMAW-Skills.lua	2691	1	기사 최상위 숙련 설명 조각
 maw-0523695451dd	untranslated	skill	"
 The paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.
 "			Scripts/General/zzMAW-Skills.lua	484	1	
@@ -1368,8 +1411,9 @@ Your full Sword Attack boosts AC by X% per skill point, counting an extra +10 po
 maw-71b422eebba7	untranslated	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.
 "			Scripts/General/zzMAW-Skills.lua	488	1	
-maw-cf74ce2f43ce	untranslated	skill	"
-Vitality coefficient: "			Scripts/General/zzMAW-Skills.lua	2134	1	
+maw-cf74ce2f43ce	translated	skill	"
+Vitality coefficient: "	"
+활력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 계수
 maw-70332ae6ff69	untranslated	skill	 atk			Scripts/General/zzMAW-Skills.lua	691	1	
 maw-0180dbb97f1a	untranslated	skill	 atk, 			Scripts/General/zzMAW-Skills.lua	692	3	
 maw-7e1bd9ca7323	untranslated	skill	 dmg and 			Scripts/General/zzMAW-Skills.lua	691	1	
@@ -1403,10 +1447,13 @@ Current bonuses at skill %s:
 - Mana cost: %s
 - Cast time: %s
 "		%s %s %s %s %s %s %s %s	Scripts/General/zzMAW-Skills.lua	1386	1	
-maw-4f7c505f10c4	untranslated	skill	"%s
+maw-4f7c505f10c4	translated	skill	"%s
 
 Current HP Regeneration: %s
-Next Level Bonus: %s HP Regen"		%s %s %s	Scripts/General/zzMAW-Skills.lua	1347	1	
+Next Level Bonus: %s HP Regen"	"%s
+
+현재 생명력 재생: %s
+다음 레벨 보너스: 생명력 재생 %s"	%s %s %s	Scripts/General/zzMAW-Skills.lua	1347	1	생명력 재생 기술 설명; 자리표시자 보존
 maw-058cca31afa4	untranslated	skill	"%s
 ------------------------------------------------------------
 "		%s	Scripts/General/zzMAW-Skills.lua	499	1	
@@ -1446,13 +1493,19 @@ maw-1b684e0e7237	untranslated	skill	"After mastering the art of covering, you ha
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
 "			Scripts/General/zzMAW-Skills.lua	2540	1	
-maw-21abf3a9d1fd	untranslated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
+maw-21abf3a9d1fd	translated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
 
 Damage done depends on 2 coefficients, multiplied then by skill level:
 
-Melee Power coefficient: "			Scripts/General/zzMAW-Skills.lua	2134	1	
+Melee Power coefficient: "	"엄호의 경지에 이르러, 동료를 공격하는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.
+
+전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.
+
+피해량은 두 계수에 의해 결정되며, 이후 기술 레벨이 곱해집니다:
+
+근접 위력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 본문
 maw-bbec938dae2f	untranslated	skill	Air Magic			Scripts/General/zzClasses.lua	2166	1	
 maw-53ad7869dac0	untranslated	skill	All damage is absorbed by mana			Scripts/General/zzMAW-Skills.lua	2481	1	
 maw-f9363b18c988	untranslated	skill	"Allow use to Cover Physical damage
@@ -1518,7 +1571,7 @@ If available, Expert, Master and Grandmaster is learned at skill 8-20-30.
 Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
 
 Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2099	1	
-maw-3711ef38c87d	untranslated	skill	Current Damage reduction per Mana: 			Scripts/General/zzMAW-Skills.lua	2118	2	
+maw-3711ef38c87d	translated	skill	Current Damage reduction per Mana: 	마나당 현재 피해 감소: 		Scripts/General/zzMAW-Skills.lua	2118	2	마나 방패 수치 표시
 maw-baa7b94348d2	untranslated	skill	Current Reduction: 			Scripts/General/zzClasses.lua	1457	2	
 maw-b3ec68d9a6c8	untranslated	skill	Dark Magic			Scripts/General/zzClasses.lua	1474	1	
 maw-a8e6075e3936	untranslated	skill	Dmg%%|			Scripts/General/zzMAW-Skills.lua	542	1	
@@ -1585,18 +1638,28 @@ If available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-3
 
 Mastery increase its mana efficience.
 "			Scripts/General/zzMAW-Skills.lua	2477	1	
-maw-5006c2e9fbd4	untranslated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+maw-5006c2e9fbd4	translated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 
 Mastery increase its mana efficience.
-"			Scripts/General/zzMAW-Skills.lua	2118	1	
-maw-0979679a0c9c	untranslated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+"	"마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
+
+숙련도가 높을수록 마나 효율이 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	2118	1	마나 방패 설명 6-12-20
+maw-0979679a0c9c	translated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
 If available, Expert, Master and Grandmaster is learned at skill 8-20-32.
 
 Mastery increase its mana efficience.
-"			Scripts/General/zzMAW-Skills.lua	2120	1	
+"	"마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-32에서 습득합니다.
+
+숙련도가 높을수록 마나 효율이 증가합니다.
+"		Scripts/General/zzMAW-Skills.lua	2120	1	마나 방패 설명 8-20-32
 maw-696e3191948f	untranslated	skill	Mastery			Scripts/General/zzMAW-Skills.lua	1083	2	
 maw-7cacbad97aca	untranslated	skill	Melee attack costs 30 energy			Scripts/General/zzClasses.lua	2130	1	
 maw-1c9832330cfc	untranslated	skill	Melee attack costs 35 energy			Scripts/General/zzClasses.lua	2125	1	
@@ -1935,12 +1998,12 @@ maw-fe2775bc4c97	untranslated	spell	Water Magic Book			Scripts/General/zzMaw-Spe
 maw-9b5f2d931fc6	untranslated	status	"
 
 Realms: Detached. Time: Detached."			Scripts/Global/Quest_SavingGoobers.lua	754	1	
-maw-b339d770026a	untranslated	status	"
+maw-b339d770026a	excluded	status	"
 
 Subsequent spawn failure reasons:
-"			Scripts/General/pseudoSpawnpoint.lua	105	1	
-maw-116f9bc229a5	untranslated	status	"
-Couldn't spawn monster, spawnpoint data: "			Scripts/General/pseudoSpawnpoint.lua	105	1	
+"			Scripts/General/pseudoSpawnpoint.lua	105	1	개발자 스폰 디버그 출력
+maw-116f9bc229a5	excluded	status	"
+Couldn't spawn monster, spawnpoint data: "			Scripts/General/pseudoSpawnpoint.lua	105	1	개발자 스폰 디버그 출력
 maw-9523822c36a5	translated	status	  heals 	 → 		Scripts/General/zzMaw-Spells.lua	339	1	회복 메시지 조각; 한국어 조사 회피
 maw-83210be9c55c	untranslated	status	 completed!			Scripts/Global/zzMaw_Arena.lua	183	1	
 maw-3e76c5b3ed49	translated	status	 cover 	 → 엄호: 		Scripts/General/zzMaw-Monsters.lua	4118	1	엄호 상태 메시지 조각
@@ -2006,10 +2069,10 @@ Run-wide tracking:
 - Loading or leaving the game while that counter is red counts as a death.
 
 If Insanity wasn't enough for you, you're in the right place."			Scripts/General/zzMaw-Monsters.lua	2877	1	
-maw-6f25995360a3	untranslated	status	BossDebug AUTO: OFF			Scripts/General/zzBossSync.lua	473	1	
-maw-094e0e67a1ac	untranslated	status	BossDebug AUTO: ON			Scripts/General/zzBossSync.lua	473	1	
-maw-5ffd168dd001	untranslated	status	BossDebug: impossible d’écrire boss_dump.txt			Scripts/General/zzBossSync.lua	432	1	
-maw-1bc04bd1af97	untranslated	status	BossDebug: écrit dans boss_dump.txt			Scripts/General/zzBossSync.lua	430	1	
+maw-6f25995360a3	excluded	status	BossDebug AUTO: OFF			Scripts/General/zzBossSync.lua	473	1	개발자 보스 디버그 출력
+maw-094e0e67a1ac	excluded	status	BossDebug AUTO: ON			Scripts/General/zzBossSync.lua	473	1	개발자 보스 디버그 출력
+maw-5ffd168dd001	excluded	status	BossDebug: impossible d’écrire boss_dump.txt			Scripts/General/zzBossSync.lua	432	1	개발자 보스 디버그 출력
+maw-1bc04bd1af97	excluded	status	BossDebug: écrit dans boss_dump.txt			Scripts/General/zzBossSync.lua	430	1	개발자 보스 디버그 출력
 maw-08d8579a590d	translated	status	Bow Disabled	활 사용 비활성화		Scripts/General/zz_Maw-initialize.lua	637	1	전투 설정 상태 메시지
 maw-457e05b1ffa0	translated	status	Bow Enabled	활 사용 활성화		Scripts/General/zz_Maw-initialize.lua	639	1	전투 설정 상태 메시지
 maw-f937820aa844	translated	status	Buff Disabled	버프 비활성화		Scripts/General/zzMaw-Spells.lua	2672	1	주문 상태 메시지
@@ -2068,8 +2131,8 @@ maw-c06b7acce5c9	translated	status	Mana Shield Disabled	마나 방패 비활성�
 maw-d87f6d5567eb	translated	status	Mana Shield Enabled	마나 방패 활성화		Scripts/General/zzMAW-Skills.lua	2159	1	전투 기술 상태 메시지
 maw-639c559b2e18	translated	status	Map Completed! You gain 	맵 완료! 획득: 		Scripts/General/zzMaw-Monsters.lua	2852	2	맵 완료 보상 메시지 조각
 maw-2d1fa6efda07	translated	status	Map data reset, press Y to continue...	맵 데이터 초기화 완료. 계속하려면 Y를 누르세요...		Scripts/General/zzMaw-Stats.lua	24	1	맵 데이터 상태 메시지
-maw-3d8dbae5a9ee	untranslated	status	MAW: ALL BUFFS NUKED (SAFE)			Scripts/General/zzMaw-Multiplayer.lua	785	1	
-maw-34e4d3ab9c7a	untranslated	status	MAW: apply (safe)			Scripts/General/zzMaw-Multiplayer.lua	107	1	
+maw-3d8dbae5a9ee	excluded	status	MAW: ALL BUFFS NUKED (SAFE)			Scripts/General/zzMaw-Multiplayer.lua	785	1	개발자 멀티플레이 디버그 출력
+maw-34e4d3ab9c7a	excluded	status	MAW: apply (safe)			Scripts/General/zzMaw-Multiplayer.lua	107	1	개발자 멀티플레이 디버그 출력
 maw-fb1baba5c72f	translated	status	Monsters are weakened and can no longer resurrect	몬스터들이 약화되어 더 이상 부활할 수 없습니다		Scripts/General/zzMaw-Monsters.lua	2864	2	던전 상태 메시지
 maw-ae62e5fb7ddc	translated	status	Monsters swarming...	몬스터들이 몰려옵니다...		Scripts/Maps/7d24.lua	6	1	맵 이벤트 메시지
 maw-46fae59804bb	translated	status	No alchemy preference when sorting	정렬 시 연금술 우선 대상 없음		Scripts/General/zzMaw-Item-Sorter.lua	51	1	인벤토리 정렬 설정
@@ -2099,7 +2162,7 @@ maw-f2a00fb671f3	translated	status	Repaired	수리 완료		Scripts/General/zzMAW
 maw-0b2eee706f6a	translated	status	Resistance Ignored	저항 무시		Scripts/Global/zzMaw_Mapping.lua	42	1	전투 상태 메시지
 maw-07df90117f8e	untranslated	status	Seraphim aren't able to dual wield			Scripts/General/zzClasses.lua	366	1	
 maw-25b8069f8448	translated	status	Shared Life heals for 	생명 공유 회복량: 		Scripts/General/zzMaw-Spells.lua	820	2	회복 메시지 조각
-maw-b6e05bcb545c	untranslated	status	SUPREME UNLOCKED!!!			Scripts/General/zzMAW-Skills.lua	2725	1	
+maw-b6e05bcb545c	translated	status	SUPREME UNLOCKED!!!	최상위 숙련 해금!!!		Scripts/General/zzMAW-Skills.lua	2725	1	최상위 숙련 해금 메시지
 maw-7694fdee9a86	translated	status	Teleported 	순간이동: 		Scripts/General/zzMaw-Monsters.lua	4590	3	순간이동 상태 메시지 조각
 maw-028bcab4ba45	translated	status	The night is dark and full of terrors	밤은 어둡고 공포로 가득하다		Scripts/Maps/7out05.lua	26	1	맵 이벤트 메시지
 maw-43064c742ef5	translated	status	This potion has not enough power	이 물약의 위력이 부족합니다		Scripts/General/zzAlchemy.lua	103	5	물약 상태 메시지
@@ -3586,16 +3649,21 @@ maw-714cca80cbf4	translated	tooltip	"Vampiric Aura: damage done will restore pla
 
 "		Scripts/General/zzMaw-Items.lua	4708	1	아이템 툴팁
 maw-3571fcf17456	translated	tooltip	Vitality: 	활력: 		Scripts/General/zzMaw-Items.lua	2762	2	아이템 툴팁
-maw-24277300a2da	untranslated	ui	"
+maw-24277300a2da	translated	ui	"
 
-Bolster Level in MM6: "			Scripts/General/zzMaw-Stats.lua	551	2	
+Bolster Level in MM6: "	"
+
+MM6 보정 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	보정 레벨 UI
 maw-da710b5766cb	untranslated	ui	"
 
 Current Health: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
-maw-dffb7b290206	untranslated	ui	"
+maw-dffb7b290206	translated	ui	"
 
 CURRENT MAP HEALING RECOUNT:
-Healing Done in current Map:  "			Scripts/General/zzMaw-Stats.lua	711	1	
+Healing Done in current Map:  "	"
+
+현재 맵 회복 집계:
+현재 맵 총 회복량:  "		Scripts/General/zzMaw-Stats.lua	711	1	현재 맵 회복 통계
 maw-ffd5f3ba3017	untranslated	ui	"
 
 Damage is reduced by an amount equal to % shown.
@@ -3606,55 +3674,75 @@ Energy resistance is equal to the lowest resistance."			Scripts/General/zzMaw-St
 maw-5470a2089a61	untranslated	ui	"
 
 Experience: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
-maw-102d01da1368	untranslated	ui	"
+maw-102d01da1368	translated	ui	"
 
-Levels gained in MM6: "			Scripts/General/zzMaw-Stats.lua	551	2	
+Levels gained in MM6: "	"
+
+MM6에서 획득한 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	대륙별 획득 레벨 UI
 maw-f0d7637e44ac	untranslated	ui	"
 
 Map percentage, Heal/Regen/Leech/Total:"			Scripts/General/zzMaw-Stats.lua	714	1	
 maw-825d4b45d1fb	untranslated	ui	"
 
 Only healing done when monsters are in the nearbies is counted"			Scripts/General/zzMaw-Stats.lua	645	2	
-maw-14c5f3eda891	untranslated	ui	"
+maw-14c5f3eda891	translated	ui	"
 
-Total average damage reduction: "			Scripts/General/zzMaw-Stats.lua	513	1	
-maw-c5a5ec0e4ce7	untranslated	ui	"
+Total average damage reduction: "	"
+
+평균 총 피해 감소: "		Scripts/General/zzMaw-Stats.lua	513	1	방어 통계 UI
+maw-c5a5ec0e4ce7	translated	ui	"
 
 TOTAL HEALING RECOUNT:
-Total Healing Done:  "			Scripts/General/zzMaw-Stats.lua	616	1	
-maw-18ba3028ddc5	untranslated	ui	"
+Total Healing Done:  "	"
 
-Total Levels gained: "			Scripts/General/zzMaw-Stats.lua	551	2	
+전체 회복 집계:
+총 회복량:  "		Scripts/General/zzMaw-Stats.lua	616	1	전체 회복 통계
+maw-18ba3028ddc5	translated	ui	"
+
+Total Levels gained: "	"
+
+총 획득 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	전체 획득 레벨 UI
 maw-91fba341a797	untranslated	ui	"
 
 Total percentage, Heal/Regen/Leech/Total:"			Scripts/General/zzMaw-Stats.lua	619	1	
-maw-72b5003a7225	untranslated	ui	"
-Block chance vs same level monsters: "			Scripts/General/zzMaw-Stats.lua	513	1	
-maw-d450b8471b22	untranslated	ui	"
-Bolster Level in MM7: "			Scripts/General/zzMaw-Stats.lua	551	2	
-maw-bef0553fbc78	untranslated	ui	"
-Bolster Level in MM8: "			Scripts/General/zzMaw-Stats.lua	551	2	
-maw-352bd8322f86	untranslated	ui	"
-Current bonus Damage: "			Scripts/General/zzMaw-Items.lua	1766	1	
-maw-55b9c8308036	untranslated	ui	"
-Current Reduction: "			Scripts/General/zzMaw-Items.lua	1778	1	
-maw-119249e67392	untranslated	ui	"
-Leech Healing in current Map: "			Scripts/General/zzMaw-Stats.lua	711	1	
-maw-611af434a73e	untranslated	ui	"
-Levels gained in MM7: "			Scripts/General/zzMaw-Stats.lua	551	2	
-maw-c866d5d38a10	untranslated	ui	"
-Levels gained in MM8: "			Scripts/General/zzMaw-Stats.lua	551	2	
-maw-2d35a4cd25b0	untranslated	ui	"
-Regen Healing in current Map: "			Scripts/General/zzMaw-Stats.lua	711	1	
-maw-e5823bc1bea5	untranslated	ui	"
-Total Leech Healing: "			Scripts/General/zzMaw-Stats.lua	616	1	
-maw-6f85da9c7900	untranslated	ui	"
-Total Regen Healing: "			Scripts/General/zzMaw-Stats.lua	616	1	
+maw-72b5003a7225	translated	ui	"
+Block chance vs same level monsters: "	"
+동레벨 몬스터 상대 막기 확률: "		Scripts/General/zzMaw-Stats.lua	513	1	방어 통계 UI
+maw-d450b8471b22	translated	ui	"
+Bolster Level in MM7: "	"
+MM7 보정 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	보정 레벨 UI
+maw-bef0553fbc78	translated	ui	"
+Bolster Level in MM8: "	"
+MM8 보정 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	보정 레벨 UI
+maw-352bd8322f86	translated	ui	"
+Current bonus Damage: "	"
+현재 추가 피해: "		Scripts/General/zzMaw-Items.lua	1766	1	전설 효과 UI
+maw-55b9c8308036	translated	ui	"
+Current Reduction: "	"
+현재 피해 감소: "		Scripts/General/zzMaw-Items.lua	1778	1	전설 효과 UI
+maw-119249e67392	translated	ui	"
+Leech Healing in current Map: "	"
+현재 맵 흡혈 회복량: "		Scripts/General/zzMaw-Stats.lua	711	1	현재 맵 회복 통계
+maw-611af434a73e	translated	ui	"
+Levels gained in MM7: "	"
+MM7에서 획득한 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	대륙별 획득 레벨 UI
+maw-c866d5d38a10	translated	ui	"
+Levels gained in MM8: "	"
+MM8에서 획득한 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	대륙별 획득 레벨 UI
+maw-2d35a4cd25b0	translated	ui	"
+Regen Healing in current Map: "	"
+현재 맵 재생 회복량: "		Scripts/General/zzMaw-Stats.lua	711	1	현재 맵 회복 통계
+maw-e5823bc1bea5	translated	ui	"
+Total Leech Healing: "	"
+총 흡혈 회복량: "		Scripts/General/zzMaw-Stats.lua	616	1	전체 회복 통계
+maw-6f85da9c7900	translated	ui	"
+Total Regen Healing: "	"
+총 재생 회복량: "		Scripts/General/zzMaw-Stats.lua	616	1	전체 회복 통계
 maw-535723c71930	untranslated	ui	" , [""High""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-6945c3d240dc	untranslated	ui	" , [""Mid""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-56a33f886a5c	translated	ui	 Austerity	 절제		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
 maw-880efb921b0e	translated	ui	 General settings	 일반 설정		Scripts/General/MenuExtraSettings.lua	159	1	추가 설정 화면 제목
-maw-b15869c959e3	untranslated	ui	 Randomizer			Scripts/General/zzzzMalekith-Randomizer.lua	395	1	
+maw-b15869c959e3	translated	ui	 Randomizer	 무작위화		Scripts/General/zzzzMalekith-Randomizer.lua	395	1	무작위화 UI 제목
 maw-7b618f6314b4	untranslated	ui	"""] = 
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-ef6a39857a0b	untranslated	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	
@@ -3671,21 +3759,33 @@ maw-cef9507fa03a	untranslated	ui	"%s
 Bonus magic damage: %s%s
 
 Critical spell strike damage: %s%s"		%s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	390	1	
-maw-80043588deba	untranslated	ui	"%s
+maw-80043588deba	translated	ui	"%s
 
 CURRENT MAP DAMAGE RECOUNT
-Melee Damage done in current map: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	670	1	
-maw-95f8f220ac97	untranslated	ui	"%s
+Melee Damage done in current map: %s"	"%s
 
-Hit chance vs same level monster: %s%s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	561	2	
-maw-d2800d019ccf	untranslated	ui	"%s
+현재 맵 피해 집계
+현재 맵 근접 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	670	1	현재 맵 피해 통계; 자리표시자 보존
+maw-95f8f220ac97	translated	ui	"%s
+
+Hit chance vs same level monster: %s%s"	"%s
+
+동레벨 몬스터 상대 명중 확률: %s%s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	561	2	명중 통계; 자리표시자 보존
+maw-d2800d019ccf	translated	ui	"%s
 
 HP bonus from Endurance: %s
 HP bonus from Body building: %s
 HP bonus from items: %s
 Base HP: %s
 
- HP Regen per second: %s"		%s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	463	1	
+ HP Regen per second: %s"	"%s
+
+인내력 생명력 보너스: %s
+보디빌딩 생명력 보너스: %s
+아이템 생명력 보너스: %s
+기본 생명력: %s
+
+초당 생명력 재생: %s"	%s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	463	1	생명력 상세 통계; 자리표시자 보존
 maw-8c47c7bb76f8	untranslated	ui	"%s
 
 Map percentage, Melee/Ranged/Total:"		%s	Scripts/General/zzMaw-Stats.lua	674	1	
@@ -3694,16 +3794,23 @@ maw-00c3d1164018	untranslated	ui	"%s
 Melee Haste:   %s%%
 Ranged Haste: %s%%
 Spell Haste:   %s%%"		%s %s %s %s	Scripts/General/zzMaw-Stats.lua	439	1	
-maw-6d377eadc40b	untranslated	ui	"%s
+maw-6d377eadc40b	translated	ui	"%s
 
-Physical damage reduction: %s%s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	513	1	
-maw-e8813fa549d8	untranslated	ui	"%s
+Physical damage reduction: %s%s"	"%s
 
-Spell point regen per second: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	498	1	
-maw-4e49e505021d	untranslated	ui	"%s
+물리 피해 감소: %s%s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	513	1	방어 통계; 자리표시자 보존
+maw-e8813fa549d8	translated	ui	"%s
+
+Spell point regen per second: %s"	"%s
+
+초당 주문력 재생: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	498	1	주문력 재생 통계; 자리표시자 보존
+maw-4e49e505021d	translated	ui	"%s
 
 TOTAL DAMAGE RECOUNT
-Total Damage done: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	576	1	
+Total Damage done: %s"	"%s
+
+전체 피해 집계
+총 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	576	1	전체 피해 통계; 자리표시자 보존
 maw-fc7f9bde95de	untranslated	ui	"%s
 
 Total percentage, Melee/Ranged/Total:"		%s	Scripts/General/zzMaw-Stats.lua	580	1	
@@ -3713,10 +3820,12 @@ maw-9580d7f60deb	untranslated	ui	"%s
  %s	 %29s	%32s %s	%37s %s	%42s %s	%47s"		%29s %32s %37s %42s %47s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	638	2	
 maw-5a004da80629	untranslated	ui	"%s
 %s"		%s %s	Scripts/General/zzMaw-Stats.lua	523	1	
-maw-481765007a9a	untranslated	ui	"%s
-Ranged Damage done in current map: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	672	1	
-maw-d093cb076c31	untranslated	ui	"%s
-Total Ranged Damage done: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	578	1	
+maw-481765007a9a	translated	ui	"%s
+Ranged Damage done in current map: %s"	"%s
+현재 맵 원거리 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	672	1	현재 맵 피해 통계; 자리표시자 보존
+maw-d093cb076c31	translated	ui	"%s
+Total Ranged Damage done: %s"	"%s
+총 원거리 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	578	1	전체 피해 통계; 자리표시자 보존
 maw-66934fbcd7ba	untranslated	ui	446561746820436f756e743a20			Scripts/General/zzMaw-Monsters.lua	2617	1	
 maw-959b2aad9b04	untranslated	ui	\f00000			Scripts/Structs/extraEditableDescriptions.lua	59	1	
 maw-3cfb15d89074	translated	ui	"Beyond
@@ -3727,15 +3836,17 @@ maw-8f7f6a656b06	untranslated	ui	BolsterFineTuning			Scripts/General/AdaptiveMon
 maw-48647474b89f	untranslated	ui	boolean			Scripts/General/MenuExtraSettings.lua	135	1	
 maw-4b7a83f3be55	untranslated	ui	Bounty			Scripts/General/BountyHunt.lua	225	1	
 maw-f309b2d045c6	untranslated	ui	"Cold\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2168	1	
-maw-277dc4259f09	untranslated	ui	Debuffs:			Scripts/General/zzMaw-Monsters.lua	2228	1	
-maw-f4f4473df8cb	untranslated	ui	Disabled			Scripts/General/zzClasses.lua	1789	1	
+maw-277dc4259f09	translated	ui	Debuffs:	디버프:		Scripts/General/zzMaw-Monsters.lua	2228	1	몬스터 상태 UI
+maw-f4f4473df8cb	translated	ui	Disabled	비활성화		Scripts/General/zzClasses.lua	1789	1	원소술사 로테이션 상태
 maw-b3e6719cf85f	translated	ui	Doom	파멸		Scripts/General/MenuExtraSettings.lua	238	3	게임 모드/난이도
 maw-00f03137e155	translated	ui	Easy	쉬움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
 maw-af131275db13	untranslated	ui	"Elec\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2167	1	
-maw-31bb56cf899a	untranslated	ui	"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
+maw-31bb56cf899a	translated	ui	"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
 Press R to enable/disable random rotation.
-Currently "			Scripts/General/zzClasses.lua	1791	1	
-maw-df174a3f2faa	untranslated	ui	Enabled			Scripts/General/zzClasses.lua	1787	1	
+Currently "	"원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.
+R키로 무작위 로테이션을 활성화/비활성화합니다.
+현재 "		Scripts/General/zzClasses.lua	1791	1	원소술사 로테이션 설명
+maw-df174a3f2faa	translated	ui	Enabled	활성화		Scripts/General/zzClasses.lua	1787	1	원소술사 로테이션 상태
 maw-92565cb20676	untranslated	ui	ExitExtraSettingsMenu			Scripts/General/MenuExtraSettings.lua	48	1	
 maw-57a2fc6d337a	untranslated	ui	ExSetScr			Scripts/General/MenuExtraSettings.lua	159	1	
 maw-dca8036a46ed	untranslated	ui	ExSetScr2			Scripts/General/AdaptiveMonstersStats.lua	434	1	
@@ -3746,13 +3857,14 @@ maw-5370d182f7f5	untranslated	ui	FrameLimit			Scripts/General/MenuExtraSettings.
 maw-71b5b9cfb683	untranslated	ui	freeProgression			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-20a89915f18c	translated	ui	Hard	어려움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
 maw-ed10fe113de1	translated	ui	Hell	지옥		Scripts/General/MenuExtraSettings.lua	308	2	난이도
-maw-0696da5d27aa	untranslated	ui	If you seek to pursuit a new path and reset your skills, you have come to the right place.			Scripts/Global/zzMAWRespec.lua	7	1	
+maw-0696da5d27aa	translated	ui	If you seek to pursuit a new path and reset your skills, you have come to the right place.	새로운 길을 택해 기술을 초기화하려 한다면 제대로 찾아오셨습니다.		Scripts/Global/zzMAWRespec.lua	7	1	기술 초기화 UI 안내
 maw-74e5aeffbd58	untranslated	ui	ImprovedPathfinding			Scripts/General/MenuExtraSettings.lua	162	1	
-maw-a3076a891f59	untranslated	ui	"Intellect represents a character's ability to reason and understand complex, abstract concepts.
-Spell Damage and Spell Critical Damage are based on Intellect."			Scripts/General/zzMaw-Stats.lua	389	1	
+maw-a3076a891f59	translated	ui	"Intellect represents a character's ability to reason and understand complex, abstract concepts.
+Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.
+주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."		Scripts/General/zzMaw-Stats.lua	389	1	지능 능력치 설명
 maw-158b1f99e07b	untranslated	ui	Level:          			Scripts/General/zzMaw-Monsters.lua	2091	1	
 maw-3e7d000abd3c	untranslated	ui	"Magic\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2172	1	
-maw-5a70527da19c	untranslated	ui	MAW			Scripts/General/MenuExtraSettings.lua	308	1	
+maw-5a70527da19c	excluded	ui	MAW			Scripts/General/MenuExtraSettings.lua	308	1	모드 고유명사; 번역하지 않음
 maw-cab34b294f08	untranslated	ui	MAW SETTINGS			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-33b934efaa4c	untranslated	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	
 maw-37342e60033c	untranslated	ui	MergeExtraSettings			Scripts/General/MenuExtraSettings.lua	159	1	
@@ -3761,15 +3873,15 @@ maw-5f618a2f7c06	translated	ui	"Night
 mare"	악몽		Scripts/General/MenuExtraSettings.lua	308	2	난이도
 maw-9ff6d323cc79	translated	ui	Norm.	보통		Scripts/General/MenuExtraSettings.lua	308	1	난이도 축약 표시
 maw-af0b5531fd66	untranslated	ui	OpenExtraSettingsMenu			Scripts/General/MenuExtraSettings.lua	226	1	
-maw-41dcd0d7840d	untranslated	ui	Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.			Scripts/General/zzMaw-Stats.lua	400	1	
+maw-41dcd0d7840d	translated	ui	Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.	인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다.		Scripts/General/zzMaw-Stats.lua	400	1	인격 능력치 설명
 maw-46c13ceaddd4	untranslated	ui	"Poison\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2169	1	
 maw-424308c3b136	translated	ui	"Road to
 insanity"	"광기로 가는
 길"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
-maw-2ebaecd53665	untranslated	ui	Show players location			Scripts/Modules/Multiplayer/UI/GlobalMap.lua	111	1	
+maw-2ebaecd53665	translated	ui	Show players location	플레이어 위치 표시		Scripts/Modules/Multiplayer/UI/GlobalMap.lua	111	1	멀티플레이 지도 UI
 maw-37a99c3360fb	untranslated	ui	ShowWeatherEffects			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-ca30c9d5d37a	untranslated	ui	TmblrOff			Scripts/General/MenuExtraSettings.lua	69	3	
 maw-eabb173bfed6	untranslated	ui	TmblrOn			Scripts/General/MenuExtraSettings.lua	62	4	
 maw-0c4709ec8d42	untranslated	ui	UseMonsterBolster			Scripts/General/MenuExtraSettings.lua	162	1	
-maw-07725f68015e	untranslated	ui	Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!			Scripts/Global/zzMaw_Arena.lua	4	1	
-maw-e2f9c26b7cd1	untranslated	ui	You need to clear the area COMPLETELY first.			Scripts/General/BountyHunt.lua	190	1	
+maw-07725f68015e	translated	ui	Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!	전사들이여, 투기장에 온 것을 환영합니다! 기억하던 모습과는 다를 수 있습니다. 각오를 다지고 기술을 연마해 눈앞의 도전에 대비하십시오. 힘과 전략, 의지를 증명할 준비를 하십시오. 전투가 기다립니다!		Scripts/Global/zzMaw_Arena.lua	4	1	MAW 투기장 안내
+maw-e2f9c26b7cd1	translated	ui	You need to clear the area COMPLETELY first.	먼저 이 지역을 완전히 정리해야 합니다.		Scripts/General/BountyHunt.lua	190	1	현상금 사냥 진행 안내

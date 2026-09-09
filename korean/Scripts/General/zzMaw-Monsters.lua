@@ -2220,7 +2220,7 @@ function events.BuildMonsterInformationBox(t)
 			end
 		end
 		if activeDebuffs ~= "" then
-			t.EffectsHeader.Text = t.EffectsHeader.Text .. "\n\n" .. StrColor(255,200,0, "Debuffs:" .. activeDebuffs)
+			t.EffectsHeader.Text = t.EffectsHeader.Text .. "\n\n" .. StrColor(255,200,0, "디버프:" .. activeDebuffs)
 		end
 	end
 end

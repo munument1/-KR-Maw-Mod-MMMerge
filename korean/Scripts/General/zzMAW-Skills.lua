@@ -1344,7 +1344,7 @@ function events.Tick()
 		local regenEffect={[0]=0,2,4,6,6}
 		local hpRegen = round(FHP^0.5*s^1.65*((regenEffect[m])/35))/10+s
 		local hpRegen2 = round(FHP^0.5*(s+1)^1.65*((regenEffect[m])/35))/10+(s+1)
-		local txt = string.format("%s\n\nCurrent HP Regeneration: %s\nNext Level Bonus: %s HP Regen",baseRegStr,StrColor(0,255,0,hpRegen),StrColor(0,255,0,"+" .. hpRegen2-hpRegen))
+		local txt = string.format("%s\n\n현재 생명력 재생: %s\n다음 레벨 보너스: 생명력 재생 %s",baseRegStr,StrColor(0,255,0,hpRegen),StrColor(0,255,0,"+" .. hpRegen2-hpRegen))
 		--dragon melee leech, shown only for dragons
 		local leech=getDragonRegenLeech(pl)
 		if leech>0 then
@@ -2099,10 +2099,10 @@ function events.Tick()
 			txt="Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: " .. chance .. "%\n\nPress P to enable/disable\n"
 		end
 		if vars.covering[index] then
-			txt=txt .. StrColor(0,255,0,"\nCurrently enabled\n")
+			txt=txt .. StrColor(0,255,0,"\n현재 활성화됨\n")
 			Skillz.setDesc(50, 1, txt)
 		else
-			txt=txt .. StrColor(255,0,0,"\nCurrently disabled\n")
+			txt=txt .. StrColor(255,0,0,"\n현재 비활성화됨\n")
 			Skillz.setDesc(50, 1, txt)
 		end
 		
@@ -2115,15 +2115,15 @@ function events.Tick()
 		end
 		local s, m= SplitSkill(Skillz.get(pl, 51))
 		local efficiency=round(manaShieldManaEfficiency(false, s)*100)/100
-		local txt="Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n" .. "Current Damage reduction per Mana: " .. StrColor(178,255,255, efficiency) .. "\n\nPress M to enable/disable"
+		local txt="마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.\n\n숙련도가 높을수록 마나 효율이 증가합니다.\n" .. "마나당 현재 피해 감소: " .. StrColor(178,255,255, efficiency) .. "\n\nM키로 활성화/비활성화"
 		if vars.insanityMode then
-			txt="Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-32.\n\nMastery increase its mana efficience.\n" .. "Current Damage reduction per Mana: " .. StrColor(178,255,255, efficiency) .. "\n\nPress M to enable/disable"
+			txt="마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-32에서 습득합니다.\n\n숙련도가 높을수록 마나 효율이 증가합니다.\n" .. "마나당 현재 피해 감소: " .. StrColor(178,255,255, efficiency) .. "\n\nM키로 활성화/비활성화"
 		end
 		if vars.manaShield[index] then
-			txt=txt .. StrColor(0,255,0,"\nCurrently enabled\n")
+			txt=txt .. StrColor(0,255,0,"\n현재 활성화됨\n")
 			Skillz.setDesc(51, 1, txt)
 		else
-			txt=txt .. StrColor(255,0,0,"\nCurrently disabled\n")
+			txt=txt .. StrColor(255,0,0,"\n현재 비활성화됨\n")
 			Skillz.setDesc(51, 1, txt)
 		end
 		
@@ -2131,7 +2131,7 @@ function events.Tick()
 		local vit=round(vitMult^0.35)
 		local power=round(powerMult^0.35)
 		local retS, m= SplitSkill(Skillz.get(pl, 53))
-		Skillz.setDesc(53, 1, "After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: " .. StrColor(255,0,0, power) .. "\nVitality coefficient: " .. StrColor(255,0,0, vit) .. "\n\nTotal Damage: " .. StrColor(255,0,0, retS*vit*power) .. "\n\nBalancing power and vitality leads to the highest damage.\n")
+		Skillz.setDesc(53, 1, "엄호의 경지에 이르러, 동료를 공격하는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.\n\n전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.\n\n피해량은 두 계수에 의해 결정되며, 이후 기술 레벨이 곱해집니다:\n\n근접 위력 계수: " .. StrColor(255,0,0, power) .. "\n활력 계수: " .. StrColor(255,0,0, vit) .. "\n\n총 피해: " .. StrColor(255,0,0, retS*vit*power) .. "\n\n위력과 활력을 균형 있게 높이면 가장 높은 피해를 낼 수 있습니다.\n")
 		
 	end
 end
@@ -2688,7 +2688,7 @@ function events.LoadMap()
 	end
 	local descTxt=armsmasterDesc
 	local requirement=GetArmsmasterSupremeRequirement()
-	local descTxt=descTxt .. "\nKnights can learn up to a Supreme level, which is learned automatically at skill level " .. requirement .. ".\n"
+	local descTxt=descTxt .. "\n기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 " .. requirement .. ".\n"
 	Skillz.setDesc(35,1,descTxt)
 	local txt="Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"
 	Skillz.setDesc(35,6,txt)
@@ -2722,7 +2722,7 @@ function events.Action(t)
 			
 			local s,m=SplitSkill(pl.Skills[35])
 			if pl.SkillPoints>s and s+1==requirement then
-				Game.ShowStatusText("SUPREME UNLOCKED!!!")
+				Game.ShowStatusText("최상위 숙련 해금!!!")
 				evt[id].Add("HP", 0) --graphic
 			end
 		end

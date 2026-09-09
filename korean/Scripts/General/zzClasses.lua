@@ -398,23 +398,23 @@ local function seraphSkills(isSeraph, id)
 		
 		local _,_,_,avgRed=getPlayerEstimatedVitality(lvl+1)
 		local spiritReduction=round(getMonsterDamage(false,(lvl+1))*(spiritS/lvl^0.65)/avgRed/2*0.99^(lvl^0.65)) --on average 1/2 of a B monster
-		local txt = baseSchoolsTxtSERAPH[16] .. "\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n" .. "Damage reduction: " .. StrColor(0,255,0,spiritReduction) .. " (applied after resistances)\n"
+		local txt = baseSchoolsTxtSERAPH[16] .. "\n\n세라프의 영혼은 세라프의 결의를 강화하여 가벼운 공격은 흘려내고 강한 공격의 피해를 줄입니다.\n" .. "피해 감소: " .. StrColor(0,255,0,spiritReduction) .. " (저항 적용 후 계산)\n"
 		Skillz.setDesc(16,1,txt)
 		
 		local bodyHeal=0
 		if damageMultiplier[pl:GetIndex()] then
 			bodyHeal=round(bodyS^1.3*bodyM*damageMultiplier[pl:GetIndex()]["Melee"]*healMult*2)
 		end
-		local txt=baseSchoolsTxtSERAPH[18] .. "\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n" .. "Current heal from Body: " .. StrColor(0,255,0,bodyHeal) .. "\n"
+		local txt=baseSchoolsTxtSERAPH[18] .. "\n\n세라핌의 공격 시 회복량은 육체 마법에 따라 증가하고 인격에 비례합니다(무기 속도 배율이 적용됩니다).\n\n" .. "육체 마법으로 얻는 현재 회복량: " .. StrColor(0,255,0,bodyHeal) .. "\n"
 		Skillz.setDesc(18,1,txt)
 		
 		--damage tooltip
 		local mindDMG=mindS*mindM
 		local lightDMG=lightS*lightM
-		local txt=baseSchoolsTxtSERAPH[17] .. "\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n" .. "Current damage from Mind: " .. StrColor(255,0,0,mindDMG) .. "\n"
+		local txt=baseSchoolsTxtSERAPH[17] .. "\n\n세라핌의 공격 시 피해는 정신 마법에 따라 증가하고 힘에 비례합니다(무기 속도와 무기 피해 배율이 적용됩니다).\n\n" .. "정신 마법으로 얻는 현재 피해: " .. StrColor(255,0,0,mindDMG) .. "\n"
 		Skillz.setDesc(17,1,txt)
 		local txt = baseSchoolsTxtSERAPH[19]
-		.. StrColor(255,255,30,"\n\nLight Magic quickens the Seraphim's strikes, increasing attack speed.\n\nIts radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.\n")
+		.. StrColor(255,255,30,"\n\n빛 마법은 세라핌의 공격을 가속하여 공격 속도를 높입니다.\n\n그 빛은 칼날을 매우 가볍게 만들어 양손검도 한 손으로 사용할 수 있게 하며, 다른 손에는 방패를 들 수 있습니다.\n")
 		Skillz.setDesc(19,1,txt)
 		
 		--tooltips
@@ -1784,11 +1784,11 @@ local function elementalistSkills(isElementalist, id)
 		end
 	
 		local list = vars.elementalistSpells[pl:GetIndex()]
-		local enableDisableText = StrColor(0,255,0, "Enabled")
+		local enableDisableText = StrColor(0,255,0, "활성화")
 		if vars.disableRotation and vars.disableRotation[pl:GetIndex()] then
-			enableDisableText = StrColor(255,0,0, "Disabled")
+			enableDisableText = StrColor(255,0,0, "비활성화")
 		end
-		local rotationText = StrColor(0,0,0,"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently ") .. enableDisableText .. "\n\n"
+		local rotationText = StrColor(0,0,0,"원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.\nR키로 무작위 로테이션을 활성화/비활성화합니다.\n현재 ") .. enableDisableText .. "\n\n"
 		for i=12,15 do
 			local progression=list[i]
 			local currentTier=0

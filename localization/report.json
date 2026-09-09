@@ -7,8 +7,9 @@
   "patchable_unique_sources": 308,
   "unpatchable_occurrences": 5805,
   "status": {
-    "translated": 240,
-    "untranslated": 2785
+    "excluded": 11,
+    "translated": 299,
+    "untranslated": 2715
   },
   "categories": {
     "class": 37,

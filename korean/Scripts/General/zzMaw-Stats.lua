@@ -386,7 +386,7 @@ function events.BuildStatInformationBox(t)
 		i=Game.CurrentPlayer
 		intellect=Party[i]:GetIntellect()
 		_,critDmg=getCritInfo(Party[i],"spell")
-		local baseText="Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."
+		local baseText="지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.\n주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."
 		t.Text=string.format("%s\n\nBonus magic damage: %s%s\n\nCritical spell strike damage: %s%s",baseText,intellect/10,"%",critDmg*100-100,"%")
 	end
 	if t.Stat==2 then
@@ -397,7 +397,7 @@ function events.BuildStatInformationBox(t)
 		local level = Party[i].LevelBase
 		local spellCostReduction = round((1-getPersonalityManaCostReduction(Party[i]))*1000)/10
 		local healingBonus = round(personality/math.min(1000+level*3, 4000)*1000)/10
-		local baseText="Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality."
+		local baseText="인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다."
 		t.Text=string.format("%s\n\nBonus healing: %s%s\n\nSpell cost reduction: %s%s\n\nIncrease the mana by 2 levels worth of mana per 5 personality",baseText,healingBonus,"%",spellCostReduction,"%")
 	end
 	if t.Stat==3 then
@@ -460,7 +460,7 @@ function events.BuildStatInformationBox(t)
 		
 		hpMap=hpStatsMap[i]
 		
-		t.Text=string.format("%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s",t.Text,StrColor(0,255,0,hpMap.totalEnduranceBonus), StrColor(0,255,0,hpMap.totalBBBonus),StrColor(0,255,0,round(hpMap.totalhpFromItems)),StrColor(0,255,0,hpMap.totalBaseHP),StrColor(0,255,0,regen))
+		t.Text=string.format("%s\n\n인내력 생명력 보너스: %s\n보디빌딩 생명력 보너스: %s\n아이템 생명력 보너스: %s\n기본 생명력: %s\n\n초당 생명력 재생: %s",t.Text,StrColor(0,255,0,hpMap.totalEnduranceBonus), StrColor(0,255,0,hpMap.totalBBBonus),StrColor(0,255,0,round(hpMap.totalhpFromItems)),StrColor(0,255,0,hpMap.totalBaseHP),StrColor(0,255,0,regen))
 	end
 	if t.Stat==8 then
 		local i=Game.CurrentPlayer
@@ -495,7 +495,7 @@ function events.BuildStatInformationBox(t)
 			end
 		end
 		regen=math.ceil(Party[i]:GetFullSP()*SPregenItem*0.01)+medRegen+bonusregen
-		t.Text=string.format("%s\n\nSpell point regen per second: %s",t.Text,StrColor(40,100,255,regen/10))
+		t.Text=string.format("%s\n\n초당 주문력 재생: %s",t.Text,StrColor(40,100,255,regen/10))
 	end
 	
 	if t.Stat==9 then
@@ -510,7 +510,7 @@ function events.BuildStatInformationBox(t)
 		end
 		blockChance= 100-round((5+lvl*2)/(10+lvl*2+ac)*10000)/100
 		totRed= 100-round((100-blockChance)*(100-acReduction))/100
-		t.Text=string.format("%s\n\nPhysical damage reduction: %s%s",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,"%") .. "\nBlock chance vs same level monsters: " .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,"%") .. "\n\nTotal average damage reduction: " .. StrColor(255,255,100,totRed) .. "%")
+		t.Text=string.format("%s\n\n물리 피해 감소: %s%s",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,"%") .. "\n동레벨 몬스터 상대 막기 확률: " .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,"%") .. "\n\n평균 총 피해 감소: " .. StrColor(255,255,100,totRed) .. "%")
 	end
 	
 	if t.Stat==5234672 then
@@ -548,9 +548,9 @@ function events.BuildStatInformationBox(t)
 		local bolsterLevel7=math.max(bolsterLevel7-4,0)
 		local bolsterLevel6=math.max(bolsterLevel6-4,0)
 		if Multiplayer and Multiplayer.in_game and not Multiplayer.im_host() and vars.MultiplayerBolsterLevels then
-			t.Text=t.Text .."\n\nTotal Levels gained: " .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. "\n\nLevels gained in MM6: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. "\nLevels gained in MM7: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. "\nLevels gained in MM8: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. "\n\nBolster Level in MM6: " .. StrColor(255,255,153,round(bolsterLevel6)) .."\nBolster Level in MM7: " .. StrColor(255,255,153,round(bolsterLevel7)) .."\nBolster Level in MM8: " .. StrColor(255,255,153,round(bolsterLevel8))
+			t.Text=t.Text .."\n\n총 획득 레벨: " .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. "\n\nMM6에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. "\nMM7에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. "\nMM8에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. "\n\nMM6 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel6)) .."\nMM7 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel7)) .."\nMM8 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel8))
 		else
-			t.Text=t.Text .."\n\nTotal Levels gained: " .. StrColor(255,255,153,round(getTotalLevel())).. "\n\nLevels gained in MM6: " .. StrColor(255,255,153,round(vars.MMLVL[3]*100)/100) .. "\nLevels gained in MM7: " .. StrColor(255,255,153,round(vars.MMLVL[2]*100)/100) .. "\nLevels gained in MM8: " .. StrColor(255,255,153,round(vars.MMLVL[1]*100)/100) .. "\n\nBolster Level in MM6: " .. StrColor(255,255,153,round(bolsterLevel6)) .."\nBolster Level in MM7: " .. StrColor(255,255,153,round(bolsterLevel7)) .."\nBolster Level in MM8: " .. StrColor(255,255,153,round(bolsterLevel8))
+			t.Text=t.Text .."\n\n총 획득 레벨: " .. StrColor(255,255,153,round(getTotalLevel())).. "\n\nMM6에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MMLVL[3]*100)/100) .. "\nMM7에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MMLVL[2]*100)/100) .. "\nMM8에서 획득한 레벨: " .. StrColor(255,255,153,round(vars.MMLVL[1]*100)/100) .. "\n\nMM6 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel6)) .."\nMM7 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel7)) .."\nMM8 보정 레벨: " .. StrColor(255,255,153,round(bolsterLevel8))
 		end
 	end
 	if t.Stat==15 then
@@ -558,7 +558,7 @@ function events.BuildStatInformationBox(t)
 		local atk=Party[i]:GetMeleeAttack()
 		local lvl=Party[i].LevelBase
 		local hitChance= round((15+atk*2)/(30+atk*2+lvl)*10000)/100
-		t.Text=string.format("%s\n\nHit chance vs same level monster: %s%s",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,"%"))
+		t.Text=string.format("%s\n\n동레벨 몬스터 상대 명중 확률: %s%s",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,"%"))
 	end
 	
 	if t.Stat==16 then
@@ -573,9 +573,9 @@ function events.BuildStatInformationBox(t)
 		vars.damageTrackRanged[Party[i]:GetIndex()]=vars.damageTrackRanged[Party[i]:GetIndex()] or 0
 				
 		local damage= vars.damageTrack[Party[Game.CurrentPlayer]:GetIndex()] or 0
-		t.Text=string.format("%s\n\nTOTAL DAMAGE RECOUNT\nTotal Damage done: %s",t.Text,StrColor(255,255,100,round(damage)))
+		t.Text=string.format("%s\n\n전체 피해 집계\n총 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 		local damage= vars.damageTrackRanged[Party[Game.CurrentPlayer]:GetIndex()] or 0
-		t.Text=string.format("%s\nTotal Ranged Damage done: %s",t.Text,StrColor(255,255,100,round(damage)))
+		t.Text=string.format("%s\n총 원거리 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 
         t.Text = string.format("%s\n\nTotal percentage, Melee/Ranged/Total:", t.Text)
 		local total_map_damage_m = 0
@@ -613,7 +613,7 @@ function events.BuildStatInformationBox(t)
 		end
 		local id=Party[Game.CurrentPlayer]:GetIndex()
 		--show
-		t.Text = t.Text .. "\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  " .. StrColor(0,255,0,vars.healingDone[id]) .. "\nTotal Regen Healing: " .. StrColor(0,255,0,vars.regenerationHeal[id]) .. "\nTotal Leech Healing: " .. StrColor(0,255,0,vars.leechDone[id])
+		t.Text = t.Text .. "\n\n전체 회복 집계:\n총 회복량:  " .. StrColor(0,255,0,vars.healingDone[id]) .. "\n총 재생 회복량: " .. StrColor(0,255,0,vars.regenerationHeal[id]) .. "\n총 흡혈 회복량: " .. StrColor(0,255,0,vars.leechDone[id])
 		
 		--matrix
 		t.Text = t.Text .. "\n\nTotal percentage, Heal/Regen/Leech/Total:"
@@ -653,7 +653,7 @@ function events.BuildStatInformationBox(t)
 		local atk=Party[i]:GetRangedAttack()
 		local lvl=Party[i].LevelBase
 		local hitChance= round((15+atk*2)/(30+atk*2+lvl)*10000)/100
-		t.Text=string.format("%s\n\nHit chance vs same level monster: %s%s",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,"%"))
+		t.Text=string.format("%s\n\n동레벨 몬스터 상대 명중 확률: %s%s",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,"%"))
 	end
 	
 	if t.Stat==18 then
@@ -667,9 +667,9 @@ function events.BuildStatInformationBox(t)
 		mapvars.damageTrackRanged[Party[i]:GetIndex()]=mapvars.damageTrackRanged[Party[i]:GetIndex()] or 0
 
 		local damage= mapvars.damageTrack[Party[Game.CurrentPlayer]:GetIndex()] or 0
-		t.Text=string.format("%s\n\nCURRENT MAP DAMAGE RECOUNT\nMelee Damage done in current map: %s",t.Text,StrColor(255,255,100,round(damage)))
+		t.Text=string.format("%s\n\n현재 맵 피해 집계\n현재 맵 근접 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 		local damage= mapvars.damageTrackRanged[Party[Game.CurrentPlayer]:GetIndex()] or 0
-		t.Text=string.format("%s\nRanged Damage done in current map: %s",t.Text,StrColor(255,255,100,round(damage)))
+		t.Text=string.format("%s\n현재 맵 원거리 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 
             	t.Text = string.format("%s\n\nMap percentage, Melee/Ranged/Total:", t.Text)
 		local total_map_damage_m = 0
@@ -708,7 +708,7 @@ function events.BuildStatInformationBox(t)
 		end
 		local id=Party[Game.CurrentPlayer]:GetIndex()
 		--show
-		t.Text = t.Text .. "\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  " .. StrColor(0,255,0,mapvars.healingDone[id]) .. "\nRegen Healing in current Map: " .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. "\nLeech Healing in current Map: " .. StrColor(0,255,0,mapvars.leechDone[id])
+		t.Text = t.Text .. "\n\n현재 맵 회복 집계:\n현재 맵 총 회복량:  " .. StrColor(0,255,0,mapvars.healingDone[id]) .. "\n현재 맵 재생 회복량: " .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. "\n현재 맵 흡혈 회복량: " .. StrColor(0,255,0,mapvars.leechDone[id])
 		
 		--matrix
 		t.Text = t.Text .. "\n\nMap percentage, Heal/Regen/Leech/Total:"
@@ -1483,9 +1483,9 @@ function events.Tick()
 		spellIndex = pl.AttackSpell==0 and pl.QuickSpell or pl.AttackSpell
 		
         if spellPowers[spellIndex] or (healingSpells and healingSpells[spellIndex]) then 		
-			Game.GlobalTxt[47]=string.format("M/R/S:%s/%s/%s\n\n\n\n\n\n\n",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))
+			Game.GlobalTxt[47]=string.format("근/원/주:%s/%s/%s\n\n\n\n\n\n\n",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))
 		else
-		    Game.GlobalTxt[47]=string.format("M/R:%s/%s\n\n\n\n\n\n\n",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))
+		    Game.GlobalTxt[47]=string.format("근/원:%s/%s\n\n\n\n\n\n\n",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))
 		end
 		Game.GlobalTxt[172]=string.format("활력: %s\n\n\n\n\n\n\n\n",StrColor(0,255,0,vitality))
 	else

@@ -1,190 +1,61 @@
 source	translation	status	category	patchable_occurrences	reasons	files	sample_context
+"	            %s%s "		excluded	misc	6	formatted_colored_text:6	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[87]=StrColor(255, 70, 70,    string.format(resListBackup[1] .. ""\t            %s%s "",resistances2[10],""%"")) .. resistanceText[1] .. ""\n\n\n\n\n\n\n\n\n"""
+%6s		excluded	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"resistanceText[i]=StrColor(0,255,0,string.format(""%6s"", resistances[9+i]))"
+"
+
+Subsequent spawn failure reasons:
+"		excluded	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
+"
+Couldn't spawn monster, spawnpoint data: "		excluded	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
+BossDebug AUTO: OFF		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
+BossDebug AUTO: ON		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
+BossDebug: impossible d’écrire boss_dump.txt		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: impossible d’écrire boss_dump.txt"") end"
+BossDebug: écrit dans boss_dump.txt		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: écrit dans boss_dump.txt"") end"
+MAW: ALL BUFFS NUKED (SAFE)		excluded	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: ALL BUFFS NUKED (SAFE)"") end"
+MAW: apply (safe)		excluded	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: apply (safe)"") end"
+MAW		excluded	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 "
 
 Light Magic quickens the Seraphim's strikes, increasing attack speed.
 
 Its radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.
-"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	".. StrColor(255,255,30,""\n\nLight Magic quickens the Seraphim's strikes, increasing attack speed.\n\nIts radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.\n"")"
+"	"
+
+빛 마법은 세라핌의 공격을 가속하여 공격 속도를 높입니다.
+
+그 빛은 칼날을 매우 가볍게 만들어 양손검도 한 손으로 사용할 수 있게 하며, 다른 손에는 방패를 들 수 있습니다.
+"	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	".. StrColor(255,255,30,""\n\nLight Magic quickens the Seraphim's strikes, increasing attack speed.\n\nIts radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.\n"")"
 "
 
 Seraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows
-"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
+"	"
+
+세라프의 영혼은 세라프의 결의를 강화하여 가벼운 공격은 흘려내고 강한 공격의 피해를 줄입니다.
+"	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
 "
 
 Seraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).
 
-"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
+"	"
+
+세라핌의 공격 시 피해는 정신 마법에 따라 증가하고 힘에 비례합니다(무기 속도와 무기 피해 배율이 적용됩니다).
+
+"	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
 "
 
 Seraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).
 
-"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
+"	"
+
+세라핌의 공격 시 회복량은 육체 마법에 따라 증가하고 인격에 비례합니다(무기 속도 배율이 적용됩니다).
+
+"	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
 " (applied after resistances)
-"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
-Current damage from Mind: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
-Current heal from Body: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
-Damage reduction: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
-"	            %s%s "		untranslated	misc	6	formatted_colored_text:6	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[87]=StrColor(255, 70, 70,    string.format(resListBackup[1] .. ""\t            %s%s "",resistances2[10],""%"")) .. resistanceText[1] .. ""\n\n\n\n\n\n\n\n\n"""
-%6s		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"resistanceText[i]=StrColor(0,255,0,string.format(""%6s"", resistances[9+i]))"
-"M/R/S:%s/%s/%s
-
-
-
-
-
-
-"		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R/S:%s/%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))"
-"M/R:%s/%s
-
-
-
-
-
-
-"		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
-"
-
-Balancing power and vitality leads to the highest damage.
-"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
-"
-
-Press M to enable/disable"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
-"
-
-Total Damage: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
-"
-Currently disabled
-"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(255,0,0,""\nCurrently disabled\n"")"
-"
-Currently enabled
-"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(0,255,0,""\nCurrently enabled\n"")"
-"
-Knights can learn up to a Supreme level, which is learned automatically at skill level "		untranslated	skill	1	display_variable_assignment:1	Scripts/General/zzMAW-Skills.lua	"local descTxt=descTxt .. ""\nKnights can learn up to a Supreme level, which is learned automatically at skill level "" .. requirement .. "".\n"""
-"
-Vitality coefficient: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
-"%s
-
-Current HP Regeneration: %s
-Next Level Bonus: %s HP Regen"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt = string.format(""%s\n\nCurrent HP Regeneration: %s\nNext Level Bonus: %s HP Regen"",baseRegStr,StrColor(0,255,0,hpRegen),StrColor(0,255,0,""+"" .. hpRegen2-hpRegen))"
-"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
-
-Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
-
-Damage done depends on 2 coefficients, multiplied then by skill level:
-
-Melee Power coefficient: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
-Current Damage reduction per Mana: 		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
-"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
-
-If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
-
-Mastery increase its mana efficience.
-"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
-"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
-
-If available, Expert, Master and Grandmaster is learned at skill 8-20-32.
-
-Mastery increase its mana efficience.
-"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-32.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
-"
-
-Subsequent spawn failure reasons:
-"		untranslated	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
-"
-Couldn't spawn monster, spawnpoint data: "		untranslated	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
-BossDebug AUTO: OFF		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
-BossDebug AUTO: ON		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
-BossDebug: impossible d’écrire boss_dump.txt		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: impossible d’écrire boss_dump.txt"") end"
-BossDebug: écrit dans boss_dump.txt		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: écrit dans boss_dump.txt"") end"
-MAW: ALL BUFFS NUKED (SAFE)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: ALL BUFFS NUKED (SAFE)"") end"
-MAW: apply (safe)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: apply (safe)"") end"
-SUPREME UNLOCKED!!!		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""SUPREME UNLOCKED!!!"")"
-"
-
-Bolster Level in MM6: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-
-CURRENT MAP HEALING RECOUNT:
-Healing Done in current Map:  "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
-"
-
-Levels gained in MM6: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-
-Total average damage reduction: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
-"
-
-TOTAL HEALING RECOUNT:
-Total Healing Done:  "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
-"
-
-Total Levels gained: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-Block chance vs same level monsters: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
-"
-Bolster Level in MM7: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-Bolster Level in MM8: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-Current bonus Damage: "		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent bonus Damage: "" .. dmg .. ""%"""
-"
-Current Reduction: "		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent Reduction: "" .. red .. ""%"""
-"
-Leech Healing in current Map: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
-"
-Levels gained in MM7: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-Levels gained in MM8: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
-"
-Regen Healing in current Map: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
-"
-Total Leech Healing: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
-"
-Total Regen Healing: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
- Randomizer		untranslated	ui	1	display_field_assignment:1	Scripts/General/zzzzMalekith-Randomizer.lua	"Text = "" Randomizer"","
-"%s
-
-CURRENT MAP DAMAGE RECOUNT
-Melee Damage done in current map: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nCURRENT MAP DAMAGE RECOUNT\nMelee Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
-"%s
-
-Hit chance vs same level monster: %s%s"		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHit chance vs same level monster: %s%s"",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,""%""))"
-"%s
-
-HP bonus from Endurance: %s
-HP bonus from Body building: %s
-HP bonus from items: %s
-Base HP: %s
-
- HP Regen per second: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s"",t.Text,StrColor(0,255,0,hpMap.totalEnduranceBonus), StrColor(0,255,0,hpMap.totalBBBonus),StrColor(0,255,0,round(hpMap.totalhpFromItems)),StrColor(0,255,0,hpMap.totalBaseHP),StrColor(0,255,0,regen))"
-"%s
-
-Physical damage reduction: %s%s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
-"%s
-
-Spell point regen per second: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nSpell point regen per second: %s"",t.Text,StrColor(40,100,255,regen/10))"
-"%s
-
-TOTAL DAMAGE RECOUNT
-Total Damage done: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nTOTAL DAMAGE RECOUNT\nTotal Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
-"%s
-Ranged Damage done in current map: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nRanged Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
-"%s
-Total Ranged Damage done: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nTotal Ranged Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
-Debuffs:		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text = t.EffectsHeader.Text .. ""\n\n"" .. StrColor(255,200,0, ""Debuffs:"" .. activeDebuffs)"
-Disabled		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"enableDisableText = StrColor(255,0,0, ""Disabled"")"
-"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
-Press R to enable/disable random rotation.
-Currently "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local rotationText = StrColor(0,0,0,""Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently "") .. enableDisableText .. ""\n\n"""
-Enabled		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local enableDisableText = StrColor(0,255,0, ""Enabled"")"
-If you seek to pursuit a new path and reset your skills, you have come to the right place.		untranslated	ui	1	display_field_assignment:1	Scripts/Global/zzMAWRespec.lua	"Text = ""If you seek to pursuit a new path and reset your skills, you have come to the right place."""
-"Intellect represents a character's ability to reason and understand complex, abstract concepts.
-Spell Damage and Spell Critical Damage are based on Intellect."		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."""
-MAW		untranslated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
-Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality."""
-Show players location		untranslated	ui	1	display_field_assignment:1	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	"Text = ""Show players location"","
-Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!		untranslated	ui	1	display_field_assignment:1	Scripts/Global/zzMaw_Arena.lua	"Text = ""Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!"""
-You need to clear the area COMPLETELY first.		untranslated	ui	1	display_variable_assignment:1	Scripts/General/BountyHunt.lua	"BountyText = ""You need to clear the area COMPLETELY first."""
+"	" (저항 적용 후 계산)
+"	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
+Current damage from Mind: 	정신 마법으로 얻는 현재 피해: 	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
+Current heal from Body: 	육체 마법으로 얻는 현재 회복량: 	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
+Damage reduction: 	피해 감소: 	translated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
 "
 
 Artifact Level: "	"
@@ -291,6 +162,36 @@ Currently Active Legendary effects:	현재 활성화된 전설 효과:	translate
 Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
 Enter the data.	데이터를 입력하세요.	translated	misc	3	question_call:3	Scripts/Global/Quest_SavingGoobers.lua	"Answer = Question(""Enter the data."")"
 Health: 	생명력: 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(0,255,0,  ""Health: "" .. tostring(Party[0].HP) .. ""/"" .. tostring(round(maxHP))) .."
+"M/R/S:%s/%s/%s
+
+
+
+
+
+
+"	"근/원/주:%s/%s/%s
+
+
+
+
+
+
+"	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R/S:%s/%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))"
+"M/R:%s/%s
+
+
+
+
+
+
+"	"근/원:%s/%s
+
+
+
+
+
+
+"	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
 NPC %d	NPC %d	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"Label = strformat(""NPC %d"", i),"
 NPC PANEL	NPC 패널	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"MF.RegisterExtraKeyBind({DefKey = 0x30, RegValue = ""xkey_npcpanel"", Label = ""NPC PANEL"","
 "Vitality: %s
@@ -311,6 +212,82 @@ NPC PANEL	NPC 패널	translated	misc	1	display_field_assignment:1	Scripts/Genera
 
 "	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[172]=string.format(""Vitality: %s\n\n\n\n\n\n\n\n"",StrColor(0,255,0,vitality))"
 The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)	이 던전은 이미 클리어했지만 초기화하여 더 강한 몬스터에게 다시 도전할 수 있습니다. 초기화 후에는 클리어 보상을 받을 수 없습니다. 던전을 초기화하시겠습니까? (yes/no 입력)	translated	monster	1	display_variable_assignment:1	Scripts/General/zzMaw-Maps.lua	"resetTxt=""The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)"""
+"
+
+Balancing power and vitality leads to the highest damage.
+"	"
+
+위력과 활력을 균형 있게 높이면 가장 높은 피해를 낼 수 있습니다.
+"	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"
+
+Press M to enable/disable"	"
+
+M키로 활성화/비활성화"	translated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"
+
+Total Damage: "	"
+
+총 피해: "	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"
+Currently disabled
+"	"
+현재 비활성화됨
+"	translated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(255,0,0,""\nCurrently disabled\n"")"
+"
+Currently enabled
+"	"
+현재 활성화됨
+"	translated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(0,255,0,""\nCurrently enabled\n"")"
+"
+Knights can learn up to a Supreme level, which is learned automatically at skill level "	"
+기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 "	translated	skill	1	display_variable_assignment:1	Scripts/General/zzMAW-Skills.lua	"local descTxt=descTxt .. ""\nKnights can learn up to a Supreme level, which is learned automatically at skill level "" .. requirement .. "".\n"""
+"
+Vitality coefficient: "	"
+활력 계수: "	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"%s
+
+Current HP Regeneration: %s
+Next Level Bonus: %s HP Regen"	"%s
+
+현재 생명력 재생: %s
+다음 레벨 보너스: 생명력 재생 %s"	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt = string.format(""%s\n\nCurrent HP Regeneration: %s\nNext Level Bonus: %s HP Regen"",baseRegStr,StrColor(0,255,0,hpRegen),StrColor(0,255,0,""+"" .. hpRegen2-hpRegen))"
+"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
+
+Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
+
+Damage done depends on 2 coefficients, multiplied then by skill level:
+
+Melee Power coefficient: "	"엄호의 경지에 이르러, 동료를 공격하는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.
+
+전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.
+
+피해량은 두 계수에 의해 결정되며, 이후 기술 레벨이 곱해집니다:
+
+근접 위력 계수: "	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+Current Damage reduction per Mana: 	마나당 현재 피해 감소: 	translated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+
+If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
+
+Mastery increase its mana efficience.
+"	"마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
+
+숙련도가 높을수록 마나 효율이 증가합니다.
+"	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+
+If available, Expert, Master and Grandmaster is learned at skill 8-20-32.
+
+Mastery increase its mana efficience.
+"	"마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-32에서 습득합니다.
+
+숙련도가 높을수록 마나 효율이 증가합니다.
+"	translated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-32.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
 "
 
 Can't learn"	"
@@ -466,6 +443,7 @@ Refreshing!	갱신 중!	translated	status	1	status_text_call:1	Scripts/Maps/7out
 Repaired	수리 완료	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Repaired"")"
 Resistance Ignored	저항 무시	translated	status	1	status_text_call:1	Scripts/Global/zzMaw_Mapping.lua	"Game.ShowStatusText(""Resistance Ignored"")"
 Shared Life heals for 	생명 공유 회복량: 	translated	status	2	status_text_call:2	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(""Shared Life heals for "" .. round(totHeal) .. "" Hit points(crit)""))"
+SUPREME UNLOCKED!!!	최상위 숙련 해금!!!	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""SUPREME UNLOCKED!!!"")"
 Teleported 	순간이동: 	translated	status	3	status_text_call:3	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. count .. "" monsters"")"
 The night is dark and full of terrors	밤은 어둡고 공포로 가득하다	translated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""The night is dark and full of terrors"")"
 This potion has not enough power	이 물약의 위력이 부족합니다	translated	status	5	status_text_call:5	Scripts/General/zzAlchemy.lua; Scripts/Global/zzMAWPotions.lua	"Game.ShowStatusText(""This potion has not enough power"")"
@@ -526,17 +504,151 @@ Restores 	주문력 회복: 	translated	tooltip	2	formatted_colored_text:2	Scrip
 
 "	translated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Description=StrColor(255,255,153,""Vampiric Aura: damage done will restore player HP.\n\n"") .. t.Description"
 Vitality: 	활력: 	translated	tooltip	2	formatted_colored_text:2	Scripts/General/zzMaw-Items.lua	"t.Description = t.Description .. ""\n"" .. ""Vitality: "" .. StrColor(255,0,0, increaseVitalityPercent .. ""%"")"
+"
+
+Bolster Level in MM6: "	"
+
+MM6 보정 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+
+CURRENT MAP HEALING RECOUNT:
+Healing Done in current Map:  "	"
+
+현재 맵 회복 집계:
+현재 맵 총 회복량:  "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+
+Levels gained in MM6: "	"
+
+MM6에서 획득한 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+
+Total average damage reduction: "	"
+
+평균 총 피해 감소: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"
+
+TOTAL HEALING RECOUNT:
+Total Healing Done:  "	"
+
+전체 회복 집계:
+총 회복량:  "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
+"
+
+Total Levels gained: "	"
+
+총 획득 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Block chance vs same level monsters: "	"
+동레벨 몬스터 상대 막기 확률: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"
+Bolster Level in MM7: "	"
+MM7 보정 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Bolster Level in MM8: "	"
+MM8 보정 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Current bonus Damage: "	"
+현재 추가 피해: "	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent bonus Damage: "" .. dmg .. ""%"""
+"
+Current Reduction: "	"
+현재 피해 감소: "	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent Reduction: "" .. red .. ""%"""
+"
+Leech Healing in current Map: "	"
+현재 맵 흡혈 회복량: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+Levels gained in MM7: "	"
+MM7에서 획득한 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Levels gained in MM8: "	"
+MM8에서 획득한 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Regen Healing in current Map: "	"
+현재 맵 재생 회복량: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+Total Leech Healing: "	"
+총 흡혈 회복량: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
+"
+Total Regen Healing: "	"
+총 재생 회복량: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
  Austerity	 절제	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+ Randomizer	 무작위화	translated	ui	1	display_field_assignment:1	Scripts/General/zzzzMalekith-Randomizer.lua	"Text = "" Randomizer"","
+"%s
+
+CURRENT MAP DAMAGE RECOUNT
+Melee Damage done in current map: %s"	"%s
+
+현재 맵 피해 집계
+현재 맵 근접 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nCURRENT MAP DAMAGE RECOUNT\nMelee Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+
+Hit chance vs same level monster: %s%s"	"%s
+
+동레벨 몬스터 상대 명중 확률: %s%s"	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHit chance vs same level monster: %s%s"",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,""%""))"
+"%s
+
+HP bonus from Endurance: %s
+HP bonus from Body building: %s
+HP bonus from items: %s
+Base HP: %s
+
+ HP Regen per second: %s"	"%s
+
+인내력 생명력 보너스: %s
+보디빌딩 생명력 보너스: %s
+아이템 생명력 보너스: %s
+기본 생명력: %s
+
+초당 생명력 재생: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s"",t.Text,StrColor(0,255,0,hpMap.totalEnduranceBonus), StrColor(0,255,0,hpMap.totalBBBonus),StrColor(0,255,0,round(hpMap.totalhpFromItems)),StrColor(0,255,0,hpMap.totalBaseHP),StrColor(0,255,0,regen))"
+"%s
+
+Physical damage reduction: %s%s"	"%s
+
+물리 피해 감소: %s%s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"%s
+
+Spell point regen per second: %s"	"%s
+
+초당 주문력 재생: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nSpell point regen per second: %s"",t.Text,StrColor(40,100,255,regen/10))"
+"%s
+
+TOTAL DAMAGE RECOUNT
+Total Damage done: %s"	"%s
+
+전체 피해 집계
+총 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nTOTAL DAMAGE RECOUNT\nTotal Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+Ranged Damage done in current map: %s"	"%s
+현재 맵 원거리 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nRanged Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+Total Ranged Damage done: %s"	"%s
+총 원거리 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nTotal Ranged Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
 "Beyond
 Madness"	"광기를
 넘어"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Debuffs:	디버프:	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text = t.EffectsHeader.Text .. ""\n\n"" .. StrColor(255,200,0, ""Debuffs:"" .. activeDebuffs)"
+Disabled	비활성화	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"enableDisableText = StrColor(255,0,0, ""Disabled"")"
 Doom	파멸	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
 Easy	쉬움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
+Press R to enable/disable random rotation.
+Currently "	"원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.
+R키로 무작위 로테이션을 활성화/비활성화합니다.
+현재 "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local rotationText = StrColor(0,0,0,""Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently "") .. enableDisableText .. ""\n\n"""
+Enabled	활성화	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local enableDisableText = StrColor(0,255,0, ""Enabled"")"
 Hard	어려움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Hell	지옥	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+If you seek to pursuit a new path and reset your skills, you have come to the right place.	새로운 길을 택해 기술을 초기화하려 한다면 제대로 찾아오셨습니다.	translated	ui	1	display_field_assignment:1	Scripts/Global/zzMAWRespec.lua	"Text = ""If you seek to pursuit a new path and reset your skills, you have come to the right place."""
+"Intellect represents a character's ability to reason and understand complex, abstract concepts.
+Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.
+주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."""
 "Night
 mare"	악몽	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Norm.	보통	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.	인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다.	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality."""
 "Road to
 insanity"	"광기로 가는
 길"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Show players location	플레이어 위치 표시	translated	ui	1	display_field_assignment:1	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	"Text = ""Show players location"","
+Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!	전사들이여, 투기장에 온 것을 환영합니다! 기억하던 모습과는 다를 수 있습니다. 각오를 다지고 기술을 연마해 눈앞의 도전에 대비하십시오. 힘과 전략, 의지를 증명할 준비를 하십시오. 전투가 기다립니다!	translated	ui	1	display_field_assignment:1	Scripts/Global/zzMaw_Arena.lua	"Text = ""Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!"""
+You need to clear the area COMPLETELY first.	먼저 이 지역을 완전히 정리해야 합니다.	translated	ui	1	display_variable_assignment:1	Scripts/General/BountyHunt.lua	"BountyText = ""You need to clear the area COMPLETELY first."""
