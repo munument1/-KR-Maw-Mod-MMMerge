@@ -1,0 +1,5 @@
+source	translation	status	notes
+Uncom.		excluded	저장/비교용 lootFilter 값은 영어 유지; 생성 overlay의 설정 표시 helper에서 고급으로 렌더링
+Broodling		excluded	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [군체하수인] 표시 + GetMawBossSkill 역변환
+Broodlord		excluded	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [군체군주] 표시 + GetMawBossSkill 역변환
+Omnipotent		excluded	보스 로직 canonical 토큰은 영어 유지; 생성 overlay에서 [전능] 표시 + GetMawBossSkill 역변환
