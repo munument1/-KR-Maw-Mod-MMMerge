@@ -1,0 +1,2 @@
+file	source	translation	category	notes
+Scripts/General/zzMaw-Items.lua	fear	공포	item	면역 보호 상태 메시지에 동적으로 삽입되는 표시 문자열
