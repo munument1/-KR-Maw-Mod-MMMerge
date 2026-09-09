@@ -156,46 +156,46 @@ maw-02219f4d1f51	untranslated	item	"
 Attack Speed: "			Scripts/General/zzMaw-Items.lua	2552	2	
 maw-45425af9f0d2	untranslated	item	 +X			Scripts/General/zzMaw-Items.lua	1705	1	
 maw-5c2d44bdc878	untranslated	item	 - Corrupted item #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
-maw-296498801eda	untranslated	item	 Armor.			Scripts/General/zzMaw-Items.lua	2051	1	
-maw-70364f2b0837	untranslated	item	 attacks and +			Scripts/General/zzMaw-Items.lua	2049	1	
+maw-296498801eda	translated	item	 Armor.	 방어력.		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
+maw-70364f2b0837	translated	item	 attacks and +	 공격), +		Scripts/General/zzMaw-Items.lua	2049	1	화염 무기 마법부여 설명 조각
 maw-0b7385a3815f	untranslated	item	 Aura: adds 			Scripts/General/zzMaw-Items.lua	4699	1	
-maw-d7e3a56e8341	untranslated	item	 Body and mind Resistances.			Scripts/General/zzMaw-Items.lua	2068	1	
-maw-511c96a0a13d	untranslated	item	 Elemental Resistances.			Scripts/General/zzMaw-Items.lua	2067	1	
-maw-8e704db26d0b	untranslated	item	 Endurance and			Scripts/General/zzMaw-Items.lua	2051	1	
-maw-b3c25ac9c926	untranslated	item	 Endurance and Accuracy.			Scripts/General/zzMaw-Items.lua	2055	1	
-maw-15e8e8dd4092	untranslated	item	 Endurance and Regenerate Hit points over time.			Scripts/General/zzMaw-Items.lua	2057	1	
+maw-d7e3a56e8341	translated	item	 Body and mind Resistances.	 육체 및 정신 저항.		Scripts/General/zzMaw-Items.lua	2068	1	아이템 마법부여 설명 조각
+maw-511c96a0a13d	translated	item	 Elemental Resistances.	 원소 저항.		Scripts/General/zzMaw-Items.lua	2067	1	아이템 마법부여 설명 조각
+maw-8e704db26d0b	translated	item	 Endurance and	 인내력 및		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
+maw-b3c25ac9c926	translated	item	 Endurance and Accuracy.	 인내력 및 정확도.		Scripts/General/zzMaw-Items.lua	2055	1	아이템 마법부여 설명 조각
+maw-15e8e8dd4092	translated	item	 Endurance and Regenerate Hit points over time.	 인내력 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2057	1	아이템 마법부여 설명 조각
 maw-6eb59489bcbb	untranslated	item	" Fire Damage to any attack
 
 "			Scripts/General/zzMaw-Items.lua	4699	1	
-maw-fc9d83e4d0ea	untranslated	item	 Fire Resistance and Regenerate Hit points over time.			Scripts/General/zzMaw-Items.lua	2053	1	
-maw-76e2c8fd1d31	untranslated	item	 Hit points and Regenerate Hit points over time.			Scripts/General/zzMaw-Items.lua	2047	1	
+maw-fc9d83e4d0ea	translated	item	 Fire Resistance and Regenerate Hit points over time.	 화염 저항 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2053	1	아이템 마법부여 설명 조각
+maw-76e2c8fd1d31	translated	item	 Hit points and Regenerate Hit points over time.	 생명력 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2047	1	아이템 마법부여 설명 조각
 maw-fc6baca8cc26	untranslated	item	 in bag #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
-maw-ac1801ec9062	untranslated	item	 Intellect and Accuracy.			Scripts/General/zzMaw-Items.lua	2065	1	
-maw-3d01fd505175	untranslated	item	 Intellect and Luck.			Scripts/General/zzMaw-Items.lua	2052	1	
-maw-5f49ae2cff07	untranslated	item	 Intellect and Might.			Scripts/General/zzMaw-Items.lua	2064	1	
-maw-30f6831e8be1	untranslated	item	 Intellect and personality.			Scripts/General/zzMaw-Items.lua	2043	1	
-maw-0826b5837c0d	untranslated	item	 Intellect and Personality.			Scripts/General/zzMaw-Items.lua	2060	1	
-maw-80a597fa3ad2	untranslated	item	 Luck and Meditation Skill +			Scripts/General/zzMaw-Items.lua	2058	1	
-maw-2554f3fab686	untranslated	item	 Might and Endurance.			Scripts/General/zzMaw-Items.lua	2059	1	
-maw-9035db916f00	untranslated	item	 Might and Personality.			Scripts/General/zzMaw-Items.lua	2056	1	
+maw-ac1801ec9062	translated	item	 Intellect and Accuracy.	 지능 및 정확도.		Scripts/General/zzMaw-Items.lua	2065	1	아이템 마법부여 설명 조각
+maw-3d01fd505175	translated	item	 Intellect and Luck.	 지능 및 행운.		Scripts/General/zzMaw-Items.lua	2052	1	아이템 마법부여 설명 조각
+maw-5f49ae2cff07	translated	item	 Intellect and Might.	 지능 및 힘.		Scripts/General/zzMaw-Items.lua	2064	1	아이템 마법부여 설명 조각
+maw-30f6831e8be1	translated	item	 Intellect and personality.	 지능 및 성격.		Scripts/General/zzMaw-Items.lua	2043	1	아이템 마법부여 설명 조각
+maw-0826b5837c0d	translated	item	 Intellect and Personality.	 지능 및 성격.		Scripts/General/zzMaw-Items.lua	2060	1	아이템 마법부여 설명 조각
+maw-80a597fa3ad2	translated	item	 Luck and Meditation Skill +	 행운 및 명상 기술 +		Scripts/General/zzMaw-Items.lua	2058	1	아이템 마법부여 설명 조각
+maw-2554f3fab686	translated	item	 Might and Endurance.	 힘 및 인내력.		Scripts/General/zzMaw-Items.lua	2059	1	아이템 마법부여 설명 조각
+maw-9035db916f00	translated	item	 Might and Personality.	 힘 및 성격.		Scripts/General/zzMaw-Items.lua	2056	1	아이템 마법부여 설명 조각
 maw-5fc62aed3ea9	untranslated	item	 Might)			Scripts/General/zzMaw-Items.lua	2482	1	
-maw-28aa2eb8321b	untranslated	item	 Might, Intellect and Personality.			Scripts/General/zzMaw-Items.lua	2066	1	
-maw-7b209315ce2c	untranslated	item	 Might.			Scripts/General/zzMaw-Items.lua	2049	1	
-maw-bf5ae86ec0be	untranslated	item	 Personality and Accuracy.			Scripts/General/zzMaw-Items.lua	2063	1	
-maw-f4fee4b943a6	untranslated	item	 points of Body damage.			Scripts/General/zzMaw-Items.lua	2028	3	
-maw-e9dd7c845b7f	untranslated	item	 points of Cold damage.			Scripts/General/zzMaw-Items.lua	2019	3	
-maw-9de181b6a180	untranslated	item	 points of Electrical damage.			Scripts/General/zzMaw-Items.lua	2022	3	
-maw-c941da9681f6	untranslated	item	 points of Fire damage to 			Scripts/General/zzMaw-Items.lua	2049	1	
-maw-cb37086b123d	untranslated	item	 points of Fire damage.			Scripts/General/zzMaw-Items.lua	2025	3	
-maw-502b11b83731	untranslated	item	 Speed and Accuracy.			Scripts/General/zzMaw-Items.lua	2048	1	
-maw-ea9d75896707	untranslated	item	 Spell points and Meditation Skill +			Scripts/General/zzMaw-Items.lua	2050	1	
+maw-28aa2eb8321b	translated	item	 Might, Intellect and Personality.	 힘, 지능 및 성격.		Scripts/General/zzMaw-Items.lua	2066	1	아이템 마법부여 설명 조각
+maw-7b209315ce2c	translated	item	 Might.	 힘.		Scripts/General/zzMaw-Items.lua	2049	1	아이템 마법부여 설명 조각
+maw-bf5ae86ec0be	translated	item	 Personality and Accuracy.	 성격 및 정확도.		Scripts/General/zzMaw-Items.lua	2063	1	아이템 마법부여 설명 조각
+maw-f4fee4b943a6	translated	item	 points of Body damage.	 육체 피해.		Scripts/General/zzMaw-Items.lua	2028	3	아이템 추가 피해 설명
+maw-e9dd7c845b7f	translated	item	 points of Cold damage.	 냉기 피해.		Scripts/General/zzMaw-Items.lua	2019	3	아이템 추가 피해 설명
+maw-9de181b6a180	translated	item	 points of Electrical damage.	 전기 피해.		Scripts/General/zzMaw-Items.lua	2022	3	아이템 추가 피해 설명
+maw-c941da9681f6	translated	item	 points of Fire damage to 	 화염 피해 (		Scripts/General/zzMaw-Items.lua	2049	1	무기 종류가 뒤따르는 화염 피해 설명 조각
+maw-cb37086b123d	translated	item	 points of Fire damage.	 화염 피해.		Scripts/General/zzMaw-Items.lua	2025	3	아이템 추가 피해 설명
+maw-502b11b83731	translated	item	 Speed and Accuracy.	 속도 및 정확도.		Scripts/General/zzMaw-Items.lua	2048	1	아이템 마법부여 설명 조각
+maw-ea9d75896707	translated	item	 Spell points and Meditation Skill +	 주문력 및 명상 기술 +		Scripts/General/zzMaw-Items.lua	2050	1	아이템 마법부여 설명 조각
 maw-5400706c64aa	untranslated	item	 Spell Points)			Scripts/General/zzMaw-Items.lua	2483	1	
-maw-0ccb272bfaf5	untranslated	item	 Spell points, Speed, Intellect.			Scripts/General/zzMaw-Items.lua	2054	1	
-maw-b18b796a1706	untranslated	item	 to all Resistances.			Scripts/General/zzMaw-Items.lua	2017	1	
-maw-a5f8e6eb0d8a	untranslated	item	 to all Seven Statistics.			Scripts/General/zzMaw-Items.lua	2018	1	
-maw-1996ede22cbc	untranslated	item	 to Endurance, Armor, Hit points.			Scripts/General/zzMaw-Items.lua	2046	1	
-maw-10b488c55e16	untranslated	item	 to Seven Stats, HP, SP, Armor, Resistances.			Scripts/General/zzMaw-Items.lua	2045	2	
-maw-a9eab90264a9	untranslated	item	 to spell damage and +			Scripts/General/zzMaw-Items.lua	2043	1	
+maw-0ccb272bfaf5	translated	item	 Spell points, Speed, Intellect.	 주문력, 속도, 지능.		Scripts/General/zzMaw-Items.lua	2054	1	아이템 마법부여 설명 조각
+maw-b18b796a1706	translated	item	 to all Resistances.	 모든 저항.		Scripts/General/zzMaw-Items.lua	2017	1	아이템 마법부여 설명 조각
+maw-a5f8e6eb0d8a	translated	item	 to all Seven Statistics.	 7대 능력치 전체.		Scripts/General/zzMaw-Items.lua	2018	1	아이템 마법부여 설명 조각
+maw-1996ede22cbc	translated	item	 to Endurance, Armor, Hit points.	 인내력, 방어력, 생명력.		Scripts/General/zzMaw-Items.lua	2046	1	아이템 마법부여 설명 조각
+maw-10b488c55e16	translated	item	 to Seven Stats, HP, SP, Armor, Resistances.	 7대 능력치, 생명력, 주문력, 방어력, 저항.		Scripts/General/zzMaw-Items.lua	2045	2	아이템 마법부여 설명 조각
+maw-a9eab90264a9	translated	item	 to spell damage and +	 주문 피해, +		Scripts/General/zzMaw-Items.lua	2043	1	주문 피해 마법부여 설명 조각
 maw-d6e950b44a53	translated	item	% craft items drop chances 	% 제작 재료 드롭 확률 		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
 maw-a49609a5231f	translated	item	% item quality 	% 아이템 품질 		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
 maw-abdb923af06a	translated	item	% monster density	% 몬스터 밀도		Scripts/General/zzMaw-Maps.lua	2086	1	차원 지도 옵션
@@ -205,9 +205,9 @@ maw-2c40f0c45c24	untranslated	item	7item193			Scripts/General/zzMaw-Spells.lua	3
 maw-ef99c680a737	untranslated	item	^%u		%u	Scripts/General/zzMaw-Items.lua	1713	1	
 maw-25b6b3a71f27	untranslated	item	AC gained from armors is doubled			Scripts/General/zzMaw-Items.lua	1385	1	
 maw-12a3a4f498b2	translated	item	Accuracy	정확도		Data/Tables/Class Starting Stats.txt	10	4	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-cf1ac5aea579	untranslated	item	Adds 			Scripts/General/zzMaw-Items.lua	2019	14	
+maw-cf1ac5aea579	translated	item	Adds 	추가 		Scripts/General/zzMaw-Items.lua	2019	14	아이템 추가 효과 접두어
 maw-ddd068101243	untranslated	item	Air			Scripts/General/zzMaw-Items.lua	4258	1	
-maw-2b43cb83d2c0	untranslated	item	Air Magic Skill +			Scripts/General/zzMaw-Items.lua	2032	1	
+maw-2b43cb83d2c0	translated	item	Air Magic Skill +	공기 마법 기술 +		Scripts/General/zzMaw-Items.lua	2032	1	아이템 마법부여 기술 보너스
 maw-fc703d7f3f16	translated	item	Air Resistance	공기 저항		Data/Tables/Spells2.txt	16	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-85c3b29e673f	translated	item	Alchemy skill	연금술 기술		Scripts/General/zzMaw-Items.lua	1876	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-c4c29e7aed76	translated	item	Ally	동료		Scripts/General/zzMaw-Monsters.lua	2326	3	멀티플레이 회복자 기본명
@@ -227,7 +227,7 @@ maw-0828378541e3	untranslated	item	Ascended Topaz			Scripts/General/zzMaw-Items.
 maw-249a5adae437	untranslated	item	Attack: +			Scripts/General/zzMaw-Items.lua	1506	2	
 maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger			Scripts/General/zzMaw-Items.lua	1376	1	
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
-maw-bee8f9b9eeaf	untranslated	item	Body Magic Skill +			Scripts/General/zzMaw-Items.lua	2033	1	
+maw-bee8f9b9eeaf	translated	item	Body Magic Skill +	육체 마법 기술 +		Scripts/General/zzMaw-Items.lua	2033	1	아이템 마법부여 기술 보너스
 maw-2657e3448e5a	translated	item	Body Resistance	육체 저항		Data/Tables/Spells2.txt	71	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e8e87b3b9240	untranslated	item	BodyLocation			Scripts/General/zzMaw-Items.lua	2713	2	
 maw-4d963cfab70d	untranslated	item	Bonus			Scripts/General/zzMaw-Item-Sorter.lua	87	8	
@@ -255,7 +255,7 @@ maw-f032f4de767e	translated	item	Crafting Item	제작 재료		Scripts/General/zz
 maw-5cc5b9edc5f5	untranslated	item	Crit chance increased by 10% and crit chance over 100% increases total damage			Scripts/General/zzMaw-Items.lua	1368	1	
 maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	1	
 maw-6c3828d38527	untranslated	item	Damage: 			Scripts/General/zzMaw-Items.lua	1506	2	
-maw-71db089ac027	untranslated	item	Dark Magic Skill +			Scripts/General/zzMaw-Items.lua	2034	1	
+maw-71db089ac027	translated	item	Dark Magic Skill +	어둠 마법 기술 +		Scripts/General/zzMaw-Items.lua	2034	1	아이템 마법부여 기술 보너스
 maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-c45e1332c406	untranslated	item	Death and Eradication Immunity			Scripts/General/zzMaw-Items.lua	1281	1	
 maw-7505d64a54e0	untranslated	item	default			Scripts/General/pseudoSpawnpoint.lua	55	5	
@@ -266,7 +266,7 @@ maw-ba1ff3be0f0c	untranslated	item	Disease and Curse Immunity			Scripts/General/
 maw-4312a8a1998a	untranslated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)			Scripts/General/zzMaw-Items.lua	1369	1	
 maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMaw-Items.lua	1882	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-40089dc04e07	untranslated	item	Each attack reduces monster resistances by 1			Scripts/General/zzMaw-Items.lua	1386	1	
-maw-4d7b02dec590	untranslated	item	Earth Magic Skill +			Scripts/General/zzMaw-Items.lua	2035	1	
+maw-4d7b02dec590	translated	item	Earth Magic Skill +	대지 마법 기술 +		Scripts/General/zzMaw-Items.lua	2035	1	아이템 마법부여 기술 보너스
 maw-f3b8bd9acc81	translated	item	Earth Resistance	대지 저항		Data/Tables/Spells2.txt	38	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-ac75574810d6	translated	item	Endless Potion	무한 물약		Scripts/General/zzAlchemy.lua	1419	1	MAW 아이템명
 maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting Stats.txt	8	4	기존 MMMerge 능력치 용어
@@ -274,7 +274,7 @@ maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2
 maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-54c81b0a7634	untranslated	item	Explosive Impact! (half damage)			Scripts/General/zzMaw-Items.lua	1274	2	
 maw-78baebfcb4b5	untranslated	item	Fire			Scripts/General/zzMaw-Items.lua	4258	2	
-maw-135db21bffe1	untranslated	item	Fire Magic Skill +			Scripts/General/zzMaw-Items.lua	2036	1	
+maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
 maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-245eb6d90c4a	untranslated	item	Flame			Scripts/General/zzMaw-Items.lua	4696	1	
 maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	
@@ -316,7 +316,7 @@ maw-a8b7dd52190d	untranslated	item	Leech also restores Mana, but its effect is h
 maw-9b1a119b3361	untranslated	item	Leech overhealing heals the most injured party member instead			Scripts/General/zzMaw-Items.lua	1384	1	
 maw-b7e8916505bf	untranslated	item	Legendary			Scripts/General/zzMaw-Items.lua	461	2	
 maw-888b9e5fb8ac	translated	item	Legendary 	전설의 		Scripts/General/zzMaw-Items.lua	1739	1	아이템 등급 접두어
-maw-2f14d8a3258f	untranslated	item	Light Magic Skill +			Scripts/General/zzMaw-Items.lua	2037	1	
+maw-2f14d8a3258f	translated	item	Light Magic Skill +	빛 마법 기술 +		Scripts/General/zzMaw-Items.lua	2037	1	아이템 마법부여 기술 보너스
 maw-a520c0870cdf	untranslated	item	Locate item			Scripts/Global/Quest_SavingGoobers.lua	856	1	
 maw-d219c68101f5	untranslated	item	Location			Scripts/General/zzMaw-MultiBag.lua	197	1	
 maw-e7f79931cf1c	translated	item	Longsword	장검		Scripts/General/zzMaw-Items.lua	333	1	미감정 아이템 이름
@@ -324,12 +324,12 @@ maw-1c295a8aa571	translated	item	Luck	운		Scripts/General/zzMaw-Items.lua	1866	
 maw-099db9f7dc17	untranslated	item	LUCK			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-b2efd3606c37	translated	item	Mace	철퇴		Scripts/General/zzMaw-Items.lua	332	1	미감정 무기 이름
 maw-054968202fd2	untranslated	item	MaxCharges			Scripts/General/zzMaw-Item-Sorter.lua	96	7	
-maw-25f6d1027234	untranslated	item	Meditation Skill +			Scripts/General/zzMaw-Items.lua	2042	1	
+maw-25f6d1027234	translated	item	Meditation Skill +	명상 기술 +		Scripts/General/zzMaw-Items.lua	2042	1	아이템 마법부여 기술 보너스
 maw-e00694b1e25c	untranslated	item	Melee			Scripts/General/zzClasses.lua	273	14	
 maw-9da77c5e4939	translated	item	Might	힘		Data/Tables/Class Starting Stats.txt	2	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-af6bcff046a9	untranslated	item	Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy			Scripts/General/zzMaw-Items.lua	1366	1	
 maw-59e63f7eaa79	untranslated	item	Mind			Scripts/General/zzMaw-Items.lua	4258	1	
-maw-d7656b362ecd	untranslated	item	Mind Magic Skill +			Scripts/General/zzMaw-Items.lua	2038	1	
+maw-d7656b362ecd	translated	item	Mind Magic Skill +	정신 마법 기술 +		Scripts/General/zzMaw-Items.lua	2038	1	아이템 마법부여 기술 보너스
 maw-02ecc9e1eddf	translated	item	Mind Resistance	정신 저항		Data/Tables/Spells2.txt	60	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-cad3f5488931	untranslated	item	ModifyItemDamage			Scripts/Core/events.lua	2120	1	
 maw-ecd1f5dff9ef	untranslated	item	MonsterDropItem			Scripts/General/ExtraEvents.lua	520	1	
@@ -371,7 +371,7 @@ maw-e936025d6e54	untranslated	item	Reduce all damage taken by 10%			Scripts/Gene
 maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1378	1	
 maw-b6d59589a7b6	untranslated	item	Reduces Physical damage taken by 15%			Scripts/General/zzMaw-Items.lua	1282	1	
 maw-21b8369fde47	untranslated	item	Refundable			Scripts/General/zzMaw-Item-Sorter.lua	99	7	
-maw-52d57e33f655	untranslated	item	Regenerates Hit Points and Meditation Skill +			Scripts/General/zzMaw-Items.lua	2061	1	
+maw-52d57e33f655	translated	item	Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +		Scripts/General/zzMaw-Items.lua	2061	1	아이템 마법부여 설명
 maw-e8a7d6f2bc41	untranslated	item	repair			Scripts/General/zzMaw-Items.lua	4533	3	
 maw-e081e3c7a2aa	translated	item	Repair skill	수리 기술		Scripts/General/zzMaw-Items.lua	1877	2	기존 MMMerge 스킬 용어
 maw-15d2977134a7	untranslated	item	ResistanceBase			Scripts/General/zzMaw-Items.lua	4271	1	
@@ -384,8 +384,8 @@ maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Sta
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
 maw-bec5022aa7fd	untranslated	item	spell drain			Scripts/General/zzMaw-Items.lua	1256	1	
 maw-3c6614c31d79	translated	item	Spell Points	주문력		Scripts/General/zzMaw-Items.lua	1868	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-fdc17f7064c4	untranslated	item	Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).			Scripts/General/zzMaw-Items.lua	2044	1	
-maw-868eb07bb6ca	untranslated	item	Spirit Magic Skill +			Scripts/General/zzMaw-Items.lua	2039	1	
+maw-fdc17f7064c4	translated	item	Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).	주문으로 대상의 생명력을 흡수하고 주문 시전 속도가 증가합니다. (보조 손에 장비하면 적용되지 않습니다.)		Scripts/General/zzMaw-Items.lua	2044	1	아이템 마법부여 설명
+maw-868eb07bb6ca	translated	item	Spirit Magic Skill +	영혼 마법 기술 +		Scripts/General/zzMaw-Items.lua	2039	1	아이템 마법부여 기술 보너스
 maw-678dd8a69cfc	untranslated	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	
 maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	1	
 maw-c1988ff4c89d	untranslated	item	Stone and premature ageing Immunity			Scripts/General/zzMaw-Items.lua	1280	1	
@@ -423,7 +423,7 @@ SAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save,
 Down below a list of corrupted items:
 
 "			Scripts/General/zzMaw-Item-Sorter.lua	736	1	
-maw-b83051d62e09	untranslated	item	Water Magic Skill +			Scripts/General/zzMaw-Items.lua	2040	1	
+maw-b83051d62e09	translated	item	Water Magic Skill +	물 마법 기술 +		Scripts/General/zzMaw-Items.lua	2040	1	아이템 마법부여 기술 보너스
 maw-8fabae26c6ea	translated	item	Water Resistance	물 저항		Data/Tables/Spells2.txt	27	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	1258	1	
 maw-fb360f9c09ac	excluded	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
