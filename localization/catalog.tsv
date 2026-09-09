@@ -265,15 +265,15 @@ maw-7de90a65241a	excluded	item	Common			Scripts/General/zzMaw-Items.lua	461	2	In
 maw-2f4979324e03	excluded	item	Condition			Scripts/General/zzMaw-Item-Sorter.lua	93	7	Internal engine/control literal only; not player-facing localization.
 maw-f032f4de767e	translated	item	Crafting Item	제작 재료		Scripts/General/zzAlchemy.lua	1410	1	미감정 제작 아이템 이름
 maw-5cc5b9edc5f5	translated	item	Crit chance increased by 10% and crit chance over 100% increases total damage	치명타 확률이 10% 증가하며, 100%를 초과한 치명타 확률은 총 피해를 증가시킵니다		Scripts/General/zzMaw-Items.lua	1368	1	전설 아이템 효과
-maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	1	
+maw-f0321970a081	translated	item	curse	저주		Scripts/General/zzMaw-Items.lua	1255	1	면역 발동 상태 메시지의 동적 상태명
 maw-6c3828d38527	translated	item	Damage: 	피해: 		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
 maw-71db089ac027	translated	item	Dark Magic Skill +	어둠 마법 기술 +		Scripts/General/zzMaw-Items.lua	2034	1	아이템 마법부여 기술 보너스
-maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	1	
+maw-4f14c08f988e	translated	item	death	죽음		Scripts/General/zzMaw-Items.lua	1261	1	면역 발동 상태 메시지의 동적 상태명
 maw-c45e1332c406	translated	item	Death and Eradication Immunity	죽음 및 소멸 면역		Scripts/General/zzMaw-Items.lua	1281	1	특수 아이템 효과 설명
 maw-7505d64a54e0	excluded	item	default			Scripts/General/pseudoSpawnpoint.lua	55	5	Internal engine/control/comment literal only; not player-facing localization.
 maw-154f885b3a41	translated	item	Dimension Map	차원 지도		Scripts/General/zzMaw-Maps.lua	1914	1	MAW 아이템명
 maw-76af4ec46125	translated	item	Disarm skill	함정 해제 기술		Scripts/General/zzMaw-Items.lua	1878	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-4be181e4cac8	untranslated	item	disease			Scripts/General/zzMaw-Items.lua	1255	3	
+maw-4be181e4cac8	translated	item	disease	질병		Scripts/General/zzMaw-Items.lua	1255	3	면역 발동 상태 메시지의 동적 상태명
 maw-ba1ff3be0f0c	translated	item	Disease and Curse Immunity	질병 및 저주 면역		Scripts/General/zzMaw-Items.lua	1275	1	특수 아이템 효과 설명
 maw-4312a8a1998a	translated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)	신성한 보호 (사망하는 대신 생명력 25%로 회복, 5분마다 한 번)		Scripts/General/zzMaw-Items.lua	1369	1	전설 아이템 효과
 maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMaw-Items.lua	1882	2	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -283,7 +283,7 @@ maw-f3b8bd9acc81	translated	item	Earth Resistance	대지 저항		Data/Tables/Spe
 maw-ac75574810d6	translated	item	Endless Potion	무한 물약		Scripts/General/zzAlchemy.lua	1419	1	MAW 아이템명
 maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting Stats.txt	8	4	기존 MMMerge 능력치 용어
 maw-b3efd0d2dd50	excluded	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	Internal engine/control/comment literal only; not player-facing localization.
-maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
+maw-1c32a92d0070	translated	item	eradication	소멸		Scripts/General/zzMaw-Items.lua	1261	1	면역 발동 상태 메시지의 동적 상태명
 maw-54c81b0a7634	translated	item	Explosive Impact! (half damage)	폭발 충격! (피해 절반)		Scripts/General/zzMaw-Items.lua	1274	2	특수 아이템 효과 설명
 maw-78baebfcb4b5	translated	item	Fire	화염		Scripts/General/zzMaw-Items.lua	4258	2	공통 화염 표기; 능력치/오라 양쪽에 안전
 maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
@@ -315,7 +315,7 @@ maw-2032e6152f7f	translated	item	Increases Ascension Skill level by 10	승천 �
 maw-d2147f191411	translated	item	"Increases item's roughness, making it more resistant to breaking.
 "	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
 "		Scripts/General/zzAlchemy.lua	484	1	물약 효과 툴팁
-maw-a159cdb85f6f	untranslated	item	insanity			Scripts/General/zzMaw-Items.lua	1256	1	
+maw-a159cdb85f6f	translated	item	insanity	광기		Scripts/General/zzMaw-Items.lua	1256	1	면역 발동 상태 메시지의 동적 상태명
 maw-f951f6d3da95	translated	item	Insanity and SP drain Immunity	광기 및 주문력 흡수 면역		Scripts/General/zzMaw-Items.lua	1276	1	특수 아이템 효과 설명
 maw-e8d4bafc56e1	translated	item	Intellect	지능		Data/Tables/Class Starting Stats.txt	4	4	기존 MMMerge 능력치 용어
 maw-869d847d171a	excluded	item	item182			Scripts/General/zzAlchemy.lua	7	1	Internal engine/control literal only; not player-facing localization.
@@ -358,16 +358,16 @@ maw-16526080ac01	translated	item	"Oracle's Orb is a mysterious and powerful arti
 maw-1166118ad010	translated	item	Overhealing reduces recovery time equal to half overhealing amount	초과 회복량의 절반만큼 회복 시간을 감소시킵니다		Scripts/General/zzMaw-Items.lua	1392	1	전설 아이템 효과
 maw-f637a0178b30	translated	item	Overhealing refunds mana	초과 회복 시 마나를 돌려받습니다		Scripts/General/zzMaw-Items.lua	1391	1	전설 아이템 효과
 maw-89ff31225c5f	excluded	item	Owner			Scripts/General/zzMaw-Item-Sorter.lua	98	6	Internal engine/control literal only; not player-facing localization.
-maw-67ef38a8a121	untranslated	item	paralysis			Scripts/General/zzMaw-Items.lua	1257	1	
+maw-67ef38a8a121	translated	item	paralysis	마비		Scripts/General/zzMaw-Items.lua	1257	1	면역 발동 상태 메시지의 동적 상태명
 maw-f190f3f1357e	translated	item	Paralysis and fear Immunity	마비 및 공포 면역		Scripts/General/zzMaw-Items.lua	1277	1	특수 아이템 효과 설명
 maw-2981a383917f	translated	item	Personality	인격		Data/Tables/Class Starting Stats.txt	6	4	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-e6aa09fd40ce	untranslated	item	poison			Scripts/General/zzMaw-Items.lua	1258	3	
+maw-e6aa09fd40ce	translated	item	poison	독		Scripts/General/zzMaw-Items.lua	1258	3	면역 발동 상태 메시지의 동적 상태명
 maw-ff11ae2fd1e0	translated	item	Poison and weakness Immunity	독 및 약화 면역		Scripts/General/zzMaw-Items.lua	1278	1	특수 아이템 효과 설명
 maw-0fff6c603c71	translated	item	Potion Bottle	물약병		Scripts/General/zzAlchemy.lua	1420	1	미감정 아이템 이름
 maw-d5f5800b1e69	translated	item	Potion Deleted in Austerity	절제 모드에서 삭제된 물약		Scripts/General/zzAlchemy.lua	17	3	내부 대체 아이템 표시명
 maw-ce1b7d972262	translated	item	Potion Deleted in MAW	MAW에서 삭제된 물약		Scripts/General/zzAlchemy.lua	11	1	내부 대체 아이템 표시명
 maw-b573f24e55d6	excluded	item	power			Scripts/General/zzMaw-Items.lua	2265	2	Internal engine/control literal only; not player-facing localization.
-maw-231709218cf1	untranslated	item	premature ageing			Scripts/General/zzMaw-Items.lua	1260	1	
+maw-231709218cf1	translated	item	premature ageing	조기 노화		Scripts/General/zzMaw-Items.lua	1260	1	면역 발동 상태 메시지의 동적 상태명
 maw-e81582b9da67	excluded	item	Primordial			Scripts/General/zzMaw-Items.lua	461	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-5b252caa0860	translated	item	Primordial 	태고의 		Scripts/General/zzMaw-Items.lua	1735	1	아이템 등급 접두어
 maw-a6a535b865db	excluded	item	Ranged			Scripts/General/zzMAW-Skills.lua	352	7	Internal engine/control literal only; not player-facing localization.
@@ -404,17 +404,17 @@ maw-e081e3c7a2aa	translated	item	Repair skill	수리 기술		Scripts/General/zzM
 maw-15d2977134a7	excluded	item	ResistanceBase			Scripts/General/zzMaw-Items.lua	4271	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-36527bea3870	excluded	item	ResistanceBonus			Scripts/General/zzMaw-Items.lua	4271	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-5a0bd452507d	excluded	item	respawn			Scripts/General/zzMaw-Monsters.lua	2326	2	Internal engine/control literal only; not player-facing localization.
-maw-c3ca5f787365	untranslated	item	sleep			Scripts/General/zzMaw-Items.lua	1259	1	
+maw-c3ca5f787365	translated	item	sleep	수면		Scripts/General/zzMaw-Items.lua	1259	1	면역 발동 상태 메시지의 동적 상태명
 maw-68b55f23c0fb	translated	item	Sleep and Unconscious Immunity	수면 및 의식불명 면역		Scripts/General/zzMaw-Items.lua	1279	1	특수 아이템 효과 설명
 maw-597e5a16ff16	translated	item	Solarstone	태양석		Scripts/General/zzMaw-Items.lua	4565	1	제작 보석 상태 메시지
 maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Stats.txt	12	6	기존 MMMerge 능력치 용어
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
-maw-bec5022aa7fd	untranslated	item	spell drain			Scripts/General/zzMaw-Items.lua	1256	1	
+maw-bec5022aa7fd	translated	item	spell drain	주문력 흡수		Scripts/General/zzMaw-Items.lua	1256	1	면역 발동 상태 메시지의 동적 상태명
 maw-3c6614c31d79	translated	item	Spell Points	주문력		Scripts/General/zzMaw-Items.lua	1868	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-fdc17f7064c4	translated	item	Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).	주문으로 대상의 생명력을 흡수하고 주문 시전 속도가 증가합니다. (보조 손에 장비하면 적용되지 않습니다.)		Scripts/General/zzMaw-Items.lua	2044	1	아이템 마법부여 설명
 maw-868eb07bb6ca	translated	item	Spirit Magic Skill +	영혼 마법 기술 +		Scripts/General/zzMaw-Items.lua	2039	1	아이템 마법부여 기술 보너스
 maw-678dd8a69cfc	excluded	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	Internal engine/control literal only; not player-facing localization.
-maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	1	
+maw-e30bfd0c38dc	translated	item	stone	석화		Scripts/General/zzMaw-Items.lua	1260	1	면역 발동 상태 메시지의 동적 상태명
 maw-c1988ff4c89d	translated	item	Stone and premature ageing Immunity	석화 및 조기 노화 면역		Scripts/General/zzMaw-Items.lua	1280	1	특수 아이템 효과 설명
 maw-5c17772bd576	translated	item	Successfully covering an ally restores 3% of your HP	아군 엄호에 성공하면 자신의 생명력을 3% 회복합니다		Scripts/General/zzMaw-Items.lua	1379	1	전설 아이템 효과
 maw-4caf562d9a79	excluded	item	TemporaryBonus			Scripts/General/zzMaw-Item-Sorter.lua	101	7	Internal engine/control literal only; not player-facing localization.
@@ -438,7 +438,7 @@ maw-fdf3f280c840	excluded	item	Two-Handed Sword			Scripts/General/zzMaw-Items.lu
 maw-3deb74565196	excluded	item	Type			Scripts/General/zzMaw-Items.lua	2220	14	Internal engine/control literal only; not player-facing localization.
 maw-bd03227258e3	translated	item	Unarmed skill	맨손 전투 기술		Scripts/General/zzMaw-Items.lua	1883	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-40f2133dc6ab	untranslated	item	Uncom.			Scripts/General/zzMaw-Items.lua	461	3	
-maw-56394eec2a7b	untranslated	item	unconscious			Scripts/General/zzMaw-Items.lua	1259	1	
+maw-56394eec2a7b	translated	item	unconscious	의식불명		Scripts/General/zzMaw-Items.lua	1259	1	면역 발동 상태 메시지의 동적 상태명
 maw-4408ab2d1ad0	excluded	item	UseMouseItem			Scripts/Core/events.lua	2048	1	Internal engine/control literal only; not player-facing localization.
 maw-8ccdbd65065b	translated	item	"WARNING!!!
 
@@ -464,7 +464,7 @@ Down below a list of corrupted items:
 "		Scripts/General/zzMaw-Item-Sorter.lua	736	1	저장 중단 손상 경고
 maw-b83051d62e09	translated	item	Water Magic Skill +	물 마법 기술 +		Scripts/General/zzMaw-Items.lua	2040	1	아이템 마법부여 기술 보너스
 maw-8fabae26c6ea	translated	item	Water Resistance	물 저항		Data/Tables/Spells2.txt	27	3	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	1258	1	
+maw-301ce3955ba4	translated	item	weakness	약화		Scripts/General/zzMaw-Items.lua	1258	1	면역 발동 상태 메시지의 동적 상태명
 maw-fb360f9c09ac	excluded	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
 maw-5397e0583f14	excluded	item	Yes			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
 maw-8fff039853f5	excluded	item	YES			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.

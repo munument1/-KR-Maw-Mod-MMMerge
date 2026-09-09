@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1760,
-    "translated": 989,
-    "untranslated": 276
+    "translated": 1002,
+    "untranslated": 263
   },
   "categories": {
     "class": 37,
@@ -67,6 +67,7 @@
     "reviewed_alchemy_item_name": 27,
     "reviewed_arena_ui": 4,
     "reviewed_crafting_status_name": 20,
+    "reviewed_immunity_status_name": 17,
     "reviewed_internal_api_literal": 342,
     "reviewed_item_corruption_message": 8,
     "reviewed_map_level_label": 1,
@@ -81,7 +82,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 416
+    "uncertain_context": 399
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -90,7 +91,7 @@
   "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
   "individual_literal_refinements": 5,
   "internal_only_unique_sources": 1746,
-  "internal_only_newly_excluded": 73,
+  "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 2217,
   "proven_display_promotions": 464,
@@ -109,9 +110,9 @@
   "proven_item_enchantment_label_lines": 27,
   "proven_item_enchantment_label_promotions": 31,
   "proven_settings_header_promotions": 2,
-  "reviewed_bulk_display_promotions": 92,
-  "uncertain_review_unique_sources": 266,
-  "uncertain_review_occurrences": 379,
+  "reviewed_bulk_display_promotions": 109,
+  "uncertain_review_unique_sources": 253,
+  "uncertain_review_occurrences": 362,
   "uncertain_review_exact_mmmerge_matches": 10,
   "uncertain_review_ambiguous_mmmerge_matches": 1
 }

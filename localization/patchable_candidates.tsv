@@ -238,11 +238,14 @@ Enlightenment bonus still apply."	"버프가 마나 대신 생명력을 점유�
 Celestial 	천상의 	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(120, 240, 255,""Celestial "" .. t.Name)"
 Crafting Item	제작 재료	translated	item	1	proven_item_display_text:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].NotIdentifiedName=""Crafting Item"""
 Crit chance increased by 10% and crit chance over 100% increases total damage	치명타 확률이 10% 증가하며, 100%를 초과한 치명타 확률은 총 피해를 증가시킵니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[14]=""Crit chance increased by 10% and crit chance over 100% increases total damage"","
+curse	저주	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[18] = { [9] = ""disease"", [10] = ""disease"", [11] = ""disease"", [1] = ""curse"" },"
 Damage: 	피해: 	translated	item	2	proven_item_information_field:2	Scripts/General/zzMaw-Items.lua	"t.BasicStat= ""Attack: +"" .. bonus .. ""  "" .. ""Damage: "" ..  txt.Mod1DiceCount .. ""d"" .. sides .. ""+"" .. bonus"
 Dark Magic Skill +	어둠 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[28] = ""Dark Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
+death	죽음	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[25] = { [14] = ""death"", [16] = ""eradication"" },"
 Death and Eradication Immunity	죽음 및 소멸 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[24].BonusStat=""Death and Eradication Immunity"""
 Dimension Map	차원 지도	translated	item	1	known_display_name_assignment:1	Scripts/General/zzMaw-Maps.lua	"Game.ItemsTxt[290].Name=""Dimension Map"""
 Disarm skill	함정 해제 기술	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[19] = StrColor(255,255,153, ""Disarm skill"")"
+disease	질병	translated	item	3	reviewed_immunity_status_name:3	Scripts/General/zzMaw-Items.lua	"[18] = { [9] = ""disease"", [10] = ""disease"", [11] = ""disease"", [1] = ""curse"" },"
 Disease and Curse Immunity	질병 및 저주 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[17].BonusStat=""Disease and Curse Immunity"""
 Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)	신성한 보호 (사망하는 대신 생명력 25%로 회복, 5분마다 한 번)	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[15]=""Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)"","
 Dodge skill	회피 기술	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[23] = StrColor(255,255,153, ""Dodge skill"")"
@@ -251,6 +254,7 @@ Earth Magic Skill +	대지 마법 기술 +	translated	item	1	proven_item_enchant
 Earth Resistance	대지 저항	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[14] = StrColor(153, 76, 0, ""Earth Resistance"")"
 Endless Potion	무한 물약	translated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[1069].Name=""Endless Potion"""
 Endurance	인내력	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[4] = StrColor(0, 255, 0, ""Endurance"")"
+eradication	소멸	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[25] = { [14] = ""death"", [16] = ""eradication"" },"
 Explosive Impact! (half damage)	폭발 충격! (피해 절반)	translated	item	2	proven_special_item_bonus_description:2	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[2].BonusStat=""Explosive Impact! (half damage)"""
 Fire	화염	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
 Fire Magic Skill +	화염 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[30] = ""Fire Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
@@ -274,6 +278,7 @@ Increases Ascension Skill level by 10	승천 기술 레벨이 10 증가합니다
 "Increases item's roughness, making it more resistant to breaking.
 "	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
 "	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[236] = ""Increases item's roughness, making it more resistant to breaking.\n"","
+insanity	광기	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[19] = { [5] = ""insanity"", [22] = ""spell drain"" },"
 Insanity and SP drain Immunity	광기 및 주문력 흡수 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[18].BonusStat=""Insanity and SP drain Immunity"""
 Intellect	지능	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[2] = StrColor(255, 128, 0, ""Intellect"")"
 Killing a Monster Restores 10% of Health and Mana	몬스터를 처치하면 생명력과 마나를 10% 회복합니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[24]=""Killing a Monster Restores 10% of Health and Mana"","
@@ -298,12 +303,15 @@ Mind Resistance	정신 저항	translated	item	2	formatted_colored_text:1; proven
 다음 전설 능력을 아이템에 부여합니다:"	translated	item	1	proven_itemtxt_alias_display:1	Scripts/General/zzAlchemy.lua	"txt[1067].Notes=""Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\n Adds the following legendary power to an item:"""
 Overhealing reduces recovery time equal to half overhealing amount	초과 회복량의 절반만큼 회복 시간을 감소시킵니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[35]=""Overhealing reduces recovery time equal to half overhealing amount"","
 Overhealing refunds mana	초과 회복 시 마나를 돌려받습니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[34]=""Overhealing refunds mana"","
+paralysis	마비	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[20] = { [12] = ""paralysis"", [23] = ""fear"" },"
 Paralysis and fear Immunity	마비 및 공포 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[19].BonusStat=""Paralysis and fear Immunity"""
 Personality	인격	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[3] = StrColor(0, 127, 255, ""Personality"")"
+poison	독	translated	item	3	reviewed_immunity_status_name:3	Scripts/General/zzMaw-Items.lua	"[21] = { [6] = ""poison"", [7] = ""poison"", [8] = ""poison"", [2] = ""weakness"" },"
 Poison and weakness Immunity	독 및 약화 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[20].BonusStat=""Poison and weakness Immunity"""
 Potion Bottle	물약병	translated	item	1	proven_item_display_text:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[1069].NotIdentifiedName=""Potion Bottle"""
 Potion Deleted in Austerity	절제 모드에서 삭제된 물약	translated	item	3	known_display_name_assignment:3	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in Austerity"""
 Potion Deleted in MAW	MAW에서 삭제된 물약	translated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in MAW"""
+premature ageing	조기 노화	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[23] = { [15] = ""stone"", [21] = ""premature ageing"" },"
 Primordial 	태고의 	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,0,0,""Primordial "" .. t.Name)"
 "Recipes:
 Add Red: Bless
@@ -332,12 +340,15 @@ Reduces damage by 3% for each enemy in the nearbies	주변의 적 하나마다 �
 Reduces Physical damage taken by 15%	받는 물리 피해 15% 감소	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[35].BonusStat=""Reduces Physical damage taken by 15%"""
 Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[66] = ""Regenerates Hit Points and Meditation Skill +"" .. math.floor(MaxCharges*3/20)+3,"
 Repair skill	수리 기술	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[18] = StrColor(255,255,153, ""Repair skill"")"
+sleep	수면	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[22] = { [3] = ""sleep"", [13] = ""unconscious"" },"
 Sleep and Unconscious Immunity	수면 및 의식불명 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[21].BonusStat=""Sleep and Unconscious Immunity"""
 Solarstone	태양석	translated	item	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
 Speed	민첩성	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[6] = StrColor(127, 0, 255, ""Speed"")"
+spell drain	주문력 흡수	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[19] = { [5] = ""insanity"", [22] = ""spell drain"" },"
 Spell Points	주문력	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[9] = StrColor(0, 100, 255, ""Spell Points"")"
 Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).	주문으로 대상의 생명력을 흡수하고 주문 시전 속도가 증가합니다. (보조 손에 장비하면 적용되지 않습니다.)	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[40] = ""Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand)."","
 Spirit Magic Skill +	영혼 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[33] = ""Spirit Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
+stone	석화	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[23] = { [15] = ""stone"", [21] = ""premature ageing"" },"
 Stone and premature ageing Immunity	석화 및 조기 노화 면역	translated	item	1	proven_special_item_bonus_description:1	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[22].BonusStat=""Stone and premature ageing Immunity"""
 Successfully covering an ally restores 3% of your HP	아군 엄호에 성공하면 자신의 생명력을 3% 회복합니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[23]=""Successfully covering an ally restores 3% of your HP"","
 The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.	기억의 진주는 마법부여된 아이템에서 무작위 마법부여 하나를 지울 수 있는 힘을 지닌 신비한 아이템입니다.	translated	item	1	proven_itemtxt_alias_display:1	Scripts/General/zzAlchemy.lua	"txt[1066].Notes=""The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item."""
@@ -351,6 +362,7 @@ This items allows to increase the number of charges of Protection, Meditation, R
 Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher	죽음/소멸 판정에 사용하는 생명력 임계값은 더 높은 경우 주문력에 마나 방패 효율을 곱한 값을 대신 사용합니다	translated	item	1	proven_legendary_item_tooltip:1	Scripts/General/zzMaw-Items.lua	"[30]=""Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher"","
 Total corrupted items: 	손상된 아이템 수: 	translated	item	1	reviewed_item_corruption_message:1	Scripts/General/zzMaw-Item-Sorter.lua	"""Total corrupted items: "" .. brokenItems"
 Unarmed skill	맨손 전투 기술	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[24] = StrColor(255,255,153, ""Unarmed skill"")"
+unconscious	의식불명	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[22] = { [3] = ""sleep"", [13] = ""unconscious"" },"
 "WARNING!!!
 
 DURING THE AUTOSAVE, CORRUPTED ITEMS/BAGS HAVE BEEN DETECTED! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can keep playing (not recommended). 
@@ -375,6 +387,7 @@ Down below a list of corrupted items:
 "	translated	item	1	reviewed_item_corruption_message:1	Scripts/General/zzMaw-Item-Sorter.lua	"txt=""WARNING!!!\n\nSAVE HAVE BEEN STOPPED DUE TO CORRUPTED ITEMS/BAGS! Either load a previous save, where items/bags are not corrupted, or properly check your bags, and if no item/bag is missing you can save again (this time no warning will be given). \nDown below a list of corrupted items:\n\n"" .. txt"
 Water Magic Skill +	물 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[34] = ""Water Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
 Water Resistance	물 저항	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[13] = StrColor(100, 180, 255, ""Water Resistance"")"
+weakness	약화	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[21] = { [6] = ""poison"", [7] = ""poison"", [8] = ""poison"", [2] = ""weakness"" },"
 "You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
 Leaving a dungeon before killing most of them will cause monsters to respawn.
 Clearing a dungeon will grant you extra rewards.

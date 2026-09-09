@@ -1252,13 +1252,13 @@ end
 -----------------------------
 function events.DoBadThingToPlayer(t)
     local protectionMessages = {
-        [18] = { [9] = "disease", [10] = "disease", [11] = "disease", [1] = "curse" },
-        [19] = { [5] = "insanity", [22] = "spell drain" },
-        [20] = { [12] = "paralysis", [23] = "fear" },
-        [21] = { [6] = "poison", [7] = "poison", [8] = "poison", [2] = "weakness" },
-        [22] = { [3] = "sleep", [13] = "unconscious" },
-        [23] = { [15] = "stone", [21] = "premature ageing" },
-        [25] = { [14] = "death", [16] = "eradication" },
+        [18] = { [9] = "질병", [10] = "질병", [11] = "질병", [1] = "저주" },
+        [19] = { [5] = "광기", [22] = "주문력 흡수" },
+        [20] = { [12] = "마비", [23] = "fear" },
+        [21] = { [6] = "독", [7] = "독", [8] = "독", [2] = "약화" },
+        [22] = { [3] = "수면", [13] = "의식불명" },
+        [23] = { [15] = "석화", [21] = "조기 노화" },
+        [25] = { [14] = "죽음", [16] = "소멸" },
     }
 
     for it in t.Player:EnumActiveItems() do
