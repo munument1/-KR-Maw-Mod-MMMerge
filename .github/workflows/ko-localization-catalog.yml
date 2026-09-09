@@ -16,6 +16,7 @@ on:
       - 'tools/promote_alchemy_tooltips.py'
       - 'tools/promote_monster_tooltips.py'
       - 'tools/promote_map_item_tooltips.py'
+      - 'tools/promote_direct_ui_literals.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -73,6 +74,9 @@ jobs:
 
       - name: Promote map item tooltips
         run: python tools/promote_map_item_tooltips.py --root .
+
+      - name: Promote direct UI literals
+        run: python tools/promote_direct_ui_literals.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
