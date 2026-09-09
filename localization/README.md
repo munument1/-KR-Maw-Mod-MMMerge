@@ -79,20 +79,29 @@
 
 `.github/workflows/zmaw-lod-audit.yml`은 `mmarch 7.0.0`을 고정 사용하여 MAW 4.5의 `zMaw.T.lod`를 추출하고, 한국어 표시 필드를 적용한 다음 `korean/Data/zzzMawKO.T.lod`를 다시 만든다.
 
-현재 자동 이식하는 표시 필드:
+현재 자동 이식하거나 번역하는 표시 필드:
 
-| 파일 | 한국어화 필드 |
-| --- | --- |
-| `ITEMS.txt` | Name, Not identified name, Notes |
-| `MONSTERS.txt` | Name |
-| `Placemon.txt` | Name |
-| `mapstats.txt` | Name |
-| `class.txt` | Class name, Class description |
-| `SPCITEMS.TXT` | BonusStat, NameAdd |
+| 파일 | 한국어화 필드 | 적용 수 |
+| --- | --- | ---: |
+| `ITEMS.txt` | Name, Not identified name, Notes | 6,583 |
+| `MONSTERS.txt` | Name | 651 |
+| `Placemon.txt` | Name | 161 |
+| `mapstats.txt` | Name | 207 |
+| `class.txt` | Class name, Class description | 106 |
+| `SPCITEMS.TXT` | BonusStat, NameAdd | 146 |
+| `POTION.TXT` | Name, Description, Effect | 366 |
+| `POTNOTES.TXT` | Name, Description, Effect | 366 |
+| `rnditems.txt` | 번역하지 않음 | 0 |
 
-이 필드들은 기존 `munument1/-KR-MMMerge`의 ID/행 기반 한국어 런타임 테이블에서 가져오며, **그 외 MAW 4.5 수치·레시피·파일명·내부 키는 원본 값을 유지한다.**
+현재 LOD에서 한국어화된 표시 필드는 **총 8,586개**다.
 
-현재 `POTION.TXT`, `POTNOTES.TXT`, `rnditems.txt`는 스키마 검토가 끝나지 않아 번역하지 않고 MAW 원본 바이트를 그대로 보존한다.
+`POTION.TXT`와 `POTNOTES.TXT`는 각각 122행을 별도로 검토한다. 두 파일은 같은 ID에서도 이름이나 설명이 다른 경우가 많으므로 서로 복사하지 않고 독립적으로 번역한다. `tools/export_zmaw_potion_display.py`가 두 테이블의 `Name / Description / Effect`를 감사용으로 추출하고, `tools/build_korean_zmaw_potions.py`가 해당 세 필드만 한국어화한다.
+
+물약 테이블의 **4열 이후 레시피·조합·제어 행렬은 번역 대상에서 제외**한다. 빌더가 각 행에서 이 뒤쪽 필드가 수정 전과 동일한지 확인하며, 하나라도 달라지면 빌드가 실패한다. 따라서 MAW 4.5의 실제 물약 조합 규칙과 수치는 유지한다.
+
+`rnditems.txt`는 현재 한국어로 바꿔야 하는 사용자 노출 필드라는 근거가 확인되지 않았으므로 **MAW 4.5 원본 바이트를 그대로 보존**한다. 표시용이라는 근거가 확인되기 전에는 마지막 영문 이름 열도 건드리지 않는다.
+
+기존 `munument1/-KR-MMMerge`의 ID/행 기반 한국어 런타임 테이블은 일치가 확인된 표시 필드에만 사용한다. **그 외 MAW 4.5 수치·레시피·파일명·내부 키는 원본 값을 유지한다.**
 
 빌드 후에는 생성한 `zzzMawKO.T.lod`를 다시 추출하여 9개 파일을 staging 결과와 바이트 단위로 비교한다. 이 round-trip 검사가 통과해야 Actions가 성공한다.
 
