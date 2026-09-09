@@ -43,13 +43,13 @@ maw-8306811ab44f	untranslated	class	%s     %s|		%s %s	Scripts/General/zzClasses.
 maw-f554a37086c3	untranslated	class	%s    %s		%s %s	Scripts/General/zzClasses.lua	673	8	
 maw-2b4ccc7581b3	untranslated	class	%s  %s|		%s %s	Scripts/General/zzClasses.lua	672	8	
 maw-b1fb3bec6fdb	untranslated	class	AC			Scripts/General/AdaptiveMonstersStats.lua	714	2	
-maw-1b81f28b5afb	untranslated	class	Attack			Scripts/General/zzClasses.lua	461	5	
+maw-1b81f28b5afb	translated	class	Attack	근접		Scripts/General/zzClasses.lua	461	5	Game.GlobalTxt 근접 공격 표시
 maw-5b4786e077ad	untranslated	class	Attack         +			Scripts/General/zzClasses.lua	828	1	
 maw-3854c81b2cf3	untranslated	class	Character %s has invalid class id: %s. Resetted to %s		%s %s %s	Scripts/General/NPCMercenaries.lua	742	1	
 maw-44f50a38ac6d	translated	class	Current damage from Mind: 	정신 마법으로 얻는 현재 피해: 		Scripts/General/zzClasses.lua	414	1	세라핌 능력치 표시
 maw-8996eb86c11b	translated	class	Current heal from Body: 	육체 마법으로 얻는 현재 회복량: 		Scripts/General/zzClasses.lua	408	1	세라핌 능력치 표시
 maw-1b1ac2652b80	untranslated	class	currentForce			Scripts/General/zzClasses.lua	866	1	
-maw-7bf6d1d3a58a	untranslated	class	Damage			Scripts/General/zzClasses.lua	462	5	
+maw-7bf6d1d3a58a	translated	class	Damage	피해량		Scripts/General/zzClasses.lua	462	5	Game.GlobalTxt 피해 표시
 maw-54198309009a	untranslated	class	damage			Scripts/General/zzClasses.lua	1156	9	
 maw-560fe3e00686	untranslated	class	"Damage
 
@@ -82,7 +82,7 @@ maw-0fb88bcef8a5	untranslated	class	GetArmorClass			Scripts/General/AdaptiveMons
 maw-8a3559daa477	untranslated	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours			Scripts/General/zzAlchemy.lua	482	1	
 maw-1c6884f089f2	untranslated	class	Merc			Scripts/General/NPCMercenaries.lua	756	1	
 maw-eeec8e860233	untranslated	class	Resistances			Scripts/General/zzClasses.lua	472	1	
-maw-b301c10b3d0a	untranslated	class	Shoot			Scripts/General/zzClasses.lua	833	2	
+maw-b301c10b3d0a	translated	class	Shoot	원거리		Scripts/General/zzClasses.lua	833	2	Game.GlobalTxt 원거리 공격 표시
 maw-edea0f29be7d	untranslated	class	Shoot         +			Scripts/General/zzClasses.lua	829	1	
 maw-1d87c39c6baa	untranslated	class	StackCost			Scripts/General/zzClasses.lua	2180	21	
 maw-aeddfe22a01f	untranslated	class	Tick			Scripts/General/zzClasses.lua	1484	3	
@@ -300,7 +300,7 @@ maw-888b9e5fb8ac	translated	item	Legendary 	전설의 		Scripts/General/zzMaw-It
 maw-2f14d8a3258f	untranslated	item	Light Magic Skill +			Scripts/General/zzMaw-Items.lua	2037	1	
 maw-a520c0870cdf	untranslated	item	Locate item			Scripts/Global/Quest_SavingGoobers.lua	856	1	
 maw-d219c68101f5	untranslated	item	Location			Scripts/General/zzMaw-MultiBag.lua	197	1	
-maw-e7f79931cf1c	untranslated	item	Longsword			Scripts/General/zzMaw-Items.lua	333	1	
+maw-e7f79931cf1c	translated	item	Longsword	장검		Scripts/General/zzMaw-Items.lua	333	1	미감정 아이템 이름
 maw-1c295a8aa571	translated	item	Luck	운		Scripts/General/zzMaw-Items.lua	1866	2	기존 MMMerge 능력치 용어
 maw-099db9f7dc17	untranslated	item	LUCK			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-b2efd3606c37	untranslated	item	Mace			Scripts/General/zzMaw-Items.lua	332	1	
@@ -327,7 +327,7 @@ maw-f190f3f1357e	untranslated	item	Paralysis and fear Immunity			Scripts/General
 maw-2981a383917f	translated	item	Personality	인격		Data/Tables/Class Starting Stats.txt	6	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e6aa09fd40ce	untranslated	item	poison			Scripts/General/zzMaw-Items.lua	1258	3	
 maw-ff11ae2fd1e0	untranslated	item	Poison and weakness Immunity			Scripts/General/zzMaw-Items.lua	1278	1	
-maw-0fff6c603c71	untranslated	item	Potion Bottle			Scripts/General/zzAlchemy.lua	1420	1	
+maw-0fff6c603c71	translated	item	Potion Bottle	물약병		Scripts/General/zzAlchemy.lua	1420	1	미감정 아이템 이름
 maw-d5f5800b1e69	translated	item	Potion Deleted in Austerity	절제 모드에서 삭제된 물약		Scripts/General/zzAlchemy.lua	17	3	내부 대체 아이템 표시명
 maw-ce1b7d972262	translated	item	Potion Deleted in MAW	MAW에서 삭제된 물약		Scripts/General/zzAlchemy.lua	11	1	내부 대체 아이템 표시명
 maw-b573f24e55d6	untranslated	item	power			Scripts/General/zzMaw-Items.lua	2265	2	
@@ -479,7 +479,7 @@ maw-1d8b33278753	excluded	map	FireResBonus			Scripts/Maps/7out01.lua	28	2	Intern
 maw-c5d2a2df3aa8	excluded	map	FireResistance			Scripts/Maps/outb1.lua	71	5	Internal engine/control literal only; not player-facing localization.
 maw-0d4615ae1d51	untranslated	map	firstSpawn			Scripts/Maps/7out05.lua	38	1	
 maw-c1abc8bc541d	untranslated	map	floursac			Scripts/Maps/BrBase.lua	444	1	
-maw-a32f6f0e92e5	untranslated	map	Goblin King			Scripts/Maps/7d29.lua	42	1	
+maw-a32f6f0e92e5	translated	map	Goblin King	고블린 왕		Scripts/Maps/7d29.lua	42	1	Game.PlaceMonTxt 몬스터 이름
 maw-69283d0142e2	untranslated	map	Goblin's Liutenant			Scripts/Maps/7out02.lua	92	1	
 maw-f2221392e37d	untranslated	map	goblingKing			Scripts/Maps/7d29.lua	48	1	
 maw-c57604db5869	excluded	map	Gold			Scripts/General/zzMaw-Monsters.lua	2812	13	Internal engine/control literal only; not player-facing localization.
@@ -1073,7 +1073,7 @@ maw-e595cefc2e22	untranslated	monster	Chapel of Eep			Scripts/General/zzMaw-Mons
 maw-c30b2092da2c	untranslated	monster	Church of Eep			Scripts/General/zzMaw-Monsters.lua	1292	2	
 maw-25276e20549d	untranslated	monster	Clanker's Laboratory			Scripts/General/zzMaw-Monsters.lua	1468	2	
 maw-66b8c9e342ba	untranslated	monster	cleared			Scripts/General/zzMaw-Monsters.lua	2322	1	
-maw-39e1f4502474	untranslated	monster	Cleric of Baa			Scripts/General/zzMaw-Monsters.lua	3795	1	
+maw-39e1f4502474	translated	monster	Cleric of Baa	바의 성직자		Scripts/General/zzMaw-Monsters.lua	3795	1	Game.PlaceMonTxt 몬스터 이름
 maw-3bd4ceda4dcc	untranslated	monster	"cmd /c mkdir ""%s"" >nul 2>nul"		%s	Scripts/General/zzMaw-Monsters.lua	2420	1	
 maw-1875e58c3df5	untranslated	monster	Colony Zod			Scripts/General/zzMaw-Monsters.lua	1519	2	
 maw-c312449c8d61	untranslated	monster	Control Center			Scripts/General/zzMaw-Monsters.lua	1685	2	
@@ -1214,7 +1214,7 @@ maw-f8f6fcd4f4bb	untranslated	monster	Poison 1			Scripts/General/zzMaw-Monsters.
 maw-78aa243f86a4	untranslated	monster	Poison 2			Scripts/General/zzMaw-Monsters.lua	3847	1	
 maw-339b4bb4108c	untranslated	monster	Poison 3			Scripts/General/zzMaw-Monsters.lua	3847	1	
 maw-ab33c2f2d196	untranslated	monster	Premature ageing			Scripts/General/zzMaw-Monsters.lua	3848	1	
-maw-248e3ee2bb8c	untranslated	monster	Priest of Baa			Scripts/General/zzMaw-Monsters.lua	3796	1	
+maw-248e3ee2bb8c	translated	monster	Priest of Baa	바의 사제		Scripts/General/zzMaw-Monsters.lua	3796	1	Game.PlaceMonTxt 몬스터 이름
 maw-f29e97cc2bc5	untranslated	monster	Prison of the Lord of Air			Scripts/General/zzMaw-Monsters.lua	1265	2	
 maw-967fa1099b18	untranslated	monster	Prison of the Lord of Earth			Scripts/General/zzMaw-Monsters.lua	1274	2	
 maw-bdda08b0f85c	untranslated	monster	Prison of the Lord of Fire			Scripts/General/zzMaw-Monsters.lua	1268	2	
@@ -1506,7 +1506,7 @@ Melee Power coefficient: "	"엄호의 경지에 이르러, 동료를 공격하�
 피해량은 두 계수에 의해 결정되며, 이후 기술 레벨이 곱해집니다:
 
 근접 위력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 본문
-maw-bbec938dae2f	untranslated	skill	Air Magic			Scripts/General/zzClasses.lua	2166	1	
+maw-bbec938dae2f	translated	skill	Air Magic	공기 마법		Scripts/General/zzClasses.lua	2166	1	Skillz.setName 표시명
 maw-53ad7869dac0	untranslated	skill	All damage is absorbed by mana			Scripts/General/zzMAW-Skills.lua	2481	1	
 maw-f9363b18c988	untranslated	skill	"Allow use to Cover Physical damage
 "			Scripts/General/zzMAW-Skills.lua	2048	1	
@@ -1525,7 +1525,7 @@ maw-dd933dd88d68	untranslated	skill	Attack|			Scripts/General/zzMAW-Skills.lua	5
 maw-c8fa8bc02696	untranslated	skill	baseSpeedMelee			Scripts/General/zzMAW-Skills.lua	358	1	
 maw-4265aa0579a1	untranslated	skill	baseSpeedRanged			Scripts/General/zzMAW-Skills.lua	354	1	
 maw-24652e28b940	untranslated	skill	Blood			Scripts/General/zzClasses.lua	1451	1	
-maw-b01262c9360e	untranslated	skill	Body Magic			Scripts/General/zzClasses.lua	1473	1	
+maw-b01262c9360e	translated	skill	Body Magic	육체 마법		Scripts/General/zzClasses.lua	1473	1	Skillz.setName 표시명
 maw-619b87bbb4ea	untranslated	skill	bonusSpeedMelee			Scripts/General/zzMAW-Skills.lua	357	1	
 maw-27f96dca33a7	untranslated	skill	bonusSpeedRanged			Scripts/General/zzMAW-Skills.lua	353	1	
 maw-c35678b78637	untranslated	skill	Broodling			Scripts/General/zzAlchemy.lua	1259	8	
@@ -1573,7 +1573,7 @@ Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something
 Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2099	1	
 maw-3711ef38c87d	translated	skill	Current Damage reduction per Mana: 	마나당 현재 피해 감소: 		Scripts/General/zzMAW-Skills.lua	2118	2	마나 방패 수치 표시
 maw-baa7b94348d2	untranslated	skill	Current Reduction: 			Scripts/General/zzClasses.lua	1457	2	
-maw-b3ec68d9a6c8	untranslated	skill	Dark Magic			Scripts/General/zzClasses.lua	1474	1	
+maw-b3ec68d9a6c8	translated	skill	Dark Magic	어둠 마법		Scripts/General/zzClasses.lua	1474	1	Skillz.setName 표시명
 maw-a8e6075e3936	untranslated	skill	Dmg%%|			Scripts/General/zzMAW-Skills.lua	542	1	
 maw-2398296e3634	untranslated	skill	Dmg|			Scripts/General/zzMAW-Skills.lua	549	1	
 maw-a45908c888a2	untranslated	skill	Double healing effect			Scripts/General/zzClasses.lua	432	1	
@@ -1582,11 +1582,11 @@ maw-eac1e2011194	untranslated	skill	"Dragons can use their fangs to deal atrocio
 Whenever this skill is below dragon skill it will push monsters away
 Each point in the skill increases damage and increases recovery time by 1.5%.
 "			Scripts/General/zzClasses.lua	800	1	
-maw-0ad6e75c517a	untranslated	skill	Earth Magic			Scripts/General/zzClasses.lua	2168	1	
+maw-0ad6e75c517a	translated	skill	Earth Magic	대지 마법		Scripts/General/zzClasses.lua	2168	1	Skillz.setName 표시명
 maw-78112dc2690b	untranslated	skill	Enlightenment			Scripts/General/zzMAW-Skills.lua	2508	1	
 maw-42d86cfd50b6	untranslated	skill	Exploding			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-70a1c0a505d3	untranslated	skill	Fangs			Scripts/General/zzClasses.lua	798	1	
-maw-3bc42b4b8932	untranslated	skill	Fire Magic			Scripts/General/zzClasses.lua	2165	1	
+maw-3bc42b4b8932	translated	skill	Fire Magic	화염 마법		Scripts/General/zzClasses.lua	2165	1	Skillz.setName 표시명
 maw-f95933ffb150	untranslated	skill	Fixator			Scripts/General/zzMAW-Skills.lua	1066	4	
 maw-35b259290ec3	excluded	skill	Food			Scripts/Global/NPCFollowersSkills.lua	328	1	Internal engine/control literal only; not player-facing localization.
 maw-6032a672e309	untranslated	skill	Frost			Scripts/General/zzClasses.lua	1450	1	
@@ -1728,7 +1728,7 @@ The cost of buffs is divided by the amount of mana you gain per level. As you re
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 "			Scripts/General/zzMAW-Skills.lua	2509	1	
 maw-f9bb62f972ac	untranslated	skill	Venomous			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-fb7fcba97ab8	untranslated	skill	Water Magic			Scripts/General/zzClasses.lua	1472	2	
+maw-fb7fcba97ab8	translated	skill	Water Magic	물 마법		Scripts/General/zzClasses.lua	1472	2	Skillz.setName 표시명
 maw-0627ec58a510	untranslated	skill	You don't meet the requirements, and cannot be taught until you do.			Scripts/General/zzMAW-Skills.lua	2276	1	
 maw-5c294ee8c995	untranslated	skill	You regenerate 10 energy per second			Scripts/General/zzClasses.lua	2122	1	
 maw-7915063e5e14	untranslated	skill	You regenerate 12 energy per second			Scripts/General/zzClasses.lua	2127	1	
@@ -1833,7 +1833,7 @@ maw-077fe9c54ed5	untranslated	spell	Base			Scripts/General/zzMaw-Items.lua	4264	
 maw-6feeb259c205	untranslated	spell	BaseCost			Scripts/General/zzMaw-Spells.lua	1306	13	
 maw-382da73f22da	translated	spell	Blood Leech	피 흡수		Scripts/General/zzClasses.lua	1405	1	MAW 주문명
 maw-260d8bb6cec2	untranslated	spell	Body Magic Book			Scripts/General/zzMaw-Spells.lua	3405	1	
-maw-f69f233005f1	untranslated	spell	Book			Scripts/General/zzMaw-Spells.lua	3360	1	
+maw-f69f233005f1	translated	spell	Book	책		Scripts/General/zzMaw-Spells.lua	3360	1	미감정 주문서 아이템 이름
 maw-72cc519ce0b0	untranslated	spell	CalcSpellDamage			Scripts/Core/events.lua	279	1	
 maw-5df90c8dfc70	untranslated	spell	CanLearnSpell			Scripts/Core/events.lua	2070	1	
 maw-7f1d5575b816	untranslated	spell	CanMonsterCastSpell			Scripts/Core/events.lua	2425	2	
@@ -1933,7 +1933,7 @@ maw-ff94692bdcd4	untranslated	spell	MonsterCanCastSpell			Scripts/General/ExtraE
 maw-2129c79c892e	untranslated	spell	MonsterCastSpellM			Scripts/General/ExtraEvents.lua	686	1	
 maw-5b35277d4879	untranslated	spell	movzx ecx, word ptr [eax + 0x1A4]			Scripts/General/SpellsTweaks.lua	182	1	
 maw-0036ba18480e	untranslated	spell	MultiBuff			Scripts/General/zzMaw-Spells.lua	2402	2	
-maw-08d2e98e6754	untranslated	spell	N/A			Scripts/General/zzClasses.lua	1429	1	
+maw-08d2e98e6754	excluded	spell	N/A			Scripts/General/zzClasses.lua	1429	1	통용 약어이므로 원문 유지
 maw-709a23220f2c	untranslated	spell	Name			Scripts/General/zzClasses.lua	1353	3	
 maw-3b8561455273	untranslated	spell	No active spell queue slot found			Scripts/General/zzMaw-Spells.lua	42	1	
 maw-445d14405c09	untranslated	spell	No additional effects			Scripts/General/zzClasses.lua	1422	2	
@@ -1946,7 +1946,7 @@ maw-5ad5209a4774	untranslated	spell	PlayerCastSpell			Scripts/General/ExtraEvent
 maw-fb012e567f5a	untranslated	spell	PlayerCastSpellFirst			Scripts/General/ExtraEvents.lua	856	1	
 maw-4691ee23b450	untranslated	spell	PlayerCastSpellLast			Scripts/General/ExtraEvents.lua	858	1	
 maw-1b671c136e12	untranslated	spell	Players spell recovery speed increased by 			Scripts/General/zzMaw-Maps.lua	2122	1	
-maw-571a4ca76edb	untranslated	spell	Quick Spell			Scripts/General/zzMaw-Stats.lua	1493	1	
+maw-571a4ca76edb	translated	spell	Quick Spell	퀵스펠		Scripts/General/zzMaw-Stats.lua	1493	1	Game.GlobalTxt 표시명
 maw-3ce95e4ab179	untranslated	spell	Removes Death and Eradication with no time limit			Scripts/General/zzMaw-Spells.lua	2196	1	
 maw-3020835da920	untranslated	spell	Restores based on the potion's power of spell points.			Scripts/General/zzAlchemy.lua	496	1	
 maw-c1e876e0d80c	untranslated	spell	sbair3			Scripts/General/zzMaw-Spells.lua	3286	3	
@@ -1991,7 +1991,7 @@ maw-cf6173037914	untranslated	spell	TargetRosterId			Scripts/General/zzMaw-Spell
 maw-5e83789be88e	untranslated	spell	Temple			Scripts/General/zzMaw-Spells.lua	2449	5	
 maw-d892a797ad07	untranslated	spell	Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.			Scripts/General/zzMaw-Spells.lua	3414	1	
 maw-8f4074b5271e	untranslated	spell	This spell is as good as it will ever be!			Scripts/General/zzClasses.lua	1446	1	
-maw-134fe9c4cffb	untranslated	spell	This spell is as good as it will ever get!			Scripts/General/zzMaw-Spells.lua	3300	1	
+maw-134fe9c4cffb	translated	spell	This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzMaw-Spells.lua	3300	1	주문 숙련 설명
 maw-5620c14ea2e7	untranslated	spell	Vampiric Aura			Scripts/General/zzMaw-Spells.lua	3088	1	
 maw-6d5a45920a15	untranslated	spell	water			Scripts/General/zzMaw-Spells.lua	3355	1	
 maw-fe2775bc4c97	untranslated	spell	Water Magic Book			Scripts/General/zzMaw-Spells.lua	3401	1	
@@ -2393,7 +2393,7 @@ maw-83f57ea48fa3	excluded	table	Divine Protection			Data/Tables/Potion settings.
 maw-66a167fd554f	excluded	table	Divine Resistance			Data/Tables/Potion settings.txt	45	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-50c55b1891d9	excluded	table	Divine Restoration			Data/Tables/Potion settings.txt	27	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-43d8a4263767	excluded	table	Divine Transcendence			Data/Tables/Potion settings.txt	64	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-489cd7978b02	untranslated	table	Dodging			Data/Tables/Class Skills.txt	34	7	
+maw-489cd7978b02	translated	table	Dodging	회피		Data/Tables/Class Skills.txt	34	7	Skillz.setName 표시명
 maw-0e6f5e03f778	excluded	table	Doom's Day Cloak			Data/Tables/Complex item pictures.txt	164	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-eb22c5e28adf	excluded	table	Dragon			Data/Tables/Class Extra.txt	12	6	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-8f788dea0e86	excluded	table	Dragon (5)			Data/Tables/Class Starting Stats.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3449,7 +3449,7 @@ maw-38be6c8c98ef	untranslated	tooltip	Damage 1-%s per point of skill		%s	Scripts
 maw-55f8ebc805e6	untranslated	tooltip	Description			Scripts/General/zzClasses.lua	1354	3	
 maw-6bbad1895edc	untranslated	tooltip	Directly inflicts magical damage upon a single creature.  Harm does %s points of damage plus 1-%s per point of skill in Body Magic.		%s %s	Scripts/General/zzMaw-Spells.lua	2112	1	
 maw-4a3a20b808c8	untranslated	tooltip	Dragon Breath empowers the caster to exhale a cloud of toxic vapors that targets a single monster and damage all creatures nearby, doing 1-%s points of damage per point of skill in Dark Magic.		%s	Scripts/General/zzMaw-Spells.lua	2121	1	
-maw-782466286030	untranslated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.			Scripts/General/zzMaw-Spells.lua	2084	1	
+maw-782466286030	translated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.		Scripts/General/zzMaw-Spells.lua	2084	1	화염 가시 주문 설명
 maw-5f2524678554	untranslated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage.		%s	Scripts/General/zzClasses.lua	2136	1	
 maw-a83369ab11f7	untranslated	tooltip	Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum.			Scripts/General/zzMaw-Spells.lua	3087	1	
 maw-fd9802058ff5	untranslated	tooltip	Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does %s%% of a melee attack damage.		%s	Scripts/General/zzClasses.lua	2135	1	
@@ -3590,7 +3590,7 @@ maw-05ed19818b49	untranslated	tooltip	SkillDescriptionsGM			Scripts/Structs/extr
 maw-16455c7296c7	untranslated	tooltip	SkillDescriptionsMaster			Scripts/Structs/extraEditableDescriptions.lua	42	1	
 maw-adce8a79d886	untranslated	tooltip	SkillDescriptionsNovice			Scripts/Structs/extraEditableDescriptions.lua	44	1	
 maw-04b7ba7373af	untranslated	tooltip	SkillMasteryDescriptions			Scripts/Structs/extraEditableDescriptions.lua	40	1	
-maw-7c5a179a26f4	untranslated	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.			Scripts/General/zzMaw-Spells.lua	2102	1	
+maw-7c5a179a26f4	translated	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.		Scripts/General/zzMaw-Spells.lua	2102	1	기절 주문 설명
 maw-186004378d79	untranslated	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage.		%s	Scripts/General/zzClasses.lua	2140	1	
 maw-731eb4cfeb01	untranslated	tooltip	Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic.		%s	Scripts/General/zzMaw-Spells.lua	2094	1	
 maw-fa2b7b773215	untranslated	tooltip	Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s points of damage plus 1-%s per point of skill.		%s %s	Scripts/General/zzMaw-Spells.lua	2098	1	
@@ -3618,7 +3618,7 @@ You can check following values by checking magic schools description in skills m
  - Each point in Earth will increase melee damage by a flat amount
  - Each point in Body will heal by flat amount
  - Each point in mind will restore a flat amount of mana"			Scripts/General/zzClasses.lua	966	1	
-maw-47690b30aff6	untranslated	tooltip	This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.			Scripts/General/zzClasses.lua	477	2	
+maw-47690b30aff6	translated	tooltip	This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.		Scripts/General/zzClasses.lua	477	2	용 숨결 주문 설명
 maw-b25c51ddac4f	untranslated	tooltip	"This class combines the evil forces with brute power, making it powerful and versatile.
  Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
 

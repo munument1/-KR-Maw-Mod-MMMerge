@@ -7,9 +7,9 @@
   "patchable_unique_sources": 308,
   "unpatchable_occurrences": 5805,
   "status": {
-    "excluded": 1194,
-    "translated": 299,
-    "untranslated": 1532
+    "excluded": 1195,
+    "translated": 320,
+    "untranslated": 1510
   },
   "categories": {
     "class": 37,
@@ -53,8 +53,8 @@
   "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 1825,
-  "uncertain_review_unique_sources": 1235,
-  "uncertain_review_occurrences": 1647,
-  "uncertain_review_exact_mmmerge_matches": 53,
+  "uncertain_review_unique_sources": 1213,
+  "uncertain_review_occurrences": 1619,
+  "uncertain_review_exact_mmmerge_matches": 31,
   "uncertain_review_ambiguous_mmmerge_matches": 15
 }
