@@ -726,7 +726,6 @@ ExtSetDw	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"Ico
 FrameLimit	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"NumberRegulator(ExSetScr, 103, 295, ""FrameLimit"","
 freeProgression	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
 ImprovedPathfinding	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
-MAW SETTINGS	ui	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"local ScreenId = CustomUI.NewSettingsPage(""BolsterFineTuning"", ""MAW SETTINGS"", ""ExSetScr2"")"
 MergeExSet	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"Key		=	""MergeExSet"","
 MergeExtraSettings	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"local ExSetScr = NewSettingsPage(""MergeExtraSettings"", "" General settings"", ""ExSetScr"")"
 OpenExtraSettingsMenu	ui	1	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua			"events.call(""OpenExtraSettingsMenu"")"

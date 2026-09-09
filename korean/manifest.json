@@ -1,18 +1,22 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 911,
-  "translated_entries_with_patchable_occurrences": 909,
-  "patchable_occurrences_targeted": 1197,
-  "skipped_unpatchable_occurrences_for_translated_sources": 72,
+  "translated_entries": 912,
+  "translated_entries_with_patchable_occurrences": 911,
+  "patchable_occurrences_targeted": 1199,
+  "skipped_unpatchable_occurrences_for_translated_sources": 71,
   "changed_files": [
+    {
+      "file": "Scripts/General/AdaptiveMonstersStats.lua",
+      "replacements": 1
+    },
     {
       "file": "Scripts/General/BountyHunt.lua",
       "replacements": 2
     },
     {
       "file": "Scripts/General/MenuExtraSettings.lua",
-      "replacements": 12
+      "replacements": 13
     },
     {
       "file": "Scripts/General/NPCFollowers.lua",
@@ -152,11 +156,6 @@
     }
   ],
   "warnings": [
-    {
-      "type": "translated_source_has_no_patchable_occurrence",
-      "source": " General settings",
-      "unpatchable_occurrences": 1
-    },
     {
       "type": "translated_source_has_no_patchable_occurrence",
       "source": "Emerald Island",

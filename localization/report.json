@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1198,
-    "translated": 911,
-    "untranslated": 916
+    "translated": 912,
+    "untranslated": 915
   },
   "categories": {
     "class": 37,
@@ -56,6 +56,7 @@
     "proven_monster_info_label": 28,
     "proven_monster_inspection_field": 8,
     "proven_npc_display_name": 1,
+    "proven_settings_page_header": 2,
     "proven_skill_display_description": 85,
     "proven_skill_display_name": 23,
     "proven_skill_mastery_description": 46,
@@ -67,7 +68,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 902
+    "uncertain_context": 900
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -94,8 +95,9 @@
   "proven_legendary_item_promotions": 25,
   "proven_item_enchantment_label_lines": 27,
   "proven_item_enchantment_label_promotions": 31,
-  "uncertain_review_unique_sources": 619,
-  "uncertain_review_occurrences": 857,
+  "proven_settings_header_promotions": 2,
+  "uncertain_review_unique_sources": 618,
+  "uncertain_review_occurrences": 856,
   "uncertain_review_exact_mmmerge_matches": 17,
   "uncertain_review_ambiguous_mmmerge_matches": 7
 }

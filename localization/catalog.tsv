@@ -4267,7 +4267,7 @@ Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복�
 maw-158b1f99e07b	translated	ui	Level:          	레벨:          		Scripts/General/zzMaw-Monsters.lua	2091	1	몬스터 감정창; 정렬 공백 보존
 maw-3e7d000abd3c	translated	ui	"Magic\01200000	070"	"마법\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2172	1	저항 표시; 제어 코드 보존
 maw-5a70527da19c	excluded	ui	MAW			Scripts/General/MenuExtraSettings.lua	308	1	모드 고유명사; 번역하지 않음
-maw-cab34b294f08	untranslated	ui	MAW SETTINGS			Scripts/General/AdaptiveMonstersStats.lua	434	1	
+maw-cab34b294f08	translated	ui	MAW SETTINGS	MAW 설정		Scripts/General/AdaptiveMonstersStats.lua	434	1	추가 설정 화면 제목
 maw-33b934efaa4c	untranslated	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	
 maw-37342e60033c	untranslated	ui	MergeExtraSettings			Scripts/General/MenuExtraSettings.lua	159	1	
 maw-a7b93d2128e8	untranslated	ui	Mode			Scripts/General/MenuExtraSettings.lua	162	2	

@@ -1935,6 +1935,7 @@ Total Leech Healing: "	"
 Total Regen Healing: "	"
 총 재생 회복량: "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
  Austerity	 절제	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+ General settings	 일반 설정	translated	ui	1	proven_settings_page_header:1	Scripts/General/MenuExtraSettings.lua	"local ExSetScr = NewSettingsPage(""MergeExtraSettings"", "" General settings"", ""ExSetScr"")"
  Randomizer	 무작위화	translated	ui	1	display_field_assignment:1	Scripts/General/zzzzMalekith-Randomizer.lua	"Text = "" Randomizer"","
 "%s
 
@@ -2061,6 +2062,7 @@ Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복�
 주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."""
 Level:          	레벨:          	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.ArmorClass.Text=string.format(""Level:          "" .. lvl .. ""\n"" .. t.ArmorClass.Text)"
 "Magic\01200000	070"	"마법\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[4].Text=string.format(""Magic\01200000	070"" .. magicRes)"
+MAW SETTINGS	MAW 설정	translated	ui	1	proven_settings_page_header:1	Scripts/General/AdaptiveMonstersStats.lua	"local ScreenId = CustomUI.NewSettingsPage(""BolsterFineTuning"", ""MAW SETTINGS"", ""ExSetScr2"")"
 "Night
 mare"	악몽	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Norm.	보통	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
