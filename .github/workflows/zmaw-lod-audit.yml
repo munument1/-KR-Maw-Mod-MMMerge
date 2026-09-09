@@ -8,6 +8,7 @@ on:
     paths:
       - 'Data/zMaw.T.lod'
       - 'tools/audit_zmaw_lod.py'
+      - 'tools/audit_zmaw_rnditems.py'
       - 'tools/build_korean_zmaw_lod_stage.py'
       - 'tools/export_zmaw_potion_display.py'
       - 'tools/build_korean_zmaw_potions.py'
@@ -47,6 +48,9 @@ jobs:
       - name: Audit embedded localization tables
         run: python tools/audit_zmaw_lod.py --source-dir localization/zmaw_lod_source --manifest localization/zmaw_lod_manifest.json --archive-sha f250f60d68982ce6e7df105554c47323bb105f0e
 
+      - name: Audit random item schema
+        run: python tools/audit_zmaw_rnditems.py --source-dir localization/zmaw_lod_source --report localization/zmaw_rnditems_report.json
+
       - name: Audit potion display fields
         run: python tools/export_zmaw_potion_display.py --source-dir localization/zmaw_lod_source --output localization/zmaw_potion_display.tsv --report localization/zmaw_potion_display_report.json
 
@@ -80,14 +84,14 @@ jobs:
           rm -rf localization/zmaw_lod_roundtrip
 
       - name: Check generated text
-        run: git diff --check -- localization/zmaw_lod_source localization/zmaw_lod_manifest.json localization/zmaw_potion_display.tsv localization/zmaw_potion_display_report.json localization/zmaw_potion_ko.tsv localization/zmaw_lod_ko_report.json
+        run: git diff --check -- localization/zmaw_lod_source localization/zmaw_lod_manifest.json localization/zmaw_rnditems_report.json localization/zmaw_potion_display.tsv localization/zmaw_potion_display_report.json localization/zmaw_potion_ko.tsv localization/zmaw_lod_ko_report.json
 
       - name: Commit generated LOD audit and overlay
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add localization/zmaw_lod_source localization/zmaw_lod_manifest.json localization/zmaw_potion_display.tsv localization/zmaw_potion_display_report.json localization/zmaw_potion_ko.tsv localization/zmaw_lod_ko_report.json korean/Data/zzzMawKO.T.lod
+          git add localization/zmaw_lod_source localization/zmaw_lod_manifest.json localization/zmaw_rnditems_report.json localization/zmaw_potion_display.tsv localization/zmaw_potion_display_report.json localization/zmaw_potion_ko.tsv localization/zmaw_lod_ko_report.json korean/Data/zzzMawKO.T.lod
           if git diff --cached --quiet; then
             echo 'zMaw.T.lod Korean overlay already up to date.'
             exit 0
