@@ -21,8 +21,8 @@ POTION.TXT	218	Mercury	수은	Reagent	시약	+ Bottle = Gray Potion +20	+ 물약
 POTION.TXT	219	Philosopher's Stone	현자의 돌	Reagent	시약	+ Bottle = Gray Potion +75	+ 물약병 = 회색 물약 +75
 POTION.TXT	220	Potion Bottle	물약병	Empty Bottle	빈 물약병	None	없음
 POTION.TXT	221	Catalyst	촉매	Gray Potion	회색 물약	Boost Potion	물약 강화
-POTION.TXT	222	Cure Wounds	상처 치료	Red Potion	붉은색 물약	Heal 10+skill HP	생명력 10 + 연금술 기술 수치 회복
-POTION.TXT	223	Magic Potion	마법 물약	Blue Potion	푸른색 물약	Restore 10+skill MP	주문력 10 + 연금술 기술 수치 회복
+POTION.TXT	222	Cure Wounds	상처 치료	Red Potion	붉은색 물약	Heal 10+skill HP	생명력 10 + 연금술 기술만큼 회복
+POTION.TXT	223	Magic Potion	마법 물약	Blue Potion	푸른색 물약	Restore 10+skill MP	주문력 10 + 연금술 기술만큼 회복
 POTION.TXT	224	Energy Potion	활력 물약	Yellow Potion	노란색 물약	Remove Weak cond	약화 상태 제거
 POTION.TXT	225	Antidote	해독제	Orange Potion	주황색 물약	Remove Disease 1,2,3 cond	질병 1·2·3단계 상태 제거
 POTION.TXT	226	Hexbane	헥스베인	Purple Potion	보라색 물약	Remove Poison 1,2,3 cond	독 1·2·3단계 상태 제거
@@ -35,32 +35,32 @@ POTION.TXT	232	Meditation	명상	Blue and Purple Potion	푸른색과 보라색 �
 POTION.TXT	233	Regeneration	재생	Blue and Green Potion	푸른색과 녹색 물약	Cast Protection	보호 시전
 POTION.TXT	234	Stone Skin	돌가죽	Yellow and Orange Potion	노란색과 주황색 물약	Cast Stoneskin	돌가죽 시전
 POTION.TXT	235	Water Breathing	수중 호흡	Yellow and Purple Potion	노란색과 보라색 물약	Prevents drowning damage	익사 피해 방지
-POTION.TXT	236	Harden Item	아이템 강화	Yellow and Green Potion	노란색과 녹색 물약	Add strength to toughness of item	아이템 견고함에 물약 위력 추가
+POTION.TXT	236	Harden Item	아이템 강화	Yellow and Green Potion	노란색과 녹색 물약	Add strength to toughness of item	아이템 견고함 +물약 위력
 POTION.TXT	237	Magic Protection	마법 보호	Orange and Purple Potion	주황색과 보라색 물약	Remove Fear cond	공포 상태 제거
 POTION.TXT	238	Enchant Item	아이템 마법 부여	Purple and Green Potion	보라색과 녹색 물약	Remove Curse cond	저주 상태 제거
 POTION.TXT	239	Stone to Flesh	석화 해제	Orange and Green Potion	주황색과 녹색 물약	Remove Insanity cond	광기 상태 제거
-POTION.TXT	240	Power Boost	힘 강화	White Potion	흰색 물약	Set Might Temp to 3xstrength for 30 min per strength	힘을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	241	Wisdom Boost	지혜 강화	White Potion	흰색 물약	Set Intellect Temp to 3xstrength for 30 min per strength	지성을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	242	Resilience Boost	회복력 강화	White Potion	흰색 물약	Set Personality Temp to 3xstrength for 30 min per strength	인격을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	243	Lesser Element	하급 원소	White Potion	흰색 물약	Set Endurance Temp to 3xstrength for 30 min per strength	지구력을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	244	Swiftness	신속	White Potion	흰색 물약	Set Speed Temp to 3xstrength for 30 min per strength	속도을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	245	Champion's Potion	챔피언의 물약	White Potion	흰색 물약	Set Accuracy Temp to 3xstrength for 30 min per strength	정확도을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	246	Divine Restoration	신성한 회복	White Potion	흰색 물약	Add 'of flame' to weapon for 30 min per strength	무기에 화염 효과 부여: 위력 1당 30분
-POTION.TXT	247	Divine Cure	신성한 치유	White Potion	흰색 물약	Add 'of frost' to weapon for 30 min per strength	무기에 냉기 효과 부여: 위력 1당 30분
-POTION.TXT	248	Divine Magic	신성한 마법	White Potion	흰색 물약	Add 'of poison' to weapon for 30 min per strength	무기에 독 효과 부여: 위력 1당 30분
-POTION.TXT	249	Elemental Resistance	원소 저항	White Potion	흰색 물약	Add 'of sparks' to weapon for 30 min per strength	무기에 전격 효과 부여: 위력 1당 30분
-POTION.TXT	250	Self Resistance	자기 저항	White Potion	흰색 물약	Add 'of swiftness' to weapon for 30 min per strength	무기에 신속 효과 부여: 위력 1당 30분
+POTION.TXT	240	Power Boost	힘 강화	White Potion	흰색 물약	Set Might Temp to 3xstrength for 30 min per strength	힘 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	241	Wisdom Boost	지혜 강화	White Potion	흰색 물약	Set Intellect Temp to 3xstrength for 30 min per strength	지성 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	242	Resilience Boost	회복력 강화	White Potion	흰색 물약	Set Personality Temp to 3xstrength for 30 min per strength	인격 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	243	Lesser Element	하급 원소	White Potion	흰색 물약	Set Endurance Temp to 3xstrength for 30 min per strength	지구력 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	244	Swiftness	신속	White Potion	흰색 물약	Set Speed Temp to 3xstrength for 30 min per strength	속도 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	245	Champion's Potion	챔피언의 물약	White Potion	흰색 물약	Set Accuracy Temp to 3xstrength for 30 min per strength	정확도 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	246	Divine Restoration	신성한 회복	White Potion	흰색 물약	Add 'of flame' to weapon for 30 min per strength	무기에 화염 효과 부여, 지속: 위력 1당 30분
+POTION.TXT	247	Divine Cure	신성한 치유	White Potion	흰색 물약	Add 'of frost' to weapon for 30 min per strength	무기에 냉기 효과 부여, 지속: 위력 1당 30분
+POTION.TXT	248	Divine Magic	신성한 마법	White Potion	흰색 물약	Add 'of poison' to weapon for 30 min per strength	무기에 독 효과 부여, 지속: 위력 1당 30분
+POTION.TXT	249	Elemental Resistance	원소 저항	White Potion	흰색 물약	Add 'of sparks' to weapon for 30 min per strength	무기에 전격 효과 부여, 지속: 위력 1당 30분
+POTION.TXT	250	Self Resistance	자기 저항	White Potion	흰색 물약	Add 'of swiftness' to weapon for 30 min per strength	무기에 신속 효과 부여, 지속: 위력 1당 30분
 POTION.TXT	251	Paladin's Potion	성기사의 물약	White Potion	흰색 물약	Remove Paralyze cond	마비 상태 제거
 POTION.TXT	252	Pure Power	순수한 힘	Black Potion	검은색 물약	Remove all cond (not dead/stone/errad)	모든 상태 제거(사망·석화·소멸 제외)
-POTION.TXT	253	Pure Wisdom	순수한 지혜	Black Potion	검은색 물약	Heal 10xskill HP	생명력 연금술 기술 x 10 회복
-POTION.TXT	254	Pure Resilience	순수한 회복력	Black Potion	검은색 물약	Restore 10xskill MP	주문력 연금술 기술 x 10 회복
-POTION.TXT	255	Greater Element	상급 원소	Black Potion	검은색 물약	Set Luck Temp to 3xstrength for 30 min per strength	행운을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTION.TXT	256	Darkness	어둠	Black Potion	검은색 물약	Set Fire Resist Temp to 3xskill for 30 min per skill	화염 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTION.TXT	257	Divine Blessing	신성한 축복	Black Potion	검은색 물약	Set Air Resist Temp to 3xskill for 30 min per skill	공기 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTION.TXT	258	Twilight	황혼	Black Potion	검은색 물약	Set Water Resist Temp to 3xskill for 30 min per skill	물 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTION.TXT	259	Transcendence	초월	Black Potion	검은색 물약	Set Earth Resist Temp to 3xskill for 30 min per skill	대지 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTION.TXT	260	Dawn	여명	Black Potion	검은색 물약	Set Mind Resist Temp to 3xskill for 30 min per skill	정신 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTION.TXT	261	Pure Elemental Resistance	순수 원소 저항	Black Potion	검은색 물약	Set Body Resist Temp to 3xskill for 30 min per skill	육체 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
+POTION.TXT	253	Pure Wisdom	순수한 지혜	Black Potion	검은색 물약	Heal 10xskill HP	생명력 (연금술 기술 x 10) 회복
+POTION.TXT	254	Pure Resilience	순수한 회복력	Black Potion	검은색 물약	Restore 10xskill MP	주문력 (연금술 기술 x 10) 회복
+POTION.TXT	255	Greater Element	상급 원소	Black Potion	검은색 물약	Set Luck Temp to 3xstrength for 30 min per strength	행운 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTION.TXT	256	Darkness	어둠	Black Potion	검은색 물약	Set Fire Resist Temp to 3xskill for 30 min per skill	화염 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTION.TXT	257	Divine Blessing	신성한 축복	Black Potion	검은색 물약	Set Air Resist Temp to 3xskill for 30 min per skill	공기 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTION.TXT	258	Twilight	황혼	Black Potion	검은색 물약	Set Water Resist Temp to 3xskill for 30 min per skill	물 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTION.TXT	259	Transcendence	초월	Black Potion	검은색 물약	Set Earth Resist Temp to 3xskill for 30 min per skill	대지 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTION.TXT	260	Dawn	여명	Black Potion	검은색 물약	Set Mind Resist Temp to 3xskill for 30 min per skill	정신 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTION.TXT	261	Pure Elemental Resistance	순수 원소 저항	Black Potion	검은색 물약	Set Body Resist Temp to 3xskill for 30 min per skill	육체 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
 POTION.TXT	262	Pure Self Resistance	순수 자기 저항	Black Potion	검은색 물약	Remove Stone cond	석화 상태 제거
 POTION.TXT	263	Divine Resistance	신성 저항	Black Potion	검은색 물약	Add 'of dragon slaying' to weapon	무기에 용 살해 효과 부여
 POTION.TXT	264	Pure Luck	순수한 행운	Black Potion	검은색 물약	+50 to Perm Luck	행운 영구 +50
@@ -70,7 +70,7 @@ POTION.TXT	267	Pure Endurance	순수한 지구력	Black Potion	검은색 물약	
 POTION.TXT	268	Pure Personality	순수한 인격	Black Potion	검은색 물약	+50 to Perm Personality	인격 영구 +50
 POTION.TXT	269	Pure Accuracy	순수한 정확도	Black Potion	검은색 물약	+50 to Perm Accuracy	정확도 영구 +50
 POTION.TXT	270	Pure Might	순수한 힘	Black Potion	검은색 물약	+50 to Perm Might	힘 영구 +50
-POTION.TXT	271	Rejuvenation	회춘	Black Potion	검은색 물약	Set Age Temp to 0	마법적 노화 수치를 0으로 설정
+POTION.TXT	271	Rejuvenation	회춘	Black Potion	검은색 물약	Set Age Temp to 0	일시적 나이 수치를 0으로 설정
 POTION.TXT	272	Essence of Might	힘의 정수	White Potion	흰색 물약	Permanently raises Might by 15 while reducing Intellect by 15	힘 영구 +15, 지성 영구 -15
 POTION.TXT	273	Essence of Intellect	지성의 정수	White Potion	흰색 물약	Permanently raises Intellect by 15 while reducing Might by 15	지성 영구 +15, 힘 영구 -15
 POTION.TXT	274	Essence of Personality	인격의 정수	White Potion	흰색 물약	Permanently raises Personality by 15 while reducing Speed by 15	인격 영구 +15, 속도 영구 -15
@@ -143,8 +143,8 @@ POTNOTES.TXT	218	Mercury	수은	Reagent	시약	+ Bottle = Gray Potion +20	+ 물�
 POTNOTES.TXT	219	Philosopher's Stone	현자의 돌	Reagent	시약	+ Bottle = Gray Potion +75	+ 물약병 = 회색 물약 +75
 POTNOTES.TXT	220	Potion Bottle	물약병	Empty Bottle	빈 물약병	None	없음
 POTNOTES.TXT	221	Catalyst	촉매	Gray Potion	회색 물약	Boost Potion	물약 강화
-POTNOTES.TXT	222	Cure Wounds	상처 치료	Red Potion	붉은색 물약	Heal 10+skill HP	생명력 10 + 연금술 기술 수치 회복
-POTNOTES.TXT	223	Magic Potion	마법 물약	Blue Potion	푸른색 물약	Restore 10+skill MP	주문력 10 + 연금술 기술 수치 회복
+POTNOTES.TXT	222	Cure Wounds	상처 치료	Red Potion	붉은색 물약	Heal 10+skill HP	생명력 10 + 연금술 기술만큼 회복
+POTNOTES.TXT	223	Magic Potion	마법 물약	Blue Potion	푸른색 물약	Restore 10+skill MP	주문력 10 + 연금술 기술만큼 회복
 POTNOTES.TXT	224	Cure Weakness	약화 치료	Yellow Potion	노란색 물약	Remove Weak cond	약화 상태 제거
 POTNOTES.TXT	225	Cure Disease	질병 치료	Orange Potion	주황색 물약	Remove Disease 1,2,3 cond	질병 1·2·3단계 상태 제거
 POTNOTES.TXT	226	Cure Poison	독 치료	Purple Potion	보라색 물약	Remove Poison 1,2,3 cond	독 1·2·3단계 상태 제거
@@ -157,32 +157,32 @@ POTNOTES.TXT	232	Shield	방패	Blue and Purple Potion	푸른색과 보라색 물
 POTNOTES.TXT	233	Recharge Item	아이템 재충전	Blue and Green Potion	푸른색과 녹색 물약	Cast Protection	보호 시전
 POTNOTES.TXT	234	Stoneskin	돌가죽	Yellow and Orange Potion	노란색과 주황색 물약	Cast Stoneskin	돌가죽 시전
 POTNOTES.TXT	235	Water Breathing	수중 호흡	Yellow and Purple Potion	노란색과 보라색 물약	Prevent drowning damage	익사 피해 방지
-POTNOTES.TXT	236	Harden Item	아이템 강화	Yellow and Green Potion	노란색과 녹색 물약	Add strength to toughness of item	아이템 견고함에 물약 위력 추가
+POTNOTES.TXT	236	Harden Item	아이템 강화	Yellow and Green Potion	노란색과 녹색 물약	Add strength to toughness of item	아이템 견고함 +물약 위력
 POTNOTES.TXT	237	Remove Fear	공포 제거	Orange and Purple Potion	주황색과 보라색 물약	Remove Fear cond	공포 상태 제거
 POTNOTES.TXT	238	Remove Curse	저주 제거	Purple and Green Potion	보라색과 녹색 물약	Remove Curse cond	저주 상태 제거
 POTNOTES.TXT	239	Cure Insanity	광기 치료	Orange and Green Potion	주황색과 녹색 물약	Remove Insanity cond	광기 상태 제거
-POTNOTES.TXT	240	Might Boost	힘 강화	White Potion	흰색 물약	Set Might Temp to 3xstrength for 30 min per strength	힘을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	241	Intellect Boost	지성 강화	White Potion	흰색 물약	Set Intellect Temp to 3xstrength for 30 min per strength	지성을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	242	Personality Boost	인격 강화	White Potion	흰색 물약	Set Personality Temp to 3xstrength for 30 min per strength	인격을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	243	Endurance Boost	지구력 강화	White Potion	흰색 물약	Set Endurance Temp to 3xstrength for 30 min per strength	지구력을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	244	Speed Boost	속도 강화	White Potion	흰색 물약	Set Speed Temp to 3xstrength for 30 min per strength	속도을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	245	Accuracy Boost	정확도 강화	White Potion	흰색 물약	Set Accuracy Temp to 3xstrength for 30 min per strength	정확도을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	246	Flaming Potion	화염 물약	White Potion	흰색 물약	Add 'of flame' to weapon for 30 min per strength	무기에 화염 효과 부여: 위력 1당 30분
-POTNOTES.TXT	247	Freezing Potion	냉기 물약	White Potion	흰색 물약	Add 'of frost' to weapon for 30 min per strength	무기에 냉기 효과 부여: 위력 1당 30분
-POTNOTES.TXT	248	Noxious Potion	맹독 물약	White Potion	흰색 물약	Add 'of poison' to weapon for 30 min per strength	무기에 독 효과 부여: 위력 1당 30분
-POTNOTES.TXT	249	Shocking Potion	전격 물약	White Potion	흰색 물약	Add 'of sparks' to weapon for 30 min per strength	무기에 전격 효과 부여: 위력 1당 30분
-POTNOTES.TXT	250	Swift Potion	신속 물약	White Potion	흰색 물약	Add 'of swiftness' to weapon for 30 min per strength	무기에 신속 효과 부여: 위력 1당 30분
+POTNOTES.TXT	240	Might Boost	힘 강화	White Potion	흰색 물약	Set Might Temp to 3xstrength for 30 min per strength	힘 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	241	Intellect Boost	지성 강화	White Potion	흰색 물약	Set Intellect Temp to 3xstrength for 30 min per strength	지성 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	242	Personality Boost	인격 강화	White Potion	흰색 물약	Set Personality Temp to 3xstrength for 30 min per strength	인격 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	243	Endurance Boost	지구력 강화	White Potion	흰색 물약	Set Endurance Temp to 3xstrength for 30 min per strength	지구력 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	244	Speed Boost	속도 강화	White Potion	흰색 물약	Set Speed Temp to 3xstrength for 30 min per strength	속도 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	245	Accuracy Boost	정확도 강화	White Potion	흰색 물약	Set Accuracy Temp to 3xstrength for 30 min per strength	정확도 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	246	Flaming Potion	화염 물약	White Potion	흰색 물약	Add 'of flame' to weapon for 30 min per strength	무기에 화염 효과 부여, 지속: 위력 1당 30분
+POTNOTES.TXT	247	Freezing Potion	냉기 물약	White Potion	흰색 물약	Add 'of frost' to weapon for 30 min per strength	무기에 냉기 효과 부여, 지속: 위력 1당 30분
+POTNOTES.TXT	248	Noxious Potion	맹독 물약	White Potion	흰색 물약	Add 'of poison' to weapon for 30 min per strength	무기에 독 효과 부여, 지속: 위력 1당 30분
+POTNOTES.TXT	249	Shocking Potion	전격 물약	White Potion	흰색 물약	Add 'of sparks' to weapon for 30 min per strength	무기에 전격 효과 부여, 지속: 위력 1당 30분
+POTNOTES.TXT	250	Swift Potion	신속 물약	White Potion	흰색 물약	Add 'of swiftness' to weapon for 30 min per strength	무기에 신속 효과 부여, 지속: 위력 1당 30분
 POTNOTES.TXT	251	Cure Paralysis	마비 치료	White Potion	흰색 물약	Remove Paralyze cond	마비 상태 제거
 POTNOTES.TXT	252	Divine Restoration	신성한 회복	White Potion	흰색 물약	Remove all cond (not dead/stone/errad)	모든 상태 제거(사망·석화·소멸 제외)
-POTNOTES.TXT	253	Divine Cure	신성한 치유	White Potion	흰색 물약	Heal 10xskill HP	생명력 연금술 기술 x 10 회복
-POTNOTES.TXT	254	Divine Power	신성한 힘	White Potion	흰색 물약	Restore 10xskill MP	주문력 연금술 기술 x 10 회복
-POTNOTES.TXT	255	Luck Boost	행운 강화	White Potion	흰색 물약	Set Luck Temp to 3xstrength for 30 min per strength	행운을(를) 물약 위력 x 3만큼, 위력 1당 30분간 일시 증가
-POTNOTES.TXT	256	Fire Resistance	화염 저항	White Potion	흰색 물약	Set Fire Resist Temp to 3xskill for 30 min per skill	화염 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTNOTES.TXT	257	Air Resistance	공기 저항	White Potion	흰색 물약	Set Air Resist Temp to 3xskill for 30 min per skill	공기 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTNOTES.TXT	258	Water Resistance	물 저항	White Potion	흰색 물약	Set Water Resist Temp to 3xskill for 30 min per skill	물 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTNOTES.TXT	259	Earth Resistance	대지 저항	White Potion	흰색 물약	Set Earth Resist Temp to 3xskill for 30 min per skill	대지 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTNOTES.TXT	260	Mind Resistance	정신 저항	White Potion	흰색 물약	Set Mind Resist Temp to 3xskill for 30 min per skill	정신 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
-POTNOTES.TXT	261	Body Resistance	육체 저항	White Potion	흰색 물약	Set Body Resist Temp to 3xskill for 30 min per skill	육체 저항을 연금술 기술 x 3만큼, 기술 1당 30분간 일시 증가
+POTNOTES.TXT	253	Divine Cure	신성한 치유	White Potion	흰색 물약	Heal 10xskill HP	생명력 (연금술 기술 x 10) 회복
+POTNOTES.TXT	254	Divine Power	신성한 힘	White Potion	흰색 물약	Restore 10xskill MP	주문력 (연금술 기술 x 10) 회복
+POTNOTES.TXT	255	Luck Boost	행운 강화	White Potion	흰색 물약	Set Luck Temp to 3xstrength for 30 min per strength	행운 일시 +(물약 위력 x 3), 지속: 위력 1당 30분
+POTNOTES.TXT	256	Fire Resistance	화염 저항	White Potion	흰색 물약	Set Fire Resist Temp to 3xskill for 30 min per skill	화염 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTNOTES.TXT	257	Air Resistance	공기 저항	White Potion	흰색 물약	Set Air Resist Temp to 3xskill for 30 min per skill	공기 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTNOTES.TXT	258	Water Resistance	물 저항	White Potion	흰색 물약	Set Water Resist Temp to 3xskill for 30 min per skill	물 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTNOTES.TXT	259	Earth Resistance	대지 저항	White Potion	흰색 물약	Set Earth Resist Temp to 3xskill for 30 min per skill	대지 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTNOTES.TXT	260	Mind Resistance	정신 저항	White Potion	흰색 물약	Set Mind Resist Temp to 3xskill for 30 min per skill	정신 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
+POTNOTES.TXT	261	Body Resistance	육체 저항	White Potion	흰색 물약	Set Body Resist Temp to 3xskill for 30 min per skill	육체 저항 일시 +(연금술 기술 x 3), 지속: 기술 1당 30분
 POTNOTES.TXT	262	Stone to Flesh	석화 해제	Black Potion	검은색 물약	Remove Stone cond	석화 상태 제거
 POTNOTES.TXT	263	Slaying Potion	용살 물약	Black Potion	검은색 물약	Add 'of dragon slaying' to weapon	무기에 용 살해 효과 부여
 POTNOTES.TXT	264	Pure Luck	순수한 행운	Black Potion	검은색 물약	+50 to Perm Luck	행운 영구 +50
@@ -192,7 +192,7 @@ POTNOTES.TXT	267	Pure Endurance	순수한 지구력	Black Potion	검은색 물�
 POTNOTES.TXT	268	Pure Personality	순수한 인격	Black Potion	검은색 물약	+50 to Perm Personality	인격 영구 +50
 POTNOTES.TXT	269	Pure Accuracy	순수한 정확도	Black Potion	검은색 물약	+50 to Perm Accuracy	정확도 영구 +50
 POTNOTES.TXT	270	Pure Might	순수한 힘	Black Potion	검은색 물약	+50 to Perm Might	힘 영구 +50
-POTNOTES.TXT	271	Rejuvenation	회춘	Black Potion	검은색 물약	Set Age Temp to 0	마법적 노화 수치를 0으로 설정
+POTNOTES.TXT	271	Rejuvenation	회춘	Black Potion	검은색 물약	Set Age Temp to 0	일시적 나이 수치를 0으로 설정
 POTNOTES.TXT	272	Essence of Might	힘의 정수	White Potion	흰색 물약	Permanently raises Might by 15 while reducing Intellect by 15	힘 영구 +15, 지성 영구 -15
 POTNOTES.TXT	273	Essence of Intellect	지성의 정수	White Potion	흰색 물약	Permanently raises Intellect by 15 while reducing Might by 15	지성 영구 +15, 힘 영구 -15
 POTNOTES.TXT	274	Essence of Personality	인격의 정수	White Potion	흰색 물약	Permanently raises Personality by 15 while reducing Speed by 15	인격 영구 +15, 속도 영구 -15
