@@ -11,7 +11,7 @@ import argparse
 import csv
 import json
 import shutil
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 
@@ -63,22 +63,24 @@ def encode_lua(text: str, quote: str) -> str:
 def patch_lua_line(line: str, mapping: dict[str, str]):
     spans = list(lua_string_spans(line))
     if not spans:
-        return line, 0
+        return line, Counter()
     replacements = []
+    matched = Counter()
     for start, end, quote, decoded in spans:
         if decoded in mapping:
             replacements.append((start, end, encode_lua(mapping[decoded], quote)))
+            matched[decoded] += 1
     if not replacements:
-        return line, 0
+        return line, matched
     out = line
     for start, end, replacement in reversed(replacements):
         out = out[:start] + replacement + out[end:]
-    return out, len(replacements)
+    return out, matched
 
 
 def patch_table_line(line: str, mapping: dict[str, str]):
     fields = line.split("\t")
-    changed = 0
+    matched = Counter()
     out = []
     for field in fields:
         left_len = len(field) - len(field.lstrip())
@@ -92,9 +94,9 @@ def patch_table_line(line: str, mapping: dict[str, str]):
         if value in mapping:
             new_value = mapping[value]
             core = '"' + new_value.replace('"', '""') + '"' if quoted else new_value
-            changed += 1
+            matched[value] += 1
         out.append(left + core + right)
-    return "\t".join(out), changed
+    return "\t".join(out), matched
 
 
 def main() -> int:
@@ -155,20 +157,18 @@ def main() -> int:
                 body, newline = raw[:-1], "\r"
 
             if rel.lower().endswith(".lua"):
-                patched, count = patch_lua_line(body, mapping)
+                patched, matched = patch_lua_line(body, mapping)
             elif rel.startswith("Data/Tables/") and rel.lower().endswith(".txt"):
-                patched, count = patch_table_line(body, mapping)
+                patched, matched = patch_table_line(body, mapping)
             else:
-                patched, count = body, 0
+                patched, matched = body, Counter()
 
+            count = sum(matched.values())
             if count:
                 lines[lineno - 1] = patched + newline
                 changed += count
-                for source in mapping:
-                    # Count actual matching source strings on this line. The
-                    # per-source check below is intentionally conservative.
-                    if source in body or rel.startswith("Data/Tables/"):
-                        applied[source] += 1
+                for source, match_count in matched.items():
+                    applied[source] += match_count
 
         if changed:
             dst = output / rel
