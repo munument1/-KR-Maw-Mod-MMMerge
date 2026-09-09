@@ -1,0 +1,61 @@
+name: zMaw.T.lod Korean audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - korean-localization-4.5
+    paths:
+      - 'Data/zMaw.T.lod'
+      - 'tools/audit_zmaw_lod.py'
+      - '.github/workflows/zmaw-lod-audit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  lod-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: korean-localization-4.5
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned mmarch
+        run: cargo install mmarch --version 7.0.0 --locked
+
+      - name: Verify mmarch version
+        run: test "$(mmarch --version)" = "7.0.0"
+
+      - name: Extract zMaw.T.lod text resources
+        shell: bash
+        run: |
+          rm -rf localization/zmaw_lod_source
+          mkdir -p localization/zmaw_lod_source
+          mmarch --ec strict extract Data/zMaw.T.lod localization/zmaw_lod_source "*.txt"
+
+      - name: Audit embedded localization tables
+        run: python tools/audit_zmaw_lod.py --source-dir localization/zmaw_lod_source --manifest localization/zmaw_lod_manifest.json --archive-sha f250f60d68982ce6e7df105554c47323bb105f0e
+
+      - name: Check generated text
+        run: git diff --check -- localization/zmaw_lod_source localization/zmaw_lod_manifest.json
+
+      - name: Commit generated LOD audit
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add localization/zmaw_lod_source localization/zmaw_lod_manifest.json
+          if git diff --cached --quiet; then
+            echo 'zMaw.T.lod audit already up to date.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh zMaw.T.lod audit [skip ci]'
+          git push origin HEAD:korean-localization-4.5
