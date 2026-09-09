@@ -64,9 +64,6 @@ Potion Deleted in MAW		untranslated	item	1	known_display_name_assignment:1	Scrip
 Primordial 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,0,0,""Primordial "" .. t.Name)"
 Repair skill		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[18] = StrColor(255,255,153, ""Repair skill"")"
 Speed		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[6] = StrColor(127, 0, 255, ""Speed"")"
-yes		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
-Yes		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
-YES		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
 "You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
 Leaving a dungeon before killing most of them will cause monsters to respawn.
 Clearing a dungeon will grant you extra rewards.
@@ -196,7 +193,6 @@ Icy Touch		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/
 "Melee Power: %s
 Ranged Power: %s
 Spell Power: %s"		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"local txt=string.format(""Melee Power: %s\nRanged Power: %s\nSpell Power: %s"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))"
-SpellPoints		untranslated	spell	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(id .. ""  "" .. spellCast .. ""  "" ..Game.Spells[spellCast][""SpellPoints"" .. masteryName[m] ])"
 Superior Blood Leech		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[74].Name=""Superior Blood Leech"""
 "
 
@@ -350,7 +346,6 @@ Antagarich	안타개릭	translated	map	2	event_hint_assignment:2	Scripts/Maps/ou
 Enroth	엔로스	translated	map	2	event_hint_assignment:2	Scripts/Maps/7out02.lua; Scripts/Maps/out02.lua	"evt.hint[2666]=""Enroth"""
 Jadame	제이덤	translated	map	2	event_hint_assignment:2	Scripts/Maps/7out02.lua; Scripts/Maps/oute3.lua	"evt.hint[1888]=""Jadame"""
 Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
-Emerald Island	에메랄드 섬	translated	monster	1	known_display_name_assignment:1	Scripts/General/zz_Maw-initialize.lua	"if Game.ItemsTxt[1466].Name==""Emerald Island"" then"
 Normal	보통	translated	spell	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
   heals 	 → 	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. ""  heals "" .. Party[t.TargetId].Name .. "" for "" .. healData[3] .. "" hit points(crit)""))"
  cover 	 → 엄호: 	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(Party[coverPlayerIndex].Name .. "" cover "" .. Party[target].Name)"

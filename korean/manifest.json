@@ -2,9 +2,9 @@
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
   "translated_entries": 157,
-  "translated_entries_with_patchable_occurrences": 156,
-  "patchable_occurrences_targeted": 252,
-  "skipped_unpatchable_occurrences_for_translated_sources": 41,
+  "translated_entries_with_patchable_occurrences": 155,
+  "patchable_occurrences_targeted": 251,
+  "skipped_unpatchable_occurrences_for_translated_sources": 42,
   "changed_files": [
     {
       "file": "Scripts/General/MenuExtraSettings.lua",
@@ -48,7 +48,7 @@
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
-      "replacements": 3
+      "replacements": 2
     },
     {
       "file": "Scripts/General/zzzOnlineVariableSender.lua",
@@ -120,6 +120,11 @@
       "type": "translated_source_has_no_patchable_occurrence",
       "source": " General settings",
       "unpatchable_occurrences": 1
+    },
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "Emerald Island",
+      "unpatchable_occurrences": 5
     }
   ],
   "validation_errors": [],

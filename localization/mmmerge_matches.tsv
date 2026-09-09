@@ -18,13 +18,10 @@ Personality	인격	exact	safe_candidate	item	4	1	1	Exact MMMerge PO match with a
 Spell Points	주문력	exact	safe_candidate	item	2	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Unarmed skill	맨손 전투 기술	exact	safe_candidate	item	2	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Water Resistance	물 저항	exact	safe_candidate	item	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-yes	예	exact	safe_candidate	item	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Yes	예	exact	safe_candidate	item	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Antagarich	안타개릭	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Enroth	엔로스	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Jadame	제이덤	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Empty Barrel	빈 통	exact	safe_candidate	misc	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Emerald Island	에메랄드 섬	exact	safe_candidate	monster	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Normal	노멀	exact	safe_candidate	spell	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Air	공기 저항 || 대기 마법	ambiguous	ambiguous	item	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Armor Class	방어도 || 방어력	ambiguous	ambiguous	item	2	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
@@ -103,6 +100,8 @@ Spell	주문	exact	no_patchable_occurrence	item	8	0	1	Exact PO match exists, but
 Stolen	도난	exact	no_patchable_occurrence	item	7	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Two-Handed Axe	양손 도끼	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Two-Handed Sword	양손검	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+yes	예	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Yes	예	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Awards	업적	exact	no_patchable_occurrence	map	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Bucket	양동이	exact	no_patchable_occurrence	map	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Exit	나가기	exact	no_patchable_occurrence	map	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -173,6 +172,7 @@ Dragoons' Caverns	드라군의 동굴	exact	no_patchable_occurrence	monster	2	0	
 Dragoons' Keep	드라군 성채	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Druid Circle	드루이드 서클	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Eel Infested Waters	뱀장어가 들끓는 바다	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Emerald Island	에메랄드 섬	exact	no_patchable_occurrence	monster	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Eradication	소멸	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Erathia	에라시아	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Escaton's Crystal	에스카톤의 수정	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

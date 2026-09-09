@@ -304,7 +304,7 @@ end
 Game.PatchOptions.FixMonstersBlockingShots=true
 
 function events.GameInitialized2()
-	if Game.ItemsTxt[1466].Name=="에메랄드 섬" then
+	if Game.ItemsTxt[1466].Name=="Emerald Island" then
 		isRedone=true
 	end
 	for i=0,11 do
