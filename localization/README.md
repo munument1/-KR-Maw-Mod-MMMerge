@@ -91,15 +91,15 @@
 | `SPCITEMS.TXT` | BonusStat, NameAdd | 146 |
 | `POTION.TXT` | Name, Description, Effect | 366 |
 | `POTNOTES.TXT` | Name, Description, Effect | 366 |
-| `rnditems.txt` | 번역하지 않음 | 0 |
+| `rnditems.txt` | 의도적 비번역: 확률/내부 키 + 문서용 라벨 | 0 |
 
-현재 LOD에서 한국어화된 표시 필드는 **총 8,586개**다.
+현재 LOD에서 한국어화된 표시 필드는 **총 8,586개**다. 9개 내장 텍스트 테이블은 모두 번역 대상/비번역 대상으로 분류를 끝냈으며, 현재 `pending_schema_review`는 0개다.
 
 `POTION.TXT`와 `POTNOTES.TXT`는 각각 122행을 별도로 검토한다. 두 파일은 같은 ID에서도 이름이나 설명이 다른 경우가 많으므로 서로 복사하지 않고 독립적으로 번역한다. `tools/export_zmaw_potion_display.py`가 두 테이블의 `Name / Description / Effect`를 감사용으로 추출하고, `tools/build_korean_zmaw_potions.py`가 해당 세 필드만 한국어화한다.
 
 물약 테이블의 **4열 이후 레시피·조합·제어 행렬은 번역 대상에서 제외**한다. 빌더가 각 행에서 이 뒤쪽 필드가 수정 전과 동일한지 확인하며, 하나라도 달라지면 빌드가 실패한다. 따라서 MAW 4.5의 실제 물약 조합 규칙과 수치는 유지한다.
 
-`rnditems.txt`는 현재 한국어로 바꿔야 하는 사용자 노출 필드라는 근거가 확인되지 않았으므로 **MAW 4.5 원본 바이트를 그대로 보존**한다. 표시용이라는 근거가 확인되기 전에는 마지막 영문 이름 열도 건드리지 않는다.
+`rnditems.txt`는 `tools/audit_zmaw_rnditems.py`로 별도 검증한다. MAW 4.5 파일의 데이터 행 2,200개는 `숫자 아이템 ID / 리소스 ID / 보물 레벨 1~6 확률 / 사람용 영문 라벨` 구조이며, 실제 확률 데이터는 앞쪽 ID와 6개 수치 필드에 있다. 마지막 영문 아이템·주문명은 런타임 표시명이 아니라 테이블을 읽는 사람이 확인하기 위한 문서용 라벨이다. 따라서 해당 라벨을 한국어화할 이유가 없고, **`rnditems.txt` 전체를 MAW 4.5 원본 바이트 그대로 보존**한다. 새 audit는 행 구조와 6개 확률 필드를 검사하며, 스키마가 예상과 달라지면 Actions를 실패시킨다.
 
 기존 `munument1/-KR-MMMerge`의 ID/행 기반 한국어 런타임 테이블은 일치가 확인된 표시 필드에만 사용한다. **그 외 MAW 4.5 수치·레시피·파일명·내부 키는 원본 값을 유지한다.**
 
