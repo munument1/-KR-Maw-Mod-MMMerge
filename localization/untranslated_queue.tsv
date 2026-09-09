@@ -1,63 +1,9 @@
 source_escaped	category	occurrences	patchable_occurrences	uncertain_occurrences	reasons	files	sample_context_escaped
-damage	class	9	0	3	comparison_control_literal:5; lua_comment_literal:1; uncertain_context:3	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua; Scripts/Global/zzMaw_Legendaries.lua	local damage1=calcFireAuraDamage(pl, it, 0, false, false, "damage")
 Uncom.	item	3	0	1	internal_lookup_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua; Scripts/General/zz_Maw-initialize.lua	local tierList={"Common", "Uncom.", "Rare", "Epic", "Ancient", "Primordial", "Legendary", [0]="OFF"}
-Inventory	map	45	0	2	engine_event_key_context:43; uncertain_context:2	Scripts/General/zzzzMalekith-Randomizer.lua; Scripts/Global/Quest_SavingGoobers.lua; Scripts/Maps/6d05.lua; Scripts/Maps/7d20.lua; Scripts/Maps/7d34.lua; Scripts/Maps/7d37.lua; Scripts/Maps/7out02.lua; Scripts/Maps/7out05.lua; Scripts/Maps/d26.lua; Scripts/Maps/out02.lua; Scripts/Maps/outb2.lua; Scripts/Maps/outc1.lua; Scripts/Maps/outc2.lua; Scripts/Maps/outd1.lua; Scripts/Maps/outd3.lua; Scripts/Maps/oute2.lua; Scripts/Maps/oute3.lua; Scripts/Maps/pyramid.lua; Scripts/Maps/znwc.lua	if not table.find(vars.ItemFound, itemId) and evt.Cmp{"Inventory", Value = itemId} then
-%%([%w_]*)%%	misc	1	0	1	uncertain_context:1	Scripts/Core/events.lua	return code:gsub("%%([%w_]*)%%", t.ref)
-%.10f	misc	1	0	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua	local s = string.format("%.10f", x)  -- enough precision buffer
-\\x1B%c%c%c%s	misc	1	0	1	uncertain_context:1	Scripts/General/zzzOnlineVariableSender.lua	return string.format("\\x1B%c%c%c%s", clamp(r,0,255),clamp(g,0,255),clamp(b,0,255), s or "")
-Day-o-Gods	misc	1	0	1	uncertain_context:1	Scripts/General/MiscTweaks.lua	DayGods, DeadlySwarm, FlyingFist = "Day-o-Gods", "Deadly", "Flying"
-no enchants	misc	2	0	1	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzAlchemy.lua	return "no enchants"
-Option 1	misc	1	0	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua	Options = Options or {"Option 1", "Option 2"},
-Option 2	misc	1	0	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua	Options = Options or {"Option 1", "Option 2"},
-sub dword [ds:0x509cac], 	misc	1	0	1	uncertain_context:1	Scripts/General/MiscTweaks.lua	local patch = "sub dword [ds:0x509cac], " .. mul
- .. lowerLimit .. 	monster	2	0	2	uncertain_context:2	Scripts/General/zzMaw-Monsters.lua	00000\t050" .. lowerLimit .. "-" .. upperLimit .. " " .. text)
- .. name .. 	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	00000\t040" .. name .. " " .. lowerLimit .. "-" .. upperLimit)
- .. upperLimit .. 	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	00000\t050" .. lowerLimit .. "-" .. upperLimit .. " " .. text)
-=%d\n	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	if st.current_seed then lines[#lines+1]=(_H"63757272656e745f73656564".."=%d\\n"):format(st.current_seed) end
-\\9\\9NoBolster\\9-\\9-\\9-\\9\\9\n	monster	1	0	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	BolsterTxt:write(i .. "\\9" .. v.Name .. "\\9\\9NoBolster\\9-\\9-\\9-\\9\\9\\n")
-broodlord	monster	2	0	1	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	if chanceType == "broodlord" then
-cmd /c mkdir "%s" >nul 2>nul	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	and ('cmd /c mkdir "%s" >nul 2>nul'):format(_J)
-DemonFly	monster	1	0	1	uncertain_context:1	Scripts/General/zzzzMalekith-Randomizer.lua	vars.MonsterShuffleList[i].Pic="DemonFly"
-mkdir -p "%s" 2>/dev/null	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	or  ('mkdir -p "%s" 2>/dev/null'):format(_J)
-MonsterChooseAction	monster	2	0	1	reviewed_internal_api_literal:1; uncertain_context:1	Scripts/Core/events.lua	events.cocalls("MonsterChooseAction", t)
-omnipotent	monster	2	0	1	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	elseif chanceType == "omnipotent" then
-Pic	monster	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	if Game.MapStats[Map.MapStatsIndex]["Monster" .. v .. "Pic"] .. " B" == mon.Picture then
-PlayerAC	monster	3	0	1	internal_table_key_literal:2; uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	local f = Formulas[monId] and Formulas[monId]["PlayerAC"] or Formulas["def"]["PlayerAC"]
 %sRes	skill	1	0	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua	baseString=string.format("%sRes",baseString)
 Broodling	skill	8	0	3	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Maps.lua; Scripts/General/zzMaw-Monsters.lua	if skill=="Broodling" then
 Broodlord	skill	3	0	2	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua	skill = "Broodlord"
 HP	skill	10	0	4	engine_event_key_context:4; internal_lookup_literal:2; uncertain_context:4	Scripts/General/AdaptiveMonstersStats.lua; Scripts/General/zzClasses.lua; Scripts/General/zzMAW-Skills.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/Maps/pyramid.lua	mon.FullHP = min(ProcessFormula(MonKind, "HP", mon.FullHP), 30000)
 Omnipotent	skill	17	0	2	comparison_control_literal:15; uncertain_context:2	Scripts/General/BountyHunt.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Spells.lua; Scripts/General/zzMaw-Stats.lua	if monsterSkill=="Omnipotent" then
-#\tNote\tContinent\tBolster kind\tSpells\tSummons\tLevel shift\n	spell	1	0	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	BolsterTxt:write("#\tNote\tContinent\tBolster kind\tSpells\tSummons\tLevel shift\\n")
-#\tNote\tType\tExtraType\tCreed\tStyle\tPref magic\tNoArena\tAllow ranged attacks\tAllow spells\tHP by size\tAllow replicate\tAllow summons\tSummon Id\tExtra points\tMax HP Boost (%)\n	spell	1	0	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	BolsterTxt:write("#\tNote\tType\tExtraType\tCreed\tStyle\tPref magic\tNoArena\tAllow ranged attacks\tAllow spells\tHP by size\tAllow replicate\tAllow summons\tSummon Id\tExtra points\tMax HP Boost (%)\\n")
-CanMonsterCastSpell	spell	2	0	1	reviewed_internal_api_literal:1; uncertain_context:1	Scripts/Core/events.lua	events.cocalls("CanMonsterCastSpell", t)
-checkMapCompletition	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Timers.lua	MawAddTimer("checkMapCompletition", 10, checkMapCompletition) -- double-check this name/spelling
-earth	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local names={"fire","air","water","earth","spirit","mind","body","light","dark"}
 Expert	spell	4	0	2	internal_table_key_literal:2; uncertain_context:2	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	spellDesc[spellID]["Expert"]=Game.SpellsTxt[value[i]].Expert
-GM	spell	3	0	1	internal_table_key_literal:2; uncertain_context:1	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	spellDesc[spellID]["GM"]=Game.SpellsTxt[value[i]].GM
-Grandmaster	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local mastery={"Novice","Expert","Master","Grandmaster"}
-light	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local names={"fire","air","water","earth","spirit","mind","body","light","dark"}
 Master	spell	8	0	2	internal_table_key_literal:2; table_schema_not_reviewed:4; uncertain_context:2	Data/Tables/Class Extra.txt; Data/Tables/Class HP SP.txt; Data/Tables/Class Skills.txt; Data/Tables/Class Skillz.txt; Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	24\t8\t2\tMaster
-Novice	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local mastery={"Novice","Expert","Master","Grandmaster"}
-shotgun	spell	2	0	1	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzClasses.lua	elseif spellType=="shotgun" then
-single	spell	2	0	1	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzClasses.lua	if spellType=="single" then
-spell	spell	7	0	6	comparison_control_literal:1; uncertain_context:6	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua; Scripts/General/zzMaw-Stats.lua	critChance, critMult, success=getCritInfo(pl,"spell")
-spirit	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local names={"fire","air","water","earth","spirit","mind","body","light","dark"}
-string	spell	10	0	1	comparison_control_literal:8; lua_comment_literal:1; uncertain_context:1	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Multiplayer.lua; Scripts/General/zzMaw-Spells.lua	require("string")
-TargetIndex	spell	2	0	2	uncertain_context:2	Scripts/General/zzMaw-Spells.lua	local targetIdKey = mmv("TargetIndex", "TargetIndex", "TargetRosterId")
-TargetRosterId	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local targetIdKey = mmv("TargetIndex", "TargetIndex", "TargetRosterId")
-Temple	spell	5	0	2	comparison_control_literal:3; uncertain_context:2	Scripts/General/zzMaw-Spells.lua	local function __is_temple(v) return v=="Temple" end
-water	spell	1	0	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	local names={"fire","air","water","earth","spirit","mind","body","light","dark"}
-tooltip	tooltip	3	0	1	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua	if calcType~="tooltip" and vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 26) then
-BolsterAmount	ui	2	0	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
-BolsterFineTuning	ui	1	0	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	local ScreenId = CustomUI.NewSettingsPage("BolsterFineTuning", "MAW SETTINGS", "ExSetScr2")
-ExSetScr	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local ExSetScr = NewSettingsPage("MergeExtraSettings", " General settings", "ExSetScr")
-ExSetScr2	ui	1	0	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua	local ScreenId = CustomUI.NewSettingsPage("BolsterFineTuning", "MAW SETTINGS", "ExSetScr2")
-ExtSetUp	ui	2	0	1	reviewed_internal_api_literal:1; uncertain_context:1	Scripts/General/MenuExtraSettings.lua	IconDown\t  = "ExtSetUp",
-FrameLimit	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	NumberRegulator(ExSetScr, 103, 295, "FrameLimit",
-freeProgression	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
-ImprovedPathfinding	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
-MergeExtraSettings	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local ExSetScr = NewSettingsPage("MergeExtraSettings", " General settings", "ExSetScr")
-Mode	ui	2	0	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
-ShowWeatherEffects	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
-UseMonsterBolster	ui	1	0	1	uncertain_context:1	Scripts/General/MenuExtraSettings.lua	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}

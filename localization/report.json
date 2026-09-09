@@ -7,9 +7,9 @@
   "patchable_unique_sources": 303,
   "unpatchable_occurrences": 5814,
   "status": {
-    "excluded": 1933,
-    "translated": 1031,
-    "untranslated": 62
+    "excluded": 1985,
+    "translated": 1033,
+    "untranslated": 8
   },
   "categories": {
     "class": 37,
@@ -118,8 +118,8 @@
   "reviewed_bulk_display_promotions": 108,
   "reviewed_batch026_display_promotions": 21,
   "reviewed_batch027_display_promotions": 10,
-  "uncertain_review_unique_sources": 62,
-  "uncertain_review_occurrences": 84,
-  "uncertain_review_exact_mmmerge_matches": 5,
+  "uncertain_review_unique_sources": 8,
+  "uncertain_review_occurrences": 17,
+  "uncertain_review_exact_mmmerge_matches": 2,
   "uncertain_review_ambiguous_mmmerge_matches": 1
 }
