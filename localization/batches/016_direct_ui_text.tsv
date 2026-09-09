@@ -1,0 +1,73 @@
+source	translation	status	notes
+\n\nItem Bonus Power: 	\n\n아이템 보너스 위력: 	translated	아이템 정보창
+\n\nLevel Required: 	\n\n요구 레벨: 	translated	아이템 정보창
+\n\nScale with player level, up to level 550.	\n\n플레이어 레벨에 따라 성장하며, 최대 레벨 550까지 적용됩니다.	translated	아이템 정보창
+\n\nScale with player level, up to level 900.	\n\n플레이어 레벨에 따라 성장하며, 최대 레벨 900까지 적용됩니다.	translated	아이템 정보창
+Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\n Adds the following legendary power to an item:	오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n다음 전설 능력을 아이템에 부여합니다:	translated	오라클의 오브 아이템 설명
+The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.	기억의 진주는 마법부여된 아이템에서 무작위 마법부여 하나를 지울 수 있는 힘을 지닌 신비한 아이템입니다.	translated	제작 아이템 설명
+This Eye allows to add a Special enchant to any equipment that has already 2 base enchants\n(right-click on an item with a base enchant to use)	이 눈은 기본 마법부여가 이미 2개 있는 장비에 특수 마법부여를 추가할 수 있게 합니다.\n(기본 마법부여가 있는 아이템을 우클릭하여 사용)	translated	제작 아이템 설명
+This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant\n(right-click on an item with a base enchant to use)	이 모래시계는 기본 마법부여 1개와 특수 마법부여가 있는 장비에 두 번째 기본 마법부여를 추가할 수 있게 합니다.\n(기본 마법부여가 있는 아이템을 우클릭하여 사용)	translated	제작 아이템 설명
+This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.	이 아이템은 보호, 명상, 재생, 마법 보호, 챔피언, 팔라딘, 신성한 축복, 신성한 저항 물약의 사용 횟수를 늘릴 수 있게 합니다.	translated	제작 아이템 설명
+A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.	책장 사이에 잔잔한 빛이 머뭅니다. 영혼을 묶는 인장이 기도문을 가리고 있어, 영혼 마법에 숙련되지 않으면 글귀가 고요히 사라집니다.	translated	영혼 마법서 설명
+A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.	표지 사이로 창백한 광휘가 새어 나옵니다. 태양의 인장이 너무 밝게 타올라 읽을 수 없지만, 빛 마법에 숙련된 자에게는 빛이 잦아들며 글이 선명해집니다.	translated	빛 마법서 설명
+A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.	은은한 열기를 내뿜는 그을린 마도서입니다. 열기의 인장이 표지에 새겨져 있어, 화염 마법에 숙련되지 않으면 책장이 너무 뜨거워 잡을 수 없습니다.	translated	화염 마법서 설명
+Air Magic Book	대기 마법서	translated	마법서 이름
+Body Magic Book	육체 마법서	translated	마법서 이름
+Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.	잉크가 물결처럼 일렁이는 축축한 양피지입니다. 물의 결계가 모든 글자를 물방울로 녹여 버리지만, 물 마법에 숙련된 자라면 다시 글자를 불러낼 수 있습니다.	translated	물 마법서 설명
+Dark Magic Book	어둠 마법서	translated	마법서 이름
+Earth Magic Book	대지 마법서	translated	마법서 이름
+Empower Magic	마법 강화	translated	주문 이름
+Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	깃털처럼 가벼운 책장에서 정전기가 웅웅거립니다. 소용돌이치는 대기의 인장이 글줄을 바람에 흩뜨리지만, 대기 마법에 숙련된 자에게는 다시 제자리를 찾습니다.	translated	대기 마법서 설명
+Fire Magic Book	화염 마법서	translated	마법서 이름
+Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.	채석한 바위처럼 무겁고 책등에는 모래가 가득합니다. 돌의 인장이 글을 짓눌러 보이지 않게 하지만, 대지 마법에 조율된 자에게는 읽을 수 있는 돋을새김으로 떠오릅니다.	translated	대지 마법서 설명
+Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	횃불빛마저 삼키는 밤의 웅덩이 같은 잉크입니다. 그림자의 결계가 글줄을 집어삼키며, 어둠 마법에 숙련된 독자에게만 글을 드러냅니다.	translated	어둠 마법서 설명
+Light Magic Book	빛 마법서	translated	마법서 이름
+Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.	여백을 빽빽하게 채운 문양이 스스로 순서를 바꿉니다. 사고의 자물쇠가 글을 수수께끼처럼 뒤섞지만, 정신 마법을 익힌 자라면 올바르게 정렬할 수 있습니다.	translated	정신 마법서 설명
+Mind Magic Book	정신 마법서	translated	마법서 이름
+Spirit Magic Book	영혼 마법서	translated	마법서 이름
+Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.	약초 향이 나는 두꺼운 양피지가 맥박에 맞춰 따뜻해집니다. 활력의 결계가 책장을 뻣뻣하게 굳혀 두었지만, 육체 마법 수행자의 안정된 손길에는 부드럽게 풀립니다.	translated	육체 마법서 설명
+Vampiric Aura	흡혈의 오라	translated	주문 이름
+Water Magic Book	물 마법서	translated	마법서 이름
+Meditation	명상	translated	주문 이름
+ completed!	 완료!	translated	아레나 완료 메시지 조각
+*You don't have any philosopher stone to charge the telelocator.*	*텔레로케이터를 충전할 철학자의 돌이 없습니다.*	translated	메시지
+Charged. Insert request.	충전 완료. 요청을 입력하십시오.	translated	메시지
+Difficulty reverted to Hell	난이도가 지옥으로 되돌아갔습니다	translated	메시지
+Greeting adventurer!\nYour journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)	모험가여, 환영합니다!\n여정이 곧 시작됩니다. 먼저 난이도 설정을 확인하세요. (ESC-->조작-->추가 설정(상단)-->강화 수치)	translated	시작 안내 메시지
+I wouldn't join in your reckless adventure, not even for all the wealth in the world.	그 무모한 모험에는 세상의 모든 부를 준다 해도 함께하지 않겠소.	translated	동료 거절 메시지
+Learned 	습득: 	translated	습득 메시지 조각
+Level 	레벨 	translated	아레나 완료 메시지 조각
+Not enough gold.	금화가 부족합니다.	translated	메시지
+Re-record: enter the data.	재기록: 데이터를 입력하십시오.	translated	메시지
+Re-record: unable to locate.	재기록: 위치를 찾을 수 없습니다.	translated	메시지
+Seraphim aren't able to dual wield	세라핌은 쌍수 무기를 사용할 수 없습니다	translated	메시지
+We have no more items to trade for kegs	술통으로 교환할 아이템이 더 이상 없습니다	translated	교환 메시지
+We have no more items to trade for pyramids	피라미드로 교환할 아이템이 더 이상 없습니다	translated	교환 메시지
+Welcome to the Nightmare...\nGood luck.. you will need	악몽에 온 것을 환영합니다...\n행운을 빕니다... 필요할 겁니다	translated	난이도 메시지
+Your skill points has been reset!	기술 포인트가 초기화되었습니다!	translated	초기화 메시지
+\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: 	\n\n이 방식으로 얻은 경험치가 기본 경험치의 25% 미만이고 상승한 레벨이 50 미만일 때만 효과를 받을 수 있습니다.\n현재 수치: 	translated	경험치 물약 설명
+\nLevels: 	\n레벨: 	translated	경험치 물약 설명
+\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)	\n천상의 오브는 한 아이템의 천상 정수를 다른 아이템으로 옮겨, 신성한 속성을 보존하면서 원래 아이템에서 그 축복을 제거할 수 있습니다.\n\n(천상 아이템을 우클릭하면 힘을 추출해 천상의 오브를 충전하고, 이후 천상이 아닌 아이템을 우클릭하면 그 힘을 이전합니다.)	translated	천상의 오브 설명
+A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)\nAncient, Primordial and Legendary items have increased Max power.\n\nIt is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.\n\nMax Power: 	아이템의 마법부여 강도를 높일 수 있는 특별한 보석입니다. (기본 마법부여가 있는 아이템을 우클릭하여 사용)\n고대, 태고, 전설 아이템은 최대 위력이 더 높습니다.\n\n인벤토리 화면에서 U 키를 누르면 보석 3개를 상위 등급 보석 1개로 업그레이드할 수 있습니다.\n\n최대 위력: 	translated	강화 보석 설명
+Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nAdds the following legendary power to an item:	오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n다음 전설 능력을 아이템에 부여합니다:	translated	오라클의 오브 설명
+Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nRight click a legendary item to store its power	오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n전설 아이템을 우클릭하면 그 능력을 저장합니다.	translated	오라클의 오브 설명
+This potion has been removed	이 물약은 제거되었습니다	translated	물약 설명
+%s\n\nBonus Melee/Bow Damage: %s%s	%s\n\n근접/활 추가 피해: %s%s	translated	능력치 툴팁
+%s\n\nCritical melee and bow strike damage bonus: %s%s	%s\n\n근접 및 활 치명타 피해 보너스: %s%s	translated	능력치 툴팁
+%s\n\nCritical strike chance: %s%%	%s\n\n치명타 확률: %s%%	translated	능력치 툴팁
+%s\n\nCritical strike chance: %s%%(%s%% with dagger)	%s\n\n치명타 확률: %s%% (단검 사용 시 %s%%)	translated	능력치 툴팁
+%s\n\nDodge chance: %s%%	%s\n\n회피 확률: %s%%	translated	능력치 툴팁
+%s\n\nHealth bonus from Endurance: %s%s\n\nFlat HP bonus from Endurance: %s	%s\n\n지구력으로 얻는 생명력 보너스: %s%s\n\n지구력으로 얻는 고정 생명력 보너스: %s	translated	능력치 툴팁
+\n\nDamage is reduced by an amount equal to % shown.\n\nLight resistance is equal to the lowest between Mind and Body resistances.\nDark resistance is equal to the lowest between elemental resistances.\nEnergy resistance is equal to the lowest resistance.	\n\n표시된 % 수치만큼 피해가 감소합니다.\n\n빛 저항은 정신 저항과 육체 저항 중 낮은 값과 같습니다.\n어둠 저항은 원소 저항 중 가장 낮은 값과 같습니다.\n에너지 저항은 모든 저항 중 가장 낮은 값과 같습니다.	translated	저항 툴팁
+\n\nMap percentage, Heal/Regen/Leech/Total:	\n\n지도 보정치, 치유/재생/흡수/합계:	translated	통계 UI
+\n\nOnly healing done when monsters are in the nearbies is counted	\n\n주변에 몬스터가 있을 때 행한 치유만 집계됩니다	translated	통계 UI
+\n\nTotal percentage, Heal/Regen/Leech/Total:	\n\n전체 보정치, 치유/재생/흡수/합계:	translated	통계 UI
+%s\n\nBonus healing: %s%s\n\nSpell cost reduction: %s%s\n\nIncrease the mana by 2 levels worth of mana per 5 personality	%s\n\n추가 치유량: %s%s\n\n주문 비용 감소: %s%s\n\n인격 5마다 2레벨 분량의 마나 증가	translated	능력치 툴팁
+%s\n\nBonus magic damage: %s%s\n\nCritical spell strike damage: %s%s	%s\n\n추가 마법 피해: %s%s\n\n주문 치명타 피해: %s%s	translated	능력치 툴팁
+%s\n\nMap percentage, Melee/Ranged/Total:	%s\n\n지도 보정치, 근접/원거리/합계:	translated	통계 UI
+%s\n\nMelee Haste:   %s%%\nRanged Haste: %s%%\nSpell Haste:   %s%%	%s\n\n근접 가속:   %s%%\n원거리 가속: %s%%\n주문 가속:   %s%%	translated	능력치 툴팁
+%s\n\nTotal percentage, Melee/Ranged/Total:	%s\n\n전체 보정치, 근접/원거리/합계:	translated	통계 UI
+%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s	%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s	translated	레이아웃 포맷 유지
+%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s %s\t%47s	%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s %s\t%47s	translated	레이아웃 포맷 유지
+%s\n%s	%s\n%s	translated	레이아웃 포맷 유지
+Host have closed the game	호스트가 게임을 종료했습니다	translated	멀티플레이 툴팁
