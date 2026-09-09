@@ -46,7 +46,6 @@ damage	class	7	9	comparison_control_literal:2; uncertain_context:7	Scripts/Gener
 Tick	class	3	3	uncertain_context:3	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Spells.lua			"events.Remove(""Tick"", 1)"
 Character %s has invalid class id: %s. Resetted to %s	class	1	1	uncertain_context:1	Scripts/General/NPCMercenaries.lua			"local msg = string.format(""Character %s has invalid class id: %s. Resetted to %s"", Char:GetIndex(), Char.Class, NewClass)"
 GetArmorClass	class	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"events.call(""GetArmorClass"", t)"
-Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	class	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[234] = ""Increases Armor Class  by 5+(0.5 x Power) for 6 Hours"","
 Merc	class	1	1	uncertain_context:1	Scripts/General/NPCMercenaries.lua			"Quests[""Merc"" .. k].Texts.Ungive = string.format(Game.NPCText[1680], Char.Name, ClassSelfImpressions[math.min(math.ceil(Char.LevelBase/10), 5)], Game.ClassNames[Char.Class])"
 default	item	5	5	uncertain_context:5	Scripts/General/pseudoSpawnpoint.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Monsters.lua			"local mapName = Map.Name or ""default"""
 disease	item	3	3	uncertain_context:3	Scripts/General/zzMaw-Items.lua			"[18] = { [9] = ""disease"", [10] = ""disease"", [11] = ""disease"", [1] = ""curse"" },"
@@ -121,17 +120,12 @@ Flame	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local name
 FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level	item	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"local MonTxtDumpFields = ""FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level"""
 GenerateItem	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""GenerateItem"", t)"
 GetItemName	item	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"events.call(""GetItemName"", t)"
-"Grant 1 enchant to an unenchanted item, based on potion Power.
-Require at least 20 power to work.
-"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[238] = ""Grant 1 enchant to an unenchanted item, based on potion Power.\nRequire at least 20 power to work.\n"","
 Heavy, yet seemingly light as a feather in skilled hands, Excalibur confers great might upon its wielder.  Opponents do not easily walk away from blows struck by this legendary weapon.  (Special Powers:  +	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[2023]= ""Heavy, yet seemingly light as a feather in skilled hands, Excalibur confers great might upon its wielder.  Opponents do not easily walk away from blows struck by this legendary weapon.  (Special Powers:  +"" .. round(30*lvl) .. "" Might)"","
 Immunity to all status effects from monsters	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[13]=""Immunity to all status effects from monsters"","
 Increase melee damage by 5% for each enemy in the nearbies	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[21]=""Increase melee damage by 5% for each enemy in the nearbies"","
 Increase Melee weapon skill by 10	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[33]=""Increase Melee weapon skill by 10"","
 Increase the effect of resistances base enchants by 50%	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[16]=""Increase the effect of resistances base enchants by 50%"","
 Increases Ascension Skill level by 10	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[25]=""Increases Ascension Skill level by 10"","
-"Increases item's roughness, making it more resistant to breaking.
-"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[236] = ""Increases item's roughness, making it more resistant to breaking.\n"","
 insanity	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[19] = { [5] = ""insanity"", [22] = ""spell drain"" },"
 Insanity and SP drain Immunity	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"Game.SpcItemsTxt[18].BonusStat=""Insanity and SP drain Immunity"""
 item182	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.ItemsTxt[i].Picture=""item182"""
@@ -159,18 +153,6 @@ paralysis	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[20] =
 Paralysis and fear Immunity	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"Game.SpcItemsTxt[19].BonusStat=""Paralysis and fear Immunity"""
 Poison and weakness Immunity	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"Game.SpcItemsTxt[20].BonusStat=""Poison and weakness Immunity"""
 premature ageing	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[23] = { [15] = ""stone"", [21] = ""premature ageing"" },"
-"Recipes:
-Add Red: Bless
-Add Blue: Regeneration
-Add Yellow: Harden Item
-Add Orange: Stone to Flesh
-Add Purple: Enchant Item"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[227]=""Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item"","
-"Recipes:
-Add Red: Heroism
-Add Blue: Meditation
-Add Yellow: Water Breathing
-Add Orange: Magic Protection
-Add Green: Enchant Item"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[226]=""Recipes:\nAdd Red: Heroism\nAdd Blue: Meditation\nAdd Yellow: Water Breathing\nAdd Orange: Magic Protection\nAdd Green: Enchant Item"","
 Reduce all damage taken by 10%	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[18]=""Reduce all damage taken by 10%"","
 Reduces damage by 3% for each enemy in the nearbies	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[22]=""Reduces damage by 3% for each enemy in the nearbies"","
 Reduces Physical damage taken by 15%	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"Game.SpcItemsTxt[35].BonusStat=""Reduces Physical damage taken by 15%"""
@@ -274,38 +256,6 @@ Openning file: %s	misc	4	4	uncertain_context:4	Scripts/Modules/Multiplayer/Synch
 evtnpc-b	misc	3	3	uncertain_context:3	Scripts/General/NPCFollowers.lua			"IconUp = ""evtnpc-b"","
 File closed: %s	misc	3	3	uncertain_context:3	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""INTERNAL"", ""File closed: %s"", DataFilePath)"
 jmp absolute 	misc	3	3	uncertain_context:3	Scripts/General/BountyHunt.lua; Scripts/General/ExtraEvents.lua; Scripts/General/NPCFollowers.lua			"mem.asmpatch(0x4bae73, ""jmp absolute "" .. NewCode)"
-"Recipes:
-Add Orange: Champion's Potion
-Add Purple: Power Boost
-Add Green: Divine Cure"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[228]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
-"Recipes:
-Add Orange: Lesser Element
-Add Purple: Wisdom Boost
-Add Green: Divine Magic"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
-"Recipes:
-Add Orange: Self Resistance
-Add Purple: Elemental Resistance
-Add Green: Paladin's Potion"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
-"Recipes:
-Add Orange: Swiftness
-Add Purple: Resilience Boost
-Add Green: Divine Restoration"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[234]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
-"Recipes:
-Add Red: Divine Blessing
-Add Blue: Darkness
-Add Yellow: Greater Element"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[243]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
-"Recipes:
-Add Red: Pure Elemental Resistance
-Add Blue: Divine Resistance
-Add Yellow: Pure Self Resistance"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[249]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
-"Recipes:
-Add Red: Pure Power
-Add Blue: Pure Wisdom
-Add Yellow: Pure Resilience"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[240]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
-"Recipes:
-Add Red: Twilight
-Add Blue: Dawn
-Add Yellow: Trascendance"	misc	3	3	uncertain_context:3	Scripts/General/zzAlchemy.lua			"[246]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
 "Targets found. Realms: Attuned. Time: Attuned.
 
 "	misc	3	3	uncertain_context:3	Scripts/Global/Quest_SavingGoobers.lua			"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. table.concat(Messages, ""\n"") .. ""\n\nRealms: Detached. Time: Detached."""
@@ -392,12 +342,6 @@ add eax, 0xbb8	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"me
 add eax, [ebp - 0x14]	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"mem.asmpatch(mm78(0x482CCB, 0x482681), ""add eax, [ebp - 0x14]"", 3)"
 add eax, ecx	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			"mem.asmpatch(0x472F5E, ""add eax, ecx"", 2)"
 add edi, 0x7f	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"mem.asmpatch(0x4af2ae, ""add edi, 0x7f"")"
-"Adds 'of Swiftness' property to a non-magic weapon.
-Require 40 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[244] = ""Adds 'of Swiftness' property to a non-magic weapon.\nRequire 40 power to work.\n"","
-"Adds a random tier 2 elemental damage enchant to a weapon
-Require 40 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[243] = ""Adds a random tier 2 elemental damage enchant to a weapon\nRequire 40 power to work.\n"","
 Archibald's Mirror	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Archibald's Mirror"","
 Armor: +50	misc	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"0x20C - basic stat (like ""Armor: +50"")"
 armor: +X	misc	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"Type, Enchantment, BasicStat - enchantment is also charges etc., basic stat is ""armor: +X"" or ""Damage: 1d1+1"" etc."
@@ -428,13 +372,6 @@ client	misc	1	1	uncertain_context:1	Scripts/General/zzBossSync.lua			"{ DataType
 Client data saved, game id: %s.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Client data saved, game id: %s."", Multiplayer.GameId())"
 Created default MAWSettings.lua file	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"print(""Created default MAWSettings.lua file"")"
 Creator's Hourglass	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Creator's Hourglass"","
-"Cures and prevent Stoned condition for 6 hours.
-Require 20 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[239] = ""Cures and prevent Stoned condition for 6 hours.\nRequire 20 power to work.\n"","
-Cures and prevents Curse and Paralysis for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[226] = ""Cures and prevents Curse and Paralysis for 6 hours."","
-Cures and prevents Disease and Poison for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[225] = ""Cures and prevents Disease and Poison for 6 hours."","
-Cures and prevents Fear and Insanity for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[227] = ""Cures and prevents Fear and Insanity for 6 hours."","
-Cures and prevents Weakness and inducted Sleep for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
 Damage on Friendly Units	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"createSwitch(300, ""Damage on Friendly Units"", ""friendlyDamage"", {""ON"",""OFF""})"
 Damage: 1d1+1	misc	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"Type, Enchantment, BasicStat - enchantment is also charges etc., basic stat is ""armor: +X"" or ""Damage: 1d1+1"" etc."
 Day-o-Gods	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"DayGods, DeadlySwarm, FlyingFist = ""Day-o-Gods"", ""Deadly"", ""Flying"""
@@ -452,20 +389,12 @@ Existing game id is invalid (%s), replacing it by new one: %s	misc	1	1	uncertain
 Existing save id is invalid (%s), replacing it by new one: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Existing save id is invalid (%s), replacing it by new one: %s"", n, new)"
 Eye of Void	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Eye of Void"","
 File closed: %s, bytes written: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""INTERNAL"", ""File closed: %s, bytes written: %s"", AutosaveFilePath, #bin)"
-"Fix caracter age at 20.
-Require 50 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[260] = ""Fix caracter age at 20.\nRequire 50 power to work.\n"","
-"Fix caracter age at 60.
-Require 50 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
 Following you would be foolish	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"Game.NPCTopic[1680]=""Following you would be foolish"""
 Game id generated: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Game id generated: %s"", n)"
 Game id set, old: %s, new: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Game id set, old: %s, new: %s"", SaveGameData().game_id, n)"
 Gathering game data.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""EVENTS"", ""Gathering game data."")"
-Grant 500 Experience point per Power to the player.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[259] = ""Grant 500 Experience point per Power to the player."","
 Have data.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""CONNECTION"", ""Received saved character data query (save id: %s). %s"", save_id, data and ""Have data."" or ""No data by this id."")"
 Healing reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[31]=""Healing reduced by "" .. getMapAffixPower(31, power) .. ""%"","
-Heals based on the potion's power of hit points.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[247] = ""Heals based on the potion's power of hit points."","
 Homing Projectiles	misc	1	1	uncertain_context:1	Scripts/General/zz_Maw-initialize.lua			"createSwitch(260, ""Homing Projectiles"", ""homingProjectiles"", {""ON"",""OFF""})"
 Huge Orc	misc	1	1	uncertain_context:1	Scripts/General/zSERIOUSMAW.lua			"name[304]=""Huge Orc"""
 I want to reset	misc	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Topic = ""I want to reset"","
@@ -477,13 +406,6 @@ imul eax, eax, 0xa	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua		
 inc dword [	misc	1	1	uncertain_context:1	Scripts/Core/events.lua			mem.asmhook(0x41F190, 'inc dword ['..internal.FrameCounter..']')
 inc dword [ebp - 0x14]	misc	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"asmpatch(0x41D5D1, ""inc dword [ebp - 0x14]"")"
 inc dword [ebp - 8]	misc	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"asmpatch(0x41D438, ""inc dword [ebp - 8]"")"
-Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
-Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
-Increases Attack by 5+(0.5 x Power) for 6 Hours	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
-Increases Melee damage by 5+(0.5 x Power) for 6 Hours	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[229] = ""Increases Melee damage by 5+(0.5 x Power) for 6 Hours"","
-Increases Speed for 6 Hours	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[228] = ""Increases Speed for 6 Hours"","
-Increases temporary Fire, Air, Water and Earth resistance. (Dark)	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[249] = ""Increases temporary Fire, Air, Water and Earth resistance. (Dark)"","
-Increases temporary Mind and Body resistance. (Light)	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[250] = ""Increases temporary Mind and Body resistance. (Light)"","
 Init finished: %s	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Info, ""Init finished: %s"", LogId)"
 Init started: %s	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Info, ""Init started: %s"", LogId)"
 It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!	misc	1	1	uncertain_context:1	Scripts/Global/zzMaw_Arena.lua			"local txt=""It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!"""
@@ -535,29 +457,6 @@ Orb of Creation	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""
 Other players in house:	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/UI/House.lua			"ShowTextRight(""Other players in house:"", baseX + 76, baseY - (count - 1) * lineHeight - 20)"
 Pandora's Cube	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Pandora's Cube"","
 Pearl of Memory	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"""Pearl of Memory"","
-"Permanently adds 'of Darkness' property to a non-magic weapon.
-Require 100 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[256] = ""Permanently adds 'of Darkness' property to a non-magic weapon.\nRequire 100 power to work.\n"","
-"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
-Previously gained bonus do not stack.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[254] = ""Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n"","
-"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
-Previously gained bonus do not stack.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[253] = ""Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n"","
-"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
-Previously gained bonus do not stack.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[252] = ""Permanently adds 20 per 50 potion power to permanent Might and Accuracy.\nPreviously gained bonus do not stack.\n"","
-"Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.
-Require 50 power per step to work.
-Previously gained bonus do not stack.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[261] = ""Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
-"Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.
-Require 50 power per step to work.
-Previously gained bonus do not stack.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[262] = ""Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
-"Permanently adds a random tier 3 elemental damage enchant to a weapon.
-Require 50 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[255] = ""Permanently adds a random tier 3 elemental damage enchant to a weapon.\nRequire 50 power to work.\n"","
 Players armor reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[28]=""Players armor reduced by "" .. getMapAffixPower(28, power) .. ""%"","
 Players attack speed reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[26]=""Players attack speed reduced by "" .. getMapAffixPower(26, power) .. ""%"","
 Players critical chance reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[20]=""Players critical chance reduced by "" .. getMapAffixPower(20, power) .. ""%"","
@@ -568,13 +467,8 @@ Players magic damage reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zz
 Players movement speed reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[25]=""Players movement speed reduced by "" .. getMapAffixPower(25, power) .. ""%"","
 Players physical damage reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[23]=""Players physical damage reduced by "" .. getMapAffixPower(23, power) .. ""%"","
 Players resistances reduced by 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[29]=""Players resistances reduced by "" .. getMapAffixPower(29, power) .. ""%"","
-"Prevents drowning damage for 6 hours.
-Require 20 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
 Processing game data.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""EVENTS"", ""Processing game data."")"
 ProcessPartySaveData event handled.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""EVENTS"", ""ProcessPartySaveData event handled."")"
-Provides Haste+Heroism+Bless.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[245] = ""Provides Haste+Heroism+Bless."","
-Provides Shield+Stone Skin+Preservation.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[251] = ""Provides Shield+Stone Skin+Preservation."","
 push 0x7f	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"mem.asmpatch(0x4af257, ""push 0x7f"")"
 push 4	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"mem.asmpatch(0x4bd454, ""push 4"")"
 push eax	misc	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"mem.asmpatch(v, ""push eax"")"
@@ -585,17 +479,7 @@ Received load_game packet from #%s. Current game id: %s, new game id: %s	misc	1	
 Received no character data from server.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Received no character data from server."")"
 Received saved character data query (save id: %s). %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""CONNECTION"", ""Received saved character data query (save id: %s). %s"", save_id, data and ""Have data."" or ""No data by this id."")"
 Received server's initial data without 'game_id' field set.	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""CONNECTION"", ""Received server's initial data without 'game_id' field set."")"
-"Recipes:
-Add Red: Haste
-Add Blue: Protection
-Add Yellow: Stone Skin
-Add Purple: Magic Protection
-Add Green: Stone to Flesh"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[225]=""Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh"","
-Regenerates Health for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[233] = ""Regenerates Health for 6 hours."","
 Remote save loading: skin set to %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""PLAYERS_SYNC"", ""Remote save loading: skin set to %s"", t.skin)"
-"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
-Require 40 power to work.
-"	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
 resetting	misc	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"vars.dungeonCompletedList[Game.MapStats[i].Name]=""resetting"""
 Save id generated: %s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"LogEvent(""SAVE_LOAD"", ""Save id generated: %s"", last_game.save_id)"
 Saves/MultiplayerAutosave.bin	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"local AutosaveFilePath = ""Saves/MultiplayerAutosave.bin"""
@@ -609,9 +493,6 @@ Start Level 	misc	1	1	uncertain_context:1	Scripts/Global/zzMaw_Arena.lua			"Topi
 sub dword [ds:0x509cac], 	misc	1	1	uncertain_context:1	Scripts/General/MiscTweaks.lua			"local patch = ""sub dword [ds:0x509cac], "" .. mul"
 SV1_	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"local SAVE_VERSION_TOKEN = ""SV1_"""
 Synchronization/%s	misc	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization.lua			"local folder = ""Synchronization/%s"""
-Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
-Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
-Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	misc	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[240] = ""Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours."","
 test ah, 0x10	misc	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"mem.asmpatch(0x426242, ""test ah, 0x10"")"
 Total corrupted bags: 	misc	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"""Total corrupted bags: "" .. brokenBags .. ""\n"" .."
 Unknown tileset file 	misc	1	1	uncertain_context:1	Scripts/General/pseudoSpawnpoint.lua			"local tilesetsFile = ""Tile"" .. (Game.Version == 8 and (tilesetFileSuffixes[Map.TilesetsFile] or error(""Unknown tileset file "" .. Map.TilesetsFile)) or """") .. ""Bin"""
@@ -798,7 +679,6 @@ Exploding	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/Ge
 Fixator	skill	1	4	comparison_control_literal:3; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 GetPlayerSkillMastery	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"events.call(""GetPlayerSkillMastery"", t)"
 GetSkill	skill	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""GetSkill"", t)"
-Grants bonus to Meditation skill for 6 hours.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[232] = ""Grants bonus to Meditation skill for 6 hours."","
 Incorrect mastery %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect mastery %d at JoinSkill()"", mastery)"
 Incorrect skill value %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect skill value %d at JoinSkill()"", skill)"
 Leecher	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
@@ -852,12 +732,6 @@ Feather-light pages hum with static; a whirling air-sigil scatters the lines to 
 Fire Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[971].Name=""Fire Magic Book"""
 GetSpellSkill	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""GetSpellSkill"", t)"
 GM	spell	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
-"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
-From 50 power on will protect also from death and eradication.
-"	spell	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[237] = ""Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.\nFrom 50 power on will protect also from death and eradication.\n"","
-"Grants Preservation and Shield (as the spell) for 6 Hours
-Require 20 power to work.
-"	spell	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[231] = ""Grants Preservation and Shield (as the spell) for 6 Hours\nRequire 20 power to work.\n"","
 HealingSpellPower	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"events.call(""HealingSpellPower"", t)"
 Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[974].Notes=""Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth."""
 Increases spell damage and healing at the expense of higher mana cost and cast time.	spell	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
@@ -878,7 +752,6 @@ PartyDies	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"even
 PlayerCastSpellFirst	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""PlayerCastSpellFirst"", t) -- used to insert remote data"
 PlayerCastSpellLast	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""PlayerCastSpellLast"", t) -- used to fetch userdata for remote players"
 Players spell recovery speed increased by 	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"[27]=""Players spell recovery speed increased by "" .. getMapAffixPower(27, power) .. ""%"","
-Restores based on the potion's power of spell points.	spell	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[248] = ""Restores based on the potion's power of spell points."","
 sbairu	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[972].Picture=""sbairu"""
 sbbodyu	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[977].Picture=""sbbodyu"""
 sbdarku	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[979].Picture=""sbdarku"""

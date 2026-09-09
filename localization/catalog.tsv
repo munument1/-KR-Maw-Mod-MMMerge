@@ -98,7 +98,7 @@ Scales further enhance their toughness and resistance to magical damage, increas
 maw-5d3f344b5bd2	untranslated	class	duration			Scripts/General/zzClasses.lua	866	1	
 maw-9d6d1bb8b10c	translated	class	Elder 	원로 		Scripts/General/zzClasses.lua	96	1	클래스명 접두어
 maw-0fb88bcef8a5	untranslated	class	GetArmorClass			Scripts/General/AdaptiveMonstersStats.lua	1041	1	
-maw-8a3559daa477	untranslated	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours			Scripts/General/zzAlchemy.lua	482	1	
+maw-8a3559daa477	translated	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	6시간 동안 방어력이 5 + (0.5 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	482	1	물약 효과 툴팁
 maw-1c6884f089f2	untranslated	class	Merc			Scripts/General/NPCMercenaries.lua	756	1	
 maw-eeec8e860233	untranslated	class	Resistances			Scripts/General/zzClasses.lua	472	1	
 maw-b301c10b3d0a	translated	class	Shoot	원거리		Scripts/General/zzClasses.lua	833	2	Game.GlobalTxt 원거리 공격 표시
@@ -281,9 +281,11 @@ maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spe
 maw-fc1a8c583492	untranslated	item	GenerateItem			Scripts/Core/events.lua	2192	1	
 maw-030499ca0810	untranslated	item	GetItemName			Scripts/Structs/extraEditableDescriptions.lua	310	1	
 maw-72a7fd92863d	untranslated	item	GotItem			Scripts/General/ExtraEvents.lua	112	2	
-maw-f50c8c159fdc	untranslated	item	"Grant 1 enchant to an unenchanted item, based on potion Power.
+maw-f50c8c159fdc	translated	item	"Grant 1 enchant to an unenchanted item, based on potion Power.
 Require at least 20 power to work.
-"			Scripts/General/zzAlchemy.lua	486	1	
+"	"물약 위력에 따라 마법이 부여되지 않은 아이템에 마법부여 효과 1개를 추가합니다.
+작동하려면 위력이 최소 20 필요합니다.
+"		Scripts/General/zzAlchemy.lua	486	1	물약 효과 툴팁
 maw-965850f0c879	translated	item	Great might	강대한 힘		Scripts/General/zzMaw-Items.lua	1884	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4ccaf5230f3a	translated	item	Greater Heal	대치유		Scripts/General/zzMaw-Items.lua	2350	5	기존 MMMerge 주문 용어
 maw-bdec310b7e9d	untranslated	item	Hardened			Scripts/General/zzMaw-Item-Sorter.lua	94	7	
@@ -298,8 +300,9 @@ maw-d377d83f7ddd	untranslated	item	Increase melee damage by 5% for each enemy in
 maw-569ea1cd4f01	untranslated	item	Increase Melee weapon skill by 10			Scripts/General/zzMaw-Items.lua	1390	1	
 maw-87498a8b590b	untranslated	item	Increase the effect of resistances base enchants by 50%			Scripts/General/zzMaw-Items.lua	1371	1	
 maw-2032e6152f7f	untranslated	item	Increases Ascension Skill level by 10			Scripts/General/zzMaw-Items.lua	1381	1	
-maw-d2147f191411	untranslated	item	"Increases item's roughness, making it more resistant to breaking.
-"			Scripts/General/zzAlchemy.lua	484	1	
+maw-d2147f191411	translated	item	"Increases item's roughness, making it more resistant to breaking.
+"	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
+"		Scripts/General/zzAlchemy.lua	484	1	물약 효과 툴팁
 maw-a159cdb85f6f	untranslated	item	insanity			Scripts/General/zzMaw-Items.lua	1256	1	
 maw-f951f6d3da95	untranslated	item	Insanity and SP drain Immunity			Scripts/General/zzMaw-Items.lua	1276	1	
 maw-e8d4bafc56e1	translated	item	Intellect	지능		Data/Tables/Class Starting Stats.txt	4	4	기존 MMMerge 능력치 용어
@@ -355,18 +358,28 @@ maw-e81582b9da67	untranslated	item	Primordial			Scripts/General/zzMaw-Items.lua	
 maw-5b252caa0860	translated	item	Primordial 	태고의 		Scripts/General/zzMaw-Items.lua	1735	1	아이템 등급 접두어
 maw-a6a535b865db	untranslated	item	Ranged			Scripts/General/zzMAW-Skills.lua	352	7	
 maw-cce370d2f978	untranslated	item	Rare			Scripts/General/zzMaw-Items.lua	461	2	
-maw-51b0953b5b08	untranslated	item	"Recipes:
+maw-51b0953b5b08	translated	item	"Recipes:
 Add Red: Bless
 Add Blue: Regeneration
 Add Yellow: Harden Item
 Add Orange: Stone to Flesh
-Add Purple: Enchant Item"			Scripts/General/zzAlchemy.lua	520	1	
-maw-648cc23a873c	untranslated	item	"Recipes:
+Add Purple: Enchant Item"	"조합법:
+빨강 추가: 축복
+파랑 추가: 재생
+노랑 추가: 아이템 경화
+주황 추가: 석화 해제
+보라 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	520	1	물약 조합법
+maw-648cc23a873c	translated	item	"Recipes:
 Add Red: Heroism
 Add Blue: Meditation
 Add Yellow: Water Breathing
 Add Orange: Magic Protection
-Add Green: Enchant Item"			Scripts/General/zzAlchemy.lua	518	1	
+Add Green: Enchant Item"	"조합법:
+빨강 추가: 영웅심
+파랑 추가: 명상
+노랑 추가: 수중 호흡
+주황 추가: 마법 보호
+초록 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	518	1	물약 조합법
 maw-e936025d6e54	untranslated	item	Reduce all damage taken by 10%			Scripts/General/zzMaw-Items.lua	1374	1	
 maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1378	1	
 maw-b6d59589a7b6	untranslated	item	Reduces Physical damage taken by 15%			Scripts/General/zzMaw-Items.lua	1282	1	
@@ -640,12 +653,16 @@ maw-71087cde7126	untranslated	misc	add eax, 0xbb8			Scripts/General/MiscTweaks.l
 maw-da40cc24a47e	untranslated	misc	add eax, [ebp - 0x14]			Scripts/Core/events.lua	1270	1	
 maw-67857aef76e3	untranslated	misc	add eax, ecx			Scripts/Core/events.lua	1301	1	
 maw-d942eeffe19d	untranslated	misc	add edi, 0x7f			Scripts/General/MiscTweaks.lua	86	1	
-maw-6594bfa7be25	untranslated	misc	"Adds 'of Swiftness' property to a non-magic weapon.
+maw-6594bfa7be25	translated	misc	"Adds 'of Swiftness' property to a non-magic weapon.
 Require 40 power to work.
-"			Scripts/General/zzAlchemy.lua	492	1	
-maw-5feb8f19ba9a	untranslated	misc	"Adds a random tier 2 elemental damage enchant to a weapon
+"	"마법이 부여되지 않은 무기에 '신속의' 속성을 추가합니다.
+작동하려면 위력 40이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	492	1	물약 효과 툴팁
+maw-5feb8f19ba9a	translated	misc	"Adds a random tier 2 elemental damage enchant to a weapon
 Require 40 power to work.
-"			Scripts/General/zzAlchemy.lua	491	1	
+"	"무기에 무작위 2단계 원소 피해 마법부여를 추가합니다.
+작동하려면 위력 40이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	491	1	물약 효과 툴팁
 maw-c6ab40827038	untranslated	misc	Amber Droplet			Scripts/General/zzAlchemy.lua	1372	2	
 maw-13f1aeb33fbf	untranslated	misc	Amethyst Chunk			Scripts/General/zzAlchemy.lua	1371	2	
 maw-3fdbe3bcaa7b	untranslated	misc	Archibald's Mirror			Scripts/General/zzAlchemy.lua	1392	1	
@@ -684,13 +701,15 @@ maw-9d188ed1f96e	untranslated	misc	Could not open file %s		%s	Scripts/Modules/Mu
 maw-fcba7969dfc4	untranslated	misc	Could not open file: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	35	2	
 maw-6bbc2c7e25b4	untranslated	misc	Created default MAWSettings.lua file			Scripts/General/zz_Maw-initialize.lua	234	1	
 maw-94f89e316c1b	untranslated	misc	Creator's Hourglass			Scripts/General/zzAlchemy.lua	1390	1	
-maw-fd16a79d1fa4	untranslated	misc	"Cures and prevent Stoned condition for 6 hours.
+maw-fd16a79d1fa4	translated	misc	"Cures and prevent Stoned condition for 6 hours.
 Require 20 power to work.
-"			Scripts/General/zzAlchemy.lua	487	1	
-maw-904d7adeda6b	untranslated	misc	Cures and prevents Curse and Paralysis for 6 hours.			Scripts/General/zzAlchemy.lua	474	1	
-maw-3dbdc5de0943	untranslated	misc	Cures and prevents Disease and Poison for 6 hours.			Scripts/General/zzAlchemy.lua	473	1	
-maw-1b344a249b02	untranslated	misc	Cures and prevents Fear and Insanity for 6 hours.			Scripts/General/zzAlchemy.lua	475	1	
-maw-f7a5005cf8c3	untranslated	misc	Cures and prevents Weakness and inducted Sleep for 6 hours.			Scripts/General/zzAlchemy.lua	472	1	
+"	"석화를 치료하고 6시간 동안 석화를 방지합니다.
+작동하려면 위력 20이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	487	1	물약 효과 툴팁
+maw-904d7adeda6b	translated	misc	Cures and prevents Curse and Paralysis for 6 hours.	저주와 마비를 치료하고 6시간 동안 방지합니다.		Scripts/General/zzAlchemy.lua	474	1	물약 효과 툴팁
+maw-3dbdc5de0943	translated	misc	Cures and prevents Disease and Poison for 6 hours.	질병과 독을 치료하고 6시간 동안 방지합니다.		Scripts/General/zzAlchemy.lua	473	1	물약 효과 툴팁
+maw-1b344a249b02	translated	misc	Cures and prevents Fear and Insanity for 6 hours.	공포와 광기를 치료하고 6시간 동안 방지합니다.		Scripts/General/zzAlchemy.lua	475	1	물약 효과 툴팁
+maw-f7a5005cf8c3	translated	misc	Cures and prevents Weakness and inducted Sleep for 6 hours.	약화와 강제 수면을 치료하고 6시간 동안 방지합니다.		Scripts/General/zzAlchemy.lua	472	1	물약 효과 툴팁
 maw-367b80c6e31b	translated	misc	Currently Active Legendary effects:	현재 활성화된 전설 효과:		Scripts/General/zzMaw-Stats.lua	532	1	전설 효과 UI
 maw-bbc5432a15ee	untranslated	misc	Damage on Friendly Units			Scripts/General/zz_Maw-initialize.lua	559	1	
 maw-9ae2b0cfdd1b	untranslated	misc	Damage: 1d1+1			Scripts/Structs/extraEditableDescriptions.lua	22	1	
@@ -716,21 +735,25 @@ maw-7732502cc68e	untranslated	misc	Eye of Void			Scripts/General/zzAlchemy.lua	1
 maw-d4c5d6bd02d1	untranslated	misc	File closed: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	30	3	
 maw-a24a9455bb0a	untranslated	misc	File closed: %s, bytes written: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	743	1	
 maw-4b3164e2923a	untranslated	misc	Fire Topaz			Scripts/General/zzAlchemy.lua	1370	2	
-maw-33dc34c83336	untranslated	misc	"Fix caracter age at 20.
+maw-33dc34c83336	translated	misc	"Fix caracter age at 20.
 Require 50 power to work.
-"			Scripts/General/zzAlchemy.lua	508	1	
-maw-1614333c511a	untranslated	misc	"Fix caracter age at 60.
+"	"캐릭터의 나이를 20세로 고정합니다.
+작동하려면 위력 50이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	508	1	물약 효과 툴팁
+maw-1614333c511a	translated	misc	"Fix caracter age at 60.
 Require 50 power to work.
-"			Scripts/General/zzAlchemy.lua	506	1	
+"	"캐릭터의 나이를 60세로 고정합니다.
+작동하려면 위력 50이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	506	1	물약 효과 툴팁
 maw-b9a44faa0600	untranslated	misc	Following you would be foolish			Scripts/General/NPCFollowers.lua	491	1	
 maw-3e53e030126e	untranslated	misc	Game id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	110	1	
 maw-29dbcc161804	untranslated	misc	Game id set, old: %s, new: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	102	1	
 maw-d3ec207ca65b	untranslated	misc	Gathering game data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	187	1	
 maw-5c8291287a2a	untranslated	misc	Gemcutter's Ruby			Scripts/General/zzAlchemy.lua	1374	2	
-maw-17461354dc91	untranslated	misc	Grant 500 Experience point per Power to the player.			Scripts/General/zzAlchemy.lua	507	1	
+maw-17461354dc91	translated	misc	Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.		Scripts/General/zzAlchemy.lua	507	1	물약 효과 툴팁
 maw-3745903c5e25	untranslated	misc	Have data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
 maw-44fcaf7ec76a	untranslated	misc	Healing reduced by 			Scripts/General/zzMaw-Maps.lua	2126	1	
-maw-8ebf33b72b32	untranslated	misc	Heals based on the potion's power of hit points.			Scripts/General/zzAlchemy.lua	495	1	
+maw-8ebf33b72b32	translated	misc	Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.		Scripts/General/zzAlchemy.lua	495	1	물약 효과 툴팁
 maw-5aba2c1279d0	translated	misc	Health: 	생명력: 		Scripts/General/zzzOnlineVariableSender.lua	329	1	멀티플레이 상태 표시
 maw-035135c6e9e5	untranslated	misc	Homing Projectiles			Scripts/General/zz_Maw-initialize.lua	558	1	
 maw-c49d222d591a	untranslated	misc	Huge Orc			Scripts/General/zSERIOUSMAW.lua	15	1	
@@ -743,13 +766,13 @@ maw-4e1ab704b005	untranslated	misc	imul eax, eax, 0xa			Scripts/General/MiscTwea
 maw-3638ea580343	untranslated	misc	inc dword [			Scripts/Core/events.lua	805	1	
 maw-a7e96bb7ef09	untranslated	misc	inc dword [ebp - 0x14]			Scripts/Structs/extraEditableDescriptions.lua	235	1	
 maw-574f64df1253	untranslated	misc	inc dword [ebp - 8]			Scripts/Structs/extraEditableDescriptions.lua	215	1	
-maw-b2101e31e077	untranslated	misc	Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.			Scripts/General/zzAlchemy.lua	511	1	
-maw-67dc4ffe54f0	untranslated	misc	Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.			Scripts/General/zzAlchemy.lua	505	1	
-maw-19fbf83e718c	untranslated	misc	Increases Attack by 5+(0.5 x Power) for 6 Hours			Scripts/General/zzAlchemy.lua	478	1	
-maw-a554f12eaab5	untranslated	misc	Increases Melee damage by 5+(0.5 x Power) for 6 Hours			Scripts/General/zzAlchemy.lua	477	1	
-maw-abd499ecf794	untranslated	misc	Increases Speed for 6 Hours			Scripts/General/zzAlchemy.lua	476	1	
-maw-8db72e2f2f04	untranslated	misc	Increases temporary Fire, Air, Water and Earth resistance. (Dark)			Scripts/General/zzAlchemy.lua	497	1	
-maw-5e1a8bc9afac	untranslated	misc	Increases temporary Mind and Body resistance. (Light)			Scripts/General/zzAlchemy.lua	498	1	
+maw-b2101e31e077	translated	misc	Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	6시간 동안 모든 저항이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	511	1	물약 효과 툴팁
+maw-67dc4ffe54f0	translated	misc	Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	6시간 동안 7대 능력치가 모두 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	505	1	물약 효과 툴팁
+maw-19fbf83e718c	translated	misc	Increases Attack by 5+(0.5 x Power) for 6 Hours	6시간 동안 공격력이 5 + (0.5 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	478	1	물약 효과 툴팁
+maw-a554f12eaab5	translated	misc	Increases Melee damage by 5+(0.5 x Power) for 6 Hours	6시간 동안 근접 피해가 5 + (0.5 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	477	1	물약 효과 툴팁
+maw-abd499ecf794	translated	misc	Increases Speed for 6 Hours	6시간 동안 속도가 증가합니다.		Scripts/General/zzAlchemy.lua	476	1	물약 효과 툴팁
+maw-8db72e2f2f04	translated	misc	Increases temporary Fire, Air, Water and Earth resistance. (Dark)	화염, 공기, 물, 대지 저항을 일시적으로 증가시킵니다. (어둠)		Scripts/General/zzAlchemy.lua	497	1	물약 효과 툴팁
+maw-5e1a8bc9afac	translated	misc	Increases temporary Mind and Body resistance. (Light)	정신 및 육체 저항을 일시적으로 증가시킵니다. (빛)		Scripts/General/zzAlchemy.lua	498	1	물약 효과 툴팁
 maw-3a329e5c2a67	untranslated	misc	Init finished: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	960	1	
 maw-3db41f99e546	untranslated	misc	Init started: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	3	1	
 maw-5b4e36d25e6c	untranslated	misc	It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!			Scripts/Global/zzMaw_Arena.lua	22	1	
@@ -840,29 +863,45 @@ maw-f7710482d67d	untranslated	misc	Other players in house:			Scripts/Modules/Mul
 maw-f4e4537df7b9	untranslated	misc	Pandora's Cube			Scripts/General/zzAlchemy.lua	1391	1	
 maw-a9522ff60c04	untranslated	misc	Party Start			Scripts/General/zzMaw-Maps.lua	1894	1	
 maw-f1806a7c8371	untranslated	misc	Pearl of Memory			Scripts/General/zzAlchemy.lua	1394	1	
-maw-565991c7f88b	untranslated	misc	"Permanently adds 'of Darkness' property to a non-magic weapon.
+maw-565991c7f88b	translated	misc	"Permanently adds 'of Darkness' property to a non-magic weapon.
 Require 100 power to work.
-"			Scripts/General/zzAlchemy.lua	504	1	
-maw-1297b65672db	untranslated	misc	"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
+"	"마법이 부여되지 않은 무기에 '어둠의' 속성을 영구적으로 추가합니다.
+작동하려면 위력 100이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	504	1	물약 효과 툴팁
+maw-1297b65672db	translated	misc	"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
 Previously gained bonus do not stack.
-"			Scripts/General/zzAlchemy.lua	502	1	
-maw-124194bd410d	untranslated	misc	"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
+"	"물약 위력 50마다 인내력, 속도, 행운에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"		Scripts/General/zzAlchemy.lua	502	1	물약 효과 툴팁
+maw-124194bd410d	translated	misc	"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
 Previously gained bonus do not stack.
-"			Scripts/General/zzAlchemy.lua	501	1	
-maw-e9365ff23b6c	untranslated	misc	"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
+"	"물약 위력 50마다 지능과 지혜에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"		Scripts/General/zzAlchemy.lua	501	1	물약 효과 툴팁
+maw-e9365ff23b6c	translated	misc	"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
 Previously gained bonus do not stack.
-"			Scripts/General/zzAlchemy.lua	500	1	
-maw-165012c92676	untranslated	misc	"Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.
+"	"물약 위력 50마다 힘과 정확도에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"		Scripts/General/zzAlchemy.lua	500	1	물약 효과 툴팁
+maw-165012c92676	translated	misc	"Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.
 Require 50 power per step to work.
 Previously gained bonus do not stack.
-"			Scripts/General/zzAlchemy.lua	509	1	
-maw-dce96cfbbf89	untranslated	misc	"Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.
+"	"물약 위력 50마다 화염, 공기, 물, 대지 저항에 영구적으로 30을 추가합니다. 한 번만 사용할 수 있습니다.
+단계마다 작동하려면 위력 50이 필요합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"		Scripts/General/zzAlchemy.lua	509	1	물약 효과 툴팁
+maw-dce96cfbbf89	translated	misc	"Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.
 Require 50 power per step to work.
 Previously gained bonus do not stack.
-"			Scripts/General/zzAlchemy.lua	510	1	
-maw-c01df86fe794	untranslated	misc	"Permanently adds a random tier 3 elemental damage enchant to a weapon.
+"	"물약 위력 50마다 정신 및 육체 저항에 영구적으로 30을 추가합니다. 한 번만 사용할 수 있습니다.
+단계마다 작동하려면 위력 50이 필요합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"		Scripts/General/zzAlchemy.lua	510	1	물약 효과 툴팁
+maw-c01df86fe794	translated	misc	"Permanently adds a random tier 3 elemental damage enchant to a weapon.
 Require 50 power to work.
-"			Scripts/General/zzAlchemy.lua	503	1	
+"	"무기에 무작위 3단계 원소 피해 마법부여를 영구적으로 추가합니다.
+작동하려면 위력 50이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	503	1	물약 효과 툴팁
 maw-e53407cfe1a5	untranslated	misc	Player			Scripts/Modules/Multiplayer/UI/House.lua	25	1	
 maw-a39c96a53ebb	untranslated	misc	Players armor reduced by 			Scripts/General/zzMaw-Maps.lua	2123	1	
 maw-7f02e5429dfc	untranslated	misc	Players attack speed reduced by 			Scripts/General/zzMaw-Maps.lua	2121	1	
@@ -874,13 +913,15 @@ maw-75ef7763d89a	untranslated	misc	Players magic damage reduced by 			Scripts/Ge
 maw-7838f94d8b3d	untranslated	misc	Players movement speed reduced by 			Scripts/General/zzMaw-Maps.lua	2120	1	
 maw-7f3884b71aeb	untranslated	misc	Players physical damage reduced by 			Scripts/General/zzMaw-Maps.lua	2118	1	
 maw-c65369ea936a	untranslated	misc	Players resistances reduced by 			Scripts/General/zzMaw-Maps.lua	2124	1	
-maw-23451f937782	untranslated	misc	"Prevents drowning damage for 6 hours.
+maw-23451f937782	translated	misc	"Prevents drowning damage for 6 hours.
 Require 20 power to work.
-"			Scripts/General/zzAlchemy.lua	483	1	
+"	"6시간 동안 익사 피해를 방지합니다.
+작동하려면 위력 20이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	483	1	물약 효과 툴팁
 maw-8dfb4fba8597	untranslated	misc	Processing game data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	230	1	
 maw-be5e996e416a	untranslated	misc	ProcessPartySaveData event handled.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	541	1	
-maw-7f1158278634	untranslated	misc	Provides Haste+Heroism+Bless.			Scripts/General/zzAlchemy.lua	493	1	
-maw-c569dfaaeb09	untranslated	misc	Provides Shield+Stone Skin+Preservation.			Scripts/General/zzAlchemy.lua	499	1	
+maw-7f1158278634	translated	misc	Provides Haste+Heroism+Bless.	신속 + 영웅심 + 축복 효과를 부여합니다.		Scripts/General/zzAlchemy.lua	493	1	물약 효과 툴팁
+maw-c569dfaaeb09	translated	misc	Provides Shield+Stone Skin+Preservation.	방패 + 돌 피부 + 보존 효과를 부여합니다.		Scripts/General/zzAlchemy.lua	499	1	물약 효과 툴팁
 maw-3630684e30da	untranslated	misc	push 0x0			Scripts/General/MiscTweaks.lua	56	2	
 maw-30502456b3e6	untranslated	misc	push 0x7f			Scripts/General/MiscTweaks.lua	84	1	
 maw-ae2fb541cf92	untranslated	misc	push 4			Scripts/General/MiscTweaks.lua	174	1	
@@ -893,49 +934,80 @@ maw-88ee7b10e680	untranslated	misc	Received load_game packet from #%s. Current g
 maw-c7c0ed06d68c	untranslated	misc	Received no character data from server.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	615	1	
 maw-d2bca243b585	untranslated	misc	Received saved character data query (save id: %s). %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	
 maw-571b91489a71	untranslated	misc	Received server's initial data without 'game_id' field set.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	650	1	
-maw-55d681fd9aa3	untranslated	misc	"Recipes:
+maw-55d681fd9aa3	translated	misc	"Recipes:
 Add Orange: Champion's Potion
 Add Purple: Power Boost
-Add Green: Divine Cure"			Scripts/General/zzAlchemy.lua	522	3	
-maw-e7e0cac45dd6	untranslated	misc	"Recipes:
+Add Green: Divine Cure"	"조합법:
+주황 추가: 챔피언의 물약
+보라 추가: 힘 강화
+초록 추가: 신성한 치유"		Scripts/General/zzAlchemy.lua	522	3	물약 조합법
+maw-e7e0cac45dd6	translated	misc	"Recipes:
 Add Orange: Lesser Element
 Add Purple: Wisdom Boost
-Add Green: Divine Magic"			Scripts/General/zzAlchemy.lua	526	3	
-maw-1eaae8337dc3	untranslated	misc	"Recipes:
+Add Green: Divine Magic"	"조합법:
+주황 추가: 하급 원소
+보라 추가: 지혜 강화
+초록 추가: 신성 마법"		Scripts/General/zzAlchemy.lua	526	3	물약 조합법
+maw-1eaae8337dc3	translated	misc	"Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
-Add Green: Paladin's Potion"			Scripts/General/zzAlchemy.lua	534	3	
-maw-fe6467a7a26e	untranslated	misc	"Recipes:
+Add Green: Paladin's Potion"	"조합법:
+주황 추가: 자기 저항
+보라 추가: 원소 저항
+초록 추가: 팔라딘의 물약"		Scripts/General/zzAlchemy.lua	534	3	물약 조합법
+maw-fe6467a7a26e	translated	misc	"Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
-Add Green: Divine Restoration"			Scripts/General/zzAlchemy.lua	530	3	
-maw-9f4b123ca219	untranslated	misc	"Recipes:
+Add Green: Divine Restoration"	"조합법:
+주황 추가: 신속
+보라 추가: 회복력 강화
+초록 추가: 신성한 회복"		Scripts/General/zzAlchemy.lua	530	3	물약 조합법
+maw-9f4b123ca219	translated	misc	"Recipes:
 Add Red: Divine Blessing
 Add Blue: Darkness
-Add Yellow: Greater Element"			Scripts/General/zzAlchemy.lua	542	3	
-maw-51a3c7cc2395	untranslated	misc	"Recipes:
+Add Yellow: Greater Element"	"조합법:
+빨강 추가: 신성한 축복
+파랑 추가: 어둠
+노랑 추가: 상급 원소"		Scripts/General/zzAlchemy.lua	542	3	물약 조합법
+maw-51a3c7cc2395	translated	misc	"Recipes:
 Add Red: Haste
 Add Blue: Protection
 Add Yellow: Stone Skin
 Add Purple: Magic Protection
-Add Green: Stone to Flesh"			Scripts/General/zzAlchemy.lua	516	1	
-maw-ad24311b3af6	untranslated	misc	"Recipes:
+Add Green: Stone to Flesh"	"조합법:
+빨강 추가: 신속
+파랑 추가: 보호
+노랑 추가: 돌 피부
+보라 추가: 마법 보호
+초록 추가: 석화 해제"		Scripts/General/zzAlchemy.lua	516	1	물약 조합법
+maw-ad24311b3af6	translated	misc	"Recipes:
 Add Red: Pure Elemental Resistance
 Add Blue: Divine Resistance
-Add Yellow: Pure Self Resistance"			Scripts/General/zzAlchemy.lua	550	3	
-maw-31b1e8041117	untranslated	misc	"Recipes:
+Add Yellow: Pure Self Resistance"	"조합법:
+빨강 추가: 순수 원소 저항
+파랑 추가: 신성 저항
+노랑 추가: 순수 자기 저항"		Scripts/General/zzAlchemy.lua	550	3	물약 조합법
+maw-31b1e8041117	translated	misc	"Recipes:
 Add Red: Pure Power
 Add Blue: Pure Wisdom
-Add Yellow: Pure Resilience"			Scripts/General/zzAlchemy.lua	538	3	
-maw-bd97aaf39233	untranslated	misc	"Recipes:
+Add Yellow: Pure Resilience"	"조합법:
+빨강 추가: 순수한 힘
+파랑 추가: 순수한 지혜
+노랑 추가: 순수한 회복력"		Scripts/General/zzAlchemy.lua	538	3	물약 조합법
+maw-bd97aaf39233	translated	misc	"Recipes:
 Add Red: Twilight
 Add Blue: Dawn
-Add Yellow: Trascendance"			Scripts/General/zzAlchemy.lua	546	3	
-maw-1fee1313e7b1	untranslated	misc	Regenerates Health for 6 hours.			Scripts/General/zzAlchemy.lua	481	1	
+Add Yellow: Trascendance"	"조합법:
+빨강 추가: 황혼
+파랑 추가: 새벽
+노랑 추가: 초월"		Scripts/General/zzAlchemy.lua	546	3	물약 조합법
+maw-1fee1313e7b1	translated	misc	Regenerates Health for 6 hours.	6시간 동안 생명력을 재생합니다.		Scripts/General/zzAlchemy.lua	481	1	물약 효과 툴팁
 maw-a54328b90858	untranslated	misc	Remote save loading: skin set to %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	692	1	
-maw-b89672eb06d4	untranslated	misc	"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
+maw-b89672eb06d4	translated	misc	"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
 Require 40 power to work.
-"			Scripts/General/zzAlchemy.lua	494	1	
+"	"죽음과 소멸을 제외한 모든 상태 이상을 제거하고 6시간 동안 방지합니다.
+작동하려면 위력 40이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	494	1	물약 효과 툴팁
 maw-7f000fb0d62e	untranslated	misc	resetting			Scripts/General/zzMaw-Maps.lua	114	2	
 maw-e327189cc78d	untranslated	misc	Royal Amethyst			Scripts/General/zzAlchemy.lua	1373	2	
 maw-e2cb58c6600a	untranslated	misc	Save id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	131	1	
@@ -954,9 +1026,9 @@ maw-e96b06f09b6b	untranslated	misc	"Targets found. Realms: Attuned. Time: Attune
 
 "			Scripts/Global/Quest_SavingGoobers.lua	754	3	
 maw-f83b305141e4	translated	misc	Telelocator	텔레로케이터		Scripts/Global/Quest_SavingGoobers.lua	627	1	NPC 표시명
-maw-54a29ed6e03d	untranslated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.			Scripts/General/zzAlchemy.lua	490	1	
-maw-5421d4f3edd5	untranslated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.			Scripts/General/zzAlchemy.lua	489	1	
-maw-df9472ca68e2	untranslated	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.			Scripts/General/zzAlchemy.lua	488	1	
+maw-54a29ed6e03d	translated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 인내력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	490	1	물약 효과 툴팁
+maw-5421d4f3edd5	translated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지능과 성격이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	489	1	물약 효과 툴팁
+maw-df9472ca68e2	translated	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	6시간 동안 힘과 정확도가 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	488	1	물약 효과 툴팁
 maw-52fb6815a8a2	untranslated	misc	test ah, 0x10			Scripts/Structs/After/RemoveSkillValueLimits.lua	455	1	
 maw-20dcabcc16bb	untranslated	misc	test byte ptr [ebp-0xF], 			Scripts/Structs/After/RemoveSkillValueLimits.lua	189	12	
 maw-c07c425eaa7c	untranslated	misc	Total corrupted bags: 			Scripts/General/zzMaw-Item-Sorter.lua	731	1	
@@ -1702,7 +1774,7 @@ maw-b685e98aff4a	untranslated	skill	GetMerchantTotalSkill			Scripts/Core/events.
 maw-9dd13a7dcc16	untranslated	skill	GetPerceptionTotalSkill			Scripts/Core/events.lua	1958	2	
 maw-7d2cde45714f	untranslated	skill	GetPlayerSkillMastery			Scripts/Structs/After/RemoveSkillValueLimits.lua	144	1	
 maw-f672c345dffe	untranslated	skill	GetSkill			Scripts/Core/events.lua	1908	1	
-maw-ebabbf34ceff	untranslated	skill	Grants bonus to Meditation skill for 6 hours.			Scripts/General/zzAlchemy.lua	480	1	
+maw-ebabbf34ceff	translated	skill	Grants bonus to Meditation skill for 6 hours.	6시간 동안 명상 기술에 보너스를 부여합니다.		Scripts/General/zzAlchemy.lua	480	1	물약 효과 툴팁
 maw-5200bdfc01a1	untranslated	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	
 maw-bc4de4436fe9	untranslated	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	
 maw-d777daa9c06f	untranslated	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	
@@ -2058,9 +2130,11 @@ maw-58f60e582d1c	translated	spell	Frostbite	동상		Scripts/General/zzClasses.lu
 maw-1fb2f39c778c	untranslated	spell	GetSpellSkill			Scripts/General/ExtraEvents.lua	503	1	
 maw-a66864f45a5a	untranslated	spell	GM			Scripts/General/zzClasses.lua	1358	3	
 maw-7fef960c0f73	untranslated	spell	Grandmaster			Scripts/General/zzMaw-Spells.lua	3424	1	
-maw-802ee15f32f0	untranslated	spell	"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
+maw-802ee15f32f0	translated	spell	"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
 From 50 power on will protect also from death and eradication.
-"			Scripts/General/zzAlchemy.lua	485	1	
+"	"6시간 동안 마법 보호(주문과 동일) 효과를 5 + 물약 위력 10당 1만큼 부여합니다.
+위력 50 이상이면 죽음과 소멸도 방지합니다.
+"		Scripts/General/zzAlchemy.lua	485	1	물약 효과 툴팁
 maw-a31651504a5b	translated	spell	Grants 3 Accuracy to all party per skill point	기술 포인트당 파티 전체의 정확도가 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3132	1	주문 숙련 효과
 maw-a29c22df5527	translated	spell	Grants 3 Endurance to all party per skill point	기술 포인트당 파티 전체의 인내력이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3131	1	주문 숙련 효과
 maw-e8009de5fe0c	translated	spell	Grants 3 Intellect to all party per skill point	기술 포인트당 파티 전체의 지능이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3128	1	주문 숙련 효과
@@ -2068,9 +2142,11 @@ maw-5933401d96fe	translated	spell	Grants 3 Luck to all party per skill point	기
 maw-d00c6801dcb2	translated	spell	Grants 3 Might to all party per skill point	기술 포인트당 파티 전체의 힘이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3134	1	주문 숙련 효과
 maw-6954e37673ce	translated	spell	Grants 3 Personality to all party per skill point	기술 포인트당 파티 전체의 인격이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3133	1	주문 숙련 효과
 maw-0d372cbfa93c	translated	spell	Grants 3 Speed to all party per skill point	기술 포인트당 파티 전체의 민첩성이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3129	1	주문 숙련 효과
-maw-54c85f95e362	untranslated	spell	"Grants Preservation and Shield (as the spell) for 6 Hours
+maw-54c85f95e362	translated	spell	"Grants Preservation and Shield (as the spell) for 6 Hours
 Require 20 power to work.
-"			Scripts/General/zzAlchemy.lua	479	1	
+"	"6시간 동안 보존과 방패(주문과 동일) 효과를 부여합니다.
+작동하려면 위력 20이 필요합니다.
+"		Scripts/General/zzAlchemy.lua	479	1	물약 효과 툴팁
 maw-9924ac014435	untranslated	spell	HealingSpellPower			Scripts/General/zzMaw-Spells.lua	958	1	
 maw-a81d65fc7582	untranslated	spell	Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.			Scripts/General/zzMaw-Spells.lua	3411	1	
 maw-81879b13e55a	translated	spell	Ice Bomb	얼음 폭탄		Scripts/General/zzClasses.lua	1392	1	MAW 주문명
@@ -2119,7 +2195,7 @@ maw-4691ee23b450	untranslated	spell	PlayerCastSpellLast			Scripts/General/ExtraE
 maw-1b671c136e12	untranslated	spell	Players spell recovery speed increased by 			Scripts/General/zzMaw-Maps.lua	2122	1	
 maw-571a4ca76edb	translated	spell	Quick Spell	퀵스펠		Scripts/General/zzMaw-Stats.lua	1493	1	Game.GlobalTxt 표시명
 maw-3ce95e4ab179	translated	spell	Removes Death and Eradication with no time limit	시간 제한 없이 죽음과 소멸을 제거합니다		Scripts/General/zzMaw-Spells.lua	2196	1	주문 숙련 설명
-maw-3020835da920	untranslated	spell	Restores based on the potion's power of spell points.			Scripts/General/zzAlchemy.lua	496	1	
+maw-3020835da920	translated	spell	Restores based on the potion's power of spell points.	물약의 위력에 따라 주문력을 회복합니다.		Scripts/General/zzAlchemy.lua	496	1	물약 효과 툴팁
 maw-c1e876e0d80c	untranslated	spell	sbair3			Scripts/General/zzMaw-Spells.lua	3286	3	
 maw-1bc43b6e5bfd	untranslated	spell	sbair4			Scripts/General/zzMaw-Spells.lua	3287	3	
 maw-04ed8e206040	untranslated	spell	sbairu			Scripts/General/zzMaw-Spells.lua	3391	1	

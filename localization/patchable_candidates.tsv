@@ -104,6 +104,7 @@ Scales further enhance their toughness and resistance to magical damage, increas
 ------------------------------------------------------------
           방어%| 저항%"	translated	class	1	proven_display_variable_flow:1	Scripts/General/zzClasses.lua	"txt=""Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"""
 Elder 	원로 	translated	class	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.ClassNames[i]=string.format(""Elder "" .. oldNames[i])"
+Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	6시간 동안 방어력이 5 + (0.5 × 위력)만큼 증가합니다.	translated	class	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[234] = ""Increases Armor Class  by 5+(0.5 x Power) for 6 Hours"","
 Shoot	원거리	translated	class	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua	"Game.GlobalTxt[203]=""Shoot"""
 Shoot         +	원거리         +	translated	class	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.GlobalTxt[203]=""Shoot         +"" .. pl:GetRangedAttack() .. ""\n                 "" .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. ""-"" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. ""\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
 Ultimate 	궁극의 	translated	class	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.ClassNames[i]=string.format(""Ultimate "" .. oldNames[i])"
@@ -200,11 +201,19 @@ Endless Potion	무한 물약	translated	item	1	known_display_name_assignment:1	S
 Endurance	인내력	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[4] = StrColor(0, 255, 0, ""Endurance"")"
 Fire Magic Skill +	화염 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[30] = ""Fire Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
 Fire Resistance	화염 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[11] = StrColor(255, 70, 70, ""Fire Resistance"")"
+"Grant 1 enchant to an unenchanted item, based on potion Power.
+Require at least 20 power to work.
+"	"물약 위력에 따라 마법이 부여되지 않은 아이템에 마법부여 효과 1개를 추가합니다.
+작동하려면 위력이 최소 20 필요합니다.
+"	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[238] = ""Grant 1 enchant to an unenchanted item, based on potion Power.\nRequire at least 20 power to work.\n"","
 Great might	강대한 힘	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[25] = StrColor(255,255,153, ""Great might"")"
 Greater Heal	대치유	translated	item	5	known_display_name_assignment:4; proven_game_display_assignment:1	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua	"Game.ItemsTxt[473].Name=""Greater Heal"""
 Hit Points	생명력	translated	item	3	formatted_colored_text:3	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Stats.lua	"itemStatName[8] = StrColor(0, 255, 0, ""Hit Points"")"
 ID Item skill	아이템 감정 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[20] = StrColor(255,255,153, ""ID Item skill"")"
 ID Monster skill	몬스터 감정 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[21] = StrColor(255,255,153, ""ID Monster skill"")"
+"Increases item's roughness, making it more resistant to breaking.
+"	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
+"	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[236] = ""Increases item's roughness, making it more resistant to breaking.\n"","
 Intellect	지능	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[2] = StrColor(255, 128, 0, ""Intellect"")"
 Legendary 	전설의 	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,255,30,""Legendary "" .. t.Name)"
 Light Magic Skill +	빛 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[31] = ""Light Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
@@ -220,6 +229,28 @@ Potion Bottle	물약병	translated	item	1	proven_item_display_text:1	Scripts/Gen
 Potion Deleted in Austerity	절제 모드에서 삭제된 물약	translated	item	3	known_display_name_assignment:3	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in Austerity"""
 Potion Deleted in MAW	MAW에서 삭제된 물약	translated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in MAW"""
 Primordial 	태고의 	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,0,0,""Primordial "" .. t.Name)"
+"Recipes:
+Add Red: Bless
+Add Blue: Regeneration
+Add Yellow: Harden Item
+Add Orange: Stone to Flesh
+Add Purple: Enchant Item"	"조합법:
+빨강 추가: 축복
+파랑 추가: 재생
+노랑 추가: 아이템 경화
+주황 추가: 석화 해제
+보라 추가: 아이템 마법부여"	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[227]=""Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item"","
+"Recipes:
+Add Red: Heroism
+Add Blue: Meditation
+Add Yellow: Water Breathing
+Add Orange: Magic Protection
+Add Green: Enchant Item"	"조합법:
+빨강 추가: 영웅심
+파랑 추가: 명상
+노랑 추가: 수중 호흡
+주황 추가: 마법 보호
+초록 추가: 아이템 마법부여"	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[226]=""Recipes:\nAdd Red: Heroism\nAdd Blue: Meditation\nAdd Yellow: Water Breathing\nAdd Orange: Magic Protection\nAdd Green: Enchant Item"","
 Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[66] = ""Regenerates Hit Points and Meditation Skill +"" .. math.floor(MaxCharges*3/20)+3,"
 Repair skill	수리 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[18] = StrColor(255,255,153, ""Repair skill"")"
 Speed	민첩성	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[6] = StrColor(127, 0, 255, ""Speed"")"
@@ -260,11 +291,49 @@ Rings: "	"
 (host save) 	(호스트 저장) 	translated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Name = StrColor(95,235,50, ""(host save) "") .. StrColor(250,250,250) .. last_game.player_name,"
 (last choice) 	(마지막 선택) 	translated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"last_choice.Name = StrColor(46,237,218, ""(last choice) "") .. StrColor(250,250,250) .. last_choice.data.player_name"
 (Most relevant) 	(가장 관련 높음) 	translated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"choices[1].Name = StrColor(235,235,50, ""(Most relevant) "") .. choices[1].Name"
+"Adds 'of Swiftness' property to a non-magic weapon.
+Require 40 power to work.
+"	"마법이 부여되지 않은 무기에 '신속의' 속성을 추가합니다.
+작동하려면 위력 40이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[244] = ""Adds 'of Swiftness' property to a non-magic weapon.\nRequire 40 power to work.\n"","
+"Adds a random tier 2 elemental damage enchant to a weapon
+Require 40 power to work.
+"	"무기에 무작위 2단계 원소 피해 마법부여를 추가합니다.
+작동하려면 위력 40이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[243] = ""Adds a random tier 2 elemental damage enchant to a weapon\nRequire 40 power to work.\n"","
 Ascended 	승천한 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Name=StrColor(178,255,255, ""Ascended "" .. t.Name)"
+"Cures and prevent Stoned condition for 6 hours.
+Require 20 power to work.
+"	"석화를 치료하고 6시간 동안 석화를 방지합니다.
+작동하려면 위력 20이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[239] = ""Cures and prevent Stoned condition for 6 hours.\nRequire 20 power to work.\n"","
+Cures and prevents Curse and Paralysis for 6 hours.	저주와 마비를 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[226] = ""Cures and prevents Curse and Paralysis for 6 hours."","
+Cures and prevents Disease and Poison for 6 hours.	질병과 독을 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[225] = ""Cures and prevents Disease and Poison for 6 hours."","
+Cures and prevents Fear and Insanity for 6 hours.	공포와 광기를 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[227] = ""Cures and prevents Fear and Insanity for 6 hours."","
+Cures and prevents Weakness and inducted Sleep for 6 hours.	약화와 강제 수면을 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
 Currently Active Legendary effects:	현재 활성화된 전설 효과:	translated	misc	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local legTxt=""Currently Active Legendary effects:"""
 Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
 Enter the data.	데이터를 입력하세요.	translated	misc	3	question_call:3	Scripts/Global/Quest_SavingGoobers.lua	"Answer = Question(""Enter the data."")"
+"Fix caracter age at 20.
+Require 50 power to work.
+"	"캐릭터의 나이를 20세로 고정합니다.
+작동하려면 위력 50이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[260] = ""Fix caracter age at 20.\nRequire 50 power to work.\n"","
+"Fix caracter age at 60.
+Require 50 power to work.
+"	"캐릭터의 나이를 60세로 고정합니다.
+작동하려면 위력 50이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
+Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[259] = ""Grant 500 Experience point per Power to the player."","
+Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[247] = ""Heals based on the potion's power of hit points."","
 Health: 	생명력: 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(0,255,0,  ""Health: "" .. tostring(Party[0].HP) .. ""/"" .. tostring(round(maxHP))) .."
+Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	6시간 동안 모든 저항이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
+Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	6시간 동안 7대 능력치가 모두 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
+Increases Attack by 5+(0.5 x Power) for 6 Hours	6시간 동안 공격력이 5 + (0.5 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
+Increases Melee damage by 5+(0.5 x Power) for 6 Hours	6시간 동안 근접 피해가 5 + (0.5 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[229] = ""Increases Melee damage by 5+(0.5 x Power) for 6 Hours"","
+Increases Speed for 6 Hours	6시간 동안 속도가 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[228] = ""Increases Speed for 6 Hours"","
+Increases temporary Fire, Air, Water and Earth resistance. (Dark)	화염, 공기, 물, 대지 저항을 일시적으로 증가시킵니다. (어둠)	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[249] = ""Increases temporary Fire, Air, Water and Earth resistance. (Dark)"","
+Increases temporary Mind and Body resistance. (Light)	정신 및 육체 저항을 일시적으로 증가시킵니다. (빛)	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[250] = ""Increases temporary Mind and Body resistance. (Light)"","
 "M/R/S:%s/%s/%s
 
 
@@ -297,7 +366,129 @@ Health: 	생명력: 	translated	misc	1	formatted_colored_text:1	Scripts/General/
 "	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
 NPC %d	NPC %d	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"Label = strformat(""NPC %d"", i),"
 NPC PANEL	NPC 패널	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"MF.RegisterExtraKeyBind({DefKey = 0x30, RegValue = ""xkey_npcpanel"", Label = ""NPC PANEL"","
+"Permanently adds 'of Darkness' property to a non-magic weapon.
+Require 100 power to work.
+"	"마법이 부여되지 않은 무기에 '어둠의' 속성을 영구적으로 추가합니다.
+작동하려면 위력 100이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[256] = ""Permanently adds 'of Darkness' property to a non-magic weapon.\nRequire 100 power to work.\n"","
+"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
+Previously gained bonus do not stack.
+"	"물약 위력 50마다 인내력, 속도, 행운에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[254] = ""Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n"","
+"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
+Previously gained bonus do not stack.
+"	"물약 위력 50마다 지능과 지혜에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[253] = ""Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n"","
+"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
+Previously gained bonus do not stack.
+"	"물약 위력 50마다 힘과 정확도에 영구적으로 20을 추가합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[252] = ""Permanently adds 20 per 50 potion power to permanent Might and Accuracy.\nPreviously gained bonus do not stack.\n"","
+"Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.
+Require 50 power per step to work.
+Previously gained bonus do not stack.
+"	"물약 위력 50마다 화염, 공기, 물, 대지 저항에 영구적으로 30을 추가합니다. 한 번만 사용할 수 있습니다.
+단계마다 작동하려면 위력 50이 필요합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[261] = ""Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
+"Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.
+Require 50 power per step to work.
+Previously gained bonus do not stack.
+"	"물약 위력 50마다 정신 및 육체 저항에 영구적으로 30을 추가합니다. 한 번만 사용할 수 있습니다.
+단계마다 작동하려면 위력 50이 필요합니다.
+이전에 얻은 보너스와 중첩되지 않습니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[262] = ""Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
+"Permanently adds a random tier 3 elemental damage enchant to a weapon.
+Require 50 power to work.
+"	"무기에 무작위 3단계 원소 피해 마법부여를 영구적으로 추가합니다.
+작동하려면 위력 50이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[255] = ""Permanently adds a random tier 3 elemental damage enchant to a weapon.\nRequire 50 power to work.\n"","
+"Prevents drowning damage for 6 hours.
+Require 20 power to work.
+"	"6시간 동안 익사 피해를 방지합니다.
+작동하려면 위력 20이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
+Provides Haste+Heroism+Bless.	신속 + 영웅심 + 축복 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[245] = ""Provides Haste+Heroism+Bless."","
+Provides Shield+Stone Skin+Preservation.	방패 + 돌 피부 + 보존 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[251] = ""Provides Shield+Stone Skin+Preservation."","
+"Recipes:
+Add Orange: Champion's Potion
+Add Purple: Power Boost
+Add Green: Divine Cure"	"조합법:
+주황 추가: 챔피언의 물약
+보라 추가: 힘 강화
+초록 추가: 신성한 치유"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[228]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
+"Recipes:
+Add Orange: Lesser Element
+Add Purple: Wisdom Boost
+Add Green: Divine Magic"	"조합법:
+주황 추가: 하급 원소
+보라 추가: 지혜 강화
+초록 추가: 신성 마법"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
+"Recipes:
+Add Orange: Self Resistance
+Add Purple: Elemental Resistance
+Add Green: Paladin's Potion"	"조합법:
+주황 추가: 자기 저항
+보라 추가: 원소 저항
+초록 추가: 팔라딘의 물약"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
+"Recipes:
+Add Orange: Swiftness
+Add Purple: Resilience Boost
+Add Green: Divine Restoration"	"조합법:
+주황 추가: 신속
+보라 추가: 회복력 강화
+초록 추가: 신성한 회복"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[234]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
+"Recipes:
+Add Red: Divine Blessing
+Add Blue: Darkness
+Add Yellow: Greater Element"	"조합법:
+빨강 추가: 신성한 축복
+파랑 추가: 어둠
+노랑 추가: 상급 원소"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[243]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
+"Recipes:
+Add Red: Haste
+Add Blue: Protection
+Add Yellow: Stone Skin
+Add Purple: Magic Protection
+Add Green: Stone to Flesh"	"조합법:
+빨강 추가: 신속
+파랑 추가: 보호
+노랑 추가: 돌 피부
+보라 추가: 마법 보호
+초록 추가: 석화 해제"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[225]=""Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh"","
+"Recipes:
+Add Red: Pure Elemental Resistance
+Add Blue: Divine Resistance
+Add Yellow: Pure Self Resistance"	"조합법:
+빨강 추가: 순수 원소 저항
+파랑 추가: 신성 저항
+노랑 추가: 순수 자기 저항"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[249]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
+"Recipes:
+Add Red: Pure Power
+Add Blue: Pure Wisdom
+Add Yellow: Pure Resilience"	"조합법:
+빨강 추가: 순수한 힘
+파랑 추가: 순수한 지혜
+노랑 추가: 순수한 회복력"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[240]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
+"Recipes:
+Add Red: Twilight
+Add Blue: Dawn
+Add Yellow: Trascendance"	"조합법:
+빨강 추가: 황혼
+파랑 추가: 새벽
+노랑 추가: 초월"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[246]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
+Regenerates Health for 6 hours.	6시간 동안 생명력을 재생합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[233] = ""Regenerates Health for 6 hours."","
+"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
+Require 40 power to work.
+"	"죽음과 소멸을 제외한 모든 상태 이상을 제거하고 6시간 동안 방지합니다.
+작동하려면 위력 40이 필요합니다.
+"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
 Telelocator	텔레로케이터	translated	misc	1	proven_npc_display_name:1	Scripts/Global/Quest_SavingGoobers.lua	"Game.NPC[TeleNPCId].Name = ""Telelocator"""
+Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 인내력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
+Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지능과 성격이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
+Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	6시간 동안 힘과 정확도가 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[240] = ""Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours."","
 "Vitality: %s
 
 
@@ -618,6 +809,7 @@ Enlightenment	깨달음	translated	skill	1	proven_skill_display_name:1	Scripts/G
 Fangs	송곳니	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(33, ""Fangs"")"
 Fire Magic	화염 마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(12, ""Fire Magic"")"
 Frost	냉기	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(14, ""Frost"")"
+Grants bonus to Meditation skill for 6 hours.	6시간 동안 명상 기술에 보너스를 부여합니다.	translated	skill	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[232] = ""Grants bonus to Meditation skill for 6 hours."","
 Increase your regeneration by 1% per every 1% of hp lost	잃은 생명력 1%마다 재생량이 1% 증가합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(30, 5, ""Increase your regeneration by 1% per every 1% of hp lost"")"
 Increased Attack speed by 1% per Skill	기술 포인트당 공격 속도가 1% 증가합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(19,2,""Increased Attack speed by 1% per Skill"")"
 Increased Attack speed by 2% per Skill	기술 포인트당 공격 속도가 2% 증가합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(19,3,""Increased Attack speed by 2% per Skill"")"
@@ -911,6 +1103,11 @@ Progress toward learning "	"원소술사는 책 대신 실전을 통해 새로�
 
 다음 주문 습득 진행도: "	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
 Frostbite	동상	translated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[29].Name=""Frostbite"""
+"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
+From 50 power on will protect also from death and eradication.
+"	"6시간 동안 마법 보호(주문과 동일) 효과를 5 + 물약 위력 10당 1만큼 부여합니다.
+위력 50 이상이면 죽음과 소멸도 방지합니다.
+"	translated	spell	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[237] = ""Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.\nFrom 50 power on will protect also from death and eradication.\n"","
 Grants 3 Accuracy to all party per skill point	기술 포인트당 파티 전체의 정확도가 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Spirit,5,""Grants 3 Accuracy to all party per skill point"")"
 Grants 3 Endurance to all party per skill point	기술 포인트당 파티 전체의 인내력이 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Earth,5,""Grants 3 Endurance to all party per skill point"")"
 Grants 3 Intellect to all party per skill point	기술 포인트당 파티 전체의 지능이 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Fire,5,""Grants 3 Intellect to all party per skill point"")"
@@ -918,6 +1115,11 @@ Grants 3 Luck to all party per skill point	기술 포인트당 파티 전체의 
 Grants 3 Might to all party per skill point	기술 포인트당 파티 전체의 힘이 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Body,5,""Grants 3 Might to all party per skill point"")"
 Grants 3 Personality to all party per skill point	기술 포인트당 파티 전체의 인격이 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Mind,5,""Grants 3 Personality to all party per skill point"")"
 Grants 3 Speed to all party per skill point	기술 포인트당 파티 전체의 민첩성이 3 증가합니다	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMaw-Spells.lua	"Skillz.setDesc(const.Skills.Air,5,""Grants 3 Speed to all party per skill point"")"
+"Grants Preservation and Shield (as the spell) for 6 Hours
+Require 20 power to work.
+"	"6시간 동안 보존과 방패(주문과 동일) 효과를 부여합니다.
+작동하려면 위력 20이 필요합니다.
+"	translated	spell	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[231] = ""Grants Preservation and Shield (as the spell) for 6 Hours\nRequire 20 power to work.\n"","
 Ice Bomb	얼음 폭탄	translated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[32].Name=""Ice Bomb"""
 Icy Touch	얼음의 손길	translated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[26].Name=""Icy Touch"""
 Increases damage by 10 plus 1 per skill point	피해량이 10 + 기술 포인트당 1만큼 증가합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[51].Expert=""Increases damage by 10 plus 1 per skill point"""
@@ -940,6 +1142,7 @@ No additional effects	추가 효과 없음	translated	spell	2	proven_game_displa
 Normal	보통	translated	spell	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
 Quick Spell	퀵스펠	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[172]=""Quick Spell"""
 Removes Death and Eradication with no time limit	시간 제한 없이 죽음과 소멸을 제거합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[53].GM=""Removes Death and Eradication with no time limit"""
+Restores based on the potion's power of spell points.	물약의 위력에 따라 주문력을 회복합니다.	translated	spell	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[248] = ""Restores based on the potion's power of spell points."","
 Spell hits up to 2 times	최대 2회 적중합니다	translated	spell	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[18].Expert=""Spell hits up to 2 times"""
 Spell hits up to 3 times	최대 3회 적중합니다	translated	spell	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[18].Master=""Spell hits up to 3 times"""
 Spell hits up to 4 times	최대 4회 적중합니다	translated	spell	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[18].GM=""Spell hits up to 4 times"""

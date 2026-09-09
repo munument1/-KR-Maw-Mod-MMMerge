@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1198,
-    "translated": 638,
-    "untranslated": 1189
+    "translated": 689,
+    "untranslated": 1138
   },
   "categories": {
     "class": 37,
@@ -36,6 +36,7 @@
     "internal_lookup_literal": 1,
     "internal_table_key_literal": 1675,
     "known_display_name_assignment": 20,
+    "proven_alchemy_item_tooltip": 67,
     "proven_display_variable_flow": 37,
     "proven_game_display_assignment": 181,
     "proven_item_display_name": 1,
@@ -50,7 +51,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 1246
+    "uncertain_context": 1179
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -65,8 +66,10 @@
   "proven_display_promotions": 446,
   "proven_display_variable_lines": 35,
   "proven_item_enchant_description_lines": 50,
-  "uncertain_review_unique_sources": 892,
-  "uncertain_review_occurrences": 1177,
+  "proven_alchemy_tooltip_lines": 69,
+  "proven_alchemy_tooltip_promotions": 67,
+  "uncertain_review_unique_sources": 841,
+  "uncertain_review_occurrences": 1110,
   "uncertain_review_exact_mmmerge_matches": 30,
   "uncertain_review_ambiguous_mmmerge_matches": 10
 }

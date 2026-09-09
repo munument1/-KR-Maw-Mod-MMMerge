@@ -2291,197 +2291,197 @@ maw-def4e8ac8c44	tooltip	Charges: 	Scripts/General/zzAlchemy.lua	457	yes	formatt
 maw-f45cfae365c4	tooltip	"
 
 Press alt to show recipe list"	Scripts/General/zzAlchemy.lua	464	yes	formatted_colored_text	"t.Description=t.Description .. StrColor(100,100,100,""\n\nPress alt to show recipe list"")"
-maw-f7a5005cf8c3	misc	Cures and prevents Weakness and inducted Sleep for 6 hours.	Scripts/General/zzAlchemy.lua	472	no	uncertain_context	"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
-maw-3dbdc5de0943	misc	Cures and prevents Disease and Poison for 6 hours.	Scripts/General/zzAlchemy.lua	473	no	uncertain_context	"[225] = ""Cures and prevents Disease and Poison for 6 hours."","
-maw-904d7adeda6b	misc	Cures and prevents Curse and Paralysis for 6 hours.	Scripts/General/zzAlchemy.lua	474	no	uncertain_context	"[226] = ""Cures and prevents Curse and Paralysis for 6 hours."","
-maw-1b344a249b02	misc	Cures and prevents Fear and Insanity for 6 hours.	Scripts/General/zzAlchemy.lua	475	no	uncertain_context	"[227] = ""Cures and prevents Fear and Insanity for 6 hours."","
-maw-abd499ecf794	misc	Increases Speed for 6 Hours	Scripts/General/zzAlchemy.lua	476	no	uncertain_context	"[228] = ""Increases Speed for 6 Hours"","
-maw-a554f12eaab5	misc	Increases Melee damage by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	477	no	uncertain_context	"[229] = ""Increases Melee damage by 5+(0.5 x Power) for 6 Hours"","
-maw-19fbf83e718c	misc	Increases Attack by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	478	no	uncertain_context	"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
+maw-f7a5005cf8c3	misc	Cures and prevents Weakness and inducted Sleep for 6 hours.	Scripts/General/zzAlchemy.lua	472	yes	proven_alchemy_item_tooltip	"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
+maw-3dbdc5de0943	misc	Cures and prevents Disease and Poison for 6 hours.	Scripts/General/zzAlchemy.lua	473	yes	proven_alchemy_item_tooltip	"[225] = ""Cures and prevents Disease and Poison for 6 hours."","
+maw-904d7adeda6b	misc	Cures and prevents Curse and Paralysis for 6 hours.	Scripts/General/zzAlchemy.lua	474	yes	proven_alchemy_item_tooltip	"[226] = ""Cures and prevents Curse and Paralysis for 6 hours."","
+maw-1b344a249b02	misc	Cures and prevents Fear and Insanity for 6 hours.	Scripts/General/zzAlchemy.lua	475	yes	proven_alchemy_item_tooltip	"[227] = ""Cures and prevents Fear and Insanity for 6 hours."","
+maw-abd499ecf794	misc	Increases Speed for 6 Hours	Scripts/General/zzAlchemy.lua	476	yes	proven_alchemy_item_tooltip	"[228] = ""Increases Speed for 6 Hours"","
+maw-a554f12eaab5	misc	Increases Melee damage by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	477	yes	proven_alchemy_item_tooltip	"[229] = ""Increases Melee damage by 5+(0.5 x Power) for 6 Hours"","
+maw-19fbf83e718c	misc	Increases Attack by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	478	yes	proven_alchemy_item_tooltip	"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
 maw-54c85f95e362	spell	"Grants Preservation and Shield (as the spell) for 6 Hours
 Require 20 power to work.
-"	Scripts/General/zzAlchemy.lua	479	no	uncertain_context	"[231] = ""Grants Preservation and Shield (as the spell) for 6 Hours\nRequire 20 power to work.\n"","
-maw-ebabbf34ceff	skill	Grants bonus to Meditation skill for 6 hours.	Scripts/General/zzAlchemy.lua	480	no	uncertain_context	"[232] = ""Grants bonus to Meditation skill for 6 hours."","
-maw-1fee1313e7b1	misc	Regenerates Health for 6 hours.	Scripts/General/zzAlchemy.lua	481	no	uncertain_context	"[233] = ""Regenerates Health for 6 hours."","
-maw-8a3559daa477	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	482	no	uncertain_context	"[234] = ""Increases Armor Class  by 5+(0.5 x Power) for 6 Hours"","
+"	Scripts/General/zzAlchemy.lua	479	yes	proven_alchemy_item_tooltip	"[231] = ""Grants Preservation and Shield (as the spell) for 6 Hours\nRequire 20 power to work.\n"","
+maw-ebabbf34ceff	skill	Grants bonus to Meditation skill for 6 hours.	Scripts/General/zzAlchemy.lua	480	yes	proven_alchemy_item_tooltip	"[232] = ""Grants bonus to Meditation skill for 6 hours."","
+maw-1fee1313e7b1	misc	Regenerates Health for 6 hours.	Scripts/General/zzAlchemy.lua	481	yes	proven_alchemy_item_tooltip	"[233] = ""Regenerates Health for 6 hours."","
+maw-8a3559daa477	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	Scripts/General/zzAlchemy.lua	482	yes	proven_alchemy_item_tooltip	"[234] = ""Increases Armor Class  by 5+(0.5 x Power) for 6 Hours"","
 maw-23451f937782	misc	"Prevents drowning damage for 6 hours.
 Require 20 power to work.
-"	Scripts/General/zzAlchemy.lua	483	no	uncertain_context	"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
+"	Scripts/General/zzAlchemy.lua	483	yes	proven_alchemy_item_tooltip	"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
 maw-d2147f191411	item	"Increases item's roughness, making it more resistant to breaking.
-"	Scripts/General/zzAlchemy.lua	484	no	uncertain_context	"[236] = ""Increases item's roughness, making it more resistant to breaking.\n"","
+"	Scripts/General/zzAlchemy.lua	484	yes	proven_alchemy_item_tooltip	"[236] = ""Increases item's roughness, making it more resistant to breaking.\n"","
 maw-802ee15f32f0	spell	"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
 From 50 power on will protect also from death and eradication.
-"	Scripts/General/zzAlchemy.lua	485	no	uncertain_context	"[237] = ""Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.\nFrom 50 power on will protect also from death and eradication.\n"","
+"	Scripts/General/zzAlchemy.lua	485	yes	proven_alchemy_item_tooltip	"[237] = ""Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.\nFrom 50 power on will protect also from death and eradication.\n"","
 maw-f50c8c159fdc	item	"Grant 1 enchant to an unenchanted item, based on potion Power.
 Require at least 20 power to work.
-"	Scripts/General/zzAlchemy.lua	486	no	uncertain_context	"[238] = ""Grant 1 enchant to an unenchanted item, based on potion Power.\nRequire at least 20 power to work.\n"","
+"	Scripts/General/zzAlchemy.lua	486	yes	proven_alchemy_item_tooltip	"[238] = ""Grant 1 enchant to an unenchanted item, based on potion Power.\nRequire at least 20 power to work.\n"","
 maw-fd16a79d1fa4	misc	"Cures and prevent Stoned condition for 6 hours.
 Require 20 power to work.
-"	Scripts/General/zzAlchemy.lua	487	no	uncertain_context	"[239] = ""Cures and prevent Stoned condition for 6 hours.\nRequire 20 power to work.\n"","
-maw-df9472ca68e2	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	Scripts/General/zzAlchemy.lua	488	no	uncertain_context	"[240] = ""Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours."","
-maw-5421d4f3edd5	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	Scripts/General/zzAlchemy.lua	489	no	uncertain_context	"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
-maw-54a29ed6e03d	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	Scripts/General/zzAlchemy.lua	490	no	uncertain_context	"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
+"	Scripts/General/zzAlchemy.lua	487	yes	proven_alchemy_item_tooltip	"[239] = ""Cures and prevent Stoned condition for 6 hours.\nRequire 20 power to work.\n"","
+maw-df9472ca68e2	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	Scripts/General/zzAlchemy.lua	488	yes	proven_alchemy_item_tooltip	"[240] = ""Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours."","
+maw-5421d4f3edd5	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	Scripts/General/zzAlchemy.lua	489	yes	proven_alchemy_item_tooltip	"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
+maw-54a29ed6e03d	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	Scripts/General/zzAlchemy.lua	490	yes	proven_alchemy_item_tooltip	"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
 maw-5feb8f19ba9a	misc	"Adds a random tier 2 elemental damage enchant to a weapon
 Require 40 power to work.
-"	Scripts/General/zzAlchemy.lua	491	no	uncertain_context	"[243] = ""Adds a random tier 2 elemental damage enchant to a weapon\nRequire 40 power to work.\n"","
+"	Scripts/General/zzAlchemy.lua	491	yes	proven_alchemy_item_tooltip	"[243] = ""Adds a random tier 2 elemental damage enchant to a weapon\nRequire 40 power to work.\n"","
 maw-6594bfa7be25	misc	"Adds 'of Swiftness' property to a non-magic weapon.
 Require 40 power to work.
-"	Scripts/General/zzAlchemy.lua	492	no	uncertain_context	"[244] = ""Adds 'of Swiftness' property to a non-magic weapon.\nRequire 40 power to work.\n"","
-maw-7f1158278634	misc	Provides Haste+Heroism+Bless.	Scripts/General/zzAlchemy.lua	493	no	uncertain_context	"[245] = ""Provides Haste+Heroism+Bless."","
+"	Scripts/General/zzAlchemy.lua	492	yes	proven_alchemy_item_tooltip	"[244] = ""Adds 'of Swiftness' property to a non-magic weapon.\nRequire 40 power to work.\n"","
+maw-7f1158278634	misc	Provides Haste+Heroism+Bless.	Scripts/General/zzAlchemy.lua	493	yes	proven_alchemy_item_tooltip	"[245] = ""Provides Haste+Heroism+Bless."","
 maw-b89672eb06d4	misc	"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
 Require 40 power to work.
-"	Scripts/General/zzAlchemy.lua	494	no	uncertain_context	"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
-maw-8ebf33b72b32	misc	Heals based on the potion's power of hit points.	Scripts/General/zzAlchemy.lua	495	no	uncertain_context	"[247] = ""Heals based on the potion's power of hit points."","
-maw-3020835da920	spell	Restores based on the potion's power of spell points.	Scripts/General/zzAlchemy.lua	496	no	uncertain_context	"[248] = ""Restores based on the potion's power of spell points."","
-maw-8db72e2f2f04	misc	Increases temporary Fire, Air, Water and Earth resistance. (Dark)	Scripts/General/zzAlchemy.lua	497	no	uncertain_context	"[249] = ""Increases temporary Fire, Air, Water and Earth resistance. (Dark)"","
-maw-5e1a8bc9afac	misc	Increases temporary Mind and Body resistance. (Light)	Scripts/General/zzAlchemy.lua	498	no	uncertain_context	"[250] = ""Increases temporary Mind and Body resistance. (Light)"","
-maw-c569dfaaeb09	misc	Provides Shield+Stone Skin+Preservation.	Scripts/General/zzAlchemy.lua	499	no	uncertain_context	"[251] = ""Provides Shield+Stone Skin+Preservation."","
+"	Scripts/General/zzAlchemy.lua	494	yes	proven_alchemy_item_tooltip	"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
+maw-8ebf33b72b32	misc	Heals based on the potion's power of hit points.	Scripts/General/zzAlchemy.lua	495	yes	proven_alchemy_item_tooltip	"[247] = ""Heals based on the potion's power of hit points."","
+maw-3020835da920	spell	Restores based on the potion's power of spell points.	Scripts/General/zzAlchemy.lua	496	yes	proven_alchemy_item_tooltip	"[248] = ""Restores based on the potion's power of spell points."","
+maw-8db72e2f2f04	misc	Increases temporary Fire, Air, Water and Earth resistance. (Dark)	Scripts/General/zzAlchemy.lua	497	yes	proven_alchemy_item_tooltip	"[249] = ""Increases temporary Fire, Air, Water and Earth resistance. (Dark)"","
+maw-5e1a8bc9afac	misc	Increases temporary Mind and Body resistance. (Light)	Scripts/General/zzAlchemy.lua	498	yes	proven_alchemy_item_tooltip	"[250] = ""Increases temporary Mind and Body resistance. (Light)"","
+maw-c569dfaaeb09	misc	Provides Shield+Stone Skin+Preservation.	Scripts/General/zzAlchemy.lua	499	yes	proven_alchemy_item_tooltip	"[251] = ""Provides Shield+Stone Skin+Preservation."","
 maw-e9365ff23b6c	misc	"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
 Previously gained bonus do not stack.
-"	Scripts/General/zzAlchemy.lua	500	no	uncertain_context	"[252] = ""Permanently adds 20 per 50 potion power to permanent Might and Accuracy.\nPreviously gained bonus do not stack.\n"","
+"	Scripts/General/zzAlchemy.lua	500	yes	proven_alchemy_item_tooltip	"[252] = ""Permanently adds 20 per 50 potion power to permanent Might and Accuracy.\nPreviously gained bonus do not stack.\n"","
 maw-124194bd410d	misc	"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
 Previously gained bonus do not stack.
-"	Scripts/General/zzAlchemy.lua	501	no	uncertain_context	"[253] = ""Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n"","
+"	Scripts/General/zzAlchemy.lua	501	yes	proven_alchemy_item_tooltip	"[253] = ""Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n"","
 maw-1297b65672db	misc	"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
 Previously gained bonus do not stack.
-"	Scripts/General/zzAlchemy.lua	502	no	uncertain_context	"[254] = ""Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n"","
+"	Scripts/General/zzAlchemy.lua	502	yes	proven_alchemy_item_tooltip	"[254] = ""Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n"","
 maw-c01df86fe794	misc	"Permanently adds a random tier 3 elemental damage enchant to a weapon.
 Require 50 power to work.
-"	Scripts/General/zzAlchemy.lua	503	no	uncertain_context	"[255] = ""Permanently adds a random tier 3 elemental damage enchant to a weapon.\nRequire 50 power to work.\n"","
+"	Scripts/General/zzAlchemy.lua	503	yes	proven_alchemy_item_tooltip	"[255] = ""Permanently adds a random tier 3 elemental damage enchant to a weapon.\nRequire 50 power to work.\n"","
 maw-565991c7f88b	misc	"Permanently adds 'of Darkness' property to a non-magic weapon.
 Require 100 power to work.
-"	Scripts/General/zzAlchemy.lua	504	no	uncertain_context	"[256] = ""Permanently adds 'of Darkness' property to a non-magic weapon.\nRequire 100 power to work.\n"","
-maw-67dc4ffe54f0	misc	Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	Scripts/General/zzAlchemy.lua	505	no	uncertain_context	"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
+"	Scripts/General/zzAlchemy.lua	504	yes	proven_alchemy_item_tooltip	"[256] = ""Permanently adds 'of Darkness' property to a non-magic weapon.\nRequire 100 power to work.\n"","
+maw-67dc4ffe54f0	misc	Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	Scripts/General/zzAlchemy.lua	505	yes	proven_alchemy_item_tooltip	"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
 maw-1614333c511a	misc	"Fix caracter age at 60.
 Require 50 power to work.
-"	Scripts/General/zzAlchemy.lua	506	no	uncertain_context	"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
-maw-17461354dc91	misc	Grant 500 Experience point per Power to the player.	Scripts/General/zzAlchemy.lua	507	no	uncertain_context	"[259] = ""Grant 500 Experience point per Power to the player."","
+"	Scripts/General/zzAlchemy.lua	506	yes	proven_alchemy_item_tooltip	"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
+maw-17461354dc91	misc	Grant 500 Experience point per Power to the player.	Scripts/General/zzAlchemy.lua	507	yes	proven_alchemy_item_tooltip	"[259] = ""Grant 500 Experience point per Power to the player."","
 maw-33dc34c83336	misc	"Fix caracter age at 20.
 Require 50 power to work.
-"	Scripts/General/zzAlchemy.lua	508	no	uncertain_context	"[260] = ""Fix caracter age at 20.\nRequire 50 power to work.\n"","
+"	Scripts/General/zzAlchemy.lua	508	yes	proven_alchemy_item_tooltip	"[260] = ""Fix caracter age at 20.\nRequire 50 power to work.\n"","
 maw-165012c92676	misc	"Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.
 Require 50 power per step to work.
 Previously gained bonus do not stack.
-"	Scripts/General/zzAlchemy.lua	509	no	uncertain_context	"[261] = ""Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
+"	Scripts/General/zzAlchemy.lua	509	yes	proven_alchemy_item_tooltip	"[261] = ""Permanently adds 30 per 50 potion power to Fire, Air, Water and Earth Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
 maw-dce96cfbbf89	misc	"Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.
 Require 50 power per step to work.
 Previously gained bonus do not stack.
-"	Scripts/General/zzAlchemy.lua	510	no	uncertain_context	"[262] = ""Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
-maw-b2101e31e077	misc	Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	Scripts/General/zzAlchemy.lua	511	no	uncertain_context	"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
+"	Scripts/General/zzAlchemy.lua	510	yes	proven_alchemy_item_tooltip	"[262] = ""Permanently adds 30 per 50 potion power to Mind and Body Resistance, single-use.\nRequire 50 power per step to work.\nPreviously gained bonus do not stack.\n"","
+maw-b2101e31e077	misc	Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	Scripts/General/zzAlchemy.lua	511	yes	proven_alchemy_item_tooltip	"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
 maw-51a3c7cc2395	misc	"Recipes:
 Add Red: Haste
 Add Blue: Protection
 Add Yellow: Stone Skin
 Add Purple: Magic Protection
-Add Green: Stone to Flesh"	Scripts/General/zzAlchemy.lua	516	no	uncertain_context	"[225]=""Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh"","
+Add Green: Stone to Flesh"	Scripts/General/zzAlchemy.lua	516	yes	proven_alchemy_item_tooltip	"[225]=""Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh"","
 maw-648cc23a873c	item	"Recipes:
 Add Red: Heroism
 Add Blue: Meditation
 Add Yellow: Water Breathing
 Add Orange: Magic Protection
-Add Green: Enchant Item"	Scripts/General/zzAlchemy.lua	518	no	uncertain_context	"[226]=""Recipes:\nAdd Red: Heroism\nAdd Blue: Meditation\nAdd Yellow: Water Breathing\nAdd Orange: Magic Protection\nAdd Green: Enchant Item"","
+Add Green: Enchant Item"	Scripts/General/zzAlchemy.lua	518	yes	proven_alchemy_item_tooltip	"[226]=""Recipes:\nAdd Red: Heroism\nAdd Blue: Meditation\nAdd Yellow: Water Breathing\nAdd Orange: Magic Protection\nAdd Green: Enchant Item"","
 maw-51b0953b5b08	item	"Recipes:
 Add Red: Bless
 Add Blue: Regeneration
 Add Yellow: Harden Item
 Add Orange: Stone to Flesh
-Add Purple: Enchant Item"	Scripts/General/zzAlchemy.lua	520	no	uncertain_context	"[227]=""Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item"","
+Add Purple: Enchant Item"	Scripts/General/zzAlchemy.lua	520	yes	proven_alchemy_item_tooltip	"[227]=""Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item"","
 maw-55d681fd9aa3	misc	"Recipes:
 Add Orange: Champion's Potion
 Add Purple: Power Boost
-Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	522	no	uncertain_context	"[228]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
+Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	522	yes	proven_alchemy_item_tooltip	"[228]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
 maw-55d681fd9aa3	misc	"Recipes:
 Add Orange: Champion's Potion
 Add Purple: Power Boost
-Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	523	no	uncertain_context	"[229]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
+Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	523	yes	proven_alchemy_item_tooltip	"[229]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
 maw-55d681fd9aa3	misc	"Recipes:
 Add Orange: Champion's Potion
 Add Purple: Power Boost
-Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	524	no	uncertain_context	"[230]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
+Add Green: Divine Cure"	Scripts/General/zzAlchemy.lua	524	yes	proven_alchemy_item_tooltip	"[230]=""Recipes:\nAdd Orange: Champion's Potion\nAdd Purple: Power Boost\nAdd Green: Divine Cure"","
 maw-e7e0cac45dd6	misc	"Recipes:
 Add Orange: Lesser Element
 Add Purple: Wisdom Boost
-Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	526	no	uncertain_context	"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
+Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	526	yes	proven_alchemy_item_tooltip	"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
 maw-e7e0cac45dd6	misc	"Recipes:
 Add Orange: Lesser Element
 Add Purple: Wisdom Boost
-Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	527	no	uncertain_context	"[232]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
+Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	527	yes	proven_alchemy_item_tooltip	"[232]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
 maw-e7e0cac45dd6	misc	"Recipes:
 Add Orange: Lesser Element
 Add Purple: Wisdom Boost
-Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	528	no	uncertain_context	"[233]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
+Add Green: Divine Magic"	Scripts/General/zzAlchemy.lua	528	yes	proven_alchemy_item_tooltip	"[233]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
 maw-fe6467a7a26e	misc	"Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
-Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	530	no	uncertain_context	"[234]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
+Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	530	yes	proven_alchemy_item_tooltip	"[234]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
 maw-fe6467a7a26e	misc	"Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
-Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	531	no	uncertain_context	"[235]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
+Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	531	yes	proven_alchemy_item_tooltip	"[235]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
 maw-fe6467a7a26e	misc	"Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
-Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	532	no	uncertain_context	"[236]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
+Add Green: Divine Restoration"	Scripts/General/zzAlchemy.lua	532	yes	proven_alchemy_item_tooltip	"[236]=""Recipes:\nAdd Orange: Swiftness\nAdd Purple: Resilience Boost\nAdd Green: Divine Restoration"","
 maw-1eaae8337dc3	misc	"Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
-Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	534	no	uncertain_context	"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
+Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	534	yes	proven_alchemy_item_tooltip	"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
 maw-1eaae8337dc3	misc	"Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
-Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	535	no	uncertain_context	"[238]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
+Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	535	yes	proven_alchemy_item_tooltip	"[238]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
 maw-1eaae8337dc3	misc	"Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
-Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	536	no	uncertain_context	"[239]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
+Add Green: Paladin's Potion"	Scripts/General/zzAlchemy.lua	536	yes	proven_alchemy_item_tooltip	"[239]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
 maw-31b1e8041117	misc	"Recipes:
 Add Red: Pure Power
 Add Blue: Pure Wisdom
-Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	538	no	uncertain_context	"[240]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
+Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	538	yes	proven_alchemy_item_tooltip	"[240]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
 maw-31b1e8041117	misc	"Recipes:
 Add Red: Pure Power
 Add Blue: Pure Wisdom
-Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	539	no	uncertain_context	"[241]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
+Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	539	yes	proven_alchemy_item_tooltip	"[241]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
 maw-31b1e8041117	misc	"Recipes:
 Add Red: Pure Power
 Add Blue: Pure Wisdom
-Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	540	no	uncertain_context	"[242]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
+Add Yellow: Pure Resilience"	Scripts/General/zzAlchemy.lua	540	yes	proven_alchemy_item_tooltip	"[242]=""Recipes:\nAdd Red: Pure Power\nAdd Blue: Pure Wisdom\nAdd Yellow: Pure Resilience"","
 maw-9f4b123ca219	misc	"Recipes:
 Add Red: Divine Blessing
 Add Blue: Darkness
-Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	542	no	uncertain_context	"[243]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
+Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	542	yes	proven_alchemy_item_tooltip	"[243]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
 maw-9f4b123ca219	misc	"Recipes:
 Add Red: Divine Blessing
 Add Blue: Darkness
-Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	543	no	uncertain_context	"[244]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
+Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	543	yes	proven_alchemy_item_tooltip	"[244]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
 maw-9f4b123ca219	misc	"Recipes:
 Add Red: Divine Blessing
 Add Blue: Darkness
-Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	544	no	uncertain_context	"[245]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
+Add Yellow: Greater Element"	Scripts/General/zzAlchemy.lua	544	yes	proven_alchemy_item_tooltip	"[245]=""Recipes:\nAdd Red: Divine Blessing\nAdd Blue: Darkness\nAdd Yellow: Greater Element"","
 maw-bd97aaf39233	misc	"Recipes:
 Add Red: Twilight
 Add Blue: Dawn
-Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	546	no	uncertain_context	"[246]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
+Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	546	yes	proven_alchemy_item_tooltip	"[246]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
 maw-bd97aaf39233	misc	"Recipes:
 Add Red: Twilight
 Add Blue: Dawn
-Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	547	no	uncertain_context	"[247]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
+Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	547	yes	proven_alchemy_item_tooltip	"[247]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
 maw-bd97aaf39233	misc	"Recipes:
 Add Red: Twilight
 Add Blue: Dawn
-Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	548	no	uncertain_context	"[248]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
+Add Yellow: Trascendance"	Scripts/General/zzAlchemy.lua	548	yes	proven_alchemy_item_tooltip	"[248]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
 maw-ad24311b3af6	misc	"Recipes:
 Add Red: Pure Elemental Resistance
 Add Blue: Divine Resistance
-Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	550	no	uncertain_context	"[249]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
+Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	550	yes	proven_alchemy_item_tooltip	"[249]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
 maw-ad24311b3af6	misc	"Recipes:
 Add Red: Pure Elemental Resistance
 Add Blue: Divine Resistance
-Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	551	no	uncertain_context	"[250]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
+Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	551	yes	proven_alchemy_item_tooltip	"[250]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
 maw-ad24311b3af6	misc	"Recipes:
 Add Red: Pure Elemental Resistance
 Add Blue: Divine Resistance
-Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	552	no	uncertain_context	"[251]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
+Add Yellow: Pure Self Resistance"	Scripts/General/zzAlchemy.lua	552	yes	proven_alchemy_item_tooltip	"[251]=""Recipes:\nAdd Red: Pure Elemental Resistance\nAdd Blue: Divine Resistance\nAdd Yellow: Pure Self Resistance"","
 maw-121a00d89940	misc	Power: 	Scripts/General/zzAlchemy.lua	615	no	uncertain_context	"t.Enchantment=""Power: "" .. bonus"
 maw-4522e2803e51	skill	"
 
