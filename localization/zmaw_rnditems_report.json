@@ -1,0 +1,61 @@
+{
+  "file": "rnditems.txt",
+  "bytes": 89649,
+  "encoding": "utf-8-sig",
+  "recognized_data_rows": 2200,
+  "layouts": {
+    "item_id_resource_weights_label": 2200,
+    "resource_weights_label": 0
+  },
+  "rows_with_nonempty_trailing_label": 2197,
+  "max_treasure_weight": 35,
+  "negative_weight_fields": 0,
+  "trailing_label_runtime_role": "documentation_only_not_localized",
+  "runtime_fields": "numeric item id, resource id, and six numeric treasure-level weights",
+  "evidence": "Compatible MM8 loaders consume item/key data and six weight columns; the trailing item/spell label is outside those runtime fields.",
+  "examples": {
+    "item_id_resource_weights_label": [
+      {
+        "line": 5,
+        "key": "1",
+        "label": "Longsword",
+        "weights": [
+          8,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "line": 6,
+        "key": "2",
+        "label": "Trollish War Sword",
+        "weights": [
+          0,
+          10,
+          5,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "line": 7,
+        "key": "3",
+        "label": "Dark Elven Longsword",
+        "weights": [
+          0,
+          0,
+          5,
+          7,
+          3,
+          0
+        ]
+      }
+    ],
+    "resource_weights_label": []
+  },
+  "validation_errors": []
+}
