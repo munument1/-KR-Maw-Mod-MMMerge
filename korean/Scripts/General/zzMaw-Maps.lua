@@ -1753,7 +1753,7 @@ function events.MonsterKilled(mon)
 	if mon.NameId>=220 and mon.NameId<=300 then
 		mult=mult*10
 		
-		local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+		local skill = GetMawBossSkill(mon)
 		if skill=="Broodling" then
 			local tier=(mon.Id-1)%3+1
 			mult=mult/(5-tier)

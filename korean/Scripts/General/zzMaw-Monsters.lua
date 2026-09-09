@@ -3122,7 +3122,7 @@ function generateBoss(index, nameIndex, skillType)
 		end
 	end
 
-	local name = string.format(skill .. " " .. Game.MonstersTxt[mon.Id].Name)
+	local name = string.format((MawBossSkillDisplayNames[skill] or skill) .. " " .. Game.MonstersTxt[mon.Id].Name)
 	Game.PlaceMonTxt[mon.NameId] = name
 
 	if getMapAffixPower(18) then
@@ -3169,6 +3169,55 @@ end
 
 
 --SKILLS
+MawBossSkillDisplayNames = MawBossSkillDisplayNames or {
+    ["Summoner"] = "[소환]",
+    ["Venomous"] = "[맹독]",
+    ["Exploding"] = "[폭발]",
+    ["Thorn"] = "[가시]",
+    ["Reflecting"] = "[반사]",
+    ["Adamantite"] = "[아다만타이트]",
+    ["Swapper"] = "[교환]",
+    ["Regenerating"] = "[재생]",
+    ["Puller"] = "[견인]",
+    ["Leecher"] = "[흡혈]",
+    ["Swift"] = "[신속]",
+    ["Fixator"] = "[약화]",
+    ["Shadow"] = "[그림자]",
+    ["Plagueborn"] = "[역병]",
+    ["Broodling"] = "[군체하수인]",
+    ["Broodlord"] = "[군체군주]",
+    ["Omnipotent"] = "[전능]",
+}
+local MawBossSkillCanonicalNames = {}
+for canonical, display in pairs(MawBossSkillDisplayNames) do
+    MawBossSkillCanonicalNames[display] = canonical
+end
+
+function NormalizeMawBossSkill(skill)
+    return MawBossSkillCanonicalNames[skill] or skill
+end
+
+function GetMawBossSkill(mon)
+    if not mon then return nil end
+    local index = mon.GetIndex and mon:GetIndex() or nil
+    if index and mapvars and mapvars.bossData and mapvars.bossData[index] and mapvars.bossData[index].Skills then
+        return mapvars.bossData[index].Skills
+    end
+    local nameId = mon.NameId
+    if nameId and Game.PlaceMonTxt and Game.PlaceMonTxt[nameId] then
+        local visible = string.match(Game.PlaceMonTxt[nameId], "([^%s]+)")
+        return NormalizeMawBossSkill(visible)
+    end
+    return nil
+end
+
+function CanonicalizeMawBossName(name)
+    if type(name) ~= "string" then return name end
+    local prefix, rest = string.match(name, "^(%S+)(.*)$")
+    if not prefix then return name end
+    return (NormalizeMawBossSkill(prefix) or prefix) .. (rest or "")
+end
+
 SkillList={"Summoner","Venomous","Exploding","Thorn","Reflecting","Adamantite","Swapper","Regenerating","Puller","Leecher","Swift","Fixator","Shadow","Plagueborn"} --defensives
 --to add: splitting
 --on attack skills
@@ -3300,7 +3349,7 @@ function events.GameInitialized2() --to make the after all the other code
 		local data=mawCustomMonObj or WhoHitPlayer()
 		if data and data.Monster and data.Monster.NameId>=220 and data.Monster.NameId<300 then
 			mon=data.Monster
-			skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+			skill = GetMawBossSkill(mon)
 			if skill=="Summoner" then
 				if math.random()<0.4 or t.DamageKind==4 then
 					pseudoSpawnpoint{monster = math.ceil(mon.Id/3)*3-2, x = (Party.X+mon.X)/2, y = (Party.Y+mon.Y)/2, z = Party.Z, count = 1, powerChances = {75, 25, 0}, radius = 64, group = 1,transform = function(mon) mon.Hostile = true mon.ShowAsHostile = true mon.Velocity=350 end}
@@ -3346,7 +3395,7 @@ function events.GameInitialized2() --to make the after all the other code
 						index=i
 					end
 				end
-				skill = string.match(Game.PlaceMonTxt[t.Monster.NameId], "([^%s]+)")
+				skill = GetMawBossSkill(t.Monster)
 				if skill=="Thorn" or skill=="Omnipotent" then
 					if t.DamageKind==4 then
 						reflectedDamage=true
@@ -3527,7 +3576,7 @@ local function SafeSkillFromPlaceMon(mon)
     local entry = Game.PlaceMonTxt[nameId]
     if entry then
       local s = string.match(entry, "([^%s]+)")
-      return s
+      return NormalizeMawBossSkill(s)
     end
   end
   return nil
@@ -3801,7 +3850,7 @@ function events.MonsterSpriteScale(t)
 		else
 			t.Scale=t.Scale*2
 		end
-		local monsterSkill = string.match(Game.PlaceMonTxt[Map.Monsters[round(t.MonsterIndex)].NameId], "([^%s]+)")
+		local monsterSkill = GetMawBossSkill(Map.Monsters[round(t.MonsterIndex)])
 		if monsterSkill=="Omnipotent" then
 			t.Scale=(t.Scale-1)*1.5+t.Scale
 		end
@@ -4092,7 +4141,7 @@ function events.Tick()
 					end
 				end
 				
-				local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+				local skill = GetMawBossSkill(mon)
 				if skill=="Fixator" then
 					covered=false
 					local lowestHPId=0
@@ -4256,7 +4305,7 @@ function events.MonsterKilled(mon)
 	end
 	
 	local killedMonster=mon
-	local monsterSkill = string.match(Game.PlaceMonTxt[killedMonster.NameId], "([^%s]+)")
+	local monsterSkill = GetMawBossSkill(killedMonster)
 	if monsterSkill=="Omnipotent" then
 		for i=1,#SkillList do
 			pseudoSpawnpoint{monster = killedMonster.Id,  x = killedMonster.X, y = killedMonster.Y, z = killedMonster.Z, count = 1, powerChances = {0,0,100}, radius = 512, group = 2,transform = function(spawnedMon) spawnedMon.Hostile = true spawnedMon.ShowAsHostile = true spawnedMon.Velocity=350 bossId=spawnedMon:GetIndex() end}

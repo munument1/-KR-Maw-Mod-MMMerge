@@ -480,6 +480,15 @@ local function SimpleText(Screen, Text, X, Y, Font, Condition, Action, AlignLeft
 		Action = Action
 	}
 end
+local function MawLocalizedSettingValue(field, value)
+    local labels = {
+        ON = "켜짐", OFF = "꺼짐",
+        Common = "일반", ["Uncom."] = "고급", Rare = "희귀", Epic = "영웅",
+        Ancient = "고대", Primordial = "태고", Legendary = "전설",
+    }
+    return labels[value] or tostring(value)
+end
+
 local function CustomSwitch(Screen, X, Y, Condition, Header, Parent, Field, Options)
     local Option = {
         ValueSource = {Parent = Parent, Field = Field},
@@ -506,7 +515,7 @@ local function CustomSwitch(Screen, X, Y, Condition, Header, Parent, Field, Opti
 
         -- Update the value in the parent and UI
         src.Parent[src.Field] = self.Options[currentIndex]
-        self.Value.Text = " " .. self.Options[currentIndex] .. " "
+        self.Value.Text = " " .. MawLocalizedSettingValue(src.Field, self.Options[currentIndex]) .. " "
         self.Value:UpdateSize()
     end
 
@@ -514,7 +523,7 @@ local function CustomSwitch(Screen, X, Y, Condition, Header, Parent, Field, Opti
     local function Update(self)
         local src = self.ValueSource
         local val = src.Parent[src.Field]
-        self.Value.Text = " " .. tostring(val) .. " "
+        self.Value.Text = " " .. MawLocalizedSettingValue(src.Field, val) .. " "
     end
 
     -- Create the UI elements
@@ -523,7 +532,7 @@ local function CustomSwitch(Screen, X, Y, Condition, Header, Parent, Field, Opti
     Option.Left = SimpleText(Screen, "<",
         400 , Y, nil, Condition, function() Handler(Option, -1) end, false)
 
-    Option.Value = SimpleText(Screen, " " .. tostring(Parent[Field]) .. " ",
+    Option.Value = SimpleText(Screen, " " .. MawLocalizedSettingValue(Field, Parent[Field]) .. " ",
         450, Y, nil, Condition, nil, false)
 
     Option.Right = SimpleText(Screen, ">",

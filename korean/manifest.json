@@ -212,5 +212,56 @@
     }
   ],
   "validation_errors": [],
-  "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed."
+  "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed.",
+  "runtime_i18n_fixes": [
+    {
+      "file": "Scripts/General/zz_Maw-initialize.lua",
+      "helper_insertions": 1,
+      "replacements": 3
+    },
+    {
+      "file": "Scripts/General/zzMaw-Monsters.lua",
+      "helper_insertions": 1,
+      "replacements": 7
+    },
+    {
+      "file": "Scripts/General/zzMaw-Items.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/General/zzMaw-Maps.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzAlchemy.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzMaw-Stats.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/BountyHunt.lua",
+      "replacements": 2
+    }
+  ],
+  "runtime_boss_display_names": {
+    "Summoner": "[소환]",
+    "Venomous": "[맹독]",
+    "Exploding": "[폭발]",
+    "Thorn": "[가시]",
+    "Reflecting": "[반사]",
+    "Adamantite": "[아다만타이트]",
+    "Swapper": "[교환]",
+    "Regenerating": "[재생]",
+    "Puller": "[견인]",
+    "Leecher": "[흡혈]",
+    "Swift": "[신속]",
+    "Fixator": "[약화]",
+    "Shadow": "[그림자]",
+    "Plagueborn": "[역병]",
+    "Broodling": "[군체하수인]",
+    "Broodlord": "[군체군주]",
+    "Omnipotent": "[전능]"
+  }
 }

@@ -207,7 +207,7 @@ function events.PickCorpse(t)
 			mon.TreasureDiceSides = math.max(round(mon.TreasureDiceSides / 4*densityMultiplier^0.5), 1)
 		elseif mon.NameId > 220 or mon.NameId == 160 then
 			mon.TreasureItemPercent = 100
-			local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+			local skill = GetMawBossSkill(mon)
 			if skill == "Broodling" then
 				if mon.Id % 3 == 0 then
 					mon.TreasureItemPercent = 30
@@ -231,7 +231,7 @@ function events.PickCorpse(t)
 			end
 			mon.TreasureItemLevel = math.max(math.min(itemTier, 6), 2)
 			bossLoot = true
-			local monsterSkill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+			local monsterSkill = GetMawBossSkill(mon)
 			if monsterSkill == "Omnipotent" then
 				OmnipotentLoot = true
 			end

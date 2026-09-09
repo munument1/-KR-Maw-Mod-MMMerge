@@ -212,7 +212,7 @@ local function SetCurrentHunt()
 		generateBoss(Hunt:GetIndex())
 		Entry.MonName = Game.PlaceMonTxt[Hunt.NameId]
 
-		local monsterSkill = string.match(Entry.MonName, "([^%s]+)")
+		local monsterSkill = GetMawBossSkill(Hunt)
 		if monsterSkill=="Omnipotent" then
 			pseudoSpawnpoint{monster = MonId,  x = X, y = Y, z = Z, count = math.random(100,200), powerChances = {55, 30, 15}, radius = 2048, group = 2,transform = function(mon) mon.NPC_ID = 0 mon.Hostile = true mon.ShowAsHostile=true mon.Velocity=350 end}
 		end
@@ -248,7 +248,7 @@ function events.MonsterKilled(Monster, MonsterIndex, _, killer)
 		return
 	end
 	local MonName = Entry.MonName or Game.PlaceMonTxt[299] -- compatibility with old saves
-	if MonName ~= Game.PlaceMonTxt[Monster.NameId] then
+	if CanonicalizeMawBossName(MonName) ~= CanonicalizeMawBossName(Game.PlaceMonTxt[Monster.NameId]) then
 		return
 	end
 	local Note = Map.Notes[Entry.NoteIndex]

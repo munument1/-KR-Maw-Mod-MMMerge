@@ -981,7 +981,7 @@ function events.CalcDamageToPlayer(t)
 	t.Result = t.Result * DiseaseDamage
 	if data and data.Monster and data.Monster.NameId>220 then
 		local mon=data.Monster
-		local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+		local skill = GetMawBossSkill(mon)
 		if skill=="Exploding" or skill=="Omnipotent" then
 			t.Result=t.Result/2
 			aoeDamage=t.Result/Party.Count

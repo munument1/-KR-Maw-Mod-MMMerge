@@ -1255,7 +1255,7 @@ function events.MonsterKilled(mon)
 	if mon.NameId>=220 and mon.NameId <300 then
 		extraRoll=extraRoll*10
 	end
-	local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+	local skill = GetMawBossSkill(mon)
 	if skill=="Broodling" then
 		local tier=(mon.Id-1)%3+1
 		extraRoll=extraRoll/(5-tier)
