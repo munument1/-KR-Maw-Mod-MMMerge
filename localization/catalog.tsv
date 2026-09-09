@@ -561,9 +561,9 @@ maw-7bb5778862de	untranslated	misc	 - Corrupted bag #			Scripts/General/zzMaw-It
 maw-574c5a59fabd	untranslated	misc	 Map			Scripts/General/zzMaw-Maps.lua	2089	1	
 maw-acd09cd9a879	untranslated	misc	% chance to miss attacks			Scripts/General/zzMaw-Maps.lua	2125	1	
 maw-0ff5fd36f573	untranslated	misc	% increased HP and damage			Scripts/General/zzMaw-Maps.lua	2113	1	
-maw-03650d10fe45	untranslated	misc	%%%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
+maw-03650d10fe45	untranslated	misc	%%%%lu			Scripts/General/NPCFollowers.lua	919	1	
 maw-609237732286	untranslated	misc	%%([%w_]*)%%			Scripts/Core/events.lua	125	1	
-maw-a3b38a4f2af0	untranslated	misc	%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
+maw-a3b38a4f2af0	untranslated	misc	%%lu			Scripts/General/NPCFollowers.lua	919	1	
 maw-11bdf2a7d771	untranslated	misc	%.10f		%.10f	Scripts/General/zz_Maw-initialize.lua	383	1	
 maw-5a2c485d7ed9	untranslated	misc	%1%%d		%1% %d	Scripts/General/NPCFollowers.lua	919	1	
 maw-32bdec8af86b	excluded	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	폭 지정 숫자 서식; 번역 금지
@@ -584,7 +584,7 @@ maw-131caaf5aa47	untranslated	misc	%s: invalid player pointer in GetPlayerFromPt
 maw-652fe0e19471	untranslated	misc	%s: x:%d, y:%d		%d %d %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	129	1	
 maw-8bee13bb62c8	untranslated	misc	'): fn must be a function, got 			Scripts/General/zzMaw-Timers.lua	52	1	
 maw-c5bf10e53b42	untranslated	misc	(%d+)%-(%d+)		%d %d	Scripts/General/pseudoSpawnpoint.lua	4	1	
-maw-233b77e8d179	untranslated	misc	([^%%])%%lu		%lu	Scripts/General/NPCFollowers.lua	919	1	
+maw-233b77e8d179	untranslated	misc	([^%%])%%lu			Scripts/General/NPCFollowers.lua	919	1	
 maw-9f209cfe3568	translated	misc	(client save) 	(클라이언트 저장) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	501	1	멀티플레이 저장 선택
 maw-ff2bf6b9082b	translated	misc	(current) 	(현재) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	483	1	멀티플레이 저장 선택
 maw-b0724dc76229	translated	misc	(host save) 	(호스트 저장) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	621	1	멀티플레이 저장 선택
@@ -1348,7 +1348,7 @@ Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."		
 maw-4522e2803e51	untranslated	skill	"
 
 Master will grant 1% to drop random reagents from Monsters.
-At GM this chance is doubled."		% to	Scripts/General/zzAlchemy.lua	686	1	
+At GM this chance is doubled."			Scripts/General/zzAlchemy.lua	686	1	
 maw-7c3efcea2530	untranslated	skill	"
 
 Melee Life Leech vs equal level: %s
@@ -3746,7 +3746,7 @@ maw-b15869c959e3	translated	ui	 Randomizer	 무작위화		Scripts/General/zzzzMa
 maw-7b618f6314b4	untranslated	ui	"""] = 
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-ef6a39857a0b	untranslated	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	
-maw-b34bcfd49892	untranslated	ui	%lu		%lu	Scripts/General/BountyHunt.lua	11	2	
+maw-b34bcfd49892	untranslated	ui	%lu			Scripts/General/BountyHunt.lua	11	2	
 maw-fb7711e92c7f	untranslated	ui	"%s
 
 Bonus healing: %s%s
