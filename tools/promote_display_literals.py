@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Promote uncertain Lua literals only when they are assigned to proven display APIs.
+"""Promote uncertain Lua literals only when they belong to proven display APIs.
 
 This pass is intentionally conservative. It recognizes text written directly to
 MMExtension display tables/fields and Skillz.setName; internal keys and control
-values remain unpatchable.
+values remain unpatchable. For a proven display assignment, every quoted text
+fragment on the assignment RHS is display text, including fragments around a
+concatenated numeric value.
 """
 
 from __future__ import annotations
@@ -39,10 +41,11 @@ def promote(row: dict[str, str]) -> bool:
         return False
     q = re.escape(source)
 
-    # Direct assignments to known player-visible global text / monster names /
-    # spell text fields.
+    # All quoted fragments on the RHS of these known player-visible display
+    # assignments are display text. This also catches suffixes in expressions
+    # like "Deals ... " .. value .. "% of melee damage".
     if re.search(
-        rf"Game\.(?:GlobalTxt|PlaceMonTxt|SpellsTxt)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=\s*['\"]{q}['\"]",
+        rf"Game\.(?:GlobalTxt|PlaceMonTxt|SpellsTxt)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
         context,
     ):
         row["patchable"] = "yes"
@@ -57,7 +60,7 @@ def promote(row: dict[str, str]) -> bool:
 
     # Item NotIdentifiedName is directly shown before identification. Allow
     # either Game.ItemsTxt[...] or a local alias such as txt[...].
-    if re.search(rf"(?:Game\.ItemsTxt\s*\[[^\]]+\]|[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\])\.NotIdentifiedName\s*=\s*['\"]{q}['\"]", context):
+    if re.search(rf"(?:Game\.ItemsTxt\s*\[[^\]]+\]|[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\])\.NotIdentifiedName\s*=.*['\"]{q}['\"]", context):
         row["patchable"] = "yes"
         row["reason"] = "proven_item_display_name"
         return True
