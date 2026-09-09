@@ -1,0 +1,491 @@
+source	translation	status	category	patchable_occurrences	reasons	files	sample_context
+"
+
+Light Magic quickens the Seraphim's strikes, increasing attack speed.
+
+Its radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.
+"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	".. StrColor(255,255,30,""\n\nLight Magic quickens the Seraphim's strikes, increasing attack speed.\n\nIts radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.\n"")"
+"
+
+Seraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows
+"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
+"
+
+Seraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).
+
+"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
+"
+
+Seraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).
+
+"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
+" (applied after resistances)
+"		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
+Current damage from Mind: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[17] .. ""\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n"" .. ""Current damage from Mind: "" .. StrColor(255,0,0,mindDMG) .. ""\n"""
+Current heal from Body: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt=baseSchoolsTxtSERAPH[18] .. ""\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n"" .. ""Current heal from Body: "" .. StrColor(0,255,0,bodyHeal) .. ""\n"""
+Damage reduction: 		untranslated	class	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local txt = baseSchoolsTxtSERAPH[16] .. ""\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n"" .. ""Damage reduction: "" .. StrColor(0,255,0,spiritReduction) .. "" (applied after resistances)\n"""
+"
+
+Artifact Level: "		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"txt=StrColor(120, 240, 255,""\n\nArtifact Level: "" .. t.Item.BonusExpireTime)"
+"
+
+Bonus AC: "		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""\n\nBonus AC: "" .. StrColor(255,255,100,itemArmorClassBonus2) .. ""\n""))"
+"
+
+Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000."		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"txt=StrColor(120, 240, 255,""\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000."")"
+"
+
+Celestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600."		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"txt=StrColor(120, 240, 255,""\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600."")"
+"
+
+Current AC from items: "		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""\n\nCurrent AC from items: "" .. StrColor(255,255,100,armorAC) .. ""\n""))"
+"
+
+Item Modifier:
+Two Handed Weapons: "		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	".. ""\n\nItem Modifier:\nTwo Handed Weapons: "" .. StrColor(255, 128, 0, twoHanded)"
+% craft items drop chances 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Maps.lua	"t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,""\n+"" .. round((it.MaxCharges*power+power*20)/8*1.5) .. ""% craft items drop chances ""  .. ""\n+"" .. round((it.MaxCharges*power+power*20)/4) .. ""% item quality "" .. ""%\n+"" .. round((it.MaxCharges*power+power*20)/3) .. ""% monster density"")"
+% item quality 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Maps.lua	"t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,""\n+"" .. round((it.MaxCharges*power+power*20)/8*1.5) .. ""% craft items drop chances ""  .. ""\n+"" .. round((it.MaxCharges*power+power*20)/4) .. ""% item quality "" .. ""%\n+"" .. round((it.MaxCharges*power+power*20)/3) .. ""% monster density"")"
+% monster density		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Maps.lua	"t.Enchantment=t.Enchantment .. StrColor(0, 127, 255,""\n+"" .. round((it.MaxCharges*power+power*20)/8*1.5) .. ""% craft items drop chances ""  .. ""\n+"" .. round((it.MaxCharges*power+power*20)/4) .. ""% item quality "" .. ""%\n+"" .. round((it.MaxCharges*power+power*20)/3) .. ""% monster density"")"
+Ally		untranslated	item	1	status_text_call:1	Scripts/General/zzzOnlineVariableSender.lua	"Game.ShowStatusText((t.HealerName or ""Ally"") .. "" heals you for "" .. tostring(t.Amount or 0) .. "" Hit Points"")"
+Ancient 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,128,0,""Ancient "" .. t.Name)"
+Armor Class		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[10] = StrColor(230, 204, 128, ""Armor Class"")"
+Bonus AC: 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""Bonus AC: "" .. StrColor(255,255,100,itemArmorClassBonus1) .. ""\n""))"
+Bonus Resistances: 		untranslated	item	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""Bonus Resistances: "" .. StrColor(255,255,100,itemResistanceBonus1) .. ""\n""))"
+Celestial 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(120, 240, 255,""Celestial "" .. t.Name)"
+Dimension Map		untranslated	item	1	known_display_name_assignment:1	Scripts/General/zzMaw-Maps.lua	"Game.ItemsTxt[290].Name=""Dimension Map"""
+Endless Potion		untranslated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[1069].Name=""Endless Potion"""
+Endurance		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[4] = StrColor(0, 255, 0, ""Endurance"")"
+Greater Heal		untranslated	item	4	known_display_name_assignment:4	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua	"Game.ItemsTxt[473].Name=""Greater Heal"""
+Intellect		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[2] = StrColor(255, 128, 0, ""Intellect"")"
+Legendary 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,255,30,""Legendary "" .. t.Name)"
+Luck		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[7] = StrColor(255, 255, 255, ""Luck"")"
+Potion Deleted in Austerity		untranslated	item	3	known_display_name_assignment:3	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in Austerity"""
+Potion Deleted in MAW		untranslated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[i].Name=""Potion Deleted in MAW"""
+Primordial 		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Name=StrColor(255,0,0,""Primordial "" .. t.Name)"
+Repair skill		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[18] = StrColor(255,255,153, ""Repair skill"")"
+Speed		untranslated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[6] = StrColor(127, 0, 255, ""Speed"")"
+yes		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
+Yes		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
+YES		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
+"You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
+Leaving a dungeon before killing most of them will cause monsters to respawn.
+Clearing a dungeon will grant you extra rewards.
+Respawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"		untranslated	item	1	question_call:1	Scripts/General/zzMaw-Monsters.lua	"answer=Question(""You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)"")		if answer==""yes"" or answer==""Yes"" or answer==""YES"" then"
+Wine Rack		untranslated	map	1	event_hint_assignment:1	Scripts/Maps/7d20.lua	"evt.hint[196] = ""Wine Rack"""
+"	            %s%s "		untranslated	misc	6	formatted_colored_text:6	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[87]=StrColor(255, 70, 70,    string.format(resListBackup[1] .. ""\t            %s%s "",resistances2[10],""%"")) .. resistanceText[1] .. ""\n\n\n\n\n\n\n\n\n"""
+"
+Body Armor: "		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	".. ""\nBody Armor: "" .. StrColor(255, 128, 0, bodyArmor)"
+"
+Bonus: "		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	".. ""\nBonus: "" .. StrColor(255, 128, 0, tostring(power))"
+"
+Helm-Boots-Gloves-Bow: "		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	".. ""\nHelm-Boots-Gloves-Bow: "" .. StrColor(255, 128, 0, helmEtc)"
+"
+Rings: "		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	".. ""\nRings: "" .. StrColor(255, 128, 0, rings)"
+  Mana: 		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(50,50,255,""  Mana: ""   .. tostring(Party[0].SP) .. ""/"" .. tostring(round(FSP)))"
+%6s		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"resistanceText[i]=StrColor(0,255,0,string.format(""%6s"", resistances[9+i]))"
+(client save) 		untranslated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Name = StrColor(46,237,218, ""(client save) "") .. StrColor(250,250,250) .. PartyData.player_name,"
+(current) 		untranslated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Name = StrColor(213,70,191, ""(current) "") .. StrColor(250,250,250) .. Party[0].Name,"
+(host save) 		untranslated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Name = StrColor(95,235,50, ""(host save) "") .. StrColor(250,250,250) .. last_game.player_name,"
+(last choice) 		untranslated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"last_choice.Name = StrColor(46,237,218, ""(last choice) "") .. StrColor(250,250,250) .. last_choice.data.player_name"
+(Most relevant) 		untranslated	misc	1	formatted_colored_text:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"choices[1].Name = StrColor(235,235,50, ""(Most relevant) "") .. choices[1].Name"
+Ascended 		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Name=StrColor(178,255,255, ""Ascended "" .. t.Name)"
+Currently Active Legendary effects:		untranslated	misc	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local legTxt=""Currently Active Legendary effects:"""
+Enter the data.		untranslated	misc	3	question_call:3	Scripts/Global/Quest_SavingGoobers.lua	"Answer = Question(""Enter the data."")"
+Health: 		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(0,255,0,  ""Health: "" .. tostring(Party[0].HP) .. ""/"" .. tostring(round(maxHP))) .."
+"M/R/S:%s/%s/%s
+
+
+
+
+
+
+"		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R/S:%s/%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))"
+"M/R:%s/%s
+
+
+
+
+
+
+"		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
+NPC %d		untranslated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"Label = strformat(""NPC %d"", i),"
+NPC PANEL		untranslated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"MF.RegisterExtraKeyBind({DefKey = 0x30, RegValue = ""xkey_npcpanel"", Label = ""NPC PANEL"","
+"Vitality: %s
+
+
+
+
+
+
+
+"		untranslated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[172]=string.format(""Vitality: %s\n\n\n\n\n\n\n\n"",StrColor(0,255,0,vitality))"
+The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)		untranslated	monster	1	display_variable_assignment:1	Scripts/General/zzMaw-Maps.lua	"resetTxt=""The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)"""
+"
+
+Balancing power and vitality leads to the highest damage.
+"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"
+
+Press M to enable/disable"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"
+
+Total Damage: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"
+Currently disabled
+"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(255,0,0,""\nCurrently disabled\n"")"
+"
+Currently enabled
+"		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"txt=txt .. StrColor(0,255,0,""\nCurrently enabled\n"")"
+"
+Knights can learn up to a Supreme level, which is learned automatically at skill level "		untranslated	skill	1	display_variable_assignment:1	Scripts/General/zzMAW-Skills.lua	"local descTxt=descTxt .. ""\nKnights can learn up to a Supreme level, which is learned automatically at skill level "" .. requirement .. "".\n"""
+"
+Vitality coefficient: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+"%s
+
+Current HP Regeneration: %s
+Next Level Bonus: %s HP Regen"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt = string.format(""%s\n\nCurrent HP Regeneration: %s\nNext Level Bonus: %s HP Regen"",baseRegStr,StrColor(0,255,0,hpRegen),StrColor(0,255,0,""+"" .. hpRegen2-hpRegen))"
+"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
+
+Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
+
+Damage done depends on 2 coefficients, multiplied then by skill level:
+
+Melee Power coefficient: "		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(53, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: "" .. StrColor(255,0,0, power) .. ""\nVitality coefficient: "" .. "
+Current Damage reduction per Mana: 		untranslated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+
+If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
+
+Mastery increase its mana efficience.
+"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
+
+If available, Expert, Master and Grandmaster is learned at skill 8-20-32.
+
+Mastery increase its mana efficience.
+"		untranslated	skill	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-32.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
+"
+
+Can't learn"		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"local txt=StrColor(255,0,0,""\n\nCan't learn"")"
+"
+
+Not Learned"		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"txt=StrColor(255,0,0,""\n\nNot Learned"")"
+"
+Active ("		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"txt=StrColor(0,255,0,""\nActive ("" .. Party[j].Name .. "")"")"
+"
+Active("		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"txt=StrColor(0,255,0,""\nActive("" .. Party[j].Name .. "")"")"
+"
+Not Active"		untranslated	spell	2	formatted_colored_text:2	Scripts/General/zzMaw-Spells.lua	"local txt=StrColor(255,0,0,""\nNot Active"")"
+ Hit Points		untranslated	spell	3	formatted_colored_text:2; status_text_call:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzzOnlineVariableSender.lua	"t.Description=StrColor(255,255,153,""Heals "" .. round(t.Item.Bonus^1.75)+10 .. "" Hit Points"") .. ""\n"" .. t.Description"
+"%s
+
+Increases spell points based on SP per level and mastery
+
+Current SP Regeneration: %s
+Next Level Bonus: %s SP Regen
+"		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMAW-Skills.lua	"txt= string.format(""%s\n\nIncreases spell points based on SP per level and mastery\n\nCurrent SP Regeneration: %s\nNext Level Bonus: %s SP Regen\n"",baseMedStr,StrColor(60,60,255,spRegen),StrColor(60,60,255,""+"" .. spRegen2))"
+Asphyxiate		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[76].Name=""Asphyxiate"""
+Blood Leech		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[68].Name=""Blood Leech"""
+Chain Lightning		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[18].Name=""Chain Lightning"""
+Death Breath		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[97].Name=""Death Breath"""
+Death Coil		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[90].Name=""Death Coil"""
+Death Grasp		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[96].Name=""Death Grasp"""
+Frostbite		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[29].Name=""Frostbite"""
+Ice Bomb		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[32].Name=""Ice Bomb"""
+Icy Touch		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[26].Name=""Icy Touch"""
+"Melee Power: %s
+Ranged Power: %s
+Spell Power: %s"		untranslated	spell	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"local txt=string.format(""Melee Power: %s\nRanged Power: %s\nSpell Power: %s"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2),StrColor(50,50,220,DPS3))"
+SpellPoints		untranslated	spell	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(id .. ""  "" .. spellCast .. ""  "" ..Game.Spells[spellCast][""SpellPoints"" .. masteryName[m] ])"
+Superior Blood Leech		untranslated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[74].Name=""Superior Blood Leech"""
+"
+
+Subsequent spawn failure reasons:
+"		untranslated	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
+"
+Couldn't spawn monster, spawnpoint data: "		untranslated	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
+  heals 		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. ""  heals "" .. Party[t.TargetId].Name .. "" for "" .. healData[3] .. "" hit points(crit)""))"
+ cover 		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(Party[coverPlayerIndex].Name .. "" cover "" .. Party[target].Name)"
+ crafting items		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. objCount .. "" crafting items"")"
+ Exp, 		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Map Completed! You gain "" .. experience .. "" Exp, "" .. gold .. "" Gold and a Crafting Material"")"
+ filtered)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""You found "" .. itemGold+goldGained .. "" gold! ("" .. tierList[itemPower] .. "" "" .. Game.ItemsTxt[itemID].NotIdentifiedName .. "" filtered)"")"
+ for 		untranslated	status	8	status_text_call:8	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. "" heals "" .. Party[t.TargetId].Name .. "" for "" .. healData[1] .. "" hit points(crit)""))"
+ Gold and a Crafting Material		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Map Completed! You gain "" .. experience .. "" Exp, "" .. gold .. "" Gold and a Crafting Material"")"
+ gold! (		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""You found "" .. itemGold+goldGained .. "" gold! ("" .. tierList[itemPower] .. "" "" .. Game.ItemsTxt[itemID].NotIdentifiedName .. "" filtered)"")"
+ heals 		untranslated	status	7	status_text_call:7	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. "" heals "" .. Party[t.TargetId].Name .. "" for "" .. healData[1] .. "" hit points(crit)""))"
+ heals the party for 		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(name .. "" heals the party for "" .. shown .. "" hit points (crit)"")"
+ heals you for 		untranslated	status	9	status_text_call:9	Scripts/General/zzMaw-Spells.lua; Scripts/General/zzzOnlineVariableSender.lua	"Game.ShowStatusText(string.format(name .. "" heals you for "" .. healData[1] .. "" hit points(crit)""))"
+ Hit points		untranslated	status	6	status_text_call:6	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(""You Heal for "" .. round(totHeal) .. "" Hit points""))"
+ hit points		untranslated	status	10	status_text_call:10	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. "" heals you for "" .. healData[1] .. "" hit points""))"
+ hit points (crit)		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""You heal the party for "" .. tooltipHeal .. "" hit points (crit)"")"
+ Hit points(crit)		untranslated	status	6	status_text_call:6	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(""You Heal for "" .. round(totHeal) .. "" Hit points(crit)""))"
+ hit points(crit)		untranslated	status	8	status_text_call:8	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(name .. "" heals you for "" .. healData[1] .. "" hit points(crit)""))"
+ monsters		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. count .. "" monsters"")"
+ monsters and 		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. count .. "" monsters and "" .. objCount .. "" crafting items"")"
+ on attack activated		untranslated	status	2	status_text_call:2	Scripts/General/zzClasses.lua	"Game.ShowStatusText(Game.SpellsTxt[t.Param].Name .. "" on attack activated"")"
+ on attack disabled		untranslated	status	2	status_text_call:2	Scripts/General/zzClasses.lua	"Game.ShowStatusText(Game.SpellsTxt[t.Param].Name .. "" on attack disabled"")"
+ required)		untranslated	status	2	status_text_call:2	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Your level is too low (Level "" .. levelRequired .. "" required)"")"
+ will not be sorted with C		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory number "" .. vars.mawbags[pl:GetIndex()].CurrentBag .. "" will not be sorted with C"""
+ will now take alchemy items when sorting		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(Party[Game.CurrentPlayer].Name .. "" will now take alchemy items when sorting"")"
+%s casts Charge stunning the enemy		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""%s casts Charge stunning the enemy"",Party[0].Name))"
+%s created		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""%s created"", craftingNames[i+1]))"
+%s's poison effect expired		untranslated	status	3	status_text_call:3	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""%s's poison effect expired"",Party[i].Name))"
+'s bags sorted		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All "" .. name .. ""'s bags sorted"")"
+*Swap*		untranslated	status	3	status_text_call:3	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""*Swap*"")"
++50 Fire Resistance temporary.		untranslated	status	1	status_text_call:1	Scripts/Maps/7out01.lua	"Game.ShowStatusText(""+50 Fire Resistance temporary."")          -- ""+50 Fire Resistance temporary."""
+Access have been destroyed		untranslated	status	1	status_text_call:1	Scripts/Maps/outb3.lua	"Game.ShowStatusText(""Access have been destroyed"")"
+All 		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All "" .. name .. ""'s bags sorted"")"
+All buffs have been removed		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""All buffs have been removed"")"
+All inventories have been sorted		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All inventories have been sorted"")"
+All Party bags sorted		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All Party bags sorted"")"
+BossDebug AUTO: OFF		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
+BossDebug AUTO: ON		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
+BossDebug: impossible d’écrire boss_dump.txt		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: impossible d’écrire boss_dump.txt"") end"
+BossDebug: écrit dans boss_dump.txt		untranslated	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: écrit dans boss_dump.txt"") end"
+Bow Disabled		untranslated	status	1	status_text_call:1	Scripts/General/zz_Maw-initialize.lua	"Game.ShowStatusText(""Bow Disabled"")"
+Bow Enabled		untranslated	status	1	status_text_call:1	Scripts/General/zz_Maw-initialize.lua	"Game.ShowStatusText(""Bow Enabled"")"
+Buff Disabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Buff Disabled"")"
+Can't benefit anymore		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Can't benefit anymore"")"
+Can't teleport now		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Can't teleport now"")"
+Charge has %s seconds of cooldown		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Charge has %s seconds of cooldown"",vars.chargeCooldown))"
+Convert %s into %s? (U)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""Convert %s into %s? (U)"",craftingNames[i], craftingNames[i+1]))"
+Cover Disabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Cover Disabled"")"
+Cover Enabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Cover Enabled"")"
+Current map data reset.		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Stats.lua	"Game.ShowStatusText(""Current map data reset."")"
+Curse Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Curse Immunity"")"
+Disease Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Disease Immunity"")"
+Disintegrated		untranslated	status	1	status_text_call:1	Scripts/Global/zzMaw_Legendaries.lua	"Game.ShowStatusText(""Disintegrated"")"
+Divine Protection saves you from lethal damage		untranslated	status	1	status_text_call:1	Scripts/Global/zzMaw_Legendaries.lua	"Game.ShowStatusText(""Divine Protection saves you from lethal damage"")"
+Dungeon Completed!		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Dungeon Completed!"")"
+"Dungeon Completed!
+Reset is possible again."		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Dungeon Completed!\nReset is possible again."")"
+Elementalist Rotation Disabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Elementalist Rotation Disabled"")"
+Elementalist Rotation Enabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Elementalist Rotation Enabled"")"
+Elementalists learn their spells through practice		untranslated	status	1	status_text_call:1	Scripts/General/zzClasses.lua	"Game.ShowStatusText(""Elementalists learn their spells through practice"")"
+empty		untranslated	status	1	status_text_call:1	Scripts/Maps/znwc.lua	"Game.ShowStatusText(""empty"")"
+Enchantment protects %s from %s		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""Enchantment protects %s from %s"", t.Player.Name, protectionType))"
+Entering will reset the dungeon		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Maps.lua	"Game.ShowStatusText(""Entering will reset the dungeon"")"
+Fear Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Fear Immunity"")"
+Fly is allowed without restrictions here		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Fly is allowed without restrictions here"")"
+Forced Sleep Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Forced Sleep Immunity"")"
+Gem power is not enough		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Gem power is not enough"")"
+Goblin Reinforcements		untranslated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""Goblin Reinforcements"")"
+Health Potion has %s seconds of cooldown remaining		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Health Potion has %s seconds of cooldown remaining"",vars.healthPotionCooldown))"
+Health Potion heals for %s hit points		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Health Potion heals for %s hit points"",healAmount))"
+Host saved the game.		untranslated	status	1	status_text_call:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Game.ShowStatusText(""Host saved the game."")"
+In the night the deads rise		untranslated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""In the night the deads rise"")"
+Insanity Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Insanity Immunity"")"
+Invalid Item		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Invalid Item"")"
+Inventory number 		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory number "" .. vars.mawbags[pl:GetIndex()].CurrentBag .. "" will not be sorted with C"""
+Inventory sorted		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory sorted"")"
+It's a trap!		untranslated	status	1	status_text_call:1	Scripts/Maps/7d21.lua	"Game.ShowStatusText(""It's a trap!"")"
+It's an ambush!		untranslated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""It's an ambush!"")"
+Item power reached its limit		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Item power reached its limit"")"
+Legendary power saves you from lethal damage		untranslated	status	1	status_text_call:1	Scripts/Global/zzMaw_Legendaries.lua	"Game.ShowStatusText(""Legendary power saves you from lethal damage"")"
+Loading now will count as death, are you sure to proceed?		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Loading now will count as death, are you sure to proceed?"")"
+Madness is not a place for cowards		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Madness is not a place for cowards"")"
+Mana Potion has %s seconds of cooldown remaining		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Mana Potion has %s seconds of cooldown remaining"",vars.manaPotionCooldown))"
+Mana Potion restores %s mana		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Mana Potion restores %s mana"",spAmount))"
+Mana Shield Disabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Mana Shield Disabled"")"
+Mana Shield Enabled		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Mana Shield Enabled"")"
+Map Completed! You gain 		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Map Completed! You gain "" .. experience .. "" Exp, "" .. gold .. "" Gold and a Crafting Material"")"
+Map data reset, press Y to continue...		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Stats.lua	"Game.ShowStatusText(""Map data reset, press Y to continue..."")"
+MAW: ALL BUFFS NUKED (SAFE)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: ALL BUFFS NUKED (SAFE)"") end"
+MAW: apply (safe)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: apply (safe)"") end"
+Monsters are weakened and can no longer resurrect		untranslated	status	2	esc_message_call:1; status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Monsters are weakened and can no longer resurrect"")"
+Monsters swarming...		untranslated	status	1	status_text_call:1	Scripts/Maps/7d24.lua	"Game.ShowStatusText(""Monsters swarming..."")"
+No alchemy preference when sorting		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""No alchemy preference when sorting"")"
+No enchants		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""No enchants"")"
+No gem to upgrade		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""No gem to upgrade"")"
+Noises from the throne room		untranslated	status	1	status_text_call:1	Scripts/Maps/7d29.lua	"Game.ShowStatusText(""Noises from the throne room"")"
+Not enough disarm skill		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""Not enough disarm skill"")"
+Not enough food		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Not enough food"")"
+Not enough Hit Points		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Not enough Hit Points"")"
+Not enough Mana		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Not enough Mana"")"
+Out of range		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Out of range"")"
+Paralysis Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Paralysis Immunity"")"
+Petrify Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Petrify Immunity"")"
+Player %s left the game.		untranslated	status	1	status_text_call:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	"Game.ShowStatusText(string.format(""Player %s left the game."", client.name))"
+Player must be active to consume the potion		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Player must be active to consume the potion"")"
+Poison Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Poison Immunity"")"
+Press R to refresh new items (20000 gold)		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""Press R to refresh new items (20000 gold)"") --not working"
+Queen Arrived!		untranslated	status	1	status_text_call:1	Scripts/Maps/7d21.lua	"Game.ShowStatusText(""Queen Arrived!"")"
+Refreshing!		untranslated	status	1	status_text_call:1	Scripts/Maps/7out01.lua	"Game.ShowStatusText (""Refreshing!"")         -- ""Refreshing!"""
+Repaired		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Repaired"")"
+Resistance Ignored		untranslated	status	1	status_text_call:1	Scripts/Global/zzMaw_Mapping.lua	"Game.ShowStatusText(""Resistance Ignored"")"
+Shared Life heals for 		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(""Shared Life heals for "" .. round(totHeal) .. "" Hit points(crit)""))"
+SUPREME UNLOCKED!!!		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""SUPREME UNLOCKED!!!"")"
+Teleported 		untranslated	status	3	status_text_call:3	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. count .. "" monsters"")"
+The night is dark and full of terrors		untranslated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""The night is dark and full of terrors"")"
+This potion has not enough power		untranslated	status	5	status_text_call:5	Scripts/General/zzAlchemy.lua; Scripts/Global/zzMAWPotions.lua	"Game.ShowStatusText(""This potion has not enough power"")"
+This skill has reached its limit		untranslated	status	3	status_text_call:3	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""This skill has reached its limit"")"
+This skill is already as good as it will ever get		untranslated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""This skill is already as good as it will ever get"")"
+Unconscious Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Unconscious Immunity"")"
+Weakness Immunity		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Weakness Immunity"")"
+You found 		untranslated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(""You found "" .. itemGold+goldGained .. "" gold! ("" .. tierList[itemPower] .. "" "" .. Game.ItemsTxt[itemID].NotIdentifiedName .. "" filtered)"")"
+You Heal for 		untranslated	status	10	status_text_call:10	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(string.format(""You Heal for "" .. round(totHeal) .. "" Hit points(crit)""))"
+You heal the party for 		untranslated	status	2	status_text_call:2	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""You heal the party for "" .. tooltipHeal .. "" hit points (crit)"")"
+YOU LEARNED RETALIATION!!		untranslated	status	2	status_text_call:2	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""YOU LEARNED RETALIATION!!"")"
+You must prove your worth first		untranslated	status	1	status_text_call:1	Scripts/Maps/outb3.lua	"Game.ShowStatusText(""You must prove your worth first"")"
+You need a key to teleport to Emerald Island.		untranslated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""You need a key to teleport to Emerald Island."")  -- ""You need a key to teleport to Emerald Island."""
+You need a key to teleport to Erathia.		untranslated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""You need a key to teleport to Erathia."")  -- ""You need a key to teleport to Erathia."""
+You need a key to teleport to Evenmorn Island.		untranslated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""You need a key to teleport to Evenmorn Island."")  -- ""You need a key to teleport to Evenmorn Island."""
+You need a key to use this hub. Talk to Illene Farswell.		untranslated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""You need a key to use this hub. Talk to Illene Farswell."")     -- ""You need a key to use this hub. Talk to Illene Farswell!"""
+You need to gain more exp. to benefit from this potion		untranslated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""You need to gain more exp. to benefit from this potion"")"
+Your level is too low (Level 		untranslated	status	2	status_text_call:2	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Your level is too low (Level "" .. levelRequired .. "" required)"")"
+"
+
+Health Reserved: "		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. ""\n\nHealth Reserved: "" .. StrColor(0,255,0,percent .. ""%"" .. txt)"
+"
+
+Increases Charges by "		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description=t.Description .. StrColor(255,255,30, ""\n\nIncreases Charges by "" .. t.Item.BonusStrength)"
+"
+
+Mana Reserved: "		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[sp].Description=Game.SpellsTxt[sp].Description .. ""\n\nMana Reserved: "" .. StrColor(0,100,255,percent .. ""%"" .. txt)"
+"
+
+Press alt to show recipe list"		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description=t.Description .. StrColor(100,100,100,""\n\nPress alt to show recipe list"")"
+"
+
+You need at least "		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"t.Description=t.Description .. StrColor(255,0,0, ""\n\nYou need at least "" .. mastery[m] .. "" skill in "" ..  name .. "" to open the book"")"
+ bonus to Meditation skill for 6 hours.		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description=""Grants "" .. StrColor(0,0,200,math.ceil(t.Item.Bonus^0.5/1.5) + 1) .. "" bonus to Meditation skill for 6 hours."""
+ skill in 		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"t.Description=t.Description .. StrColor(255,0,0, ""\n\nYou need at least "" .. mastery[m] .. "" skill in "" ..  name .. "" to open the book"")"
+ Spell Points		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzAlchemy.lua	"t.Description=StrColor(255,255,153,""Restores "" .. round(t.Item.Bonus^1.6*2/3)+10 .. "" Spell Points"") .. ""\n"" .. t.Description"
+ to open the book		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Spells.lua	"t.Description=t.Description .. StrColor(255,0,0, ""\n\nYou need at least "" .. mastery[m] .. "" skill in "" ..  name .. "" to open the book"")"
+Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description = t.Description .. ""\n\n"" .. StrColor(120, 240, 255,""Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment"")"
+Charges: 		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description=StrColor(255,255,153,""Charges: "" .. charges) .. ""\n\n"" .. t.Description"
+Grants 		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Description=""Grants "" .. StrColor(0,0,200,math.ceil(t.Item.Bonus^0.5/1.5) + 1) .. "" bonus to Meditation skill for 6 hours."""
+Heals 		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzAlchemy.lua	"t.Description=StrColor(255,255,153,""Heals "" .. round(t.Item.Bonus^1.75)+10 .. "" Hit Points"") .. ""\n"" .. t.Description"
+Power: 		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzMaw-Items.lua	"t.Description = t.Description .. ""\n\n"" .. ""Power: "" .. StrColor(255,0,0,increaseDPSPercent .. ""%"")"
+Press alt to show craftable stats		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Description = t.Description .. ""\n\n"" .. StrColor(100,100,100,""Press alt to show craftable stats"")"
+Restores 		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzAlchemy.lua	"t.Description=StrColor(255,255,153,""Restores "" .. round(t.Item.Bonus^1.6*2/3)+10 .. "" Spell Points"") .. ""\n"" .. t.Description"
+"Vampiric Aura: damage done will restore player HP.
+
+"		untranslated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Description=StrColor(255,255,153,""Vampiric Aura: damage done will restore player HP.\n\n"") .. t.Description"
+Vitality: 		untranslated	tooltip	2	formatted_colored_text:2	Scripts/General/zzMaw-Items.lua	"t.Description = t.Description .. ""\n"" .. ""Vitality: "" .. StrColor(255,0,0, increaseVitalityPercent .. ""%"")"
+"
+
+Bolster Level in MM6: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+
+CURRENT MAP HEALING RECOUNT:
+Healing Done in current Map:  "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+
+Levels gained in MM6: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+
+Total average damage reduction: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"
+
+TOTAL HEALING RECOUNT:
+Total Healing Done:  "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
+"
+
+Total Levels gained: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Block chance vs same level monsters: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"
+Bolster Level in MM7: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Bolster Level in MM8: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Current bonus Damage: "		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent bonus Damage: "" .. dmg .. ""%"""
+"
+Current Reduction: "		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Items.lua	"legText=legText .. ""\nCurrent Reduction: "" .. red .. ""%"""
+"
+Leech Healing in current Map: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+Levels gained in MM7: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Levels gained in MM8: "		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
+"
+Regen Healing in current Map: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  "" .. StrColor(0,255,0,mapvars.healingDone[id]) .. ""\nRegen Healing in current Map: "" .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. ""\nLeech Healing in current Map: "" .. StrColor(0,255,0,mapvars.leechDone[id])"
+"
+Total Leech Healing: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
+"
+Total Regen Healing: "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text = t.Text .. ""\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  "" .. StrColor(0,255,0,vars.healingDone[id]) .. ""\nTotal Regen Healing: "" .. StrColor(0,255,0,vars.regenerationHeal[id]) .. ""\nTotal Leech Healing: "" .. StrColor(0,255,0,vars.leechDone[id])"
+ Randomizer		untranslated	ui	1	display_field_assignment:1	Scripts/General/zzzzMalekith-Randomizer.lua	"Text = "" Randomizer"","
+"%s
+
+CURRENT MAP DAMAGE RECOUNT
+Melee Damage done in current map: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nCURRENT MAP DAMAGE RECOUNT\nMelee Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+
+Hit chance vs same level monster: %s%s"		untranslated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHit chance vs same level monster: %s%s"",t.Text,StrColor(255,255,100,hitChance),StrColor(255,255,100,""%""))"
+"%s
+
+HP bonus from Endurance: %s
+HP bonus from Body building: %s
+HP bonus from items: %s
+Base HP: %s
+
+ HP Regen per second: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s"",t.Text,StrColor(0,255,0,hpMap.totalEnduranceBonus), StrColor(0,255,0,hpMap.totalBBBonus),StrColor(0,255,0,round(hpMap.totalhpFromItems)),StrColor(0,255,0,hpMap.totalBaseHP),StrColor(0,255,0,regen))"
+"%s
+
+Physical damage reduction: %s%s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nPhysical damage reduction: %s%s"",t.Text,StrColor(255,255,100,acReduction),StrColor(255,255,100,""%"") .. ""\nBlock chance vs same level monsters: "" .. StrColor(255,255,100,blockChance) .. StrColor(255,255,100,""%"") .. ""\n\nTotal average damage reduction: "" .. StrColor(255,255,100,totRed) .. ""%"")"
+"%s
+
+Spell point regen per second: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nSpell point regen per second: %s"",t.Text,StrColor(40,100,255,regen/10))"
+"%s
+
+TOTAL DAMAGE RECOUNT
+Total Damage done: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\n\nTOTAL DAMAGE RECOUNT\nTotal Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+Ranged Damage done in current map: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nRanged Damage done in current map: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+"%s
+Total Ranged Damage done: %s"		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nTotal Ranged Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+Debuffs:		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text = t.EffectsHeader.Text .. ""\n\n"" .. StrColor(255,200,0, ""Debuffs:"" .. activeDebuffs)"
+Disabled		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"enableDisableText = StrColor(255,0,0, ""Disabled"")"
+"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
+Press R to enable/disable random rotation.
+Currently "		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local rotationText = StrColor(0,0,0,""Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently "") .. enableDisableText .. ""\n\n"""
+Enabled		untranslated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local enableDisableText = StrColor(0,255,0, ""Enabled"")"
+If you seek to pursuit a new path and reset your skills, you have come to the right place.		untranslated	ui	1	display_field_assignment:1	Scripts/Global/zzMAWRespec.lua	"Text = ""If you seek to pursuit a new path and reset your skills, you have come to the right place."""
+"Intellect represents a character's ability to reason and understand complex, abstract concepts.
+Spell Damage and Spell Critical Damage are based on Intellect."		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."""
+MAW		untranslated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.		untranslated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality."""
+Show players location		untranslated	ui	1	display_field_assignment:1	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	"Text = ""Show players location"","
+Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!		untranslated	ui	1	display_field_assignment:1	Scripts/Global/zzMaw_Arena.lua	"Text = ""Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!"""
+You need to clear the area COMPLETELY first.		untranslated	ui	1	display_variable_assignment:1	Scripts/General/BountyHunt.lua	"BountyText = ""You need to clear the area COMPLETELY first."""
+Accuracy	정확도	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[5] = StrColor(255, 255, 0, ""Accuracy"")"
+Air Resistance	공기 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[12] = StrColor(173, 216, 230, ""Air Resistance"")"
+Alchemy skill	연금술 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[17] = StrColor(255,255,153, ""Alchemy skill"")"
+Armsmaster skill	무기 전문가 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[22] = StrColor(255,255,153, ""Armsmaster skill"")"
+Body Resistance	육체 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[16] = StrColor(255, 192, 203, ""Body Resistance"")"
+Disarm skill	함정 해제 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[19] = StrColor(255,255,153, ""Disarm skill"")"
+Dodge skill	회피 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[23] = StrColor(255,255,153, ""Dodge skill"")"
+Earth Resistance	대지 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[14] = StrColor(153, 76, 0, ""Earth Resistance"")"
+Fire Resistance	화염 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[11] = StrColor(255, 70, 70, ""Fire Resistance"")"
+Great might	강대한 힘	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[25] = StrColor(255,255,153, ""Great might"")"
+Hit Points	생명력	translated	item	3	formatted_colored_text:3	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Stats.lua	"itemStatName[8] = StrColor(0, 255, 0, ""Hit Points"")"
+ID Item skill	아이템 감정 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[20] = StrColor(255,255,153, ""ID Item skill"")"
+ID Monster skill	몬스터 감정 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[21] = StrColor(255,255,153, ""ID Monster skill"")"
+Might	힘	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[1] = StrColor(255, 0, 0, ""Might"")"
+Mind Resistance	정신 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[15] = StrColor(200, 200, 255, ""Mind Resistance"")"
+Personality	인격	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[3] = StrColor(0, 127, 255, ""Personality"")"
+Spell Points	주문력	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[9] = StrColor(0, 100, 255, ""Spell Points"")"
+Unarmed skill	맨손 전투 기술	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[24] = StrColor(255,255,153, ""Unarmed skill"")"
+Water Resistance	물 저항	translated	item	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"itemStatName[13] = StrColor(100, 180, 255, ""Water Resistance"")"
+Antagarich	안타개릭	translated	map	2	event_hint_assignment:2	Scripts/Maps/out02.lua; Scripts/Maps/oute3.lua	"evt.hint[1777]=""Antagarich"""
+Enroth	엔로스	translated	map	2	event_hint_assignment:2	Scripts/Maps/7out02.lua; Scripts/Maps/out02.lua	"evt.hint[2666]=""Enroth"""
+Jadame	제이덤	translated	map	2	event_hint_assignment:2	Scripts/Maps/7out02.lua; Scripts/Maps/oute3.lua	"evt.hint[1888]=""Jadame"""
+Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
+Emerald Island	에메랄드 섬	translated	monster	1	known_display_name_assignment:1	Scripts/General/zz_Maw-initialize.lua	"if Game.ItemsTxt[1466].Name==""Emerald Island"" then"
+Normal	보통	translated	spell	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+(CRIT!)	(치명타!)	translated	status	1	formatted_colored_text:1	Scripts/Global/zzMAWStatusMsg.lua	"critMessage=StrColor(255,255,30,""(CRIT!)"")"
+ Austerity	 절제	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+"Beyond
+Madness"	"광기를
+넘어"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Doom	파멸	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Easy	쉬움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+Hard	어려움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+Hell	지옥	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+"Night
+mare"	악몽	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+Norm.	보통	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+"Road to
+insanity"	"광기로 가는
+길"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
