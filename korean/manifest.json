@@ -1,18 +1,46 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 12,
-  "translated_entries_with_patchable_occurrences": 11,
-  "patchable_occurrences_targeted": 13,
-  "skipped_unpatchable_occurrences_for_translated_sources": 7,
+  "translated_entries": 36,
+  "translated_entries_with_patchable_occurrences": 35,
+  "patchable_occurrences_targeted": 42,
+  "skipped_unpatchable_occurrences_for_translated_sources": 41,
   "changed_files": [
     {
       "file": "Scripts/General/MenuExtraSettings.lua",
       "replacements": 12
     },
     {
+      "file": "Scripts/General/zzMaw-Items.lua",
+      "replacements": 19
+    },
+    {
+      "file": "Scripts/General/zzMaw-Maps.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzMaw-Stats.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/General/zz_Maw-initialize.lua",
+      "replacements": 1
+    },
+    {
       "file": "Scripts/Global/zzMAWStatusMsg.lua",
       "replacements": 1
+    },
+    {
+      "file": "Scripts/Maps/7out02.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Maps/out02.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Maps/oute3.lua",
+      "replacements": 2
     }
   ],
   "warnings": [

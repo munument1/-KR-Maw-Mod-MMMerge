@@ -155,19 +155,19 @@ maw-ac71687e6681	untranslated	item	7item192			Scripts/General/zzMaw-Spells.lua	3
 maw-2c40f0c45c24	untranslated	item	7item193			Scripts/General/zzMaw-Spells.lua	3290	1	
 maw-ef99c680a737	untranslated	item	^%u		%u	Scripts/General/zzMaw-Items.lua	1713	1	
 maw-25b6b3a71f27	untranslated	item	AC gained from armors is doubled			Scripts/General/zzMaw-Items.lua	1385	1	
-maw-12a3a4f498b2	untranslated	item	Accuracy			Data/Tables/Class Starting Stats.txt	10	4	
+maw-12a3a4f498b2	translated	item	Accuracy	정확도		Data/Tables/Class Starting Stats.txt	10	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-cf1ac5aea579	untranslated	item	Adds 			Scripts/General/zzMaw-Items.lua	2019	14	
 maw-ddd068101243	untranslated	item	Air			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-2b43cb83d2c0	untranslated	item	Air Magic Skill +			Scripts/General/zzMaw-Items.lua	2032	1	
-maw-fc703d7f3f16	untranslated	item	Air Resistance			Data/Tables/Spells2.txt	16	3	
-maw-85c3b29e673f	untranslated	item	Alchemy skill			Scripts/General/zzMaw-Items.lua	1876	2	
+maw-fc703d7f3f16	translated	item	Air Resistance	공기 저항		Data/Tables/Spells2.txt	16	3	MMMerge PO 정확 일치 + 표시 문맥 확인
+maw-85c3b29e673f	translated	item	Alchemy skill	연금술 기술		Scripts/General/zzMaw-Items.lua	1876	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-c4c29e7aed76	untranslated	item	Ally			Scripts/General/zzMaw-Monsters.lua	2326	3	
 maw-a7c94b10b666	untranslated	item	Ancient			Scripts/General/zzMaw-Items.lua	461	2	
 maw-d1745b2ab5cc	untranslated	item	Ancient 			Scripts/General/zzMaw-Items.lua	1733	1	
 maw-8261e56f515b	untranslated	item	Armor Class			Scripts/General/zzMaw-Items.lua	1869	2	
 maw-ff2b4cfa1b74	untranslated	item	Armor: +			Scripts/General/zzMaw-Items.lua	1478	2	
 maw-1b811f3888ba	untranslated	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	
-maw-65e9268e6bfb	untranslated	item	Armsmaster skill			Scripts/General/zzMaw-Items.lua	1881	2	
+maw-65e9268e6bfb	translated	item	Armsmaster skill	무기 전문가 기술		Scripts/General/zzMaw-Items.lua	1881	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-0487dae31788	untranslated	item	Ascended Amber			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-58750c204795	untranslated	item	Ascended Amethyst			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-8f508775a894	untranslated	item	Ascended Diamond			Scripts/General/zzMaw-Items.lua	4565	1	
@@ -179,7 +179,7 @@ maw-249a5adae437	untranslated	item	Attack: +			Scripts/General/zzMaw-Items.lua	1
 maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger		% s	Scripts/General/zzMaw-Items.lua	1376	1	
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-bee8f9b9eeaf	untranslated	item	Body Magic Skill +			Scripts/General/zzMaw-Items.lua	2033	1	
-maw-2657e3448e5a	untranslated	item	Body Resistance			Data/Tables/Spells2.txt	71	3	
+maw-2657e3448e5a	translated	item	Body Resistance	육체 저항		Data/Tables/Spells2.txt	71	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e8e87b3b9240	untranslated	item	BodyLocation			Scripts/General/zzMaw-Items.lua	2713	2	
 maw-4d963cfab70d	untranslated	item	Bonus			Scripts/General/zzMaw-Item-Sorter.lua	87	8	
 maw-a2d599d80f9d	untranslated	item	Bonus AC: 			Scripts/General/zzMAW-Skills.lua	598	1	
@@ -211,14 +211,14 @@ maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	
 maw-c45e1332c406	untranslated	item	Death and Eradication Immunity			Scripts/General/zzMaw-Items.lua	1281	1	
 maw-7505d64a54e0	untranslated	item	default			Scripts/General/pseudoSpawnpoint.lua	55	5	
 maw-154f885b3a41	untranslated	item	Dimension Map			Scripts/General/zzMaw-Maps.lua	1914	1	
-maw-76af4ec46125	untranslated	item	Disarm skill			Scripts/General/zzMaw-Items.lua	1878	2	
+maw-76af4ec46125	translated	item	Disarm skill	함정 해제 기술		Scripts/General/zzMaw-Items.lua	1878	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4be181e4cac8	untranslated	item	disease			Scripts/General/zzMaw-Items.lua	1255	3	
 maw-ba1ff3be0f0c	untranslated	item	Disease and Curse Immunity			Scripts/General/zzMaw-Items.lua	1275	1	
 maw-4312a8a1998a	untranslated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)			Scripts/General/zzMaw-Items.lua	1369	1	
-maw-7966506e0c12	untranslated	item	Dodge skill			Scripts/General/zzMaw-Items.lua	1882	2	
+maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMaw-Items.lua	1882	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-40089dc04e07	untranslated	item	Each attack reduces monster resistances by 1			Scripts/General/zzMaw-Items.lua	1386	1	
 maw-4d7b02dec590	untranslated	item	Earth Magic Skill +			Scripts/General/zzMaw-Items.lua	2035	1	
-maw-f3b8bd9acc81	untranslated	item	Earth Resistance			Data/Tables/Spells2.txt	38	3	
+maw-f3b8bd9acc81	translated	item	Earth Resistance	대지 저항		Data/Tables/Spells2.txt	38	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-ac75574810d6	untranslated	item	Endless Potion			Scripts/General/zzAlchemy.lua	1419	1	
 maw-cf6427142652	untranslated	item	Endurance			Data/Tables/Class Starting Stats.txt	8	4	
 maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	
@@ -226,7 +226,7 @@ maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua
 maw-54c81b0a7634	untranslated	item	Explosive Impact! (half damage)			Scripts/General/zzMaw-Items.lua	1274	2	
 maw-78baebfcb4b5	untranslated	item	Fire			Scripts/General/zzMaw-Items.lua	4258	2	
 maw-135db21bffe1	untranslated	item	Fire Magic Skill +			Scripts/General/zzMaw-Items.lua	2036	1	
-maw-a31e37313d09	untranslated	item	Fire Resistance			Data/Tables/Spells2.txt	5	3	
+maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-245eb6d90c4a	untranslated	item	Flame			Scripts/General/zzMaw-Items.lua	4696	1	
 maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	
 maw-fc1a8c583492	untranslated	item	GenerateItem			Scripts/Core/events.lua	2192	1	
@@ -235,13 +235,13 @@ maw-72a7fd92863d	untranslated	item	GotItem			Scripts/General/ExtraEvents.lua	112
 maw-f50c8c159fdc	untranslated	item	"Grant 1 enchant to an unenchanted item, based on potion Power.
 Require at least 20 power to work.
 "			Scripts/General/zzAlchemy.lua	486	1	
-maw-965850f0c879	untranslated	item	Great might			Scripts/General/zzMaw-Items.lua	1884	1	
+maw-965850f0c879	translated	item	Great might	강대한 힘		Scripts/General/zzMaw-Items.lua	1884	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4ccaf5230f3a	untranslated	item	Greater Heal			Scripts/General/zzMaw-Items.lua	2350	5	
 maw-bdec310b7e9d	untranslated	item	Hardened			Scripts/General/zzMaw-Item-Sorter.lua	94	7	
 maw-5a3199f1e727	untranslated	item	Heavy, yet seemingly light as a feather in skilled hands, Excalibur confers great might upon its wielder.  Opponents do not easily walk away from blows struck by this legendary weapon.  (Special Powers:  +			Scripts/General/zzMaw-Items.lua	2482	1	
-maw-125dcf82b273	untranslated	item	Hit Points			Scripts/General/zzMaw-Items.lua	1867	4	
-maw-3a8bda48988f	untranslated	item	ID Item skill			Scripts/General/zzMaw-Items.lua	1879	2	
-maw-73ef8997e9d8	untranslated	item	ID Monster skill			Scripts/General/zzMaw-Items.lua	1880	2	
+maw-125dcf82b273	translated	item	Hit Points	생명력		Scripts/General/zzMaw-Items.lua	1867	4	MMMerge PO 정확 일치 + 표시 문맥 확인
+maw-3a8bda48988f	translated	item	ID Item skill	아이템 감정 기술		Scripts/General/zzMaw-Items.lua	1879	2	MMMerge PO 정확 일치 + 표시 문맥 확인
+maw-73ef8997e9d8	translated	item	ID Monster skill	몬스터 감정 기술		Scripts/General/zzMaw-Items.lua	1880	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-dbdb8b7d61ff	untranslated	item	Identified			Scripts/General/zzMaw-Item-Sorter.lua	95	7	
 maw-9bf0f8ff5f5d	untranslated	item	identify			Scripts/General/zzMaw-Items.lua	4533	4	
 maw-eaa6a5241bcd	untranslated	item	Immunity to all status effects from monsters			Scripts/General/zzMaw-Items.lua	1367	1	
@@ -277,11 +277,11 @@ maw-b2efd3606c37	untranslated	item	Mace			Scripts/General/zzMaw-Items.lua	332	1
 maw-054968202fd2	untranslated	item	MaxCharges			Scripts/General/zzMaw-Item-Sorter.lua	96	7	
 maw-25f6d1027234	untranslated	item	Meditation Skill +			Scripts/General/zzMaw-Items.lua	2042	1	
 maw-e00694b1e25c	untranslated	item	Melee			Scripts/General/zzClasses.lua	273	14	
-maw-9da77c5e4939	untranslated	item	Might			Data/Tables/Class Starting Stats.txt	2	4	
+maw-9da77c5e4939	translated	item	Might	힘		Data/Tables/Class Starting Stats.txt	2	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-af6bcff046a9	untranslated	item	Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy			Scripts/General/zzMaw-Items.lua	1366	1	
 maw-59e63f7eaa79	untranslated	item	Mind			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-d7656b362ecd	untranslated	item	Mind Magic Skill +			Scripts/General/zzMaw-Items.lua	2038	1	
-maw-02ecc9e1eddf	untranslated	item	Mind Resistance			Data/Tables/Spells2.txt	60	3	
+maw-02ecc9e1eddf	translated	item	Mind Resistance	정신 저항		Data/Tables/Spells2.txt	60	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-cad3f5488931	untranslated	item	ModifyItemDamage			Scripts/Core/events.lua	2120	1	
 maw-ecd1f5dff9ef	untranslated	item	MonsterDropItem			Scripts/General/ExtraEvents.lua	520	1	
 maw-b7baa1d40c4e	untranslated	item	Number			Scripts/General/zzMaw-Item-Sorter.lua	97	21	
@@ -294,7 +294,7 @@ maw-f637a0178b30	untranslated	item	Overhealing refunds mana			Scripts/General/zz
 maw-89ff31225c5f	untranslated	item	Owner			Scripts/General/zzMaw-Item-Sorter.lua	98	6	
 maw-67ef38a8a121	untranslated	item	paralysis			Scripts/General/zzMaw-Items.lua	1257	1	
 maw-f190f3f1357e	untranslated	item	Paralysis and fear Immunity			Scripts/General/zzMaw-Items.lua	1277	1	
-maw-2981a383917f	untranslated	item	Personality			Data/Tables/Class Starting Stats.txt	6	4	
+maw-2981a383917f	translated	item	Personality	인격		Data/Tables/Class Starting Stats.txt	6	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e6aa09fd40ce	untranslated	item	poison			Scripts/General/zzMaw-Items.lua	1258	3	
 maw-ff11ae2fd1e0	untranslated	item	Poison and weakness Immunity			Scripts/General/zzMaw-Items.lua	1278	1	
 maw-0fff6c603c71	untranslated	item	Potion Bottle			Scripts/General/zzAlchemy.lua	1420	1	
@@ -334,7 +334,7 @@ maw-597e5a16ff16	untranslated	item	Solarstone			Scripts/General/zzMaw-Items.lua	
 maw-2d2cb022bc3d	untranslated	item	Speed			Data/Tables/Class Starting Stats.txt	12	6	
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
 maw-bec5022aa7fd	untranslated	item	spell drain			Scripts/General/zzMaw-Items.lua	1256	1	
-maw-3c6614c31d79	untranslated	item	Spell Points			Scripts/General/zzMaw-Items.lua	1868	2	
+maw-3c6614c31d79	translated	item	Spell Points	주문력		Scripts/General/zzMaw-Items.lua	1868	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-fdc17f7064c4	untranslated	item	Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).			Scripts/General/zzMaw-Items.lua	2044	1	
 maw-868eb07bb6ca	untranslated	item	Spirit Magic Skill +			Scripts/General/zzMaw-Items.lua	2039	1	
 maw-678dd8a69cfc	untranslated	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	
@@ -358,7 +358,7 @@ maw-d71fa0dccfc6	untranslated	item	Traditionally carried by the High Druid, but 
 maw-3033edec5fa1	untranslated	item	Two-Handed Axe			Scripts/General/zzMaw-Items.lua	1202	1	
 maw-fdf3f280c840	untranslated	item	Two-Handed Sword			Scripts/General/zzMaw-Items.lua	1202	1	
 maw-3deb74565196	untranslated	item	Type			Scripts/General/zzMaw-Items.lua	2220	14	
-maw-bd03227258e3	untranslated	item	Unarmed skill			Scripts/General/zzMaw-Items.lua	1883	2	
+maw-bd03227258e3	translated	item	Unarmed skill	맨손 전투 기술		Scripts/General/zzMaw-Items.lua	1883	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-40f2133dc6ab	untranslated	item	Uncom.			Scripts/General/zzMaw-Items.lua	461	3	
 maw-56394eec2a7b	untranslated	item	unconscious			Scripts/General/zzMaw-Items.lua	1259	1	
 maw-4408ab2d1ad0	untranslated	item	UseMouseItem			Scripts/Core/events.lua	2048	1	
@@ -375,7 +375,7 @@ Down below a list of corrupted items:
 
 "			Scripts/General/zzMaw-Item-Sorter.lua	736	1	
 maw-b83051d62e09	untranslated	item	Water Magic Skill +			Scripts/General/zzMaw-Items.lua	2040	1	
-maw-8fabae26c6ea	untranslated	item	Water Resistance			Data/Tables/Spells2.txt	27	3	
+maw-8fabae26c6ea	translated	item	Water Resistance	물 저항		Data/Tables/Spells2.txt	27	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	1258	1	
 maw-fb360f9c09ac	untranslated	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
 maw-5397e0583f14	untranslated	item	Yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
@@ -404,7 +404,7 @@ maw-c85a04d7c812	untranslated	map	AirResistance			Scripts/Maps/outb3.lua	39	3
 maw-6a72085653e4	untranslated	map	All			Scripts/General/zzMAW-Skills.lua	737	50	
 maw-e12c96821956	untranslated	map	ambush			Scripts/Maps/7d21.lua	5	3	
 maw-c498e3a8a530	untranslated	map	ambush2			Scripts/Maps/7d21.lua	6	1	
-maw-b8285e62c833	untranslated	map	Antagarich			Scripts/Maps/out02.lua	62	2	
+maw-b8285e62c833	translated	map	Antagarich	안타개릭		Scripts/Maps/out02.lua	62	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-5e7a5d7d69bd	untranslated	map	archie			Scripts/Maps/outd3.lua	35	1	
 maw-4f9e847dcf75	untranslated	map	AutonotesBits			Scripts/Maps/7out01.lua	34	3	
 maw-75226d73db5b	untranslated	map	Awards			Scripts/Maps/7out01.lua	46	3	
@@ -437,7 +437,7 @@ maw-9afd1ea80bad	untranslated	map	dec62			Scripts/Maps/BrBase.lua	445	1
 maw-ce47d0f5fb32	untranslated	map	dec63			Scripts/Maps/BrBase.lua	445	1	
 maw-bf93e5ce8bc1	untranslated	map	Down			Scripts/Maps/BrBase.lua	1016	3	
 maw-6dffba4b610a	untranslated	map	EarthResistance			Scripts/Maps/outb3.lua	41	3	
-maw-4206c5d2dd9d	untranslated	map	Enroth			Scripts/Maps/7out02.lua	123	2	
+maw-4206c5d2dd9d	translated	map	Enroth	엔로스		Scripts/Maps/7out02.lua	123	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-2b9eceb7a86a	untranslated	map	Enter			Scripts/Maps/BrBase.lua	468	3	
 maw-3eb27da9cfe9	untranslated	map	Error in maze generation algorithm. Closed cell found.			Scripts/Maps/BrBase.lua	695	1	
 maw-f83b6fe3aebf	untranslated	map	Exit			Scripts/Maps/BrBase.lua	521	1	
@@ -455,7 +455,7 @@ maw-a6cc696fd267	untranslated	map	History6			Scripts/Maps/out03.lua	11	1
 maw-a5e6194e64e8	untranslated	map	Initiating map load			Scripts/Maps/BrBase.lua	1057	1	
 maw-300d29fd5f32	untranslated	map	Inventory			Scripts/General/zzzzMalekith-Randomizer.lua	86	45	
 maw-d632dba903a8	untranslated	map	Invisible			Data/Tables/ObjList.txt	1	2	
-maw-f1fdc869d585	untranslated	map	Jadame			Scripts/Maps/7out02.lua	132	2	
+maw-f1fdc869d585	translated	map	Jadame	제이덤		Scripts/Maps/7out02.lua	132	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-901de5b26f33	untranslated	map	MainCondition			Scripts/Maps/outb3.lua	35	1	
 maw-82b084acec80	untranslated	map	MAP_LOAD			Scripts/Maps/BrBase.lua	1029	2	
 maw-09ab5de04454	untranslated	map	MapVar			Scripts/Maps/pyramid.lua	34	2	
@@ -641,7 +641,7 @@ maw-9ae2b0cfdd1b	untranslated	misc	Damage: 1d1+1			Scripts/Structs/extraEditable
 maw-c5a1bf33495a	untranslated	misc	Day-o-Gods			Scripts/General/MiscTweaks.lua	190	1	
 maw-df653779161b	untranslated	misc	débil			Scripts/General/zzMaw-Multiplayer.lua	206	1	
 maw-47aa9a09e447	untranslated	misc	Emerald of Power			Scripts/General/zzAlchemy.lua	1393	1	
-maw-dd399f98d057	untranslated	misc	Empty Barrel			Scripts/General/zzMaw-Maps.lua	202	1	
+maw-dd399f98d057	translated	misc	Empty Barrel	빈 통		Scripts/General/zzMaw-Maps.lua	202	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-16d5a6e22e05	untranslated	misc	Endless Arena			Scripts/Global/zzMaw_Arena.lua	28	1	
 maw-100a74eeab74	untranslated	misc	Enter the data.			Scripts/Global/Quest_SavingGoobers.lua	705	3	
 maw-d4788aabcb87	untranslated	misc	Erathian Sapphire			Scripts/General/zzAlchemy.lua	1377	2	
@@ -1046,7 +1046,7 @@ maw-99851db098a8	untranslated	monster	Dragoons' Caverns			Scripts/General/zzMaw-
 maw-3e9f329bcddf	untranslated	monster	Dragoons' Keep			Scripts/General/zzMaw-Monsters.lua	1610	2	
 maw-1758e871d8bc	untranslated	monster	Druid Circle			Scripts/General/zzMaw-Monsters.lua	1226	2	
 maw-bd902f508bc5	untranslated	monster	Eel Infested Waters			Scripts/General/zzMaw-Monsters.lua	1574	2	
-maw-1cf6937c2ef9	untranslated	monster	Emerald Island			Scripts/General/zzMaw-Monsters.lua	1108	5	
+maw-1cf6937c2ef9	translated	monster	Emerald Island	에메랄드 섬		Scripts/General/zzMaw-Monsters.lua	1108	5	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-9441f6c1c8d6	untranslated	monster	Eradication			Scripts/General/zzMaw-Monsters.lua	3849	1	
 maw-2ec744a3dc22	untranslated	monster	Erathia			Scripts/General/zzMaw-Monsters.lua	1399	2	
 maw-c7c88ab8c2a3	untranslated	monster	Error in attacker recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2498	1	
