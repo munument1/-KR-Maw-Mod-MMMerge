@@ -163,19 +163,21 @@ Scale with player level, up to level 900."	"
 maw-02219f4d1f51	translated	item	"
 Attack Speed: "	"
 공격 속도: "		Scripts/General/zzMaw-Items.lua	2552	2	아이템 정보창 공격 속도
-maw-45425af9f0d2	untranslated	item	 +X			Scripts/General/zzMaw-Items.lua	1705	1	
+maw-45425af9f0d2	translated	item	 +X	 +X		Scripts/General/zzMaw-Items.lua	1705	1	마법부여 미리보기 형식 토큰 유지
 maw-5c2d44bdc878	untranslated	item	 - Corrupted item #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
 maw-296498801eda	translated	item	 Armor.	 방어력.		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
 maw-70364f2b0837	translated	item	 attacks and +	 공격), +		Scripts/General/zzMaw-Items.lua	2049	1	화염 무기 마법부여 설명 조각
-maw-0b7385a3815f	untranslated	item	 Aura: adds 			Scripts/General/zzMaw-Items.lua	4699	1	
+maw-0b7385a3815f	translated	item	 Aura: adds 	 오라: 모든 공격에 		Scripts/General/zzMaw-Items.lua	4699	1	화염 오라 조합 문자열
 maw-d7e3a56e8341	translated	item	 Body and mind Resistances.	 육체 및 정신 저항.		Scripts/General/zzMaw-Items.lua	2068	1	아이템 마법부여 설명 조각
 maw-511c96a0a13d	translated	item	 Elemental Resistances.	 원소 저항.		Scripts/General/zzMaw-Items.lua	2067	1	아이템 마법부여 설명 조각
 maw-8e704db26d0b	translated	item	 Endurance and	 인내력 및		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
 maw-b3c25ac9c926	translated	item	 Endurance and Accuracy.	 인내력 및 정확도.		Scripts/General/zzMaw-Items.lua	2055	1	아이템 마법부여 설명 조각
 maw-15e8e8dd4092	translated	item	 Endurance and Regenerate Hit points over time.	 인내력 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2057	1	아이템 마법부여 설명 조각
-maw-6eb59489bcbb	untranslated	item	" Fire Damage to any attack
+maw-6eb59489bcbb	translated	item	" Fire Damage to any attack
 
-"			Scripts/General/zzMaw-Items.lua	4699	1	
+"	" 화염 피해 추가
+
+"		Scripts/General/zzMaw-Items.lua	4699	1	화염 오라 조합 문자열; 줄바꿈 유지
 maw-fc9d83e4d0ea	translated	item	 Fire Resistance and Regenerate Hit points over time.	 화염 저항 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2053	1	아이템 마법부여 설명 조각
 maw-76e2c8fd1d31	translated	item	 Hit points and Regenerate Hit points over time.	 생명력 및 지속 생명력 재생.		Scripts/General/zzMaw-Items.lua	2047	1	아이템 마법부여 설명 조각
 maw-fc6baca8cc26	untranslated	item	 in bag #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
@@ -283,10 +285,10 @@ maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting
 maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	
 maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-54c81b0a7634	translated	item	Explosive Impact! (half damage)	폭발 충격! (피해 절반)		Scripts/General/zzMaw-Items.lua	1274	2	특수 아이템 효과 설명
-maw-78baebfcb4b5	untranslated	item	Fire			Scripts/General/zzMaw-Items.lua	4258	2	
+maw-78baebfcb4b5	translated	item	Fire	불꽃		Scripts/General/zzMaw-Items.lua	4258	2	화염 오라 단계명
 maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
 maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-245eb6d90c4a	untranslated	item	Flame			Scripts/General/zzMaw-Items.lua	4696	1	
+maw-245eb6d90c4a	translated	item	Flame	화염		Scripts/General/zzMaw-Items.lua	4696	1	화염 오라 단계명
 maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	
 maw-fc1a8c583492	untranslated	item	GenerateItem			Scripts/Core/events.lua	2192	1	
 maw-030499ca0810	untranslated	item	GetItemName			Scripts/Structs/extraEditableDescriptions.lua	310	1	
@@ -2934,7 +2936,7 @@ maw-0f22bb09dc64	excluded	table	ImplosionX			Data/Tables/ObjList.txt	558	1	Audit
 maw-4c721b017e62	excluded	table	Incinerate			Data/Tables/ObjList.txt	453	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-87c48b85740f	excluded	table	IncinerateX			Data/Tables/ObjList.txt	555	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-ee64fda90a08	excluded	table	Index by type			Data/Tables/House rules.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-6a69f7a5a045	untranslated	table	Inferno			Data/Tables/ObjList.txt	451	3	
+maw-6a69f7a5a045	translated	table	Inferno	지옥불		Data/Tables/ObjList.txt	451	3	화염 오라 단계명
 maw-48863af16c40	excluded	table	Infused rod			Data/Tables/ObjList.txt	416	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-fd4e81918202	excluded	table	Initiate			Data/Tables/Class Extra.txt	25	6	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-d0a3087dab0a	excluded	table	InsectX			Data/Tables/ObjList.txt	562	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.

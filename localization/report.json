@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1198,
-    "translated": 905,
-    "untranslated": 922
+    "translated": 911,
+    "untranslated": 916
   },
   "categories": {
     "class": 37,
@@ -45,6 +45,7 @@
     "proven_item_display_name": 1,
     "proven_item_display_text": 4,
     "proven_item_enchant_description": 68,
+    "proven_item_enchantment_label": 31,
     "proven_item_information_field": 8,
     "proven_item_local_description_flow": 4,
     "proven_item_notes": 1,
@@ -66,7 +67,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 933
+    "uncertain_context": 902
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -91,8 +92,10 @@
   "proven_monster_ui_promotions": 9,
   "proven_legendary_item_tooltip_lines": 25,
   "proven_legendary_item_promotions": 25,
-  "uncertain_review_unique_sources": 625,
-  "uncertain_review_occurrences": 864,
-  "uncertain_review_exact_mmmerge_matches": 18,
-  "uncertain_review_ambiguous_mmmerge_matches": 8
+  "proven_item_enchantment_label_lines": 27,
+  "proven_item_enchantment_label_promotions": 31,
+  "uncertain_review_unique_sources": 619,
+  "uncertain_review_occurrences": 857,
+  "uncertain_review_exact_mmmerge_matches": 17,
+  "uncertain_review_ambiguous_mmmerge_matches": 7
 }

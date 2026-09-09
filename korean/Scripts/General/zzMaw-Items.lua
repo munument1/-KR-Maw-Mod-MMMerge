@@ -1884,30 +1884,30 @@ function events.GameInitialized2()
 	itemStatName[25] = StrColor(255,255,153, "강대한 힘")
 	
 	baseStatName={
-		[1]="Might",
-		[2]="Intellect",
-		[3]="Personality",
-		[4]="Endurance",
-		[5]="Accuracy",
-		[6]="Speed",
-		[7]="Luck",
-		[8]="Hit Points",
-		[9]="Spell Points",
-		[10]="Armor Class",
-		[11]="Fire Resistance",
-		[12]="Air Resistance",
-		[13]="Water Resistance",
-		[14]="Earth Resistance",
-		[15]="Mind Resistance",
-		[16]="Body Resistance",
-		[17]="Alchemy skill",
-		[18]="Repair skill",
-		[19]="Disarm skill",
-		[20]="ID Item skill",
-		[21]="ID Monster skill",
-		[22]="Armsmaster skill",
-		[23]="Dodge skill",
-		[24]="Unarmed skill",
+		[1]="힘",
+		[2]="지능",
+		[3]="인격",
+		[4]="인내력",
+		[5]="정확도",
+		[6]="민첩성",
+		[7]="운",
+		[8]="생명력",
+		[9]="주문력",
+		[10]="방어력",
+		[11]="화염 저항",
+		[12]="공기 저항",
+		[13]="물 저항",
+		[14]="대지 저항",
+		[15]="정신 저항",
+		[16]="육체 저항",
+		[17]="연금술 기술",
+		[18]="수리 기술",
+		[19]="함정 해제 기술",
+		[20]="아이템 감정 기술",
+		[21]="몬스터 감정 기술",
+		[22]="무기 전문가 기술",
+		[23]="회피 기술",
+		[24]="맨손 전투 기술",
 	}
 		
 end
@@ -4693,10 +4693,10 @@ function events.BuildItemInformationBox(t)
 					local pl=Party[Game.CurrentPlayer]
 					local s, m, level=getBuffSkill(4)
 					if m>=1 then
-						local name={"Fire","Flame","Inferno","Hell",[0]=""}
+						local name={"불꽃","화염","지옥불","지옥",[0]=""}
 						local damage=calcFireAuraDamage(pl, t.Item, 0, false, false, "tooltip")
 						if damage then
-							local txt=string.format(name[m] .. " Aura: adds " .. damage .. " Fire Damage to any attack\n\n")
+							local txt=string.format(name[m] .. " 오라: 모든 공격에 " .. damage .. " 화염 피해 추가\n\n")
 							t.Description=StrColor(255,255,153,txt) .. t.Description
 						end
 					end
