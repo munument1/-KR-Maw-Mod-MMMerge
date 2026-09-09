@@ -1,0 +1,71 @@
+source	translation	status	notes
+\n\nLight Magic quickens the Seraphim's strikes, increasing attack speed.\n\nIts radiance lightens the blade so much that even a two-handed sword can be wielded in one hand, freeing the off hand for a shield.\n	\n\n빛 마법은 세라핌의 공격을 가속하여 공격 속도를 높입니다.\n\n그 빛은 칼날을 매우 가볍게 만들어 양손검도 한 손으로 사용할 수 있게 하며, 다른 손에는 방패를 들 수 있습니다.\n	translated	세라핌 빛 마법 설명
+\n\nSeraph Spirit strengthens the Seraph's resolve, shrugging off light hits and softening heavy blows\n	\n\n세라프의 영혼은 세라프의 결의를 강화하여 가벼운 공격은 흘려내고 강한 공격의 피해를 줄입니다.\n	translated	세라프 영혼 설명
+\n\nSeraphim damage upon attack increases depending on Mind magic, scaling with might(weapon speed and weapon damage multiplier applies).\n\n	\n\n세라핌의 공격 시 피해는 정신 마법에 따라 증가하고 힘에 비례합니다(무기 속도와 무기 피해 배율이 적용됩니다).\n\n	translated	세라핌 정신 마법 설명
+\n\nSeraphim healing upon attack increases depending on Body magic, scaling with personality(weapon speed multiplier applies).\n\n	\n\n세라핌의 공격 시 회복량은 육체 마법에 따라 증가하고 인격에 비례합니다(무기 속도 배율이 적용됩니다).\n\n	translated	세라핌 육체 마법 설명
+ (applied after resistances)\n	 (저항 적용 후 계산)\n	translated	세라프 피해 감소 설명 조각
+Current damage from Mind: 	정신 마법으로 얻는 현재 피해: 	translated	세라핌 능력치 표시
+Current heal from Body: 	육체 마법으로 얻는 현재 회복량: 	translated	세라핌 능력치 표시
+Damage reduction: 	피해 감소: 	translated	세라프 능력치 표시
+\t            %s%s 		excluded	서식 전용 문자열; 번역 금지
+%6s		excluded	폭 지정 숫자 서식; 번역 금지
+M/R/S:%s/%s/%s\n\n\n\n\n\n\n	근/원/주:%s/%s/%s\n\n\n\n\n\n\n	translated	근접/원거리/주문 위력 요약; 자리표시자 보존
+M/R:%s/%s\n\n\n\n\n\n\n	근/원:%s/%s\n\n\n\n\n\n\n	translated	근접/원거리 위력 요약; 자리표시자 보존
+\n\nBalancing power and vitality leads to the highest damage.\n	\n\n위력과 활력을 균형 있게 높이면 가장 높은 피해를 낼 수 있습니다.\n	translated	반격 기술 설명
+\n\nPress M to enable/disable	\n\nM키로 활성화/비활성화	translated	기술 토글 안내
+\n\nTotal Damage: 	\n\n총 피해: 	translated	반격 기술 피해 표시
+\nCurrently disabled\n	\n현재 비활성화됨\n	translated	기술 상태 표시
+\nCurrently enabled\n	\n현재 활성화됨\n	translated	기술 상태 표시
+\nKnights can learn up to a Supreme level, which is learned automatically at skill level 	\n기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 	translated	기사 최상위 숙련 설명 조각
+\nVitality coefficient: 	\n활력 계수: 	translated	반격 기술 계수
+%s\n\nCurrent HP Regeneration: %s\nNext Level Bonus: %s HP Regen	%s\n\n현재 생명력 재생: %s\n다음 레벨 보너스: 생명력 재생 %s	translated	생명력 재생 기술 설명; 자리표시자 보존
+After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: 	엄호의 경지에 이르러, 동료를 공격하는 적에게 치명적인 반격을 가할 수 있게 되었습니다. 반격은 동료 엄호에 성공한 뒤 기술 포인트당 1% 확률로 발동합니다.\n\n전문가, 마스터, 그랜드마스터 단계는 기술 레벨 12, 30, 50에서 자동으로 습득합니다.\n\n피해량은 두 계수에 의해 결정되며, 이후 기술 레벨이 곱해집니다:\n\n근접 위력 계수: 	translated	반격 기술 본문
+Current Damage reduction per Mana: 	마나당 현재 피해 감소: 	translated	마나 방패 수치 표시
+Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n	마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.\n\n숙련도가 높을수록 마나 효율이 증가합니다.\n	translated	마나 방패 설명 6-12-20
+Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-32.\n\nMastery increase its mana efficience.\n	마나 방패는 공격을 받아 생명력이 일정 기준 아래로 내려가려 할 때 마나를 소모하여 피해를 줄입니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-32에서 습득합니다.\n\n숙련도가 높을수록 마나 효율이 증가합니다.\n	translated	마나 방패 설명 8-20-32
+\n\nSubsequent spawn failure reasons:\n		excluded	개발자 스폰 디버그 출력
+\nCouldn't spawn monster, spawnpoint data: 		excluded	개발자 스폰 디버그 출력
+BossDebug AUTO: OFF		excluded	개발자 보스 디버그 출력
+BossDebug AUTO: ON		excluded	개발자 보스 디버그 출력
+BossDebug: impossible d’écrire boss_dump.txt		excluded	개발자 보스 디버그 출력
+BossDebug: écrit dans boss_dump.txt		excluded	개발자 보스 디버그 출력
+MAW: ALL BUFFS NUKED (SAFE)		excluded	개발자 멀티플레이 디버그 출력
+MAW: apply (safe)		excluded	개발자 멀티플레이 디버그 출력
+SUPREME UNLOCKED!!!	최상위 숙련 해금!!!	translated	최상위 숙련 해금 메시지
+\n\nBolster Level in MM6: 	\n\nMM6 보정 레벨: 	translated	보정 레벨 UI
+\n\nCURRENT MAP HEALING RECOUNT:\nHealing Done in current Map:  	\n\n현재 맵 회복 집계:\n현재 맵 총 회복량:  	translated	현재 맵 회복 통계
+\n\nLevels gained in MM6: 	\n\nMM6에서 획득한 레벨: 	translated	대륙별 획득 레벨 UI
+\n\nTotal average damage reduction: 	\n\n평균 총 피해 감소: 	translated	방어 통계 UI
+\n\nTOTAL HEALING RECOUNT:\nTotal Healing Done:  	\n\n전체 회복 집계:\n총 회복량:  	translated	전체 회복 통계
+\n\nTotal Levels gained: 	\n\n총 획득 레벨: 	translated	전체 획득 레벨 UI
+\nBlock chance vs same level monsters: 	\n동레벨 몬스터 상대 막기 확률: 	translated	방어 통계 UI
+\nBolster Level in MM7: 	\nMM7 보정 레벨: 	translated	보정 레벨 UI
+\nBolster Level in MM8: 	\nMM8 보정 레벨: 	translated	보정 레벨 UI
+\nCurrent bonus Damage: 	\n현재 추가 피해: 	translated	전설 효과 UI
+\nCurrent Reduction: 	\n현재 피해 감소: 	translated	전설 효과 UI
+\nLeech Healing in current Map: 	\n현재 맵 흡혈 회복량: 	translated	현재 맵 회복 통계
+\nLevels gained in MM7: 	\nMM7에서 획득한 레벨: 	translated	대륙별 획득 레벨 UI
+\nLevels gained in MM8: 	\nMM8에서 획득한 레벨: 	translated	대륙별 획득 레벨 UI
+\nRegen Healing in current Map: 	\n현재 맵 재생 회복량: 	translated	현재 맵 회복 통계
+\nTotal Leech Healing: 	\n총 흡혈 회복량: 	translated	전체 회복 통계
+\nTotal Regen Healing: 	\n총 재생 회복량: 	translated	전체 회복 통계
+ Randomizer	 무작위화	translated	무작위화 UI 제목
+%s\n\nCURRENT MAP DAMAGE RECOUNT\nMelee Damage done in current map: %s	%s\n\n현재 맵 피해 집계\n현재 맵 근접 피해량: %s	translated	현재 맵 피해 통계; 자리표시자 보존
+%s\n\nHit chance vs same level monster: %s%s	%s\n\n동레벨 몬스터 상대 명중 확률: %s%s	translated	명중 통계; 자리표시자 보존
+%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s	%s\n\n인내력 생명력 보너스: %s\n보디빌딩 생명력 보너스: %s\n아이템 생명력 보너스: %s\n기본 생명력: %s\n\n초당 생명력 재생: %s	translated	생명력 상세 통계; 자리표시자 보존
+%s\n\nPhysical damage reduction: %s%s	%s\n\n물리 피해 감소: %s%s	translated	방어 통계; 자리표시자 보존
+%s\n\nSpell point regen per second: %s	%s\n\n초당 주문력 재생: %s	translated	주문력 재생 통계; 자리표시자 보존
+%s\n\nTOTAL DAMAGE RECOUNT\nTotal Damage done: %s	%s\n\n전체 피해 집계\n총 피해량: %s	translated	전체 피해 통계; 자리표시자 보존
+%s\nRanged Damage done in current map: %s	%s\n현재 맵 원거리 피해량: %s	translated	현재 맵 피해 통계; 자리표시자 보존
+%s\nTotal Ranged Damage done: %s	%s\n총 원거리 피해량: %s	translated	전체 피해 통계; 자리표시자 보존
+Debuffs:	디버프:	translated	몬스터 상태 UI
+Disabled	비활성화	translated	원소술사 로테이션 상태
+Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently 	원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.\nR키로 무작위 로테이션을 활성화/비활성화합니다.\n현재 	translated	원소술사 로테이션 설명
+Enabled	활성화	translated	원소술사 로테이션 상태
+If you seek to pursuit a new path and reset your skills, you have come to the right place.	새로운 길을 택해 기술을 초기화하려 한다면 제대로 찾아오셨습니다.	translated	기술 초기화 UI 안내
+Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect.	지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.\n주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다.	translated	지능 능력치 설명
+MAW		excluded	모드 고유명사; 번역하지 않음
+Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.	인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다.	translated	인격 능력치 설명
+Show players location	플레이어 위치 표시	translated	멀티플레이 지도 UI
+Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!	전사들이여, 투기장에 온 것을 환영합니다! 기억하던 모습과는 다를 수 있습니다. 각오를 다지고 기술을 연마해 눈앞의 도전에 대비하십시오. 힘과 전략, 의지를 증명할 준비를 하십시오. 전투가 기다립니다!	translated	MAW 투기장 안내
+You need to clear the area COMPLETELY first.	먼저 이 지역을 완전히 정리해야 합니다.	translated	현상금 사냥 진행 안내
