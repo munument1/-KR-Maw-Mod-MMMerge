@@ -91,7 +91,7 @@
   "individual_literal_refinements": 5,
   "internal_only_unique_sources": 1673,
   "internal_only_newly_excluded": 0,
-  "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
+  "internal_literal_policy": "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 2078,
   "proven_display_promotions": 464,
   "proven_display_variable_lines": 35,
