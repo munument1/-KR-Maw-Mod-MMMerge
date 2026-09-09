@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1198,
-    "translated": 880,
-    "untranslated": 947
+    "translated": 905,
+    "untranslated": 922
   },
   "categories": {
     "class": 37,
@@ -49,6 +49,7 @@
     "proven_item_local_description_flow": 4,
     "proven_item_notes": 1,
     "proven_itemtxt_alias_display": 22,
+    "proven_legendary_item_tooltip": 25,
     "proven_map_item_tooltip": 53,
     "proven_message_literal": 25,
     "proven_monster_info_label": 28,
@@ -65,7 +66,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 958
+    "uncertain_context": 933
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -88,8 +89,10 @@
   "proven_map_item_tooltip_promotions": 53,
   "proven_direct_ui_promotions": 113,
   "proven_monster_ui_promotions": 9,
-  "uncertain_review_unique_sources": 650,
-  "uncertain_review_occurrences": 889,
+  "proven_legendary_item_tooltip_lines": 25,
+  "proven_legendary_item_promotions": 25,
+  "uncertain_review_unique_sources": 625,
+  "uncertain_review_occurrences": 864,
   "uncertain_review_exact_mmmerge_matches": 18,
   "uncertain_review_ambiguous_mmmerge_matches": 8
 }

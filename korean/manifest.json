@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 880,
-  "translated_entries_with_patchable_occurrences": 878,
-  "patchable_occurrences_targeted": 1141,
+  "translated_entries": 905,
+  "translated_entries_with_patchable_occurrences": 903,
+  "patchable_occurrences_targeted": 1166,
   "skipped_unpatchable_occurrences_for_translated_sources": 94,
   "changed_files": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 148
+      "replacements": 173
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",

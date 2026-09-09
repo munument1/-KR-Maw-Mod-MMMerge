@@ -212,7 +212,7 @@ maw-9638f701de3f	untranslated	item	(%d+)		%d	Scripts/General/zzMaw-Items.lua	249
 maw-ac71687e6681	untranslated	item	7item192			Scripts/General/zzMaw-Spells.lua	3289	1	
 maw-2c40f0c45c24	untranslated	item	7item193			Scripts/General/zzMaw-Spells.lua	3290	1	
 maw-ef99c680a737	untranslated	item	^%u		%u	Scripts/General/zzMaw-Items.lua	1713	1	
-maw-25b6b3a71f27	untranslated	item	AC gained from armors is doubled			Scripts/General/zzMaw-Items.lua	1385	1	
+maw-25b6b3a71f27	translated	item	AC gained from armors is doubled	방어구에서 얻는 방어력이 두 배가 됩니다		Scripts/General/zzMaw-Items.lua	1385	1	전설 아이템 효과
 maw-12a3a4f498b2	translated	item	Accuracy	정확도		Data/Tables/Class Starting Stats.txt	10	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-cf1ac5aea579	translated	item	Adds 	추가 		Scripts/General/zzMaw-Items.lua	2019	14	아이템 추가 효과 접두어
 maw-ddd068101243	untranslated	item	Air			Scripts/General/zzMaw-Items.lua	4258	1	
@@ -234,7 +234,7 @@ maw-bef685960d0b	untranslated	item	Ascended Ruby			Scripts/General/zzMaw-Items.l
 maw-60347ffcca9c	untranslated	item	Ascended Sapphire			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-0828378541e3	untranslated	item	Ascended Topaz			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-249a5adae437	translated	item	Attack: +	공격: +		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
-maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger			Scripts/General/zzMaw-Items.lua	1376	1	
+maw-03619d622196	translated	item	Base enchants on this items are 50% stronger	이 아이템의 기본 마법부여 효과가 50% 강해집니다		Scripts/General/zzMaw-Items.lua	1376	1	전설 아이템 효과
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-bee8f9b9eeaf	translated	item	Body Magic Skill +	육체 마법 기술 +		Scripts/General/zzMaw-Items.lua	2033	1	아이템 마법부여 기술 보너스
 maw-2657e3448e5a	translated	item	Body Resistance	육체 저항		Data/Tables/Spells2.txt	71	3	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -249,8 +249,9 @@ maw-e7798b6dd88c	untranslated	item	book4			Scripts/General/zzMaw-Spells.lua	3289
 maw-3dcc9179f8c4	untranslated	item	book5			Scripts/General/zzMaw-Spells.lua	3290	1	
 maw-a17942232101	untranslated	item	Bow			Scripts/General/zzMaw-Items.lua	1996	1	
 maw-3ad465ce2b95	untranslated	item	Broken			Scripts/General/zzMaw-Item-Sorter.lua	91	7	
-maw-997cc0e16c99	untranslated	item	"Buffs reserve Hit Points instead of Mana and Hit Point coefficient is used instead.
-Enlightenment bonus still apply."			Scripts/General/zzMaw-Items.lua	1389	1	
+maw-997cc0e16c99	translated	item	"Buffs reserve Hit Points instead of Mana and Hit Point coefficient is used instead.
+Enlightenment bonus still apply."	"버프가 마나 대신 생명력을 점유하며 생명력 계수를 대신 사용합니다.
+깨달음 보너스는 계속 적용됩니다."		Scripts/General/zzMaw-Items.lua	1389	1	전설 아이템 효과
 maw-b3f2de61a46f	untranslated	item	BuildItemInformationBox			Scripts/Structs/extraEditableDescriptions.lua	165	1	
 maw-1d3419544e86	untranslated	item	CalcItemValue			Scripts/Structs/extraEditableDescriptions.lua	103	1	
 maw-81c77df4cdd0	untranslated	item	CalcStatBonusByItems			Scripts/Core/events.lua	1869	1	
@@ -261,7 +262,7 @@ maw-cfc370a20b05	untranslated	item	Charges			Scripts/General/zzMaw-Item-Sorter.l
 maw-7de90a65241a	untranslated	item	Common			Scripts/General/zzMaw-Items.lua	461	2	
 maw-2f4979324e03	untranslated	item	Condition			Scripts/General/zzMaw-Item-Sorter.lua	93	7	
 maw-f032f4de767e	translated	item	Crafting Item	제작 재료		Scripts/General/zzAlchemy.lua	1410	1	미감정 제작 아이템 이름
-maw-5cc5b9edc5f5	untranslated	item	Crit chance increased by 10% and crit chance over 100% increases total damage			Scripts/General/zzMaw-Items.lua	1368	1	
+maw-5cc5b9edc5f5	translated	item	Crit chance increased by 10% and crit chance over 100% increases total damage	치명타 확률이 10% 증가하며, 100%를 초과한 치명타 확률은 총 피해를 증가시킵니다		Scripts/General/zzMaw-Items.lua	1368	1	전설 아이템 효과
 maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	1	
 maw-6c3828d38527	translated	item	Damage: 	피해: 		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
 maw-71db089ac027	translated	item	Dark Magic Skill +	어둠 마법 기술 +		Scripts/General/zzMaw-Items.lua	2034	1	아이템 마법부여 기술 보너스
@@ -272,9 +273,9 @@ maw-154f885b3a41	translated	item	Dimension Map	차원 지도		Scripts/General/zz
 maw-76af4ec46125	translated	item	Disarm skill	함정 해제 기술		Scripts/General/zzMaw-Items.lua	1878	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4be181e4cac8	untranslated	item	disease			Scripts/General/zzMaw-Items.lua	1255	3	
 maw-ba1ff3be0f0c	translated	item	Disease and Curse Immunity	질병 및 저주 면역		Scripts/General/zzMaw-Items.lua	1275	1	특수 아이템 효과 설명
-maw-4312a8a1998a	untranslated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)			Scripts/General/zzMaw-Items.lua	1369	1	
+maw-4312a8a1998a	translated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)	신성한 보호 (사망하는 대신 생명력 25%로 회복, 5분마다 한 번)		Scripts/General/zzMaw-Items.lua	1369	1	전설 아이템 효과
 maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMaw-Items.lua	1882	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-40089dc04e07	untranslated	item	Each attack reduces monster resistances by 1			Scripts/General/zzMaw-Items.lua	1386	1	
+maw-40089dc04e07	translated	item	Each attack reduces monster resistances by 1	공격할 때마다 몬스터의 저항을 1 감소시킵니다		Scripts/General/zzMaw-Items.lua	1386	1	전설 아이템 효과
 maw-4d7b02dec590	translated	item	Earth Magic Skill +	대지 마법 기술 +		Scripts/General/zzMaw-Items.lua	2035	1	아이템 마법부여 기술 보너스
 maw-f3b8bd9acc81	translated	item	Earth Resistance	대지 저항		Data/Tables/Spells2.txt	38	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-ac75574810d6	translated	item	Endless Potion	무한 물약		Scripts/General/zzAlchemy.lua	1419	1	MAW 아이템명
@@ -304,11 +305,11 @@ maw-3a8bda48988f	translated	item	ID Item skill	아이템 감정 기술		Scripts/
 maw-73ef8997e9d8	translated	item	ID Monster skill	몬스터 감정 기술		Scripts/General/zzMaw-Items.lua	1880	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-dbdb8b7d61ff	untranslated	item	Identified			Scripts/General/zzMaw-Item-Sorter.lua	95	7	
 maw-9bf0f8ff5f5d	untranslated	item	identify			Scripts/General/zzMaw-Items.lua	4533	4	
-maw-eaa6a5241bcd	untranslated	item	Immunity to all status effects from monsters			Scripts/General/zzMaw-Items.lua	1367	1	
-maw-d377d83f7ddd	untranslated	item	Increase melee damage by 5% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1377	1	
-maw-569ea1cd4f01	untranslated	item	Increase Melee weapon skill by 10			Scripts/General/zzMaw-Items.lua	1390	1	
-maw-87498a8b590b	untranslated	item	Increase the effect of resistances base enchants by 50%			Scripts/General/zzMaw-Items.lua	1371	1	
-maw-2032e6152f7f	untranslated	item	Increases Ascension Skill level by 10			Scripts/General/zzMaw-Items.lua	1381	1	
+maw-eaa6a5241bcd	translated	item	Immunity to all status effects from monsters	몬스터가 유발하는 모든 상태 이상에 면역이 됩니다		Scripts/General/zzMaw-Items.lua	1367	1	전설 아이템 효과
+maw-d377d83f7ddd	translated	item	Increase melee damage by 5% for each enemy in the nearbies	주변의 적 하나마다 근접 피해가 5% 증가합니다		Scripts/General/zzMaw-Items.lua	1377	1	전설 아이템 효과
+maw-569ea1cd4f01	translated	item	Increase Melee weapon skill by 10	근접 무기 기술이 10 증가합니다		Scripts/General/zzMaw-Items.lua	1390	1	전설 아이템 효과
+maw-87498a8b590b	translated	item	Increase the effect of resistances base enchants by 50%	저항 기본 마법부여의 효과가 50% 증가합니다		Scripts/General/zzMaw-Items.lua	1371	1	전설 아이템 효과
+maw-2032e6152f7f	translated	item	Increases Ascension Skill level by 10	승천 기술 레벨이 10 증가합니다		Scripts/General/zzMaw-Items.lua	1381	1	전설 아이템 효과
 maw-d2147f191411	translated	item	"Increases item's roughness, making it more resistant to breaking.
 "	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
 "		Scripts/General/zzAlchemy.lua	484	1	물약 효과 툴팁
@@ -322,10 +323,10 @@ maw-c7857a25fa7f	untranslated	item	item280			Scripts/General/zzAlchemy.lua	1422	
 maw-ee2105329f31	untranslated	item	ItemAdditionalDamage			Scripts/Core/events.lua	2342	1	
 maw-51d750b72c62	untranslated	item	ItemGenerated			Scripts/Core/events.lua	2196	1	
 maw-44d25b5d1b6d	excluded	item	Items			Scripts/General/zzAlchemy.lua	1303	36	Internal engine/control literal only; not player-facing localization.
-maw-3e1561e2a89a	untranslated	item	Killing a Monster Restores 10% of Health and Mana			Scripts/General/zzMaw-Items.lua	1380	1	
-maw-e77589efb2dc	untranslated	item	Killing a monster with a single-target attack halves the recovery time			Scripts/General/zzMaw-Items.lua	1365	1	
-maw-a8b7dd52190d	untranslated	item	Leech also restores Mana, but its effect is halved			Scripts/General/zzMaw-Items.lua	1388	1	
-maw-9b1a119b3361	untranslated	item	Leech overhealing heals the most injured party member instead			Scripts/General/zzMaw-Items.lua	1384	1	
+maw-3e1561e2a89a	translated	item	Killing a Monster Restores 10% of Health and Mana	몬스터를 처치하면 생명력과 마나를 10% 회복합니다		Scripts/General/zzMaw-Items.lua	1380	1	전설 아이템 효과
+maw-e77589efb2dc	translated	item	Killing a monster with a single-target attack halves the recovery time	단일 대상 공격으로 몬스터를 처치하면 회복 시간이 절반으로 줄어듭니다		Scripts/General/zzMaw-Items.lua	1365	1	전설 아이템 효과
+maw-a8b7dd52190d	translated	item	Leech also restores Mana, but its effect is halved	흡수가 마나도 회복하지만 효과는 절반으로 감소합니다		Scripts/General/zzMaw-Items.lua	1388	1	전설 아이템 효과
+maw-9b1a119b3361	translated	item	Leech overhealing heals the most injured party member instead	흡수로 발생한 초과 회복량은 대신 가장 많이 다친 파티원을 회복합니다		Scripts/General/zzMaw-Items.lua	1384	1	전설 아이템 효과
 maw-b7e8916505bf	untranslated	item	Legendary			Scripts/General/zzMaw-Items.lua	461	2	
 maw-888b9e5fb8ac	translated	item	Legendary 	전설의 		Scripts/General/zzMaw-Items.lua	1739	1	아이템 등급 접두어
 maw-2f14d8a3258f	translated	item	Light Magic Skill +	빛 마법 기술 +		Scripts/General/zzMaw-Items.lua	2037	1	아이템 마법부여 기술 보너스
@@ -339,7 +340,7 @@ maw-054968202fd2	untranslated	item	MaxCharges			Scripts/General/zzMaw-Item-Sorte
 maw-25f6d1027234	translated	item	Meditation Skill +	명상 기술 +		Scripts/General/zzMaw-Items.lua	2042	1	아이템 마법부여 기술 보너스
 maw-e00694b1e25c	untranslated	item	Melee			Scripts/General/zzClasses.lua	273	14	
 maw-9da77c5e4939	translated	item	Might	힘		Data/Tables/Class Starting Stats.txt	2	4	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-af6bcff046a9	untranslated	item	Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy			Scripts/General/zzMaw-Items.lua	1366	1	
+maw-af6bcff046a9	translated	item	Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy	힘과 정확도 마법부여는 지력과 인격에 40%의 추가 보너스를 줍니다. 지력과 인격 마법부여는 힘과 정확도에 40%의 추가 보너스를 줍니다		Scripts/General/zzMaw-Items.lua	1366	1	전설 아이템 효과
 maw-59e63f7eaa79	untranslated	item	Mind			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-d7656b362ecd	translated	item	Mind Magic Skill +	정신 마법 기술 +		Scripts/General/zzMaw-Items.lua	2038	1	아이템 마법부여 기술 보너스
 maw-02ecc9e1eddf	translated	item	Mind Resistance	정신 저항		Data/Tables/Spells2.txt	60	3	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -352,8 +353,8 @@ maw-16526080ac01	translated	item	"Oracle's Orb is a mysterious and powerful arti
  Adds the following legendary power to an item:"	"오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.
 
 다음 전설 능력을 아이템에 부여합니다:"		Scripts/General/zzAlchemy.lua	1404	1	오라클의 오브 아이템 설명
-maw-1166118ad010	untranslated	item	Overhealing reduces recovery time equal to half overhealing amount			Scripts/General/zzMaw-Items.lua	1392	1	
-maw-f637a0178b30	untranslated	item	Overhealing refunds mana			Scripts/General/zzMaw-Items.lua	1391	1	
+maw-1166118ad010	translated	item	Overhealing reduces recovery time equal to half overhealing amount	초과 회복량의 절반만큼 회복 시간을 감소시킵니다		Scripts/General/zzMaw-Items.lua	1392	1	전설 아이템 효과
+maw-f637a0178b30	translated	item	Overhealing refunds mana	초과 회복 시 마나를 돌려받습니다		Scripts/General/zzMaw-Items.lua	1391	1	전설 아이템 효과
 maw-89ff31225c5f	untranslated	item	Owner			Scripts/General/zzMaw-Item-Sorter.lua	98	6	
 maw-67ef38a8a121	untranslated	item	paralysis			Scripts/General/zzMaw-Items.lua	1257	1	
 maw-f190f3f1357e	translated	item	Paralysis and fear Immunity	마비 및 공포 면역		Scripts/General/zzMaw-Items.lua	1277	1	특수 아이템 효과 설명
@@ -391,8 +392,8 @@ Add Green: Enchant Item"	"조합법:
 노랑 추가: 수중 호흡
 주황 추가: 마법 보호
 초록 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	518	1	물약 조합법
-maw-e936025d6e54	untranslated	item	Reduce all damage taken by 10%			Scripts/General/zzMaw-Items.lua	1374	1	
-maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1378	1	
+maw-e936025d6e54	translated	item	Reduce all damage taken by 10%	받는 모든 피해가 10% 감소합니다		Scripts/General/zzMaw-Items.lua	1374	1	전설 아이템 효과
+maw-0ef015404e5d	translated	item	Reduces damage by 3% for each enemy in the nearbies	주변의 적 하나마다 받는 피해가 3% 감소합니다		Scripts/General/zzMaw-Items.lua	1378	1	전설 아이템 효과
 maw-b6d59589a7b6	translated	item	Reduces Physical damage taken by 15%	받는 물리 피해 15% 감소		Scripts/General/zzMaw-Items.lua	1282	1	특수 아이템 효과 설명
 maw-21b8369fde47	untranslated	item	Refundable			Scripts/General/zzMaw-Item-Sorter.lua	99	7	
 maw-52d57e33f655	translated	item	Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +		Scripts/General/zzMaw-Items.lua	2061	1	아이템 마법부여 설명
@@ -413,7 +414,7 @@ maw-868eb07bb6ca	translated	item	Spirit Magic Skill +	영혼 마법 기술 +		Sc
 maw-678dd8a69cfc	untranslated	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	
 maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	1	
 maw-c1988ff4c89d	translated	item	Stone and premature ageing Immunity	석화 및 조기 노화 면역		Scripts/General/zzMaw-Items.lua	1280	1	특수 아이템 효과 설명
-maw-5c17772bd576	untranslated	item	Successfully covering an ally restores 3% of your HP			Scripts/General/zzMaw-Items.lua	1379	1	
+maw-5c17772bd576	translated	item	Successfully covering an ally restores 3% of your HP	아군 엄호에 성공하면 자신의 생명력을 3% 회복합니다		Scripts/General/zzMaw-Items.lua	1379	1	전설 아이템 효과
 maw-4caf562d9a79	untranslated	item	TemporaryBonus			Scripts/General/zzMaw-Item-Sorter.lua	101	7	
 maw-e326ae491ddf	translated	item	The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.	기억의 진주는 마법부여된 아이템에서 무작위 마법부여 하나를 지울 수 있는 힘을 지닌 신비한 아이템입니다.		Scripts/General/zzAlchemy.lua	1403	1	제작 아이템 설명
 maw-5218d84b844a	translated	item	"This Eye allows to add a Special enchant to any equipment that has already 2 base enchants
@@ -423,7 +424,7 @@ maw-4da24ed1b797	translated	item	"This Hourglass allows to add a second base enc
 (right-click on an item with a base enchant to use)"	"이 모래시계는 기본 마법부여 1개와 특수 마법부여가 있는 장비에 두 번째 기본 마법부여를 추가할 수 있게 합니다.
 (기본 마법부여가 있는 아이템을 우클릭하여 사용)"		Scripts/General/zzAlchemy.lua	1402	1	제작 아이템 설명
 maw-ec4424ca07ba	translated	item	This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.	이 아이템은 보호, 명상, 재생, 마법 보호, 챔피언, 팔라딘, 신성한 축복, 신성한 저항 물약의 사용 횟수를 늘릴 수 있게 합니다.		Scripts/General/zzAlchemy.lua	1421	1	제작 아이템 설명
-maw-a4adbda992bf	untranslated	item	Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher			Scripts/General/zzMaw-Items.lua	1387	1	
+maw-a4adbda992bf	translated	item	Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher	죽음/소멸 판정에 사용하는 생명력 임계값은 더 높은 경우 주문력에 마나 방패 효율을 곱한 값을 대신 사용합니다		Scripts/General/zzMaw-Items.lua	1387	1	전설 아이템 효과
 maw-c8dd9fd68894	untranslated	item	Total corrupted items: 			Scripts/General/zzMaw-Item-Sorter.lua	732	1	
 maw-409161bbc266	untranslated	item	totalBaseHP			Scripts/General/zzMaw-Items.lua	3576	1	
 maw-eee3c1d6ea51	untranslated	item	totalBBBonus			Scripts/General/zzMaw-Items.lua	3575	1	
@@ -462,10 +463,11 @@ Respawned monsters give less experience and loot, once True Nightmare is activat
 던전의 몬스터 대부분을 처치하기 전에 떠나면 몬스터가 다시 생성됩니다.
 던전을 클리어하면 추가 보상을 받습니다.
 다시 생성된 몬스터는 경험치와 전리품을 적게 주며, 진정한 악몽을 활성화하면 되돌릴 수 없습니다. 정말 진행하시겠습니까? (yes/no 입력)"		Scripts/General/zzMaw-Monsters.lua	2895	1	yes/no 입력 토큰 보존
-maw-2b32b1b45260	untranslated	item	"Your hits deal 2% of current monster HP as physical damage (1% for AoE, multi-hit spells and arrows).
-Damage is increased by weapon base attack speed or Ascensions for spells."			Scripts/General/zzMaw-Items.lua	1373	1	
-maw-2906e6541c50	untranslated	item	Your weapon enchants can deal critical damage			Scripts/General/zzMaw-Items.lua	1382	1	
-maw-f01fcc19ca95	untranslated	item	Your weapon enchants scale with the highest between might/int./pers.			Scripts/General/zzMaw-Items.lua	1375	1	
+maw-2b32b1b45260	translated	item	"Your hits deal 2% of current monster HP as physical damage (1% for AoE, multi-hit spells and arrows).
+Damage is increased by weapon base attack speed or Ascensions for spells."	"공격이 몬스터의 현재 생명력 2%만큼 물리 피해를 줍니다(광역 공격, 다단히트 주문, 화살은 1%).
+피해량은 무기의 기본 공격 속도에 따라 증가하며, 주문은 승천에 따라 증가합니다."		Scripts/General/zzMaw-Items.lua	1373	1	전설 아이템 효과
+maw-2906e6541c50	translated	item	Your weapon enchants can deal critical damage	무기 마법부여 효과가 치명타 피해를 줄 수 있습니다		Scripts/General/zzMaw-Items.lua	1382	1	전설 아이템 효과
+maw-f01fcc19ca95	translated	item	Your weapon enchants scale with the highest between might/int./pers.	무기 마법부여 효과는 힘/지력/인격 중 가장 높은 수치에 따라 증가합니다		Scripts/General/zzMaw-Items.lua	1375	1	전설 아이템 효과
 maw-d778d9e96111	untranslated	map	"""overrept"""			Scripts/Maps/out03.lua	5	1	
 maw-0a5429eced91	untranslated	map	"""skeltrans"""			Scripts/Maps/d19.lua	33	1	
 maw-0f673af81826	untranslated	map	%s: Maze data set: [%s] = %s. (MoveDirection: %s)		%s %s %s %s	Scripts/Maps/BrBase.lua	1041	1	
