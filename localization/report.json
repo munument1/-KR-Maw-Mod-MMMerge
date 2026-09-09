@@ -65,6 +65,7 @@
     "proven_stat_tooltip_text": 21,
     "question_call": 4,
     "reviewed_crafting_status_name": 20,
+    "reviewed_internal_api_literal": 253,
     "reviewed_item_corruption_message": 8,
     "reviewed_multiplayer_experience_ui": 1,
     "reviewed_multiplayer_house_ui": 3,
@@ -73,7 +74,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 856
+    "uncertain_context": 603
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -84,7 +85,7 @@
   "internal_only_unique_sources": 1183,
   "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
-  "uncertain_internal_refinements": 1825,
+  "uncertain_internal_refinements": 2078,
   "proven_display_promotions": 464,
   "proven_display_variable_lines": 35,
   "proven_item_enchant_description_lines": 50,
@@ -102,8 +103,8 @@
   "proven_item_enchantment_label_promotions": 31,
   "proven_settings_header_promotions": 2,
   "reviewed_bulk_display_promotions": 44,
-  "uncertain_review_unique_sources": 577,
-  "uncertain_review_occurrences": 800,
-  "uncertain_review_exact_mmmerge_matches": 16,
+  "uncertain_review_unique_sources": 377,
+  "uncertain_review_occurrences": 547,
+  "uncertain_review_exact_mmmerge_matches": 15,
   "uncertain_review_ambiguous_mmmerge_matches": 7
 }
