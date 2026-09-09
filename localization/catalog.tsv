@@ -1111,7 +1111,7 @@ maw-2e233791dd2c	untranslated	monster	AllowSummons			Scripts/General/AdaptiveMon
 maw-08c8b634dc95	untranslated	monster	Alvar			Scripts/General/zzMaw-Monsters.lua	1142	2	
 maw-e6a64f50a4cd	untranslated	monster	Ancient Troll Home			Scripts/General/zzMaw-Monsters.lua	1286	2	
 maw-1a4ba8221918	untranslated	monster	Arena			Scripts/General/zzMaw-Monsters.lua	659	2	
-maw-a379e9db38c5	untranslated	monster	Armor Halved			Scripts/General/zzMaw-Monsters.lua	2215	1	
+maw-a379e9db38c5	translated	monster	Armor Halved	방어력 절반		Scripts/General/zzMaw-Monsters.lua	2215	1	몬스터 정보창 디버프명
 maw-7516c87ad3d5	untranslated	monster	Avlee			Scripts/General/zzMaw-Monsters.lua	1426	2	
 maw-825ede9fb257	untranslated	monster	Balthazar Lair			Scripts/General/zzMaw-Monsters.lua	1229	2	
 maw-1e9729d737ed	untranslated	monster	Barbarian Fortress			Scripts/General/zzMaw-Monsters.lua	1232	2	
@@ -1135,7 +1135,7 @@ maw-1fecd76a5a8a	untranslated	monster	Basement of the Breach			Scripts/General/z
 maw-9ec9e0df93a0	untranslated	monster	baseMult			Scripts/General/zzMaw-Monsters.lua	4319	1	
 maw-15e39f242068	untranslated	monster	BeforeMapBolster			Scripts/General/AdaptiveMonstersStats.lua	822	1	
 maw-67964d6e546e	untranslated	monster	BeforeMonsterBolster			Scripts/General/AdaptiveMonstersStats.lua	537	2	
-maw-9ecca445cad6	untranslated	monster	Berserk			Data/Tables/Spells2.txt	64	2	
+maw-9ecca445cad6	translated	monster	Berserk	광분		Data/Tables/Spells2.txt	64	2	몬스터 정보창 상태명
 maw-ff047f321259	untranslated	monster	Blackshire			Scripts/General/zzMaw-Monsters.lua	1550	2	
 maw-c7a2c50c397c	untranslated	monster	BolsterOnLoadMap			Scripts/General/AdaptiveMonstersStats.lua	1068	1	
 maw-3485dc85007e	untranslated	monster	Bootleg Bay			Scripts/General/zzMaw-Monsters.lua	1568	2	
@@ -1171,12 +1171,12 @@ maw-c312449c8d61	untranslated	monster	Control Center			Scripts/General/zzMaw-Mon
 maw-d77cfa46681b	untranslated	monster	Corlagon's Estate			Scripts/General/zzMaw-Monsters.lua	1613	2	
 maw-de8e3bdabfd3	untranslated	monster	Couatl (winged snake)			Scripts/General/zzMaw-Monsters.lua	855	1	
 maw-0ea3594a0725	untranslated	monster	Creed			Scripts/General/AdaptiveMonstersStats.lua	131	1	
-maw-0b3d98d5a8a2	untranslated	monster	Curse			Scripts/General/zzMaw-Monsters.lua	3845	1	
+maw-0b3d98d5a8a2	translated	monster	Curse	저주		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
 maw-2aca5d3f2495	untranslated	monster	Cyclops Larder			Scripts/General/zzMaw-Monsters.lua	1199	2	
 maw-cb8c7a4794fe	untranslated	monster	Dagger Wound Island			Scripts/General/zzMaw-Monsters.lua	856	5	
-maw-66001892d367	untranslated	monster	Damage Halved			Scripts/General/zzMaw-Monsters.lua	2216	1	
+maw-66001892d367	translated	monster	Damage Halved	피해량 절반		Scripts/General/zzMaw-Monsters.lua	2216	1	몬스터 정보창 디버프명
 maw-0f7a36eca8db	untranslated	monster	Dark Dwarf Compound			Scripts/General/zzMaw-Monsters.lua	1280	2	
-maw-d8c7d877ba61	untranslated	monster	Death			Scripts/General/zzMaw-Monsters.lua	3849	1	
+maw-d8c7d877ba61	translated	monster	Death	죽음		Scripts/General/zzMaw-Monsters.lua	3849	1	몬스터 정보창 상태명
 maw-fcc09e951d0b	untranslated	monster	DemonFly			Scripts/General/zzzzMalekith-Randomizer.lua	111	1	
 maw-396179f86c5e	untranslated	monster	DemonQueen			Scripts/General/zzMaw-Monsters.lua	1094	4	
 maw-e41b6998dad0	untranslated	monster	Devil Outpost			Scripts/General/zzMaw-Monsters.lua	1733	2	
@@ -1184,9 +1184,9 @@ maw-63f9a5578133	untranslated	monster	Deyja			Scripts/General/zzMaw-Monsters.lua
 maw-7cd855e237ef	untranslated	monster	diffMult			Scripts/General/zzMaw-Monsters.lua	4345	1	
 maw-a3c4d7fc5d06	untranslated	monster	Dire Wolf Den			Scripts/General/zzMaw-Monsters.lua	1136	2	
 maw-8d392f56d616	untranslated	monster	directory			Scripts/General/zzMaw-Monsters.lua	2416	1	
-maw-c0bb11650c87	untranslated	monster	Disease 1			Scripts/General/zzMaw-Monsters.lua	3845	1	
-maw-2d8c4c11c859	untranslated	monster	Disease 2			Scripts/General/zzMaw-Monsters.lua	3845	1	
-maw-882da54dbee7	untranslated	monster	Disease 3			Scripts/General/zzMaw-Monsters.lua	3845	1	
+maw-c0bb11650c87	translated	monster	Disease 1	질병 1		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
+maw-2d8c4c11c859	translated	monster	Disease 2	질병 2		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
+maw-882da54dbee7	translated	monster	Disease 3	질병 3		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
 maw-0bddd8fc5799	untranslated	monster	DoDebug			Scripts/General/zzMaw-Monsters.lua	3468	1	
 maw-4b157a7fdd3e	untranslated	monster	Dragon Cave			Scripts/General/zzMaw-Monsters.lua	1208	2	
 maw-c4e593205df0	untranslated	monster	Dragon Hunter's Camp			Scripts/General/zzMaw-Monsters.lua	1205	2	
@@ -1197,7 +1197,7 @@ maw-3e9f329bcddf	untranslated	monster	Dragoons' Keep			Scripts/General/zzMaw-Mon
 maw-1758e871d8bc	untranslated	monster	Druid Circle			Scripts/General/zzMaw-Monsters.lua	1226	2	
 maw-bd902f508bc5	untranslated	monster	Eel Infested Waters			Scripts/General/zzMaw-Monsters.lua	1574	2	
 maw-1cf6937c2ef9	translated	monster	Emerald Island	에메랄드 섬		Scripts/General/zzMaw-Monsters.lua	1108	5	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-9441f6c1c8d6	untranslated	monster	Eradication			Scripts/General/zzMaw-Monsters.lua	3849	1	
+maw-9441f6c1c8d6	translated	monster	Eradication	소멸		Scripts/General/zzMaw-Monsters.lua	3849	1	몬스터 정보창 상태명
 maw-2ec744a3dc22	untranslated	monster	Erathia			Scripts/General/zzMaw-Monsters.lua	1399	2	
 maw-c7c88ab8c2a3	untranslated	monster	Error in attacker recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2498	1	
 maw-b66386e1567c	untranslated	monster	Error in monster under attack recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2539	1	
@@ -1206,7 +1206,7 @@ maw-ed4e425c7e15	untranslated	monster	"Errors in ""Bolster - monsters.txt"":
 maw-8027abd935a8	untranslated	monster	Escaton's Crystal			Scripts/General/zzMaw-Monsters.lua	1190	2	
 maw-85a50b424c9c	untranslated	monster	Escaton's Palace			Scripts/General/zzMaw-Monsters.lua	1262	2	
 maw-083ffaefb058	untranslated	monster	Evenmorn Island			Scripts/General/zzMaw-Monsters.lua	1411	2	
-maw-689e027c2657	untranslated	monster	Fear			Scripts/General/zzMaw-Monsters.lua	2211	2	
+maw-689e027c2657	translated	monster	Fear	공포		Scripts/General/zzMaw-Monsters.lua	2211	2	몬스터 정보창 상태명
 maw-b40351cc5c8b	untranslated	monster	Fort Riverstride			Scripts/General/zzMaw-Monsters.lua	1432	2	
 maw-e9bb5a307cc3	untranslated	monster	Free Haven			Scripts/General/zzMaw-Monsters.lua	1559	2	
 maw-7a4d080bcedd	untranslated	monster	Free Haven Sewer			Scripts/General/zzMaw-Monsters.lua	1676	2	
@@ -1244,7 +1244,7 @@ maw-997b9784da28	untranslated	monster	Mad Necromancer's Lab 			Scripts/General/z
 maw-df8b8908e8ea	untranslated	monster	Mad.			Scripts/General/zzMaw-Monsters.lua	3938	1	
 maw-e6791be7eed7	untranslated	monster	Magic			Scripts/General/AdaptiveMonstersStats.lua	134	1	
 maw-9c18e50806f2	untranslated	monster	MaxDamage			Scripts/General/AdaptiveMonstersStats.lua	718	2	
-maw-f30d43e8bf29	untranslated	monster	Melee Only			Scripts/General/zzMaw-Monsters.lua	2217	1	
+maw-f30d43e8bf29	translated	monster	Melee Only	근접 공격 전용		Scripts/General/zzMaw-Monsters.lua	2217	1	몬스터 정보창 디버프명
 maw-0da00826b6ca	untranslated	monster	Merchant House of Alvar			Scripts/General/zzMaw-Monsters.lua	1187	1	
 maw-9a6af7cd96b7	untranslated	monster	Mid			Scripts/General/zzMaw-Monsters.lua	1125	210	
 maw-c44daab7db61	untranslated	monster	Mire of the Damned			Scripts/General/zzMaw-Monsters.lua	1562	2	
@@ -1301,10 +1301,10 @@ maw-cfb5ec069087	untranslated	monster	Plane of Earth			Scripts/General/zzMaw-Mon
 maw-1c86a61e3fa1	untranslated	monster	Plane of Fire			Scripts/General/zzMaw-Monsters.lua	1169	2	
 maw-ee86bee7360e	untranslated	monster	Plane of Water			Scripts/General/zzMaw-Monsters.lua	1172	2	
 maw-7a6c25ca59d2	untranslated	monster	PlayerAC			Scripts/General/AdaptiveMonstersStats.lua	1030	3	
-maw-f8f6fcd4f4bb	untranslated	monster	Poison 1			Scripts/General/zzMaw-Monsters.lua	3847	1	
-maw-78aa243f86a4	untranslated	monster	Poison 2			Scripts/General/zzMaw-Monsters.lua	3847	1	
-maw-339b4bb4108c	untranslated	monster	Poison 3			Scripts/General/zzMaw-Monsters.lua	3847	1	
-maw-ab33c2f2d196	untranslated	monster	Premature ageing			Scripts/General/zzMaw-Monsters.lua	3848	1	
+maw-f8f6fcd4f4bb	translated	monster	Poison 1	독 1		Scripts/General/zzMaw-Monsters.lua	3847	1	몬스터 정보창 상태명
+maw-78aa243f86a4	translated	monster	Poison 2	독 2		Scripts/General/zzMaw-Monsters.lua	3847	1	몬스터 정보창 상태명
+maw-339b4bb4108c	translated	monster	Poison 3	독 3		Scripts/General/zzMaw-Monsters.lua	3847	1	몬스터 정보창 상태명
+maw-ab33c2f2d196	translated	monster	Premature ageing	조기 노화		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
 maw-248e3ee2bb8c	translated	monster	Priest of Baa	바의 사제		Scripts/General/zzMaw-Monsters.lua	3796	1	Game.PlaceMonTxt 몬스터 이름
 maw-f29e97cc2bc5	untranslated	monster	Prison of the Lord of Air			Scripts/General/zzMaw-Monsters.lua	1265	2	
 maw-967fa1099b18	untranslated	monster	Prison of the Lord of Earth			Scripts/General/zzMaw-Monsters.lua	1274	2	
@@ -1324,17 +1324,17 @@ maw-be757b803915	untranslated	monster	Shadow Guild			Scripts/General/zzMaw-Monst
 maw-33295c8b17dc	untranslated	monster	Shadow Guild Hideout			Scripts/General/zzMaw-Monsters.lua	1589	2	
 maw-0138e0add7d1	untranslated	monster	Shadowspire			Scripts/General/zzMaw-Monsters.lua	1154	2	
 maw-a49b68282b9d	untranslated	monster	Shoals			Scripts/General/zzMaw-Monsters.lua	1498	2	
-maw-805a54d9cf8e	untranslated	monster	Shrinking			Scripts/General/zzMaw-Monsters.lua	2214	1	
+maw-805a54d9cf8e	translated	monster	Shrinking	축소		Scripts/General/zzMaw-Monsters.lua	2214	1	몬스터 정보창 디버프명
 maw-69c1f10ba1c5	untranslated	monster	Silver Cove			Scripts/General/zzMaw-Monsters.lua	1565	2	
 maw-a8fa4b1eacb0	untranslated	monster	Silver Helm Outpost			Scripts/General/zzMaw-Monsters.lua	1601	2	
 maw-95295f4c4661	untranslated	monster	Silver Helm Stronghold			Scripts/General/zzMaw-Monsters.lua	1616	2	
-maw-3cac34e67446	untranslated	monster	Sleep			Scripts/General/zzMaw-Monsters.lua	3848	1	
-maw-33dcec9ce454	untranslated	monster	Slow			Scripts/General/zzMaw-Monsters.lua	2208	1	
+maw-3cac34e67446	translated	monster	Sleep	수면		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
+maw-33dcec9ce454	translated	monster	Slow	감속		Scripts/General/zzMaw-Monsters.lua	2208	1	몬스터 정보창 디버프명
 maw-7ae699d85e87	untranslated	monster	Small Sub Pen			Scripts/General/zzMaw-Monsters.lua	1259	2	
 maw-97a91aa1a14b	untranslated	monster	Smuggler's Cove			Scripts/General/zzMaw-Monsters.lua	1133	2	
 maw-78e36c2df317	untranslated	monster	Snergle's Caverns			Scripts/General/zzMaw-Monsters.lua	1595	2	
 maw-d4ce04df4d31	untranslated	monster	Snergle's Iron Mines			Scripts/General/zzMaw-Monsters.lua	1607	2	
-maw-029690b00bcd	untranslated	monster	Stone			Scripts/General/zzMaw-Monsters.lua	3848	1	
+maw-029690b00bcd	translated	monster	Stone	석화		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
 maw-5a8593eec62b	untranslated	monster	Stone City			Scripts/General/zzMaw-Monsters.lua	1396	2	
 maw-99a0efc6cfd8	untranslated	monster	Style			Scripts/General/AdaptiveMonstersStats.lua	133	1	
 maw-7ca74ff14f5e	untranslated	monster	Superior Temple of Baa			Scripts/General/zzMaw-Monsters.lua	1661	2	
@@ -1394,7 +1394,7 @@ maw-02d5aeecc649	untranslated	monster	Troll Tomb			Scripts/General/zzMaw-Monster
 maw-99b24a103b84	untranslated	monster	Tunnels to Eeofol			Scripts/General/zzMaw-Monsters.lua	1504	2	
 maw-2701a94c0eb5	untranslated	monster	Tutorial			Scripts/General/zzMaw-Monsters.lua	1181	1	
 maw-93b9e289e284	untranslated	monster	Types			Scripts/General/AdaptiveMonstersStats.lua	185	1	
-maw-9cee094cba21	untranslated	monster	Unconscious			Scripts/General/zzMaw-Monsters.lua	3848	1	
+maw-9cee094cba21	translated	monster	Unconscious	의식불명		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
 maw-6448d1095c7b	untranslated	monster	Undefined property, line: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	
 maw-c04888dcb0ae	untranslated	monster	Unicorn			Scripts/General/zzMaw-Monsters.lua	1033	1	
 maw-bc7819b34ff8	untranslated	monster	Unknown			Scripts/Global/Quest_SavingGoobers.lua	845	1	
@@ -1405,7 +1405,7 @@ maw-effaeeb9ae4f	untranslated	monster	War Camp			Scripts/General/zzMaw-Monsters.
 maw-f04e7d5237a8	untranslated	monster	Warlord's Fortress			Scripts/General/zzMaw-Monsters.lua	1628	2	
 maw-c666f539f0ef	untranslated	monster	Wasp Nest			Scripts/General/zzMaw-Monsters.lua	1193	2	
 maw-5eb36e59e961	untranslated	monster	Watchtower 6			Scripts/General/zzMaw-Monsters.lua	1462	2	
-maw-429a85e88299	untranslated	monster	Weakness			Scripts/General/zzMaw-Monsters.lua	3847	1	
+maw-429a85e88299	translated	monster	Weakness	약화		Scripts/General/zzMaw-Monsters.lua	3847	1	몬스터 정보창 상태명
 maw-d07225f927ff	untranslated	monster	White Cliff Cave			Scripts/General/zzMaw-Monsters.lua	1372	2	
 maw-d0e5979fda49	untranslated	monster	Will ' O Wisp			Scripts/General/zzMaw-Monsters.lua	1032	1	
 maw-81708e567e0a	untranslated	monster	William Setag's Tower			Scripts/General/zzMaw-Monsters.lua	1441	2	
@@ -2159,7 +2159,7 @@ maw-bcea47734e3b	translated	spell	"Increases spell damage and healing at the exp
 "	"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.
 "		Scripts/General/zzMAW-Skills.lua	1463	1	승천 기술 설명
 maw-df83636b672f	untranslated	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.			Scripts/General/zzMaw-Spells.lua	3416	1	
-maw-e0f25f1d61cb	untranslated	spell	Insanity			Scripts/General/zzMaw-Monsters.lua	3846	1	
+maw-e0f25f1d61cb	translated	spell	Insanity	광기		Scripts/General/zzMaw-Monsters.lua	3846	1	몬스터 정보창 상태명
 maw-a47e171274de	untranslated	spell	jge absolute 0x42735B			Scripts/General/SpellsTweaks.lua	115	1	
 maw-6b1f8ea0c3ce	translated	spell	Leech amount increased by 50%	흡수량 50% 증가		Scripts/General/zzClasses.lua	1431	1	주문 숙련 설명
 maw-790ca77669c6	translated	spell	Leeches 	생명력 흡수: 		Scripts/General/zzClasses.lua	1407	5	연결형 흡혈 설명
@@ -2186,7 +2186,7 @@ maw-3b8561455273	untranslated	spell	No active spell queue slot found			Scripts/G
 maw-445d14405c09	translated	spell	No additional effects	추가 효과 없음		Scripts/General/zzClasses.lua	1422	2	주문 숙련 설명
 maw-45e118d0563e	translated	spell	Normal	보통		Scripts/General/MenuExtraSettings.lua	238	5	게임 모드/난이도
 maw-16ca44702a9b	untranslated	spell	Novice			Scripts/General/zzMaw-Spells.lua	3424	1	
-maw-9794c2eef636	untranslated	spell	Paralysis			Scripts/General/zzMaw-Monsters.lua	3846	1	
+maw-9794c2eef636	translated	spell	Paralysis	마비		Scripts/General/zzMaw-Monsters.lua	3846	1	몬스터 정보창 상태명
 maw-e2112b8b0f17	untranslated	spell	PartyBuff			Scripts/General/zzMaw-Spells.lua	2381	16	
 maw-0ed60680e4c3	untranslated	spell	PartyDies			Scripts/General/zzMaw-Spells.lua	3584	1	
 maw-5ad5209a4774	untranslated	spell	PlayerCastSpell			Scripts/General/ExtraEvents.lua	857	2	
@@ -2215,7 +2215,7 @@ maw-ce0b1612aa71	untranslated	spell	single			Scripts/General/zzClasses.lua	1668	
 maw-24bb4ff96e56	untranslated	spell	SingleBuff			Scripts/General/zzMaw-Spells.lua	2393	7	
 maw-b4e3efeba10e	untranslated	spell	Sound			Scripts/General/zzMaw-Spells.lua	2381	28	
 maw-9e8fbda8d5ff	untranslated	spell	spell			Scripts/General/zzMaw-Items.lua	2258	7	
-maw-3a0ee1cb6e6b	untranslated	spell	Spell drain			Scripts/General/zzMaw-Monsters.lua	3846	1	
+maw-3a0ee1cb6e6b	translated	spell	Spell drain	주문력 흡수		Scripts/General/zzMaw-Monsters.lua	3846	1	몬스터 정보창 상태명
 maw-ab6dd36408dd	translated	spell	Spell hits up to 2 times	최대 2회 적중합니다		Scripts/General/zzClasses.lua	2144	2	주문 숙련 설명
 maw-8440e3cb3c6d	translated	spell	Spell hits up to 3 times	최대 3회 적중합니다		Scripts/General/zzClasses.lua	2145	2	주문 숙련 설명
 maw-a742d05a19a5	translated	spell	Spell hits up to 4 times	최대 4회 적중합니다		Scripts/General/zzClasses.lua	2146	2	주문 숙련 설명
@@ -2534,7 +2534,7 @@ maw-8cfbb47fd91d	excluded	table	chain mail			Data/Tables/ObjList.txt	325	1	Audit
 maw-1cf060ac49fa	excluded	table	Chainmail			Data/Tables/ObjList.txt	23	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-7881bf71d2de	excluded	table	Champion			Data/Tables/Class Extra.txt	21	4	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-544f8d312885	excluded	table	Champion's potion			Data/Tables/Potion settings.txt	32	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-e124e7077d3d	untranslated	table	Charm			Data/Tables/ObjList.txt	491	5	
+maw-e124e7077d3d	translated	table	Charm	매혹		Data/Tables/ObjList.txt	491	5	몬스터 정보창 디버프명
 maw-5ff1f3630541	excluded	table	Citrine			Data/Tables/ObjList.txt	146	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-41ff354b2b33	excluded	table	Class			Data/Tables/Extra Skillz.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-37bbfff9164a	excluded	table	Cleric			Data/Tables/Class Extra.txt	6	6	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -2758,7 +2758,7 @@ maw-f3bdde9111f4	excluded	table	Enchanted Leather			Data/Tables/Complex item pic
 maw-3b84c02c3fb7	excluded	table	EnchantedArrow			Data/Tables/ObjList.txt	583	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-361437c794c1	excluded	table	Energy Potion			Data/Tables/Potion settings.txt	6	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-e78d80be0f89	excluded	table	EnergyX			Data/Tables/ObjList.txt	564	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-d036bbf58238	untranslated	table	Enslave			Data/Tables/ObjList.txt	499	3	
+maw-d036bbf58238	translated	table	Enslave	노예화		Data/Tables/ObjList.txt	499	3	몬스터 정보창 디버프명
 maw-3166684b3cec	excluded	table	Erudine Chainmail			Data/Tables/Complex item pictures.txt	12	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-49b20f3713ee	excluded	table	Erudine-laced ore			Data/Tables/ObjList.txt	137	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-479296f98f66	excluded	table	Essence of Accuracy			Data/Tables/Potion settings.txt	58	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3111,7 +3111,7 @@ maw-1ac85b7c33b9	excluded	table	Paladin			Data/Tables/Class Extra.txt	28	6	Audit
 maw-a6bee811ad8a	excluded	table	Paladin Boots			Data/Tables/Complex item pictures.txt	131	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-feaee69debdb	excluded	table	Paladin's Potion			Data/Tables/Potion settings.txt	33	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-1c023edf160e	excluded	table	Paperdoll type			Data/Tables/Character portraits.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-a23514dd7679	untranslated	table	Paralyze			Data/Tables/ObjList.txt	509	3	
+maw-a23514dd7679	translated	table	Paralyze	마비		Data/Tables/ObjList.txt	509	3	몬스터 정보창 디버프명
 maw-9512a8c7e258	excluded	table	ParticleA			Data/Tables/ObjList.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-1b3866d397d3	excluded	table	ParticleB			Data/Tables/ObjList.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-ca7315cafa80	excluded	table	ParticleG			Data/Tables/ObjList.txt	1	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.

@@ -28,8 +28,16 @@ Enroth	엔로스	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at l
 Goblin King	고블린 왕	exact	safe_candidate	map	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Jadame	제이덤	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Empty Barrel	빈 통	exact	safe_candidate	misc	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Armor Halved	방어력 절반	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Cleric of Baa	바의 성직자	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Damage Halved	피해량 절반	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Death	죽음	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Eradication	소멸	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Fear	공포	exact	safe_candidate	monster	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Melee Only	근접 공격 전용	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Priest of Baa	바의 사제	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Slow	감속	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Stone	돌	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Air Magic	공기 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Body Magic	육체 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dark Magic	어둠 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -42,7 +50,10 @@ N/A	N/A	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least on
 Normal	노멀	exact	safe_candidate	spell	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Quick Spell	퀵스펠	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Charm	매혹	exact	safe_candidate	table	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dodging	회피	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Enslave	노예화	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Paralyze	마비	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.	exact	safe_candidate	tooltip	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.	exact	safe_candidate	tooltip	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.	exact	safe_candidate	tooltip	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -60,10 +71,10 @@ Enter	들어가기 || 입력 || 입장	ambiguous	ambiguous	map	3	0	3	Same msgid 
 Experience	경험 || 경험치	ambiguous	ambiguous	map	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Gold	금 || 금화	ambiguous	ambiguous	map	13	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Telelocator	순간이동 장치 || 텔레로케이터	ambiguous	ambiguous	misc	1	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Berserk	광분 || 광폭화	ambiguous	ambiguous	monster	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Berserk	광분 || 광폭화	ambiguous	ambiguous	monster	2	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Blackshire	블랙샤이어 || 블랙셔	ambiguous	ambiguous	monster	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 New Sorpigal	뉴 소르피갈 || 뉴 소피갈	ambiguous	ambiguous	monster	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Unconscious	기절 || 의식불명	ambiguous	ambiguous	monster	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Unconscious	기절 || 의식불명	ambiguous	ambiguous	monster	1	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Skills	기술 || 스킬	ambiguous	ambiguous	skill	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 You don't meet the requirements, and cannot be taught until you do.	요건을 충족하지 못했습니다. 충족하기 전에는 배울 수 없습니다. || 요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다. || 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	ambiguous	ambiguous	skill	1	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	ambiguous	spell	7	7	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
@@ -131,7 +142,6 @@ Agar's Laboratory	에이거의 연구소	exact	no_patchable_occurrence	monster	2
 Alvar	알바르	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Ancient Troll Home	고대 트롤의 거처	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Arena	투기장	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Armor Halved	방어력 절반	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Avlee	아블리	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Balthazar Lair	발타자르 소굴	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Barbarian Fortress	야만인 요새	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -174,9 +184,7 @@ Control Center	제어 센터	exact	no_patchable_occurrence	monster	2	0	1	Exact P
 Corlagon's Estate	코라곤의 영지	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Cyclops Larder	사이클롭스 식량창고	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Dagger Wound Island	대거 운드 섬	exact	no_patchable_occurrence	monster	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Damage Halved	피해량 절반	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Dark Dwarf Compound	다크 드워프 거주지	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Death	죽음	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Devil Outpost	데빌 전초기지	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Deyja	데이자	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Dire Wolf Den	다이어 울프 소굴	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -189,12 +197,10 @@ Dragoons' Keep	드라군 성채	exact	no_patchable_occurrence	monster	2	0	1	Exac
 Druid Circle	드루이드 서클	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Eel Infested Waters	뱀장어가 들끓는 바다	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Emerald Island	에메랄드 섬	exact	no_patchable_occurrence	monster	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Eradication	소멸	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Erathia	에라시아	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Escaton's Crystal	에스카톤의 수정	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Escaton's Palace	에스카톤의 궁전	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Evenmorn Island	이븐모른 섬	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Fear	공포	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Fort Riverstride	리버스트라이드 요새	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Free Haven	프리 헤이븐	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Free Haven Sewer	프리 헤이븐 하수도	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -218,7 +224,6 @@ Level	레벨	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, 
 Lord Markham's Manor	마크햄 경의 저택	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Mad Necromancer's Lab 	미친 강령술사의 연구소 	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Magic	마법	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Melee Only	근접 공격 전용	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Merchant House of Alvar	알바르 상인회관	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Mire of the Damned	저주받은 자들의 수렁	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Misty Islands	안개 섬	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -257,12 +262,10 @@ Shoals	여울	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists,
 Silver Cove	실버 코브	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Silver Helm Outpost	실버 헬름 전초기지	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Silver Helm Stronghold	실버 헬름 요새	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Slow	감속	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Small Sub Pen	소형 잠수함 격납고	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Smuggler's Cove	밀수꾼의 만	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Snergle's Caverns	스너글의 동굴	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Snergle's Iron Mines	스너글의 철광산	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Stone	돌	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Stone City	스톤 시티	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Superior Temple of Baa	바의 상급 신전	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Supreme Temple of Baa	바의 최고 신전	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -389,7 +392,6 @@ Catalyst	촉매	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists,
 Chain	사슬 갑옷	exact	no_patchable_occurrence	table	6	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Chain Mail	사슬 갑옷	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Chainmail	사슬 갑옷	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Charm	매혹	exact	no_patchable_occurrence	table	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Citrine	황수정	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Class	직업	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Cloak	망토	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -461,7 +463,6 @@ Emerald	에메랄드	exact	no_patchable_occurrence	table	6	0	1	Exact PO match ex
 Enchant Item	아이템 마법 부여	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Enchanted Amulet	마법의 부적	exact	no_patchable_occurrence	table	9	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Enchanted Leather	마법의 가죽 갑옷	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Enslave	노예화	exact	no_patchable_occurrence	table	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Erudine Chainmail	에루딘 사슬 갑옷	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Erudine-laced ore	에루딘 함유 광석	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Essence of Accuracy	정확도의 정수	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -599,7 +600,6 @@ Orange Potion	주황색 물약	exact	no_patchable_occurrence	table	2	0	1	Exact P
 Pain Reflection	고통 반사	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Paladin	성기사	exact	no_patchable_occurrence	table	6	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Paladin Boots	성기사 장화	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Paralyze	마비	exact	no_patchable_occurrence	table	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Patriarch	족장	exact	no_patchable_occurrence	table	4	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Peasant	농민	exact	no_patchable_occurrence	table	6	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Peasant Hat	농민의 모자	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

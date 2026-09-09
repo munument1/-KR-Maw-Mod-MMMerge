@@ -1,10 +1,10 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 689,
-  "translated_entries_with_patchable_occurrences": 687,
-  "patchable_occurrences_targeted": 920,
-  "skipped_unpatchable_occurrences_for_translated_sources": 79,
+  "translated_entries": 716,
+  "translated_entries_with_patchable_occurrences": 714,
+  "patchable_occurrences_targeted": 948,
+  "skipped_unpatchable_occurrences_for_translated_sources": 88,
   "changed_files": [
     {
       "file": "Scripts/General/BountyHunt.lua",
@@ -44,7 +44,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 33
+      "replacements": 61
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",

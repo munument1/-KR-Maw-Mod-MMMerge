@@ -2200,16 +2200,16 @@ function events.BuildMonsterInformationBox(t)
 		
 		-- Display active debuffs
 		local debuffNames = {
-			[const.MonsterBuff.Slow] = "Slow",
-			[const.MonsterBuff.Charm] = "Charm",
-			[const.MonsterBuff.Berserk] = "Berserk",
-			[const.MonsterBuff.Fear] = "Fear",
-			[const.MonsterBuff.Enslave] = "Enslave",
-			[const.MonsterBuff.Paralyze] = "Paralyze",
-			[const.MonsterBuff.ShrinkingRay] = "Shrinking",
-			[const.MonsterBuff.ArmorHalved] = "Armor Halved",
-			[const.MonsterBuff.DamageHalved] = "Damage Halved",
-			[const.MonsterBuff.MeleeOnly] = "Melee Only",
+			[const.MonsterBuff.Slow] = "감속",
+			[const.MonsterBuff.Charm] = "매혹",
+			[const.MonsterBuff.Berserk] = "광분",
+			[const.MonsterBuff.Fear] = "공포",
+			[const.MonsterBuff.Enslave] = "노예화",
+			[const.MonsterBuff.Paralyze] = "마비",
+			[const.MonsterBuff.ShrinkingRay] = "축소",
+			[const.MonsterBuff.ArmorHalved] = "방어력 절반",
+			[const.MonsterBuff.DamageHalved] = "피해량 절반",
+			[const.MonsterBuff.MeleeOnly] = "근접 공격 전용",
 		}
 		local activeDebuffs = ""
 		for buffId, buffName in pairs(debuffNames) do
@@ -3837,11 +3837,11 @@ end
 
 
 effectNames={
-	[9] = "Disease 1", [10] = "Disease 2", [11] = "Disease 3", [1] = "Curse",
-	[5] = "Insanity", [22] = "Spell drain", [12] = "Paralysis", [23] = "Fear",
-	[6] = "Poison 1", [7] = "Poison 2", [8] = "Poison 3", [2] = "Weakness",
-	[3] = "Sleep", [13] = "Unconscious",[15] = "Stone", [21] = "Premature ageing",
-	[14] = "Death", [16] = "Eradication",
+	[9] = "질병 1", [10] = "질병 2", [11] = "질병 3", [1] = "저주",
+	[5] = "광기", [22] = "주문력 흡수", [12] = "마비", [23] = "공포",
+	[6] = "독 1", [7] = "독 2", [8] = "독 3", [2] = "약화",
+	[3] = "수면", [13] = "의식불명",[15] = "석화", [21] = "조기 노화",
+	[14] = "죽음", [16] = "소멸",
 }
 
 
