@@ -155,8 +155,6 @@ def discover_item_enchant_description_lines(root: Path) -> set[tuple[str, int]]:
                 break
             continue
 
-        # The 4.5 table contains only flat indexed entries. Stop at its closing
-        # brace, before ``return bonus2txt[bonus2]``.
         if stripped == "}":
             break
         if lua_string_values(line):
@@ -187,9 +185,6 @@ def promote(
     if source not in literals:
         return False
 
-    # All quoted fragments on the RHS of known player-visible text tables are
-    # display text. Decoding literals first also handles sources containing
-    # escaped newlines/tabs such as "Damage\\n\\n..." correctly.
     if re.search(
         r"Game\.(?:GlobalTxt|PlaceMonTxt|NPCText|ClassNames)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=",
         context,
@@ -201,6 +196,11 @@ def promote(
         context,
     ):
         return mark(row, "proven_game_display_assignment")
+
+    # Special-enchant BonusStat is the item description text used by the
+    # information box when MAW's custom checktext() does not override it.
+    if re.search(r"Game\.SpcItemsTxt\s*\[[^\]]+\]\.BonusStat\s*=", context):
+        return mark(row, "proven_special_item_bonus_description")
 
     if re.search(r"Game\.NPC\s*\[[^\]]+\]\.Name\s*=", context):
         return mark(row, "proven_npc_display_name")
