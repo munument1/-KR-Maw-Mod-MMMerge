@@ -10,6 +10,7 @@ on:
       - 'Data/Tables/**'
       - 'tools/extract_maw_strings.py'
       - 'tools/classify_structural_tables.py'
+      - 'tools/classify_lua_comment_literals.py'
       - 'tools/classify_internal_literals.py'
       - 'tools/refine_uncertain_internal.py'
       - 'tools/promote_display_literals.py'
@@ -59,6 +60,9 @@ jobs:
 
       - name: Classify audited structural tables
         run: python tools/classify_structural_tables.py --root .
+
+      - name: Classify Lua block-comment literals
+        run: python tools/classify_lua_comment_literals.py --root .
 
       - name: Refine individual string patchability
         run: python tools/refine_patchability.py --root .
