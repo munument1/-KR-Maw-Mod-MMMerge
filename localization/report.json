@@ -7,9 +7,9 @@
   "patchable_unique_sources": 308,
   "unpatchable_occurrences": 5805,
   "status": {
-    "excluded": 11,
+    "excluded": 1151,
     "translated": 299,
-    "untranslated": 2715
+    "untranslated": 1575
   },
   "categories": {
     "class": 37,
@@ -37,9 +37,14 @@
     "question_call": 4,
     "settings_display_table": 13,
     "status_text_call": 213,
-    "table_schema_not_reviewed": 1963,
+    "table_schema_not_reviewed": 69,
+    "table_schema_structural": 1894,
     "uncertain_context": 3517
   },
   "validation_errors": [],
+  "structural_table_unique_sources": 1140,
+  "structural_table_occurrences": 1894,
+  "structural_table_newly_excluded": 1140,
+  "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
   "individual_literal_refinements": 5
 }
