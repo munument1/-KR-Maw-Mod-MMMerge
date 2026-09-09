@@ -89,7 +89,7 @@ jobs:
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
-          git config user.email '4189822+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add localization/catalog.tsv localization/occurrences.tsv localization/report.json localization/patchable_candidates.tsv localization/uncertain_candidates.tsv localization/mmmerge_matches.tsv localization/mmmerge_match_report.json korean/
           if git diff --cached --quiet; then
             echo 'Generated localization data already up to date.'
