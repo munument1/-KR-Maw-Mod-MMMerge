@@ -14,6 +14,7 @@ on:
       - 'tools/refine_uncertain_internal.py'
       - 'tools/promote_display_literals.py'
       - 'tools/promote_alchemy_tooltips.py'
+      - 'tools/promote_monster_tooltips.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -66,6 +67,9 @@ jobs:
       - name: Promote alchemy item tooltips
         run: python tools/promote_alchemy_tooltips.py --root .
 
+      - name: Promote monster information labels
+        run: python tools/promote_monster_tooltips.py --root .
+
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
 
@@ -85,7 +89,7 @@ jobs:
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.email '4189822+github-actions[bot]@users.noreply.github.com'
           git add localization/catalog.tsv localization/occurrences.tsv localization/report.json localization/patchable_candidates.tsv localization/uncertain_candidates.tsv localization/mmmerge_matches.tsv localization/mmmerge_match_report.json korean/
           if git diff --cached --quiet; then
             echo 'Generated localization data already up to date.'
