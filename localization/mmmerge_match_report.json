@@ -8,5 +8,15 @@
   "matched_sources": 781,
   "exact_single_translation": 721,
   "ambiguous_multiple_translations": 60,
-  "policy": "suggestions_only"
+  "safe_exact_patchable_sources": 27,
+  "safe_exact_patchable_occurrences": 32,
+  "safe_exact_by_category": {
+    "item": 21,
+    "map": 3,
+    "misc": 1,
+    "monster": 1,
+    "spell": 1
+  },
+  "placeholder_mismatch_rejected": 0,
+  "policy": "suggestions_only_safe_intersection"
 }
