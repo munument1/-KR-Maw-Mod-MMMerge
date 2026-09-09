@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Merge the base MAW Korean translation TSV with reviewable batch files."""
+"""Merge the base MAW Korean translation TSV with reviewable batch files.
+
+Normal batch files are append-only review records and conflicting decisions are
+rejected. ``localization/overrides.tsv`` is the explicit QA correction layer:
+it is applied last and may replace an earlier decision for the same source while
+preserving the original batch history.
+"""
 
 from __future__ import annotations
 
@@ -22,6 +28,7 @@ def main() -> int:
     ap.add_argument("--root", type=Path, default=Path("."))
     ap.add_argument("--base", type=Path, default=Path("localization/translations.tsv"))
     ap.add_argument("--batches", type=Path, default=Path("localization/batches"))
+    ap.add_argument("--overrides", type=Path, default=Path("localization/overrides.tsv"))
     ap.add_argument("--output", type=Path, default=Path("localization/all_translations.tsv"))
     args = ap.parse_args()
 
@@ -45,12 +52,27 @@ def main() -> int:
                     raise SystemExit(
                         f"Conflicting translation for {source!r}: {origin[source]} vs {path.relative_to(root)}"
                     )
-                # Keep the newer note when the translation decision is identical.
                 if normalized.get("notes"):
                     old["notes"] = normalized["notes"]
                 continue
             merged[source] = normalized
             origin[source] = str(path.relative_to(root))
+
+    override_path = root / args.overrides
+    override_count = 0
+    if override_path.exists():
+        for row in read_tsv(override_path):
+            source = row.get("source", "")
+            if not source:
+                continue
+            normalized = {field: row.get(field, "") for field in FIELDS}
+            if source not in merged:
+                raise SystemExit(f"Override source not found in base/batches: {source!r}")
+            if not normalized.get("status"):
+                raise SystemExit(f"Override is missing status: {source!r}")
+            merged[source] = normalized
+            origin[source] = str(override_path.relative_to(root))
+            override_count += 1
 
     out = root / args.output
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -60,7 +82,11 @@ def main() -> int:
         for source in sorted(merged, key=str.casefold):
             w.writerow(merged[source])
 
-    print(f"Merged {len(merged)} translation decisions from {len(inputs)} file(s) into {out.relative_to(root)}")
+    total_inputs = len(inputs) + int(override_path.exists())
+    print(
+        f"Merged {len(merged)} translation decisions from {total_inputs} file(s) "
+        f"into {out.relative_to(root)}; overrides applied: {override_count}"
+    )
     return 0
 
 
