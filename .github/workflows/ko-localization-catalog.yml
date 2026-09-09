@@ -36,6 +36,7 @@ on:
       - 'tools/import_mmmerge_memory.py'
       - 'tools/build_ko_overlay.py'
       - 'tools/apply_korean_runtime_fixes.py'
+      - 'tools/apply_runtime_residual_fixes.py'
       - 'tools/scan_runtime_english.py'
       - 'tools/merge_translation_batches.py'
       - 'localization/**'
@@ -150,8 +151,11 @@ jobs:
       - name: Apply Korean runtime display fixes
         run: python tools/apply_korean_runtime_fixes.py --root . --check
 
+      - name: Apply runtime residual fixes
+        run: python tools/apply_runtime_residual_fixes.py --root . --check
+
       - name: Scan effective runtime English
-        run: python tools/scan_runtime_english.py --root .
+        run: python tools/scan_runtime_english.py --root . --check
 
       - name: Check authored-file whitespace
         run: git diff --check -- . ':!localization/*.tsv' ':!korean/**'
