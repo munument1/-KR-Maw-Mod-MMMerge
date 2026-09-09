@@ -1,0 +1,123 @@
+id	potion_name	potion_description	potion_effect	potnotes_name	potnotes_description	potnotes_effect	display_fields_match
+200	Widowsweep Berries	Reagent	+ Bottle = Red Potion +1	Widowsweep Berries	Reagent	+ Bottle = Red Potion +1	yes
+201	Crushed Rose Petals	Reagent	+ Bottle = Red Potion +5	Crushed Rose Petals	Reagent	+ Bottle = Red Potion +5	yes
+202	Vial of Troll Blood	Reagent	+ Bottle = Red Potion +10	Vial of Troll Blood	Reagent	+ Bottle = Red Potion +10	yes
+203	Ruby	Reagent	+ Bottle = Red Potion +20	Ruby	Reagent	+ Bottle = Red Potion +20	yes
+204	Dragon's Eye	Reagent	+ Bottle = Red Potion +50	Dragon's Eye	Reagent	+ Bottle = Red Potion +50	yes
+205	Phirna Root	Reagent	+ Bottle = Blue Potion +1	Phirna Root	Reagent	+ Bottle = Blue Potion +1	yes
+206	Meteorite Fragment	Reagent	+ Bottle = Blue Potion +5	Meteorite Fragment	Reagent	+ Bottle = Blue Potion +5	yes
+207	Harpy Feather	Reagent	+ Bottle = Blue Potion +10	Harpy Feather	Reagent	+ Bottle = Blue Potion +10	yes
+208	Moonstone	Reagent	+ Bottle = Blue Potion +20	Moonstone	Reagent	+ Bottle = Blue Potion +20	yes
+209	Elvish Toadstool	Reagent	+ Bottle = Blue Potion +50	Elvish Toadstool	Reagent	+ Bottle = Blue Potion +50	yes
+210	Poppysnaps	Reagent	+ Bottle = Yellow Potion +1	Poppysnaps	Reagent	+ Bottle = Yellow Potion +1	yes
+211	Fae Dust	Reagent	+ Bottle = Yellow Potion +5	Fae Dust	Reagent	+ Bottle = Yellow Potion +5	yes
+212	Sulfur	Reagent	+ Bottle = Yellow Potion +10	Sulfur	Reagent	+ Bottle = Yellow Potion +10	yes
+213	Garnet	Reagent	+ Bottle = Yellow Potion +20	Garnet	Reagent	+ Bottle = Yellow Potion +20	yes
+214	Vial of Devil Ichor	Reagent	+ Bottle = Yellow Potion +50	Vial of Devil Ichor	Reagent	+ Bottle = Yellow Potion +50	yes
+215	Mushroom	Reagent	+ Bottle = Gray Potion +1	Mushroom	Reagent	+ Bottle = Gray Potion +1	yes
+216	Obsidian	Reagent	+ Bottle = Gray Potion +5	Obsidian	Reagent	+ Bottle = Gray Potion +5	yes
+217	Vial of Ooze Endoplasm	Reagent	+ Bottle = Gray Potion +10	Vial of Ooze Endoplasm	Reagent	+ Bottle = Gray Potion +10	yes
+218	Mercury	Reagent	+ Bottle = Gray Potion +20	Mercury	Reagent	+ Bottle = Gray Potion +20	yes
+219	Philosopher's Stone	Reagent	+ Bottle = Gray Potion +75	Philosopher's Stone	Reagent	+ Bottle = Gray Potion +75	yes
+220	Potion Bottle	Empty Bottle	None	Potion Bottle	Empty Bottle	None	yes
+221	Catalyst	Gray Potion	Boost Potion	Catalyst	Gray Potion	Boost Potion	yes
+222	Cure Wounds	Red Potion	Heal 10+skill HP	Cure Wounds	Red Potion	Heal 10+skill HP	yes
+223	Magic Potion	Blue Potion	Restore 10+skill MP	Magic Potion	Blue Potion	Restore 10+skill MP	yes
+224	Energy Potion	Yellow Potion	Remove Weak cond	Cure Weakness	Yellow Potion	Remove Weak cond	no
+225	Antidote	Orange Potion	Remove Disease 1,2,3 cond	Cure Disease	Orange Potion	Remove Disease 1,2,3 cond	no
+226	Hexbane	Purple Potion	Remove Poison 1,2,3 cond	Cure Poison	Purple Potion	Remove Poison 1,2,3 cond	no
+227	Lucidity	Green Potion	Remove Sleep cond	Awaken	Green Potion	Remove Sleep cond	no
+228	Haste	Red and Orange Potion	Cast Haste	Haste	Red and Orange Potion	Cast Haste	yes
+229	Heroism	Red and Purple Potion	Cast Heroism	Heroism	Red and Purple Potion	Cast Heroism	yes
+230	Bless	Red and Green Potion	Cast Bless	Bless	Red and Green Potion	Cast Bless	yes
+231	Protection	Blue and Orange Potion	Cast Preservation	Preservation	Blue and Orange Potion	Cast Preservation	no
+232	Meditation	Blue and Purple Potion	Cast Shield	Shield	Blue and Purple Potion	Cast Shield	no
+233	Regeneration	Blue and Green Potion	Cast Protection	Recharge Item	Blue and Green Potion	Cast Protection	no
+234	Stone Skin	Yellow and Orange Potion	Cast Stoneskin	Stoneskin	Yellow and Orange Potion	Cast Stoneskin	no
+235	Water Breathing	Yellow and Purple Potion	Prevents drowning damage	Water Breathing	Yellow and Purple Potion	Prevent drowning damage	no
+236	Harden Item	Yellow and Green Potion	Add strength to toughness of item	Harden Item	Yellow and Green Potion	Add strength to toughness of item	yes
+237	Magic Protection	Orange and Purple Potion	Remove Fear cond	Remove Fear	Orange and Purple Potion	Remove Fear cond	no
+238	Enchant Item	Purple and Green Potion	Remove Curse cond	Remove Curse	Purple and Green Potion	Remove Curse cond	no
+239	Stone to Flesh	Orange and Green Potion	Remove Insanity cond	Cure Insanity	Orange and Green Potion	Remove Insanity cond	no
+240	Power Boost	White Potion	Set Might Temp to 3xstrength for 30 min per strength	Might Boost	White Potion	Set Might Temp to 3xstrength for 30 min per strength	no
+241	Wisdom Boost	White Potion	Set Intellect Temp to 3xstrength for 30 min per strength	Intellect Boost	White Potion	Set Intellect Temp to 3xstrength for 30 min per strength	no
+242	Resilience Boost	White Potion	Set Personality Temp to 3xstrength for 30 min per strength	Personality Boost	White Potion	Set Personality Temp to 3xstrength for 30 min per strength	no
+243	Lesser Element	White Potion	Set Endurance Temp to 3xstrength for 30 min per strength	Endurance Boost	White Potion	Set Endurance Temp to 3xstrength for 30 min per strength	no
+244	Swiftness	White Potion	Set Speed Temp to 3xstrength for 30 min per strength	Speed Boost	White Potion	Set Speed Temp to 3xstrength for 30 min per strength	no
+245	Champion's Potion	White Potion	Set Accuracy Temp to 3xstrength for 30 min per strength	Accuracy Boost	White Potion	Set Accuracy Temp to 3xstrength for 30 min per strength	no
+246	Divine Restoration	White Potion	Add 'of flame' to weapon for 30 min per strength	Flaming Potion	White Potion	Add 'of flame' to weapon for 30 min per strength	no
+247	Divine Cure	White Potion	Add 'of frost' to weapon for 30 min per strength	Freezing Potion	White Potion	Add 'of frost' to weapon for 30 min per strength	no
+248	Divine Magic	White Potion	Add 'of poison' to weapon for 30 min per strength	Noxious Potion	White Potion	Add 'of poison' to weapon for 30 min per strength	no
+249	Elemental Resistance	White Potion	Add 'of sparks' to weapon for 30 min per strength	Shocking Potion	White Potion	Add 'of sparks' to weapon for 30 min per strength	no
+250	Self Resistance	White Potion	Add 'of swiftness' to weapon for 30 min per strength	Swift Potion	White Potion	Add 'of swiftness' to weapon for 30 min per strength	no
+251	Paladin's Potion	White Potion	Remove Paralyze cond	Cure Paralysis	White Potion	Remove Paralyze cond	no
+252	Pure Power	Black Potion	Remove all cond (not dead/stone/errad)	Divine Restoration	White Potion	Remove all cond (not dead/stone/errad)	no
+253	Pure Wisdom	Black Potion	Heal 10xskill HP	Divine Cure	White Potion	Heal 10xskill HP	no
+254	Pure Resilience	Black Potion	Restore 10xskill MP	Divine Power	White Potion	Restore 10xskill MP	no
+255	Greater Element	Black Potion	Set Luck Temp to 3xstrength for 30 min per strength	Luck Boost	White Potion	Set Luck Temp to 3xstrength for 30 min per strength	no
+256	Darkness	Black Potion	Set Fire Resist Temp to 3xskill for 30 min per skill	Fire Resistance	White Potion	Set Fire Resist Temp to 3xskill for 30 min per skill	no
+257	Divine Blessing	Black Potion	Set Air Resist Temp to 3xskill for 30 min per skill	Air Resistance	White Potion	Set Air Resist Temp to 3xskill for 30 min per skill	no
+258	Twilight	Black Potion	Set Water Resist Temp to 3xskill for 30 min per skill	Water Resistance	White Potion	Set Water Resist Temp to 3xskill for 30 min per skill	no
+259	Transcendence	Black Potion	Set Earth Resist Temp to 3xskill for 30 min per skill	Earth Resistance	White Potion	Set Earth Resist Temp to 3xskill for 30 min per skill	no
+260	Dawn	Black Potion	Set Mind Resist Temp to 3xskill for 30 min per skill	Mind Resistance	White Potion	Set Mind Resist Temp to 3xskill for 30 min per skill	no
+261	Pure Elemental Resistance	Black Potion	Set Body Resist Temp to 3xskill for 30 min per skill	Body Resistance	White Potion	Set Body Resist Temp to 3xskill for 30 min per skill	no
+262	Pure Self Resistance	Black Potion	Remove Stone cond	Stone to Flesh	Black Potion	Remove Stone cond	no
+263	Divine Resistance	Black Potion	Add 'of dragon slaying' to weapon	Slaying Potion	Black Potion	Add 'of dragon slaying' to weapon	no
+264	Pure Luck	Black Potion	+50 to Perm Luck	Pure Luck	Black Potion	+50 to Perm Luck	yes
+265	Pure Speed	Black Potion	+50 to Perm Speed	Pure Speed	Black Potion	+50 to Perm Speed	yes
+266	Pure Intellect	Black Potion	+50 to Perm Intellect	Pure Intellect	Black Potion	+50 to Perm Intellect	yes
+267	Pure Endurance	Black Potion	+50 to Perm Endurance	Pure Endurance	Black Potion	+50 to Perm Endurance	yes
+268	Pure Personality	Black Potion	+50 to Perm Personality	Pure Personality	Black Potion	+50 to Perm Personality	yes
+269	Pure Accuracy	Black Potion	+50 to Perm Accuracy	Pure Accuracy	Black Potion	+50 to Perm Accuracy	yes
+270	Pure Might	Black Potion	+50 to Perm Might	Pure Might	Black Potion	+50 to Perm Might	yes
+271	Rejuvenation	Black Potion	Set Age Temp to 0	Rejuvenation	Black Potion	Set Age Temp to 0	yes
+272	Essence of Might	White Potion	Permanently raises Might by 15 while reducing Intellect by 15	Essence of Might	White Potion	Permanently raises Might by 15 while reducing Intellect by 15	yes
+273	Essence of Intellect	White Potion	Permanently raises Intellect by 15 while reducing Might by 15	Essence of Intellect	White Potion	Permanently raises Intellect by 15 while reducing Might by 15	yes
+274	Essence of Personality	White Potion	Permanently raises Personality by 15 while reducing Speed by 15	Essence of Personality	White Potion	Permanently raises Personality by 15 while reducing Speed by 15	yes
+275	Essence of Endurance	White Potion	Permanently raises Endurance by 15 while reducing all other attributes by 2	Essence of Endurance	White Potion	Permanently raises Endurance by 15 while reducing all other attributes by 2	yes
+276	Essence of Accuracy	White Potion	Permanently raises Accuracy by 15 while reducing Luck by 15	Essence of Accuracy	White Potion	Permanently raises Accuracy by 15 while reducing Luck by 15	yes
+277	Essence of Speed	White Potion	Permanently raises Speed by 15 while reducing Personality by 15	Essence of Speed	White Potion	Permanently raises Speed by 15 while reducing Personality by 15	yes
+278	Essence of Luck	White Potion	Permanently raises Luck by 15 while reducing Accuracy by 15	Essence of Luck	White Potion	Permanently raises Luck by 15 while reducing Accuracy by 15	yes
+279	Potion of Doom 	White Potion	Permanently adds 1 to all seven stats, HP, SP, AC and resistances at the cost of 5 years of magical aging	Potion of Doom 	White Potion	Permanently adds 1 to all seven stats, HP, SP, AC and resistances at the cost of 5 years of magical aging	yes
+280	Divine Boost 	Black Potion	Increases all Seven Statistics temporarily by (3 x Power) for (30 x Power) minutes	Divine Boost 	Black Potion	Increases all Seven Statistics temporarily by (3 x Power) for (30 x Power) minutes	yes
+281	Divine Protection	Black Potion	Increases Fire, Air, Water, Earth, Mind and Body resistances temporarily by (3 x Power) for (30 x Power) minutes	Divine Protection	Black Potion	Increases Fire, Air, Water, Earth, Mind and Body resistances temporarily by (3 x Power) for (30 x Power) minutes	yes
+282	Divine Transcendence	Black Potion	Increases the character�s level by 20 for (30 x Power) minutes	Divine Transcendence	Black Potion	Increases the character’s level by 20 for (30 x Power) minutes	no
+283	Potion of the Gods 	Black Potion	Permanently raises all seven stats by 20 at the cost of 10 years of magical aging, single-use	Potion of the Gods 	Black Potion	Permanently raises all seven stats by 20 at the cost of 10 years of magical aging, single-use	yes
+284	Pure Fire Resistance	Black Potion	Permanently adds 40 to Fire Resistance, single-use	Pure Fire Resistance	Black Potion	Permanently adds 40 to Fire Resistance, single-use	yes
+285	Pure Air Resistance	Black Potion	Permanently adds 40 to Air Resistance, single-use	Pure Air Resistance	Black Potion	Permanently adds 40 to Air Resistance, single-use	yes
+286	Pure Water Resistance	Black Potion	Permanently adds 40 to Water Resistance, single-use	Pure Water Resistance	Black Potion	Permanently adds 40 to Water Resistance, single-use	yes
+287	Pure Earth Resistance	Black Potion	Permanently adds 40 to Earth Resistance, single-use	Pure Earth Resistance	Black Potion	Permanently adds 40 to Earth Resistance, single-use	yes
+288	Pure Mind Resistance	Black Potion	Permanently adds 40 to Mind Resistance, single-use	Pure Mind Resistance	Black Potion	Permanently adds 40 to Mind Resistance, single-use	yes
+289	Pure Body Resistance	Black Potion	Permanently adds 40 to Body Resistance, single-use	Pure Body Resistance	Black Potion	Permanently adds 40 to Body Resistance, single-use	yes
+290	Protection from Magic	White Potion	Grants Protection from Magic (as a spell) for 30 minutes per point of potion strength.	Protection from Magic	White Potion	Grants Protection from Magic (as a spell) for 30 minutes per point of potion strength.	yes
+806	Strange potion	White Potion	Strange potion	Strange potion	White Potion	Strange potion	yes
+1041	Strange potion	White Potion	Moonstone	Strange potion	White Potion	Strange potion	no
+1042	Strange potion	White Potion	Topaz	Strange potion	White Potion	Strange potion	no
+1043	Strange potion	White Potion	Amethyst	Strange potion	White Potion	Strange potion	no
+1044	Strange potion	White Potion	Emerald	Strange potion	White Potion	Strange potion	no
+1045	Strange potion	White Potion	Purple Topaz	Strange potion	White Potion	Strange potion	no
+1046	Strange potion	White Potion	Ruby	Strange potion	White Potion	Strange potion	no
+1047	Strange potion	White Potion	Sunstone	Strange potion	White Potion	Strange potion	no
+1048	Strange potion	White Potion	Emerald	Strange potion	White Potion	Strange potion	no
+1049	Strange potion	White Potion	Sapphire	Strange potion	White Potion	Strange potion	no
+1050	Strange potion	White Potion	Diamond	Strange potion	White Potion	Strange potion	no
+1051	Strange potion	White Potion	Moonstone	Strange potion	White Potion	Strange potion	no
+1052	Strange potion	White Potion	Topaz	Strange potion	White Potion	Strange potion	no
+1053	Strange potion	White Potion	Amethyst	Strange potion	White Potion	Strange potion	no
+1054	Strange potion	White Potion	Emerald	Strange potion	White Potion	Strange potion	no
+1055	Strange potion	White Potion	Purple Topaz	Strange potion	White Potion	Strange potion	no
+1056	Strange potion	White Potion	Ruby	Strange potion	White Potion	Strange potion	no
+1057	Strange potion	White Potion	Sunstone	Strange potion	White Potion	Strange potion	no
+1058	Strange potion	White Potion	Emerald	Strange potion	White Potion	Strange potion	no
+1059	Strange potion	White Potion	Sapphire	Strange potion	White Potion	Strange potion	no
+1060	Strange potion	White Potion	Diamond	Strange potion	White Potion	Strange potion	no
+1061	Strange potion	White Potion	The Third Eye	Strange potion	White Potion	Strange potion	no
+1062	Strange potion	White Potion	Hourglass of Time	Strange potion	White Potion	Strange potion	no
+1063	Strange potion	White Potion	Control Cube	Strange potion	White Potion	Strange potion	no
+1064	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1065	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1066	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1067	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1068	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1069	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no
+1070	Strange potion	White Potion	Enchanted Amulet	Strange potion	White Potion	Strange potion	no

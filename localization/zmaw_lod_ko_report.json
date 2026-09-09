@@ -22,9 +22,9 @@
     "mapstats.txt": 207,
     "class.txt": 106,
     "SPCITEMS.TXT": 146,
-    "rnditems.txt": 0,
     "POTION.TXT": 0,
-    "POTNOTES.TXT": 0
+    "POTNOTES.TXT": 0,
+    "rnditems.txt": 0
   },
   "total_localized_fields": 7854,
   "untouched_pending_schema_review": [
