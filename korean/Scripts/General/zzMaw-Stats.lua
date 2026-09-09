@@ -21,7 +21,7 @@ end
 function events.KeyDown(t)
   if Game.CurrentScreen == 7 and Game.CurrentCharScreen == 100 then
     if t.Key == 82 then -- "R"
-      Game.ShowStatusText("Map data reset, press Y to continue...")
+      Game.ShowStatusText("맵 데이터 초기화 완료. 계속하려면 Y를 누르세요...")
       map_data_reset_confirmation = 1
     end
 
@@ -43,7 +43,7 @@ function events.KeyDown(t)
           end
         end
       end)
-      Game.ShowStatusText("Current map data reset.")
+      Game.ShowStatusText("현재 맵 데이터를 초기화했습니다.")
     end
   end
 end

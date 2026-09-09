@@ -1898,56 +1898,56 @@ Subsequent spawn failure reasons:
 "			Scripts/General/pseudoSpawnpoint.lua	105	1	
 maw-116f9bc229a5	untranslated	status	"
 Couldn't spawn monster, spawnpoint data: "			Scripts/General/pseudoSpawnpoint.lua	105	1	
-maw-9523822c36a5	untranslated	status	  heals 			Scripts/General/zzMaw-Spells.lua	339	1	
+maw-9523822c36a5	translated	status	  heals 	 → 		Scripts/General/zzMaw-Spells.lua	339	1	회복 메시지 조각; 한국어 조사 회피
 maw-83210be9c55c	untranslated	status	 completed!			Scripts/Global/zzMaw_Arena.lua	183	1	
-maw-3e76c5b3ed49	untranslated	status	 cover 			Scripts/General/zzMaw-Monsters.lua	4118	1	
-maw-fd8e8ff426be	untranslated	status	 crafting items			Scripts/General/zzMaw-Monsters.lua	4592	2	
-maw-1c6180498e43	untranslated	status	 Exp, 			Scripts/General/zzMaw-Monsters.lua	2852	2	
-maw-4a324d6e7f04	untranslated	status	 filtered)			Scripts/General/zzMaw-Items.lua	1118	1	
-maw-b5f7b77ef041	untranslated	status	 for 			Scripts/General/zzMaw-Spells.lua	190	8	
-maw-b9d5cdecc229	untranslated	status	 Gold and a Crafting Material			Scripts/General/zzMaw-Monsters.lua	2852	2	
-maw-e023d21ec88f	untranslated	status	 gold! (			Scripts/General/zzMaw-Items.lua	1118	1	
-maw-7c17dfcba152	untranslated	status	 heals 			Scripts/General/zzMaw-Spells.lua	190	7	
-maw-0188b39ea97f	untranslated	status	 heals the party for 			Scripts/General/zzMaw-Spells.lua	513	2	
-maw-4ef7fa223689	untranslated	status	 heals you for 			Scripts/General/zzMaw-Spells.lua	186	9	
-maw-b723312a9faf	untranslated	status	 Hit points			Scripts/General/zzMaw-Spells.lua	170	6	
-maw-f95ce8eb71d8	untranslated	status	 hit points			Scripts/General/zzMaw-Spells.lua	188	10	
-maw-2e8cf3b54cb8	untranslated	status	 hit points (crit)			Scripts/General/zzMaw-Spells.lua	464	2	
-maw-ddd722e93623	untranslated	status	 Hit points(crit)			Scripts/General/zzMaw-Spells.lua	168	6	
-maw-f1ccf8cd5a94	untranslated	status	 hit points(crit)			Scripts/General/zzMaw-Spells.lua	186	8	
+maw-3e76c5b3ed49	translated	status	 cover 	 → 엄호: 		Scripts/General/zzMaw-Monsters.lua	4118	1	엄호 상태 메시지 조각
+maw-fd8e8ff426be	translated	status	 crafting items	개의 제작 재료		Scripts/General/zzMaw-Monsters.lua	4592	2	순간이동 상태 메시지 조각
+maw-1c6180498e43	translated	status	 Exp, 	 경험치, 		Scripts/General/zzMaw-Monsters.lua	2852	2	맵 완료 보상 메시지 조각
+maw-4a324d6e7f04	translated	status	 filtered)	 필터됨)		Scripts/General/zzMaw-Items.lua	1118	1	아이템 필터 메시지 조각
+maw-b5f7b77ef041	translated	status	 for 	: 회복량 		Scripts/General/zzMaw-Spells.lua	190	8	회복 메시지 조각
+maw-b9d5cdecc229	translated	status	 Gold and a Crafting Material	 금화 및 제작 재료		Scripts/General/zzMaw-Monsters.lua	2852	2	맵 완료 보상 메시지 조각
+maw-e023d21ec88f	translated	status	 gold! (	 금화! (		Scripts/General/zzMaw-Items.lua	1118	1	아이템 필터 메시지 조각
+maw-7c17dfcba152	translated	status	 heals 	 → 		Scripts/General/zzMaw-Spells.lua	190	7	회복 메시지 조각
+maw-0188b39ea97f	translated	status	 heals the party for 	: 파티 회복량 		Scripts/General/zzMaw-Spells.lua	513	2	회복 메시지 조각
+maw-4ef7fa223689	translated	status	 heals you for 	: 회복량 		Scripts/General/zzMaw-Spells.lua	186	9	회복 메시지 조각
+maw-b723312a9faf	translated	status	 Hit points	 생명력		Scripts/General/zzMaw-Spells.lua	170	6	회복 상태 메시지 조각
+maw-f95ce8eb71d8	translated	status	 hit points	 생명력		Scripts/General/zzMaw-Spells.lua	188	10	회복 상태 메시지 조각
+maw-2e8cf3b54cb8	translated	status	 hit points (crit)	 생명력 (치명타)		Scripts/General/zzMaw-Spells.lua	464	2	회복 상태 메시지 조각
+maw-ddd722e93623	translated	status	 Hit points(crit)	 생명력 (치명타)		Scripts/General/zzMaw-Spells.lua	168	6	회복 상태 메시지 조각
+maw-f1ccf8cd5a94	translated	status	 hit points(crit)	 생명력 (치명타)		Scripts/General/zzMaw-Spells.lua	186	8	회복 상태 메시지 조각
 maw-7f8e9abebacd	untranslated	status	 is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there.			Scripts/General/zzMaw-MultiBag.lua	244	1	
 maw-740a35e14fd4	untranslated	status	" might have been corrupted, contact Malekith on discord (or in bug report in discord) and copy paste this message and the following ones.
 Keep in mind that corrupted item might have been just some 'random' unexpected value with no actual consequences, so if you don't notice anything missing, you can continue playing normally.
 
 Item data:
 "			Scripts/General/zzMaw-MultiBag.lua	271	1	
-maw-28fb2ed334fb	untranslated	status	 monsters			Scripts/General/zzMaw-Monsters.lua	4590	1	
-maw-70b52d51656e	untranslated	status	 monsters and 			Scripts/General/zzMaw-Monsters.lua	4594	1	
-maw-a533d45fdbb4	untranslated	status	 on attack activated			Scripts/General/zzClasses.lua	1269	2	
-maw-bf61b9828dc8	untranslated	status	 on attack disabled			Scripts/General/zzClasses.lua	1267	2	
-maw-5e6fd93c345e	untranslated	status	 required)			Scripts/General/zzAlchemy.lua	841	2	
-maw-6f10ee9e1e8e	untranslated	status	 will not be sorted with C			Scripts/General/zzMaw-Item-Sorter.lua	417	2	
-maw-26995675bf1a	untranslated	status	 will now take alchemy items when sorting			Scripts/General/zzMaw-Item-Sorter.lua	54	1	
+maw-28fb2ed334fb	translated	status	 monsters	마리의 몬스터		Scripts/General/zzMaw-Monsters.lua	4590	1	순간이동 상태 메시지 조각
+maw-70b52d51656e	translated	status	 monsters and 	마리의 몬스터와 		Scripts/General/zzMaw-Monsters.lua	4594	1	순간이동 상태 메시지 조각
+maw-a533d45fdbb4	translated	status	 on attack activated	 공격 시 발동 활성화		Scripts/General/zzClasses.lua	1269	2	주문 발동 상태 메시지
+maw-bf61b9828dc8	translated	status	 on attack disabled	 공격 시 발동 비활성화		Scripts/General/zzClasses.lua	1267	2	주문 발동 상태 메시지
+maw-5e6fd93c345e	translated	status	 required)	)		Scripts/General/zzAlchemy.lua	841	2	필요 레벨 메시지 후행 조각
+maw-6f10ee9e1e8e	translated	status	 will not be sorted with C	번은 C키 정렬에서 제외됩니다		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
+maw-26995675bf1a	translated	status	 will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당		Scripts/General/zzMaw-Item-Sorter.lua	54	1	인벤토리 정렬 메시지 조각
 maw-b30c9ccdc32b	untranslated	status	%d+		%d	Scripts/General/zzMAW-Skills.lua	1760	2	
-maw-ac5cf24fbebd	untranslated	status	%s casts Charge stunning the enemy		%s	Scripts/General/zzMAW-Skills.lua	738	1	
-maw-2dce602f934a	untranslated	status	%s created		%s	Scripts/General/zzMaw-Items.lua	4598	1	
+maw-ac5cf24fbebd	translated	status	%s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	%s	Scripts/General/zzMAW-Skills.lua	738	1	전투 기술 상태 메시지
+maw-2dce602f934a	translated	status	%s created	%s 제작 완료	%s	Scripts/General/zzMaw-Items.lua	4598	1	제작 상태 메시지
 maw-c71f2230e35f	untranslated	status	%s hits %s for %s points!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	257	1	
 maw-172bc1a2377a	untranslated	status	%s hits for a total of %s points!%s		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	263	1	
 maw-ec872fba510a	untranslated	status	%s inflicts %s points killing %s!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	260	1	
 maw-306ecfe28808	untranslated	status	%s shoots %s for %s points!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	255	1	
-maw-b4b8cce29ba4	untranslated	status	%s's poison effect expired		%s	Scripts/General/zzMaw-Items.lua	1325	3	
+maw-b4b8cce29ba4	translated	status	%s's poison effect expired	%s: 독 효과가 끝났습니다	%s	Scripts/General/zzMaw-Items.lua	1325	3	독 효과 상태 메시지
 maw-ab165dc8650a	untranslated	status	's bag number 			Scripts/General/zzMaw-MultiBag.lua	244	1	
-maw-81c7c4f4c524	untranslated	status	's bags sorted			Scripts/General/zzMaw-Item-Sorter.lua	441	2	
+maw-81c7c4f4c524	translated	status	's bags sorted	의 모든 가방		Scripts/General/zzMaw-Item-Sorter.lua	441	2	가방 정렬 메시지 조각
 maw-1c76438aa9fa	untranslated	status	's item from the bag 			Scripts/General/zzMaw-MultiBag.lua	271	1	
 maw-ad5e80d26499	translated	status	(CRIT!)	(치명타!)		Scripts/Global/zzMAWStatusMsg.lua	231	1	전투 상태 메시지
-maw-ee152071e0dd	untranslated	status	*Swap*			Scripts/General/zzMaw-Monsters.lua	3320	3	
+maw-ee152071e0dd	translated	status	*Swap*	*교대*		Scripts/General/zzMaw-Monsters.lua	3320	3	전투 상태 메시지
 maw-5e9d8c2fe7f3	untranslated	status	*You don't have any philosopher stone to charge the telelocator.*			Scripts/Global/Quest_SavingGoobers.lua	651	1	
-maw-01815df34c43	untranslated	status	+50 Fire Resistance temporary.			Scripts/Maps/7out01.lua	38	1	
-maw-2b02e98e2e21	untranslated	status	Access have been destroyed			Scripts/Maps/outb3.lua	60	1	
-maw-255db94bd445	untranslated	status	All 			Scripts/General/zzMaw-Item-Sorter.lua	441	2	
-maw-c4293d2f2192	untranslated	status	All buffs have been removed			Scripts/General/zzMaw-Spells.lua	25	1	
-maw-d9eb9116dd12	untranslated	status	All inventories have been sorted			Scripts/General/zzMaw-Item-Sorter.lua	46	1	
-maw-7477dec54f0c	untranslated	status	All Party bags sorted			Scripts/General/zzMaw-Item-Sorter.lua	692	1	
+maw-01815df34c43	translated	status	+50 Fire Resistance temporary.	일시적으로 화염 저항 +50.		Scripts/Maps/7out01.lua	38	1	맵 상태 메시지
+maw-2b02e98e2e21	translated	status	Access have been destroyed	접근로가 파괴되었습니다		Scripts/Maps/outb3.lua	60	1	맵 상태 메시지
+maw-255db94bd445	translated	status	All 	정렬 완료: 		Scripts/General/zzMaw-Item-Sorter.lua	441	2	가방 정렬 메시지 조각
+maw-c4293d2f2192	translated	status	All buffs have been removed	모든 버프가 제거되었습니다		Scripts/General/zzMaw-Spells.lua	25	1	버프 상태 메시지
+maw-d9eb9116dd12	translated	status	All inventories have been sorted	모든 인벤토리를 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	46	1	인벤토리 정렬 메시지
+maw-7477dec54f0c	translated	status	All Party bags sorted	파티의 모든 가방을 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	692	1	가방 정렬 메시지
 maw-fe865f7d112f	untranslated	status	Attune			Scripts/Global/Quest_SavingGoobers.lua	402	1	
 maw-c866fe746723	untranslated	status	"Beyond Madness - a word of warning.
 
@@ -1967,119 +1967,120 @@ maw-6f25995360a3	untranslated	status	BossDebug AUTO: OFF			Scripts/General/zzBos
 maw-094e0e67a1ac	untranslated	status	BossDebug AUTO: ON			Scripts/General/zzBossSync.lua	473	1	
 maw-5ffd168dd001	untranslated	status	BossDebug: impossible d’écrire boss_dump.txt			Scripts/General/zzBossSync.lua	432	1	
 maw-1bc04bd1af97	untranslated	status	BossDebug: écrit dans boss_dump.txt			Scripts/General/zzBossSync.lua	430	1	
-maw-08d8579a590d	untranslated	status	Bow Disabled			Scripts/General/zz_Maw-initialize.lua	637	1	
-maw-457e05b1ffa0	untranslated	status	Bow Enabled			Scripts/General/zz_Maw-initialize.lua	639	1	
-maw-f937820aa844	untranslated	status	Buff Disabled			Scripts/General/zzMaw-Spells.lua	2672	1	
-maw-77695d57f84e	untranslated	status	Can't benefit anymore			Scripts/General/zzAlchemy.lua	214	1	
-maw-6b0adda8fe34	untranslated	status	Can't teleport now			Scripts/General/zzMaw-Monsters.lua	2301	1	
-maw-d028c57c59d4	untranslated	status	Charge has %s seconds of cooldown		%s	Scripts/General/zzMAW-Skills.lua	762	1	
+maw-08d8579a590d	translated	status	Bow Disabled	활 사용 비활성화		Scripts/General/zz_Maw-initialize.lua	637	1	전투 설정 상태 메시지
+maw-457e05b1ffa0	translated	status	Bow Enabled	활 사용 활성화		Scripts/General/zz_Maw-initialize.lua	639	1	전투 설정 상태 메시지
+maw-f937820aa844	translated	status	Buff Disabled	버프 비활성화		Scripts/General/zzMaw-Spells.lua	2672	1	주문 상태 메시지
+maw-77695d57f84e	translated	status	Can't benefit anymore	더 이상 효과를 받을 수 없습니다		Scripts/General/zzAlchemy.lua	214	1	물약 상태 메시지
+maw-6b0adda8fe34	translated	status	Can't teleport now	지금은 순간이동할 수 없습니다		Scripts/General/zzMaw-Monsters.lua	2301	1	순간이동 상태 메시지
+maw-d028c57c59d4	translated	status	Charge has %s seconds of cooldown	돌진 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	762	1	기술 재사용 대기시간
 maw-3aecc9ff257a	untranslated	status	Charged. Insert request.			Scripts/Global/Quest_SavingGoobers.lua	649	1	
-maw-0935b8f432c1	untranslated	status	Convert %s into %s? (U)		%s %s	Scripts/General/zzMaw-Items.lua	4626	1	
-maw-508ef1cfc231	untranslated	status	Cover Disabled			Scripts/General/zzMAW-Skills.lua	2144	1	
-maw-4c5ac167956e	untranslated	status	Cover Enabled			Scripts/General/zzMAW-Skills.lua	2147	1	
-maw-97b1074f4957	untranslated	status	Current map data reset.			Scripts/General/zzMaw-Stats.lua	46	1	
-maw-75a2d72a0afc	untranslated	status	Curse Immunity			Scripts/General/zzAlchemy.lua	358	1	
+maw-0935b8f432c1	translated	status	Convert %s into %s? (U)	%s을(를) %s(으)로 변환하시겠습니까? (U)	%s %s	Scripts/General/zzMaw-Items.lua	4626	1	제작 변환 안내
+maw-508ef1cfc231	translated	status	Cover Disabled	엄호 비활성화		Scripts/General/zzMAW-Skills.lua	2144	1	전투 기술 상태 메시지
+maw-4c5ac167956e	translated	status	Cover Enabled	엄호 활성화		Scripts/General/zzMAW-Skills.lua	2147	1	전투 기술 상태 메시지
+maw-97b1074f4957	translated	status	Current map data reset.	현재 맵 데이터를 초기화했습니다.		Scripts/General/zzMaw-Stats.lua	46	1	맵 데이터 상태 메시지
+maw-75a2d72a0afc	translated	status	Curse Immunity	저주 면역		Scripts/General/zzAlchemy.lua	358	1	물약 효과 상태 메시지
 maw-38c79a160346	untranslated	status	Difficulty reverted to Hell			Scripts/General/zzMaw-Monsters.lua	2904	1	
-maw-885ce4e680cf	untranslated	status	Disease Immunity			Scripts/General/zzAlchemy.lua	383	1	
-maw-7a110a507d2d	untranslated	status	Disintegrated			Scripts/Global/zzMaw_Legendaries.lua	319	1	
-maw-2654e90703c0	untranslated	status	Divine Protection saves you from lethal damage			Scripts/Global/zzMaw_Legendaries.lua	293	1	
-maw-8cf50dc5e339	untranslated	status	Dungeon Completed!			Scripts/General/zzMaw-Monsters.lua	2722	2	
-maw-ed5ba4f81fc5	untranslated	status	"Dungeon Completed!
-Reset is possible again."			Scripts/General/zzMaw-Monsters.lua	2728	2	
-maw-c32d31a36756	untranslated	status	Elementalist Rotation Disabled			Scripts/General/zzMAW-Skills.lua	2174	1	
-maw-076d81dc365d	untranslated	status	Elementalist Rotation Enabled			Scripts/General/zzMAW-Skills.lua	2170	1	
-maw-dd8090cb6ab7	untranslated	status	Elementalists learn their spells through practice			Scripts/General/zzClasses.lua	1528	1	
-maw-ad87109bfff0	untranslated	status	empty			Scripts/Maps/znwc.lua	7	1	
-maw-779afe5b1027	untranslated	status	Enchantment protects %s from %s		%s %s	Scripts/General/zzMaw-Items.lua	1268	1	
-maw-92a3f1a6702f	untranslated	status	Entering will reset the dungeon			Scripts/General/zzMaw-Maps.lua	154	1	
-maw-36d0008f2867	untranslated	status	Fear Immunity			Scripts/General/zzAlchemy.lua	403	1	
-maw-ab95ede4f854	untranslated	status	Fly is allowed without restrictions here			Scripts/General/zzMaw-Spells.lua	991	1	
-maw-210116f7c9cc	untranslated	status	Forced Sleep Immunity			Scripts/General/zzAlchemy.lua	368	1	
-maw-f83016e2daac	untranslated	status	Gem power is not enough			Scripts/General/zzAlchemy.lua	856	1	
-maw-9885872b58bc	untranslated	status	Goblin Reinforcements			Scripts/Maps/7out02.lua	109	1	
+maw-885ce4e680cf	translated	status	Disease Immunity	질병 면역		Scripts/General/zzAlchemy.lua	383	1	물약 효과 상태 메시지
+maw-7a110a507d2d	translated	status	Disintegrated	소멸됨		Scripts/Global/zzMaw_Legendaries.lua	319	1	전투 상태 메시지
+maw-2654e90703c0	translated	status	Divine Protection saves you from lethal damage	신성한 보호가 치명적인 피해로부터 당신을 구했습니다		Scripts/Global/zzMaw_Legendaries.lua	293	1	전투 상태 메시지
+maw-8cf50dc5e339	translated	status	Dungeon Completed!	던전 완료!		Scripts/General/zzMaw-Monsters.lua	2722	2	던전 완료 메시지
+maw-ed5ba4f81fc5	translated	status	"Dungeon Completed!
+Reset is possible again."	"던전 완료!
+이제 다시 초기화할 수 있습니다."		Scripts/General/zzMaw-Monsters.lua	2728	2	던전 완료/초기화 메시지
+maw-c32d31a36756	translated	status	Elementalist Rotation Disabled	원소술사 로테이션 비활성화		Scripts/General/zzMAW-Skills.lua	2174	1	직업 기술 상태 메시지
+maw-076d81dc365d	translated	status	Elementalist Rotation Enabled	원소술사 로테이션 활성화		Scripts/General/zzMAW-Skills.lua	2170	1	직업 기술 상태 메시지
+maw-dd8090cb6ab7	translated	status	Elementalists learn their spells through practice	원소술사는 실전을 통해 주문을 익힙니다		Scripts/General/zzClasses.lua	1528	1	직업 안내 메시지
+maw-ad87109bfff0	translated	status	empty	비어 있음		Scripts/Maps/znwc.lua	7	1	맵 상태 메시지
+maw-779afe5b1027	translated	status	Enchantment protects %s from %s	마법 부여가 %s을(를) %s(으)로부터 보호합니다	%s %s	Scripts/General/zzMaw-Items.lua	1268	1	마법 부여 상태 메시지
+maw-92a3f1a6702f	translated	status	Entering will reset the dungeon	입장하면 던전이 초기화됩니다		Scripts/General/zzMaw-Maps.lua	154	1	던전 초기화 경고
+maw-36d0008f2867	translated	status	Fear Immunity	공포 면역		Scripts/General/zzAlchemy.lua	403	1	물약 효과 상태 메시지
+maw-ab95ede4f854	translated	status	Fly is allowed without restrictions here	이곳에서는 제한 없이 비행할 수 있습니다		Scripts/General/zzMaw-Spells.lua	991	1	비행 상태 메시지
+maw-210116f7c9cc	translated	status	Forced Sleep Immunity	강제 수면 면역		Scripts/General/zzAlchemy.lua	368	1	물약 효과 상태 메시지
+maw-f83016e2daac	translated	status	Gem power is not enough	보석의 힘이 부족합니다		Scripts/General/zzAlchemy.lua	856	1	제작 상태 메시지
+maw-9885872b58bc	translated	status	Goblin Reinforcements	고블린 증원군		Scripts/Maps/7out02.lua	109	1	맵 이벤트 메시지
 maw-28907fb4d447	untranslated	status	"Greeting adventurer!
 Your journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)"			Scripts/General/zzMaw-Monsters.lua	2913	1	
-maw-023b822ca1fe	untranslated	status	Health Potion has %s seconds of cooldown remaining		%s	Scripts/General/zzMAW-Skills.lua	828	1	
-maw-04a399d6543a	untranslated	status	Health Potion heals for %s hit points		%s	Scripts/General/zzMAW-Skills.lua	825	1	
-maw-d5ec674f63f1	untranslated	status	Host saved the game.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	287	1	
+maw-023b822ca1fe	translated	status	Health Potion has %s seconds of cooldown remaining	생명력 물약 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	828	1	물약 재사용 대기시간
+maw-04a399d6543a	translated	status	Health Potion heals for %s hit points	생명력 물약으로 생명력 %s 회복	%s	Scripts/General/zzMAW-Skills.lua	825	1	물약 회복 메시지
+maw-d5ec674f63f1	translated	status	Host saved the game.	호스트가 게임을 저장했습니다.		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	287	1	멀티플레이 상태 메시지
 maw-19b6cd329a7d	untranslated	status	I wouldn't join in your reckless adventure, not even for all the wealth in the world.			Scripts/General/NPCFollowers.lua	250	1	
-maw-f7b693d91fe6	untranslated	status	In the night the deads rise			Scripts/Maps/7out05.lua	35	1	
-maw-6be2751cd0b7	untranslated	status	Insanity Immunity			Scripts/General/zzAlchemy.lua	373	1	
+maw-f7b693d91fe6	translated	status	In the night the deads rise	밤이 되면 망자들이 일어납니다		Scripts/Maps/7out05.lua	35	1	맵 이벤트 메시지
+maw-6be2751cd0b7	translated	status	Insanity Immunity	광기 면역		Scripts/General/zzAlchemy.lua	373	1	물약 효과 상태 메시지
 maw-b4e6a310890f	untranslated	status	Intro			Scripts/Global/Quest_SavingGoobers.lua	131	1	
-maw-29c9c73400f5	untranslated	status	Invalid Item			Scripts/General/zzAlchemy.lua	1118	1	
-maw-4d118c92089d	untranslated	status	Inventory number 			Scripts/General/zzMaw-Item-Sorter.lua	417	2	
-maw-e466e0284119	untranslated	status	Inventory sorted			Scripts/General/zzMaw-Item-Sorter.lua	43	1	
+maw-29c9c73400f5	translated	status	Invalid Item	잘못된 아이템		Scripts/General/zzAlchemy.lua	1118	1	아이템 상태 메시지
+maw-4d118c92089d	translated	status	Inventory number 	인벤토리 		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
+maw-e466e0284119	translated	status	Inventory sorted	인벤토리를 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	43	1	인벤토리 정렬 메시지
 maw-dea8c4a3a02a	untranslated	status	IsArena			Scripts/Core/events.lua	494	1	
-maw-885835a02aaa	untranslated	status	It's a trap!			Scripts/Maps/7d21.lua	7	1	
-maw-1e8cb084a138	untranslated	status	It's an ambush!			Scripts/Maps/7out02.lua	79	1	
-maw-c30597514ae9	untranslated	status	Item power reached its limit			Scripts/General/zzAlchemy.lua	960	1	
+maw-885835a02aaa	translated	status	It's a trap!	함정이다!		Scripts/Maps/7d21.lua	7	1	맵 이벤트 메시지
+maw-1e8cb084a138	translated	status	It's an ambush!	매복이다!		Scripts/Maps/7out02.lua	79	1	맵 이벤트 메시지
+maw-c30597514ae9	translated	status	Item power reached its limit	아이템 위력이 한계에 도달했습니다		Scripts/General/zzAlchemy.lua	960	1	제작 상태 메시지
 maw-cbd62b8042da	untranslated	status	Learned 			Scripts/General/zzClasses.lua	1567	1	
-maw-39248f7f1de3	untranslated	status	Legendary power saves you from lethal damage			Scripts/Global/zzMaw_Legendaries.lua	274	1	
+maw-39248f7f1de3	translated	status	Legendary power saves you from lethal damage	전설의 힘이 치명적인 피해로부터 당신을 구했습니다		Scripts/Global/zzMaw_Legendaries.lua	274	1	전투 상태 메시지
 maw-980d5e2dd44b	untranslated	status	Level 			Scripts/Global/zzMaw_Arena.lua	183	1	
-maw-6d8f726dc6ae	untranslated	status	Loading now will count as death, are you sure to proceed?			Scripts/General/zzMaw-Monsters.lua	2639	1	
-maw-3e72bdcb83db	untranslated	status	Madness is not a place for cowards			Scripts/General/zzMaw-Spells.lua	3476	1	
-maw-9c709d615601	untranslated	status	Mana Potion has %s seconds of cooldown remaining		%s	Scripts/General/zzMAW-Skills.lua	870	1	
-maw-f7af004188cc	untranslated	status	Mana Potion restores %s mana		%s	Scripts/General/zzMAW-Skills.lua	867	1	
-maw-c06b7acce5c9	untranslated	status	Mana Shield Disabled			Scripts/General/zzMAW-Skills.lua	2156	1	
-maw-d87f6d5567eb	untranslated	status	Mana Shield Enabled			Scripts/General/zzMAW-Skills.lua	2159	1	
-maw-639c559b2e18	untranslated	status	Map Completed! You gain 			Scripts/General/zzMaw-Monsters.lua	2852	2	
-maw-2d1fa6efda07	untranslated	status	Map data reset, press Y to continue...			Scripts/General/zzMaw-Stats.lua	24	1	
+maw-6d8f726dc6ae	translated	status	Loading now will count as death, are you sure to proceed?	지금 불러오면 사망으로 처리됩니다. 계속하시겠습니까?		Scripts/General/zzMaw-Monsters.lua	2639	1	난이도 경고 메시지
+maw-3e72bdcb83db	translated	status	Madness is not a place for cowards	광기는 겁쟁이가 올 곳이 아닙니다		Scripts/General/zzMaw-Spells.lua	3476	1	난이도 상태 메시지
+maw-9c709d615601	translated	status	Mana Potion has %s seconds of cooldown remaining	마나 물약 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	870	1	물약 재사용 대기시간
+maw-f7af004188cc	translated	status	Mana Potion restores %s mana	마나 물약으로 마나 %s 회복	%s	Scripts/General/zzMAW-Skills.lua	867	1	물약 회복 메시지
+maw-c06b7acce5c9	translated	status	Mana Shield Disabled	마나 방패 비활성화		Scripts/General/zzMAW-Skills.lua	2156	1	전투 기술 상태 메시지
+maw-d87f6d5567eb	translated	status	Mana Shield Enabled	마나 방패 활성화		Scripts/General/zzMAW-Skills.lua	2159	1	전투 기술 상태 메시지
+maw-639c559b2e18	translated	status	Map Completed! You gain 	맵 완료! 획득: 		Scripts/General/zzMaw-Monsters.lua	2852	2	맵 완료 보상 메시지 조각
+maw-2d1fa6efda07	translated	status	Map data reset, press Y to continue...	맵 데이터 초기화 완료. 계속하려면 Y를 누르세요...		Scripts/General/zzMaw-Stats.lua	24	1	맵 데이터 상태 메시지
 maw-3d8dbae5a9ee	untranslated	status	MAW: ALL BUFFS NUKED (SAFE)			Scripts/General/zzMaw-Multiplayer.lua	785	1	
 maw-34e4d3ab9c7a	untranslated	status	MAW: apply (safe)			Scripts/General/zzMaw-Multiplayer.lua	107	1	
-maw-fb1baba5c72f	untranslated	status	Monsters are weakened and can no longer resurrect			Scripts/General/zzMaw-Monsters.lua	2864	2	
-maw-ae62e5fb7ddc	untranslated	status	Monsters swarming...			Scripts/Maps/7d24.lua	6	1	
-maw-46fae59804bb	untranslated	status	No alchemy preference when sorting			Scripts/General/zzMaw-Item-Sorter.lua	51	1	
-maw-a261c54bd47e	untranslated	status	No enchants			Scripts/General/zzAlchemy.lua	847	1	
-maw-a5dab5ff2a0a	untranslated	status	No gem to upgrade			Scripts/General/zzMaw-Items.lua	4607	2	
+maw-fb1baba5c72f	translated	status	Monsters are weakened and can no longer resurrect	몬스터들이 약화되어 더 이상 부활할 수 없습니다		Scripts/General/zzMaw-Monsters.lua	2864	2	던전 상태 메시지
+maw-ae62e5fb7ddc	translated	status	Monsters swarming...	몬스터들이 몰려옵니다...		Scripts/Maps/7d24.lua	6	1	맵 이벤트 메시지
+maw-46fae59804bb	translated	status	No alchemy preference when sorting	정렬 시 연금술 우선 대상 없음		Scripts/General/zzMaw-Item-Sorter.lua	51	1	인벤토리 정렬 설정
+maw-a261c54bd47e	translated	status	No enchants	마법 부여 없음		Scripts/General/zzAlchemy.lua	847	1	제작 상태 메시지
+maw-a5dab5ff2a0a	translated	status	No gem to upgrade	업그레이드할 보석이 없습니다		Scripts/General/zzMaw-Items.lua	4607	2	제작 상태 메시지
 maw-33e71e1ad40f	untranslated	status	No saving on the Arena			Scripts/Core/events.lua	494	1	
-maw-08d096c3cbf9	untranslated	status	Noises from the throne room			Scripts/Maps/7d29.lua	50	1	
-maw-9a6a729b83ce	untranslated	status	Not enough disarm skill			Scripts/General/zzMaw-Items.lua	4525	1	
-maw-a7d5cacc3245	untranslated	status	Not enough food			Scripts/General/zzMaw-Monsters.lua	2268	1	
+maw-08d096c3cbf9	translated	status	Noises from the throne room	왕좌실에서 소리가 들려옵니다		Scripts/Maps/7d29.lua	50	1	맵 이벤트 메시지
+maw-9a6a729b83ce	translated	status	Not enough disarm skill	함정 해제 기술이 부족합니다		Scripts/General/zzMaw-Items.lua	4525	1	아이템 상태 메시지
+maw-a7d5cacc3245	translated	status	Not enough food	식량이 부족합니다		Scripts/General/zzMaw-Monsters.lua	2268	1	게임 상태 메시지
 maw-6ab22af4436d	untranslated	status	Not enough gold.			Scripts/Global/zzMAWRespec.lua	47	1	
-maw-1a4d4c0b8c42	untranslated	status	Not enough Hit Points			Scripts/General/zzMaw-Spells.lua	2632	1	
-maw-93a4358c0a88	untranslated	status	Not enough Mana			Scripts/General/zzMaw-Spells.lua	2636	1	
+maw-1a4d4c0b8c42	translated	status	Not enough Hit Points	생명력이 부족합니다		Scripts/General/zzMaw-Spells.lua	2632	1	주문 상태 메시지
+maw-93a4358c0a88	translated	status	Not enough Mana	마나가 부족합니다		Scripts/General/zzMaw-Spells.lua	2636	1	주문 상태 메시지
 maw-363134f009ba	untranslated	status	NotAttune			Scripts/Global/Quest_SavingGoobers.lua	407	1	
 maw-cbba0c56cf18	untranslated	status	One of the 			Scripts/General/zzMaw-MultiBag.lua	271	1	
-maw-a85ccda3fbb3	untranslated	status	Out of range			Scripts/General/zzMAW-Skills.lua	758	1	
-maw-72479ce6070c	untranslated	status	Paralysis Immunity			Scripts/General/zzAlchemy.lua	388	1	
-maw-e1e6d8b46e7d	untranslated	status	Petrify Immunity			Scripts/General/zzAlchemy.lua	398	1	
-maw-1a3dc01cf4c5	untranslated	status	Player %s left the game.		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	702	1	
-maw-e4afef7c21dc	untranslated	status	Player must be active to consume the potion			Scripts/General/zzAlchemy.lua	98	1	
-maw-a3079ec1873f	untranslated	status	Poison Immunity			Scripts/General/zzAlchemy.lua	378	1	
-maw-b93a0425eadd	untranslated	status	Press R to refresh new items (20000 gold)			Scripts/General/zzMaw-Items.lua	4371	1	
-maw-4478c439aac4	untranslated	status	Queen Arrived!			Scripts/Maps/7d21.lua	18	1	
+maw-a85ccda3fbb3	translated	status	Out of range	사정거리 밖입니다		Scripts/General/zzMAW-Skills.lua	758	1	전투 기술 상태 메시지
+maw-72479ce6070c	translated	status	Paralysis Immunity	마비 면역		Scripts/General/zzAlchemy.lua	388	1	물약 효과 상태 메시지
+maw-e1e6d8b46e7d	translated	status	Petrify Immunity	석화 면역		Scripts/General/zzAlchemy.lua	398	1	물약 효과 상태 메시지
+maw-1a3dc01cf4c5	translated	status	Player %s left the game.	플레이어 %s님이 게임을 떠났습니다.	%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	702	1	멀티플레이 상태 메시지
+maw-e4afef7c21dc	translated	status	Player must be active to consume the potion	물약을 마시려면 해당 캐릭터가 활성 상태여야 합니다		Scripts/General/zzAlchemy.lua	98	1	물약 상태 메시지
+maw-a3079ec1873f	translated	status	Poison Immunity	독 면역		Scripts/General/zzAlchemy.lua	378	1	물약 효과 상태 메시지
+maw-b93a0425eadd	translated	status	Press R to refresh new items (20000 gold)	새 아이템 갱신: R (20,000 금화)		Scripts/General/zzMaw-Items.lua	4371	1	상점 갱신 안내
+maw-4478c439aac4	translated	status	Queen Arrived!	여왕이 도착했습니다!		Scripts/Maps/7d21.lua	18	1	맵 이벤트 메시지
 maw-5d0d5ed9e241	untranslated	status	Re-record: enter the data.			Scripts/Global/Quest_SavingGoobers.lua	708	3	
 maw-0299bc0ae98e	untranslated	status	Re-record: unable to locate.			Scripts/Global/Quest_SavingGoobers.lua	721	4	
-maw-6c771e89183d	untranslated	status	Refreshing!			Scripts/Maps/7out01.lua	29	1	
-maw-f2a00fb671f3	untranslated	status	Repaired			Scripts/General/zzMAW-Skills.lua	1150	1	
-maw-0b2eee706f6a	untranslated	status	Resistance Ignored			Scripts/Global/zzMaw_Mapping.lua	42	1	
+maw-6c771e89183d	translated	status	Refreshing!	갱신 중!		Scripts/Maps/7out01.lua	29	1	맵 이벤트 메시지
+maw-f2a00fb671f3	translated	status	Repaired	수리 완료		Scripts/General/zzMAW-Skills.lua	1150	1	수리 상태 메시지
+maw-0b2eee706f6a	translated	status	Resistance Ignored	저항 무시		Scripts/Global/zzMaw_Mapping.lua	42	1	전투 상태 메시지
 maw-07df90117f8e	untranslated	status	Seraphim aren't able to dual wield			Scripts/General/zzClasses.lua	366	1	
-maw-25b8069f8448	untranslated	status	Shared Life heals for 			Scripts/General/zzMaw-Spells.lua	820	2	
+maw-25b8069f8448	translated	status	Shared Life heals for 	생명 공유 회복량: 		Scripts/General/zzMaw-Spells.lua	820	2	회복 메시지 조각
 maw-b6e05bcb545c	untranslated	status	SUPREME UNLOCKED!!!			Scripts/General/zzMAW-Skills.lua	2725	1	
-maw-7694fdee9a86	untranslated	status	Teleported 			Scripts/General/zzMaw-Monsters.lua	4590	3	
-maw-028bcab4ba45	untranslated	status	The night is dark and full of terrors			Scripts/Maps/7out05.lua	26	1	
-maw-43064c742ef5	untranslated	status	This potion has not enough power			Scripts/General/zzAlchemy.lua	103	5	
-maw-73ecdec3d0ad	untranslated	status	This skill has reached its limit			Scripts/General/zzMAW-Skills.lua	2204	3	
-maw-ce0b6b3b08f8	untranslated	status	This skill is already as good as it will ever get			Scripts/General/zzMAW-Skills.lua	956	1	
-maw-a0af80748d88	untranslated	status	Unconscious Immunity			Scripts/General/zzAlchemy.lua	393	1	
+maw-7694fdee9a86	translated	status	Teleported 	순간이동: 		Scripts/General/zzMaw-Monsters.lua	4590	3	순간이동 상태 메시지 조각
+maw-028bcab4ba45	translated	status	The night is dark and full of terrors	밤은 어둡고 공포로 가득하다		Scripts/Maps/7out05.lua	26	1	맵 이벤트 메시지
+maw-43064c742ef5	translated	status	This potion has not enough power	이 물약의 위력이 부족합니다		Scripts/General/zzAlchemy.lua	103	5	물약 상태 메시지
+maw-73ecdec3d0ad	translated	status	This skill has reached its limit	이 기술은 한계에 도달했습니다		Scripts/General/zzMAW-Skills.lua	2204	3	기술 상태 메시지
+maw-ce0b6b3b08f8	translated	status	This skill is already as good as it will ever get	이 기술은 이미 최대치입니다		Scripts/General/zzMAW-Skills.lua	956	1	기술 상태 메시지
+maw-a0af80748d88	translated	status	Unconscious Immunity	의식불명 면역		Scripts/General/zzAlchemy.lua	393	1	물약 효과 상태 메시지
 maw-fdca59bb6706	untranslated	status	Unknown attack message type			Scripts/General/zzMaw-Stats.lua	1254	1	
 maw-8e9ac396678f	untranslated	status	We have no more items to trade for kegs			Scripts/Global/GLOBAL.lua	648	3	
 maw-11927a925167	untranslated	status	We have no more items to trade for pyramids			Scripts/Global/GLOBAL.lua	522	3	
-maw-81dae42075db	untranslated	status	Weakness Immunity			Scripts/General/zzAlchemy.lua	363	1	
+maw-81dae42075db	translated	status	Weakness Immunity	쇠약 면역		Scripts/General/zzAlchemy.lua	363	1	물약 효과 상태 메시지
 maw-2a354581708a	untranslated	status	"Welcome to the Nightmare...
 Good luck.. you will need"			Scripts/General/zzMaw-Monsters.lua	2901	1	
 maw-8c4450b5f678	untranslated	status	WindowMessage			Scripts/Core/events.lua	766	1	
-maw-68072d0141a4	untranslated	status	You found 			Scripts/General/zzMaw-Items.lua	1118	1	
-maw-ae4483c65ea6	untranslated	status	You Heal for 			Scripts/General/zzMaw-Spells.lua	168	10	
-maw-bea4b26e32e5	untranslated	status	You heal the party for 			Scripts/General/zzMaw-Spells.lua	464	2	
-maw-94404d7cfd26	untranslated	status	YOU LEARNED RETALIATION!!			Scripts/General/zzMAW-Skills.lua	2194	2	
-maw-4d53531a52c3	untranslated	status	You must prove your worth first			Scripts/Maps/outb3.lua	66	1	
-maw-f875312a0049	untranslated	status	You need a key to teleport to Emerald Island.			Scripts/Maps/7out02.lua	147	1	
-maw-da8bcc88b256	untranslated	status	You need a key to teleport to Erathia.			Scripts/Maps/7out05.lua	87	1	
-maw-cabdafc1e8e1	untranslated	status	You need a key to teleport to Evenmorn Island.			Scripts/Maps/7out02.lua	157	1	
-maw-6fa6ba69663b	untranslated	status	You need a key to use this hub. Talk to Illene Farswell.			Scripts/Maps/7out02.lua	179	1	
-maw-fddf50e25dc8	untranslated	status	You need to gain more exp. to benefit from this potion			Scripts/General/zzAlchemy.lua	255	1	
-maw-bdc15641585b	untranslated	status	Your level is too low (Level 			Scripts/General/zzAlchemy.lua	841	2	
+maw-68072d0141a4	translated	status	You found 	획득: 		Scripts/General/zzMaw-Items.lua	1118	1	아이템 필터 메시지 조각
+maw-ae4483c65ea6	translated	status	You Heal for 	회복량: 		Scripts/General/zzMaw-Spells.lua	168	10	회복 메시지 조각
+maw-bea4b26e32e5	translated	status	You heal the party for 	파티 회복량: 		Scripts/General/zzMaw-Spells.lua	464	2	회복 메시지 조각
+maw-94404d7cfd26	translated	status	YOU LEARNED RETALIATION!!	반격을 습득했습니다!!		Scripts/General/zzMAW-Skills.lua	2194	2	기술 습득 메시지
+maw-4d53531a52c3	translated	status	You must prove your worth first	먼저 자신의 가치를 증명해야 합니다		Scripts/Maps/outb3.lua	66	1	맵 이벤트 메시지
+maw-f875312a0049	translated	status	You need a key to teleport to Emerald Island.	에메랄드 섬으로 순간이동하려면 열쇠가 필요합니다.		Scripts/Maps/7out02.lua	147	1	순간이동 안내
+maw-da8bcc88b256	translated	status	You need a key to teleport to Erathia.	에라시아로 순간이동하려면 열쇠가 필요합니다.		Scripts/Maps/7out05.lua	87	1	순간이동 안내
+maw-cabdafc1e8e1	translated	status	You need a key to teleport to Evenmorn Island.	이븐모른 섬으로 순간이동하려면 열쇠가 필요합니다.		Scripts/Maps/7out02.lua	157	1	순간이동 안내
+maw-6fa6ba69663b	translated	status	You need a key to use this hub. Talk to Illene Farswell.	이 허브를 사용하려면 열쇠가 필요합니다. 일린 파스웰과 대화하세요.		Scripts/Maps/7out02.lua	179	1	순간이동 허브 안내
+maw-fddf50e25dc8	translated	status	You need to gain more exp. to benefit from this potion	이 물약의 효과를 받으려면 경험치를 더 쌓아야 합니다		Scripts/General/zzAlchemy.lua	255	1	물약 상태 메시지
+maw-bdc15641585b	translated	status	Your level is too low (Level 	레벨이 너무 낮습니다 (필요 레벨 		Scripts/General/zzAlchemy.lua	841	2	필요 레벨 메시지 조각
 maw-58716be0dfb5	untranslated	status	Your skill points has been reset!			Scripts/Global/zzMAWRespec.lua	124	1	
 maw-4ec5bd32dcb4	untranslated	table	'Rules' text index			Data/Tables/House rules.txt	373	1	
 maw-4287bda2092f	untranslated	table	+ add			Data/Tables/Class Starting Stats.txt	3	7	

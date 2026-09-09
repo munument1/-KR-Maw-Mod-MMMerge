@@ -1115,7 +1115,7 @@ function events.ItemGenerated(t)
 				RunNextTick(function()
 					goldGained=Party.Gold-goldBeforeLoot
 					Party.Gold=Party.Gold+itemGold
-					Game.ShowStatusText("You found " .. itemGold+goldGained .. " gold! (" .. tierList[itemPower] .. " " .. Game.ItemsTxt[itemID].NotIdentifiedName .. " filtered)")
+					Game.ShowStatusText("획득: " .. itemGold+goldGained .. " 금화! (" .. tierList[itemPower] .. " " .. Game.ItemsTxt[itemID].NotIdentifiedName .. " 필터됨)")
 				end)
 			end
 		end
@@ -1265,7 +1265,7 @@ function events.DoBadThingToPlayer(t)
         if protectionMessages[it.Bonus2] and protectionMessages[it.Bonus2][t.Thing] then
             t.Allow = false
             local protectionType = protectionMessages[it.Bonus2][t.Thing]
-            Game.ShowStatusText(string.format("Enchantment protects %s from %s", t.Player.Name, protectionType))
+            Game.ShowStatusText(string.format("마법 부여가 %s을(를) %s(으)로부터 보호합니다", t.Player.Name, protectionType))
         end
     end
 end
@@ -1322,7 +1322,7 @@ function poisonTimer()
 				end
 				if vars.poisonTime[i]==0 then			
 					Party[i].Poison3=0
-					Game.ShowStatusText(string.format("%s's poison effect expired",Party[i].Name))
+					Game.ShowStatusText(string.format("%s: 독 효과가 끝났습니다",Party[i].Name))
 				else
 					Party[i].HP=math.max(Party[i].HP-math.ceil(Party[i]:GetFullHP()*0.01)*mult,1)
 				end 
@@ -1335,7 +1335,7 @@ function poisonTimer()
 				end
 				if vars.poisonTime[i]==0 then			
 					Party[i].Poison2=0
-					Game.ShowStatusText(string.format("%s's poison effect expired",Party[i].Name))
+					Game.ShowStatusText(string.format("%s: 독 효과가 끝났습니다",Party[i].Name))
 				else
 					Party[i].HP=math.max(Party[i].HP-math.ceil(Party[i]:GetFullHP()*0.005)*mult,1)
 				end 
@@ -1348,7 +1348,7 @@ function poisonTimer()
 				end
 				if vars.poisonTime[i]==0 then			
 					Party[i].Poison1=0
-					Game.ShowStatusText(string.format("%s's poison effect expired",Party[i].Name))
+					Game.ShowStatusText(string.format("%s: 독 효과가 끝났습니다",Party[i].Name))
 				else
 					Party[i].HP=math.max(Party[i].HP-math.ceil(Party[i]:GetFullHP()*0.0025)*mult,1)
 				end 
@@ -4368,7 +4368,7 @@ function mawStoreShop()
 		end
 	end
 	if Game.HouseScreen==2 or Game.HouseScreen==95 then
-		Game.ShowStatusText("Press R to refresh new items (20000 gold)") --not working
+		Game.ShowStatusText("새 아이템 갱신: R (20,000 금화)") --not working
 	else 
 		return
 	end
@@ -4522,7 +4522,7 @@ function events.CanOpenChest(t)
 				id=0
 			end
 			evt.FaceAnimation(id,const.FaceAnimation.DoorLocked)
-			Game.ShowStatusText("Not enough disarm skill")
+			Game.ShowStatusText("함정 해제 기술이 부족합니다")
 		end
 	end
 end
@@ -4595,7 +4595,7 @@ function events.KeyDown(t)
 									id=id+1
 									evt.Add("Items",id)
 									Mouse.Item.BonusStrength=bonusStrength
-									Game.ShowStatusText(string.format("%s created", craftingNames[i+1]))
+									Game.ShowStatusText(string.format("%s 제작 완료", craftingNames[i+1]))
 									return
 								end
 							end
@@ -4604,7 +4604,7 @@ function events.KeyDown(t)
 				end
 			end
 			
-			Game.ShowStatusText("No gem to upgrade")
+			Game.ShowStatusText("업그레이드할 보석이 없습니다")
 			return
 		end
 		
@@ -4623,11 +4623,11 @@ function events.KeyDown(t)
 					end
 				end
 				if gemsFound>=3 then
-					Game.ShowStatusText(string.format("Convert %s into %s? (U)",craftingNames[i], craftingNames[i+1]))
+					Game.ShowStatusText(string.format("%s을(를) %s(으)로 변환하시겠습니까? (U)",craftingNames[i], craftingNames[i+1]))
 					return
 				end
 			end
-			Game.ShowStatusText("No gem to upgrade")
+			Game.ShowStatusText("업그레이드할 보석이 없습니다")
 			return
         end
     end

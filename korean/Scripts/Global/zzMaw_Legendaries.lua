@@ -1,0 +1,397 @@
+function getDistanceToMonster(monster)
+	return math.sqrt((Party.X - monster.X) * (Party.X - monster.X) + (Party.Y - monster.Y) * (Party.Y - monster.Y)) - monster.BodyRadius
+end
+
+
+function events.ItemAdditionalDamage(t)
+	--[[empower enchants HANDLED IN THE FUNCTION BELOW
+	local damage=0
+	if enchantbonusdamage[t.Item.Bonus2] then
+		local id=t.Player:GetIndex()
+		local index=table.find(damageKindMap,enchantbonusdamage[t.Item.Bonus2].Type)
+		local res=t.Monster.Resistances[index]%1000
+		damage=calcEnchantDamage(t.Player, t.Item, res, true, false, "damage")
+		local attackSpeedMult=getItemRecovery(t.Item, t.Player.LevelBase)/100
+		t.Result=round(damage*attackSpeedMult)
+		return
+	end
+	]]
+	t.Result=0
+end
+--[11]="Killing a monster will recover you action time",
+function events.CalcDamageToMonster(t)
+	if t.Result==0 then return end
+	local id=t.PlayerIndex
+	local data=WhoHitMonster()
+	if not data or not data.Player then return end
+	local pl=data.Player
+	local mon=t.Monster
+	--weapon enchants	
+	local fireAuraDamage=0
+	local enchantDamage=0
+	local fireRes=mon.Resistances[0]%1000
+	if data and not data.Object and t.DamageKind==4 then
+		for i=0,1 do
+			local it=pl:GetActiveItem(i)
+			if it then
+				local damage=calcFireAuraDamage(pl, it, fireRes, true, false, "damage")
+				if damage then
+					fireAuraDamage=fireAuraDamage+damage
+				end
+				
+				if it and enchantbonusdamage[it.Bonus2] then
+					local id=table.find(damageKindMap,enchantbonusdamage[it.Bonus2].Type)
+					local res=mon.Resistances[id]%1000
+					local dmg=calcEnchantDamage(pl, it, res, true, false, "damage")
+					if damage then
+						enchantDamage=enchantDamage+dmg
+					end
+				end 
+			end
+		end
+	elseif data and data.Object and (data.Object.Spell==133 or data.Spell==135) then --bow/blasters
+		local it=pl:GetActiveItem(2)
+		local damage=calcFireAuraDamage(pl, it, fireRes, true, false, "damage")
+		if damage and damage>fireAuraDamage then
+			fireAuraDamage=damage
+		end
+		if it and enchantbonusdamage[it.Bonus2] then
+			local id=table.find(damageKindMap,enchantbonusdamage[it.Bonus2].Type)
+			local res=mon.Resistances[id]%1000
+			local dmg=calcEnchantDamage(pl, it, res, true, false, "damage")
+			if damage then
+				enchantDamage=enchantDamage+dmg
+			end
+		end 
+	end
+	t.Result=t.Result+fireAuraDamage+enchantDamage
+	
+	--[17]="Your hits will deal 1% of current monster HP health (0.4% for AoE, multi-hit spells and arrows)",
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 17) then
+		if t.Result>0 and ((data and data.Object==nil and t.DamageKind==4) or (data and data.Object)) then
+			local dmg=mon.HP*0.02*2^(math.floor(mon.Resistances[0]/1000))
+			if data and data.Object and data.Object.Spell==44 then
+				dmg=mon.HP*0.02
+			end
+			dmg=dmg/(1+mon.Resistances[4]/100)
+			if (data and data.Object and data.Object.Spell and table.find(aoespells, data.Object.Spell)) or (data and data.Object and data.Object.Spell==133) then
+				dmg=dmg*0.5
+			end
+			if  data and not data.Object then
+				dmg=dmg*damageMultiplier[id]["Melee"]
+			elseif data and data.Object and data.Object.Spell==133 then
+				dmg=dmg*damageMultiplier[id]["Ranged"]
+			elseif data and data.Object and data.Object.Spell>0 then
+				if  table.find(dkClass, pl.Class) or table.find(dkClass, pl.Class) or table.find(assassinClass, pl.Class) then
+					dmg=dmg*damageMultiplier[id]["Melee"]
+				else
+					local s,m = SplitSkill(pl:GetSkill(const.Skills.Learning))
+					dmg=dmg*1.015^s
+				end
+			end
+			t.Result=t.Result+dmg
+		end
+	end
+	--shaman fire damage
+	if table.find(shamanClass, pl.Class) and t.DamageKind==4 and data.Object==nil and t.Result>0 then	
+		local s1=SplitSkill(pl.Skills[const.Skills.Fire])
+		local fireDamage=s1*0.001
+		if mon.Resistances[0]>=1000 then
+			mult=2^math.floor(mon.Resistances[0]/1000)
+			fireDamage=fireDamage*mult
+		end
+		fireDamage=math.max(mon.HP*fireDamage,s1)
+		fireRes=mon.Resistances[0]%1000
+		fireDamage=fireDamage/2^(fireRes/100)
+		t.Result=t.Result+fireDamage
+	end
+	--same for assassin
+	if data and pl and table.find(assassinClass, pl.Class) and t.DamageKind==4 and data.Object==nil and t.Result>0 then	
+		local s1=SplitSkill(pl.Skills[const.Skills.Water])
+		local waterDamage=s1*0.001
+		if mon.Resistances[0]>=1000 then
+			mult=2^math.floor(mon.Resistances[0]/1000)
+			waterDamage=waterDamage*mult
+		end
+		waterDamage=math.max(mon.HP*waterDamage,s1)
+		waterRes=mon.Resistances[2]%1000
+		waterDamage=waterDamage/2^(waterRes/100)
+		t.Result=t.Result+waterDamage
+	end
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 21) then
+		local mult=1
+		for i=0, Map.Monsters.High do
+			if Map.Monsters[i].Active then
+				dist=getDistanceToMonster(Map.Monsters[i])
+				if dist<=512 then
+					mult=mult+0.05
+				end
+			end
+		end
+		t.Result=t.Result*math.min(mult,2)
+	end
+	--end of [17]
+	--[14]="Critical chance over 100% increases total damage",
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 14) then
+		local critChance=getCritInfo(pl,false,getMonsterLevel(mon))
+		t.Result=math.round(t.Result*math.max(critChance,1))
+	end
+	--end of [14]
+	--[24]="killing a Monster Restores 10% of Health and Mana"
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 24) then
+		--restoreHPLeg=true
+		RunNextTick(function()
+			--if restoreHPLeg then
+				--restoreHPLeg=false
+				if mon.HP<=0 then
+					local fullHP=pl:GetFullHP()
+					local fullSP=pl:GetFullSP()
+					pl.HP=math.min(fullHP, pl.HP+fullHP*0.1)
+					pl.SP=math.min(fullSP, pl.SP+fullSP*0.1)
+				end
+			--end
+		end)
+	end
+	--end of 24
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 11) then
+		data=WhoHitMonster()
+		--no aoe spells
+		if (data and data.Object and table.find(aoespells,data.Object.Spell)) or (data and data.Spell==133) then
+			return
+		else
+			reduceRecovery=true
+			RunNextTick(function()
+				if reduceRecovery then
+					reduceRecovery=false
+					if mon.HP<=0 then
+						reduceRecovery=false
+						pl.RecoveryDelay=pl.RecoveryDelay/2
+						--changePlayer(id)
+					end
+				end
+			end)
+		end
+	end
+	if table.find(shamanClass, pl.Class)  then
+		if t.Result>0 and data and data.Object and data.Object.Spell>0 and data.Object.Spell<99 and data.Object.Spell~=44 then
+			local s=0
+			for school=12,18 do
+				skill=SplitSkill(pl.Skills[school])
+				s=s+skill
+			end
+			local mult=1+s/200
+			t.Result=t.Result*mult
+		end
+	end
+	
+end
+
+function changePlayer(id)
+	RunNextTick(function()
+		for i=0, Party.High do
+			if Party[i]:GetIndex()==id then
+				Game.CurrentPlayer=i
+				return
+			end
+		end
+	end)
+end
+
+--[13]="Immunity to all status effects from monsters",
+function events.DoBadThingToPlayer(t)
+	local pl=t.Player
+	local id=pl:GetIndex()
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 13) then
+		t.Allow = false
+		--Game.ShowStatusText("Status Immunity")
+	end
+end
+
+--[15]="Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)",
+function events.LoadMap(wasInGame)
+	vars.legendaryProtectionCooldown=vars.legendaryProtectionCooldown or {}
+	for i=0,Party.High do
+		local index=Party[i]:GetIndex()
+		vars.legendaryProtectionCooldown[index]=vars.legendaryProtectionCooldown[index] or 0
+	end
+end
+function events.CalcDamageToPlayer(t)
+	local id=t.Player:GetIndex()
+	--legendary [22]
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 22) then
+		local count=0
+		for i=0, Map.Monsters.High do
+			if Map.Monsters[i].Active then
+				dist=getDistanceToMonster(Map.Monsters[i])
+				if dist<=512 then
+					count=count+1
+				end
+			end
+		end
+		t.Result=t.Result*math.max(0.97^count,0.5)
+	end
+	
+	local pl = t.Player
+	
+	--shaman code
+	if table.find(shamanClass, pl.Class) and pl.Unconscious==0 and pl.Dead==0 and pl.Eradicated==0  then
+		m3=SplitSkill(pl.Skills[const.Skills.Water])
+		local lvl=getTotalLevel()
+		local _,_,_,avgRed=getPlayerEstimatedVitality(lvl+1)
+		local reduction=round(getMonsterDamage(false,(lvl+1))*(m3/lvl^0.65)/avgRed/2*0.99^(lvl^0.65)) --on average 1/2 of a B monster
+		t.Result=math.max(t.Result-reduction, t.Result*0.25)
+	end
+	--seraph code
+	if table.find(seraphClass, pl.Class) and pl.Unconscious==0 and pl.Dead==0 and pl.Eradicated==0  then
+		m3=SplitSkill(pl.Skills[const.Skills.Spirit])
+		local lvl=getTotalLevel()
+		local _,_,_,avgRed=getPlayerEstimatedVitality(lvl+1)
+		local reduction=round(getMonsterDamage(false,(lvl+1))*(m3/lvl^0.65)/avgRed/2*0.99^(lvl^0.65)) --on average 1/2 of a B monster
+		t.Result=math.max(t.Result-reduction, t.Result*0.25)
+	end
+	
+	--end of [22]
+	--------------------
+	--MANA SHIELD CODE--
+	--------------------
+	
+	t.Result = calcManaShield(pl, t.Result)
+	
+	---------------------
+	if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 15) then
+		if pl.Unconscious==0 and pl.Dead==0 and pl.Eradicated==0 then
+			if vars.legendaryProtectionCooldown[id]==nil then
+				vars.legendaryProtectionCooldown[id]=0
+			end		
+			if t.Result>=pl.HP and Game.Time>vars.legendaryProtectionCooldown[id] then
+				--calculate healing
+				for i=0,Party.High do
+					if Party[i]:GetIndex()==id then
+						Party[i].HP=Party[i]:GetFullHP()/4
+					end
+				end
+				vars.legendaryProtectionCooldown[id] = Game.Time + const.Minute * 150
+				Game.ShowStatusText("전설의 힘이 치명적인 피해로부터 당신을 구했습니다")
+				t.Result=0
+			end
+		end
+	end
+	--seraphim
+	if table.find(seraphClass, pl.Class) and pl.Unconscious==0 and pl.Dead==0 and pl.Eradicated==0 then
+		if vars.divineProtectionCooldown[id]==nil then
+			vars.divineProtectionCooldown[id]=0
+		end		
+		if t.Result>=pl.HP and Game.Time>vars.divineProtectionCooldown[id] then
+				--calculate healing
+			heal=round(GetMaxHP(pl)*0.25)
+			for i=0,Party.High do
+				if Party[i]:GetIndex()==id then
+					evt[i].Add("HP",heal)
+				end
+			end
+			vars.divineProtectionCooldown[id] = Game.Time + const.Minute * 150
+			Game.ShowStatusText("신성한 보호가 치명적인 피해로부터 당신을 구했습니다")
+			t.Result=math.min(t.Result, pl.HP-1)
+		end	
+	end
+	
+	if Game.BolsterAmount>=300 then
+		RunNextTick(function()
+			local fullHP=pl:GetFullHP()
+			local id=pl:GetIndex()
+			if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 30) then
+				fullHP=math.max(fullHP,pl:GetFullSP())
+				fullHP=fullHP*manaShieldManaEfficiency(pl)
+			end
+			local currentHP=pl.HP
+			if currentHP<-fullHP then
+				pl.Dead=Game.Time
+				pl.SP=0
+			end
+			if currentHP<-fullHP*2 then
+				pl.Eradicated=Game.Time
+			end
+			if vars.insanityMode and enableDisintegrate and currentHP<-fullHP*10 and Party.Count>1 then
+				for i=0,Party.High do
+					if Party[i]:GetIndex()==id then
+						Game.PlaySound(4833+pl.Voice*100)
+						DismissCharacter(i)
+						Game.ShowStatusText("소멸됨")
+						return
+					end
+				end
+			end
+		end)
+	end
+end
+
+
+--[16]="Your highest resistance will always be used against non physical attacks",
+--inside calcMawDamage
+
+
+
+--[19]="Your weapon enchants now scales with the highest between might/int./pers.",
+--inside calcspelldamage in maw spells and all across the code for tooltips
+
+function calcManaShield(pl, damage)
+	-- Get the player and their skill levels
+	local s, m = SplitSkill(Skillz.get(pl, 51))
+	local slot = 0
+	local id = pl:GetIndex()
+	for i = 0, Party.High do
+		if Party[i]:GetIndex() == id then
+			slot = i
+			break
+		end
+	end
+
+	-- Check if the Mana Shield is active for this player
+	if s > 0 and vars.manaShield and vars.manaShield[slot] then
+		local currentHP = pl.HP
+		local totalHP = pl:GetFullHP()
+		local mana = pl.SP
+
+		-- Define thresholds and damage multipliers based on skill level
+		local reduction = {0.25, 0.5, 0.75, 1, [0]=0}
+		-- Calculate mana efficiency based on skill and mastery levels
+		local manaEfficiency = manaShieldManaEfficiency(false, s)
+		local absorbDamage=damage*reduction[m]
+		local manaCost = round(absorbDamage/manaEfficiency)
+		absorbDamage = math.min(absorbDamage,(mana*manaEfficiency))
+		damage = round(damage - absorbDamage)
+		pl.SP = math.max(pl.SP-manaCost, 0)
+	end
+	return damage
+end
+
+function manaShieldManaEfficiency(pl, skill)
+	if pl then
+		skill=SplitSkill(Skillz.get(pl, 51))
+	end
+	if skill>1024 then
+		skill=SplitSkill(skill)
+	end
+	local manaEfficiency = (1 + skill^1.4 / 60)
+	if skill > 50 then
+		manaEfficiency = (1 + 50^1.4 / 60) * skill / 50
+	end
+	return manaEfficiency
+end
+
+--[[
+local x=0
+local y=0
+local z=0
+function GetTraveledDistance()
+	local dist=getDistance(x,y,z)
+	dist=math.round(dist*100)/100
+	x=Party.X
+	y=Party.Y
+	z=Party.Z
+	Game.ShowStatusText(dist)
+end
+function events.AfterLoadMap()
+Timer(GetTraveledDistance, const.Minute/2)
+end
+]]

@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 36,
-  "translated_entries_with_patchable_occurrences": 35,
-  "patchable_occurrences_targeted": 42,
+  "translated_entries": 157,
+  "translated_entries_with_patchable_occurrences": 156,
+  "patchable_occurrences_targeted": 252,
   "skipped_unpatchable_occurrences_for_translated_sources": 41,
   "changed_files": [
     {
@@ -11,35 +11,107 @@
       "replacements": 12
     },
     {
+      "file": "Scripts/General/zzAlchemy.lua",
+      "replacements": 22
+    },
+    {
+      "file": "Scripts/General/zzClasses.lua",
+      "replacements": 5
+    },
+    {
+      "file": "Scripts/General/zzMAW-Skills.lua",
+      "replacements": 20
+    },
+    {
+      "file": "Scripts/General/zzMaw-Item-Sorter.lua",
+      "replacements": 13
+    },
+    {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 19
+      "replacements": 32
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
-      "replacements": 1
-    },
-    {
-      "file": "Scripts/General/zzMaw-Stats.lua",
       "replacements": 2
     },
     {
+      "file": "Scripts/General/zzMaw-Monsters.lua",
+      "replacements": 26
+    },
+    {
+      "file": "Scripts/General/zzMaw-Spells.lua",
+      "replacements": 78
+    },
+    {
+      "file": "Scripts/General/zzMaw-Stats.lua",
+      "replacements": 4
+    },
+    {
       "file": "Scripts/General/zz_Maw-initialize.lua",
+      "replacements": 3
+    },
+    {
+      "file": "Scripts/General/zzzOnlineVariableSender.lua",
       "replacements": 1
+    },
+    {
+      "file": "Scripts/Global/zzMAWPotions.lua",
+      "replacements": 4
     },
     {
       "file": "Scripts/Global/zzMAWStatusMsg.lua",
       "replacements": 1
     },
     {
-      "file": "Scripts/Maps/7out02.lua",
+      "file": "Scripts/Global/zzMaw_Legendaries.lua",
+      "replacements": 3
+    },
+    {
+      "file": "Scripts/Global/zzMaw_Mapping.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Maps/7d21.lua",
       "replacements": 2
+    },
+    {
+      "file": "Scripts/Maps/7d24.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Maps/7d29.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Maps/7out01.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Maps/7out02.lua",
+      "replacements": 7
+    },
+    {
+      "file": "Scripts/Maps/7out05.lua",
+      "replacements": 3
     },
     {
       "file": "Scripts/Maps/out02.lua",
       "replacements": 2
     },
     {
+      "file": "Scripts/Maps/outb3.lua",
+      "replacements": 2
+    },
+    {
       "file": "Scripts/Maps/oute3.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Maps/znwc.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua",
       "replacements": 2
     }
   ],

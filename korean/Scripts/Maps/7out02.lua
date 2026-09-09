@@ -76,7 +76,7 @@ end
 evt.Map[1000] = function()
 	if not mapvars.ambush then
 		if Party.X>17390 and Party.X<19429 and Party.Y>-20015 and Party.Y<-19454 and Party.Z<800 then
-			Game.ShowStatusText("It's an ambush!")
+			Game.ShowStatusText("매복이다!")
 			pseudoSpawnpoint{monster = 271,  x = 19613, y = -17760, z = 1595 , count = 2, powerChances = {60, 30, 10}, radius = 64, group = 1}
 			pseudoSpawnpoint{monster = 271,  x = 19307, y = -18344, z = 1568 , count = 2, powerChances = {60, 30, 10}, radius = 64, group = 1}
 			pseudoSpawnpoint{monster = 271,  x = 18344, y = -18861, z = 1666 , count = 2, powerChances = {60, 30, 10}, radius = 64, group = 1}
@@ -106,7 +106,7 @@ end
 evt.Map[1001] = function()
 	mapvars.spawn=mapvars.spawn or 0
 	if not mapvars.fortclear and getDistance(8200,4098,385)<2000 then
-		Game.ShowStatusText("Goblin Reinforcements")
+		Game.ShowStatusText("고블린 증원군")
 		pseudoSpawnpoint{monster = 271,  x = 6613, y = 2546, z = 122 , count = 1, powerChances = {60, 30, 10}, radius = 64, group = 1}
 		pseudoSpawnpoint{monster = 271,  x = 6601, y = 5690, z = 122 , count = 1, powerChances = {60, 30, 10}, radius = 64, group = 1}
 		pseudoSpawnpoint{monster = 271,  x = 9765, y = 2500, z = 122 , count = 1, powerChances = {60, 30, 10}, radius = 64, group = 1}
@@ -144,7 +144,7 @@ if isRedone then
 		if evt.Cmp("Inventory", 1466) then         -- "Emerald Is. Teleportal Key"
 			evt.MoveToMap{X = 12409, Y = 4917, Z = -64, Direction = 1040, LookAngle = 0, SpeedZ = 0, HouseId = 0, Icon = 0, Name = "7Out01.Odm"}
 		else
-			Game.ShowStatusText("You need a key to teleport to Emerald Island.")  -- "You need a key to teleport to Emerald Island."
+			Game.ShowStatusText("에메랄드 섬으로 순간이동하려면 열쇠가 필요합니다.")  -- "You need a key to teleport to Emerald Island."
 		end
 	end
 	
@@ -154,7 +154,7 @@ if isRedone then
 		if evt.Cmp("Inventory", 1470) then
 	       evt.MoveToMap{X = 17161, Y = -10827, Z = 0, Direction = 1024, LookAngle = 0, SpeedZ = 0, HouseId = 677, Icon = 4, Name = "Out09.odm"}         -- "Evenmorn Island"
 		else
-			Game.ShowStatusText("You need a key to teleport to Evenmorn Island.")  -- "You need a key to teleport to Evenmorn Island."
+			Game.ShowStatusText("이븐모른 섬으로 순간이동하려면 열쇠가 필요합니다.")  -- "You need a key to teleport to Evenmorn Island."
 		end
 	end
 	
@@ -176,7 +176,7 @@ if isRedone then
 			goto _11
 		end
 		if not evt.Cmp{"Inventory", Value = 1469} then         -- "Barrow Downs Key"
-			Game.ShowStatusText("You need a key to use this hub. Talk to Illene Farswell.")     -- "You need a key to use this hub. Talk to Illene Farswell!"
+			Game.ShowStatusText("이 허브를 사용하려면 열쇠가 필요합니다. 일린 파스웰과 대화하세요.")     -- "You need a key to use this hub. Talk to Illene Farswell!"
 			return
 		end
 	::_12::

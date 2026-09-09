@@ -151,7 +151,7 @@ function resetMap(dungeonId)
 				if Game.MapStats[i].FileName==vars.resetDungeon then
 					vars.dungeonCompletedList[Game.MapStats[i].Name]="resetting"
 					Game.MapStats[i].RefillDays=0
-					Game.ShowStatusText("Entering will reset the dungeon")
+					Game.ShowStatusText("입장하면 던전이 초기화됩니다")
 				end
 			end
 		end

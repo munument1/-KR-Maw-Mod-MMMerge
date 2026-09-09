@@ -634,9 +634,9 @@ function events.KeyDown(t)
     if(t.Key==79) and Game.CurrentScreen==0 then --O
         disableBow= not disableBow
 		if disableBow then
-			Game.ShowStatusText("Bow Disabled")
+			Game.ShowStatusText("활 사용 비활성화")
 		else
-			Game.ShowStatusText("Bow Enabled")
+			Game.ShowStatusText("활 사용 활성화")
 		end
         
         local dragonAttackRanged=137
