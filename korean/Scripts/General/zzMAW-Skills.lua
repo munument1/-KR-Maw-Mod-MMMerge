@@ -1461,7 +1461,7 @@ end
 
 function events.GameInitialized2()
 	Skillz.setDesc(const.Skills.Learning,1,"Increases spell damage and healing at the expense of higher mana cost and cast time.\n")
-	Skillz.setName(const.Skills.Learning, "Ascension")
+	Skillz.setName(const.Skills.Learning, "승천")
 	Game.SkillDesNormal[const.Skills.Learning]= "Mana cost reduced by 12.5%."
 	Game.SkillDesExpert[const.Skills.Learning]= "Mana cost reduced by 25%"
 	Game.SkillDesMaster[const.Skills.Learning]= "Mana cost reduced by 37.5%"
@@ -2043,7 +2043,7 @@ end
 function events.GameInitialized2()
 	local coverSkill=50
 	Skillz.new_armor(coverSkill)
-	Skillz.setName(coverSkill, "Cover")
+	Skillz.setName(coverSkill, "엄호")
 	Skillz.setDesc(coverSkill, 1, "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n")
 	Skillz.setDesc(coverSkill, 2, "Allow use to Cover Physical damage\n")
 	Skillz.setDesc(coverSkill, 3, "Allow use to Cover Projectiles damage")
@@ -2080,7 +2080,7 @@ function events.Tick()
 				end
 			end
 			if noarmor then
-				Game.GlobalTxt[143]="Misc"
+				Game.GlobalTxt[143]="기타"
 			end
 			if Skillz.get(pl,50)>0 and Skillz.get(pl,51)>0 then
 				Game.GlobalTxt[143]="\n" .. Game.GlobalTxt[143]
@@ -2473,7 +2473,7 @@ end
 function events.GameInitialized2()
 	local manaSkill=51
 	Skillz.new_armor(manaSkill)
-	Skillz.setName(manaSkill, "Mana Shield")
+	Skillz.setName(manaSkill, "마나 방패")
 	Skillz.setDesc(manaSkill, 1, "Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n")
 	Skillz.setDesc(manaSkill, 2, "Absorb up to 25% damage")
 	Skillz.setDesc(manaSkill, 3, "Absorb up to 50% damage")
@@ -2505,7 +2505,7 @@ end
 function events.GameInitialized2()
 	local Enlightenment=52
 	Skillz.new_magic(Enlightenment)
-	Skillz.setName(Enlightenment, "Enlightenment")
+	Skillz.setName(Enlightenment, "깨달음")
 	Skillz.setDesc(Enlightenment, 1, "Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n")
 	Skillz.setDesc(Enlightenment, 2, "Mana is increased by 2% per skill level, cost divisor increased by 0.5")
 	Skillz.setDesc(Enlightenment, 3, "Mana is increased by 3% per skill level, cost divisor increased by 1")
@@ -2536,7 +2536,7 @@ end
 function events.GameInitialized2()
 	local Retaliation=53
 	Skillz.new_armor(Retaliation)
-	Skillz.setName(Retaliation, "Retaliation")
+	Skillz.setName(Retaliation, "반격")
 	Skillz.setDesc(Retaliation, 1, "After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n")
 	Skillz.setDesc(Retaliation, 2, "Your next attack deals additional damage, multiplied by skill level")
 	Skillz.setDesc(Retaliation, 3, "Your next attack recovery time is reduced by 30%")

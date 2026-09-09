@@ -2308,7 +2308,7 @@ end
 --new names
 function events.GameInitialized2()
 	for i=0,Game.MonstersTxt.High do
-		Game.PlaceMonTxt[i+300]=string.format("Resurrected " .. Game.MonstersTxt[i].Name)
+		Game.PlaceMonTxt[i+300]=string.format("부활한 " .. Game.MonstersTxt[i].Name)
 	end
 end
 function events.LoadMap()
@@ -3789,8 +3789,8 @@ end
 function events.GameInitialized2()
 	Game.PlaceMonTxt[211]="바의 성직자"
 	Game.PlaceMonTxt[212]="바의 사제"
-	Game.PlaceMonTxt[213]="Cardinal of Baa"
-	Game.PlaceMonTxt[214]="High Cardinal"
+	Game.PlaceMonTxt[213]="바의 추기경"
+	Game.PlaceMonTxt[214]="고위 추기경"
 end
 
 

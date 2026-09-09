@@ -702,13 +702,13 @@ end
 ------------------------------
 function events.GameInitialized2()
 	Game.SpellsTxt[18].Name="연쇄 번개"
-	Game.SpellsTxt[18].Expert="Spell hits up to 2 times"
-	Game.SpellsTxt[18].Master="Spell hits up to 3 times"
-	Game.SpellsTxt[18].GM="Spell hits up to 4 times"
+	Game.SpellsTxt[18].Expert="최대 2회 적중합니다"
+	Game.SpellsTxt[18].Master="최대 3회 적중합니다"
+	Game.SpellsTxt[18].GM="최대 4회 적중합니다"
 
 	--Invisibility
-	Game.SpellsTxt[19].Master="Duration 15+1.5 minutes per point of skill"
-	Game.SpellsTxt[19].GM="Duration 30+3 minutes per point of skill"
+	Game.SpellsTxt[19].Master="지속시간: 15분 + 기술 포인트당 1.5분"
+	Game.SpellsTxt[19].GM="지속시간: 30분 + 기술 포인트당 3분"
 	--curse
 	Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. "\n\nExpert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit.")
 	Game.SpellsTxt[49].Normal="n/a\n"
@@ -718,9 +718,9 @@ function events.GameInitialized2()
 	
 	--heroism
 	Game.SpellsTxt[51].Description="Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.\nLasts for 2 hours plus 1 hour per point of skill"
-	Game.SpellsTxt[51].Expert="Increases damage by 10 plus 1 per skill point"
-	Game.SpellsTxt[51].Master="Increases damage by 10 plus 1.5 per skill point"
-	Game.SpellsTxt[51].GM="Increases damage by 10 plus 2 per skill point"
+	Game.SpellsTxt[51].Expert="피해량이 10 + 기술 포인트당 1만큼 증가합니다"
+	Game.SpellsTxt[51].Master="피해량이 10 + 기술 포인트당 1.5만큼 증가합니다"
+	Game.SpellsTxt[51].GM="피해량이 10 + 기술 포인트당 2만큼 증가합니다"
 
 	--greater heal
 	Game.SpellsTxt[74].Name="대치유"
@@ -729,26 +729,26 @@ function events.GameInitialized2()
 	Game.SpellsTxt[74].Expert="n/a\n"
 	
 	--Protection from magic
-	Game.SpellsTxt[75].Description="Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken."
+	Game.SpellsTxt[75].Description="마법으로부터의 보호는 파티 전체에 적용되어 일부 주문과 몬스터 능력이 유발하는 약화 상태에 면역을 부여합니다. 대상 상태는 독, 질병, 석화, 마비, 약화입니다. 효과를 한 번 막을 때마다 주문이 약해집니다. 육체 마법 기술 포인트당 1회의 공격을 막을 수 있으며 최대 10회까지 유지되고, 그 뒤에는 효과가 사라집니다."
 	
 	--protections
 	protectionSpells={25,69,36,3,58,14}
 	for _, i in ipairs(protectionSpells) do
-		Game.SpellsTxt[i].GM="Effect is now passive"
+		Game.SpellsTxt[i].GM="이제 효과가 지속 효과로 적용됩니다"
 	end
 	--day of Gods 
-	Game.SpellsTxt[83].Description="Temporarily increases all seven stats on all your characters by 1 per skill in Light Magic.  This spell lasts until you rest."
-	Game.SpellsTxt[83].Expert="All stats increased by 10+1 per skill"
-	Game.SpellsTxt[83].Master="All stats increased by 15+1.5 per skill"
-	Game.SpellsTxt[83].GM="All stats increased by 20+2 per skill"
+	Game.SpellsTxt[83].Description="파티원 모두의 일곱 능력치를 빛 마법 기술 포인트당 1만큼 일시적으로 증가시킵니다. 휴식할 때까지 지속됩니다."
+	Game.SpellsTxt[83].Expert="모든 능력치가 10 + 기술 포인트당 1만큼 증가합니다"
+	Game.SpellsTxt[83].Master="모든 능력치가 15 + 기술 포인트당 1.5만큼 증가합니다"
+	Game.SpellsTxt[83].GM="모든 능력치가 20 + 기술 포인트당 2만큼 증가합니다"
 
 	--Day of the protection
-	Game.SpellsTxt[85].Description="Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic."
-	Game.SpellsTxt[85].Master="All spells cast at 1.5 times skill"
-	Game.SpellsTxt[85].GM="All spells cast at 2 times skill"
+	Game.SpellsTxt[85].Description="파티 전체에 화염, 공기, 물, 대지, 정신, 육체 보호와 낙하 완화, 마법의 눈을 동시에 시전합니다. 각 효과는 빛 마법 기술 수치의 두 배로 적용됩니다."
+	Game.SpellsTxt[85].Master="모든 주문이 기술 수치의 1.5배로 적용됩니다"
+	Game.SpellsTxt[85].GM="모든 주문이 기술 수치의 2배로 적용됩니다"
 	
 
-	Game.SpellsTxt[114].Description="Mistform allows the vampire to reduce physical damage by 75%.  However, a vampire in Mistform cannot perform any physical attacks.  Vampires in Mistform are able to use spells and abilities and are affected by spells and abilities."
+	Game.SpellsTxt[114].Description="안개 형상은 뱀파이어가 받는 물리 피해를 75% 줄입니다. 대신 안개 형상에서는 물리 공격을 할 수 없습니다. 주문과 능력은 사용할 수 있으며, 주문과 능력의 영향도 정상적으로 받습니다."
 
 	
 
@@ -2000,10 +2000,10 @@ function AscendCCSpells(pl,s,m,personalityReduction)
 		local durE = baseDuration * ({0.5, 0.65, 0.8, 1})[2] * 1.015^(s) / (lvl/200)
 		local durM = baseDuration * ({0.5, 0.65, 0.8, 1})[3] * 1.015^(s) / (lvl/200)
 		local durGM = baseDuration * ({0.5, 0.65, 0.8, 1})[4] * 1.015^(s) / (lvl/200)
-		Game.SpellsTxt[key].Normal = string.format("Duration: %.1f seconds", durN)
-		Game.SpellsTxt[key].Expert = string.format("Duration: %.1f seconds", durE)
-		Game.SpellsTxt[key].Master = string.format("Duration: %.1f seconds", durM)
-		Game.SpellsTxt[key].GM = string.format("Duration: %.1f seconds", durGM)
+		Game.SpellsTxt[key].Normal = string.format("지속시간: %.1f초", durN)
+		Game.SpellsTxt[key].Expert = string.format("지속시간: %.1f초", durE)
+		Game.SpellsTxt[key].Master = string.format("지속시간: %.1f초", durM)
+		Game.SpellsTxt[key].GM = string.format("지속시간: %.1f초", durGM)
 	
 		if key==122 then
 			Game.Spells[key]["SpellPointsNormal"]=15
@@ -2078,54 +2078,54 @@ function ascension(customIndex)
 		end				
 			
 		--change tooltips according to ascended damage
-		Game.SpellsTxt[2].Description=string.format("Launches a burst of fire at a single target.  Damage is %s+1-%s points of damage per point of skill in Fire Magic.   Firebolt is safe, effective and has a low casting cost.",dmgAddTooltip(s, m,2),diceMaxTooltip(s, m,2))
-		Game.SpellsTxt[6].Description=string.format("Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does 1-%s points of damage per point of skill in Fire Magic.",diceMaxTooltip(s, m,6))
+		Game.SpellsTxt[2].Description=string.format("단일 대상에게 화염탄을 발사합니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다. 화염탄은 안전하고 효율적이며 주문 소모가 적습니다.",dmgAddTooltip(s, m,2),diceMaxTooltip(s, m,2))
+		Game.SpellsTxt[6].Description=string.format("단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 화염 마법 기술 포인트당 1-%s의 피해를 줍니다.",diceMaxTooltip(s, m,6))
 		--fire spikes fix
 		Game.SpellsTxt[7].Description="지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다."
-		Game.SpellsTxt[7].Expert=string.format("Causes 1-%s points of damage per point of skill, 5 spikes maximum",diceMaxTooltip(s, m,7))
-		Game.SpellsTxt[7].Master=string.format("Causes 1-%s points of damage per point of skill, 5 spikes maximum",round(diceMaxTooltip(s, m,7)/6*8))
-		Game.SpellsTxt[7].GM=string.format("Causes 1-%s points of damage per point of skill, 5 spikes maximum",round(diceMaxTooltip(s, m,7)/6*10))
+		Game.SpellsTxt[7].Expert=string.format("기술 포인트당 1-%s의 피해를 주며, 화염 가시는 최대 5개까지 설치할 수 있습니다",diceMaxTooltip(s, m,7))
+		Game.SpellsTxt[7].Master=string.format("기술 포인트당 1-%s의 피해를 주며, 화염 가시는 최대 5개까지 설치할 수 있습니다",round(diceMaxTooltip(s, m,7)/6*8))
+		Game.SpellsTxt[7].GM=string.format("기술 포인트당 1-%s의 피해를 주며, 화염 가시는 최대 5개까지 설치할 수 있습니다",round(diceMaxTooltip(s, m,7)/6*10))
 		----------------------------------------
 		
-		Game.SpellsTxt[8].Description=string.format("Reserve a mana percentage to surround your characters with a very hot fire that is only harmful to others.  The spell will deliver %s points of damage plus 1-%s per point of skill to all nearby monsters for as long as they remain in the area of effect.",dmgAddTooltip(s, m,8),diceMaxTooltip(s, m,8))
-		Game.SpellsTxt[9].Description=string.format("Summons flaming rocks from the sky which fall in a large radius surrounding your chosen target.  Try not to be near the victim when you use this spell.  A single meteor does %s points of damage plus %s per point of skill in Fire Magic.  This spell only works outdoors.",dmgAddTooltip(s, m,9),diceMaxTooltip(s, m,9))
-		Game.SpellsTxt[10].Description=string.format("Inferno burns all monsters in sight when cast, excluding your characters.  One or two castings can clear out a room of weak or moderately powerful creatures. Each monster takes %s points of damage plus %s per point of skill in Fire Magic.  This spell only works indoors.",dmgAddTooltip(s, m,10),diceMaxTooltip(s, m,10))
-		Game.SpellsTxt[11].Description=string.format("Among the strongest direct damage spells available, Incinerate inflicts massive damage on a single target.  Only the strongest of monsters can expect to survive this spell.  Damage is %s points plus 1-%s per point of skill in Fire Magic.",dmgAddTooltip(s, m,11),diceMaxTooltip(s, m,11))
-		Game.SpellsTxt[15].Description=string.format("Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic.",diceMaxTooltip(s, m,15))
+		Game.SpellsTxt[8].Description=string.format("마나의 일부를 예약해 파티 주변을 뜨거운 불길로 감쌉니다. 불길은 파티원에게는 해를 주지 않으며, 효과 범위 안의 주변 몬스터에게 %s + 기술 포인트당 1-%s의 피해를 지속적으로 줍니다.",dmgAddTooltip(s, m,8),diceMaxTooltip(s, m,8))
+		Game.SpellsTxt[9].Description=string.format("하늘에서 불타는 바위를 소환해 지정한 대상 주변의 넓은 범위에 떨어뜨립니다. 시전할 때 대상 가까이에 있지 않는 것이 좋습니다. 운석 하나당 %s + 화염 마법 기술 포인트당 %s의 피해를 줍니다. 야외에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,9),diceMaxTooltip(s, m,9))
+		Game.SpellsTxt[10].Description=string.format("시야 안의 모든 몬스터를 불태우되 파티원은 제외합니다. 한두 번만 시전해도 약하거나 중간 정도의 적이 가득한 방을 정리할 수 있습니다. 각 몬스터는 %s + 화염 마법 기술 포인트당 %s의 피해를 받습니다. 실내에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,10),diceMaxTooltip(s, m,10))
+		Game.SpellsTxt[11].Description=string.format("가장 강력한 단일 대상 피해 주문 중 하나입니다. 소각은 한 대상에게 막대한 피해를 주며, 매우 강한 몬스터만이 살아남을 수 있습니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,11),diceMaxTooltip(s, m,11))
+		Game.SpellsTxt[15].Description=string.format("작은 번개 구체 여러 개를 발사합니다. 구체는 무언가에 부딪히거나 사라질 때까지 튕겨 다니므로 이동 경로를 예측하기 어렵습니다. 작은 몬스터가 많은 방에서 특히 유용합니다. 구체 하나당 피해량은 공기 마법 기술 포인트당 1-%s입니다.",diceMaxTooltip(s, m,15))
 		Game.SpellsTxt[18].Description=string.format("Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.\n\nThe spell then arcs to a second target, hitting it as well.",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))
-		Game.SpellsTxt[20].Description=string.format("Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic.",dmgAddTooltip(s, m,20),diceMaxTooltip(s, m,20))
-		Game.SpellsTxt[22].Description=string.format("Calls stars from the heavens to smite and burn your enemies.  Twenty stars are called, and the damage for each star is %s points plus %s per point of skill in Air Magic. Try not to get caught in the blast! This spell only works outdoors.",dmgAddTooltip(s, m,22),diceMaxTooltip(s, m,22))
-		Game.SpellsTxt[24].Description=string.format("Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s points of damage plus 1-%s per point of skill.",dmgAddTooltip(s, m,24),diceMaxTooltip(s, m,24))
-		Game.SpellsTxt[26].Description=string.format("Fires a bolt of ice at a single target.  The missile does %s + 1-%s points of damage per point of skill in Water Magic.",dmgAddTooltip(s, m,26),diceMaxTooltip(s, m,26))
-		Game.SpellsTxt[29].Description=string.format("Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s points of damage plus 1-%s per point of skill.",dmgAddTooltip(s, m,29),diceMaxTooltip(s, m,29))
-		Game.SpellsTxt[32].Description=string.format("Fires a ball of ice in the direction the caster is facing.  The ball will shatter when it hits something, launching 7 shards of ice in all directions except the caster's.  The shards will ricochet until they strike a creature or melt.  Each shard does %s points of damage plus 1-%s per point of skill in Water Magic.",dmgAddTooltip(s, m,32),diceMaxTooltip(s, m,32))
+		Game.SpellsTxt[20].Description=string.format("단일 대상 주변의 공기를 파괴해 급격한 공기 유입과 충격파를 일으킵니다. 피해량은 %s + 공기 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,20),diceMaxTooltip(s, m,20))
+		Game.SpellsTxt[22].Description=string.format("하늘의 별을 불러 적을 강타하고 불태웁니다. 20개의 별이 떨어지며, 별 하나당 %s + 공기 마법 기술 포인트당 %s의 피해를 줍니다. 폭발에 휘말리지 않게 주의하십시오. 야외에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,22),diceMaxTooltip(s, m,22))
+		Game.SpellsTxt[24].Description=string.format("파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,24),diceMaxTooltip(s, m,24))
+		Game.SpellsTxt[26].Description=string.format("단일 대상에게 얼음 화살을 발사합니다. %s + 물 마법 기술 포인트당 1-%s의 피해를 줍니다.",dmgAddTooltip(s, m,26),diceMaxTooltip(s, m,26))
+		Game.SpellsTxt[29].Description=string.format("단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,29),diceMaxTooltip(s, m,29))
+		Game.SpellsTxt[32].Description=string.format("시전자가 바라보는 방향으로 얼음 구체를 발사합니다. 충돌하면 산산이 부서져 시전자 방향을 제외한 모든 방향으로 7개의 얼음 파편을 날립니다. 파편은 생물에 맞거나 녹을 때까지 튕겨 다닙니다. 파편 하나당 %s의 기본 피해와 물 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,32),diceMaxTooltip(s, m,32))
 		Game.SpellsTxt[34].Description="마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다."
-		Game.SpellsTxt[37].Description=string.format("Summons a swarm of biting, stinging insects to bedevil a single target.  The swarm does %s points of damage plus 1-%s per point of skill in Earth Magic.",dmgAddTooltip(s, m,37),diceMaxTooltip(s, m,37))
+		Game.SpellsTxt[37].Description=string.format("물고 쏘는 벌레 떼를 소환해 단일 대상을 괴롭힙니다. 벌레 떼는 %s의 기본 피해와 대지 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,37),diceMaxTooltip(s, m,37))
 		Game.SpellsTxt[39].Description=string.format("Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.\n\nBlades is the only spell capable to deal Physical damage.",diceMaxTooltip(s, m,39))
-		Game.SpellsTxt[41].Description=string.format("Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.",dmgAddTooltip(s, m,41),diceMaxTooltip(s, m,41))
-		Game.SpellsTxt[43].Description=string.format("Launches a magical stone which bursts in air, sending shards of explosive earth raining to the ground.  The damage is 1-%s per point of skill in Earth Magic for each shard.  This spell can only be used outdoors.",diceMaxTooltip(s, m,43))
+		Game.SpellsTxt[41].Description=string.format("마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,41),diceMaxTooltip(s, m,41))
+		Game.SpellsTxt[43].Description=string.format("마법의 돌을 공중에서 폭발시켜 폭발성 대지 파편을 비처럼 떨어뜨립니다. 파편 하나당 피해량은 대지 마법 기술 포인트당 1-%s입니다. 야외에서만 사용할 수 있습니다.",diceMaxTooltip(s, m,43))
 		--Game.SpellsTxt[44].Description=string.format("Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of the monster's hit points plus another %s%% per point of skill in Earth Magic.  The bigger they are, the harder they fall.",dmgAddTooltip(s, m,44),diceMaxTooltip(s, m,44))
-		Game.SpellsTxt[44].Description="Increases the weight of a single target enormously for an instant, causing internal damage equal to 15%% of the monster's hit points plus another 0.5%% per point of skill in Earth Magic. The bigger they are, the harder they fall."
-		Game.SpellsTxt[52].Description=string.format("This spell weakens the link between a target's body and soul, causing %s + 2-%s points of damage per point of skill in Spirit Magic to all monsters near the caster.",dmgAddTooltip(s, m,52),diceMaxTooltip(s, m,52))
-		Game.SpellsTxt[59].Description=string.format("Fires a bolt of mental force which damages a single target's nervous system.  Mind Blast does %s points of damage plus 1-%s per point of skill in Mind Magic.",dmgAddTooltip(s, m,59),diceMaxTooltip(s, m,59))
-		Game.SpellsTxt[65].Description=string.format("Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.",dmgAddTooltip(s, m,65),diceMaxTooltip(s, m,65))
-		Game.SpellsTxt[70].Description=string.format("Directly inflicts magical damage upon a single creature.  Harm does %s points of damage plus 1-%s per point of skill in Body Magic.",dmgAddTooltip(s, m,70),diceMaxTooltip(s, m,70))
-		Game.SpellsTxt[76].Description=string.format("Flying Fist throws a heavy magical force at a single opponent that does %s points of damage plus 1-%s per point of skill in Body Magic.",dmgAddTooltip(s, m,76),diceMaxTooltip(s, m,76))
-		Game.SpellsTxt[76].Description=string.format("Flying Fist throws a heavy magical force at a single opponent that does %s points of damage plus 1-%s per point of skill in Body Magic.",dmgAddTooltip(s, m,76),diceMaxTooltip(s, m,76))
-		Game.SpellsTxt[78].Description=string.format("Fires a bolt of light at a single target that does %s + 1-%s points of damage per point of skill in light magic.  Damage vs. Undead is doubled.",dmgAddTooltip(s, m,78),diceMaxTooltip(s, m,78))
-		Game.SpellsTxt[79].Description=string.format("Calls upon the power of heaven to undo the evil magic that extends the lives of the undead, inflicting %s points of damage plus 1-%s per point of skill in Light Magic upon a single, unlucky target.  This spell only works on the undead.",dmgAddTooltip(s, m,79),diceMaxTooltip(s, m,79))
-		Game.SpellsTxt[84].Description=string.format("Inflicts %s points of damage plus %s per point of skill in Light Magic on all creatures in sight.  This spell can only be cast indoors.",dmgAddTooltip(s, m,84),diceMaxTooltip(s, m,84))
-		Game.SpellsTxt[87].Description=string.format("Sunray is the second most devastating damage spell in the game. It does %s points of damage plus 1-%s points per point of skill in Light Magic, by concentrating the light of the sun on one unfortunate creature. Indoors it can be cast at any time; outdoors it only works during the day.",dmgAddTooltip(s, m,87),diceMaxTooltip(s, m,87))
-		Game.SpellsTxt[90].Description=string.format("A poisonous cloud of noxious gases is formed in front of the caster and moves slowly away from your characters.  The cloud does %s points of damage plus 1-%s per point of skill in Dark Magic and lasts until something runs into it.",dmgAddTooltip(s, m,90),diceMaxTooltip(s, m,90))
-		Game.SpellsTxt[93].Description=string.format("Fires a blast of hot, jagged metal in front of the caster, striking any creature that gets in the way.  Each piece inflicts 1-%s points of damage per point of skill in Dark Magic.",diceMaxTooltip(s, m,93))
-		Game.SpellsTxt[97].Description=string.format("Dragon Breath empowers the caster to exhale a cloud of toxic vapors that targets a single monster and damage all creatures nearby, doing 1-%s points of damage per point of skill in Dark Magic.",diceMaxTooltip(s, m,97))
-		Game.SpellsTxt[98].Description=string.format("This spell is the town killer. Armageddon inflicts %s points of damage plus %s point of damage for every point of Dark skill your character has to every creature on the map, including all your characters. It can only be cast three times per day and only outdoors.",dmgAddTooltip(s, m,98),diceMaxTooltip(s, m,98))
-		Game.SpellsTxt[99].Description=string.format("This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.",dmgAddTooltip(s, m,99),diceMaxTooltip(s, m,99))
+		Game.SpellsTxt[44].Description="순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 몬스터 생명력의 15%% + 대지 마법 기술 포인트당 0.5%%만큼 피해를 줍니다. 몸집이 클수록 더 큰 피해를 받습니다."
+		Game.SpellsTxt[52].Description=string.format("대상의 육체와 영혼 사이의 연결을 약화시켜 시전자 주변의 모든 몬스터에게 %s + 영혼 마법 기술 포인트당 2-%s의 피해를 줍니다.",dmgAddTooltip(s, m,52),diceMaxTooltip(s, m,52))
+		Game.SpellsTxt[59].Description=string.format("정신력의 화살로 단일 대상의 신경계를 공격합니다. 정신 폭발은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,59),diceMaxTooltip(s, m,59))
+		Game.SpellsTxt[65].Description=string.format("정신 폭발과 비슷하지만 훨씬 강력한 정신 마법으로 단일 대상을 공격합니다. 정신 충격은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,65),diceMaxTooltip(s, m,65))
+		Game.SpellsTxt[70].Description=string.format("단일 대상에게 직접 마법 피해를 줍니다. 해악은 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,70),diceMaxTooltip(s, m,70))
+		Game.SpellsTxt[76].Description=string.format("강력한 마법의 주먹을 단일 대상에게 날려 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,76),diceMaxTooltip(s, m,76))
+		Game.SpellsTxt[76].Description=string.format("강력한 마법의 주먹을 단일 대상에게 날려 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.",dmgAddTooltip(s, m,76),diceMaxTooltip(s, m,76))
+		Game.SpellsTxt[78].Description=string.format("단일 대상에게 빛의 화살을 발사하여 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게는 피해가 두 배입니다.",dmgAddTooltip(s, m,78),diceMaxTooltip(s, m,78))
+		Game.SpellsTxt[79].Description=string.format("천상의 힘으로 언데드의 생명을 연장하는 사악한 마법을 끊어, 단일 언데드 대상에게 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게만 효과가 있습니다.",dmgAddTooltip(s, m,79),diceMaxTooltip(s, m,79))
+		Game.SpellsTxt[84].Description=string.format("시야 안의 모든 생물에게 %s + 빛 마법 기술 포인트당 %s의 피해를 줍니다. 실내에서만 사용할 수 있습니다.",dmgAddTooltip(s, m,84),diceMaxTooltip(s, m,84))
+		Game.SpellsTxt[87].Description=string.format("게임에서 두 번째로 강력한 피해 주문입니다. 태양빛을 한 대상에게 집중하여 %s의 기본 피해와 빛 마법 기술 포인트당 1-%s의 추가 피해를 줍니다. 실내에서는 언제든 시전할 수 있지만, 야외에서는 낮에만 사용할 수 있습니다.",dmgAddTooltip(s, m,87),diceMaxTooltip(s, m,87))
+		Game.SpellsTxt[90].Description=string.format("시전자 앞에 유독 가스 구름을 만들어 파티에서 천천히 멀어지게 합니다. 구름은 %s의 기본 피해와 어둠 마법 기술 포인트당 1-%s의 추가 피해를 주며, 대상과 충돌할 때까지 유지됩니다.",dmgAddTooltip(s, m,90),diceMaxTooltip(s, m,90))
+		Game.SpellsTxt[93].Description=string.format("시전자 앞쪽으로 뜨겁고 날카로운 금속 파편을 발사하여 경로상의 생물을 타격합니다. 파편 하나당 어둠 마법 기술 포인트당 1-%s의 피해를 줍니다.",diceMaxTooltip(s, m,93))
+		Game.SpellsTxt[97].Description=string.format("시전자가 독성 증기를 내뿜어 한 몬스터를 지정하고 주변의 모든 생물에게 피해를 줍니다. 피해량은 어둠 마법 기술 포인트당 1-%s입니다.",diceMaxTooltip(s, m,97))
+		Game.SpellsTxt[98].Description=string.format("도시를 초토화하는 주문입니다. 아마겟돈은 맵의 모든 생물과 파티원 전원에게 %s + 캐릭터의 어둠 기술 포인트당 %s의 피해를 줍니다. 하루에 세 번만, 야외에서만 시전할 수 있습니다.",dmgAddTooltip(s, m,98),diceMaxTooltip(s, m,98))
+		Game.SpellsTxt[99].Description=string.format("시야 안의 모든 생물에게서 생명력을 빼앗습니다. 아군과 적군을 가리지 않습니다. 영혼 흡수는 공동 생명과 비슷한 방식으로 빼앗은 생명력을 파티에 나눠 줍니다. 피해량(및 회복량)은 %s + 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,99),diceMaxTooltip(s, m,99))
 		
-		Game.SpellsTxt[103].Description=string.format("This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.",dmgAddTooltip(s, m,103),diceMaxTooltip(s, m,103))
-		Game.SpellsTxt[111].Description=string.format("Lifedrain allows the vampire to damage his or her target and simultaneously heal based on the damage done in the Lifedrain.  This ability does 1-%s points of damage per skill.",diceMaxTooltip(s, m,111))
-		Game.SpellsTxt[111].Master=string.format("Damage 1-%s per point of skill",round(diceMaxTooltip(s, m,111)/3*5))
-		Game.SpellsTxt[111].GM=string.format("Damage 1-%s per point of skill",round(diceMaxTooltip(s, m,111)/3*7))
+		Game.SpellsTxt[103].Description=string.format("이 무시무시한 능력은 다크 엘프가 어둠과 화염의 힘을 결합한 위험한 다크파이어를 다루게 합니다. 다크파이어에 맞은 대상은 화염 저항과 어둠 저항 중 더 낮은 수치로 저항합니다. 피해량은 %s의 기본 피해 + 기술 포인트당 1-%s입니다.",dmgAddTooltip(s, m,103),diceMaxTooltip(s, m,103))
+		Game.SpellsTxt[111].Description=string.format("흡혈은 뱀파이어가 대상에게 피해를 주는 동시에, 입힌 피해에 따라 자신을 회복하게 합니다. 피해량은 기술 포인트당 1-%s입니다.",diceMaxTooltip(s, m,111))
+		Game.SpellsTxt[111].Master=string.format("기술 포인트당 피해 1-%s",round(diceMaxTooltip(s, m,111)/3*5))
+		Game.SpellsTxt[111].GM=string.format("기술 포인트당 피해 1-%s",round(diceMaxTooltip(s, m,111)/3*7))
 		Game.SpellsTxt[123].Description="이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다."
 		
 		-----------------------
@@ -2188,17 +2188,17 @@ function ascension(customIndex)
 		local sp=healingSpells[54]
 		Game.Spells[54]["SpellPointsMaster"]=math.ceil(sp.Cost[3])
 		Game.Spells[54]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[54].Master=string.format("Adds %s + %s HP per point of skill to the pool", sp.Base[3], sp.Scaling[3])
-		Game.SpellsTxt[54].GM=string.format("Adds %s + %s HP per point of skill to the pool", sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[54].Master=string.format("기술 포인트당 생명력 풀에 %s + %s 추가", sp.Base[3], sp.Scaling[3])
+		Game.SpellsTxt[54].GM=string.format("기술 포인트당 생명력 풀에 %s + %s 추가", sp.Base[4], sp.Scaling[4])
 		
 		--raise dead
 		local sp=healingSpells[53]
-		Game.SpellsTxt[53].GM="Removes Death and Eradication with no time limit"
+		Game.SpellsTxt[53].GM="시간 제한 없이 죽음과 소멸을 제거합니다"
 		
 		--resurrection
 		local sp=healingSpells[55]
 		Game.Spells[55]["SpellPointsGM"]=math.ceil(sp.Cost[4])
-		Game.SpellsTxt[55].GM=string.format("Cures %s + %s HP per point of skill", sp.Base[4], sp.Scaling[4])
+		Game.SpellsTxt[55].GM=string.format("기술 포인트당 생명력 %s + %s 회복", sp.Base[4], sp.Scaling[4])
 		
 		--heal
 		local sp=healingSpells[68]
@@ -3302,7 +3302,7 @@ function events.LoadMap()
 		for i=1,3 do
 			Game.ItemsTxt[invisBooks[i] ].Picture=booksPic[i]
 			Game.ItemsTxt[starburstBooks[i] ].Picture=booksPicGM[i]
-			Game.SpellsTxt[19].Master="Duration 15+1.5 minutes per point of skill"
+			Game.SpellsTxt[19].Master="지속시간: 15분 + 기술 포인트당 1.5분"
 			Game.SpellsTxt[22].Master="n/a"
 		end
 	end

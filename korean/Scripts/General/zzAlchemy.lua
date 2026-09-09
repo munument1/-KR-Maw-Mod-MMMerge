@@ -1407,7 +1407,7 @@ function events.GameInitialized2()
 		txt[i+1040].Name=descNames[i]
 	end
 	for i=1041, 1068 do
-		Game.ItemsTxt[i].NotIdentifiedName="Crafting Item"
+		Game.ItemsTxt[i].NotIdentifiedName="제작 재료"
 	end
 	for i=1,10 do
 		Game.ItemsTxt[1040+i].SpriteIndex=141+i

@@ -475,9 +475,9 @@ local dragonScales={
 function events.GameInitialized2()
 	--fire blast tooltip
 	Game.SpellsTxt[123].Description="이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다."
-	Game.SpellsTxt[123].Expert="Deals damage equal to 70% of breath damage"
-	Game.SpellsTxt[123].Master="Deals damage equal to 85% of breath damage"
-	Game.SpellsTxt[123].GM="Deals damage equal to 100% of breath damage"
+	Game.SpellsTxt[123].Expert="숨결 피해의 70%만큼 피해"
+	Game.SpellsTxt[123].Master="숨결 피해의 85%만큼 피해"
+	Game.SpellsTxt[123].GM="숨결 피해의 100%만큼 피해"
 	--mana cost
 	Game.Spells[123].SpellPointsNormal=25
 	Game.Spells[123].SpellPointsExpert=40
@@ -795,7 +795,7 @@ function dragonSkill(dragon, index)
 	if dragon then
 		if index==-1 then return end
 		pl=Party[index]
-		Skillz.setName(33, "Fangs")
+		Skillz.setName(33, "송곳니")
 
 		local txt="Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n" .. "\n------------------------------------------------------------\n            Attack| Dmg|"
 		Skillz.setDesc(33,1,txt)
@@ -803,7 +803,7 @@ function dragonSkill(dragon, index)
 		Game.SkillDesExpert[33]=fangsExpert
 		Game.SkillDesMaster[33]=fangsMaster
 		Game.SkillDesGM[33]=fangsGM
-		Skillz.setName(32,"Scales")
+		Skillz.setName(32,"비늘")
 		txt="Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"
 		Skillz.setDesc(32,1,txt)
 		Game.SkillDesNormal[32]=scalesNormal
@@ -825,8 +825,8 @@ function dragonSkill(dragon, index)
 		end
 		if Game.CurrentCharScreen==100 and Game.CurrentScreen==7 then
 			Game.GlobalTxt[53] = "Damage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-			Game.GlobalTxt[18] = "Attack         +" .. pl:GetMeleeAttack() .. "\n                 " .. shortenNumber(pl:GetMeleeDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetMeleeDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-			Game.GlobalTxt[203]="Shoot         +" .. pl:GetRangedAttack() .. "\n                 " .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			Game.GlobalTxt[18] = "근접         +" .. pl:GetMeleeAttack() .. "\n                 " .. shortenNumber(pl:GetMeleeDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetMeleeDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+			Game.GlobalTxt[203]="원거리         +" .. pl:GetRangedAttack() .. "\n                 " .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. "-" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 		else
 			Game.GlobalTxt[18]="근접"
 			Game.GlobalTxt[53]="피해량"
@@ -836,7 +836,7 @@ function dragonSkill(dragon, index)
 		Game.GlobalTxt[18]="근접"
 		Game.GlobalTxt[53]="피해량"
 		Game.GlobalTxt[203]="원거리"
-		Skillz.setName(33,"Unarmed")
+		Skillz.setName(33,"맨손 전투")
 		Skillz.setDesc(33,1,unarmedText)
 		Game.SkillDesNormal[33]=unarmedTextN
 		Game.SkillDesExpert[33]=unarmedTextE
@@ -1373,27 +1373,27 @@ function dkSkills(isDK, id)
 		-- Spell 26: Icy Touch
 		local mult26 = DKDamageMult[26]
 		Game.SpellsTxt[26].Name="얼음의 손길"
-		Game.SpellsTxt[26].Description="This spell is exclusive to Death Knights and deals damage equal to " .. (mult26[1]*100) .. "% of current weapon damage."
-		Game.SpellsTxt[26].Normal="Deals damage equal to " .. (mult26[1]*100) .. "% of Melee damage"
-		Game.SpellsTxt[26].Expert="Monster slows by 1/2 of speed"
-		Game.SpellsTxt[26].Master="Damage Increased to " .. (mult26[3]*100) .. "%"
-		Game.SpellsTxt[26].GM="Monster slows by 1/4 of speed"
+		Game.SpellsTxt[26].Description="죽음의 기사 전용 주문입니다. 피해량: " .. (mult26[1]*100) .. "% (현재 무기 피해 기준)."
+		Game.SpellsTxt[26].Normal="피해량: " .. (mult26[1]*100) .. "% (근접 공격 피해 기준)"
+		Game.SpellsTxt[26].Expert="몬스터의 속도가 50% 감소합니다"
+		Game.SpellsTxt[26].Master="피해량: " .. (mult26[3]*100) .. "%"
+		Game.SpellsTxt[26].GM="몬스터의 속도가 25% 감소합니다"
 		
 		-- Spell 29: Frostbite
 		local mult29 = DKDamageMult[29]
 		Game.SpellsTxt[29].Name="동상"
-		Game.SpellsTxt[29].Description="This is the strongest single damage spell available to death knights and deals damage equal to " .. (mult29[1]*100) .. "% of current weapon damage."
+		Game.SpellsTxt[29].Description="죽음의 기사가 사용할 수 있는 가장 강력한 단일 대상 피해 주문입니다. 피해량: " .. (mult29[1]*100) .. "% (현재 무기 피해 기준)."
 		Game.SpellsTxt[29].Expert="n/a"
-		Game.SpellsTxt[29].Master="Deals damage equal to " .. (mult29[3]*100) .. "% of Melee damage"
-		Game.SpellsTxt[29].GM="Deals damage equal to " .. (mult29[4]*100) .. "% of Melee damage"
+		Game.SpellsTxt[29].Master="피해량: " .. (mult29[3]*100) .. "% (근접 공격 피해 기준)"
+		Game.SpellsTxt[29].GM="피해량: " .. (mult29[4]*100) .. "% (근접 공격 피해 기준)"
 		
 		-- Spell 32: Ice Bomb
 		local mult32 = DKDamageMult[32]
 		Game.SpellsTxt[32].Name="얼음 폭탄"
-		Game.SpellsTxt[32].Description="Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to " .. (mult32[1]*100) .. "% of current weapon damage."
+		Game.SpellsTxt[32].Description="Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to " .. (mult32[1]*100) .. "% (현재 무기 피해 기준)."
 		Game.SpellsTxt[32].Expert="n/a"
 		Game.SpellsTxt[32].Master="n/a"
-		Game.SpellsTxt[32].GM="Each hit deals damage equal to " .. (mult32[4]*100) .. "% of Melee damage"
+		Game.SpellsTxt[32].GM="타격당 피해량: " .. (mult32[4]*100) .. "% (근접 공격 피해 기준)"
 		
 		
 		
@@ -1403,53 +1403,53 @@ function dkSkills(isDK, id)
 		local FHP=pl:GetFullHP()
 		local leech=math.max(FHP^0.5* bloodS^1.5/70, bloodS*2)
 		Game.SpellsTxt[68].Name="피 흡수"
-		Game.SpellsTxt[68].Description="Activating this spell imbues the knight body with blood, leeching life upon attacking at the cost of 6 spell points."
-		Game.SpellsTxt[68].Normal="Leeches " .. round(leech * 1.25) .. " 생명력"
-		Game.SpellsTxt[68].Expert="Leeches " .. round(leech * 1.5) .. " 생명력"
-		Game.SpellsTxt[68].Master="Leeches " .. round(leech * 1.75) .. " 생명력"
-		Game.SpellsTxt[68].GM="Leeches " .. round(leech * 2) .. " 생명력"
+		Game.SpellsTxt[68].Description="이 주문을 활성화하면 기사의 몸에 피의 힘을 부여하여 공격할 때마다 생명력을 흡수합니다. 주문력 6을 소모합니다."
+		Game.SpellsTxt[68].Normal="생명력 흡수: " .. round(leech * 1.25) .. " 생명력"
+		Game.SpellsTxt[68].Expert="생명력 흡수: " .. round(leech * 1.5) .. " 생명력"
+		Game.SpellsTxt[68].Master="생명력 흡수: " .. round(leech * 1.75) .. " 생명력"
+		Game.SpellsTxt[68].GM="생명력 흡수: " .. round(leech * 2) .. " 생명력"
 		
 		-- Spell 74: Superior Blood Leech
 		Game.SpellsTxt[74].Name="상급 피 흡수"
-		Game.SpellsTxt[74].Description="Activating this spell imbues the knight essence with blood, leeching a superior amount of life upon attacking at the cost of 12 spell points."
+		Game.SpellsTxt[74].Description="이 주문을 활성화하면 기사의 본질에 피의 힘을 부여하여 공격할 때 더 많은 생명력을 흡수합니다. 주문력 12를 소모합니다."
 		Game.SpellsTxt[74].Master="n/a"
-		Game.SpellsTxt[74].GM="Leeches " .. round(leech * 4) .. " 생명력"
+		Game.SpellsTxt[74].GM="생명력 흡수: " .. round(leech * 4) .. " 생명력"
 		
 		-- Spell 76: Asphyxiate (no entry in DKDamageMult, but description mentions 110% and 140%)
 		local mult76= DKDamageMult[76]
 		Game.SpellsTxt[76].Name="질식"
-		Game.SpellsTxt[76].Description="Asphyxiate the target deal damage equal to " .. (mult76[3]*100) .. "% and making him unable to act for 4 seconds"
-		Game.SpellsTxt[76].Master="No additional effects"
-		Game.SpellsTxt[76].GM="Damage increased to " .. (mult76[4]*100) .. "%"
+		Game.SpellsTxt[76].Description="대상을 질식시킵니다. 피해량: " .. (mult76[3]*100) .. "%의 피해를 주고 4초 동안 행동할 수 없게 합니다."
+		Game.SpellsTxt[76].Master="추가 효과 없음"
+		Game.SpellsTxt[76].GM="피해량: " .. (mult76[4]*100) .. "%"
 		
 		-- Spell 90: Death Coil
 		local mult90 = DKDamageMult[90]
 		Game.SpellsTxt[90].Name="죽음의 고리"
-		Game.SpellsTxt[90].Description="A deadly spell capable to heal the caster upon hitting the target by an amount equal to double the Life leech enchant. Deals damage equal to " .. (mult90[1]*100) .. "% of the base weapon damage"
+		Game.SpellsTxt[90].Description="대상을 적중하면 생명력 흡수 마법 부여 효과의 두 배만큼 시전자의 생명력을 회복시키는 치명적인 주문입니다. 피해량: " .. (mult90[1]*100) .. "% (기본 무기 피해 기준)"
 		Game.SpellsTxt[90].Normal="N/A"
-		Game.SpellsTxt[90].Expert="Deals damage equal to " .. (mult90[2]*100) .. "%"
-		Game.SpellsTxt[90].Master="Leech amount increased by 50%"
-		Game.SpellsTxt[90].GM="Damage increased to " .. (mult90[4]*100) .. "%"
+		Game.SpellsTxt[90].Expert="피해량: " .. (mult90[2]*100) .. "%"
+		Game.SpellsTxt[90].Master="흡수량 50% 증가"
+		Game.SpellsTxt[90].GM="피해량: " .. (mult90[4]*100) .. "%"
 		
 		Game.SpellsTxt[96].Name="죽음의 손아귀"
-		Game.SpellsTxt[96].Description="Activating this spell imbues the knight body with dark powers, empairing oppenents powers (damage halved) upon attacking 15 spell points."
+		Game.SpellsTxt[96].Description="이 주문을 활성화하면 기사의 몸에 어둠의 힘을 부여하여 공격할 때 적의 힘을 약화시킵니다(피해량 절반). 주문력 15를 소모합니다."
 		Game.SpellsTxt[96].Expert="n/a"
-		Game.SpellsTxt[96].Master="No additional effects"
-		Game.SpellsTxt[96].GM="Monster looses the ability to deal ranged damage"
+		Game.SpellsTxt[96].Master="추가 효과 없음"
+		Game.SpellsTxt[96].GM="몬스터가 원거리 공격 능력을 잃습니다"
 		
 		-- Spell 97: Death Breath
 		local mult97 = DKDamageMult[97]
 		Game.SpellsTxt[97].Name="죽음의 숨결"
-		Game.SpellsTxt[97].Description="A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to " .. (mult97[1]*100) .. "% of weapon damage"
+		Game.SpellsTxt[97].Description="A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to " .. (mult97[1]*100) .. "% (무기 피해 기준)"
 		Game.SpellsTxt[97].Expert="n/a"
 		Game.SpellsTxt[97].Master="n/a"
-		Game.SpellsTxt[97].GM="This spell is as good as it will ever be!"
+		Game.SpellsTxt[97].GM="이 주문은 이미 최고의 성능을 발휘하고 있습니다!"
 		
 		--skill names and desc
 		
-		Skillz.setName(14, "Frost")
-		Skillz.setName(18, "Blood")
-		Skillz.setName(20, "Unholy")
+		Skillz.setName(14, "냉기")
+		Skillz.setName(18, "혈마법")
+		Skillz.setName(20, "사악함")
 		local txt
 		txt="This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.\n"
 		Skillz.setDesc(14,1,txt)
@@ -2101,10 +2101,10 @@ function assassinSkills(isAssassin, pl)
 		end
 		--skill names and desc
 		
-		Skillz.setName(12, "Combat")
-		Skillz.setName(13, "Subtlety")
-		Skillz.setName(14, "Poisons")
-		Skillz.setName(15, "Assassination")
+		Skillz.setName(12, "전투")
+		Skillz.setName(13, "기민함")
+		Skillz.setName(14, "독")
+		Skillz.setName(15, "암살")
 		
 		Skillz.setDesc(12,1,"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.\n\nEach attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.\n\n");
 		Skillz.setDesc(13,1,"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.\n\n");
@@ -2132,22 +2132,22 @@ function assassinSkills(isAssassin, pl)
 		Skillz.setDesc(14,5,"You regenerate 14 energy per second")
 		Skillz.setDesc(15,5,"Increases your maximum energy by 40")
 		
-		Game.SpellsTxt[6].Description=string.format("Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does %s%% of a melee attack damage.",assassinSpells[6].DamageMult*100)
-		Game.SpellsTxt[7].Description=string.format("Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage.",assassinSpells[7].DamageMult*100)
+		Game.SpellsTxt[6].Description=string.format("단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[6].DamageMult*100)
+		Game.SpellsTxt[7].Description=string.format("지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 발동할 때까지 유지됩니다. 화염 가시는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[7].DamageMult*100)
 		Game.SpellsTxt[18].Description=string.format("Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.\n\nThe spell then arcs to a second target, hitting it as well.",assassinSpells[18].DamageMult*100)
-		Game.SpellsTxt[24].Description=string.format("Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s%% of a melee attack damage.",assassinSpells[24].DamageMult*100)
-		Game.SpellsTxt[29].Description=string.format("Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s%% of a melee attack damage.",assassinSpells[29].DamageMult*100)
-		Game.SpellsTxt[34].Description=string.format("Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage.",assassinSpells[34].DamageMult*100)
+		Game.SpellsTxt[24].Description=string.format("파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[24].DamageMult*100)
+		Game.SpellsTxt[29].Description=string.format("단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[29].DamageMult*100)
+		Game.SpellsTxt[34].Description=string.format("마법의 힘으로 괴물을 강타하여 기절에서 회복할 때까지 다른 행동을 하지 못하게 합니다. 또한 괴물을 조금 뒤로 밀쳐 도망칠 기회를 줍니다. 대지 마법 숙련도가 높을수록 효과가 강해집니다. 기절은 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[34].DamageMult*100)
 		Game.SpellsTxt[39].Description=string.format("Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.\n\nBlades is the only spell capable to deal Physical damage.",assassinSpells[39].DamageMult*100)
-		Game.SpellsTxt[44].Description=string.format("Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage.",assassinSpells[44].DamageMult*100)
+		Game.SpellsTxt[44].Description=string.format("순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[44].DamageMult*100)
 		
-		Game.SpellsTxt[18].Expert="Spell hits up to 2 times"
-		Game.SpellsTxt[18].Master="Spell hits up to 3 times"
-		Game.SpellsTxt[18].GM="Spell hits up to 4 times"
+		Game.SpellsTxt[18].Expert="최대 2회 적중합니다"
+		Game.SpellsTxt[18].Master="최대 3회 적중합니다"
+		Game.SpellsTxt[18].GM="최대 4회 적중합니다"
 		
 		for key, value in pairs(assassinSpells) do
 			if assassinSpells[key].StackCost>0 then
-				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\nThis Ability requires " .. assassinSpells[key].StackCost .. " Combo Points to be casted."
+				Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. "\n\nThis Ability requires " .. assassinSpells[key].StackCost .. " 콤보 포인트가 필요합니다."
 			end
 		end
 		
