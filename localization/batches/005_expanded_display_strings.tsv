@@ -1,0 +1,116 @@
+source	translation	status	notes
+Attack         +	근접         +	translated	능력치 패널 근접 공격 표시
+Shoot         +	원거리         +	translated	능력치 패널 원거리 공격 표시
+Crafting Item	제작 재료	translated	미감정 제작 아이템 이름
+Mace	철퇴	translated	미감정 무기 이름
+Goblin's Liutenant	고블린 부관	translated	몬스터 표시명; 원문 오탈자 유지
+Cardinal of Baa	바의 추기경	translated	몬스터 표시명
+High Cardinal	고위 추기경	translated	몬스터 표시명
+Resurrected 	부활한 	translated	부활 몬스터 이름 접두어
+%s		excluded	숫자 이름 string.format 서식 전용
+Ascension	승천	translated	MAW 스킬명
+Assassination	암살	translated	MAW 스킬명
+Blood	혈마법	translated	죽음의 기사 스킬명
+Combat	전투	translated	암살자 스킬명
+Cover	엄호	translated	MAW 방어 스킬명
+Enlightenment	깨달음	translated	MAW 마나 스킬명
+Fangs	송곳니	translated	드래곤 스킬명
+Frost	냉기	translated	죽음의 기사 스킬명
+Mana Shield	마나 방패	translated	MAW 방어 스킬명
+Misc	기타	translated	기타 기술 UI
+Poisons	독	translated	암살자 스킬명
+Retaliation	반격	translated	MAW 방어 스킬명
+Scales	비늘	translated	드래곤 스킬명
+Subtlety	기민함	translated	암살자 회피 스킬명
+Unholy	사악함	translated	죽음의 기사 스킬명
+% of Melee damage	% (근접 공격 피해 기준)	translated	연결형 주문 피해 설명 후행 조각
+Adds %s + %s HP per point of skill to the pool	기술 포인트당 생명력 풀에 %s + %s 추가	translated	주문 숙련 설명
+All spells cast at 1.5 times skill	모든 주문이 기술 수치의 1.5배로 적용됩니다	translated	주문 숙련 설명
+All spells cast at 2 times skill	모든 주문이 기술 수치의 2배로 적용됩니다	translated	주문 숙련 설명
+All stats increased by 10+1 per skill	모든 능력치가 10 + 기술 포인트당 1만큼 증가합니다	translated	주문 숙련 설명
+All stats increased by 15+1.5 per skill	모든 능력치가 15 + 기술 포인트당 1.5만큼 증가합니다	translated	주문 숙련 설명
+All stats increased by 20+2 per skill	모든 능력치가 20 + 기술 포인트당 2만큼 증가합니다	translated	주문 숙련 설명
+Cures %s + %s HP per point of skill	기술 포인트당 생명력 %s + %s 회복	translated	주문 숙련 설명
+Damage Increased to 	피해량: 	translated	연결형 주문 피해 설명
+Damage increased to 	피해량: 	translated	연결형 주문 피해 설명
+Deals damage equal to 	피해량: 	translated	연결형 주문 피해 설명
+Deals damage equal to 100% of breath damage	숨결 피해의 100%만큼 피해	translated	주문 숙련 설명
+Deals damage equal to 70% of breath damage	숨결 피해의 70%만큼 피해	translated	주문 숙련 설명
+Deals damage equal to 85% of breath damage	숨결 피해의 85%만큼 피해	translated	주문 숙련 설명
+Duration 15+1.5 minutes per point of skill	지속시간: 15분 + 기술 포인트당 1.5분	translated	주문 숙련 설명
+Duration 30+3 minutes per point of skill	지속시간: 30분 + 기술 포인트당 3분	translated	주문 숙련 설명
+Duration: %.1f seconds	지속시간: %.1f초	translated	주문 지속시간
+Each hit deals damage equal to 	타격당 피해량: 	translated	연결형 주문 피해 설명
+Effect is now passive	이제 효과가 지속 효과로 적용됩니다	translated	주문 숙련 설명
+Increases damage by 10 plus 1 per skill point	피해량이 10 + 기술 포인트당 1만큼 증가합니다	translated	주문 숙련 설명
+Increases damage by 10 plus 1.5 per skill point	피해량이 10 + 기술 포인트당 1.5만큼 증가합니다	translated	주문 숙련 설명
+Increases damage by 10 plus 2 per skill point	피해량이 10 + 기술 포인트당 2만큼 증가합니다	translated	주문 숙련 설명
+Leech amount increased by 50%	흡수량 50% 증가	translated	주문 숙련 설명
+Leeches 	생명력 흡수: 	translated	연결형 흡혈 설명
+Monster looses the ability to deal ranged damage	몬스터가 원거리 공격 능력을 잃습니다	translated	주문 숙련 설명; 원문 오탈자
+Monster slows by 1/2 of speed	몬스터의 속도가 50% 감소합니다	translated	주문 숙련 설명
+Monster slows by 1/4 of speed	몬스터의 속도가 25% 감소합니다	translated	주문 숙련 설명
+No additional effects	추가 효과 없음	translated	주문 숙련 설명
+Removes Death and Eradication with no time limit	시간 제한 없이 죽음과 소멸을 제거합니다	translated	주문 숙련 설명
+Spell hits up to 2 times	최대 2회 적중합니다	translated	주문 숙련 설명
+Spell hits up to 3 times	최대 3회 적중합니다	translated	주문 숙련 설명
+Spell hits up to 4 times	최대 4회 적중합니다	translated	주문 숙련 설명
+This spell is as good as it will ever be!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	translated	주문 숙련 설명
+Unarmed	맨손 전투	translated	스킬 표시명
+ Combo Points to be casted.	 콤보 포인트가 필요합니다.	translated	연결형 암살자 능력 설명 후행 조각
+% and making him unable to act for 4 seconds	%의 피해를 주고 4초 동안 행동할 수 없게 합니다.	translated	연결형 질식 설명 후행 조각
+% of current weapon damage.	% (현재 무기 피해 기준).	translated	연결형 무기 피해 설명 후행 조각
+% of the base weapon damage	% (기본 무기 피해 기준)	translated	연결형 무기 피해 설명 후행 조각
+% of weapon damage	% (무기 피해 기준)	translated	연결형 무기 피해 설명 후행 조각
+A deadly spell capable to heal the caster upon hitting the target by an amount equal to double the Life leech enchant. Deals damage equal to 	대상을 적중하면 생명력 흡수 마법 부여 효과의 두 배만큼 시전자의 생명력을 회복시키는 치명적인 주문입니다. 피해량: 	translated	죽음의 고리 설명 앞부분
+A poisonous cloud of noxious gases is formed in front of the caster and moves slowly away from your characters.  The cloud does %s points of damage plus 1-%s per point of skill in Dark Magic and lasts until something runs into it.	시전자 앞에 유독 가스 구름을 만들어 파티에서 천천히 멀어지게 합니다. 구름은 %s의 기본 피해와 어둠 마법 기술 포인트당 1-%s의 추가 피해를 주며, 대상과 충돌할 때까지 유지됩니다.	translated	독성 구름 주문 설명
+Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s points of damage plus 1-%s per point of skill.	단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	산성 폭발 주문 설명
+Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s%% of a melee attack damage.	단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 산성 폭발 설명
+Activating this spell imbues the knight body with blood, leeching life upon attacking at the cost of 6 spell points.	이 주문을 활성화하면 기사의 몸에 피의 힘을 부여하여 공격할 때마다 생명력을 흡수합니다. 주문력 6을 소모합니다.	translated	죽음의 기사 피 흡수 설명
+Activating this spell imbues the knight body with dark powers, empairing oppenents powers (damage halved) upon attacking 15 spell points.	이 주문을 활성화하면 기사의 몸에 어둠의 힘을 부여하여 공격할 때 적의 힘을 약화시킵니다(피해량 절반). 주문력 15를 소모합니다.	translated	죽음의 기사 죽음의 손아귀 설명
+Activating this spell imbues the knight essence with blood, leeching a superior amount of life upon attacking at the cost of 12 spell points.	이 주문을 활성화하면 기사의 본질에 피의 힘을 부여하여 공격할 때 더 많은 생명력을 흡수합니다. 주문력 12를 소모합니다.	translated	상급 피 흡수 설명
+Among the strongest direct damage spells available, Incinerate inflicts massive damage on a single target.  Only the strongest of monsters can expect to survive this spell.  Damage is %s points plus 1-%s per point of skill in Fire Magic.	가장 강력한 단일 대상 피해 주문 중 하나입니다. 소각은 한 대상에게 막대한 피해를 주며, 매우 강한 몬스터만이 살아남을 수 있습니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다.	translated	소각 주문 설명
+Asphyxiate the target deal damage equal to 	대상을 질식시킵니다. 피해량: 	translated	질식 주문 설명 앞부분
+Calls stars from the heavens to smite and burn your enemies.  Twenty stars are called, and the damage for each star is %s points plus %s per point of skill in Air Magic. Try not to get caught in the blast! This spell only works outdoors.	하늘의 별을 불러 적을 강타하고 불태웁니다. 20개의 별이 떨어지며, 별 하나당 %s + 공기 마법 기술 포인트당 %s의 피해를 줍니다. 폭발에 휘말리지 않게 주의하십시오. 야외에서만 사용할 수 있습니다.	translated	별폭발 주문 설명
+Calls upon the power of heaven to undo the evil magic that extends the lives of the undead, inflicting %s points of damage plus 1-%s per point of skill in Light Magic upon a single, unlucky target.  This spell only works on the undead.	천상의 힘으로 언데드의 생명을 연장하는 사악한 마법을 끊어, 단일 언데드 대상에게 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게만 효과가 있습니다.	translated	언데드 파괴 주문 설명
+Causes 1-%s points of damage per point of skill, 5 spikes maximum	기술 포인트당 1-%s의 피해를 주며, 화염 가시는 최대 5개까지 설치할 수 있습니다	translated	화염 가시 숙련 설명
+Damage 1-%s per point of skill	기술 포인트당 피해 1-%s	translated	주문 숙련 설명
+Directly inflicts magical damage upon a single creature.  Harm does %s points of damage plus 1-%s per point of skill in Body Magic.	단일 대상에게 직접 마법 피해를 줍니다. 해악은 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	해악 주문 설명
+Dragon Breath empowers the caster to exhale a cloud of toxic vapors that targets a single monster and damage all creatures nearby, doing 1-%s points of damage per point of skill in Dark Magic.	시전자가 독성 증기를 내뿜어 한 몬스터를 지정하고 주변의 모든 생물에게 피해를 줍니다. 피해량은 어둠 마법 기술 포인트당 1-%s입니다.	translated	드래곤 브레스 주문 설명
+Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 발동할 때까지 유지됩니다. 화염 가시는 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 화염 가시 설명
+Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does %s%% of a melee attack damage.	단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 화염구 설명
+Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does 1-%s points of damage per point of skill in Fire Magic.	단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 화염 마법 기술 포인트당 1-%s의 피해를 줍니다.	translated	화염구 주문 설명
+Fires a ball of ice in the direction the caster is facing.  The ball will shatter when it hits something, launching 7 shards of ice in all directions except the caster's.  The shards will ricochet until they strike a creature or melt.  Each shard does %s points of damage plus 1-%s per point of skill in Water Magic.	시전자가 바라보는 방향으로 얼음 구체를 발사합니다. 충돌하면 산산이 부서져 시전자 방향을 제외한 모든 방향으로 7개의 얼음 파편을 날립니다. 파편은 생물에 맞거나 녹을 때까지 튕겨 다닙니다. 파편 하나당 %s의 기본 피해와 물 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	얼음 폭발 주문 설명
+Fires a blast of hot, jagged metal in front of the caster, striking any creature that gets in the way.  Each piece inflicts 1-%s points of damage per point of skill in Dark Magic.	시전자 앞쪽으로 뜨겁고 날카로운 금속 파편을 발사하여 경로상의 생물을 타격합니다. 파편 하나당 어둠 마법 기술 포인트당 1-%s의 피해를 줍니다.	translated	파편금속 주문 설명
+Fires a bolt of ice at a single target.  The missile does %s + 1-%s points of damage per point of skill in Water Magic.	단일 대상에게 얼음 화살을 발사합니다. %s + 물 마법 기술 포인트당 1-%s의 피해를 줍니다.	translated	얼음 화살 주문 설명
+Fires a bolt of light at a single target that does %s + 1-%s points of damage per point of skill in light magic.  Damage vs. Undead is doubled.	단일 대상에게 빛의 화살을 발사하여 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게는 피해가 두 배입니다.	translated	빛의 화살 주문 설명
+Fires a bolt of mental force which damages a single target's nervous system.  Mind Blast does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신력의 화살로 단일 대상의 신경계를 공격합니다. 정신 폭발은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	정신 폭발 주문 설명
+Flying Fist throws a heavy magical force at a single opponent that does %s points of damage plus 1-%s per point of skill in Body Magic.	강력한 마법의 주먹을 단일 대상에게 날려 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	비행 주먹 주문 설명
+Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic.	단일 대상 주변의 공기를 파괴해 급격한 공기 유입과 충격파를 일으킵니다. 피해량은 %s + 공기 마법 기술 포인트당 1-%s입니다.	translated	내파 주문 설명
+Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage.	순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 질량 왜곡 설명
+Increases the weight of a single target enormously for an instant, causing internal damage equal to 15%% of the monster's hit points plus another 0.5%% per point of skill in Earth Magic. The bigger they are, the harder they fall.	순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 몬스터 생명력의 15%% + 대지 마법 기술 포인트당 0.5%%만큼 피해를 줍니다. 몸집이 클수록 더 큰 피해를 받습니다.	translated	질량 왜곡 주문 설명
+Inferno burns all monsters in sight when cast, excluding your characters.  One or two castings can clear out a room of weak or moderately powerful creatures. Each monster takes %s points of damage plus %s per point of skill in Fire Magic.  This spell only works indoors.	시야 안의 모든 몬스터를 불태우되 파티원은 제외합니다. 한두 번만 시전해도 약하거나 중간 정도의 적이 가득한 방을 정리할 수 있습니다. 각 몬스터는 %s + 화염 마법 기술 포인트당 %s의 피해를 받습니다. 실내에서만 사용할 수 있습니다.	translated	인페르노 주문 설명
+Inflicts %s points of damage plus %s per point of skill in Light Magic on all creatures in sight.  This spell can only be cast indoors.	시야 안의 모든 생물에게 %s + 빛 마법 기술 포인트당 %s의 피해를 줍니다. 실내에서만 사용할 수 있습니다.	translated	빛 마법 광역 주문 설명
+Launches a burst of fire at a single target.  Damage is %s+1-%s points of damage per point of skill in Fire Magic.   Firebolt is safe, effective and has a low casting cost.	단일 대상에게 화염탄을 발사합니다. 피해량은 %s + 화염 마법 기술 포인트당 1-%s입니다. 화염탄은 안전하고 효율적이며 주문 소모가 적습니다.	translated	화염탄 주문 설명
+Launches a magical stone which bursts in air, sending shards of explosive earth raining to the ground.  The damage is 1-%s per point of skill in Earth Magic for each shard.  This spell can only be used outdoors.	마법의 돌을 공중에서 폭발시켜 폭발성 대지 파편을 비처럼 떨어뜨립니다. 파편 하나당 피해량은 대지 마법 기술 포인트당 1-%s입니다. 야외에서만 사용할 수 있습니다.	translated	죽음의 꽃 주문 설명
+Lifedrain allows the vampire to damage his or her target and simultaneously heal based on the damage done in the Lifedrain.  This ability does 1-%s points of damage per skill.	흡혈은 뱀파이어가 대상에게 피해를 주는 동시에, 입힌 피해에 따라 자신을 회복하게 합니다. 피해량은 기술 포인트당 1-%s입니다.	translated	흡혈 능력 설명
+Mistform allows the vampire to reduce physical damage by 75%.  However, a vampire in Mistform cannot perform any physical attacks.  Vampires in Mistform are able to use spells and abilities and are affected by spells and abilities.	안개 형상은 뱀파이어가 받는 물리 피해를 75% 줄입니다. 대신 안개 형상에서는 물리 공격을 할 수 없습니다. 주문과 능력은 사용할 수 있으며, 주문과 능력의 영향도 정상적으로 받습니다.	translated	안개 형상 설명
+Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken.	마법으로부터의 보호는 파티 전체에 적용되어 일부 주문과 몬스터 능력이 유발하는 약화 상태에 면역을 부여합니다. 대상 상태는 독, 질병, 석화, 마비, 약화입니다. 효과를 한 번 막을 때마다 주문이 약해집니다. 육체 마법 기술 포인트당 1회의 공격을 막을 수 있으며 최대 10회까지 유지되고, 그 뒤에는 효과가 사라집니다.	translated	마법으로부터의 보호 설명
+Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.	마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.	translated	암석 폭발 주문 설명
+Reserve a mana percentage to surround your characters with a very hot fire that is only harmful to others.  The spell will deliver %s points of damage plus 1-%s per point of skill to all nearby monsters for as long as they remain in the area of effect.	마나의 일부를 예약해 파티 주변을 뜨거운 불길로 감쌉니다. 불길은 파티원에게는 해를 주지 않으며, 효과 범위 안의 주변 몬스터에게 %s + 기술 포인트당 1-%s의 피해를 지속적으로 줍니다.	translated	제물 주문 설명
+Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신 폭발과 비슷하지만 훨씬 강력한 정신 마법으로 단일 대상을 공격합니다. 정신 충격은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	정신 충격 주문 설명
+Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic.	파티 전체에 화염, 공기, 물, 대지, 정신, 육체 보호와 낙하 완화, 마법의 눈을 동시에 시전합니다. 각 효과는 빛 마법 기술 수치의 두 배로 적용됩니다.	translated	보호의 날 주문 설명
+Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage.	마법의 힘으로 괴물을 강타하여 기절에서 회복할 때까지 다른 행동을 하지 못하게 합니다. 또한 괴물을 조금 뒤로 밀쳐 도망칠 기회를 줍니다. 대지 마법 숙련도가 높을수록 효과가 강해집니다. 기절은 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 기절 주문 설명
+Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic.	작은 번개 구체 여러 개를 발사합니다. 구체는 무언가에 부딪히거나 사라질 때까지 튕겨 다니므로 이동 경로를 예측하기 어렵습니다. 작은 몬스터가 많은 방에서 특히 유용합니다. 구체 하나당 피해량은 공기 마법 기술 포인트당 1-%s입니다.	translated	스파크 주문 설명
+Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s points of damage plus 1-%s per point of skill.	파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	독 분사 주문 설명
+Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s%% of a melee attack damage.	파티 바로 앞의 몬스터에게 독을 분사합니다. 피해량은 낮지만 물 마법 저항을 가진 몬스터가 적어 대체로 효과적입니다. 각 분사는 근접 공격 피해의 %s%%만큼 피해를 줍니다.	translated	암살자 독 분사 설명
+Summons a swarm of biting, stinging insects to bedevil a single target.  The swarm does %s points of damage plus 1-%s per point of skill in Earth Magic.	물고 쏘는 벌레 떼를 소환해 단일 대상을 괴롭힙니다. 벌레 떼는 %s의 기본 피해와 대지 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	치명적 벌레떼 주문 설명
+Summons flaming rocks from the sky which fall in a large radius surrounding your chosen target.  Try not to be near the victim when you use this spell.  A single meteor does %s points of damage plus %s per point of skill in Fire Magic.  This spell only works outdoors.	하늘에서 불타는 바위를 소환해 지정한 대상 주변의 넓은 범위에 떨어뜨립니다. 시전할 때 대상 가까이에 있지 않는 것이 좋습니다. 운석 하나당 %s + 화염 마법 기술 포인트당 %s의 피해를 줍니다. 야외에서만 사용할 수 있습니다.	translated	운석 소나기 주문 설명
+Sunray is the second most devastating damage spell in the game. It does %s points of damage plus 1-%s points per point of skill in Light Magic, by concentrating the light of the sun on one unfortunate creature. Indoors it can be cast at any time; outdoors it only works during the day.	게임에서 두 번째로 강력한 피해 주문입니다. 태양빛을 한 대상에게 집중하여 %s의 기본 피해와 빛 마법 기술 포인트당 1-%s의 추가 피해를 줍니다. 실내에서는 언제든 시전할 수 있지만, 야외에서는 낮에만 사용할 수 있습니다.	translated	태양 광선 주문 설명
+Temporarily increases all seven stats on all your characters by 1 per skill in Light Magic.  This spell lasts until you rest.	파티원 모두의 일곱 능력치를 빛 마법 기술 포인트당 1만큼 일시적으로 증가시킵니다. 휴식할 때까지 지속됩니다.	translated	능력치 강화 주문 설명
+This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.	이 무시무시한 능력은 다크 엘프가 어둠과 화염의 힘을 결합한 위험한 다크파이어를 다루게 합니다. 다크파이어에 맞은 대상은 화염 저항과 어둠 저항 중 더 낮은 수치로 저항합니다. 피해량은 %s의 기본 피해 + 기술 포인트당 1-%s입니다.	translated	다크파이어 능력 설명
+This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.	시야 안의 모든 생물에게서 생명력을 빼앗습니다. 아군과 적군을 가리지 않습니다. 영혼 흡수는 공동 생명과 비슷한 방식으로 빼앗은 생명력을 파티에 나눠 줍니다. 피해량(및 회복량)은 %s + 기술 포인트당 1-%s입니다.	translated	영혼 흡수 주문 설명
+This is the strongest single damage spell available to death knights and deals damage equal to 	죽음의 기사가 사용할 수 있는 가장 강력한 단일 대상 피해 주문입니다. 피해량: 	translated	동상 주문 설명 앞부분
+This spell is exclusive to Death Knights and deals damage equal to 	죽음의 기사 전용 주문입니다. 피해량: 	translated	얼음의 손길 주문 설명 앞부분
+This spell is the town killer. Armageddon inflicts %s points of damage plus %s point of damage for every point of Dark skill your character has to every creature on the map, including all your characters. It can only be cast three times per day and only outdoors.	도시를 초토화하는 주문입니다. 아마겟돈은 맵의 모든 생물과 파티원 전원에게 %s + 캐릭터의 어둠 기술 포인트당 %s의 피해를 줍니다. 하루에 세 번만, 야외에서만 시전할 수 있습니다.	translated	아마겟돈 주문 설명
+This spell weakens the link between a target's body and soul, causing %s + 2-%s points of damage per point of skill in Spirit Magic to all monsters near the caster.	대상의 육체와 영혼 사이의 연결을 약화시켜 시전자 주변의 모든 몬스터에게 %s + 영혼 마법 기술 포인트당 2-%s의 피해를 줍니다.	translated	영혼 채찍 주문 설명
