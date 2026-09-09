@@ -1,0 +1,102 @@
+{
+  "archive": "Data/zMaw.T.lod",
+  "archive_blob_sha": "f250f60d68982ce6e7df105554c47323bb105f0e",
+  "archive_type": "mm8loclod",
+  "text_resource_count": 9,
+  "expected_translation_tables_found": 9,
+  "missing_expected_translation_tables": [],
+  "additional_text_resources": [],
+  "files": [
+    {
+      "name": "ITEMS.txt",
+      "name_lower": "items.txt",
+      "bytes": 474476,
+      "sha256": "8137578c41c6337e35948fe70244a9d8e0483db0f80b0b478a913dd29816f5d8",
+      "encoding": "utf-8-sig",
+      "lines": 2203,
+      "lines_with_english": 2201,
+      "expected_translation_table": true
+    },
+    {
+      "name": "MONSTERS.txt",
+      "name_lower": "monsters.txt",
+      "bytes": 98708,
+      "sha256": "9e2bdcc5e4bc21c425d0600534b64cc8e7c7a7f167492ec8a48006cbb1bd2dd5",
+      "encoding": "utf-8-sig",
+      "lines": 656,
+      "lines_with_english": 654,
+      "expected_translation_table": true
+    },
+    {
+      "name": "POTION.TXT",
+      "name_lower": "potion.txt",
+      "bytes": 171425,
+      "sha256": "fdbb0b9e4a32f9b83be339cf4bf22d833d9201873b35e8c577ff019dabf2783e",
+      "encoding": "utf-8-sig",
+      "lines": 1146,
+      "lines_with_english": 155,
+      "expected_translation_table": true
+    },
+    {
+      "name": "POTNOTES.TXT",
+      "name_lower": "potnotes.txt",
+      "bytes": 139605,
+      "sha256": "7e7754fe281a2a2d7fae34e668aaac55b9d0aa4a5c59bd23777dc03205a73177",
+      "encoding": "cp1252",
+      "lines": 1139,
+      "lines_with_english": 155,
+      "expected_translation_table": true
+    },
+    {
+      "name": "Placemon.txt",
+      "name_lower": "placemon.txt",
+      "bytes": 10299,
+      "sha256": "383816aef05ba72aed2ae8f64f938f94cb6b8ab6e0bc9d1fe0eed4aa94ff0367",
+      "encoding": "utf-8-sig",
+      "lines": 1001,
+      "lines_with_english": 160,
+      "expected_translation_table": true
+    },
+    {
+      "name": "SPCITEMS.TXT",
+      "name_lower": "spcitems.txt",
+      "bytes": 9945,
+      "sha256": "4153706f6a72160962b90ea64796143697c998971e4b17f3e562556944fd6a80",
+      "encoding": "utf-8-sig",
+      "lines": 94,
+      "lines_with_english": 86,
+      "expected_translation_table": true
+    },
+    {
+      "name": "class.txt",
+      "name_lower": "class.txt",
+      "bytes": 15481,
+      "sha256": "f1334c6555c459fa7467e30366c59ad70363b11bbf7aeb675fe6982243e5d62a",
+      "encoding": "cp1252",
+      "lines": 69,
+      "lines_with_english": 69,
+      "expected_translation_table": true
+    },
+    {
+      "name": "mapstats.txt",
+      "name_lower": "mapstats.txt",
+      "bytes": 51938,
+      "sha256": "569481937ee90bd6f98175d1f17d43128aceb0041f53a6e367a6f8426a5e95ca",
+      "encoding": "utf-8-sig",
+      "lines": 742,
+      "lines_with_english": 210,
+      "expected_translation_table": true
+    },
+    {
+      "name": "rnditems.txt",
+      "name_lower": "rnditems.txt",
+      "bytes": 89649,
+      "sha256": "f277c6c087ef31636a9f7af2a42af372bcd2d857c9b8f4f88dcdf5a6843417e0",
+      "encoding": "utf-8-sig",
+      "lines": 2213,
+      "lines_with_english": 2206,
+      "expected_translation_table": true
+    }
+  ],
+  "policy": "Generated audit source only. Korean zMaw.T.lod must be rebuilt from the pinned MAW 4.5 archive after translating reviewed embedded text resources."
+}
