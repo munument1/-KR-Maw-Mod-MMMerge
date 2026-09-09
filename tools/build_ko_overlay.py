@@ -6,6 +6,10 @@ Global translations are applied only to ``status=translated`` sources at
 an explicitly reviewed file/source/context occurrence when the same English
 literal is also used as an internal key elsewhere. The source tree is never
 edited in place; patched copies are written under ``korean/``.
+
+The separately built ``korean/Data/zzzMawKO.T.lod`` is preserved across Lua
+overlay rebuilds.  Its generated report is copied into ``manifest.json`` so a
+normal localization refresh cannot silently delete or hide the LOD artifact.
 """
 
 from __future__ import annotations
@@ -17,12 +21,22 @@ import shutil
 from collections import Counter, defaultdict
 from pathlib import Path
 
+LOD_RELATIVE_PATH = Path("Data/zzzMawKO.T.lod")
+LOD_REPORT_PATH = Path("localization/zmaw_lod_ko_report.json")
+LOD_SOURCE_MANIFEST_PATH = Path("localization/zmaw_lod_manifest.json")
+
 
 def read_tsv(path: Path):
     if not path.exists():
         return []
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f, delimiter="\t"))
+
+
+def read_json(path: Path):
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def decode_manual(text: str) -> str:
@@ -119,6 +133,45 @@ def patch_table_line(line: str, mapping: dict[str, str]):
     return "\t".join(out), matched
 
 
+def preserve_lod_before_reset(output: Path) -> bytes | None:
+    path = output / LOD_RELATIVE_PATH
+    return path.read_bytes() if path.exists() else None
+
+
+def restore_lod_after_reset(output: Path, data: bytes | None) -> None:
+    if data is None:
+        return
+    path = output / LOD_RELATIVE_PATH
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(data)
+
+
+def lod_manifest_entry(root: Path, output: Path):
+    report = read_json(root / LOD_REPORT_PATH)
+    artifact = output / LOD_RELATIVE_PATH
+    if not report and not artifact.exists():
+        return None
+
+    source_manifest = read_json(root / LOD_SOURCE_MANIFEST_PATH) or {}
+    entry = {
+        "path": LOD_RELATIVE_PATH.as_posix(),
+        "exists": artifact.exists(),
+        "bytes": artifact.stat().st_size if artifact.exists() else 0,
+        "source_archive": source_manifest.get("archive", "Data/zMaw.T.lod"),
+        "source_archive_blob_sha": source_manifest.get("archive_blob_sha"),
+        "archive_type": (report or {}).get("archive_type", "mm8loclod"),
+        "mmmerge_repository": (report or {}).get("mmmerge_repository"),
+        "mmmerge_commit": (report or {}).get("mmmerge_commit"),
+        "files": (report or {}).get("files", []),
+        "localized_fields": (report or {}).get("total_localized_fields", 0),
+        "replacements": (report or {}).get("replacements", {}),
+        "pending_schema_review": (report or {}).get("untouched_pending_schema_review", []),
+        "untouched_byte_preserved": (report or {}).get("untouched_byte_preserved", []),
+        "roundtrip_policy": "zMaw LOD workflow extracts the generated archive and byte-compares all 9 staged resources before committing it.",
+    }
+    return entry
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", type=Path, default=Path("."))
@@ -185,9 +238,11 @@ def main() -> int:
             target_lines[file][int(occ["line"])][source] = translation
             scoped_targets += 1
 
+    preserved_lod = preserve_lod_before_reset(output)
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True, exist_ok=True)
+    restore_lod_after_reset(output, preserved_lod)
 
     applied = defaultdict(int)
     changed_files = []
@@ -247,6 +302,13 @@ def main() -> int:
                 "expected_patchable_occurrences": expected[source],
             })
 
+    lod_entry = lod_manifest_entry(root, output)
+    if lod_entry and not lod_entry["exists"]:
+        errors.append({
+            "type": "reported_lod_artifact_missing",
+            "path": lod_entry["path"],
+        })
+
     manifest = {
         "base": "MAW MMMerge 4.5",
         "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
@@ -257,9 +319,10 @@ def main() -> int:
         "scoped_occurrences_targeted": scoped_targets,
         "skipped_unpatchable_occurrences_for_translated_sources": sum(skipped_unpatchable.values()),
         "changed_files": changed_files,
+        "lod_overlay": lod_entry,
         "warnings": warnings,
         "validation_errors": errors,
-        "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed.",
+        "install": "Install the Korean MMMerge base, then MAW MMMerge 4.5, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
     }
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
