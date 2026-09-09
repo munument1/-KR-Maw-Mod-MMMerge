@@ -12,7 +12,6 @@ Attack|	공격|	translated	기술 상세 표 공격 라벨
 AC|	방어도|	translated	기술 상세 표 방어도 라벨
 Dmg%%|	피해%%|	translated	기술 상세 표 피해율 라벨; %% 보존
 Dmg|	피해|	translated	기술 상세 표 피해 라벨
-%sRes	%s저항	translated	기술 상세 표 저항 라벨; %s 보존
 %s Res\t000	%s 저항\t000	translated	기술 상세 표 저항 라벨; %s/탭 보존
 %s hits %s for %s points!%s	%s이(가) %s에게 %s의 피해를 입혔습니다!%s	translated	실제 근접 전투 상태 메시지; 자리표시자 순서 보존
 %s shoots %s for %s points!%s	%s이(가) %s에게 원거리 공격으로 %s의 피해를 입혔습니다!%s	translated	실제 원거리 전투 상태 메시지; 자리표시자 순서 보존
