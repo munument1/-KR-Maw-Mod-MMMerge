@@ -19,6 +19,7 @@ on:
       - 'tools/promote_direct_ui_literals.py'
       - 'tools/promote_monster_ui_fields.py'
       - 'tools/promote_legendary_item_tooltips.py'
+      - 'tools/promote_item_enchantment_labels.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -85,6 +86,9 @@ jobs:
 
       - name: Promote legendary item tooltips
         run: python tools/promote_legendary_item_tooltips.py --root .
+
+      - name: Promote item enchantment labels
+        run: python tools/promote_item_enchantment_labels.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
