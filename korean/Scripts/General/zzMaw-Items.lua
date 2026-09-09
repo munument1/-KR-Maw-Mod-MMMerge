@@ -4693,7 +4693,7 @@ function events.BuildItemInformationBox(t)
 					local pl=Party[Game.CurrentPlayer]
 					local s, m, level=getBuffSkill(4)
 					if m>=1 then
-						local name={"불꽃","화염","지옥불","지옥",[0]=""}
+						local name={"화염","불꽃","지옥불","지옥",[0]=""}
 						local damage=calcFireAuraDamage(pl, t.Item, 0, false, false, "tooltip")
 						if damage then
 							local txt=string.format(name[m] .. " 오라: 모든 공격에 " .. damage .. " 화염 피해 추가\n\n")

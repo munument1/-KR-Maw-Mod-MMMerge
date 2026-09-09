@@ -243,10 +243,10 @@ Earth Resistance	대지 저항	translated	item	2	formatted_colored_text:1; prove
 Endless Potion	무한 물약	translated	item	1	known_display_name_assignment:1	Scripts/General/zzAlchemy.lua	"Game.ItemsTxt[1069].Name=""Endless Potion"""
 Endurance	인내력	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[4] = StrColor(0, 255, 0, ""Endurance"")"
 Explosive Impact! (half damage)	폭발 충격! (피해 절반)	translated	item	2	proven_special_item_bonus_description:2	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[2].BonusStat=""Explosive Impact! (half damage)"""
-Fire	불꽃	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
+Fire	화염	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
 Fire Magic Skill +	화염 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[30] = ""Fire Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
 Fire Resistance	화염 저항	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[11] = StrColor(255, 70, 70, ""Fire Resistance"")"
-Flame	화염	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
+Flame	불꽃	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
 "Grant 1 enchant to an unenchanted item, based on potion Power.
 Require at least 20 power to work.
 "	"물약 위력에 따라 마법이 부여되지 않은 아이템에 마법부여 효과 1개를 추가합니다.

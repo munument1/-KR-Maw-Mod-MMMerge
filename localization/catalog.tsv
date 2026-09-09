@@ -285,10 +285,10 @@ maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting
 maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	
 maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-54c81b0a7634	translated	item	Explosive Impact! (half damage)	폭발 충격! (피해 절반)		Scripts/General/zzMaw-Items.lua	1274	2	특수 아이템 효과 설명
-maw-78baebfcb4b5	translated	item	Fire	불꽃		Scripts/General/zzMaw-Items.lua	4258	2	화염 오라 단계명
+maw-78baebfcb4b5	translated	item	Fire	화염		Scripts/General/zzMaw-Items.lua	4258	2	공통 화염 표기; 능력치/오라 양쪽에 안전
 maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
 maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-245eb6d90c4a	translated	item	Flame	화염		Scripts/General/zzMaw-Items.lua	4696	1	화염 오라 단계명
+maw-245eb6d90c4a	translated	item	Flame	불꽃		Scripts/General/zzMaw-Items.lua	4696	1	화염 오라 단계명
 maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	
 maw-fc1a8c583492	untranslated	item	GenerateItem			Scripts/Core/events.lua	2192	1	
 maw-030499ca0810	untranslated	item	GetItemName			Scripts/Structs/extraEditableDescriptions.lua	310	1	
