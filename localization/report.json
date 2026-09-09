@@ -7,9 +7,9 @@
   "patchable_unique_sources": 308,
   "unpatchable_occurrences": 5805,
   "status": {
-    "excluded": 1151,
+    "excluded": 1194,
     "translated": 299,
-    "untranslated": 1575
+    "untranslated": 1532
   },
   "categories": {
     "class": 37,
@@ -44,7 +44,14 @@
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
   "structural_table_occurrences": 1894,
-  "structural_table_newly_excluded": 1140,
+  "structural_table_newly_excluded": 0,
   "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
-  "individual_literal_refinements": 5
+  "individual_literal_refinements": 5,
+  "internal_only_unique_sources": 1183,
+  "internal_only_newly_excluded": 43,
+  "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
+  "uncertain_review_unique_sources": 1531,
+  "uncertain_review_occurrences": 3464,
+  "uncertain_review_exact_mmmerge_matches": 257,
+  "uncertain_review_ambiguous_mmmerge_matches": 18
 }

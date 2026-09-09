@@ -290,7 +290,7 @@ maw-14c265704093	untranslated	item	item210			Scripts/General/zzMaw-Spells.lua	32
 maw-c7857a25fa7f	untranslated	item	item280			Scripts/General/zzAlchemy.lua	1422	1	
 maw-ee2105329f31	untranslated	item	ItemAdditionalDamage			Scripts/Core/events.lua	2342	1	
 maw-51d750b72c62	untranslated	item	ItemGenerated			Scripts/Core/events.lua	2196	1	
-maw-44d25b5d1b6d	untranslated	item	Items			Scripts/General/zzAlchemy.lua	1303	36	
+maw-44d25b5d1b6d	excluded	item	Items			Scripts/General/zzAlchemy.lua	1303	36	Internal engine/control literal only; not player-facing localization.
 maw-3e1561e2a89a	untranslated	item	Killing a Monster Restores 10% of Health and Mana			Scripts/General/zzMaw-Items.lua	1380	1	
 maw-e77589efb2dc	untranslated	item	Killing a monster with a single-target attack halves the recovery time			Scripts/General/zzMaw-Items.lua	1365	1	
 maw-a8b7dd52190d	untranslated	item	Leech also restores Mana, but its effect is halved			Scripts/General/zzMaw-Items.lua	1388	1	
@@ -407,9 +407,9 @@ Down below a list of corrupted items:
 maw-b83051d62e09	untranslated	item	Water Magic Skill +			Scripts/General/zzMaw-Items.lua	2040	1	
 maw-8fabae26c6ea	translated	item	Water Resistance	물 저항		Data/Tables/Spells2.txt	27	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-301ce3955ba4	untranslated	item	weakness			Scripts/General/zzMaw-Items.lua	1258	1	
-maw-fb360f9c09ac	untranslated	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
-maw-5397e0583f14	untranslated	item	Yes			Scripts/General/zzMaw-Monsters.lua	2895	1	
-maw-8fff039853f5	untranslated	item	YES			Scripts/General/zzMaw-Monsters.lua	2895	1	
+maw-fb360f9c09ac	excluded	item	yes			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
+maw-5397e0583f14	excluded	item	Yes			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
+maw-8fff039853f5	excluded	item	YES			Scripts/General/zzMaw-Monsters.lua	2895	1	Internal engine/control literal only; not player-facing localization.
 maw-b50c97f9f151	translated	item	"You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.
 Leaving a dungeon before killing most of them will cause monsters to respawn.
 Clearing a dungeon will grant you extra rewards.
@@ -433,31 +433,31 @@ maw-fb7ec622c900	untranslated	map	7t1s2bs4			Scripts/Maps/BrBase.lua	10	1
 maw-cabd035fe4e1	untranslated	map	7tfb1			Scripts/Maps/BrBase.lua	10	1	
 maw-b2a0e9e09384	untranslated	map	7trimd			Scripts/Maps/BrBase.lua	10	1	
 maw-97c89a4d6630	untranslated	map	Action			Scripts/General/zzMAW-Skills.lua	1769	4	
-maw-c85a04d7c812	untranslated	map	AirResistance			Scripts/Maps/outb3.lua	39	3	
+maw-c85a04d7c812	excluded	map	AirResistance			Scripts/Maps/outb3.lua	39	3	Internal engine/control literal only; not player-facing localization.
 maw-6a72085653e4	untranslated	map	All			Scripts/General/zzMAW-Skills.lua	737	50	
 maw-e12c96821956	untranslated	map	ambush			Scripts/Maps/7d21.lua	5	3	
 maw-c498e3a8a530	untranslated	map	ambush2			Scripts/Maps/7d21.lua	6	1	
 maw-b8285e62c833	translated	map	Antagarich	안타개릭		Scripts/Maps/out02.lua	62	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-5e7a5d7d69bd	untranslated	map	archie			Scripts/Maps/outd3.lua	35	1	
-maw-4f9e847dcf75	untranslated	map	AutonotesBits			Scripts/Maps/7out01.lua	34	3	
-maw-75226d73db5b	untranslated	map	Awards			Scripts/Maps/7out01.lua	46	3	
+maw-4f9e847dcf75	excluded	map	AutonotesBits			Scripts/Maps/7out01.lua	34	3	Internal engine/control literal only; not player-facing localization.
+maw-75226d73db5b	excluded	map	Awards			Scripts/Maps/7out01.lua	46	3	Internal engine/control literal only; not player-facing localization.
 maw-8b155695a09f	untranslated	map	bag01			Scripts/Maps/BrBase.lua	444	1	
-maw-1f357335d028	untranslated	map	BankGold			Scripts/Maps/7d29.lua	33	2	
-maw-76e85e07dd61	untranslated	map	BaseAccuracy			Scripts/Maps/outb3.lua	50	3	
-maw-60748ab05908	untranslated	map	BaseEndurance			Scripts/Maps/7out01.lua	20	4	
-maw-20f2e168b87d	untranslated	map	BaseIntellect			Scripts/Maps/outb3.lua	46	3	
-maw-95d9b5bc2e6a	untranslated	map	BaseLuck			Scripts/Maps/outb3.lua	51	3	
-maw-10f2cc94dc57	untranslated	map	BaseMight			Scripts/Maps/outb3.lua	45	3	
-maw-48a7769b2f55	untranslated	map	BasePersonality			Scripts/Maps/outb3.lua	47	3	
-maw-34335598b884	untranslated	map	BaseSpeed			Scripts/Maps/outb3.lua	49	3	
+maw-1f357335d028	excluded	map	BankGold			Scripts/Maps/7d29.lua	33	2	Internal engine/control literal only; not player-facing localization.
+maw-76e85e07dd61	excluded	map	BaseAccuracy			Scripts/Maps/outb3.lua	50	3	Internal engine/control literal only; not player-facing localization.
+maw-60748ab05908	excluded	map	BaseEndurance			Scripts/Maps/7out01.lua	20	4	Internal engine/control literal only; not player-facing localization.
+maw-20f2e168b87d	excluded	map	BaseIntellect			Scripts/Maps/outb3.lua	46	3	Internal engine/control literal only; not player-facing localization.
+maw-95d9b5bc2e6a	excluded	map	BaseLuck			Scripts/Maps/outb3.lua	51	3	Internal engine/control literal only; not player-facing localization.
+maw-10f2cc94dc57	excluded	map	BaseMight			Scripts/Maps/outb3.lua	45	3	Internal engine/control literal only; not player-facing localization.
+maw-48a7769b2f55	excluded	map	BasePersonality			Scripts/Maps/outb3.lua	47	3	Internal engine/control literal only; not player-facing localization.
+maw-34335598b884	excluded	map	BaseSpeed			Scripts/Maps/outb3.lua	49	3	Internal engine/control literal only; not player-facing localization.
 maw-abb54b67334b	untranslated	map	bigbarel			Scripts/Maps/BrBase.lua	444	1	
-maw-e80e5ff74563	untranslated	map	BodyResistance			Scripts/Maps/outb3.lua	44	1	
+maw-e80e5ff74563	excluded	map	BodyResistance			Scripts/Maps/outb3.lua	44	1	Internal engine/control literal only; not player-facing localization.
 maw-1e318f00f4f3	untranslated	map	bookcas1			Scripts/Maps/BrBase.lua	585	1	
 maw-8e504b21fbe7	untranslated	map	Broadcasting maze change			Scripts/Maps/BrBase.lua	1198	1	
 maw-40dafe4cffff	untranslated	map	Bucket			Scripts/Maps/BrBase.lua	444	1	
 maw-478ea1fe6dac	untranslated	map	citytrtr			Scripts/Maps/outc2.lua	44	1	
 maw-b3d0a8449e07	untranslated	map	collect			Scripts/Maps/BrBase.lua	816	1	
-maw-e0760160e77f	untranslated	map	Counter8			Scripts/Maps/d22.lua	19	1	
+maw-e0760160e77f	excluded	map	Counter8			Scripts/Maps/d22.lua	19	1	Internal engine/control literal only; not player-facing localization.
 maw-7c0cbbce6ef8	untranslated	map	crclstr			Scripts/Maps/BrBase.lua	443	1	
 maw-f67cdd14635c	untranslated	map	crys5			Scripts/Maps/BrBase.lua	443	1	
 maw-8fdbfd4d6bc8	untranslated	map	crys6			Scripts/Maps/BrBase.lua	443	1	
@@ -469,47 +469,47 @@ maw-b9cea5b77b89	untranslated	map	dec61			Scripts/Maps/BrBase.lua	445	1
 maw-9afd1ea80bad	untranslated	map	dec62			Scripts/Maps/BrBase.lua	445	1	
 maw-ce47d0f5fb32	untranslated	map	dec63			Scripts/Maps/BrBase.lua	445	1	
 maw-bf93e5ce8bc1	untranslated	map	Down			Scripts/Maps/BrBase.lua	1016	3	
-maw-6dffba4b610a	untranslated	map	EarthResistance			Scripts/Maps/outb3.lua	41	3	
+maw-6dffba4b610a	excluded	map	EarthResistance			Scripts/Maps/outb3.lua	41	3	Internal engine/control literal only; not player-facing localization.
 maw-4206c5d2dd9d	translated	map	Enroth	엔로스		Scripts/Maps/7out02.lua	123	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-2b9eceb7a86a	untranslated	map	Enter			Scripts/Maps/BrBase.lua	468	3	
 maw-3eb27da9cfe9	untranslated	map	Error in maze generation algorithm. Closed cell found.			Scripts/Maps/BrBase.lua	695	1	
 maw-f83b6fe3aebf	untranslated	map	Exit			Scripts/Maps/BrBase.lua	521	1	
-maw-5b5aafe6b9e2	untranslated	map	Experience			Scripts/Maps/7out01.lua	35	4	
-maw-1d8b33278753	untranslated	map	FireResBonus			Scripts/Maps/7out01.lua	28	2	
-maw-c5d2a2df3aa8	untranslated	map	FireResistance			Scripts/Maps/outb1.lua	71	5	
+maw-5b5aafe6b9e2	excluded	map	Experience			Scripts/Maps/7out01.lua	35	4	Internal engine/control literal only; not player-facing localization.
+maw-1d8b33278753	excluded	map	FireResBonus			Scripts/Maps/7out01.lua	28	2	Internal engine/control literal only; not player-facing localization.
+maw-c5d2a2df3aa8	excluded	map	FireResistance			Scripts/Maps/outb1.lua	71	5	Internal engine/control literal only; not player-facing localization.
 maw-0d4615ae1d51	untranslated	map	firstSpawn			Scripts/Maps/7out05.lua	38	1	
 maw-c1abc8bc541d	untranslated	map	floursac			Scripts/Maps/BrBase.lua	444	1	
 maw-a32f6f0e92e5	untranslated	map	Goblin King			Scripts/Maps/7d29.lua	42	1	
 maw-69283d0142e2	untranslated	map	Goblin's Liutenant			Scripts/Maps/7out02.lua	92	1	
 maw-f2221392e37d	untranslated	map	goblingKing			Scripts/Maps/7d29.lua	48	1	
-maw-c57604db5869	untranslated	map	Gold			Scripts/General/zzMaw-Monsters.lua	2812	13	
-maw-fd6e306257f8	untranslated	map	History3			Scripts/Maps/7out02.lua	25	1	
-maw-a6cc696fd267	untranslated	map	History6			Scripts/Maps/out03.lua	11	1	
+maw-c57604db5869	excluded	map	Gold			Scripts/General/zzMaw-Monsters.lua	2812	13	Internal engine/control literal only; not player-facing localization.
+maw-fd6e306257f8	excluded	map	History3			Scripts/Maps/7out02.lua	25	1	Internal engine/control literal only; not player-facing localization.
+maw-a6cc696fd267	excluded	map	History6			Scripts/Maps/out03.lua	11	1	Internal engine/control literal only; not player-facing localization.
 maw-a5e6194e64e8	untranslated	map	Initiating map load			Scripts/Maps/BrBase.lua	1057	1	
 maw-300d29fd5f32	untranslated	map	Inventory			Scripts/General/zzzzMalekith-Randomizer.lua	86	45	
 maw-d632dba903a8	untranslated	map	Invisible			Data/Tables/ObjList.txt	1	2	
 maw-f1fdc869d585	translated	map	Jadame	제이덤		Scripts/Maps/7out02.lua	132	2	MMMerge PO 정확 일치 + 표시 문맥 확인
-maw-901de5b26f33	untranslated	map	MainCondition			Scripts/Maps/outb3.lua	35	1	
+maw-901de5b26f33	excluded	map	MainCondition			Scripts/Maps/outb3.lua	35	1	Internal engine/control literal only; not player-facing localization.
 maw-82b084acec80	untranslated	map	MAP_LOAD			Scripts/Maps/BrBase.lua	1029	2	
-maw-09ab5de04454	untranslated	map	MapVar			Scripts/Maps/pyramid.lua	34	2	
-maw-877d82e73041	untranslated	map	MapVar0			Scripts/Maps/outb1.lua	27	6	
-maw-a7f17b457728	untranslated	map	MapVar15			Scripts/Maps/7d11.lua	1	2	
-maw-80269981da3b	untranslated	map	MapVar16			Scripts/Maps/7d11.lua	1	1	
-maw-1b43aa1d5e40	untranslated	map	MapVar17			Scripts/Maps/7d11.lua	1	1	
-maw-d5f24d930072	untranslated	map	MapVar19			Scripts/Maps/d19.lua	30	1	
-maw-f600a5b48071	untranslated	map	MapVar27			Scripts/Maps/pyramid.lua	8	2	
-maw-abd4c42c8550	untranslated	map	MapVar4			Scripts/Maps/7d20.lua	5	5	
-maw-a65de4ddf7bc	untranslated	map	MapVar50			Scripts/Maps/oute3.lua	66	1	
-maw-ce47785a59ae	untranslated	map	MapVar9			Scripts/Maps/d07.lua	16	2	
+maw-09ab5de04454	excluded	map	MapVar			Scripts/Maps/pyramid.lua	34	2	Internal engine/control literal only; not player-facing localization.
+maw-877d82e73041	excluded	map	MapVar0			Scripts/Maps/outb1.lua	27	6	Internal engine/control literal only; not player-facing localization.
+maw-a7f17b457728	excluded	map	MapVar15			Scripts/Maps/7d11.lua	1	2	Internal engine/control literal only; not player-facing localization.
+maw-80269981da3b	excluded	map	MapVar16			Scripts/Maps/7d11.lua	1	1	Internal engine/control literal only; not player-facing localization.
+maw-1b43aa1d5e40	excluded	map	MapVar17			Scripts/Maps/7d11.lua	1	1	Internal engine/control literal only; not player-facing localization.
+maw-d5f24d930072	excluded	map	MapVar19			Scripts/Maps/d19.lua	30	1	Internal engine/control literal only; not player-facing localization.
+maw-f600a5b48071	excluded	map	MapVar27			Scripts/Maps/pyramid.lua	8	2	Internal engine/control literal only; not player-facing localization.
+maw-abd4c42c8550	excluded	map	MapVar4			Scripts/Maps/7d20.lua	5	5	Internal engine/control literal only; not player-facing localization.
+maw-a65de4ddf7bc	excluded	map	MapVar50			Scripts/Maps/oute3.lua	66	1	Internal engine/control literal only; not player-facing localization.
+maw-ce47785a59ae	excluded	map	MapVar9			Scripts/Maps/d07.lua	16	2	Internal engine/control literal only; not player-facing localization.
 maw-45497b72d802	untranslated	map	mawSpawn			Scripts/Maps/7d37.lua	40	1	
 maw-da31195990f4	untranslated	map	MazeLevel set to 3 (MazeLevel: %s, MoveDirection: %s)		%s %s	Scripts/Maps/BrBase.lua	1137	1	
-maw-a8327a8b3128	untranslated	map	MindResistance			Scripts/Maps/outb3.lua	43	1	
+maw-a8327a8b3128	excluded	map	MindResistance			Scripts/Maps/outb3.lua	43	1	Internal engine/control literal only; not player-facing localization.
 maw-3099447db4c8	untranslated	map	north			Scripts/Maps/BrBase.lua	243	3	
 maw-b9c0675046ae	untranslated	map	OnLoad started (MazeLevel: %s, MoveDirection: %s)		%s %s	Scripts/Maps/BrBase.lua	1127	1	
-maw-392feef07c53	untranslated	map	Players			Scripts/Maps/d19.lua	8	3	
-maw-80d14974d972	untranslated	map	QBits			Scripts/Maps/7d29.lua	34	92	
+maw-392feef07c53	excluded	map	Players			Scripts/Maps/d19.lua	8	3	Internal engine/control literal only; not player-facing localization.
+maw-80d14974d972	excluded	map	QBits			Scripts/Maps/7d29.lua	34	92	Internal engine/control literal only; not player-facing localization.
 maw-8789d4dba759	untranslated	map	Received BrBase level change notification: %d -> %d		%d %d	Scripts/Maps/BrBase.lua	1050	1	
-maw-ffb6e444a7b4	untranslated	map	ReputationIs			Scripts/Maps/outc2.lua	47	1	
+maw-ffb6e444a7b4	excluded	map	ReputationIs			Scripts/Maps/outc2.lua	47	1	Internal engine/control literal only; not player-facing localization.
 maw-5077553e1555	untranslated	map	RmzDec			Scripts/Maps/BrBase.lua	280	1	
 maw-0cd15995169d	untranslated	map	RmzDrA			Scripts/Maps/BrBase.lua	451	1	
 maw-87712e8c26cd	untranslated	map	RmzDrB			Scripts/Maps/BrBase.lua	454	1	
@@ -517,12 +517,12 @@ maw-768352fa9103	untranslated	map	RmzFlr			Scripts/Maps/BrBase.lua	278	1
 maw-c46145e8a841	untranslated	map	RmzMsc			Scripts/Maps/BrBase.lua	282	1	
 maw-36063d0909e3	untranslated	map	RmzPrt			Scripts/Maps/BrBase.lua	276	1	
 maw-150cba3f0108	untranslated	map	RmzWal			Scripts/Maps/BrBase.lua	274	1	
-maw-00200660bd74	untranslated	map	SkillPoints			Scripts/Maps/7out01.lua	21	1	
+maw-00200660bd74	excluded	map	SkillPoints			Scripts/Maps/7out01.lua	21	1	Internal engine/control literal only; not player-facing localization.
 maw-c655c0ee5d4b	untranslated	map	sky04			Scripts/Maps/outc1.lua	10	1	
 maw-7e3fb5d99b37	untranslated	map	south			Scripts/Maps/BrBase.lua	241	3	
 maw-6227120ab754	untranslated	map	spawn			Scripts/Maps/7out02.lua	115	1	
 maw-a8bf1b0bd0a1	untranslated	map	spawnCount			Scripts/Maps/7d24.lua	9	1	
-maw-3eb48b2fff76	untranslated	map	SpiritResistance			Scripts/Maps/outb3.lua	42	1	
+maw-3eb48b2fff76	excluded	map	SpiritResistance			Scripts/Maps/outb3.lua	42	1	Internal engine/control literal only; not player-facing localization.
 maw-c4cae114085e	untranslated	map	t1swbu			Scripts/Maps/outb2.lua	76	12	
 maw-46cc6dcd10ba	untranslated	map	t65a03			Scripts/Maps/BrBase.lua	11	1	
 maw-3aa3aa918abf	untranslated	map	t65b03			Scripts/Maps/BrBase.lua	11	1	
@@ -531,7 +531,7 @@ maw-a6cde82dd151	untranslated	map	t65c02			Scripts/Maps/BrBase.lua	11	1
 maw-a32d202b1ada	untranslated	map	torch01			Scripts/Maps/BrBase.lua	644	1	
 maw-f152a5fbe9dc	untranslated	map	trashheap			Scripts/Maps/BrBase.lua	443	1	
 maw-2038bdec9210	untranslated	map	Up			Scripts/Maps/BrBase.lua	1016	3	
-maw-965536c6dc0d	untranslated	map	WaterResistance			Scripts/Maps/outb1.lua	51	3	
+maw-965536c6dc0d	excluded	map	WaterResistance			Scripts/Maps/outb1.lua	51	3	Internal engine/control literal only; not player-facing localization.
 maw-fa0ae8943c6b	translated	map	Wine Rack	와인 선반		Scripts/Maps/7d20.lua	2	1	맵 힌트
 maw-e85e950b3fd4	excluded	misc	"	            %s%s "		%s %s	Scripts/General/zzMaw-Stats.lua	1063	6	서식 전용 문자열; 번역 금지
 maw-ca13c639b45e	untranslated	misc	"
@@ -1588,7 +1588,7 @@ maw-42d86cfd50b6	untranslated	skill	Exploding			Scripts/General/zzMaw-Monsters.l
 maw-70a1c0a505d3	untranslated	skill	Fangs			Scripts/General/zzClasses.lua	798	1	
 maw-3bc42b4b8932	untranslated	skill	Fire Magic			Scripts/General/zzClasses.lua	2165	1	
 maw-f95933ffb150	untranslated	skill	Fixator			Scripts/General/zzMAW-Skills.lua	1066	4	
-maw-35b259290ec3	untranslated	skill	Food			Scripts/Global/NPCFollowersSkills.lua	328	1	
+maw-35b259290ec3	excluded	skill	Food			Scripts/Global/NPCFollowersSkills.lua	328	1	Internal engine/control literal only; not player-facing localization.
 maw-6032a672e309	untranslated	skill	Frost			Scripts/General/zzClasses.lua	1450	1	
 maw-6f947783ef13	untranslated	skill	GetDiplomacyTotalSkill			Scripts/Core/events.lua	1956	2	
 maw-c06e767c2853	untranslated	skill	GetDisarmTrapTotalSkill			Scripts/Core/events.lua	1953	2	
