@@ -181,7 +181,11 @@ def download_text(name: str) -> str:
     url = f"{RAW_BASE}/{name}"
     req = urllib.request.Request(url, headers={"User-Agent": "MAW-MMMerge-Korean-localization/1.0"})
     with urllib.request.urlopen(req, timeout=60) as response:
-        return response.read().decode("utf-8-sig")
+        data = response.read()
+    try:
+        return data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data.decode("cp949")
 
 
 def parse_runtime_overlay(text: str) -> dict[tuple[int, str], str]:
