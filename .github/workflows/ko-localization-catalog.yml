@@ -13,7 +13,9 @@ on:
       - 'tools/export_patchable_candidates.py'
       - 'tools/import_mmmerge_memory.py'
       - 'tools/build_ko_overlay.py'
+      - 'tools/merge_translation_batches.py'
       - 'localization/**'
+      - 'localization/batches/**'
       - '.github/workflows/ko-localization-catalog.yml'
 
 permissions:
@@ -34,8 +36,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Merge reviewed translation batches
+        run: python tools/merge_translation_batches.py --root .
+
       - name: Build localization catalog
-        run: python tools/extract_maw_strings.py --root . --check
+        run: python tools/extract_maw_strings.py --root . --translations localization/all_translations.tsv --check
 
       - name: Refine individual string patchability
         run: python tools/refine_patchability.py --root .
