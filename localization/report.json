@@ -4,7 +4,8 @@
   "unique_active_candidates": 3025,
   "occurrences": 6244,
   "status": {
-    "untranslated": 3025
+    "translated": 12,
+    "untranslated": 3013
   },
   "categories": {
     "class": 37,
@@ -19,5 +20,5 @@
     "tooltip": 147,
     "ui": 95
   },
-  "placeholder_mismatches": []
+  "validation_errors": []
 }

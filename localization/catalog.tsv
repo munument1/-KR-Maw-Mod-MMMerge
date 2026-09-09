@@ -1831,7 +1831,7 @@ maw-08d2e98e6754	untranslated	spell	N/A			Scripts/General/zzClasses.lua	1429	1
 maw-709a23220f2c	untranslated	spell	Name			Scripts/General/zzClasses.lua	1353	3	
 maw-3b8561455273	untranslated	spell	No active spell queue slot found			Scripts/General/zzMaw-Spells.lua	42	1	
 maw-445d14405c09	untranslated	spell	No additional effects			Scripts/General/zzClasses.lua	1422	2	
-maw-45e118d0563e	untranslated	spell	Normal			Scripts/General/MenuExtraSettings.lua	238	5	
+maw-45e118d0563e	translated	spell	Normal	보통		Scripts/General/MenuExtraSettings.lua	238	5	게임 모드/난이도
 maw-16ca44702a9b	untranslated	spell	Novice			Scripts/General/zzMaw-Spells.lua	3424	1	
 maw-9794c2eef636	untranslated	spell	Paralysis			Scripts/General/zzMaw-Monsters.lua	3846	1	
 maw-e2112b8b0f17	untranslated	spell	PartyBuff			Scripts/General/zzMaw-Spells.lua	2381	16	
@@ -1939,7 +1939,7 @@ maw-b4b8cce29ba4	untranslated	status	%s's poison effect expired		%s	Scripts/Gene
 maw-ab165dc8650a	untranslated	status	's bag number 			Scripts/General/zzMaw-MultiBag.lua	244	1	
 maw-81c7c4f4c524	untranslated	status	's bags sorted			Scripts/General/zzMaw-Item-Sorter.lua	441	2	
 maw-1c76438aa9fa	untranslated	status	's item from the bag 			Scripts/General/zzMaw-MultiBag.lua	271	1	
-maw-ad5e80d26499	untranslated	status	(CRIT!)			Scripts/Global/zzMAWStatusMsg.lua	231	1	
+maw-ad5e80d26499	translated	status	(CRIT!)	(치명타!)		Scripts/Global/zzMAWStatusMsg.lua	231	1	전투 상태 메시지
 maw-ee152071e0dd	untranslated	status	*Swap*			Scripts/General/zzMaw-Monsters.lua	3320	3	
 maw-5e9d8c2fe7f3	untranslated	status	*You don't have any philosopher stone to charge the telelocator.*			Scripts/Global/Quest_SavingGoobers.lua	651	1	
 maw-01815df34c43	untranslated	status	+50 Fire Resistance temporary.			Scripts/Maps/7out01.lua	38	1	
@@ -3596,8 +3596,8 @@ maw-6f85da9c7900	untranslated	ui	"
 Total Regen Healing: "			Scripts/General/zzMaw-Stats.lua	616	1	
 maw-535723c71930	untranslated	ui	" , [""High""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-6945c3d240dc	untranslated	ui	" , [""Mid""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
-maw-56a33f886a5c	untranslated	ui	 Austerity			Scripts/General/MenuExtraSettings.lua	238	1	
-maw-880efb921b0e	untranslated	ui	 General settings			Scripts/General/MenuExtraSettings.lua	159	1	
+maw-56a33f886a5c	translated	ui	 Austerity	 절제		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
+maw-880efb921b0e	translated	ui	 General settings	 일반 설정		Scripts/General/MenuExtraSettings.lua	159	1	추가 설정 화면 제목
 maw-b15869c959e3	untranslated	ui	 Randomizer			Scripts/General/zzzzMalekith-Randomizer.lua	395	1	
 maw-7b618f6314b4	untranslated	ui	"""] = 
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
@@ -3663,8 +3663,9 @@ maw-d093cb076c31	untranslated	ui	"%s
 Total Ranged Damage done: %s"		%s %s	Scripts/General/zzMaw-Stats.lua	578	1	
 maw-66934fbcd7ba	untranslated	ui	446561746820436f756e743a20			Scripts/General/zzMaw-Monsters.lua	2617	1	
 maw-959b2aad9b04	untranslated	ui	\f00000			Scripts/Structs/extraEditableDescriptions.lua	59	1	
-maw-3cfb15d89074	untranslated	ui	"Beyond
-Madness"			Scripts/General/MenuExtraSettings.lua	238	1	
+maw-3cfb15d89074	translated	ui	"Beyond
+Madness"	"광기를
+넘어"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
 maw-5e1a584e9bbe	untranslated	ui	BolsterAmount			Scripts/General/MenuExtraSettings.lua	162	2	
 maw-8f7f6a656b06	untranslated	ui	BolsterFineTuning			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-48647474b89f	untranslated	ui	boolean			Scripts/General/MenuExtraSettings.lua	135	1	
@@ -3672,8 +3673,8 @@ maw-4b7a83f3be55	untranslated	ui	Bounty			Scripts/General/BountyHunt.lua	225	1
 maw-f309b2d045c6	untranslated	ui	"Cold\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2168	1	
 maw-277dc4259f09	untranslated	ui	Debuffs:			Scripts/General/zzMaw-Monsters.lua	2228	1	
 maw-f4f4473df8cb	untranslated	ui	Disabled			Scripts/General/zzClasses.lua	1789	1	
-maw-b3e6719cf85f	untranslated	ui	Doom			Scripts/General/MenuExtraSettings.lua	238	3	
-maw-00f03137e155	untranslated	ui	Easy			Scripts/General/MenuExtraSettings.lua	308	1	
+maw-b3e6719cf85f	translated	ui	Doom	파멸		Scripts/General/MenuExtraSettings.lua	238	3	게임 모드/난이도
+maw-00f03137e155	translated	ui	Easy	쉬움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
 maw-af131275db13	untranslated	ui	"Elec\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2167	1	
 maw-31bb56cf899a	untranslated	ui	"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
 Press R to enable/disable random rotation.
@@ -3687,8 +3688,8 @@ maw-7ae26932a060	untranslated	ui	ExtSetUp			Scripts/General/MenuExtraSettings.lu
 maw-32a4ead843a3	untranslated	ui	"Fire\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2165	1	
 maw-5370d182f7f5	untranslated	ui	FrameLimit			Scripts/General/MenuExtraSettings.lua	325	1	
 maw-71b5b9cfb683	untranslated	ui	freeProgression			Scripts/General/MenuExtraSettings.lua	162	1	
-maw-20a89915f18c	untranslated	ui	Hard			Scripts/General/MenuExtraSettings.lua	308	1	
-maw-ed10fe113de1	untranslated	ui	Hell			Scripts/General/MenuExtraSettings.lua	308	2	
+maw-20a89915f18c	translated	ui	Hard	어려움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
+maw-ed10fe113de1	translated	ui	Hell	지옥		Scripts/General/MenuExtraSettings.lua	308	2	난이도
 maw-0696da5d27aa	untranslated	ui	If you seek to pursuit a new path and reset your skills, you have come to the right place.			Scripts/Global/zzMAWRespec.lua	7	1	
 maw-74e5aeffbd58	untranslated	ui	ImprovedPathfinding			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-a3076a891f59	untranslated	ui	"Intellect represents a character's ability to reason and understand complex, abstract concepts.
@@ -3700,14 +3701,15 @@ maw-cab34b294f08	untranslated	ui	MAW SETTINGS			Scripts/General/AdaptiveMonsters
 maw-33b934efaa4c	untranslated	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	
 maw-37342e60033c	untranslated	ui	MergeExtraSettings			Scripts/General/MenuExtraSettings.lua	159	1	
 maw-a7b93d2128e8	untranslated	ui	Mode			Scripts/General/MenuExtraSettings.lua	162	2	
-maw-5f618a2f7c06	untranslated	ui	"Night
-mare"			Scripts/General/MenuExtraSettings.lua	308	2	
-maw-9ff6d323cc79	untranslated	ui	Norm.			Scripts/General/MenuExtraSettings.lua	308	1	
+maw-5f618a2f7c06	translated	ui	"Night
+mare"	악몽		Scripts/General/MenuExtraSettings.lua	308	2	난이도
+maw-9ff6d323cc79	translated	ui	Norm.	보통		Scripts/General/MenuExtraSettings.lua	308	1	난이도 축약 표시
 maw-af0b5531fd66	untranslated	ui	OpenExtraSettingsMenu			Scripts/General/MenuExtraSettings.lua	226	1	
 maw-41dcd0d7840d	untranslated	ui	Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.			Scripts/General/zzMaw-Stats.lua	400	1	
 maw-46c13ceaddd4	untranslated	ui	"Poison\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2169	1	
-maw-424308c3b136	untranslated	ui	"Road to
-insanity"			Scripts/General/MenuExtraSettings.lua	238	1	
+maw-424308c3b136	translated	ui	"Road to
+insanity"	"광기로 가는
+길"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
 maw-2ebaecd53665	untranslated	ui	Show players location			Scripts/Modules/Multiplayer/UI/GlobalMap.lua	111	1	
 maw-37a99c3360fb	untranslated	ui	ShowWeatherEffects			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-ca30c9d5d37a	untranslated	ui	TmblrOff			Scripts/General/MenuExtraSettings.lua	69	3	

@@ -1,0 +1,33 @@
+{
+  "base": "MAW MMMerge 4.5",
+  "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
+  "translated_entries": 12,
+  "changed_files": [
+    {
+      "file": "Scripts/General/MenuExtraSettings.lua",
+      "replacements": 13
+    },
+    {
+      "file": "Scripts/General/zzClasses.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzMaw-Items.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzMaw-Monsters.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/General/zzMaw-Spells.lua",
+      "replacements": 3
+    },
+    {
+      "file": "Scripts/Global/zzMAWStatusMsg.lua",
+      "replacements": 1
+    }
+  ],
+  "validation_errors": [],
+  "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed."
+}
