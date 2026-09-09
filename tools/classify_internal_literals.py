@@ -2,9 +2,10 @@
 """Exclude untranslated sources that occur only in proven engine/control contexts.
 
 This keeps the audit catalog exhaustive while removing internal event keys,
-comparison literals, table keys, and audited structural table strings from the
-human translation backlog. If a source has even one uncertain or player-facing
-occurrence, it remains reviewable.
+comparison literals, table keys, audited structural table strings, and strings
+that only occur inside Lua comments from the human translation backlog. If a
+source has even one uncertain or player-facing occurrence, it remains
+reviewable.
 """
 
 from __future__ import annotations
@@ -29,8 +30,9 @@ INTERNAL_REASONS = {
     "internal_table_key_literal",
     "internal_lookup_literal",
     "reviewed_internal_api_literal",
+    "lua_comment_literal",
 }
-NOTE = "Internal engine/control literal only; not player-facing localization."
+NOTE = "Internal engine/control/comment literal only; not player-facing localization."
 
 
 def read_tsv(path: Path):
@@ -91,7 +93,7 @@ def main() -> int:
     report["status"] = dict(sorted(counts.items()))
     report["internal_only_unique_sources"] = len(internal_only)
     report["internal_only_newly_excluded"] = newly_excluded
-    report["internal_literal_policy"] = "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable."
+    report["internal_literal_policy"] = "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable."
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(json.dumps({
