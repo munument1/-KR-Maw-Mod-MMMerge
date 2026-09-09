@@ -169,9 +169,53 @@
       "replacements": 3
     }
   ],
+  "lod_overlay": {
+    "path": "Data/zzzMawKO.T.lod",
+    "exists": true,
+    "bytes": 194632,
+    "source_archive": "Data/zMaw.T.lod",
+    "source_archive_blob_sha": "f250f60d68982ce6e7df105554c47323bb105f0e",
+    "archive_type": "mm8loclod",
+    "mmmerge_repository": "munument1/-KR-MMMerge",
+    "mmmerge_commit": "01b13c9f3c3d4db33ee650ef489fbbdf58765d7e",
+    "files": [
+      "ITEMS.txt",
+      "MONSTERS.txt",
+      "POTION.TXT",
+      "POTNOTES.TXT",
+      "Placemon.txt",
+      "SPCITEMS.TXT",
+      "class.txt",
+      "mapstats.txt",
+      "rnditems.txt"
+    ],
+    "localized_fields": 7854,
+    "replacements": {
+      "ITEMS.txt": 6583,
+      "MONSTERS.txt": 651,
+      "Placemon.txt": 161,
+      "mapstats.txt": 207,
+      "class.txt": 106,
+      "SPCITEMS.TXT": 146,
+      "rnditems.txt": 0,
+      "POTION.TXT": 0,
+      "POTNOTES.TXT": 0
+    },
+    "pending_schema_review": [
+      "POTION.TXT",
+      "POTNOTES.TXT",
+      "rnditems.txt"
+    ],
+    "untouched_byte_preserved": [
+      "POTION.TXT",
+      "POTNOTES.TXT",
+      "rnditems.txt"
+    ],
+    "roundtrip_policy": "zMaw LOD workflow extracts the generated archive and byte-compares all 9 staged resources before committing it."
+  },
   "warnings": [],
   "validation_errors": [],
-  "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed.",
+  "install": "Install the Korean MMMerge base, then MAW MMMerge 4.5, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
   "runtime_i18n_fixes": [
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
