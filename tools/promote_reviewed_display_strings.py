@@ -25,6 +25,17 @@ CRAFTING_NAMES = {
     "Ascended Amber Droplet", "Ascended Sapphire", "Ascended Diamond",
 }
 
+ALCHEMY_ITEM_NAMES = {
+    "Lunar Shard", "Fire Topaz", "Amethyst Chunk", "Amber Droplet",
+    "Royal Amethyst", "Gemcutter's Ruby", "Solarstone", "Erudite Crystal",
+    "Erathian Sapphire", "Queen's Diamond", "Ascended Lunar Shard",
+    "Ascended Fire Topaz", "Ascended Amethyst Chunk", "Ascended Amber Droplet",
+    "Ascended Royal Amethyst", "Ascended Gemcutter's Ruby", "Ascended Solarstone",
+    "Ascended Erudite Crystal", "Ascended Erathian Sapphire", "Ascended Queen's Diamond",
+    "Eye of Void", "Creator's Hourglass", "Pandora's Cube", "Archibald's Mirror",
+    "Emerald of Power", "Pearl of Memory", "Orb of Creation", "Celestial Orb",
+}
+
 ITEM_SORTER_MESSAGES = {
     " - Corrupted bag #",
     " - Corrupted item #",
@@ -71,6 +82,17 @@ SERIOUS_MAW_MONSTER_NAMES = {
     "Naga Empress",
 }
 
+MAW_SETTINGS_HEADERS = {
+    "Buff Rework", "M&M6 Projectiles", "Homing Projectiles",
+    "Damage on Friendly Units", "Loot Filter",
+}
+
+RESPEC_UI = {
+    "Skill reset info",
+    "I want to reset",
+    "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required",
+}
+
 
 def read_rows(path: Path):
     with path.open("r", encoding="utf-8-sig", newline="") as f:
@@ -93,6 +115,8 @@ def promote(row: dict[str, str]) -> bool:
     reason = None
     if file == "Scripts/General/zzMaw-Items.lua" and source in CRAFTING_NAMES:
         reason = "reviewed_crafting_status_name"
+    elif file == "Scripts/General/zzAlchemy.lua" and source in ALCHEMY_ITEM_NAMES:
+        reason = "reviewed_alchemy_item_name"
     elif file == "Scripts/General/zzMaw-Item-Sorter.lua" and source in ITEM_SORTER_MESSAGES:
         reason = "reviewed_item_corruption_message"
     elif file == "Scripts/Modules/Multiplayer/UI/House.lua" and source in HOUSE_UI:
@@ -105,6 +129,14 @@ def promote(row: dict[str, str]) -> bool:
         reason = "reviewed_arena_ui"
     elif file == "Scripts/General/zSERIOUSMAW.lua" and source in SERIOUS_MAW_MONSTER_NAMES:
         reason = "reviewed_monster_display_name"
+    elif file == "Scripts/General/zz_Maw-initialize.lua" and source in MAW_SETTINGS_HEADERS:
+        reason = "reviewed_maw_settings_header"
+    elif file == "Scripts/Global/zzMAWRespec.lua" and source in RESPEC_UI:
+        reason = "reviewed_respec_ui"
+    elif file == "Scripts/General/zzMaw-Maps.lua" and source == "Map Level: ":
+        reason = "reviewed_map_level_label"
+    elif file == "Scripts/General/zzMaw-Monsters.lua" and source == "\nLevel Recommended:\n":
+        reason = "reviewed_recommended_level_label"
 
     if not reason:
         return False
