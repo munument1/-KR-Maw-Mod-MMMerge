@@ -1,0 +1,5 @@
+source	translation	status	notes
+%sRes		excluded	전역 번역 금지; localization/scoped_overrides.tsv에서 기술 상세창 occurrence만 %s저항으로 처리
+Expert		excluded	전역 번역 금지; SpellPoints/설명 필드 내부 키 유지, 주문서 표시 occurrence만 scoped 번역
+Master		excluded	전역 번역 금지; SpellPoints/테이블 내부 키 유지, 주문서 표시 occurrence만 scoped 번역
+HP		excluded	엔진 이벤트/공식 내부 키와 공용 약어; 전역 한글 치환 시 로직 손상 위험
