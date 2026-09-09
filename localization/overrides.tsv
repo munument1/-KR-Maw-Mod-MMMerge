@@ -2,3 +2,13 @@ source	translation	status	notes
 \n\nThis Ability requires 	\n\n이 능력을 사용하려면 	translated	QA: 뒤의 숫자 + ' 콤보 포인트가 필요합니다.'와 자연스럽게 결합되도록 중복 표현 제거
 Beyond\nMadness	광란을\n넘어	translated	QA: Madness=광란, Insanity=광기로 구분
 Madness is not a place for cowards	광란은 겁쟁이가 올 곳이 아닙니다	translated	QA: Madness=광란, Insanity=광기로 구분
+Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n	물약 위력 50마다 지구력, 속도, 행운에 영구적으로 20을 추가합니다.\n이전에 얻은 보너스와 중첩되지 않습니다.\n	translated	QA: Endurance=지구력 용어 통일
+Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n	물약 위력 50마다 지성과 인격에 영구적으로 20을 추가합니다.\n이전에 얻은 보너스와 중첩되지 않습니다.\n	translated	QA: 실제 blackPermanentBuffs[253]은 Intellect+Personality(2,3); 원문 Wisdom 표기는 MAW 4.5 설명 오기
+Provides Shield+Stone Skin+Preservation.	방패 + 돌가죽 + 보존 효과를 부여합니다.	translated	QA: Stone Skin=돌가죽 용어 통일
+Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item	조합법:\n빨강 추가: 축복\n파랑 추가: 재생\n노랑 추가: 아이템 강화\n주황 추가: 석화 해제\n보라 추가: 아이템 마법부여	translated	QA: Harden Item=아이템 강화 용어 통일
+Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion	조합법:\n주황 추가: 자기 저항\n보라 추가: 원소 저항\n초록 추가: 성기사의 물약	translated	QA: Paladin's Potion=성기사의 물약 용어 통일
+Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh	조합법:\n빨강 추가: 신속\n파랑 추가: 보호\n노랑 추가: 돌가죽\n보라 추가: 마법 보호\n초록 추가: 석화 해제	translated	QA: Stone Skin=돌가죽 용어 통일
+Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance	조합법:\n빨강 추가: 황혼\n파랑 추가: 여명\n노랑 추가: 초월	translated	QA: Dawn=여명 용어 통일
+Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic	조합법:\n주황 추가: 하급 원소\n보라 추가: 지혜 강화\n초록 추가: 신성한 마법	translated	QA: Divine Magic=신성한 마법 용어 통일
+Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 지구력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.	translated	QA: Endurance=지구력 용어 통일
+Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지성과 인격이 10 + (1 × 위력)만큼 증가합니다.	translated	QA: Intellect=지성, Personality=인격 용어 통일
