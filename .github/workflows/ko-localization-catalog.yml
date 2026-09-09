@@ -10,8 +10,10 @@ on:
       - 'Data/Tables/**'
       - 'tools/extract_maw_strings.py'
       - 'tools/classify_structural_tables.py'
+      - 'tools/classify_internal_literals.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
+      - 'tools/export_uncertain_candidates.py'
       - 'tools/import_mmmerge_memory.py'
       - 'tools/build_ko_overlay.py'
       - 'tools/merge_translation_batches.py'
@@ -49,11 +51,17 @@ jobs:
       - name: Refine individual string patchability
         run: python tools/refine_patchability.py --root .
 
+      - name: Classify internal engine literals
+        run: python tools/classify_internal_literals.py --root .
+
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
 
       - name: Match MMMerge Korean translation memory
         run: python tools/import_mmmerge_memory.py --root .
+
+      - name: Export uncertain Lua review queue
+        run: python tools/export_uncertain_candidates.py --root .
 
       - name: Build Korean overlay
         run: python tools/build_ko_overlay.py --root . --check
@@ -66,7 +74,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add localization/catalog.tsv localization/occurrences.tsv localization/report.json localization/patchable_candidates.tsv localization/mmmerge_matches.tsv localization/mmmerge_match_report.json korean/
+          git add localization/catalog.tsv localization/occurrences.tsv localization/report.json localization/patchable_candidates.tsv localization/uncertain_candidates.tsv localization/mmmerge_matches.tsv localization/mmmerge_match_report.json korean/
           if git diff --cached --quiet; then
             echo 'Generated localization data already up to date.'
             exit 0
