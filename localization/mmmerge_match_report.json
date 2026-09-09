@@ -1,0 +1,12 @@
+{
+  "mmmerge_repository": "munument1/-KR-MMMerge",
+  "mmmerge_commit": "9479900600403300fac0fcadc3c7abdd8d3e2e57",
+  "mmmerge_po_path": "translations/ko/mmmerge.po",
+  "po_pairs_read": 25051,
+  "po_unique_msgids": 14926,
+  "maw_active_candidates": 3025,
+  "matched_sources": 781,
+  "exact_single_translation": 721,
+  "ambiguous_multiple_translations": 60,
+  "policy": "suggestions_only"
+}

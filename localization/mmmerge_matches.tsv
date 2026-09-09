@@ -1,0 +1,782 @@
+source	translation	match_status	category	occurrences	variant_count	notes
+AC	방어	exact	class	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Attack	근접	exact	class	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Damage	피해량	exact	class	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Resistances	저항	exact	class	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shoot	원거리	exact	class	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Accuracy	정확도	exact	item	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Air Resistance	공기 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alchemy skill	연금술 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Armsmaster skill	무기 전문가 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Body Resistance	육체 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bonus	보너스	exact	item	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bow	활	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Charges	충전 횟수	exact	item	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Condition	상태	exact	item	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Disarm skill	함정 해제 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dodge skill	회피 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Earth Resistance	대지 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fire Resistance	화염 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Great might	강대한 힘	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hardened	강화됨	exact	item	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hit Points	생명력	exact	item	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+ID Item skill	아이템 감정 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+ID Monster skill	몬스터 감정 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Location	위치	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Longsword	장검	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Might	힘	exact	item	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mind Resistance	정신 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Personality	인격	exact	item	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Potion Bottle	물약병	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Spell	주문	exact	item	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Spell Points	주문력	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stolen	도난	exact	item	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Two-Handed Axe	양손 도끼	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Two-Handed Sword	양손검	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Unarmed skill	맨손 전투 기술	exact	item	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Water Resistance	물 저항	exact	item	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+yes	예	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Yes	예	exact	item	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Antagarich	안타개릭	exact	map	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Awards	업적	exact	map	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bucket	양동이	exact	map	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Enroth	엔로스	exact	map	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Exit	나가기	exact	map	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Goblin King	고블린 왕	exact	map	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Inventory	인벤토리	exact	map	45	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Jadame	제이덤	exact	map	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Empty Barrel	빈 통	exact	misc	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Player	플레이어	exact	misc	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Abandoned Pirate Keep	버려진 해적 성채	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Abandoned Temple	버려진 신전	exact	monster	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Agar's Laboratory	에이거의 연구소	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alvar	알바르	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ancient Troll Home	고대 트롤의 거처	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Arena	투기장	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Armor Halved	방어력 절반	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Avlee	아블리	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Balthazar Lair	발타자르 소굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barbarian Fortress	야만인 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow I	제1고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow II	제2고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow III	제3고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow IV	제4고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow IX	제9고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow V	제5고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow VI	제6고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow VII	제7고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow VIII	제8고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow X	제10고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow XI	제11고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow XII	제12고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow XIII	제13고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow XIV	제14고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Barrow XV	제15고분	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Basement of the Breach	균열 지하실	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bootleg Bay	부틀렉 베이	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Alamos	알라모스 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Darkmoor	다크무어 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Gloaming	글로밍 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Gryphonheart	그리폰하트 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Harmondale	하몬데일 성	exact	monster	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Ironfist	아이언피스트 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Kriegspire	크리그스파이어 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Lambent	램번트 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle Navan	나반 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle of Air	공기의 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Castle of Fire	불의 성	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Caves of the Dragon Riders	드래곤 라이더의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Celeste	셀레스트	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Chain of Fire	불의 사슬	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Chapel of Eep	이프 예배당	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Church of Eep	이프 교회	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Clanker's Laboratory	클랭커의 연구소	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cleric of Baa	바의 성직자	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Colony Zod	조드 식민지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Control Center	제어 센터	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Corlagon's Estate	코라곤의 영지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cyclops Larder	사이클롭스 식량창고	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dagger Wound Island	대거 운드 섬	exact	monster	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Damage Halved	피해량 절반	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dark Dwarf Compound	다크 드워프 거주지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Death	죽음	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Devil Outpost	데빌 전초기지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Deyja	데이자	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dire Wolf Den	다이어 울프 소굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Cave	드래곤 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Hunter's Camp	드래곤 사냥꾼 야영지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon's Lair	드래곤의 소굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragonsand	드래곤샌드	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragoons' Caverns	드라군의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragoons' Keep	드라군 성채	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Druid Circle	드루이드 서클	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Eel Infested Waters	뱀장어가 들끓는 바다	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Emerald Island	에메랄드 섬	exact	monster	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Eradication	소멸	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Erathia	에라시아	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Escaton's Crystal	에스카톤의 수정	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Escaton's Palace	에스카톤의 궁전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Evenmorn Island	이븐모른 섬	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fear	공포	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fort Riverstride	리버스트라이드 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Free Haven	프리 헤이븐	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Free Haven Sewer	프리 헤이븐 하수도	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Frozen Highlands	프로즌 하이랜드	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Garrote Gorge	가로트 협곡	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gharik's Forge	가릭의 대장간	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Goblinwatch	고블린워치	exact	monster	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Grand Temple of Eep	이프 대사원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Grand Temple of the Moon	달의 대사원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Grand Temple of the Sun	태양의 대사원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hall of the Fire Lord	불의 군주의 회관	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Harmondale	하몬데일	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hermit's Isle	은둔자의 섬	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Icewind Keep	아이스윈드 성채	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ilsingore's Cave	일싱고어의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Insane	광기	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ironsand Desert	아이언샌드 사막	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Kriegspire	크리그스파이어	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lair of the Wolf	늑대의 소굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Level	레벨	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lord Markham's Manor	마크햄 경의 저택	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mad Necromancer's Lab 	미친 강령술사의 연구소 	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Magic	마법	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Melee Only	근접 공격 전용	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Merchant House of Alvar	알바르 상인회관	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mire of the Damned	저주받은 자들의 수렁	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Misty Islands	안개 섬	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mount Nighon	나이혼 산	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Murmurwoods	머머우즈	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Naga Vault	나가 보물고	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Necromancers' Guild	강령술사 길드	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+New World Computing	뉴 월드 컴퓨팅	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Nighon Tunnels	나이혼 터널	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+NWC	NWC	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ogre Fortress	오우거 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Old Loeb's Cave	늙은 로브의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Oracle of Enroth	엔로스의 오라클	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Paradise Valley	파라다이스 밸리	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Passage Under Regna	레그나 지하 통로	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+pending	pending	exact	monster	12	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pirate Outpost	해적 전초기지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pirate Stronghold	해적 거점	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plane Between Planes	차원 사이의 차원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plane of Air	공기의 차원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plane of Earth	대지의 차원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plane of Fire	불의 차원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plane of Water	물의 차원	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Priest of Baa	바의 사제	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Prison of the Lord of Air	공기의 군주의 감옥	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Prison of the Lord of Earth	대지의 군주의 감옥	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Prison of the Lord of Fire	불의 군주의 감옥	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Prison of the Lord of Water	물의 군주의 감옥	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ravage Roaming	라비지 로밍	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ravenshore	레이븐쇼어	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Reactor	원자로	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Regna	레그나	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shadow Guild	섀도 길드	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shadow Guild Hideout	섀도 길드 은신처	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shadowspire	섀도스파이어	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shoals	여울	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Silver Cove	실버 코브	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Silver Helm Outpost	실버 헬름 전초기지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Silver Helm Stronghold	실버 헬름 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Slow	감속	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Small Sub Pen	소형 잠수함 격납고	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Smuggler's Cove	밀수꾼의 만	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Snergle's Caverns	스너글의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Snergle's Iron Mines	스너글의 철광산	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stone	돌	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stone City	스톤 시티	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Superior Temple of Baa	바의 상급 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Supreme Temple of Baa	바의 최고 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sweet Water	스위트 워터	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tatalia	타탈리아	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of Baa	바의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Dark	어둠의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Fist	주먹의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Light	빛의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Moon	달의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Snake	뱀의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of the Sun	태양의 신전	exact	monster	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple of Tsantsa	찬차의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Arena	투기장	exact	monster	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Bandit Caves	도적 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Barrow Downs	고분 지대	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Bracada Desert	브라카다 사막	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Breach	균열	exact	monster	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Breeding Zone	번식 구역	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Crypt of Korbu	코르부의 납골당	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Dragon Caves	드래곤 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Dragon's Lair	드래곤의 소굴	exact	monster	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Erathian Sewers	에라시아 하수도	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Hall of the Pit	구덩이의 회관	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Hall under the Hill	언덕 아래의 회관	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Haunted Mansion	유령 저택	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Hidden Tomb	숨겨진 무덤	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Hive	하이브	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Land of the Giants	거인들의 땅	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Lincoln	링컨	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Maze	미궁	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Mercenary Guild	용병 길드	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Monolith	모놀리스	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Pit	구덩이	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Red Dwarf Mines	레드 드워프 광산	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The School of Sorcery	마법 학교	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Small House	작은 집	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Strange Temple	기묘한 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Temple of Baa	바의 신전	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Temple of the Moon	달의 신전	exact	monster	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Tidewater Caverns	타이드워터 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Titans' Stronghold	타이탄 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Tularean Caves	툴라리안 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Tularean Forest	툴라리안 숲	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Walls of Mist	안개의 장벽	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Wine Cellar	와인 저장고	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Thunderfist Mountain	썬더피스트 산	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Time	시간	exact	monster	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tomb of Ethric the Mad	광인 에스릭의 무덤	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tomb of Lord Brinne	브린 경의 무덤	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tomb of VARN	VARN의 무덤	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Troll Tomb	트롤 무덤	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tunnels to Eeofol	이오폴로 가는 터널	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tutorial	튜토리얼	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Unicorn	유니콘	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Unknown	알 수 없음	exact	monster	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Uplifted Library	떠오른 도서관	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vampire Crypt	뱀파이어 납골당	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+War Camp	전쟁 야영지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Warlord's Fortress	군벌의 요새	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wasp Nest	말벌 둥지	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Watchtower 6	제6 감시탑	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+White Cliff Cave	화이트 클리프 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+William Setag's Tower	윌리엄 세탁의 탑	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wromthrax's Cave	웜스랙스의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Yaardrake's Cave	야드드레이크의 동굴	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Zokarr's Tomb	조카르의 무덤	exact	monster	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Air Magic	공기 마법	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Body Magic	육체 마법	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dark Magic	어둠 마법	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Earth Magic	대지 마법	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fire Magic	화염 마법	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Food	식량	exact	skill	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+HP	생명력	exact	skill	10	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Misc	기타	exact	skill	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+SP	주문력	exact	skill	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Swift	[신속]	exact	skill	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Water Magic	물 마법	exact	skill	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Book	책	exact	spell	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Expert	전문가	exact	spell	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Grandmaster	그랜드마스터	exact	spell	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+N/A	N/A	exact	spell	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Name	이름	exact	spell	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Normal	노멀	exact	spell	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Quick Spell	퀵스펠	exact	spell	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+School	학교	exact	spell	12	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Temple	신전	exact	spell	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	exact	spell	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Acid Burst	산성 폭발	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alchemy	연금술	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Almighty Crown	전능의 왕관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alvar Cloak	알바르 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alvarian Boots	알바르 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Alvarian Leather	알바르 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Amethyst	자수정	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Amulet	부적	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Angel	천사	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Angelic Helm	천사의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Arcane Key	신비의 열쇠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Arch Druid	대드루이드	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Arch Mage	대마법사	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Archangel	대천사	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Archangel Wings	대천사의 날개	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Archer	궁수	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Armageddon	아마겟돈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Armored Boots	장갑 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Arthur	아서	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Artificer's Belt	장인의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Assassin	암살자	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Atlas	아틀라스	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Awaken	각성	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Banded Plate	띠형 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Battle Helm	전투용 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Belts	벨트	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Berserker Belt	광전사의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Big Brass Ring	커다란 황동 고리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Big Tapestry	대형 태피스트리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Black Potion	검은색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Blades	칼날	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Blaster	블래스터	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Blaster Rifle	블래스터 소총	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bless	축복	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Blind	실명	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Blue Potion	푸른색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Boats	배	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bodybuilding	체력 단련	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bone of Doom	파멸의 뼈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Boots	장화	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Bounty Hunter	현상금 사냥꾼	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Broadsword	브로드소드	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cannonball	포탄	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cannonball of Dominion	도미니언의 포탄	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Caravaner's Leather	대상단원의 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cardinal Cloak	추기경의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Catalyst	촉매	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Chain	사슬 갑옷	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Chain Mail	사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Chainmail	사슬 갑옷	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Charm	매혹	exact	table	5	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Citrine	황수정	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Class	직업	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cloak	망토	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cloak of Baa	바의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cloak of the Sheep	양의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cloaks	망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cloth Hat	천 모자	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Conflux Key	컨플럭스 열쇠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Conscript's Helm	징집병의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Control Cube	제어 큐브	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Control Undead	언데드 지배	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Crossbow	석궁	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Crown	왕관	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Crown of Final Dominion	최종 지배의 왕관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Crude Leather Armor	조잡한 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Crusader	십자군	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Disease	질병 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Insanity	광기 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Paralysis	마비 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Poison	독 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Weakness	약화 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cure Wounds	상처 치료	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Cutlass	커틀러스	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dagger	단검	exact	table	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dandy Hat	멋쟁이 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dark Elf	다크 엘프	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dark Grasp	어둠의 손아귀	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dark Knight Plate	흑기사 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Darkfire Bolt	다크파이어 볼트	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Datura	흰독말풀	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Day of Protection	보호의 날	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Day of the Gods	신들의 날	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Deadly Swarm	치명적인 벌떼	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Death Blossom	죽음의 꽃	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Death Knight	죽음의 기사	exact	table	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Deck of Fate	운명의 카드 덱	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Defender Helm	방어자의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Destroy Undead	언데드 파괴	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Detect Life	생명체 감지	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Diamond	다이아몬드	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dire Wolf Pelt	다이어 울프 가죽	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Disheveled Chain Mail	낡은 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dispel Magic	마법 해제	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Cure	신성한 치유	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Intervention	신성한 개입	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Magic	신성 마법	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Protection	신성한 보호	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Restoration	신성한 회복	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Divine Transcendence	신성한 초월	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dodging	회피	exact	table	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Doom's Day Cloak	종말의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon	드래곤	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Breath	용의 숨결	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Helm	드래곤 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Leader's Egg	드래곤 우두머리의 알	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Leather	드래곤 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragon Turtle Fang	드래곤 터틀의 송곳니	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragonbane Flower	드래곤베인 꽃	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragoning Plate	드래곤 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dragonning Boots	드래곤 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Dried Sunfish	말린 개복치	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Drogg's Helm	드로그의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Druid	드루이드	exact	table	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Druid Circlet of Power	드루이드의 힘의 머리장식	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Drum of Victory	승리의 북	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Elegant Cloak	우아한 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Elven Chainmail	엘프 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Elven Cloak	엘프 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Emerald	에메랄드	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Enchant Item	아이템 마법 부여	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Enchanted Amulet	마법의 부적	exact	table	9	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Enchanted Leather	마법의 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Enslave	노예화	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Erudine Chainmail	에루딘 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Erudine-laced ore	에루딘 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Accuracy	정확도의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Endurance	체력의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Intellect	지력의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Luck	행운의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Might	힘의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Personality	인격의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Essence of Speed	속도의 정수	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fancy Hat	화려한 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Festival Hat	축제 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fine Belt	고급 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fine Chain Mail	고급 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fire Aura	화염 오라	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fire Bolt	화염 화살	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fire Spike	화염 가시	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Fireball	화염구	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Flame Blast	화염 폭발	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Flight	비행	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Flower	꽃	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Flute	피리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Flying Fist	비행 주먹	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Full Helm	전면 투구	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Galahad	갈라하드	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Garnet	석류석	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gauntlets	건틀릿	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gem of Restoration	복원의 보석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Genie Lamp	지니의 램프	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gilded Belt	금박 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Glamour	매혹	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Glomenmail	글로멘메일	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Glorious Cloak	영광의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gold Dragon	골드 드래곤	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Golden Chain Mail	황금 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Golem parts	골렘 부품	exact	table	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Governor's Armor	총독의 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Gray Potion	회색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Great Druid	상급 드루이드	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Green Apple	녹색 사과	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Green Potion	녹색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Guardian Helm	수호자의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Halberd	미늘창	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hammer	망치	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hammerhands	망치손	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Harden Item	아이템 강화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hardened Leather Boots	강화 가죽 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hardened Leather Vest	강화 가죽 조끼	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hareck's Leather	하렉의 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Harpy Feather	하피 깃털	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Haste	가속	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heart of Air	공기의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heart of Earth	대지의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heart of Fire	불의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heart of the Wood	숲의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heart of Water	물의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Heartwood of Jadame	제이덤의 심재	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Herald's Boots	전령의 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hermes	헤르메스	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hermes' Sandals	헤르메스의 샌들	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hero's Belt	영웅의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+High Priest	대사제	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Horned Helm	뿔 달린 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Horseshoe	편자	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hour of Power	힘의 시간	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Hourglass of Time	시간의 모래시계	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Huntsman's Cloak	사냥꾼의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ice Blast	얼음 폭발	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ice Bolt	얼음 화살	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Idol of the Snake	뱀의 우상	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Imperial Leather	제국 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Implosion	내파	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Incinerate	소각	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Inferno	지옥불	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Invisibility	투명화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Iolite	아이올라이트	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Iron-laced ore	철 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Kergar-laced ore	케르가르 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Knight's Boots	기사의 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lantern	등불	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Large Shield	대형 방패	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Last Stage Cuirass	최종 단계 흉갑	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Learning	학습	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather	가죽 갑옷	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather Armor	가죽 갑옷	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather Belt	가죽 허리띠	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather Boots	가죽 장화	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather Cloak	가죽 망토	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Leather Jerkin	가죽 상의	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Levitate	레비테이트	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lich Jar	리치 항아리	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lich King	리치 왕	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lifedrain	라이프드레인	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Light Bolt	빛의 화살	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lightning Bolt	번개 화살	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lizardman Helm	리자드맨 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Long Dagger	장단검	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lost Book of Kehl	켈의 잃어버린 책	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lucius	루시우스	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Lucky Hat	행운의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Magic Potion	마법 물약	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Majestic Chain Mail	장엄한 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mass Distortion	질량 왜곡	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mass Fear	집단 공포	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Master Wizard	마스터 위저드	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Meditation	명상	exact	table	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mercenary Belt	용병의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Merchantman's Hat	상인의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mercury	수은	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Meteor Fragment	운석 조각	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Meteor Shower	유성우	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mind Blast	정신 폭발	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mind's Eye	마음의 눈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Minotaur	미노타우로스	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Minotaur Chainmail	미노타우로스 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Minotaur Plate	미노타우로스 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mistform	미스트폼	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Mogred Helm	모그레드 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Moon Cloak	달의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Moon Temple Cloak	달의 신전 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Moonstone	월장석	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Naga Hide	나가 가죽	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Necromancer Cloak	강령술사 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Nightshade Brazier	나이트셰이드 화로	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ninja	닌자	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Noble Chain Mail	귀족의 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Noble Crown	귀족 왕관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Noble Plate Armor	귀족의 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Nosferatu	노스페라투	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Notes	쪽지	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Obsidian	흑요석	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Officer's Leather	장교의 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ogre Ear	오우거 귀	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ogre Key	오우거 열쇠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Orange Potion	주황색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pain Reflection	고통 반사	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Paladin	성기사	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Paladin Boots	성기사 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Paralyze	마비	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Patriarch	족장	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Peasant	농민	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Peasant Hat	농민의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pellinore	펠리노어	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pendragon	펜드래곤	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Perception	지각	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phantom Cloak	유령 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phial of Gog Blood	고그의 피 약병	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Philosopher's Stone	현자의 돌	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phirna Root	피르나 뿌리	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phoenix Feather	불사조 깃털	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phylt-laced ore	필트 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phynaxian Crown	피낙시아 왕관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Phynaxian Helm	피낙시아 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pirate Hat	해적 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plate	판금 갑옷	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Plate Armor	판금 갑옷	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Poison Spray	독 분사	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Poppy Pod	양귀비 꼬투리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Poppysnaps	양귀비꽃	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Power Stone	힘의 돌	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Preservation	생명 보존	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Priest	사제	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Priest of the Dark	어둠의 사제	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Priest of the Light	빛의 사제	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Prismatic Light	프리즘 광선	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Protection	보호	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Protection from Magic	마법 보호	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Psychic Shock	정신 충격	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Accuracy	순수한 정확도	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Air Resistance	순수한 공기 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Body Resistance	순수한 육체 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Earth Resistance	순수한 대지 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Endurance	순수한 체력	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Fire Resistance	순수한 화염 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Intellect	순수한 지력	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Luck	순수한 행운	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Might	순수한 힘	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Mind Resistance	순수한 정신 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Personality	순수한 인격	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Speed	순수한 속도	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Pure Water Resistance	순수한 물 저항	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Purple Potion	보라색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Purple Topaz	보라색 황옥	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Puzzle Box	퍼즐 상자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Quality Steel Chain Mail	고급 강철 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Raise Dead	소생	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ranger	레인저	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ranger Boots	레인저 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ranger Lord	레인저 군주	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ranger's Cloak	레인저의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Reanimate	시체 소생	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Recharge Item	아이템 충전	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Red Apple	빨간 사과	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Red Potion	붉은색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Regal Crown	왕의 왕관	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Regeneration	재생	exact	table	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Regnan Boots	레그나 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Regnan Leather	레그나 가죽 갑옷	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Rejuvenation	회춘	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Remains of Korbu	코르부의 유해	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Remove Curse	저주 해제	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Remove Fear	공포 해제	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Resplendent Chain Mail	찬란한 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Resurrection	부활	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ring of Keys	열쇠고리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Rock Blast	바위 폭발	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Royal Chain Mail	왕실 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Royal Leather	왕실 가죽 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Royal Wasp Jelly	왕실 말벌 젤리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Rusty Breastplate	녹슨 흉갑	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Rusty Mail Vest	녹슨 사슬 조끼	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sapphire	사파이어	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sarcophagus of Korbu	코르부의 석관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Scarf	스카프	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Scholar's Cap	학자의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Scroll	두루마리	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Seashell	조개껍데기	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Serendine's Preservation	세렌딘의 보존	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Seven League Boots	칠 리그 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shadow's Mask	그림자의 가면	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shared Life	생명 공유	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shield	방패	exact	table	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shrapmetal	금속 파편	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Shrinking Ray	축소 광선	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Siertal Chainmail	시에르탈 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Siertal-laced ore	시에르탈 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Signet Ring	인장 반지	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Silver Belt	은 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Silver Dust of the Sea	바다의 은가루	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Skull	두개골	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Small Shield	소형 방패	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sniper	저격수	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sorcerer	소서러	exact	table	7	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Souldrinker	영혼 흡수	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sovereign Belt	군주의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sparks	전기 불꽃	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Spear	창	exact	table	8	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Spirit Lash	영혼 채찍	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Splendid Plate Armor	화려한 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stalt-laced ore	스탈트 함유 광석	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Starburst	별 폭발	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Statuette	조각상	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Steel Belt	강철 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Steel Boots	강철 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Steel Chainmail	강철 사슬 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Steel Helm	강철 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Steel Plated Boots	강철판 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sterling Boots	순은 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stone Skin	돌가죽	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Stone to Flesh	석화 해제	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Strong Belt	튼튼한 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Studded Leather	징 박힌 가죽 갑옷	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sturdy Belt	튼튼한 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sulfur	황	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Summon Wisp	위스프 소환	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sun Cloak	태양의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sunray	태양 광선	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sunstone	태양석	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Supreme Plate	최상급 판금 갑옷	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Sword	검	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Taledon's Helm	탈레돈의 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tapestry	태피스트리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Telekinesis	염동력	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Telepathy	텔레파시	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+The Third Eye	제3의 눈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Thief	도둑	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Thigh Bone	대퇴골	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Thornbark	가시나무 껍질	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Titan's Belt	타이탄의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tobersk Brandy	토베르스크 브랜디	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tobersk Fruit	토베르스크 과일	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Tobersk Pulp	토베르스크 펄프	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Topaz	황옥	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Torch Light	횃불	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Toxic Cloud	독구름	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Traveler's Cloak	여행자의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Travelers' Boon	여행자의 축복	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Traveller's Hat	여행자의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Trident	삼지창	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Troll	트롤	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Turn Undead	언데드 퇴치	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Twilight	황혼	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Ultimate Boots	궁극의 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Unicorn Horn	유니콘 뿔	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Unused!!!	사용되지 않음!!!	exact	table	21	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Urn of Ashes	유골 항아리	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vampire	뱀파이어	exact	table	6	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vampire Cloak	뱀파이어 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vampire's Cape	뱀파이어의 망토	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vampiric Weapon	흡혈 무기	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vanguard Belt	선봉대의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vial of Devil Ichor	악마의 피 약병	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Vial of Grave Earth	무덤 흙 약병	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Villain	악당	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Walking Boots	여행 장화	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Warlord Belt	군벌의 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Warrior Mage	전투 마법사	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wasp Stingers	말벌 침	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wasp Wing	말벌 날개	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Water Breathing	수중 호흡	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Water Walk	수면 보행	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wealthy Hat	부자의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wetsuit	잠수복	exact	table	3	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+White Potion	흰색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Widowsweep Berries	위도우스위프 열매	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Will O' Wisp Heart	윌 오 위스프의 심장	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wing Buffet	날개 치기	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Winged Sandals	날개 달린 샌들	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wizard	마법사	exact	table	4	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wizard Cap	마법사의 모자	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wizard Eye	마법사의 눈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wolf's Eye	늑대의 눈	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wooden Helm	나무 투구	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wreath Crown	화환 왕관	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wyvern Horn	와이번 뿔	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Wyvern Leather Belt	와이번 가죽 허리띠	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Yellow Potion	노란색 물약	exact	table	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Yoruba	요루바	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Zircon	지르콘	exact	table	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.	exact	tooltip	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.	exact	tooltip	1	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.	exact	tooltip	2	1	Exact msgid match from pinned MMMerge Korean PO; review MAW context before approval.
+Air	공기 저항 || 대기 마법	ambiguous	item	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Armor Class	방어도 || 방어력	ambiguous	item	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Body	신체 마법 || 육체 저항	ambiguous	item	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Endurance	인내력 || 체력	ambiguous	item	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Fire	불 || 화염 마법 || 화염 저항	ambiguous	item	2	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Intellect	지능 || 지력	ambiguous	item	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Luck	운 || 행운	ambiguous	item	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Mace	메이스 || 철퇴	ambiguous	item	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Mind	정신 마법 || 정신 저항	ambiguous	item	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Speed	민첩성 || 속도	ambiguous	item	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Enter	들어가기 || 입력 || 입장	ambiguous	map	3	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Experience	경험 || 경험치	ambiguous	map	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Gold	금 || 금화	ambiguous	map	13	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Telelocator	순간이동 장치 || 텔레로케이터	ambiguous	misc	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Berserk	광분 || 광폭화	ambiguous	monster	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Blackshire	블랙샤이어 || 블랙셔	ambiguous	monster	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+New Sorpigal	뉴 소르피갈 || 뉴 소피갈	ambiguous	monster	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Unconscious	기절 || 의식불명	ambiguous	monster	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Skills	기술 || 스킬	ambiguous	skill	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+You don't meet the requirements, and cannot be taught until you do.	요건을 충족하지 못했습니다. 충족하기 전에는 배울 수 없습니다. || 요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다. || 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	ambiguous	skill	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	spell	7	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Master	달인 || 마스터	ambiguous	spell	8	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Amber	앰버 || 호박	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Anointed Herb Potion	기름 부은 약초 물약 || 축성된 약초 물약	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Apollo	아폴로 || 아폴론	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Armsmaster	무기 전문가 || 무술	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Ball of Dunduck	던덕 치즈 || 던덕 치즈 덩이	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Black Knight	블랙 나이트 || 챔피언 || 흑기사	ambiguous	table	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Cavalier	기사 || 중기병	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Champion	챔피언 || 흑기사	ambiguous	table	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Cleric	성직자 || 클레릭	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Earth	대지 마법 || 대지 저항	ambiguous	table	8	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Feather Fall	깃털 낙하 || 낙하 감쇠	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Great Wyrm	고룡 || 그레이트 웜	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Ground Wyvern Horn	간 와이번 뿔 || 와이번 뿔 가루	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Heroism	영웅심 || 용맹	ambiguous	table	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Hunter	사냥꾼 || 헌터	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Immolation	제물 || 화염의 장막	ambiguous	table	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Initiate	수련생 || 수련자	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Knight	기사 || 나이트	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Light	빛 마법 || 빛 저항	ambiguous	table	7	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Lloyd's Beacon	로이드의 봉화 || 로이드의 표식	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Log of Eldenbrie	엘덴브리 치즈 || 엘덴브리 치즈 덩어리	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Master Archer	궁술 마스터 || 명궁	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Memory Crystal	기억 수정 || 기억의 수정	ambiguous	table	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Merchant	상술 || 상인	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Minotaur Lord	미노타우로스 군주 || 미노타우로스 로드	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Necromancer	강령술사 || 네크로맨서	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Power Cure	강력한 치료 || 대치유	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Repair	수리 || 아이템 수리	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Rogue	도적 || 로그	ambiguous	table	6	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Spirit	영혼 마법 || 정신	ambiguous	table	7	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Staff	스태프 || 지팡이	ambiguous	table	8	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Stealing	도둑질 || 소매치기 || 훔치기	ambiguous	table	6	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Town Portal	도시 귀환 || 마을 포털 || 타운 포털	ambiguous	table	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Unarmed	맨손 || 맨손 전투	ambiguous	table	7	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+War Troll	워 트롤 || 전투 트롤	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Warlock	워록 || 흑마법사	ambiguous	table	4	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Water	물 || 물 마법 || 물 저항	ambiguous	table	8	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Wheel of Frelandeau	프렐랑도 치즈 || 프렐랑도 치즈 한 덩이	ambiguous	table	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
