@@ -1,0 +1,26 @@
+source	translation	status	notes
+Buff Rework	버프 개편	translated	MAW 설정 화면 헤더
+M&M6 Projectiles	M&M6 투사체	translated	MAW 설정 화면 헤더
+Homing Projectiles	유도 투사체	translated	MAW 설정 화면 헤더
+Damage on Friendly Units	아군 피해	translated	MAW 설정 화면 헤더
+Loot Filter	전리품 필터	translated	MAW 설정 화면 헤더
+Skill reset info	기술 초기화 안내	translated	기술 초기화 NPC 토픽
+I want to reset	초기화하겠습니다	translated	기술 초기화 NPC 토픽
+By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required	동의하면 보유한 모든 기술이 처음의 초보 단계로 돌아가며, 지금까지 투자한 모든 기술 포인트를 돌려받습니다.\n\n기술이 필요한 레벨에 다시 도달하면 이전에 획득했던 숙련도도 다시 부여됩니다.\n\n이 서비스를 이용하려면 현재 레벨당 1,000 금화를 지불해야 합니다.	translated	기술 초기화 설명; 줄바꿈 보존
+\nLevel Recommended:\n	\n권장 레벨:\n	translated	추천 레벨 표시; 줄바꿈 보존
+Map Level: 	지도 레벨: 	translated	지도 아이템 레벨 표시
+Eye of Void	공허의 눈	translated	제작 아이템 이름
+Creator's Hourglass	창조자의 모래시계	translated	제작 아이템 이름
+Pandora's Cube	판도라의 큐브	translated	제작 아이템 이름
+Archibald's Mirror	아치발드의 거울	translated	제작 아이템 이름
+Emerald of Power	힘의 에메랄드	translated	제작 아이템 이름
+Pearl of Memory	기억의 진주	translated	제작 아이템 이름
+Orb of Creation	창조의 구체	translated	제작 아이템 이름
+Celestial Orb	천상의 구체	translated	제작 아이템 이름
+Ascended Fire Topaz	승천한 화염 토파즈	translated	승천 제작 아이템 이름
+Ascended Amethyst Chunk	승천한 자수정 덩어리	translated	승천 제작 아이템 이름
+Ascended Royal Amethyst	승천한 왕실 자수정	translated	승천 제작 아이템 이름
+Ascended Gemcutter's Ruby	승천한 보석세공사의 루비	translated	승천 제작 아이템 이름
+Ascended Erudite Crystal	승천한 현자의 수정	translated	승천 제작 아이템 이름
+Ascended Erathian Sapphire	승천한 에라시아 사파이어	translated	승천 제작 아이템 이름
+Ascended Queen's Diamond	승천한 여왕의 다이아몬드	translated	승천 제작 아이템 이름
