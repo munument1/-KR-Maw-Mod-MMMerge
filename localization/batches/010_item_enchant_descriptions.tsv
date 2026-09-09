@@ -1,0 +1,47 @@
+source	translation	status	notes
+ Armor.	 방어력.	translated	아이템 마법부여 설명 조각
+ attacks and +	 공격), +	translated	화염 무기 마법부여 설명 조각
+ Body and mind Resistances.	 육체 및 정신 저항.	translated	아이템 마법부여 설명 조각
+ Elemental Resistances.	 원소 저항.	translated	아이템 마법부여 설명 조각
+ Endurance and	 인내력 및	translated	아이템 마법부여 설명 조각
+ Endurance and Accuracy.	 인내력 및 정확도.	translated	아이템 마법부여 설명 조각
+ Endurance and Regenerate Hit points over time.	 인내력 및 지속 생명력 재생.	translated	아이템 마법부여 설명 조각
+ Fire Resistance and Regenerate Hit points over time.	 화염 저항 및 지속 생명력 재생.	translated	아이템 마법부여 설명 조각
+ Hit points and Regenerate Hit points over time.	 생명력 및 지속 생명력 재생.	translated	아이템 마법부여 설명 조각
+ Intellect and Accuracy.	 지능 및 정확도.	translated	아이템 마법부여 설명 조각
+ Intellect and Luck.	 지능 및 행운.	translated	아이템 마법부여 설명 조각
+ Intellect and Might.	 지능 및 힘.	translated	아이템 마법부여 설명 조각
+ Intellect and personality.	 지능 및 성격.	translated	아이템 마법부여 설명 조각
+ Intellect and Personality.	 지능 및 성격.	translated	아이템 마법부여 설명 조각
+ Luck and Meditation Skill +	 행운 및 명상 기술 +	translated	아이템 마법부여 설명 조각
+ Might and Endurance.	 힘 및 인내력.	translated	아이템 마법부여 설명 조각
+ Might and Personality.	 힘 및 성격.	translated	아이템 마법부여 설명 조각
+ Might, Intellect and Personality.	 힘, 지능 및 성격.	translated	아이템 마법부여 설명 조각
+ Might.	 힘.	translated	아이템 마법부여 설명 조각
+ Personality and Accuracy.	 성격 및 정확도.	translated	아이템 마법부여 설명 조각
+ points of Body damage.	 육체 피해.	translated	아이템 추가 피해 설명
+ points of Cold damage.	 냉기 피해.	translated	아이템 추가 피해 설명
+ points of Electrical damage.	 전기 피해.	translated	아이템 추가 피해 설명
+ points of Fire damage to 	 화염 피해 (	translated	무기 종류가 뒤따르는 화염 피해 설명 조각
+ points of Fire damage.	 화염 피해.	translated	아이템 추가 피해 설명
+ Speed and Accuracy.	 속도 및 정확도.	translated	아이템 마법부여 설명 조각
+ Spell points and Meditation Skill +	 주문력 및 명상 기술 +	translated	아이템 마법부여 설명 조각
+ Spell points, Speed, Intellect.	 주문력, 속도, 지능.	translated	아이템 마법부여 설명 조각
+ to all Resistances.	 모든 저항.	translated	아이템 마법부여 설명 조각
+ to all Seven Statistics.	 7대 능력치 전체.	translated	아이템 마법부여 설명 조각
+ to Endurance, Armor, Hit points.	 인내력, 방어력, 생명력.	translated	아이템 마법부여 설명 조각
+ to Seven Stats, HP, SP, Armor, Resistances.	 7대 능력치, 생명력, 주문력, 방어력, 저항.	translated	아이템 마법부여 설명 조각
+ to spell damage and +	 주문 피해, +	translated	주문 피해 마법부여 설명 조각
+Adds 	추가 	translated	아이템 추가 효과 접두어
+Air Magic Skill +	공기 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Body Magic Skill +	육체 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Dark Magic Skill +	어둠 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Earth Magic Skill +	대지 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Fire Magic Skill +	화염 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Light Magic Skill +	빛 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Meditation Skill +	명상 기술 +	translated	아이템 마법부여 기술 보너스
+Mind Magic Skill +	정신 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +	translated	아이템 마법부여 설명
+Spells Drain Hit points from target and Increased Spell speed.(except when equipping off-hand).	주문으로 대상의 생명력을 흡수하고 주문 시전 속도가 증가합니다. (보조 손에 장비하면 적용되지 않습니다.)	translated	아이템 마법부여 설명
+Spirit Magic Skill +	영혼 마법 기술 +	translated	아이템 마법부여 기술 보너스
+Water Magic Skill +	물 마법 기술 +	translated	아이템 마법부여 기술 보너스
