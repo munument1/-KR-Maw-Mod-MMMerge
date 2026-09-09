@@ -26,6 +26,9 @@ INTERNAL_REASONS = {
     "comparison_control_literal",
     "index_key_literal",
     "answer_parser_literal",
+    "internal_table_key_literal",
+    "internal_lookup_literal",
+    "reviewed_internal_api_literal",
 }
 NOTE = "Internal engine/control literal only; not player-facing localization."
 
