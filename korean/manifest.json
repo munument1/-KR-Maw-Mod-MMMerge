@@ -197,13 +197,11 @@
       "mapstats.txt": 207,
       "class.txt": 106,
       "SPCITEMS.TXT": 146,
-      "rnditems.txt": 0,
       "POTION.TXT": 366,
-      "POTNOTES.TXT": 366
+      "POTNOTES.TXT": 366,
+      "rnditems.txt": 0
     },
-    "pending_schema_review": [
-      "rnditems.txt"
-    ],
+    "pending_schema_review": [],
     "untouched_byte_preserved": [
       "rnditems.txt"
     ],
