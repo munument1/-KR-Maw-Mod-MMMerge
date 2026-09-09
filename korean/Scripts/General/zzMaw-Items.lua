@@ -1271,15 +1271,15 @@ function events.DoBadThingToPlayer(t)
 end
 function events.GameInitialized2()
 --new tooltips
-	Game.SpcItemsTxt[2].BonusStat="Explosive Impact! (half damage)"
-	Game.SpcItemsTxt[17].BonusStat="Disease and Curse Immunity"
-	Game.SpcItemsTxt[18].BonusStat="Insanity and SP drain Immunity"
-	Game.SpcItemsTxt[19].BonusStat="Paralysis and fear Immunity"
-	Game.SpcItemsTxt[20].BonusStat="Poison and weakness Immunity"
-	Game.SpcItemsTxt[21].BonusStat="Sleep and Unconscious Immunity"
-	Game.SpcItemsTxt[22].BonusStat="Stone and premature ageing Immunity"
-	Game.SpcItemsTxt[24].BonusStat="Death and Eradication Immunity"
-	Game.SpcItemsTxt[35].BonusStat="Reduces Physical damage taken by 15%"
+	Game.SpcItemsTxt[2].BonusStat="폭발 충격! (피해 절반)"
+	Game.SpcItemsTxt[17].BonusStat="질병 및 저주 면역"
+	Game.SpcItemsTxt[18].BonusStat="광기 및 주문력 흡수 면역"
+	Game.SpcItemsTxt[19].BonusStat="마비 및 공포 면역"
+	Game.SpcItemsTxt[20].BonusStat="독 및 약화 면역"
+	Game.SpcItemsTxt[21].BonusStat="수면 및 의식불명 면역"
+	Game.SpcItemsTxt[22].BonusStat="석화 및 조기 노화 면역"
+	Game.SpcItemsTxt[24].BonusStat="죽음 및 소멸 면역"
+	Game.SpcItemsTxt[35].BonusStat="받는 물리 피해 15% 감소"
 end
 --------------------
 --STATUS REWORK (needs to stay after status immunity)
@@ -1298,7 +1298,7 @@ function events.LoadMap(wasInGame)
 end
 --carnage fix tooltip
 function events.GameInitialized2()
-	Game.SpcItemsTxt[2].BonusStat="Explosive Impact! (half damage)"
+	Game.SpcItemsTxt[2].BonusStat="폭발 충격! (피해 절반)"
 end
 
 

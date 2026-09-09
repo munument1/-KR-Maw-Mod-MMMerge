@@ -257,12 +257,12 @@ maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	
 maw-6c3828d38527	untranslated	item	Damage: 			Scripts/General/zzMaw-Items.lua	1506	2	
 maw-71db089ac027	translated	item	Dark Magic Skill +	어둠 마법 기술 +		Scripts/General/zzMaw-Items.lua	2034	1	아이템 마법부여 기술 보너스
 maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	1	
-maw-c45e1332c406	untranslated	item	Death and Eradication Immunity			Scripts/General/zzMaw-Items.lua	1281	1	
+maw-c45e1332c406	translated	item	Death and Eradication Immunity	죽음 및 소멸 면역		Scripts/General/zzMaw-Items.lua	1281	1	특수 아이템 효과 설명
 maw-7505d64a54e0	untranslated	item	default			Scripts/General/pseudoSpawnpoint.lua	55	5	
 maw-154f885b3a41	translated	item	Dimension Map	차원 지도		Scripts/General/zzMaw-Maps.lua	1914	1	MAW 아이템명
 maw-76af4ec46125	translated	item	Disarm skill	함정 해제 기술		Scripts/General/zzMaw-Items.lua	1878	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-4be181e4cac8	untranslated	item	disease			Scripts/General/zzMaw-Items.lua	1255	3	
-maw-ba1ff3be0f0c	untranslated	item	Disease and Curse Immunity			Scripts/General/zzMaw-Items.lua	1275	1	
+maw-ba1ff3be0f0c	translated	item	Disease and Curse Immunity	질병 및 저주 면역		Scripts/General/zzMaw-Items.lua	1275	1	특수 아이템 효과 설명
 maw-4312a8a1998a	untranslated	item	Divine protection (instead of dying you go back to 25% HP, once every 5 minutes)			Scripts/General/zzMaw-Items.lua	1369	1	
 maw-7966506e0c12	translated	item	Dodge skill	회피 기술		Scripts/General/zzMaw-Items.lua	1882	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-40089dc04e07	untranslated	item	Each attack reduces monster resistances by 1			Scripts/General/zzMaw-Items.lua	1386	1	
@@ -272,7 +272,7 @@ maw-ac75574810d6	translated	item	Endless Potion	무한 물약		Scripts/General/z
 maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting Stats.txt	8	4	기존 MMMerge 능력치 용어
 maw-b3efd0d2dd50	untranslated	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	
 maw-1c32a92d0070	untranslated	item	eradication			Scripts/General/zzMaw-Items.lua	1261	1	
-maw-54c81b0a7634	untranslated	item	Explosive Impact! (half damage)			Scripts/General/zzMaw-Items.lua	1274	2	
+maw-54c81b0a7634	translated	item	Explosive Impact! (half damage)	폭발 충격! (피해 절반)		Scripts/General/zzMaw-Items.lua	1274	2	특수 아이템 효과 설명
 maw-78baebfcb4b5	untranslated	item	Fire			Scripts/General/zzMaw-Items.lua	4258	2	
 maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
 maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
@@ -304,7 +304,7 @@ maw-d2147f191411	translated	item	"Increases item's roughness, making it more res
 "	"아이템의 내구성을 높여 파손에 더 잘 견디게 합니다.
 "		Scripts/General/zzAlchemy.lua	484	1	물약 효과 툴팁
 maw-a159cdb85f6f	untranslated	item	insanity			Scripts/General/zzMaw-Items.lua	1256	1	
-maw-f951f6d3da95	untranslated	item	Insanity and SP drain Immunity			Scripts/General/zzMaw-Items.lua	1276	1	
+maw-f951f6d3da95	translated	item	Insanity and SP drain Immunity	광기 및 주문력 흡수 면역		Scripts/General/zzMaw-Items.lua	1276	1	특수 아이템 효과 설명
 maw-e8d4bafc56e1	translated	item	Intellect	지능		Data/Tables/Class Starting Stats.txt	4	4	기존 MMMerge 능력치 용어
 maw-869d847d171a	untranslated	item	item182			Scripts/General/zzAlchemy.lua	7	1	
 maw-203104e1992f	untranslated	item	item209			Scripts/General/zzMaw-Spells.lua	3290	1	
@@ -345,10 +345,10 @@ maw-1166118ad010	untranslated	item	Overhealing reduces recovery time equal to ha
 maw-f637a0178b30	untranslated	item	Overhealing refunds mana			Scripts/General/zzMaw-Items.lua	1391	1	
 maw-89ff31225c5f	untranslated	item	Owner			Scripts/General/zzMaw-Item-Sorter.lua	98	6	
 maw-67ef38a8a121	untranslated	item	paralysis			Scripts/General/zzMaw-Items.lua	1257	1	
-maw-f190f3f1357e	untranslated	item	Paralysis and fear Immunity			Scripts/General/zzMaw-Items.lua	1277	1	
+maw-f190f3f1357e	translated	item	Paralysis and fear Immunity	마비 및 공포 면역		Scripts/General/zzMaw-Items.lua	1277	1	특수 아이템 효과 설명
 maw-2981a383917f	translated	item	Personality	인격		Data/Tables/Class Starting Stats.txt	6	4	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-e6aa09fd40ce	untranslated	item	poison			Scripts/General/zzMaw-Items.lua	1258	3	
-maw-ff11ae2fd1e0	untranslated	item	Poison and weakness Immunity			Scripts/General/zzMaw-Items.lua	1278	1	
+maw-ff11ae2fd1e0	translated	item	Poison and weakness Immunity	독 및 약화 면역		Scripts/General/zzMaw-Items.lua	1278	1	특수 아이템 효과 설명
 maw-0fff6c603c71	translated	item	Potion Bottle	물약병		Scripts/General/zzAlchemy.lua	1420	1	미감정 아이템 이름
 maw-d5f5800b1e69	translated	item	Potion Deleted in Austerity	절제 모드에서 삭제된 물약		Scripts/General/zzAlchemy.lua	17	3	내부 대체 아이템 표시명
 maw-ce1b7d972262	translated	item	Potion Deleted in MAW	MAW에서 삭제된 물약		Scripts/General/zzAlchemy.lua	11	1	내부 대체 아이템 표시명
@@ -382,7 +382,7 @@ Add Green: Enchant Item"	"조합법:
 초록 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	518	1	물약 조합법
 maw-e936025d6e54	untranslated	item	Reduce all damage taken by 10%			Scripts/General/zzMaw-Items.lua	1374	1	
 maw-0ef015404e5d	untranslated	item	Reduces damage by 3% for each enemy in the nearbies			Scripts/General/zzMaw-Items.lua	1378	1	
-maw-b6d59589a7b6	untranslated	item	Reduces Physical damage taken by 15%			Scripts/General/zzMaw-Items.lua	1282	1	
+maw-b6d59589a7b6	translated	item	Reduces Physical damage taken by 15%	받는 물리 피해 15% 감소		Scripts/General/zzMaw-Items.lua	1282	1	특수 아이템 효과 설명
 maw-21b8369fde47	untranslated	item	Refundable			Scripts/General/zzMaw-Item-Sorter.lua	99	7	
 maw-52d57e33f655	translated	item	Regenerates Hit Points and Meditation Skill +	생명력 재생 및 명상 기술 +		Scripts/General/zzMaw-Items.lua	2061	1	아이템 마법부여 설명
 maw-e8a7d6f2bc41	untranslated	item	repair			Scripts/General/zzMaw-Items.lua	4533	3	
@@ -391,7 +391,7 @@ maw-15d2977134a7	untranslated	item	ResistanceBase			Scripts/General/zzMaw-Items.
 maw-36527bea3870	untranslated	item	ResistanceBonus			Scripts/General/zzMaw-Items.lua	4271	1	
 maw-5a0bd452507d	untranslated	item	respawn			Scripts/General/zzMaw-Monsters.lua	2326	2	
 maw-c3ca5f787365	untranslated	item	sleep			Scripts/General/zzMaw-Items.lua	1259	1	
-maw-68b55f23c0fb	untranslated	item	Sleep and Unconscious Immunity			Scripts/General/zzMaw-Items.lua	1279	1	
+maw-68b55f23c0fb	translated	item	Sleep and Unconscious Immunity	수면 및 의식불명 면역		Scripts/General/zzMaw-Items.lua	1279	1	특수 아이템 효과 설명
 maw-597e5a16ff16	untranslated	item	Solarstone			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-2d2cb022bc3d	translated	item	Speed	민첩성		Data/Tables/Class Starting Stats.txt	12	6	기존 MMMerge 능력치 용어
 maw-2747aac69844	untranslated	item	Spell			Data/Tables/Spells2.txt	1	8	
@@ -401,7 +401,7 @@ maw-fdc17f7064c4	translated	item	Spells Drain Hit points from target and Increas
 maw-868eb07bb6ca	translated	item	Spirit Magic Skill +	영혼 마법 기술 +		Scripts/General/zzMaw-Items.lua	2039	1	아이템 마법부여 기술 보너스
 maw-678dd8a69cfc	untranslated	item	Stolen			Scripts/General/zzMaw-Item-Sorter.lua	100	7	
 maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	1	
-maw-c1988ff4c89d	untranslated	item	Stone and premature ageing Immunity			Scripts/General/zzMaw-Items.lua	1280	1	
+maw-c1988ff4c89d	translated	item	Stone and premature ageing Immunity	석화 및 조기 노화 면역		Scripts/General/zzMaw-Items.lua	1280	1	특수 아이템 효과 설명
 maw-5c17772bd576	untranslated	item	Successfully covering an ally restores 3% of your HP			Scripts/General/zzMaw-Items.lua	1379	1	
 maw-4caf562d9a79	untranslated	item	TemporaryBonus			Scripts/General/zzMaw-Item-Sorter.lua	101	7	
 maw-e326ae491ddf	untranslated	item	The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.			Scripts/General/zzAlchemy.lua	1403	1	
