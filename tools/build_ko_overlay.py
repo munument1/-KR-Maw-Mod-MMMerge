@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Build a patch-only Korean overlay from localization/catalog.tsv.
 
-Only entries with status=translated are applied. Source files are never edited
-in place; patched copies are written under korean/ using the same relative path.
+Only ``status=translated`` sources at ``patchable=yes`` occurrences are applied.
+The source tree is never edited in place; patched copies are written under
+``korean/`` using the same relative paths.
 """
 
 from __future__ import annotations
@@ -21,7 +22,6 @@ def read_tsv(path: Path):
 
 
 def lua_string_spans(line: str):
-    """Yield (start, end, quote, decoded_text) for strings outside -- comments."""
     i = 0
     n = len(line)
     while i < n:
@@ -70,8 +70,6 @@ def patch_lua_line(line: str, mapping: dict[str, str]):
         if decoded in mapping:
             replacements.append((start, end, encode_lua(mapping[decoded], quote)))
             matched[decoded] += 1
-    if not replacements:
-        return line, matched
     out = line
     for start, end, replacement in reversed(replacements):
         out = out[:start] + replacement + out[end:]
@@ -121,9 +119,13 @@ def main() -> int:
 
     target_lines = defaultdict(lambda: defaultdict(dict))
     expected = defaultdict(int)
+    skipped_unpatchable = defaultdict(int)
     for occ in occurrences:
-        source = occ["source"]
+        source = occ.get("source", "")
         if source not in translated:
+            continue
+        if occ.get("patchable") != "yes":
+            skipped_unpatchable[source] += 1
             continue
         file = occ["file"]
         line = int(occ["line"])
@@ -177,17 +179,30 @@ def main() -> int:
             changed_files.append({"file": rel, "replacements": changed})
 
     errors = []
+    warnings = []
     for source in sorted(translated, key=str.casefold):
         if expected[source] == 0:
-            errors.append({"type": "translated_source_has_no_occurrence", "source": source})
+            warnings.append({
+                "type": "translated_source_has_no_patchable_occurrence",
+                "source": source,
+                "unpatchable_occurrences": skipped_unpatchable[source],
+            })
         elif applied[source] == 0:
-            errors.append({"type": "translated_source_not_applied", "source": source, "expected_occurrences": expected[source]})
+            errors.append({
+                "type": "translated_source_not_applied",
+                "source": source,
+                "expected_patchable_occurrences": expected[source],
+            })
 
     manifest = {
         "base": "MAW MMMerge 4.5",
         "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
         "translated_entries": len(translated),
+        "translated_entries_with_patchable_occurrences": sum(1 for s in translated if expected[s] > 0),
+        "patchable_occurrences_targeted": sum(expected.values()),
+        "skipped_unpatchable_occurrences_for_translated_sources": sum(skipped_unpatchable.values()),
         "changed_files": changed_files,
+        "warnings": warnings,
         "validation_errors": errors,
         "install": "Copy the contents of korean/ over an MAW MMMerge 4.5 installation after MAW files are installed.",
     }
