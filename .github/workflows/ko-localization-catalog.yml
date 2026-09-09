@@ -54,8 +54,8 @@ jobs:
       - name: Build Korean overlay
         run: python tools/build_ko_overlay.py --root . --check
 
-      - name: Check whitespace
-        run: git diff --check
+      - name: Check authored-file whitespace
+        run: git diff --check -- . ':!localization/*.tsv' ':!korean/**'
 
       - name: Commit generated localization data
         shell: bash
