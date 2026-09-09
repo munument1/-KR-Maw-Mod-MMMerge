@@ -381,9 +381,9 @@ Add Orange: Stone to Flesh
 Add Purple: Enchant Item"	"조합법:
 빨강 추가: 축복
 파랑 추가: 재생
-노랑 추가: 아이템 경화
+노랑 추가: 아이템 강화
 주황 추가: 석화 해제
-보라 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	520	1	물약 조합법
+보라 추가: 아이템 마법부여"		Scripts/General/zzAlchemy.lua	520	1	QA: Harden Item=아이템 강화 용어 통일
 maw-648cc23a873c	translated	item	"Recipes:
 Add Red: Heroism
 Add Blue: Meditation
@@ -904,14 +904,14 @@ Require 100 power to work.
 "		Scripts/General/zzAlchemy.lua	504	1	물약 효과 툴팁
 maw-1297b65672db	translated	misc	"Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
 Previously gained bonus do not stack.
-"	"물약 위력 50마다 인내력, 속도, 행운에 영구적으로 20을 추가합니다.
+"	"물약 위력 50마다 지구력, 속도, 행운에 영구적으로 20을 추가합니다.
 이전에 얻은 보너스와 중첩되지 않습니다.
-"		Scripts/General/zzAlchemy.lua	502	1	물약 효과 툴팁
+"		Scripts/General/zzAlchemy.lua	502	1	QA: Endurance=지구력 용어 통일
 maw-124194bd410d	translated	misc	"Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
 Previously gained bonus do not stack.
-"	"물약 위력 50마다 지능과 지혜에 영구적으로 20을 추가합니다.
+"	"물약 위력 50마다 지성과 인격에 영구적으로 20을 추가합니다.
 이전에 얻은 보너스와 중첩되지 않습니다.
-"		Scripts/General/zzAlchemy.lua	501	1	물약 효과 툴팁
+"		Scripts/General/zzAlchemy.lua	501	1	QA: 실제 blackPermanentBuffs[253]은 Intellect+Personality(2,3); 원문 Wisdom 표기는 MAW 4.5 설명 오기
 maw-e9365ff23b6c	translated	misc	"Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
 Previously gained bonus do not stack.
 "	"물약 위력 50마다 힘과 정확도에 영구적으로 20을 추가합니다.
@@ -955,7 +955,7 @@ Require 20 power to work.
 maw-8dfb4fba8597	excluded	misc	Processing game data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	230	1	Internal engine/control literal only; not player-facing localization.
 maw-be5e996e416a	excluded	misc	ProcessPartySaveData event handled.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	541	1	Internal engine/control literal only; not player-facing localization.
 maw-7f1158278634	translated	misc	Provides Haste+Heroism+Bless.	신속 + 영웅심 + 축복 효과를 부여합니다.		Scripts/General/zzAlchemy.lua	493	1	물약 효과 툴팁
-maw-c569dfaaeb09	translated	misc	Provides Shield+Stone Skin+Preservation.	방패 + 돌 피부 + 보존 효과를 부여합니다.		Scripts/General/zzAlchemy.lua	499	1	물약 효과 툴팁
+maw-c569dfaaeb09	translated	misc	Provides Shield+Stone Skin+Preservation.	방패 + 돌가죽 + 보존 효과를 부여합니다.		Scripts/General/zzAlchemy.lua	499	1	QA: Stone Skin=돌가죽 용어 통일
 maw-3630684e30da	excluded	misc	push 0x0			Scripts/General/MiscTweaks.lua	56	2	Internal engine/control literal only; not player-facing localization.
 maw-30502456b3e6	excluded	misc	push 0x7f			Scripts/General/MiscTweaks.lua	84	1	Internal engine/control literal only; not player-facing localization.
 maw-ae2fb541cf92	excluded	misc	push 4			Scripts/General/MiscTweaks.lua	174	1	Internal engine/control literal only; not player-facing localization.
@@ -981,14 +981,14 @@ Add Purple: Wisdom Boost
 Add Green: Divine Magic"	"조합법:
 주황 추가: 하급 원소
 보라 추가: 지혜 강화
-초록 추가: 신성 마법"		Scripts/General/zzAlchemy.lua	526	3	물약 조합법
+초록 추가: 신성한 마법"		Scripts/General/zzAlchemy.lua	526	3	QA: Divine Magic=신성한 마법 용어 통일
 maw-1eaae8337dc3	translated	misc	"Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
 Add Green: Paladin's Potion"	"조합법:
 주황 추가: 자기 저항
 보라 추가: 원소 저항
-초록 추가: 팔라딘의 물약"		Scripts/General/zzAlchemy.lua	534	3	물약 조합법
+초록 추가: 성기사의 물약"		Scripts/General/zzAlchemy.lua	534	3	QA: Paladin's Potion=성기사의 물약 용어 통일
 maw-fe6467a7a26e	translated	misc	"Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
@@ -1011,9 +1011,9 @@ Add Purple: Magic Protection
 Add Green: Stone to Flesh"	"조합법:
 빨강 추가: 신속
 파랑 추가: 보호
-노랑 추가: 돌 피부
+노랑 추가: 돌가죽
 보라 추가: 마법 보호
-초록 추가: 석화 해제"		Scripts/General/zzAlchemy.lua	516	1	물약 조합법
+초록 추가: 석화 해제"		Scripts/General/zzAlchemy.lua	516	1	QA: Stone Skin=돌가죽 용어 통일
 maw-ad24311b3af6	translated	misc	"Recipes:
 Add Red: Pure Elemental Resistance
 Add Blue: Divine Resistance
@@ -1033,8 +1033,8 @@ Add Red: Twilight
 Add Blue: Dawn
 Add Yellow: Trascendance"	"조합법:
 빨강 추가: 황혼
-파랑 추가: 새벽
-노랑 추가: 초월"		Scripts/General/zzAlchemy.lua	546	3	물약 조합법
+파랑 추가: 여명
+노랑 추가: 초월"		Scripts/General/zzAlchemy.lua	546	3	QA: Dawn=여명 용어 통일
 maw-1fee1313e7b1	translated	misc	Regenerates Health for 6 hours.	6시간 동안 생명력을 재생합니다.		Scripts/General/zzAlchemy.lua	481	1	물약 효과 툴팁
 maw-a54328b90858	excluded	misc	Remote save loading: skin set to %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	692	1	Internal engine/control literal only; not player-facing localization.
 maw-b89672eb06d4	translated	misc	"Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
@@ -1062,8 +1062,8 @@ maw-e96b06f09b6b	translated	misc	"Targets found. Realms: Attuned. Time: Attuned.
 
 "		Scripts/Global/Quest_SavingGoobers.lua	754	3	텔레로케이터 검색 결과
 maw-f83b305141e4	translated	misc	Telelocator	텔레로케이터		Scripts/Global/Quest_SavingGoobers.lua	627	1	NPC 표시명
-maw-54a29ed6e03d	translated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 인내력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	490	1	물약 효과 툴팁
-maw-5421d4f3edd5	translated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지능과 성격이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	489	1	물약 효과 툴팁
+maw-54a29ed6e03d	translated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 지구력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	490	1	QA: Endurance=지구력 용어 통일
+maw-5421d4f3edd5	translated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지성과 인격이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	489	1	QA: Intellect=지성, Personality=인격 용어 통일
 maw-df9472ca68e2	translated	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	6시간 동안 힘과 정확도가 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	488	1	물약 효과 툴팁
 maw-52fb6815a8a2	excluded	misc	test ah, 0x10			Scripts/Structs/After/RemoveSkillValueLimits.lua	455	1	Internal engine/control literal only; not player-facing localization.
 maw-20dcabcc16bb	excluded	misc	test byte ptr [ebp-0xF], 			Scripts/Structs/After/RemoveSkillValueLimits.lua	189	12	Internal engine/control literal only; not player-facing localization.

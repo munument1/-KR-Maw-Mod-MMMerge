@@ -320,7 +320,7 @@ Add Orange: Stone to Flesh
 Add Purple: Enchant Item"	"조합법:
 빨강 추가: 축복
 파랑 추가: 재생
-노랑 추가: 아이템 경화
+노랑 추가: 아이템 강화
 주황 추가: 석화 해제
 보라 추가: 아이템 마법부여"	translated	item	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[227]=""Recipes:\nAdd Red: Bless\nAdd Blue: Regeneration\nAdd Yellow: Harden Item\nAdd Orange: Stone to Flesh\nAdd Purple: Enchant Item"","
 "Recipes:
@@ -576,12 +576,12 @@ Require 100 power to work.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[256] = ""Permanently adds 'of Darkness' property to a non-magic weapon.\nRequire 100 power to work.\n"","
 "Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.
 Previously gained bonus do not stack.
-"	"물약 위력 50마다 인내력, 속도, 행운에 영구적으로 20을 추가합니다.
+"	"물약 위력 50마다 지구력, 속도, 행운에 영구적으로 20을 추가합니다.
 이전에 얻은 보너스와 중첩되지 않습니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[254] = ""Permanently adds 20 per 50 potion power to permanent Endurance, Speed and Luck.\nPreviously gained bonus do not stack.\n"","
 "Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.
 Previously gained bonus do not stack.
-"	"물약 위력 50마다 지능과 지혜에 영구적으로 20을 추가합니다.
+"	"물약 위력 50마다 지성과 인격에 영구적으로 20을 추가합니다.
 이전에 얻은 보너스와 중첩되지 않습니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[253] = ""Permanently adds 20 per 50 potion power to permanent Intellect and Wisdom.\nPreviously gained bonus do not stack.\n"","
 "Permanently adds 20 per 50 potion power to permanent Might and Accuracy.
@@ -625,7 +625,7 @@ Require 20 power to work.
 작동하려면 위력 20이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
 Provides Haste+Heroism+Bless.	신속 + 영웅심 + 축복 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[245] = ""Provides Haste+Heroism+Bless."","
-Provides Shield+Stone Skin+Preservation.	방패 + 돌 피부 + 보존 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[251] = ""Provides Shield+Stone Skin+Preservation."","
+Provides Shield+Stone Skin+Preservation.	방패 + 돌가죽 + 보존 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[251] = ""Provides Shield+Stone Skin+Preservation."","
 Queen's Diamond	여왕의 다이아몬드	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Queen's Diamond"","
 "Recipes:
 Add Orange: Champion's Potion
@@ -640,14 +640,14 @@ Add Purple: Wisdom Boost
 Add Green: Divine Magic"	"조합법:
 주황 추가: 하급 원소
 보라 추가: 지혜 강화
-초록 추가: 신성 마법"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
+초록 추가: 신성한 마법"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[231]=""Recipes:\nAdd Orange: Lesser Element\nAdd Purple: Wisdom Boost\nAdd Green: Divine Magic"","
 "Recipes:
 Add Orange: Self Resistance
 Add Purple: Elemental Resistance
 Add Green: Paladin's Potion"	"조합법:
 주황 추가: 자기 저항
 보라 추가: 원소 저항
-초록 추가: 팔라딘의 물약"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
+초록 추가: 성기사의 물약"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[237]=""Recipes:\nAdd Orange: Self Resistance\nAdd Purple: Elemental Resistance\nAdd Green: Paladin's Potion"","
 "Recipes:
 Add Orange: Swiftness
 Add Purple: Resilience Boost
@@ -670,7 +670,7 @@ Add Purple: Magic Protection
 Add Green: Stone to Flesh"	"조합법:
 빨강 추가: 신속
 파랑 추가: 보호
-노랑 추가: 돌 피부
+노랑 추가: 돌가죽
 보라 추가: 마법 보호
 초록 추가: 석화 해제"	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[225]=""Recipes:\nAdd Red: Haste\nAdd Blue: Protection\nAdd Yellow: Stone Skin\nAdd Purple: Magic Protection\nAdd Green: Stone to Flesh"","
 "Recipes:
@@ -692,7 +692,7 @@ Add Red: Twilight
 Add Blue: Dawn
 Add Yellow: Trascendance"	"조합법:
 빨강 추가: 황혼
-파랑 추가: 새벽
+파랑 추가: 여명
 노랑 추가: 초월"	translated	misc	3	proven_alchemy_item_tooltip:3	Scripts/General/zzAlchemy.lua	"[246]=""Recipes:\nAdd Red: Twilight\nAdd Blue: Dawn\nAdd Yellow: Trascendance"","
 Regenerates Health for 6 hours.	6시간 동안 생명력을 재생합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[233] = ""Regenerates Health for 6 hours."","
 "Removes and prevents all conditions, except Dead and Eradication, for 6 hours.
@@ -709,8 +709,8 @@ Start Level 	도전 레벨 	translated	misc	1	reviewed_arena_ui:1	Scripts/Global
 
 "	translated	misc	3	reviewed_telelocator_ui:3	Scripts/Global/Quest_SavingGoobers.lua	"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. table.concat(Messages, ""\n"") .. ""\n\nRealms: Detached. Time: Detached."""
 Telelocator	텔레로케이터	translated	misc	1	proven_npc_display_name:1	Scripts/Global/Quest_SavingGoobers.lua	"Game.NPC[TeleNPCId].Name = ""Telelocator"""
-Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 인내력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
-Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지능과 성격이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
+Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.	6시간 동안 지구력, 속도, 행운이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[242] = ""Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours."","
+Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.	6시간 동안 지성과 인격이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[241] = ""Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours."","
 Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.	6시간 동안 힘과 정확도가 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[240] = ""Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours."","
 Total corrupted bags: 	손상된 가방 수: 	translated	misc	1	reviewed_item_corruption_message:1	Scripts/General/zzMaw-Item-Sorter.lua	"""Total corrupted bags: "" .. brokenBags .. ""\n"" .."
 "Vitality: %s
