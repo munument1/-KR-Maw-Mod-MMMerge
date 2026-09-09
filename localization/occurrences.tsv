@@ -2486,7 +2486,7 @@ maw-121a00d89940	misc	Power: 	Scripts/General/zzAlchemy.lua	615	no	uncertain_con
 maw-4522e2803e51	skill	"
 
 Master will grant 1% to drop random reagents from Monsters.
-At GM this chance is doubled."	Scripts/General/zzAlchemy.lua	686	no	uncertain_context	"Skillz.setDesc(const.Skills.Alchemy,1,Skillz.getDesc(const.Skills.Alchemy,1) .. ""\n\nMaster will grant 1% to drop random reagents from Monsters.\nAt GM this chance is doubled."")"
+At GM this chance is doubled."	Scripts/General/zzAlchemy.lua	686	yes	proven_skill_display_description	"Skillz.setDesc(const.Skills.Alchemy,1,Skillz.getDesc(const.Skills.Alchemy,1) .. ""\n\nMaster will grant 1% to drop random reagents from Monsters.\nAt GM this chance is doubled."")"
 maw-a672568b736a	skill	Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.	Scripts/General/zzAlchemy.lua	687	no	uncertain_context	"Game.SkillDesMaster[const.Skills.Alchemy]=""Allows to make white potions. Power when mixing will be increased to 1.5 per skill point."""
 maw-04e874e5383b	skill	Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.	Scripts/General/zzAlchemy.lua	688	no	uncertain_context	"Game.SkillDesGM[const.Skills.Alchemy]=""Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level."""
 maw-8c9c02e80eb3	misc	Ascended 	Scripts/General/zzAlchemy.lua	695	yes	formatted_colored_text	"t.Name=StrColor(178,255,255, ""Ascended "" .. t.Name)"
@@ -2664,7 +2664,7 @@ Each point in the skill increases damage and increases recovery time by 3%."	Scr
 maw-9785e1464ea2	spell	"Dragons are powerful creatures with innate abilities.
 Like the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.
 
-Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "	Scripts/General/zzClasses.lua	494	no	uncertain_context	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
+Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "	Scripts/General/zzClasses.lua	494	yes	proven_skill_display_description	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
 maw-2c39ec4a0977	class	%s      %s|	Scripts/General/zzClasses.lua	667	no	uncertain_context	"normal=string.format(""%s      %s|"",normal,dragonFang.Attack[1])"
 maw-8306811ab44f	class	%s     %s|	Scripts/General/zzClasses.lua	669	no	uncertain_context	"normal=string.format(""%s     %s|"",normal,dragonFang.Damage[1])"
 maw-2b4ccc7581b3	class	%s  %s|	Scripts/General/zzClasses.lua	672	no	uncertain_context	"normal=string.format(""%s  %s|"",normal,dragonScales.AC[1])"
@@ -2711,7 +2711,7 @@ maw-560fe3e00686	class	"Damage
 
 
 
-"	Scripts/General/zzClasses.lua	827	no	uncertain_context	"Game.GlobalTxt[53] = ""Damage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
+"	Scripts/General/zzClasses.lua	827	yes	proven_game_display_assignment	"Game.GlobalTxt[53] = ""Damage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
 maw-5b4786e077ad	class	Attack         +	Scripts/General/zzClasses.lua	828	yes	proven_game_display_assignment	"Game.GlobalTxt[18] = ""Attack         +"" .. pl:GetMeleeAttack() .. ""\n                 "" .. shortenNumber(pl:GetMeleeDamageMin(), 4, false) .. ""-"" .. shortenNumber(pl:GetMeleeDamageMax(), 4, false) .. ""\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
 maw-edea0f29be7d	class	Shoot         +	Scripts/General/zzClasses.lua	829	yes	proven_game_display_assignment	"Game.GlobalTxt[203]=""Shoot         +"" .. pl:GetRangedAttack() .. ""\n                 "" .. shortenNumber(pl:GetRangedDamageMin(), 4, false) .. ""-"" .. shortenNumber(pl:GetRangedDamageMax(), 4, false) .. ""\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
 maw-1b81f28b5afb	class	Attack	Scripts/General/zzClasses.lua	831	yes	proven_game_display_assignment	"Game.GlobalTxt[18]=""Attack"""
@@ -2827,7 +2827,7 @@ maw-b8b86d3aa45b	spell	Deals damage equal to 	Scripts/General/zzClasses.lua	1388
 maw-81879b13e55a	spell	Ice Bomb	Scripts/General/zzClasses.lua	1392	yes	known_display_name_assignment	"Game.SpellsTxt[32].Name=""Ice Bomb"""
 maw-af634980b8e7	tooltip	% of current weapon damage.	Scripts/General/zzClasses.lua	1393	yes	proven_game_display_assignment	"Game.SpellsTxt[32].Description=""Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to "" .. (mult32[1]*100) .. ""% of current weapon damage."""
 maw-298d71390c0c	tooltip	"Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.
-Deals damage equal to "	Scripts/General/zzClasses.lua	1393	no	uncertain_context	"Game.SpellsTxt[32].Description=""Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to "" .. (mult32[1]*100) .. ""% of current weapon damage."""
+Deals damage equal to "	Scripts/General/zzClasses.lua	1393	yes	proven_game_display_assignment	"Game.SpellsTxt[32].Description=""Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to "" .. (mult32[1]*100) .. ""% of current weapon damage."""
 maw-b5734db76175	spell	% of Melee damage	Scripts/General/zzClasses.lua	1396	yes	proven_game_display_assignment	"Game.SpellsTxt[32].GM=""Each hit deals damage equal to "" .. (mult32[4]*100) .. ""% of Melee damage"""
 maw-8a5fd00c1695	spell	Each hit deals damage equal to 	Scripts/General/zzClasses.lua	1396	yes	proven_game_display_assignment	"Game.SpellsTxt[32].GM=""Each hit deals damage equal to "" .. (mult32[4]*100) .. ""% of Melee damage"""
 maw-382da73f22da	spell	Blood Leech	Scripts/General/zzClasses.lua	1405	yes	known_display_name_assignment	"Game.SpellsTxt[68].Name=""Blood Leech"""
@@ -2863,7 +2863,7 @@ maw-0649982d2fdb	spell	Monster looses the ability to deal ranged damage	Scripts/
 maw-66fc89b25ff8	spell	Death Breath	Scripts/General/zzClasses.lua	1442	yes	known_display_name_assignment	"Game.SpellsTxt[97].Name=""Death Breath"""
 maw-23e4814d86f5	tooltip	% of weapon damage	Scripts/General/zzClasses.lua	1443	yes	proven_game_display_assignment	"Game.SpellsTxt[97].Description=""A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to "" .. (mult97[1]*100) .. ""% of weapon damage"""
 maw-0d30277d7411	tooltip	"A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.
-Deals damage equal to "	Scripts/General/zzClasses.lua	1443	no	uncertain_context	"Game.SpellsTxt[97].Description=""A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to "" .. (mult97[1]*100) .. ""% of weapon damage"""
+Deals damage equal to "	Scripts/General/zzClasses.lua	1443	yes	proven_game_display_assignment	"Game.SpellsTxt[97].Description=""A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to "" .. (mult97[1]*100) .. ""% of weapon damage"""
 maw-8f4074b5271e	spell	This spell is as good as it will ever be!	Scripts/General/zzClasses.lua	1446	yes	proven_game_display_assignment	"Game.SpellsTxt[97].GM=""This spell is as good as it will ever be!"""
 maw-6032a672e309	skill	Frost	Scripts/General/zzClasses.lua	1450	yes	proven_skill_display_name	"Skillz.setName(14, ""Frost"")"
 maw-24652e28b940	skill	Blood	Scripts/General/zzClasses.lua	1451	yes	proven_skill_display_name	"Skillz.setName(18, ""Blood"")"
@@ -2909,16 +2909,16 @@ Press R to enable/disable random rotation.
 Currently "	Scripts/General/zzClasses.lua	1791	yes	formatted_colored_text	"local rotationText = StrColor(0,0,0,""Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently "") .. enableDisableText .. ""\n\n"""
 maw-52396a9d6c9e	spell	"Effects vary per spell 
 
-"	Scripts/General/zzClasses.lua	1804	no	uncertain_context	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
+"	Scripts/General/zzClasses.lua	1804	yes	proven_skill_display_description	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
 maw-628b389433d7	spell	"Elementalists learn new spells with practice instead of books.
 
-Progress toward learning "	Scripts/General/zzClasses.lua	1804	no	uncertain_context	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
+Progress toward learning "	Scripts/General/zzClasses.lua	1804	yes	proven_skill_display_description	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
 maw-52396a9d6c9e	spell	"Effects vary per spell 
 
-"	Scripts/General/zzClasses.lua	1806	no	uncertain_context	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned."")"
+"	Scripts/General/zzClasses.lua	1806	yes	proven_skill_display_description	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned."")"
 maw-cca67580b6a3	spell	"Elementalists learn new spells with practice instead of books.
 
-All the available spells of this school have been learned."	Scripts/General/zzClasses.lua	1806	no	uncertain_context	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned."")"
+All the available spells of this school have been learned."	Scripts/General/zzClasses.lua	1806	yes	proven_skill_display_description	"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned."")"
 maw-a6e1d9fa2b6b	spell	Effects vary per spell	Scripts/General/zzClasses.lua	1811	yes	proven_skill_display_description	"Skillz.setDesc(i,5,""Effects vary per spell"")"
 maw-54198309009a	class	damage	Scripts/General/zzClasses.lua	1988	no	uncertain_context	"local damage1=calcFireAuraDamage(pl, it, 0, false, false, ""damage"")"
 maw-54198309009a	class	damage	Scripts/General/zzClasses.lua	1989	no	uncertain_context	"local damage2=calcEnchantDamage(pl, it, 0, false, false, ""damage"")"
@@ -2933,24 +2933,24 @@ maw-57b5a5dea337	skill	"Combat is the skill that allows you to endure prolonged 
 
 Each attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.
 
-"	Scripts/General/zzClasses.lua	2109	no	uncertain_context	"Skillz.setDesc(12,1,""Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.\n\nEach attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.\n\n"");"
+"	Scripts/General/zzClasses.lua	2109	yes	proven_skill_display_description	"Skillz.setDesc(12,1,""Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.\n\nEach attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.\n\n"");"
 maw-1d06f1d00475	skill	"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
 
 Energy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.
 
-"	Scripts/General/zzClasses.lua	2110	no	uncertain_context	"Skillz.setDesc(13,1,""Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.\n\n"");"
+"	Scripts/General/zzClasses.lua	2110	yes	proven_skill_display_description	"Skillz.setDesc(13,1,""Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.\n\n"");"
 maw-83e4da82cd41	skill	"Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.
 
 Each attack deals bonus water damage equal to 0.1% of the target's HP per skill point.
 
-"	Scripts/General/zzClasses.lua	2111	no	uncertain_context	"Skillz.setDesc(14,1,""Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.\n\nEach attack deals bonus water damage equal to 0.1% of the target's HP per skill point.\n\n"");"
+"	Scripts/General/zzClasses.lua	2111	yes	proven_skill_display_description	"Skillz.setDesc(14,1,""Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.\n\nEach attack deals bonus water damage equal to 0.1% of the target's HP per skill point.\n\n"");"
 maw-6000be5eddfc	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
 Such attacks also grant 1 combo point, allowing the assassin to cast offensive spells.
 Bow has 50% chance and energy cost.
 
 Higher levels also grant more starting energy, ideal for high burst damage in short engagements.
 
-"	Scripts/General/zzClasses.lua	2112	no	uncertain_context	"Skillz.setDesc(15,1,""Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n"");"
+"	Scripts/General/zzClasses.lua	2112	yes	proven_skill_display_description	"Skillz.setDesc(15,1,""Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n"");"
 maw-bfc71b4321ca	skill	Melee attack costs 45 energy	Scripts/General/zzClasses.lua	2115	yes	proven_skill_display_description	"Skillz.setDesc(12,2,""Melee attack costs 45 energy"")"
 maw-40544d9bf0bd	skill	Killing a monster restores 10 energy	Scripts/General/zzClasses.lua	2116	yes	proven_skill_display_description	"Skillz.setDesc(13,2,""Killing a monster restores 10 energy"")"
 maw-37625d1989c3	skill	You regenerate 8 energy per second	Scripts/General/zzClasses.lua	2117	yes	proven_skill_display_description	"Skillz.setDesc(14,2,""You regenerate 8 energy per second"")"
@@ -2971,20 +2971,20 @@ maw-fd9802058ff5	tooltip	Fires a ball of fire at a single target. When it hits, 
 maw-5f2524678554	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage.	Scripts/General/zzClasses.lua	2136	yes	proven_game_display_assignment	"Game.SpellsTxt[7].Description=string.format(""Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage."",assassinSpells[7].DamageMult*100)"
 maw-6488e3b34379	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.
 
-The spell then arcs to a second target, hitting it as well."	Scripts/General/zzClasses.lua	2137	no	uncertain_context	"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.\n\nThe spell then arcs to a second target, hitting it as well."",assassinSpells[18].DamageMult*100)"
+The spell then arcs to a second target, hitting it as well."	Scripts/General/zzClasses.lua	2137	yes	proven_game_display_assignment	"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.\n\nThe spell then arcs to a second target, hitting it as well."",assassinSpells[18].DamageMult*100)"
 maw-45c0f62f2d31	tooltip	Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s%% of a melee attack damage.	Scripts/General/zzClasses.lua	2138	yes	proven_game_display_assignment	"Game.SpellsTxt[24].Description=string.format(""Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s%% of a melee attack damage."",assassinSpells[24].DamageMult*100)"
 maw-b121153d77b2	tooltip	Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s%% of a melee attack damage.	Scripts/General/zzClasses.lua	2139	yes	proven_game_display_assignment	"Game.SpellsTxt[29].Description=string.format(""Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s%% of a melee attack damage."",assassinSpells[29].DamageMult*100)"
 maw-186004378d79	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage.	Scripts/General/zzClasses.lua	2140	yes	proven_game_display_assignment	"Game.SpellsTxt[34].Description=string.format(""Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage."",assassinSpells[34].DamageMult*100)"
 maw-65e8b982519d	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.
 
-Blades is the only spell capable to deal Physical damage."	Scripts/General/zzClasses.lua	2141	no	uncertain_context	"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.\n\nBlades is the only spell capable to deal Physical damage."",assassinSpells[39].DamageMult*100)"
+Blades is the only spell capable to deal Physical damage."	Scripts/General/zzClasses.lua	2141	yes	proven_game_display_assignment	"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.\n\nBlades is the only spell capable to deal Physical damage."",assassinSpells[39].DamageMult*100)"
 maw-1d74ca0611e0	tooltip	Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage.	Scripts/General/zzClasses.lua	2142	yes	proven_game_display_assignment	"Game.SpellsTxt[44].Description=string.format(""Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage."",assassinSpells[44].DamageMult*100)"
 maw-ab6dd36408dd	spell	Spell hits up to 2 times	Scripts/General/zzClasses.lua	2144	yes	proven_game_display_assignment	"Game.SpellsTxt[18].Expert=""Spell hits up to 2 times"""
 maw-8440e3cb3c6d	spell	Spell hits up to 3 times	Scripts/General/zzClasses.lua	2145	yes	proven_game_display_assignment	"Game.SpellsTxt[18].Master=""Spell hits up to 3 times"""
 maw-a742d05a19a5	spell	Spell hits up to 4 times	Scripts/General/zzClasses.lua	2146	yes	proven_game_display_assignment	"Game.SpellsTxt[18].GM=""Spell hits up to 4 times"""
 maw-182be7411220	tooltip	"
 
-This Ability requires "	Scripts/General/zzClasses.lua	2150	no	uncertain_context	"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
+This Ability requires "	Scripts/General/zzClasses.lua	2150	yes	proven_game_display_assignment	"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
 maw-25b1dc1d2e83	tooltip	 Combo Points to be casted.	Scripts/General/zzClasses.lua	2150	yes	proven_game_display_assignment	"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
 maw-3bc42b4b8932	skill	Fire Magic	Scripts/General/zzClasses.lua	2165	yes	proven_skill_display_name	"Skillz.setName(12, ""Fire Magic"")"
 maw-bbec938dae2f	skill	Air Magic	Scripts/General/zzClasses.lua	2166	yes	proven_skill_display_name	"Skillz.setName(13, ""Air Magic"")"
@@ -3065,35 +3065,35 @@ maw-619b87bbb4ea	skill	bonusSpeedMelee	Scripts/General/zzMAW-Skills.lua	357	no	i
 maw-c8fa8bc02696	skill	baseSpeedMelee	Scripts/General/zzMAW-Skills.lua	358	no	internal_table_key_literal	"damageMultiplier[t.PlayerIndex][""baseSpeedMelee""]=baseSpeed"
 maw-0523695451dd	skill	"
 The paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.
-"	Scripts/General/zzMAW-Skills.lua	484	no	uncertain_context	"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThe paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	484	yes	proven_skill_display_description	"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThe paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.\n"")"
 maw-4dc0c3f9a6ff	skill	"
 This skill increases the damage gained from weapon by a percentage when equipping a staff.
 At Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.
 
 Your full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.
-"	Scripts/General/zzMAW-Skills.lua	485	no	uncertain_context	"Skillz.setDesc(0,1,Skillz.getDesc(0,1) .. ""\nThis skill increases the damage gained from weapon by a percentage when equipping a staff.\nAt Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.\n\nYour full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	485	yes	proven_skill_display_description	"Skillz.setDesc(0,1,Skillz.getDesc(0,1) .. ""\nThis skill increases the damage gained from weapon by a percentage when equipping a staff.\nAt Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.\n\nYour full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.\n"")"
 maw-7029497de0dc	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.
 
 Your full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.
-"	Scripts/General/zzMAW-Skills.lua	486	no	uncertain_context	"Skillz.setDesc(1,1,Skillz.getDesc(1,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.\n\nYour full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	486	yes	proven_skill_display_description	"Skillz.setDesc(1,1,Skillz.getDesc(1,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.\n\nYour full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.\n"")"
 maw-d5be30b6422f	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.
-Crit chance will get lower as monsters grow stronger, up to level 600."	Scripts/General/zzMAW-Skills.lua	487	no	uncertain_context	"Skillz.setDesc(2,1,Skillz.getDesc(2,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.\nCrit chance will get lower as monsters grow stronger, up to level 600."")"
+Crit chance will get lower as monsters grow stronger, up to level 600."	Scripts/General/zzMAW-Skills.lua	487	yes	proven_skill_display_description	"Skillz.setDesc(2,1,Skillz.getDesc(2,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.\nCrit chance will get lower as monsters grow stronger, up to level 600."")"
 maw-71b422eebba7	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.
-"	Scripts/General/zzMAW-Skills.lua	488	no	uncertain_context	"Skillz.setDesc(3,1,Skillz.getDesc(3,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	488	yes	proven_skill_display_description	"Skillz.setDesc(3,1,Skillz.getDesc(3,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.\n"")"
 maw-687e8f4a102e	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.
 
 Spear skill raises AC by X% per skill point, counting an extra +10 effective skill.
-"	Scripts/General/zzMAW-Skills.lua	489	no	uncertain_context	"Skillz.setDesc(4,1,Skillz.getDesc(4,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.\n\nSpear skill raises AC by X% per skill point, counting an extra +10 effective skill.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	489	yes	proven_skill_display_description	"Skillz.setDesc(4,1,Skillz.getDesc(4,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.\n\nSpear skill raises AC by X% per skill point, counting an extra +10 effective skill.\n"")"
 maw-178e59cf5e6a	skill	"
 This skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.
-"	Scripts/General/zzMAW-Skills.lua	490	no	uncertain_context	"Skillz.setDesc(5,1,Skillz.getDesc(5,1) .. ""\nThis skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	490	yes	proven_skill_display_description	"Skillz.setDesc(5,1,Skillz.getDesc(5,1) .. ""\nThis skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.\n"")"
 maw-ad60bd6b65f0	skill	"
 This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.
-"	Scripts/General/zzMAW-Skills.lua	491	no	uncertain_context	"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	491	yes	proven_skill_display_description	"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.\n"")"
 maw-058cca31afa4	skill	"%s
 ------------------------------------------------------------
 "	Scripts/General/zzMAW-Skills.lua	499	no	uncertain_context	"baseString=string.format(""%s\n------------------------------------------------------------\n"",	Skillz.getDesc(i,1))"
@@ -3158,16 +3158,16 @@ maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	568	no	uncertain_cont
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	568	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+30 .. ""%s"",gm,skillResistance[i][4])"
 maw-a6852004e745	skill	"Shield skill provides great defense against both physical and magical attacks.
 
-Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	Scripts/General/zzMAW-Skills.lua	590	no	uncertain_context	"Skillz.setDesc(8,1,""Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."")"
+Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	Scripts/General/zzMAW-Skills.lua	590	yes	proven_skill_display_description	"Skillz.setDesc(8,1,""Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."")"
 maw-44c58b0340ce	skill	"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.
 
-Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	591	no	uncertain_context	"Skillz.setDesc(9,1,""Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.\n\nLeather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."")"
+Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	591	yes	proven_skill_display_description	"Skillz.setDesc(9,1,""Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.\n\nLeather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."")"
 maw-978a084c3175	skill	"Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.
 
-Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	592	no	uncertain_context	"Skillz.setDesc(10,1,""Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.\n\nChain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."")"
+Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	592	yes	proven_skill_display_description	"Skillz.setDesc(10,1,""Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.\n\nChain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."")"
 maw-92e872e4e20e	skill	"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
 
-Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	593	no	uncertain_context	"Skillz.setDesc(11,1,""Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.\n\nPlate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."")"
+Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."	Scripts/General/zzMAW-Skills.lua	593	yes	proven_skill_display_description	"Skillz.setDesc(11,1,""Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.\n\nPlate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."")"
 maw-0c5e39bde9d5	item	"
 
 Current AC from items: "	Scripts/General/zzMAW-Skills.lua	597	yes	formatted_colored_text	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""\n\nCurrent AC from items: "" .. StrColor(255,255,100,armorAC) .. ""\n""))"
@@ -3231,7 +3231,7 @@ maw-43a3e83ba69f	skill	"Armsmaster skill represents the warrior's tricks of the 
 This skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.
 
 Damage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.
-"	Scripts/General/zzMAW-Skills.lua	698	no	uncertain_context	"Skillz.setDesc(35,1,""Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.\nThis skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.\n\nDamage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	698	yes	proven_skill_display_description	"Skillz.setDesc(35,1,""Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.\nThis skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.\n\nDamage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.\n"")"
 maw-6a72085653e4	skill	All	Scripts/General/zzMAW-Skills.lua	737	no	uncertain_context	"evt.FaceExpression{Player = ""All"", Frame = 46}"
 maw-ac5cf24fbebd	status	%s casts Charge stunning the enemy	Scripts/General/zzMAW-Skills.lua	738	yes	status_text_call	"Game.ShowStatusText(string.format(""%s casts Charge stunning the enemy"",Party[0].Name))"
 maw-a85ccda3fbb3	status	Out of range	Scripts/General/zzMAW-Skills.lua	758	yes	status_text_call	"Game.ShowStatusText(""Out of range"")"
@@ -3292,7 +3292,7 @@ maw-3e09c757f9d4	tooltip	"%s
 	070Each spear attack reduces physical resistance, increasing damage by: %s%%
 Increased by 50%% with Halberds"	Scripts/General/zzMAW-Skills.lua	1407	no	uncertain_context	"Game.SkillDesGM[const.Skills.Spear]=string.format(""%s\n\t070Each spear attack reduces physical resistance, increasing damage by: %s%%\nIncreased by 50%% with Halberds"",baseSpearTooltip,damageIncrease)"
 maw-bcea47734e3b	spell	"Increases spell damage and healing at the expense of higher mana cost and cast time.
-"	Scripts/General/zzMAW-Skills.lua	1463	no	uncertain_context	"Skillz.setDesc(const.Skills.Learning,1,""Increases spell damage and healing at the expense of higher mana cost and cast time.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	1463	yes	proven_skill_display_description	"Skillz.setDesc(const.Skills.Learning,1,""Increases spell damage and healing at the expense of higher mana cost and cast time.\n"")"
 maw-2de8f87cb665	skill	Ascension	Scripts/General/zzMAW-Skills.lua	1464	yes	proven_skill_display_name	"Skillz.setName(const.Skills.Learning, ""Ascension"")"
 maw-22fa84df37d6	skill	Mana cost reduced by 12.5%.	Scripts/General/zzMAW-Skills.lua	1465	no	uncertain_context	"Game.SkillDesNormal[const.Skills.Learning]= ""Mana cost reduced by 12.5%."""
 maw-c338ab5388a4	skill	Mana cost reduced by 25%	Scripts/General/zzMAW-Skills.lua	1466	no	uncertain_context	"Game.SkillDesExpert[const.Skills.Learning]= ""Mana cost reduced by 25%"""
@@ -3315,9 +3315,9 @@ Grants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, s
 
 
 Press P to enable/disable
-"	Scripts/General/zzMAW-Skills.lua	2047	no	uncertain_context	"Skillz.setDesc(coverSkill, 1, ""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n"")"
+"	Scripts/General/zzMAW-Skills.lua	2047	yes	proven_skill_display_description	"Skillz.setDesc(coverSkill, 1, ""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n"")"
 maw-f9363b18c988	skill	"Allow use to Cover Physical damage
-"	Scripts/General/zzMAW-Skills.lua	2048	no	uncertain_context	"Skillz.setDesc(coverSkill, 2, ""Allow use to Cover Physical damage\n"")"
+"	Scripts/General/zzMAW-Skills.lua	2048	yes	proven_skill_display_description	"Skillz.setDesc(coverSkill, 2, ""Allow use to Cover Physical damage\n"")"
 maw-60b1f591790d	skill	Allow use to Cover Projectiles damage	Scripts/General/zzMAW-Skills.lua	2049	yes	proven_skill_display_description	"Skillz.setDesc(coverSkill, 3, ""Allow use to Cover Projectiles damage"")"
 maw-554ad32ce774	spell	Allow use to Cover Spells damage	Scripts/General/zzMAW-Skills.lua	2050	yes	proven_skill_display_description	"Skillz.setDesc(coverSkill, 4, ""Allow use to Cover Spells damage"")"
 maw-4c6ddbffd5ce	skill	Attacking will increase you next Cover chance by 15%	Scripts/General/zzMAW-Skills.lua	2051	yes	proven_skill_display_description	"Skillz.setDesc(coverSkill, 5, ""Attacking will increase you next Cover chance by 15%"")"
@@ -3412,7 +3412,7 @@ maw-cbafc012d625	skill	"Mana shield consume mana to reduce damage when an hit wo
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).
 
 Mastery increase its mana efficience.
-"	Scripts/General/zzMAW-Skills.lua	2477	no	uncertain_context	"Skillz.setDesc(manaSkill, 1, ""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	2477	yes	proven_skill_display_description	"Skillz.setDesc(manaSkill, 1, ""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n"")"
 maw-75446e835954	skill	Absorb up to 25% damage	Scripts/General/zzMAW-Skills.lua	2478	yes	proven_skill_display_description	"Skillz.setDesc(manaSkill, 2, ""Absorb up to 25% damage"")"
 maw-edaf46202584	skill	Absorb up to 50% damage	Scripts/General/zzMAW-Skills.lua	2479	yes	proven_skill_display_description	"Skillz.setDesc(manaSkill, 3, ""Absorb up to 50% damage"")"
 maw-b53ba9e43224	skill	Absorb up to 75% damage	Scripts/General/zzMAW-Skills.lua	2480	yes	proven_skill_display_description	"Skillz.setDesc(manaSkill, 4, ""Absorb up to 75% damage"")"
@@ -3423,7 +3423,7 @@ maw-f08ed9a7b187	skill	"Unlock the true potential of your mana reserves with Enl
 The cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
-"	Scripts/General/zzMAW-Skills.lua	2509	no	uncertain_context	"Skillz.setDesc(Enlightenment, 1, ""Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	2509	yes	proven_skill_display_description	"Skillz.setDesc(Enlightenment, 1, ""Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n"")"
 maw-34785d352a98	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5	Scripts/General/zzMAW-Skills.lua	2510	yes	proven_skill_display_description	"Skillz.setDesc(Enlightenment, 2, ""Mana is increased by 2% per skill level, cost divisor increased by 0.5"")"
 maw-0555f787e247	skill	Mana is increased by 3% per skill level, cost divisor increased by 1	Scripts/General/zzMAW-Skills.lua	2511	yes	proven_skill_display_description	"Skillz.setDesc(Enlightenment, 3, ""Mana is increased by 3% per skill level, cost divisor increased by 1"")"
 maw-7302af587b8b	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5	Scripts/General/zzMAW-Skills.lua	2512	yes	proven_skill_display_description	"Skillz.setDesc(Enlightenment, 4, ""Mana is increased by 4% per skill level, cost divisor increased by 1.5"")"
@@ -3432,7 +3432,7 @@ maw-c6b40b4993cf	skill	Retaliation	Scripts/General/zzMAW-Skills.lua	2539	yes	pro
 maw-1b684e0e7237	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
-"	Scripts/General/zzMAW-Skills.lua	2540	no	uncertain_context	"Skillz.setDesc(Retaliation, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n"")"
+"	Scripts/General/zzMAW-Skills.lua	2540	yes	proven_skill_display_description	"Skillz.setDesc(Retaliation, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n"")"
 maw-177e50af5d81	skill	Your next attack deals additional damage, multiplied by skill level	Scripts/General/zzMAW-Skills.lua	2541	yes	proven_skill_display_description	"Skillz.setDesc(Retaliation, 2, ""Your next attack deals additional damage, multiplied by skill level"")"
 maw-b2d89e6f8305	skill	Your next attack recovery time is reduced by 30%	Scripts/General/zzMAW-Skills.lua	2542	yes	proven_skill_display_description	"Skillz.setDesc(Retaliation, 3, ""Your next attack recovery time is reduced by 30%"")"
 maw-f5cbe7ee2108	skill	Your next attack has a 25% chance to stun the enemy for 2 seconds	Scripts/General/zzMAW-Skills.lua	2543	yes	proven_skill_display_description	"Skillz.setDesc(Retaliation, 4, ""Your next attack has a 25% chance to stun the enemy for 2 seconds"")"
@@ -5506,21 +5506,21 @@ maw-95a0fff77158	spell	Duration 15+1.5 minutes per point of skill	Scripts/Genera
 maw-320bc2070e43	spell	Duration 30+3 minutes per point of skill	Scripts/General/zzMaw-Spells.lua	711	yes	proven_game_display_assignment	"Game.SpellsTxt[19].GM=""Duration 30+3 minutes per point of skill"""
 maw-da6128e46ead	tooltip	"
 
-Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."	Scripts/General/zzMaw-Spells.lua	713	no	uncertain_context	"Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. ""\n\nExpert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."")"
+Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."	Scripts/General/zzMaw-Spells.lua	713	yes	proven_game_display_assignment	"Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. ""\n\nExpert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."")"
 maw-b81f7eef53da	spell	"5 Mana cost: 
 cures 12 + 2 HP per point of skill
 1 hour limit
-"	Scripts/General/zzMaw-Spells.lua	715	no	uncertain_context	"Game.SpellsTxt[49].Expert=""5 Mana cost: \ncures 12 + 2 HP per point of skill\n1 hour limit\n"""
+"	Scripts/General/zzMaw-Spells.lua	715	yes	proven_game_display_assignment	"Game.SpellsTxt[49].Expert=""5 Mana cost: \ncures 12 + 2 HP per point of skill\n1 hour limit\n"""
 maw-0197e3f89ff1	spell	"8 Mana cost: 
 cures 24 + 4 HP per point of skill
 1 day limit
-"	Scripts/General/zzMaw-Spells.lua	716	no	uncertain_context	"Game.SpellsTxt[49].Master=""8 Mana cost: \ncures 24 + 4 HP per point of skill\n1 day limit\n"""
+"	Scripts/General/zzMaw-Spells.lua	716	yes	proven_game_display_assignment	"Game.SpellsTxt[49].Master=""8 Mana cost: \ncures 24 + 4 HP per point of skill\n1 day limit\n"""
 maw-d6255d1819c5	spell	"16 Mana cost: 
 cures 36 + 6 HP per point of skill
 no limit
-"	Scripts/General/zzMaw-Spells.lua	717	no	uncertain_context	"Game.SpellsTxt[49].GM=""16 Mana cost: \ncures 36 + 6 HP per point of skill\nno limit\n"""
+"	Scripts/General/zzMaw-Spells.lua	717	yes	proven_game_display_assignment	"Game.SpellsTxt[49].GM=""16 Mana cost: \ncures 36 + 6 HP per point of skill\nno limit\n"""
 maw-7dcf7871f711	tooltip	"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
-Lasts for 2 hours plus 1 hour per point of skill"	Scripts/General/zzMaw-Spells.lua	720	no	uncertain_context	"Game.SpellsTxt[51].Description=""Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.\nLasts for 2 hours plus 1 hour per point of skill"""
+Lasts for 2 hours plus 1 hour per point of skill"	Scripts/General/zzMaw-Spells.lua	720	yes	proven_game_display_assignment	"Game.SpellsTxt[51].Description=""Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.\nLasts for 2 hours plus 1 hour per point of skill"""
 maw-31010d130c93	spell	Increases damage by 10 plus 1 per skill point	Scripts/General/zzMaw-Spells.lua	721	yes	proven_game_display_assignment	"Game.SpellsTxt[51].Expert=""Increases damage by 10 plus 1 per skill point"""
 maw-28f5ba6a17bf	spell	Increases damage by 10 plus 1.5 per skill point	Scripts/General/zzMaw-Spells.lua	722	yes	proven_game_display_assignment	"Game.SpellsTxt[51].Master=""Increases damage by 10 plus 1.5 per skill point"""
 maw-63f63821464a	spell	Increases damage by 10 plus 2 per skill point	Scripts/General/zzMaw-Spells.lua	723	yes	proven_game_display_assignment	"Game.SpellsTxt[51].GM=""Increases damage by 10 plus 2 per skill point"""
@@ -5544,7 +5544,7 @@ maw-9924ac014435	spell	HealingSpellPower	Scripts/General/zzMaw-Spells.lua	958	no
 maw-ab95ede4f854	status	Fly is allowed without restrictions here	Scripts/General/zzMaw-Spells.lua	991	yes	status_text_call	"Game.ShowStatusText(""Fly is allowed without restrictions here"")"
 maw-0cf3c2a8447c	tooltip	"Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
 
-At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"	Scripts/General/zzMaw-Spells.lua	997	no	uncertain_context	"Game.SpellsTxt[21].Description= ""Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\n\nAt higher difficulties, with the exception of few places, attacking monsters will cancel the effect"""
+At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"	Scripts/General/zzMaw-Spells.lua	997	yes	proven_game_display_assignment	"Game.SpellsTxt[21].Description= ""Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\n\nAt higher difficulties, with the exception of few places, attacking monsters will cancel the effect"""
 maw-44d25b5d1b6d	item	Items	Scripts/General/zzMaw-Spells.lua	1071	no	engine_event_key_context	"evt.Add(""Items"",330)"
 maw-44d25b5d1b6d	item	Items	Scripts/General/zzMaw-Spells.lua	1073	no	engine_event_key_context	"evt.Add(""Items"",332)"
 maw-44d25b5d1b6d	item	Items	Scripts/General/zzMaw-Spells.lua	1075	no	engine_event_key_context	"evt.Add(""Items"",315)"
@@ -5695,7 +5695,7 @@ maw-a5e7862e2014	tooltip	Among the strongest direct damage spells available, Inc
 maw-731eb4cfeb01	tooltip	Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic.	Scripts/General/zzMaw-Spells.lua	2094	yes	proven_game_display_assignment	"Game.SpellsTxt[15].Description=string.format(""Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic."",diceMaxTooltip(s, m,15))"
 maw-fa8202a1871e	tooltip	"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.
 
-The spell then arcs to a second target, hitting it as well."	Scripts/General/zzMaw-Spells.lua	2095	no	uncertain_context	"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.\n\nThe spell then arcs to a second target, hitting it as well."",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))"
+The spell then arcs to a second target, hitting it as well."	Scripts/General/zzMaw-Spells.lua	2095	yes	proven_game_display_assignment	"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.\n\nThe spell then arcs to a second target, hitting it as well."",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))"
 maw-59e7b4f19542	tooltip	Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic.	Scripts/General/zzMaw-Spells.lua	2096	yes	proven_game_display_assignment	"Game.SpellsTxt[20].Description=string.format(""Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic."",dmgAddTooltip(s, m,20),diceMaxTooltip(s, m,20))"
 maw-79e5fe65b538	tooltip	Calls stars from the heavens to smite and burn your enemies.  Twenty stars are called, and the damage for each star is %s points plus %s per point of skill in Air Magic. Try not to get caught in the blast! This spell only works outdoors.	Scripts/General/zzMaw-Spells.lua	2097	yes	proven_game_display_assignment	"Game.SpellsTxt[22].Description=string.format(""Calls stars from the heavens to smite and burn your enemies.  Twenty stars are called, and the damage for each star is %s points plus %s per point of skill in Air Magic. Try not to get caught in the blast! This spell only works outdoors."",dmgAddTooltip(s, m,22),diceMaxTooltip(s, m,22))"
 maw-fa2b7b773215	tooltip	Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s points of damage plus 1-%s per point of skill.	Scripts/General/zzMaw-Spells.lua	2098	yes	proven_game_display_assignment	"Game.SpellsTxt[24].Description=string.format(""Sprays poison at monsters directly in front of your characters.  Damage is low, but few monsters have resistance to Water Magic, so it usually works.  Each shot does %s points of damage plus 1-%s per point of skill."",dmgAddTooltip(s, m,24),diceMaxTooltip(s, m,24))"
@@ -5706,7 +5706,7 @@ maw-7c5a179a26f4	tooltip	Slaps a monster with magical force, forcing it to recov
 maw-90a3b0639ae9	tooltip	Summons a swarm of biting, stinging insects to bedevil a single target.  The swarm does %s points of damage plus 1-%s per point of skill in Earth Magic.	Scripts/General/zzMaw-Spells.lua	2103	yes	proven_game_display_assignment	"Game.SpellsTxt[37].Description=string.format(""Summons a swarm of biting, stinging insects to bedevil a single target.  The swarm does %s points of damage plus 1-%s per point of skill in Earth Magic."",dmgAddTooltip(s, m,37),diceMaxTooltip(s, m,37))"
 maw-e5cd75207156	tooltip	"Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.
 
-Blades is the only spell capable to deal Physical damage."	Scripts/General/zzMaw-Spells.lua	2104	no	uncertain_context	"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.\n\nBlades is the only spell capable to deal Physical damage."",diceMaxTooltip(s, m,39))"
+Blades is the only spell capable to deal Physical damage."	Scripts/General/zzMaw-Spells.lua	2104	yes	proven_game_display_assignment	"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.\n\nBlades is the only spell capable to deal Physical damage."",diceMaxTooltip(s, m,39))"
 maw-997847b4799b	tooltip	Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.	Scripts/General/zzMaw-Spells.lua	2105	yes	proven_game_display_assignment	"Game.SpellsTxt[41].Description=string.format(""Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic."",dmgAddTooltip(s, m,41),diceMaxTooltip(s, m,41))"
 maw-01a32f6089bb	tooltip	Launches a magical stone which bursts in air, sending shards of explosive earth raining to the ground.  The damage is 1-%s per point of skill in Earth Magic for each shard.  This spell can only be used outdoors.	Scripts/General/zzMaw-Spells.lua	2106	yes	proven_game_display_assignment	"Game.SpellsTxt[43].Description=string.format(""Launches a magical stone which bursts in air, sending shards of explosive earth raining to the ground.  The damage is 1-%s per point of skill in Earth Magic for each shard.  This spell can only be used outdoors."",diceMaxTooltip(s, m,43))"
 maw-4f74c73b7424	tooltip	Increases the weight of a single target enormously for an instant, causing internal damage equal to 15%% of the monster's hit points plus another 0.5%% per point of skill in Earth Magic. The bigger they are, the harder they fall.	Scripts/General/zzMaw-Spells.lua	2108	yes	proven_game_display_assignment	"Game.SpellsTxt[44].Description=""Increases the weight of a single target enormously for an instant, causing internal damage equal to 15%% of the monster's hit points plus another 0.5%% per point of skill in Earth Magic. The bigger they are, the harder they fall."""
@@ -5772,15 +5772,15 @@ maw-507917d6e74d	spell	SpellPointsGM	Scripts/General/zzMaw-Spells.lua	2182	no	in
 maw-339f786746eb	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 1 day limit
-"	Scripts/General/zzMaw-Spells.lua	2183	no	uncertain_context	"Game.SpellsTxt[49].Expert=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[2], sp.Base[2], sp.Scaling[2])"
+"	Scripts/General/zzMaw-Spells.lua	2183	yes	proven_game_display_assignment	"Game.SpellsTxt[49].Expert=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[2], sp.Base[2], sp.Scaling[2])"
 maw-339f786746eb	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 1 day limit
-"	Scripts/General/zzMaw-Spells.lua	2184	no	uncertain_context	"Game.SpellsTxt[49].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
+"	Scripts/General/zzMaw-Spells.lua	2184	yes	proven_game_display_assignment	"Game.SpellsTxt[49].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
 maw-339f786746eb	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 1 day limit
-"	Scripts/General/zzMaw-Spells.lua	2185	no	uncertain_context	"Game.SpellsTxt[49].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
+"	Scripts/General/zzMaw-Spells.lua	2185	yes	proven_game_display_assignment	"Game.SpellsTxt[49].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
 maw-aabe239306fb	spell	SpellPointsMaster	Scripts/General/zzMaw-Spells.lua	2189	no	internal_table_key_literal	"Game.Spells[54][""SpellPointsMaster""]=math.ceil(sp.Cost[3])"
 maw-507917d6e74d	spell	SpellPointsGM	Scripts/General/zzMaw-Spells.lua	2190	no	internal_table_key_literal	"Game.Spells[54][""SpellPointsGM""]=math.ceil(sp.Cost[4])"
 maw-457914fa7aaf	spell	Adds %s + %s HP per point of skill to the pool	Scripts/General/zzMaw-Spells.lua	2191	yes	proven_game_display_assignment	"Game.SpellsTxt[54].Master=string.format(""Adds %s + %s HP per point of skill to the pool"", sp.Base[3], sp.Scaling[3])"
@@ -5793,26 +5793,26 @@ maw-11509485a262	spell	SpellPointsExpert	Scripts/General/zzMaw-Spells.lua	2206	n
 maw-aabe239306fb	spell	SpellPointsMaster	Scripts/General/zzMaw-Spells.lua	2207	no	internal_table_key_literal	"Game.Spells[68][""SpellPointsMaster""]=math.ceil(sp.Cost[3])"
 maw-507917d6e74d	spell	SpellPointsGM	Scripts/General/zzMaw-Spells.lua	2208	no	internal_table_key_literal	"Game.Spells[68][""SpellPointsGM""]=math.ceil(sp.Cost[4])"
 maw-34240f29269c	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2209	no	uncertain_context	"Game.SpellsTxt[68].Normal=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[1], sp.Base[1], sp.Scaling[1])"
+cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2209	yes	proven_game_display_assignment	"Game.SpellsTxt[68].Normal=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[1], sp.Base[1], sp.Scaling[1])"
 maw-34240f29269c	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2210	no	uncertain_context	"Game.SpellsTxt[68].Expert=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[2], sp.Base[2], sp.Scaling[2])"
+cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2210	yes	proven_game_display_assignment	"Game.SpellsTxt[68].Expert=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[2], sp.Base[2], sp.Scaling[2])"
 maw-34240f29269c	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2211	no	uncertain_context	"Game.SpellsTxt[68].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
+cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2211	yes	proven_game_display_assignment	"Game.SpellsTxt[68].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
 maw-34240f29269c	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2212	no	uncertain_context	"Game.SpellsTxt[68].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
+cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2212	yes	proven_game_display_assignment	"Game.SpellsTxt[68].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
 maw-aabe239306fb	spell	SpellPointsMaster	Scripts/General/zzMaw-Spells.lua	2216	no	internal_table_key_literal	"Game.Spells[74][""SpellPointsMaster""]=math.ceil(sp.Cost[3])"
 maw-507917d6e74d	spell	SpellPointsGM	Scripts/General/zzMaw-Spells.lua	2217	no	internal_table_key_literal	"Game.Spells[74][""SpellPointsGM""]=math.ceil(sp.Cost[4])"
 maw-339f786746eb	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 1 day limit
-"	Scripts/General/zzMaw-Spells.lua	2218	no	uncertain_context	"Game.SpellsTxt[74].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
+"	Scripts/General/zzMaw-Spells.lua	2218	yes	proven_game_display_assignment	"Game.SpellsTxt[74].Master=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[3], sp.Base[3], sp.Scaling[3])"
 maw-5bf25d99575c	spell	"%s Mana cost: 
 cures %s + %s HP per point of skill
 no limit
-"	Scripts/General/zzMaw-Spells.lua	2219	no	uncertain_context	"Game.SpellsTxt[74].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\nno limit\n"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
+"	Scripts/General/zzMaw-Spells.lua	2219	yes	proven_game_display_assignment	"Game.SpellsTxt[74].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\nno limit\n"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
 maw-507917d6e74d	spell	SpellPointsGM	Scripts/General/zzMaw-Spells.lua	2223	no	internal_table_key_literal	"Game.Spells[77][""SpellPointsGM""]=math.ceil(sp.Cost[4])"
 maw-34240f29269c	spell	"%s Mana cost: 
-cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2224	no	uncertain_context	"Game.SpellsTxt[77].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
+cures %s + %s HP per point of skill"	Scripts/General/zzMaw-Spells.lua	2224	yes	proven_game_display_assignment	"Game.SpellsTxt[77].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
 maw-8b72f4c9216e	spell	"
 Not Active"	Scripts/General/zzMaw-Spells.lua	2243	yes	formatted_colored_text	"local txt=StrColor(255,0,0,""\nNot Active"")"
 maw-5d1b887ea9d7	spell	"
@@ -5837,22 +5837,22 @@ maw-84301d0d3217	spell	SpellPoints	Scripts/General/zzMaw-Spells.lua	2275	no	unce
 maw-84301d0d3217	spell	SpellPoints	Scripts/General/zzMaw-Spells.lua	2281	no	uncertain_context	"Game.Spells[sp][""SpellPoints"" .. masteryName[v]]=0"
 maw-e886c82c9925	tooltip	"
 
-Recovery time: "	Scripts/General/zzMaw-Spells.lua	2297	no	uncertain_context	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. speed"
+Recovery time: "	Scripts/General/zzMaw-Spells.lua	2297	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. speed"
 maw-e886c82c9925	tooltip	"
 
-Recovery time: "	Scripts/General/zzMaw-Spells.lua	2299	no	uncertain_context	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. speed"
+Recovery time: "	Scripts/General/zzMaw-Spells.lua	2299	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. speed"
 maw-c4d4148a3add	tooltip	"
 
-Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "	Scripts/General/zzMaw-Spells.lua	2301	no	uncertain_context	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
+Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "	Scripts/General/zzMaw-Spells.lua	2301	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
 maw-a797649a8169	tooltip	" resistance. Control duration against bosses is halved.
 
-Recovery time: "	Scripts/General/zzMaw-Spells.lua	2301	no	uncertain_context	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
+Recovery time: "	Scripts/General/zzMaw-Spells.lua	2301	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
 maw-e886c82c9925	tooltip	"
 
-Recovery time: "	Scripts/General/zzMaw-Spells.lua	2303	no	uncertain_context	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. oldTable[i][magicM]"
+Recovery time: "	Scripts/General/zzMaw-Spells.lua	2303	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. oldTable[i][magicM]"
 maw-e886c82c9925	tooltip	"
 
-Recovery time: "	Scripts/General/zzMaw-Spells.lua	2305	no	uncertain_context	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nRecovery time: "" .. oldTable[i][magicM]"
+Recovery time: "	Scripts/General/zzMaw-Spells.lua	2305	yes	proven_game_display_assignment	"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nRecovery time: "" .. oldTable[i][magicM]"
 maw-4c3ed26b6734	spell	"
 
 Can't learn"	Scripts/General/zzMaw-Spells.lua	2312	yes	formatted_colored_text	"local txt=StrColor(255,0,0,""\n\nCan't learn"")"

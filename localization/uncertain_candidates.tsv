@@ -46,22 +46,6 @@ damage	class	7	9	comparison_control_literal:2; uncertain_context:7	Scripts/Gener
 %s     %s|	class	4	4	uncertain_context:4	Scripts/General/zzClasses.lua			"normal=string.format(""%s     %s|"",normal,dragonFang.Damage[1])"
 Tick	class	3	3	uncertain_context:3	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Spells.lua			"events.Remove(""Tick"", 1)"
 Character %s has invalid class id: %s. Resetted to %s	class	1	1	uncertain_context:1	Scripts/General/NPCMercenaries.lua			"local msg = string.format(""Character %s has invalid class id: %s. Resetted to %s"", Char:GetIndex(), Char.Class, NewClass)"
-"Damage
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"	class	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.GlobalTxt[53] = ""Damage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"""
 "Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).
 Scales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.
 
@@ -853,47 +837,12 @@ Melee attacks deal an extra "	skill	1	1	uncertain_context:1	Scripts/General/zzCl
 Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."	skill	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"txt=Skillz.getDesc(27,1) .. ""\n\nHit Points are also increased 2-3-4-5% per skill point, depending on mastery."""
 "
 
-Master will grant 1% to drop random reagents from Monsters.
-At GM this chance is doubled."	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Skillz.setDesc(const.Skills.Alchemy,1,Skillz.getDesc(const.Skills.Alchemy,1) .. ""\n\nMaster will grant 1% to drop random reagents from Monsters.\nAt GM this chance is doubled."")"
-"
-
 Melee Life Leech vs equal level: %s
 Next Level Bonus: %s
 (lower against higher level monsters)"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt = txt .. string.format(""\n\nMelee Life Leech vs equal level: %s\nNext Level Bonus: %s\n(lower against higher level monsters)"","
 "
 ------------------------------------------------------------
             Attack| Dmg|"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
-"
-The paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThe paralyze effect lasts for 5 seconds on regular monsters and 2 seconds on bosses. The stun effect lasts for half the duration of the paralyze effect. The chances of successfully applying these effects depend on the skill level and the monster's level.\n"")"
-"
-This skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(5,1,Skillz.getDesc(5,1) .. ""\nThis skill increases the damage gained from weapon +1 per skill point in the bow skill, by a percentage when equipping a bow.\n"")"
-"
-This skill increases the damage gained from weapon by a percentage when equipping a staff.
-At Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.
-
-Your full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(0,1,Skillz.getDesc(0,1) .. ""\nThis skill increases the damage gained from weapon by a percentage when equipping a staff.\nAt Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.\n\nYour full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.\n"")"
-"
-This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.
-Crit chance will get lower as monsters grow stronger, up to level 600."	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(2,1,Skillz.getDesc(2,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a dagger.\nCrit chance will get lower as monsters grow stronger, up to level 600."")"
-"
-This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(6,1,Skillz.getDesc(6,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a mace.\n"")"
-"
-This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.
-
-Spear skill raises AC by X% per skill point, counting an extra +10 effective skill.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(4,1,Skillz.getDesc(4,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a spear.\n\nSpear skill raises AC by X% per skill point, counting an extra +10 effective skill.\n"")"
-"
-This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.
-
-Your full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(1,1,Skillz.getDesc(1,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping a sword.\n\nYour full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.\n"")"
-"
-This skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(3,1,Skillz.getDesc(3,1) .. ""\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by a percentage when equipping an axe.\n"")"
  atk	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
  dmg and 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
 " Hit Points
@@ -943,19 +892,8 @@ Current bonuses at skill %s:
 "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
 AC|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""AC|"",baseString)"
 Adamantite	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
-
-Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(Retaliation, 1, ""After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n"")"
-"Allow use to Cover Physical damage
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(coverSkill, 2, ""Allow use to Cover Physical damage\n"")"
 Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.SkillDesGM[const.Skills.Alchemy]=""Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level."""
 Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.SkillDesMaster[const.Skills.Alchemy]=""Allows to make white potions. Power when mixing will be increased to 1.5 per skill point."""
-"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.
-This skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.
-
-Damage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(35,1,""Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.\nThis skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.\n\nDamage added by armsmaster skill scales with your weapon skill, amplifying its impact as you grow more adept.\n"")"
 Attack|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
 BuildSkillInformationBox	skill	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"events.call(""BuildSkillInformationBox"", t)"
 "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. 
@@ -964,23 +902,8 @@ Once your skill grows to the necessary level, mastery of it shall be bestowed up
 
 For this service, a tribute of 1000 gold for each level you have achieved shall be required"	skill	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Ungive = ""By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required"""
 CalcStatBonusBySkills	skill	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""CalcStatBonusBySkills"", t)"
-"Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.
-
-Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(10,1,""Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.\n\nChain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."")"
 Chance to Paralyze: 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt=txt .. ""Chance to Paralyze: "" .. chance .. ""%"""
 Chance to Stun: 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt=txt .. ""Chance to Stun: "" .. chance .. ""%"""
-"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
-
-Each attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.
-
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(12,1,""Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.\n\nEach attack has a base 10% chance, plus 1% per skill point, to restore 15 energy.\n\n"");"
-"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
-
-Grants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...
-
-
-Press P to enable/disable
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(coverSkill, 1, ""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n"")"
 "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
@@ -1009,29 +932,12 @@ GetSkill	skill	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls
 Grants bonus to Meditation skill for 6 hours.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[232] = ""Grants bonus to Meditation skill for 6 hours."","
 Incorrect mastery %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect mastery %d at JoinSkill()"", mastery)"
 Incorrect skill value %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect skill value %d at JoinSkill()"", skill)"
-"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.
-
-Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(9,1,""Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.\n\nLeather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."")"
 Leecher	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Mana cost reduced by 12.5%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Learning]= ""Mana cost reduced by 12.5%."""
 Mana cost reduced by 25%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Learning]= ""Mana cost reduced by 25%"""
 Mana cost reduced by 37.5%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Learning]= ""Mana cost reduced by 37.5%"""
 Mana cost reduced by 50%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Learning]= ""Mana cost reduced by 50%"""
-"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
-
-If available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).
-
-Mastery increase its mana efficience.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(manaSkill, 1, ""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n"")"
 Plagueborn	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
-
-Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(11,1,""Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.\n\nPlate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."")"
-"Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.
-
-Each attack deals bonus water damage equal to 0.1% of the target's HP per skill point.
-
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(14,1,""Poisoning is the art of mastering toxins through self-experimentation, transforming suffering into vitality. Higher skill levels increase your energy regeneration.\n\nEach attack deals bonus water damage equal to 0.1% of the target's HP per skill point.\n\n"");"
 Puller	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Reduces traps and lava damage by 10%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Perception]= ""Reduces traps and lava damage by 10%."""
 Reduces traps and lava damage by 30%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Perception]= ""Reduces traps and lava damage by 30%."""
@@ -1041,18 +947,10 @@ Reflecting	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/G
 Regenerating	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 RemoveSkillValueLimits	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"local LogId = ""RemoveSkillValueLimits"""
 Shadow	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-"Shield skill provides great defense against both physical and magical attacks.
-
-Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(8,1,""Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."")"
 Skill reset info	skill	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Topic = ""Skill reset info"","
 "Skills adds 3 dmg, 3 atk, 2% speed
 Each 10 points in armsmaster increase all the melee weapon skills by 1"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"local txt=""Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"""
 Speed|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
-"Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
-
-Energy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.
-
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(13,1,""Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 1% per skill point in Subtlety. Stacks up to 5 times.\n\n"");"
 Summoner	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Swapper	skill	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 "This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
@@ -1062,21 +960,9 @@ Swapper	skill	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/Gene
 "This skill is only available to death knights and reduces physical damage taken.
 "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
 Thorn	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-"Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.
-
-The cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.
-
-If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(Enlightenment, 1, ""Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n"")"
 Venomous	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 SpellPoints	spell	13	14	index_key_literal:1; uncertain_context:13	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua			"Game.Spells[key][""SpellPoints"" .. masteryName[i]]=value"
 spell	spell	6	7	comparison_control_literal:1; uncertain_context:6	Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Spells.lua; Scripts/General/zzMaw-Stats.lua			"critChance, critMult, success=getCritInfo(pl,""spell"")"
-"%s Mana cost: 
-cures %s + %s HP per point of skill"	spell	5	5	uncertain_context:5	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[68].Normal=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill"",sp.Cost[1], sp.Base[1], sp.Scaling[1])"
-"%s Mana cost: 
-cures %s + %s HP per point of skill
-1 day limit
-"	spell	4	4	uncertain_context:4	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[49].Expert=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\n1 day limit\n"",sp.Cost[2], sp.Base[2], sp.Scaling[2])"
 Delay	spell	3	3	uncertain_context:3	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Stats.lua			"Game.Spells[spell][""Delay"" .. masteryName[m]]=t.Player:GetAttackDelay()"
 sbair3	spell	3	3	uncertain_context:3	Scripts/General/zzMaw-Spells.lua			"local booksPic={""sbair3"",""sbair3"",""sbair3""}"
 sbair4	spell	3	3	uncertain_context:3	Scripts/General/zzMaw-Spells.lua			"local booksPicGM={""sbair4"",""sbair4"",""sbair4""}"
@@ -1087,9 +973,6 @@ SpellSkill	spell	3	4	internal_table_key_literal:1; uncertain_context:3	Scripts/G
 Every 7 Skill level adds 1 level into ascension.
 Melee attacks restore "	spell	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
 CanMonsterCastSpell	spell	2	2	uncertain_context:2	Scripts/Core/events.lua			"events.cocalls(""CanMonsterCastSpell"", t)"
-"Effects vary per spell 
-
-"	spell	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
 PlayerCastSpell	spell	2	2	uncertain_context:2	Scripts/General/ExtraEvents.lua			"events.call(""PlayerCastSpell"", t)"
 string	spell	2	10	comparison_control_literal:8; uncertain_context:2	Scripts/General/zzMaw-Items.lua			"require(""string"")"
 TargetIndex	spell	2	2	uncertain_context:2	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
@@ -1105,34 +988,11 @@ Increases melee damage by "	spell	1	1	uncertain_context:1	Scripts/General/zzClas
 "	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"BolsterTxt:write(""#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)\n"")"
 "% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
 Each point in the skill increases damage and increases recovery time by 3%."	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
-"%s Mana cost: 
-cures %s + %s HP per point of skill
-no limit
-"	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[74].GM=string.format(""%s Mana cost: \ncures %s + %s HP per point of skill\nno limit\n"",sp.Cost[4], sp.Base[4], sp.Scaling[4])"
-"16 Mana cost: 
-cures 36 + 6 HP per point of skill
-no limit
-"	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[49].GM=""16 Mana cost: \ncures 36 + 6 HP per point of skill\nno limit\n"""
-"5 Mana cost: 
-cures 12 + 2 HP per point of skill
-1 hour limit
-"	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[49].Expert=""5 Mana cost: \ncures 12 + 2 HP per point of skill\n1 hour limit\n"""
-"8 Mana cost: 
-cures 24 + 4 HP per point of skill
-1 day limit
-"	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[49].Master=""8 Mana cost: \ncures 24 + 4 HP per point of skill\n1 day limit\n"""
 A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[975].Notes=""A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit."""
 A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[978].Notes=""A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light."""
 A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[971].Notes=""A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire."""
 Air Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[972].Name=""Air Magic Book"""
 AllowNewSpell	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"if ProcessFormula(MonKind, ""AllowNewSpell"", false) then"
-"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
-Such attacks also grant 1 combo point, allowing the assassin to cast offensive spells.
-Bow has 50% chance and energy cost.
-
-Higher levels also grant more starting energy, ideal for high burst damage in short engagements.
-
-"	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(15,1,""Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n"");"
 Base	spell	1	33	internal_table_key_literal:32; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"tab[i]=pl[stats[i] .. ""Base""] + pl[stats[i]  .. ""Bonus""]"
 Body Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[977].Name=""Body Magic Book"""
 CalcSpellDamage	spell	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""CalcSpellDamage"", t)"
@@ -1142,18 +1002,8 @@ cmp dword ptr [eax + 0x19C], edx	spell	1	1	uncertain_context:1	Scripts/General/S
 cmp dword ptr [eax + 0x1A0], edx	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x42595B, ""cmp dword ptr [eax + 0x1A0], edx"")"
 Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[973].Notes=""Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back."""
 Dark Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[979].Name=""Dark Magic Book"""
-"Dragons are powerful creatures with innate abilities.
-Like the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.
-
-Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
 earth	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
 Earth Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[974].Name=""Earth Magic Book"""
-"Elementalists learn new spells with practice instead of books.
-
-All the available spells of this school have been learned."	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nAll the available spells of this school have been learned."")"
-"Elementalists learn new spells with practice instead of books.
-
-Progress toward learning "	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(i,5, ""Effects vary per spell \n\n"" .. rotationText .. ""Elementalists learn new spells with practice instead of books.\n\nProgress toward learning "" .. Game.SpellsTxt[(i-12)*11+currentTier+1].Name .. "": "" .. percentageProgression ..""%"")"
 Empower Magic	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Name = ""Empower Magic"""
 Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[972].Notes=""Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air."""
 Fire Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[971].Name=""Fire Magic Book"""
@@ -1168,8 +1018,6 @@ Require 20 power to work.
 HealingSpellPower	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"events.call(""HealingSpellPower"", t)"
 Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[974].Notes=""Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth."""
 Increases spell damage and healing at the expense of higher mana cost and cast time.	spell	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
-"Increases spell damage and healing at the expense of higher mana cost and cast time.
-"	spell	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Skillz.setDesc(const.Skills.Learning,1,""Increases spell damage and healing at the expense of higher mana cost and cast time.\n"")"
 Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[979].Notes=""Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark."""
 Insanity	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"[5] = ""Insanity"", [22] = ""Spell drain"", [12] = ""Paralysis"", [23] = ""Fear"","
 jge absolute 0x42735B	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x4266D7, ""jge absolute 0x42735B"")"
@@ -1267,29 +1115,14 @@ WindowMessage	status	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.c
 Your skill points has been reset!	status	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Message(""Your skill points has been reset!"")"
 "
 
-Recovery time: "	tooltip	4	4	uncertain_context:4	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[i].Description=Game.SpellsTxt[i].Description .. ""\n\nRecovery time: "" .. speed"
-"
-
 Can benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50
 Current amount: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=t.Description .. ""\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: "" .. str .. ""\nLevels: "" .. levelDiff"
-"
-
-Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
-"
-
-Expert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[49].Description=string.format(Game.SpellsTxt[49].Description .. ""\n\nExpert has 1 hour limit per skill point, Master has 1 day per skill point, Grand has not time limit."")"
-"
-
-This Ability requires "	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.SpellsTxt[key].Description=Game.SpellsTxt[key].Description .. ""\n\nThis Ability requires "" .. assassinSpells[key].StackCost .. "" Combo Points to be casted."""
 "
 Levels: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=t.Description .. ""\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: "" .. str .. ""\nLevels: "" .. levelDiff"
 "
 The Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.
 
 (right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"""
-" resistance. Control duration against bosses is halved.
-
-Recovery time: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[i].Description=oldSpellTooltips[i] .. ""\n\nControl Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "" .. round(pl.LevelBase/2) .. "" resistance. Control duration against bosses is halved.\n\nRecovery time: "" .. speed"
 "%s
 	070Each spear attack reduces physical resistance, increasing damage by: %s%%
 Increased by 50%% with Halberds"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Spear]=string.format(""%s\n\t070Each spear attack reduces physical resistance, increasing damage by: %s%%\nIncreased by 50%% with Halberds"",baseSpearTooltip,damageIncrease)"
@@ -1313,8 +1146,6 @@ Dodge chance: %s%%"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.
 Health bonus from Endurance: %s%s
 
 Flat HP bonus from Endurance: %s"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nHealth bonus from Endurance: %s%s\n\nFlat HP bonus from Endurance: %s"",Game.StatsDescriptions[3],endurance/10,""%"",math.floor(endurance/5)*HPScaling)"
-"A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.
-Deals damage equal to "	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.SpellsTxt[97].Description=""A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.\nDeals damage equal to "" .. (mult97[1]*100) .. ""% of weapon damage"""
 "A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)
 Ancient, Primordial and Legendary items have increased Max power.
 
@@ -1326,24 +1157,7 @@ Causes your party weapons to burn with a magical fire, giving the weapons fire e
 Using this map will teleport you to the entrance."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Maps.lua			"t.Description=""\n"" .. txt .. ""Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.\nUsing this map will teleport you to the entrance."""
 Description	tooltip	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"name = ""Description"","
 Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum.	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = ""Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum."""
-"Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.
-
-Blades is the only spell capable to deal Physical damage."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does %s%% of a melee attack damage.\n\nBlades is the only spell capable to deal Physical damage."",assassinSpells[39].DamageMult*100)"
-"Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.
-
-Blades is the only spell capable to deal Physical damage."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[39].Description=string.format(""Fires a rotating, razor-thin metal blade at a single monster.  The blade does 1-%s points of damage per point of skill in Earth Magic.\n\nBlades is the only spell capable to deal Physical damage."",diceMaxTooltip(s, m,39))"
-"Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
-
-At higher difficulties, with the exception of few places, attacking monsters will cancel the effect"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[21].Description= ""Grants the power of flight to your characters!  This spell is very expensive and only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\n\nAt higher difficulties, with the exception of few places, attacking monsters will cancel the effect"""
-"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
-Lasts for 2 hours plus 1 hour per point of skill"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[51].Description=""Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.\nLasts for 2 hours plus 1 hour per point of skill"""
 Host have closed the game	tooltip	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"CustomUI.DisplayTooltip(""Host have closed the game"", 20, 100, 160, 440, 0)"
-"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.
-
-The spell then arcs to a second target, hitting it as well."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s points plus 1-%s points of damage per point of skill in Air Magic.\n\nThe spell then arcs to a second target, hitting it as well."",dmgAddTooltip(s, m,18),diceMaxTooltip(s, m,18))"
-"Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.
-
-The spell then arcs to a second target, hitting it as well."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.SpellsTxt[18].Description=string.format(""Lightning Bolt discharges electricity from the caster's hand to a single target.  It always hits and does %s%% of a melee attack damage.\n\nThe spell then arcs to a second target, hitting it as well."",assassinSpells[18].DamageMult*100)"
 "Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
 
 Adds the following legendary power to an item:"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nAdds the following legendary power to an item:"""
@@ -1471,8 +1285,6 @@ Unholy:
 
 It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
 This potion has been removed	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""This potion has been removed"""
-"Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.
-Deals damage equal to "	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.SpellsTxt[32].Description=""Throw an ice bomb that shatters upon hitting something, most effective versus big foes or multiple enemies.\nDeals damage equal to "" .. (mult32[1]*100) .. ""% of current weapon damage."""
 tooltip	tooltip	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local damage=calcFireAuraDamage(pl, t.Item, 0, false, false, ""tooltip"")"
 TmblrOff	ui	3	3	uncertain_context:3	Scripts/General/MenuExtraSettings.lua			"IconDown	= ""TmblrOff"","
 TmblrOn	ui	3	4	comparison_control_literal:1; uncertain_context:3	Scripts/General/MenuExtraSettings.lua			"IconUp	 	= ""TmblrOn"","
