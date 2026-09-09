@@ -1,0 +1,84 @@
+source	translation	status	notes
+\n\nArtifact Level: 	\n\n유물 레벨: 	translated	아이템 툴팁
+\n\nBonus AC: 	\n\n추가 방어력: 	translated	스킬 설명
+\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 1000.	\n\n천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 1000레벨까지 적용됩니다.	translated	천상 아이템 설명
+\n\nCelestial Items cannot be upgraded with crafting Gems or Cubes, but scale with player level, up to level 600.	\n\n천상 아이템은 제작용 보석이나 큐브로 강화할 수 없지만, 플레이어 레벨에 따라 성장하며 최대 600레벨까지 적용됩니다.	translated	천상 아이템 설명
+\n\nCurrent AC from items: 	\n\n아이템으로 얻는 현재 방어력: 	translated	스킬 설명
+\n\nItem Modifier:\nTwo Handed Weapons: 	\n\n아이템 보정치:\n양손 무기: 	translated	연금술 설명
+% craft items drop chances 	% 제작 재료 드롭 확률 	translated	차원 지도 옵션
+% item quality 	% 아이템 품질 	translated	차원 지도 옵션
+% monster density	% 몬스터 밀도	translated	차원 지도 옵션
+Ally	동료	translated	멀티플레이 회복자 기본명
+Ancient 	고대 	translated	아이템 등급 접두어
+Armor Class	방어력	translated	기존 MMMerge 능력치 용어
+Bonus AC: 	추가 방어력: 	translated	스킬 설명
+Bonus Resistances: 	추가 저항: 	translated	스킬 설명
+Celestial 	천상의 	translated	아이템 등급 접두어
+Dimension Map	차원 지도	translated	MAW 아이템명
+Endless Potion	무한 물약	translated	MAW 아이템명
+Endurance	인내력	translated	기존 MMMerge 능력치 용어
+Greater Heal	대치유	translated	기존 MMMerge 주문 용어
+Intellect	지능	translated	기존 MMMerge 능력치 용어
+Legendary 	전설의 	translated	아이템 등급 접두어
+Luck	운	translated	기존 MMMerge 능력치 용어
+Potion Deleted in Austerity	절제 모드에서 삭제된 물약	translated	내부 대체 아이템 표시명
+Potion Deleted in MAW	MAW에서 삭제된 물약	translated	내부 대체 아이템 표시명
+Primordial 	태고의 	translated	아이템 등급 접두어
+Repair skill	수리 기술	translated	기존 MMMerge 스킬 용어
+Speed	민첩성	translated	기존 MMMerge 능력치 용어
+You activated Nightmare Mode, monsters will be much stronger and you can't save nor teleport away from them, however, items found will be much stronger.\nLeaving a dungeon before killing most of them will cause monsters to respawn.\nClearing a dungeon will grant you extra rewards.\nRespawned monsters give less experience and loot, once True Nightmare is activated there is no way back, are you sure? (yes/no)	악몽 모드를 활성화했습니다. 몬스터가 훨씬 강해지고 전투 중 저장하거나 순간이동으로 빠져나갈 수 없지만, 발견하는 아이템도 훨씬 강력해집니다.\n던전의 몬스터 대부분을 처치하기 전에 떠나면 몬스터가 다시 생성됩니다.\n던전을 클리어하면 추가 보상을 받습니다.\n다시 생성된 몬스터는 경험치와 전리품을 적게 주며, 진정한 악몽을 활성화하면 되돌릴 수 없습니다. 정말 진행하시겠습니까? (yes/no 입력)	translated	yes/no 입력 토큰 보존
+Wine Rack	와인 선반	translated	맵 힌트
+\nBody Armor: 	\n갑옷: 	translated	연금술 아이템 보정치
+\nBonus: 	\n보너스: 	translated	연금술 아이템 보정치
+\nHelm-Boots-Gloves-Bow: 	\n투구-장화-장갑-활: 	translated	연금술 아이템 보정치
+\nRings: 	\n반지: 	translated	연금술 아이템 보정치
+  Mana: 	  마나: 	translated	멀티플레이 상태 표시
+(client save) 	(클라이언트 저장) 	translated	멀티플레이 저장 선택
+(current) 	(현재) 	translated	멀티플레이 저장 선택
+(host save) 	(호스트 저장) 	translated	멀티플레이 저장 선택
+(last choice) 	(마지막 선택) 	translated	멀티플레이 저장 선택
+(Most relevant) 	(가장 관련 높음) 	translated	멀티플레이 저장 선택
+Ascended 	승천한 	translated	아이템 등급 접두어
+Currently Active Legendary effects:	현재 활성화된 전설 효과:	translated	전설 효과 UI
+Enter the data.	데이터를 입력하세요.	translated	퀘스트 질문
+Health: 	생명력: 	translated	멀티플레이 상태 표시
+NPC %d	NPC %d	translated	NPC 패널 라벨; 자리표시자 보존
+NPC PANEL	NPC 패널	translated	키 바인딩 라벨
+Vitality: %s\n\n\n\n\n\n\n\n	활력: %s\n\n\n\n\n\n\n\n	translated	능력치 UI; 자리표시자 보존
+The dungeon has already been cleared, but you have the option to reset it and attempt it once more with even harder monsters. Please note that no completion rewards will be given for this reset. Would you like to proceed with resetting the dungeon? (yes/no)	이 던전은 이미 클리어했지만 초기화하여 더 강한 몬스터에게 다시 도전할 수 있습니다. 초기화 후에는 클리어 보상을 받을 수 없습니다. 던전을 초기화하시겠습니까? (yes/no 입력)	translated	yes/no 입력 토큰 보존
+\n\nCan't learn	\n\n습득 불가	translated	주문 상태
+\n\nNot Learned	\n\n미습득	translated	주문 상태
+\nActive (	\n활성 (	translated	주문 상태
+\nActive(	\n활성(	translated	주문 상태
+\nNot Active	\n비활성	translated	주문 상태
+ Hit Points	 생명력	translated	아이템/주문 설명 조각
+%s\n\nIncreases spell points based on SP per level and mastery\n\nCurrent SP Regeneration: %s\nNext Level Bonus: %s SP Regen\n	%s\n\n레벨당 주문력과 숙련도에 따라 주문력 재생이 증가합니다.\n\n현재 주문력 재생: %s\n다음 레벨 보너스: 주문력 재생 %s\n	translated	명상 스킬 설명; 자리표시자 보존
+Asphyxiate	질식	translated	MAW 주문명
+Blood Leech	피 흡수	translated	MAW 주문명
+Chain Lightning	연쇄 번개	translated	MAW 재정의 주문명
+Death Breath	죽음의 숨결	translated	MAW 주문명
+Death Coil	죽음의 고리	translated	MAW 주문명
+Death Grasp	죽음의 손아귀	translated	MAW 주문명
+Frostbite	동상	translated	MAW 주문명
+Ice Bomb	얼음 폭탄	translated	MAW 주문명
+Icy Touch	얼음의 손길	translated	MAW 주문명
+Melee Power: %s\nRanged Power: %s\nSpell Power: %s	근접 위력: %s\n원거리 위력: %s\n주문 위력: %s	translated	전투 능력치; 자리표시자 보존
+Superior Blood Leech	상급 피 흡수	translated	MAW 주문명
+\n\nHealth Reserved: 	\n\n예약 생명력: 	translated	주문 툴팁
+\n\nIncreases Charges by 	\n\n충전 횟수 증가: 	translated	연금술 툴팁
+\n\nMana Reserved: 	\n\n예약 마나: 	translated	주문 툴팁
+\n\nPress alt to show recipe list	\n\n조합법 목록을 보려면 Alt를 누르세요	translated	연금술 툴팁
+\n\nYou need at least 	\n\n이 책을 열려면 최소 	translated	주문책 요구 조건 조각
+ bonus to Meditation skill for 6 hours.	 (6시간)	translated	명상 보너스 조각
+ skill in 	 단계 이상의 	translated	주문책 요구 조건 조각
+ Spell Points	 주문력	translated	연금술 툴팁 조각
+ to open the book	 기술이 필요합니다	translated	주문책 요구 조건 조각
+Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment	천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다	translated	천상 오브 설명
+Charges: 	충전 횟수: 	translated	연금술 툴팁
+Grants 	명상 기술 보너스 +	translated	명상 물약 설명 조각
+Heals 	생명력 회복: 	translated	물약 설명 조각
+Power: 	위력: 	translated	아이템 툴팁
+Press alt to show craftable stats	제작 가능한 능력치를 보려면 Alt를 누르세요	translated	아이템 툴팁
+Restores 	주문력 회복: 	translated	물약 설명 조각
+Vampiric Aura: damage done will restore player HP.\n\n	흡혈 오라: 가한 피해에 따라 플레이어의 생명력이 회복됩니다.\n\n	translated	아이템 툴팁
+Vitality: 	활력: 	translated	아이템 툴팁
