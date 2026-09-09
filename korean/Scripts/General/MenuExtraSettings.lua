@@ -156,7 +156,7 @@ end
 
 function events.GameInitialized2()
 
-	local ExSetScr = NewSettingsPage("MergeExtraSettings", " 일반 설정", "ExSetScr")
+	local ExSetScr = NewSettingsPage("MergeExtraSettings", " General settings", "ExSetScr")
 	const.Screens.ExtraSettings = const.Screens.MergeExtraSettings
 
 	local VarsToStore = {"UseMonsterBolster", "BolsterAmount", "ShowWeatherEffects", "ImprovedPathfinding", "freeProgression", "Mode"}
