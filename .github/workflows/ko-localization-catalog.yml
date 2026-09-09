@@ -63,7 +63,7 @@ jobs:
         run: python tools/promote_display_literals.py --root .
 
       - name: Export focused patchable queue
-        run: python tools/export_patchable_candidates.py --root .
+        run: python tools/export_patchable_candidates.py --root . --check
 
       - name: Match MMMerge Korean translation memory
         run: python tools/import_mmmerge_memory.py --root .
