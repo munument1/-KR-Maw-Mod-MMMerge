@@ -152,8 +152,9 @@ Scale with player level, up to level 550."			Scripts/General/zzMaw-Items.lua	249
 maw-82210a28ed56	untranslated	item	"
 
 Scale with player level, up to level 900."			Scripts/General/zzMaw-Items.lua	2497	1	
-maw-02219f4d1f51	untranslated	item	"
-Attack Speed: "			Scripts/General/zzMaw-Items.lua	2552	2	
+maw-02219f4d1f51	translated	item	"
+Attack Speed: "	"
+공격 속도: "		Scripts/General/zzMaw-Items.lua	2552	2	아이템 정보창 공격 속도
 maw-45425af9f0d2	untranslated	item	 +X			Scripts/General/zzMaw-Items.lua	1705	1	
 maw-5c2d44bdc878	untranslated	item	 - Corrupted item #			Scripts/General/zzMaw-Item-Sorter.lua	720	1	
 maw-296498801eda	translated	item	 Armor.	 방어력.		Scripts/General/zzMaw-Items.lua	2051	1	아이템 마법부여 설명 조각
@@ -214,7 +215,7 @@ maw-c4c29e7aed76	translated	item	Ally	동료		Scripts/General/zzMaw-Monsters.lua
 maw-a7c94b10b666	untranslated	item	Ancient			Scripts/General/zzMaw-Items.lua	461	2	
 maw-d1745b2ab5cc	translated	item	Ancient 	고대 		Scripts/General/zzMaw-Items.lua	1733	1	아이템 등급 접두어
 maw-8261e56f515b	translated	item	Armor Class	방어력		Scripts/General/zzMaw-Items.lua	1869	2	기존 MMMerge 능력치 용어
-maw-ff2b4cfa1b74	untranslated	item	Armor: +			Scripts/General/zzMaw-Items.lua	1478	2	
+maw-ff2b4cfa1b74	translated	item	Armor: +	방어력: +		Scripts/General/zzMaw-Items.lua	1478	2	아이템 정보창 기본 수치
 maw-1b811f3888ba	untranslated	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	
 maw-65e9268e6bfb	translated	item	Armsmaster skill	무기 전문가 기술		Scripts/General/zzMaw-Items.lua	1881	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-0487dae31788	untranslated	item	Ascended Amber			Scripts/General/zzMaw-Items.lua	4565	1	
@@ -224,7 +225,7 @@ maw-dbc37444ee2e	untranslated	item	Ascended Purple Amethyst			Scripts/General/zz
 maw-bef685960d0b	untranslated	item	Ascended Ruby			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-60347ffcca9c	untranslated	item	Ascended Sapphire			Scripts/General/zzMaw-Items.lua	4565	1	
 maw-0828378541e3	untranslated	item	Ascended Topaz			Scripts/General/zzMaw-Items.lua	4565	1	
-maw-249a5adae437	untranslated	item	Attack: +			Scripts/General/zzMaw-Items.lua	1506	2	
+maw-249a5adae437	translated	item	Attack: +	공격: +		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
 maw-03619d622196	untranslated	item	Base enchants on this items are 50% stronger			Scripts/General/zzMaw-Items.lua	1376	1	
 maw-718a7e8a582e	untranslated	item	Body			Scripts/General/zzMaw-Items.lua	4258	1	
 maw-bee8f9b9eeaf	translated	item	Body Magic Skill +	육체 마법 기술 +		Scripts/General/zzMaw-Items.lua	2033	1	아이템 마법부여 기술 보너스
@@ -254,7 +255,7 @@ maw-2f4979324e03	untranslated	item	Condition			Scripts/General/zzMaw-Item-Sorter
 maw-f032f4de767e	translated	item	Crafting Item	제작 재료		Scripts/General/zzAlchemy.lua	1410	1	미감정 제작 아이템 이름
 maw-5cc5b9edc5f5	untranslated	item	Crit chance increased by 10% and crit chance over 100% increases total damage			Scripts/General/zzMaw-Items.lua	1368	1	
 maw-f0321970a081	untranslated	item	curse			Scripts/General/zzMaw-Items.lua	1255	1	
-maw-6c3828d38527	untranslated	item	Damage: 			Scripts/General/zzMaw-Items.lua	1506	2	
+maw-6c3828d38527	translated	item	Damage: 	피해: 		Scripts/General/zzMaw-Items.lua	1506	2	아이템 정보창 기본 수치
 maw-71db089ac027	translated	item	Dark Magic Skill +	어둠 마법 기술 +		Scripts/General/zzMaw-Items.lua	2034	1	아이템 마법부여 기술 보너스
 maw-4f14c08f988e	untranslated	item	death			Scripts/General/zzMaw-Items.lua	1261	1	
 maw-c45e1332c406	translated	item	Death and Eradication Immunity	죽음 및 소멸 면역		Scripts/General/zzMaw-Items.lua	1281	1	특수 아이템 효과 설명

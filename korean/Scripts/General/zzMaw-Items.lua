@@ -1475,7 +1475,7 @@ function events.BuildItemInformationBox(t)
 						--	local bonusAC=(ac+ac2)*(t.Item.MaxCharges/20)
 						--	ac=ac3+round(bonusAC)
 						--end		
-						t.BasicStat= "Armor: +" .. ac
+						t.BasicStat= "방어력: +" .. ac
 					end
 				end
 			end
@@ -1503,7 +1503,7 @@ function events.BuildItemInformationBox(t)
 					local sides2=Game.ItemsTxt[t.Item.Number+lookup].Mod1DiceSides
 					local sidesBonus=sides2*(maxCharges/30)
 					sides=sides+round(sidesBonus)
-					t.BasicStat= "Attack: +" .. bonus .. "  " .. "Damage: " ..  txt.Mod1DiceCount .. "d" .. sides .. "+" .. bonus
+					t.BasicStat= "공격: +" .. bonus .. "  " .. "피해: " ..  txt.Mod1DiceCount .. "d" .. sides .. "+" .. bonus
 				end
 			end
 			
@@ -2528,7 +2528,7 @@ function events.BuildItemInformationBox(t)
 			local txt=Game.ItemsTxt[t.Item.Number]
 			local ac=math.ceil((txt.Mod2+txt.Mod1DiceCount)*artifactMult)
 			if ac>0 then 			
-				t.BasicStat= "Armor: +" .. ac
+				t.BasicStat= "방어력: +" .. ac
 			end
 			--WEAPONS
 			artifactMult=artifactPowerMult(Party[id].LevelBase, false, t.Item.BonusExpireTime)
@@ -2536,7 +2536,7 @@ function events.BuildItemInformationBox(t)
 			if equipStat<=2 then
 				local bonus=math.ceil(txt.Mod2*artifactMult)
 				local sides=math.ceil(txt.Mod1DiceSides*artifactMult)
-				t.BasicStat= "Attack: +" .. bonus .. "  " .. "Damage: " ..  txt.Mod1DiceCount .. "d" .. sides .. "+" .. bonus
+				t.BasicStat= "공격: +" .. bonus .. "  " .. "피해: " ..  txt.Mod1DiceCount .. "d" .. sides .. "+" .. bonus
 			end
 			local skill=t.Item:T().Skill
 			if table.find(twoHandedAxes, t.Item.Number) or table.find(oneHandedAxes, t.Item.Number) then
@@ -2549,7 +2549,7 @@ function events.BuildItemInformationBox(t)
 					pl=Party[id]
 				end
 				local playerLevel=pl.LevelBase
-				t.Type = t.Type .. "\nAttack Speed: " .. getItemRecovery(t.Item, playerLevel)/100
+				t.Type = t.Type .. "\n공격 속도: " .. getItemRecovery(t.Item, playerLevel)/100
 			end
 		end
 	end
@@ -2824,7 +2824,7 @@ function events.BuildItemInformationBox(t)
 			skill=3
 		end
 		if t.Type and baseRecovery[skill] then
-			t.Type = t.Type .. "\nAttack Speed: " .. getItemRecovery(t.Item, 0)/100
+			t.Type = t.Type .. "\n공격 속도: " .. getItemRecovery(t.Item, 0)/100
 		end
 	end
 end
