@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Export the player-facing columns from MAW POTION/POTNOTES tables.
+"""Export player-facing columns from MAW POTION/POTNOTES tables.
 
-The first four columns are ID, Name, Description and Effect.  All later
-columns are recipe/control matrix data and are deliberately excluded from the
-localization queue.  The exporter also verifies that POTION.TXT and
-POTNOTES.TXT agree on those display fields before we translate them.
+The first four columns are ID, Name, Description and Effect. All later columns
+are recipe/control matrix data and are deliberately excluded from localization.
+POTION.TXT and POTNOTES.TXT intentionally differ for many rows, so both sets of
+display fields are exported side by side for independent review.
 """
 from __future__ import annotations
 
@@ -44,28 +44,31 @@ def main() -> int:
     mismatches = []
     rows = []
     for record_id in all_ids:
-        p = potion.get(record_id)
-        n = notes.get(record_id)
+        p = potion.get(record_id) or ("", "", "")
+        n = notes.get(record_id) or ("", "", "")
         same = p == n
         if not same:
-            mismatches.append({"id": record_id, "potion": p, "potnotes": n})
-        chosen = p or n or ("", "", "")
+            mismatches.append(record_id)
         rows.append({
             "id": record_id,
-            "name": chosen[0],
-            "description": chosen[1],
-            "effect": chosen[2],
-            "tables_match": "yes" if same else "no",
+            "potion_name": p[0],
+            "potion_description": p[1],
+            "potion_effect": p[2],
+            "potnotes_name": n[0],
+            "potnotes_description": n[1],
+            "potnotes_effect": n[2],
+            "display_fields_match": "yes" if same else "no",
         })
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = [
+        "id",
+        "potion_name", "potion_description", "potion_effect",
+        "potnotes_name", "potnotes_description", "potnotes_effect",
+        "display_fields_match",
+    ]
     with args.output.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=["id", "name", "description", "effect", "tables_match"],
-            delimiter="\t",
-            lineterminator="\n",
-        )
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -74,12 +77,12 @@ def main() -> int:
         "potnotes_rows": len(notes),
         "union_rows": len(all_ids),
         "display_field_mismatches": len(mismatches),
-        "mismatches": mismatches,
-        "policy": "Only ID/Name/Description/Effect are audited here; recipe/control matrix columns are excluded from localization.",
+        "mismatch_ids": mismatches,
+        "policy": "POTION and POTNOTES display fields are reviewed independently; recipe/control matrix columns remain excluded from localization.",
     }
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    return 2 if mismatches else 0
+    return 0
 
 
 if __name__ == "__main__":
