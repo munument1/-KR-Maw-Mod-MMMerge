@@ -2893,10 +2893,10 @@ function nightmare()
 			Sleep(1)
 			recalculateMonsterTable()
 			recalculateMawMonster()
-			Message("Welcome to the Nightmare...\nGood luck.. you will need")
+			Message("악몽에 온 것을 환영합니다...\n행운을 빕니다... 필요할 겁니다")
 		else
 			Sleep(1)
-			Message("Difficulty reverted to Hell")
+			Message("난이도가 지옥으로 되돌아갔습니다")
 			Game.BolsterAmount=200
 			recalculateMonsterTable()
 			recalculateMawMonster()
@@ -2905,7 +2905,7 @@ function nightmare()
 	--game introduction
 	if not vars.introduction then
 		vars.introduction=true
-		Message("Greeting adventurer!\nYour journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)")
+		Message("모험가여, 환영합니다!\n여정이 곧 시작됩니다. 먼저 난이도 설정을 확인하세요. (ESC-->조작-->추가 설정(상단)-->강화 수치)")
 	end
 end
 

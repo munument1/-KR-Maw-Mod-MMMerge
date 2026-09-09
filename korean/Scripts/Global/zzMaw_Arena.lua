@@ -180,7 +180,7 @@ end
 
 function endArena(level)
 	local gold=level*20000
-	Message("Level " .. currentArenaLevel .. " completed!")
+	Message("레벨 " .. currentArenaLevel .. " 완료!")
 	evt.Add("Gold",gold)
 	vars.highestArenaWave=vars.highestArenaWave+1
 	arenaTopic()

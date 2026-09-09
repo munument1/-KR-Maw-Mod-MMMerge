@@ -44,7 +44,7 @@ function RespecSkills(npcID)
 	if id<0 then return end
 	local goldRequired=Party[id].LevelBase*1000
 	if Party.Gold<goldRequired then
-		Message("Not enough gold.")
+		Message("금화가 부족합니다.")
 		return
 	else
 		Party.Gold=Party.Gold-goldRequired
@@ -121,7 +121,7 @@ function RespecSkills(npcID)
 	if p.SkillPoints < shouldBeRefundedAmount then
 		p.SkillPoints = shouldBeRefundedAmount
 	end
-	Message("Your skill points has been reset!")
+	Message("기술 포인트가 초기화되었습니다!")
 end
 
 function respecMastery(id)

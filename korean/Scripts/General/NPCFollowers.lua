@@ -247,7 +247,7 @@ local function HireNPC()
 		if ProfSet then
 			if Party.Gold < ProfSet.Cost or (vars.Mode==2 and GetCurrentHouse()~=1466 and GetCurrentHouse()~=1486) then
 				if vars.Mode==2  and GetCurrentHouse()~=1466 and GetCurrentHouse()~=1486 then
-					Message("I wouldn't join in your reckless adventure, not even for all the wealth in the world.")
+					Message("그 무모한 모험에는 세상의 모든 부를 준다 해도 함께하지 않겠소.")
 				else
 					Message(Game.GlobalTxt[155])
 				end

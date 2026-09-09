@@ -8,8 +8,8 @@
   "matched_sources": 781,
   "exact_single_translation": 721,
   "ambiguous_multiple_translations": 60,
-  "safe_exact_patchable_sources": 58,
-  "safe_exact_patchable_occurrences": 69,
+  "safe_exact_patchable_sources": 59,
+  "safe_exact_patchable_occurrences": 70,
   "safe_exact_by_category": {
     "class": 3,
     "item": 21,
@@ -18,7 +18,7 @@
     "monster": 10,
     "skill": 7,
     "spell": 5,
-    "table": 4,
+    "table": 5,
     "tooltip": 3
   },
   "placeholder_mismatch_rejected": 0,

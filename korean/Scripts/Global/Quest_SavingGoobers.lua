@@ -646,9 +646,9 @@ NPCTopic{
 	Ungive	= function()
 		if TakeItemFromParty(219) or TakeItemFromParty(1021) then
 			QSet.TeleCharged = true
-			Message("Charged. Insert request.")
+			Message("충전 완료. 요청을 입력하십시오.")
 		else
-			Message("*You don't have any philosopher stone to charge the telelocator.*")
+			Message("*텔레로케이터를 충전할 철학자의 돌이 없습니다.*")
 		end
 	end
 }
@@ -705,7 +705,7 @@ local function TelelocateItem()
 	Answer = Question("데이터를 입력하세요.")
 
 	if string.len(Answer) < 3 then
-		Message("Re-record: enter the data.")
+		Message("재기록: 데이터를 입력하십시오.")
 		return
 	end
 
@@ -718,7 +718,7 @@ local function TelelocateItem()
 	end
 
 	if not next(ItemsMatch) then
-		Message("Re-record: unable to locate.")
+		Message("재기록: 위치를 찾을 수 없습니다.")
 		return
 	end
 
@@ -747,7 +747,7 @@ local function TelelocateItem()
 	end
 
 	if #Messages == 0 then
-		Message("Re-record: unable to locate.")
+		Message("재기록: 위치를 찾을 수 없습니다.")
 		return
 	end
 
@@ -763,7 +763,7 @@ local function TelelocateNPC()
 	Answer = Question("데이터를 입력하세요.")
 
 	if string.len(Answer) < 3 then
-		Message("Re-record: enter the data.")
+		Message("재기록: 데이터를 입력하십시오.")
 		return
 	end
 
@@ -775,7 +775,7 @@ local function TelelocateNPC()
 	end
 
 	if not FoundId or Found.House == 0 then
-		Message("Re-record: unable to locate.")
+		Message("재기록: 위치를 찾을 수 없습니다.")
 		return
 	end
 
@@ -815,7 +815,7 @@ local function TelelocateMon()
 	Answer = Question("데이터를 입력하세요.")
 
 	if string.len(Answer) < 3 then
-		Message("Re-record: enter the data.")
+		Message("재기록: 데이터를 입력하십시오.")
 		return
 	end
 
@@ -827,7 +827,7 @@ local function TelelocateMon()
 	end
 
 	if not Found or not vars.LastMonsterLocation[FoundId] then
-		Message("Re-record: unable to locate.")
+		Message("재기록: 위치를 찾을 수 없습니다.")
 		return
 	end
 

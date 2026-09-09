@@ -380,14 +380,14 @@ function events.BuildStatInformationBox(t)
 	if t.Stat==0 then
 		i=Game.CurrentPlayer
 		might=Party[i]:GetMight()
-		t.Text=string.format("%s\n\nBonus Melee/Bow Damage: %s%s",Game.StatsDescriptions[0],might/10,"%")
+		t.Text=string.format("%s\n\n근접/활 추가 피해: %s%s",Game.StatsDescriptions[0],might/10,"%")
 	end
 	if t.Stat==1 then
 		i=Game.CurrentPlayer
 		intellect=Party[i]:GetIntellect()
 		_,critDmg=getCritInfo(Party[i],"spell")
 		local baseText="지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.\n주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."
-		t.Text=string.format("%s\n\nBonus magic damage: %s%s\n\nCritical spell strike damage: %s%s",baseText,intellect/10,"%",critDmg*100-100,"%")
+		t.Text=string.format("%s\n\n추가 마법 피해: %s%s\n\n주문 치명타 피해: %s%s",baseText,intellect/10,"%",critDmg*100-100,"%")
 	end
 	if t.Stat==2 then
 		i=Game.CurrentPlayer
@@ -398,20 +398,20 @@ function events.BuildStatInformationBox(t)
 		local spellCostReduction = round((1-getPersonalityManaCostReduction(Party[i]))*1000)/10
 		local healingBonus = round(personality/math.min(1000+level*3, 4000)*1000)/10
 		local baseText="인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다."
-		t.Text=string.format("%s\n\nBonus healing: %s%s\n\nSpell cost reduction: %s%s\n\nIncrease the mana by 2 levels worth of mana per 5 personality",baseText,healingBonus,"%",spellCostReduction,"%")
+		t.Text=string.format("%s\n\n추가 치유량: %s%s\n\n주문 비용 감소: %s%s\n\n인격 5마다 2레벨 분량의 마나 증가",baseText,healingBonus,"%",spellCostReduction,"%")
 	end
 	if t.Stat==3 then
 		i=Game.CurrentPlayer
 		endurance=Party[i]:GetEndurance()
 		HPScaling=Game.Classes.HPFactor[Party[i].Class]
 		level=Party[i]:GetLevel()
-		t.Text=string.format("%s\n\nHealth bonus from Endurance: %s%s\n\nFlat HP bonus from Endurance: %s",Game.StatsDescriptions[3],endurance/10,"%",math.floor(endurance/5)*HPScaling)
+		t.Text=string.format("%s\n\n지구력으로 얻는 생명력 보너스: %s%s\n\n지구력으로 얻는 고정 생명력 보너스: %s",Game.StatsDescriptions[3],endurance/10,"%",math.floor(endurance/5)*HPScaling)
 	end
 	if t.Stat==4 then
 		i=Game.CurrentPlayer
 		accuracy=Party[i]:GetAccuracy()
 		_,critDmg=getCritInfo(Party[i])
-		t.Text=string.format("%s\n\nCritical melee and bow strike damage bonus: %s%s",Game.StatsDescriptions[4],critDmg*100-100,"%")
+		t.Text=string.format("%s\n\n근접 및 활 치명타 피해 보너스: %s%s",Game.StatsDescriptions[4],critDmg*100-100,"%")
 	end
 	if t.Stat==5 then
 		i=Game.CurrentPlayer
@@ -421,7 +421,7 @@ function events.BuildStatInformationBox(t)
 		if Mas == 4 and Game.CharacterPortraits[pl.Face].Race~=const.Race.Dragon then
 			dodging=Skill+10
 			dodgeChance=1-1/(1+dodging/200)
-			t.Text=string.format("%s\n\nDodge chance: %s%%",Game.StatsDescriptions[5],math.floor(dodgeChance*1000)/10)
+			t.Text=string.format("%s\n\n회피 확률: %s%%",Game.StatsDescriptions[5],math.floor(dodgeChance*1000)/10)
 		end
 		--spell haste
 		speed=Party[i]:GetSpeed()
@@ -436,7 +436,7 @@ function events.BuildStatInformationBox(t)
 		--bow haste
 		delay=Party[i]:GetAttackDelay(true)
 		bowHaste=bonusSpeed
-		t.Text=string.format("%s\n\nMelee Haste:   %s%%\nRanged Haste: %s%%\nSpell Haste:   %s%%",t.Text,meleeHaste,bowHaste,spellSpeedEffect)
+		t.Text=string.format("%s\n\n근접 가속:   %s%%\n원거리 가속: %s%%\n주문 가속:   %s%%",t.Text,meleeHaste,bowHaste,spellSpeedEffect)
 	end
 	if t.Stat==6 then
 		local i=Game.CurrentPlayer
@@ -446,10 +446,10 @@ function events.BuildStatInformationBox(t)
 		end
 		local critChance=round(getCritInfo(Party[i], "ranged",lvl)*10000)/100
 		local daggerCritBonus=round(getCritInfo(Party[i],false,lvl)*10000)/100
-		t.Text=string.format("%s\n\nCritical strike chance: %s%%",Game.StatsDescriptions[6],critChance)
+		t.Text=string.format("%s\n\n치명타 확률: %s%%",Game.StatsDescriptions[6],critChance)
 		daggerBonus=daggerCritBonus~=critChance
 		if daggerBonus then
-			t.Text=string.format("%s\n\nCritical strike chance: %s%%(%s%% with dagger)",Game.StatsDescriptions[6],critChance, daggerCritBonus)
+			t.Text=string.format("%s\n\n치명타 확률: %s%% (단검 사용 시 %s%%)",Game.StatsDescriptions[6],critChance, daggerCritBonus)
 		end
 	end
 	if t.Stat==7 then
@@ -577,7 +577,7 @@ function events.BuildStatInformationBox(t)
 		local damage= vars.damageTrackRanged[Party[Game.CurrentPlayer]:GetIndex()] or 0
 		t.Text=string.format("%s\n총 원거리 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 
-        t.Text = string.format("%s\n\nTotal percentage, Melee/Ranged/Total:", t.Text)
+        t.Text = string.format("%s\n\n전체 보정치, 근접/원거리/합계:", t.Text)
 		local total_map_damage_m = 0
 		local total_map_damage_r = 0                
 		local player_damage_m = {}
@@ -616,7 +616,7 @@ function events.BuildStatInformationBox(t)
 		t.Text = t.Text .. "\n\n전체 회복 집계:\n총 회복량:  " .. StrColor(0,255,0,vars.healingDone[id]) .. "\n총 재생 회복량: " .. StrColor(0,255,0,vars.regenerationHeal[id]) .. "\n총 흡혈 회복량: " .. StrColor(0,255,0,vars.leechDone[id])
 		
 		--matrix
-		t.Text = t.Text .. "\n\nTotal percentage, Heal/Regen/Leech/Total:"
+		t.Text = t.Text .. "\n\n전체 보정치, 치유/재생/흡수/합계:"
 
 		--totals
 		local tot1=0
@@ -642,7 +642,7 @@ function events.BuildStatInformationBox(t)
 			round(100 * (vars.healingDone[id]+vars.regenerationHeal[id]+vars.leechDone[id]) / tot4),' %')
         end
 		
-		t.Text = t.Text .. "\n\nOnly healing done when monsters are in the nearbies is counted" 
+		t.Text = t.Text .. "\n\n주변에 몬스터가 있을 때 행한 치유만 집계됩니다" 
 		
 	end
 	
@@ -671,7 +671,7 @@ function events.BuildStatInformationBox(t)
 		local damage= mapvars.damageTrackRanged[Party[Game.CurrentPlayer]:GetIndex()] or 0
 		t.Text=string.format("%s\n현재 맵 원거리 피해량: %s",t.Text,StrColor(255,255,100,round(damage)))
 
-            	t.Text = string.format("%s\n\nMap percentage, Melee/Ranged/Total:", t.Text)
+            	t.Text = string.format("%s\n\n지도 보정치, 근접/원거리/합계:", t.Text)
 		local total_map_damage_m = 0
 		local total_map_damage_r = 0                
 		local player_damage_m = {}
@@ -711,7 +711,7 @@ function events.BuildStatInformationBox(t)
 		t.Text = t.Text .. "\n\n현재 맵 회복 집계:\n현재 맵 총 회복량:  " .. StrColor(0,255,0,mapvars.healingDone[id]) .. "\n현재 맵 재생 회복량: " .. StrColor(0,255,0,mapvars.regenerationHeal[id]) .. "\n현재 맵 흡혈 회복량: " .. StrColor(0,255,0,mapvars.leechDone[id])
 		
 		--matrix
-		t.Text = t.Text .. "\n\nMap percentage, Heal/Regen/Leech/Total:"
+		t.Text = t.Text .. "\n\n지도 보정치, 치유/재생/흡수/합계:"
 
 		--totals
 		local tot1=0
@@ -736,11 +736,11 @@ function events.BuildStatInformationBox(t)
 			round(100 * mapvars.leechDone[id] / tot3),'/',
 			round(100 * (mapvars.healingDone[id]+mapvars.regenerationHeal[id]+mapvars.leechDone[id]) / tot4),' %')
         end
-		t.Text = t.Text .. "\n\nOnly healing done when monsters are in the nearbies is counted" 
+		t.Text = t.Text .. "\n\n주변에 몬스터가 있을 때 행한 치유만 집계됩니다" 
 	end
 	
 	if t.Stat>=19 and t.Stat<=24 then
-		t.Text=t.Text .. "\n\nDamage is reduced by an amount equal to % shown.\n\nLight resistance is equal to the lowest between Mind and Body resistances.\nDark resistance is equal to the lowest between elemental resistances.\nEnergy resistance is equal to the lowest resistance."
+		t.Text=t.Text .. "\n\n표시된 % 수치만큼 피해가 감소합니다.\n\n빛 저항은 정신 저항과 육체 저항 중 낮은 값과 같습니다.\n어둠 저항은 원소 저항 중 가장 낮은 값과 같습니다.\n에너지 저항은 모든 저항 중 가장 낮은 값과 같습니다."
 	end
 end
 

@@ -133,9 +133,11 @@ maw-0c5e39bde9d5	translated	item	"
 Current AC from items: "	"
 
 아이템으로 얻는 현재 방어력: "		Scripts/General/zzMAW-Skills.lua	597	1	스킬 설명
-maw-4b6f075b0000	untranslated	item	"
+maw-4b6f075b0000	translated	item	"
 
-Item Bonus Power: "			Scripts/General/zzMaw-Items.lua	1839	1	
+Item Bonus Power: "	"
+
+아이템 보너스 위력: "		Scripts/General/zzMaw-Items.lua	1839	1	아이템 정보창
 maw-04e85c28a52b	translated	item	"
 
 Item Modifier:
@@ -143,15 +145,21 @@ Two Handed Weapons: "	"
 
 아이템 보정치:
 양손 무기: "		Scripts/General/zzAlchemy.lua	719	1	연금술 설명
-maw-74f707e4e26c	untranslated	item	"
+maw-74f707e4e26c	translated	item	"
 
-Level Required: "			Scripts/General/zzMaw-Items.lua	2802	1	
-maw-d2fe0a0a69aa	untranslated	item	"
+Level Required: "	"
 
-Scale with player level, up to level 550."			Scripts/General/zzMaw-Items.lua	2495	1	
-maw-82210a28ed56	untranslated	item	"
+요구 레벨: "		Scripts/General/zzMaw-Items.lua	2802	1	아이템 정보창
+maw-d2fe0a0a69aa	translated	item	"
 
-Scale with player level, up to level 900."			Scripts/General/zzMaw-Items.lua	2497	1	
+Scale with player level, up to level 550."	"
+
+플레이어 레벨에 따라 성장하며, 최대 레벨 550까지 적용됩니다."		Scripts/General/zzMaw-Items.lua	2495	1	아이템 정보창
+maw-82210a28ed56	translated	item	"
+
+Scale with player level, up to level 900."	"
+
+플레이어 레벨에 따라 성장하며, 최대 레벨 900까지 적용됩니다."		Scripts/General/zzMaw-Items.lua	2497	1	아이템 정보창
 maw-02219f4d1f51	translated	item	"
 Attack Speed: "	"
 공격 속도: "		Scripts/General/zzMaw-Items.lua	2552	2	아이템 정보창 공격 속도
@@ -339,9 +347,11 @@ maw-cad3f5488931	untranslated	item	ModifyItemDamage			Scripts/Core/events.lua	21
 maw-ecd1f5dff9ef	untranslated	item	MonsterDropItem			Scripts/General/ExtraEvents.lua	520	1	
 maw-b7baa1d40c4e	untranslated	item	Number			Scripts/General/zzMaw-Item-Sorter.lua	97	21	
 maw-c31a27bb2371	untranslated	item	oldLocation			Scripts/General/zzMaw-MultiBag.lua	198	1	
-maw-16526080ac01	untranslated	item	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
+maw-16526080ac01	translated	item	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
 
- Adds the following legendary power to an item:"			Scripts/General/zzAlchemy.lua	1404	1	
+ Adds the following legendary power to an item:"	"오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.
+
+다음 전설 능력을 아이템에 부여합니다:"		Scripts/General/zzAlchemy.lua	1404	1	오라클의 오브 아이템 설명
 maw-1166118ad010	untranslated	item	Overhealing reduces recovery time equal to half overhealing amount			Scripts/General/zzMaw-Items.lua	1392	1	
 maw-f637a0178b30	untranslated	item	Overhealing refunds mana			Scripts/General/zzMaw-Items.lua	1391	1	
 maw-89ff31225c5f	untranslated	item	Owner			Scripts/General/zzMaw-Item-Sorter.lua	98	6	
@@ -405,12 +415,14 @@ maw-e30bfd0c38dc	untranslated	item	stone			Scripts/General/zzMaw-Items.lua	1260	
 maw-c1988ff4c89d	translated	item	Stone and premature ageing Immunity	석화 및 조기 노화 면역		Scripts/General/zzMaw-Items.lua	1280	1	특수 아이템 효과 설명
 maw-5c17772bd576	untranslated	item	Successfully covering an ally restores 3% of your HP			Scripts/General/zzMaw-Items.lua	1379	1	
 maw-4caf562d9a79	untranslated	item	TemporaryBonus			Scripts/General/zzMaw-Item-Sorter.lua	101	7	
-maw-e326ae491ddf	untranslated	item	The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.			Scripts/General/zzAlchemy.lua	1403	1	
-maw-5218d84b844a	untranslated	item	"This Eye allows to add a Special enchant to any equipment that has already 2 base enchants
-(right-click on an item with a base enchant to use)"			Scripts/General/zzAlchemy.lua	1401	1	
-maw-4da24ed1b797	untranslated	item	"This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant
-(right-click on an item with a base enchant to use)"			Scripts/General/zzAlchemy.lua	1402	1	
-maw-ec4424ca07ba	untranslated	item	This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.			Scripts/General/zzAlchemy.lua	1421	1	
+maw-e326ae491ddf	translated	item	The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.	기억의 진주는 마법부여된 아이템에서 무작위 마법부여 하나를 지울 수 있는 힘을 지닌 신비한 아이템입니다.		Scripts/General/zzAlchemy.lua	1403	1	제작 아이템 설명
+maw-5218d84b844a	translated	item	"This Eye allows to add a Special enchant to any equipment that has already 2 base enchants
+(right-click on an item with a base enchant to use)"	"이 눈은 기본 마법부여가 이미 2개 있는 장비에 특수 마법부여를 추가할 수 있게 합니다.
+(기본 마법부여가 있는 아이템을 우클릭하여 사용)"		Scripts/General/zzAlchemy.lua	1401	1	제작 아이템 설명
+maw-4da24ed1b797	translated	item	"This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant
+(right-click on an item with a base enchant to use)"	"이 모래시계는 기본 마법부여 1개와 특수 마법부여가 있는 장비에 두 번째 기본 마법부여를 추가할 수 있게 합니다.
+(기본 마법부여가 있는 아이템을 우클릭하여 사용)"		Scripts/General/zzAlchemy.lua	1402	1	제작 아이템 설명
+maw-ec4424ca07ba	translated	item	This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.	이 아이템은 보호, 명상, 재생, 마법 보호, 챔피언, 팔라딘, 신성한 축복, 신성한 저항 물약의 사용 횟수를 늘릴 수 있게 합니다.		Scripts/General/zzAlchemy.lua	1421	1	제작 아이템 설명
 maw-a4adbda992bf	untranslated	item	Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher			Scripts/General/zzMaw-Items.lua	1387	1	
 maw-c8dd9fd68894	untranslated	item	Total corrupted items: 			Scripts/General/zzMaw-Item-Sorter.lua	732	1	
 maw-409161bbc266	untranslated	item	totalBaseHP			Scripts/General/zzMaw-Items.lua	3576	1	
@@ -2037,11 +2049,11 @@ cures 24 + 4 HP per point of skill
 기술 포인트당 생명력 24 + 4 회복
 제한 시간 1일
 "		Scripts/General/zzMaw-Spells.lua	716	1	치유 주문 숙련 설명
-maw-fa7f64b02a17	untranslated	spell	A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.			Scripts/General/zzMaw-Spells.lua	3412	1	
-maw-62e736ba86bd	untranslated	spell	A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.			Scripts/General/zzMaw-Spells.lua	3415	1	
-maw-2a8bd8b9c280	untranslated	spell	A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.			Scripts/General/zzMaw-Spells.lua	3408	1	
+maw-fa7f64b02a17	translated	spell	A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.	책장 사이에 잔잔한 빛이 머뭅니다. 영혼을 묶는 인장이 기도문을 가리고 있어, 영혼 마법에 숙련되지 않으면 글귀가 고요히 사라집니다.		Scripts/General/zzMaw-Spells.lua	3412	1	영혼 마법서 설명
+maw-62e736ba86bd	translated	spell	A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.	표지 사이로 창백한 광휘가 새어 나옵니다. 태양의 인장이 너무 밝게 타올라 읽을 수 없지만, 빛 마법에 숙련된 자에게는 빛이 잦아들며 글이 선명해집니다.		Scripts/General/zzMaw-Spells.lua	3415	1	빛 마법서 설명
+maw-2a8bd8b9c280	translated	spell	A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.	은은한 열기를 내뿜는 그을린 마도서입니다. 열기의 인장이 표지에 새겨져 있어, 화염 마법에 숙련되지 않으면 책장이 너무 뜨거워 잡을 수 없습니다.		Scripts/General/zzMaw-Spells.lua	3408	1	화염 마법서 설명
 maw-457914fa7aaf	translated	spell	Adds %s + %s HP per point of skill to the pool	기술 포인트당 생명력 풀에 %s + %s 추가	%s %s	Scripts/General/zzMaw-Spells.lua	2191	2	주문 숙련 설명
-maw-685c059c09bb	untranslated	spell	Air Magic Book			Scripts/General/zzMaw-Spells.lua	3400	1	
+maw-685c059c09bb	translated	spell	Air Magic Book	대기 마법서		Scripts/General/zzMaw-Spells.lua	3400	1	마법서 이름
 maw-2dd4c6840106	translated	spell	All spells cast at 1.5 times skill	모든 주문이 기술 수치의 1.5배로 적용됩니다		Scripts/General/zzMaw-Spells.lua	747	1	주문 숙련 설명
 maw-12a3d1a8ce31	translated	spell	All spells cast at 2 times skill	모든 주문이 기술 수치의 2배로 적용됩니다		Scripts/General/zzMaw-Spells.lua	748	1	주문 숙련 설명
 maw-247b27ca66b0	translated	spell	All stats increased by 10+1 per skill	모든 능력치가 10 + 기술 포인트당 1만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	741	1	주문 숙련 설명
@@ -2066,7 +2078,7 @@ Higher levels also grant more starting energy, ideal for high burst damage in sh
 maw-077fe9c54ed5	untranslated	spell	Base			Scripts/General/zzMaw-Items.lua	4264	33	
 maw-6feeb259c205	untranslated	spell	BaseCost			Scripts/General/zzMaw-Spells.lua	1306	13	
 maw-382da73f22da	translated	spell	Blood Leech	피 흡수		Scripts/General/zzClasses.lua	1405	1	MAW 주문명
-maw-260d8bb6cec2	untranslated	spell	Body Magic Book			Scripts/General/zzMaw-Spells.lua	3405	1	
+maw-260d8bb6cec2	translated	spell	Body Magic Book	육체 마법서		Scripts/General/zzMaw-Spells.lua	3405	1	마법서 이름
 maw-f69f233005f1	translated	spell	Book	책		Scripts/General/zzMaw-Spells.lua	3360	1	미감정 주문서 아이템 이름
 maw-72cc519ce0b0	untranslated	spell	CalcSpellDamage			Scripts/Core/events.lua	279	1	
 maw-5df90c8dfc70	untranslated	spell	CanLearnSpell			Scripts/Core/events.lua	2070	1	
@@ -2081,8 +2093,8 @@ maw-ed4b8cc4289e	translated	spell	Cures %s + %s HP per point of skill	기술 포
 maw-41323a186eba	translated	spell	Damage Increased to 	피해량: 		Scripts/General/zzClasses.lua	1379	1	연결형 주문 피해 설명
 maw-a8f9635f4b28	translated	spell	Damage increased to 	피해량: 		Scripts/General/zzClasses.lua	1423	2	연결형 주문 피해 설명
 maw-f1d72e76b5c8	untranslated	spell	DamageKind			Scripts/General/zzMaw-Spells.lua	1307	12	
-maw-ae9008ed3698	untranslated	spell	Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.			Scripts/General/zzMaw-Spells.lua	3410	1	
-maw-8955fcd1e6c2	untranslated	spell	Dark Magic Book			Scripts/General/zzMaw-Spells.lua	3407	1	
+maw-ae9008ed3698	translated	spell	Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.	잉크가 물결처럼 일렁이는 축축한 양피지입니다. 물의 결계가 모든 글자를 물방울로 녹여 버리지만, 물 마법에 숙련된 자라면 다시 글자를 불러낼 수 있습니다.		Scripts/General/zzMaw-Spells.lua	3410	1	물 마법서 설명
+maw-8955fcd1e6c2	translated	spell	Dark Magic Book	어둠 마법서		Scripts/General/zzMaw-Spells.lua	3407	1	마법서 이름
 maw-b8b86d3aa45b	translated	spell	Deals damage equal to 	피해량: 		Scripts/General/zzClasses.lua	1377	4	연결형 주문 피해 설명
 maw-59ce8a66facd	translated	spell	Deals damage equal to 100% of breath damage	숨결 피해의 100%만큼 피해		Scripts/General/zzClasses.lua	480	1	주문 숙련 설명
 maw-b57a69a618e6	translated	spell	Deals damage equal to 70% of breath damage	숨결 피해의 70%만큼 피해		Scripts/General/zzClasses.lua	478	1	주문 숙련 설명
@@ -2105,7 +2117,7 @@ maw-320bc2070e43	translated	spell	Duration 30+3 minutes per point of skill	지�
 maw-3d968ea88d37	translated	spell	Duration: %.1f seconds	지속시간: %.1f초	%.1f	Scripts/General/zzMaw-Spells.lua	2003	4	주문 지속시간
 maw-8a5fd00c1695	translated	spell	Each hit deals damage equal to 	타격당 피해량: 		Scripts/General/zzClasses.lua	1396	1	연결형 주문 피해 설명
 maw-44d476274f1e	untranslated	spell	earth			Scripts/General/zzMaw-Spells.lua	3355	1	
-maw-4b580a9a8212	untranslated	spell	Earth Magic Book			Scripts/General/zzMaw-Spells.lua	3402	1	
+maw-4b580a9a8212	translated	spell	Earth Magic Book	대지 마법서		Scripts/General/zzMaw-Spells.lua	3402	1	마법서 이름
 maw-29b59ba836d1	translated	spell	Effect is now passive	이제 효과가 지속 효과로 적용됩니다		Scripts/General/zzMaw-Spells.lua	737	1	주문 숙련 설명
 maw-a6e1d9fa2b6b	translated	spell	Effects vary per spell	효과는 주문마다 다릅니다		Scripts/General/zzClasses.lua	443	7	주문 숙련 공통 설명
 maw-52396a9d6c9e	translated	spell	"Effects vary per spell 
@@ -2123,10 +2135,10 @@ maw-628b389433d7	translated	spell	"Elementalists learn new spells with practice 
 Progress toward learning "	"원소술사는 책 대신 실전을 통해 새로운 주문을 익힙니다.
 
 다음 주문 습득 진행도: "		Scripts/General/zzClasses.lua	1804	1	원소술사 주문 학습 설명 조각
-maw-151a59608f88	untranslated	spell	Empower Magic			Scripts/General/zzMaw-Spells.lua	3013	1	
+maw-151a59608f88	translated	spell	Empower Magic	마법 강화		Scripts/General/zzMaw-Spells.lua	3013	1	주문 이름
 maw-d7a501f83242	untranslated	spell	Expert			Scripts/General/zzClasses.lua	1356	4	
-maw-2d9b9235fd08	untranslated	spell	Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.			Scripts/General/zzMaw-Spells.lua	3409	1	
-maw-6db9b21ef9ea	untranslated	spell	Fire Magic Book			Scripts/General/zzMaw-Spells.lua	3399	1	
+maw-2d9b9235fd08	translated	spell	Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	깃털처럼 가벼운 책장에서 정전기가 웅웅거립니다. 소용돌이치는 대기의 인장이 글줄을 바람에 흩뜨리지만, 대기 마법에 숙련된 자에게는 다시 제자리를 찾습니다.		Scripts/General/zzMaw-Spells.lua	3409	1	대기 마법서 설명
+maw-6db9b21ef9ea	translated	spell	Fire Magic Book	화염 마법서		Scripts/General/zzMaw-Spells.lua	3399	1	마법서 이름
 maw-58f60e582d1c	translated	spell	Frostbite	동상		Scripts/General/zzClasses.lua	1384	1	MAW 주문명
 maw-1fb2f39c778c	untranslated	spell	GetSpellSkill			Scripts/General/ExtraEvents.lua	503	1	
 maw-a66864f45a5a	untranslated	spell	GM			Scripts/General/zzClasses.lua	1358	3	
@@ -2149,7 +2161,7 @@ Require 20 power to work.
 작동하려면 위력 20이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	479	1	물약 효과 툴팁
 maw-9924ac014435	untranslated	spell	HealingSpellPower			Scripts/General/zzMaw-Spells.lua	958	1	
-maw-a81d65fc7582	untranslated	spell	Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.			Scripts/General/zzMaw-Spells.lua	3411	1	
+maw-a81d65fc7582	translated	spell	Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.	채석한 바위처럼 무겁고 책등에는 모래가 가득합니다. 돌의 인장이 글을 짓눌러 보이지 않게 하지만, 대지 마법에 조율된 자에게는 읽을 수 있는 돋을새김으로 떠오릅니다.		Scripts/General/zzMaw-Spells.lua	3411	1	대지 마법서 설명
 maw-81879b13e55a	translated	spell	Ice Bomb	얼음 폭탄		Scripts/General/zzClasses.lua	1392	1	MAW 주문명
 maw-c7db2e9edfcd	translated	spell	Icy Touch	얼음의 손길		Scripts/General/zzClasses.lua	1375	1	MAW 주문명
 maw-31010d130c93	translated	spell	Increases damage by 10 plus 1 per skill point	피해량이 10 + 기술 포인트당 1만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	721	1	주문 숙련 설명
@@ -2159,21 +2171,21 @@ maw-a36128b8bdaf	untranslated	spell	Increases spell damage and healing at the ex
 maw-bcea47734e3b	translated	spell	"Increases spell damage and healing at the expense of higher mana cost and cast time.
 "	"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.
 "		Scripts/General/zzMAW-Skills.lua	1463	1	승천 기술 설명
-maw-df83636b672f	untranslated	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.			Scripts/General/zzMaw-Spells.lua	3416	1	
+maw-df83636b672f	translated	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	횃불빛마저 삼키는 밤의 웅덩이 같은 잉크입니다. 그림자의 결계가 글줄을 집어삼키며, 어둠 마법에 숙련된 독자에게만 글을 드러냅니다.		Scripts/General/zzMaw-Spells.lua	3416	1	어둠 마법서 설명
 maw-e0f25f1d61cb	translated	spell	Insanity	광기		Scripts/General/zzMaw-Monsters.lua	3846	1	몬스터 정보창 상태명
 maw-a47e171274de	untranslated	spell	jge absolute 0x42735B			Scripts/General/SpellsTweaks.lua	115	1	
 maw-6b1f8ea0c3ce	translated	spell	Leech amount increased by 50%	흡수량 50% 증가		Scripts/General/zzClasses.lua	1431	1	주문 숙련 설명
 maw-790ca77669c6	translated	spell	Leeches 	생명력 흡수: 		Scripts/General/zzClasses.lua	1407	5	연결형 흡혈 설명
 maw-dfccc06f1441	untranslated	spell	light			Scripts/General/zzMaw-Spells.lua	3355	1	
-maw-4a97653f1cb6	untranslated	spell	Light Magic Book			Scripts/General/zzMaw-Spells.lua	3406	1	
-maw-79f0d3d89615	untranslated	spell	Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.			Scripts/General/zzMaw-Spells.lua	3413	1	
+maw-4a97653f1cb6	translated	spell	Light Magic Book	빛 마법서		Scripts/General/zzMaw-Spells.lua	3406	1	마법서 이름
+maw-79f0d3d89615	translated	spell	Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.	여백을 빽빽하게 채운 문양이 스스로 순서를 바꿉니다. 사고의 자물쇠가 글을 수수께끼처럼 뒤섞지만, 정신 마법을 익힌 자라면 올바르게 정렬할 수 있습니다.		Scripts/General/zzMaw-Spells.lua	3413	1	정신 마법서 설명
 maw-78f3842f0201	untranslated	spell	Master			Data/Tables/Class Extra.txt	26	8	
 maw-d42a1814d6b6	translated	spell	"Melee Power: %s
 Ranged Power: %s
 Spell Power: %s"	"근접 위력: %s
 원거리 위력: %s
 주문 위력: %s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	521	1	전투 능력치; 자리표시자 보존
-maw-3c9b44ede5e6	untranslated	spell	Mind Magic Book			Scripts/General/zzMaw-Spells.lua	3404	1	
+maw-3c9b44ede5e6	translated	spell	Mind Magic Book	정신 마법서		Scripts/General/zzMaw-Spells.lua	3404	1	마법서 이름
 maw-0649982d2fdb	translated	spell	Monster looses the ability to deal ranged damage	몬스터가 원거리 공격 능력을 잃습니다		Scripts/General/zzClasses.lua	1438	1	주문 숙련 설명; 원문 오탈자
 maw-d25cbef0630c	translated	spell	Monster slows by 1/2 of speed	몬스터의 속도가 50% 감소합니다		Scripts/General/zzClasses.lua	1378	1	주문 숙련 설명
 maw-460675295db9	translated	spell	Monster slows by 1/4 of speed	몬스터의 속도가 25% 감소합니다		Scripts/General/zzClasses.lua	1380	1	주문 숙련 설명
@@ -2230,19 +2242,19 @@ maw-2cb9ecbb3f26	untranslated	spell	SpellPointsNormal			Data/Tables/Spells2.txt	
 maw-f2cbd9ebed77	untranslated	spell	SpellSecond			Scripts/Structs/extraEditableDescriptions.lua	553	1	
 maw-e2231a88184b	untranslated	spell	SpellSkill			Scripts/General/AdaptiveMonstersStats.lua	732	4	
 maw-b40d51318efc	untranslated	spell	spirit			Scripts/General/zzMaw-Spells.lua	3355	1	
-maw-493fda54af1e	untranslated	spell	Spirit Magic Book			Scripts/General/zzMaw-Spells.lua	3403	1	
+maw-493fda54af1e	translated	spell	Spirit Magic Book	영혼 마법서		Scripts/General/zzMaw-Spells.lua	3403	1	마법서 이름
 maw-ecb252044b5e	untranslated	spell	string			Scripts/General/zzMaw-Items.lua	2478	10	
 maw-f777d89464c8	translated	spell	Superior Blood Leech	상급 피 흡수		Scripts/General/zzClasses.lua	1413	1	MAW 주문명
 maw-c3ee137d4f22	untranslated	spell	table			Scripts/General/AdaptiveMonstersStats.lua	674	23	
 maw-825e2643a3e6	untranslated	spell	TargetIndex			Scripts/General/zzMaw-Spells.lua	65	2	
 maw-cf6173037914	untranslated	spell	TargetRosterId			Scripts/General/zzMaw-Spells.lua	65	1	
 maw-5e83789be88e	untranslated	spell	Temple			Scripts/General/zzMaw-Spells.lua	2449	5	
-maw-d892a797ad07	untranslated	spell	Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.			Scripts/General/zzMaw-Spells.lua	3414	1	
+maw-d892a797ad07	translated	spell	Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.	약초 향이 나는 두꺼운 양피지가 맥박에 맞춰 따뜻해집니다. 활력의 결계가 책장을 뻣뻣하게 굳혀 두었지만, 육체 마법 수행자의 안정된 손길에는 부드럽게 풀립니다.		Scripts/General/zzMaw-Spells.lua	3414	1	육체 마법서 설명
 maw-8f4074b5271e	translated	spell	This spell is as good as it will ever be!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzClasses.lua	1446	1	주문 숙련 설명
 maw-134fe9c4cffb	translated	spell	This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!		Scripts/General/zzMaw-Spells.lua	3300	1	주문 숙련 설명
-maw-5620c14ea2e7	untranslated	spell	Vampiric Aura			Scripts/General/zzMaw-Spells.lua	3088	1	
+maw-5620c14ea2e7	translated	spell	Vampiric Aura	흡혈의 오라		Scripts/General/zzMaw-Spells.lua	3088	1	주문 이름
 maw-6d5a45920a15	untranslated	spell	water			Scripts/General/zzMaw-Spells.lua	3355	1	
-maw-fe2775bc4c97	untranslated	spell	Water Magic Book			Scripts/General/zzMaw-Spells.lua	3401	1	
+maw-fe2775bc4c97	translated	spell	Water Magic Book	물 마법서		Scripts/General/zzMaw-Spells.lua	3401	1	마법서 이름
 maw-9b5f2d931fc6	untranslated	status	"
 
 Realms: Detached. Time: Detached."			Scripts/Global/Quest_SavingGoobers.lua	754	1	
@@ -2253,7 +2265,7 @@ Subsequent spawn failure reasons:
 maw-116f9bc229a5	excluded	status	"
 Couldn't spawn monster, spawnpoint data: "			Scripts/General/pseudoSpawnpoint.lua	105	1	개발자 스폰 디버그 출력
 maw-9523822c36a5	translated	status	  heals 	 → 		Scripts/General/zzMaw-Spells.lua	339	1	회복 메시지 조각; 한국어 조사 회피
-maw-83210be9c55c	untranslated	status	 completed!			Scripts/Global/zzMaw_Arena.lua	183	1	
+maw-83210be9c55c	translated	status	 completed!	 완료!		Scripts/Global/zzMaw_Arena.lua	183	1	아레나 완료 메시지 조각
 maw-3e76c5b3ed49	translated	status	 cover 	 → 엄호: 		Scripts/General/zzMaw-Monsters.lua	4118	1	엄호 상태 메시지 조각
 maw-fd8e8ff426be	translated	status	 crafting items	개의 제작 재료		Scripts/General/zzMaw-Monsters.lua	4592	2	순간이동 상태 메시지 조각
 maw-1c6180498e43	translated	status	 Exp, 	 경험치, 		Scripts/General/zzMaw-Monsters.lua	2852	2	맵 완료 보상 메시지 조각
@@ -2295,7 +2307,7 @@ maw-81c7c4f4c524	translated	status	's bags sorted	의 모든 가방		Scripts/Gen
 maw-1c76438aa9fa	untranslated	status	's item from the bag 			Scripts/General/zzMaw-MultiBag.lua	271	1	
 maw-ad5e80d26499	translated	status	(CRIT!)	(치명타!)		Scripts/Global/zzMAWStatusMsg.lua	231	1	전투 상태 메시지
 maw-ee152071e0dd	translated	status	*Swap*	*교대*		Scripts/General/zzMaw-Monsters.lua	3320	3	전투 상태 메시지
-maw-5e9d8c2fe7f3	untranslated	status	*You don't have any philosopher stone to charge the telelocator.*			Scripts/Global/Quest_SavingGoobers.lua	651	1	
+maw-5e9d8c2fe7f3	translated	status	*You don't have any philosopher stone to charge the telelocator.*	*텔레로케이터를 충전할 철학자의 돌이 없습니다.*		Scripts/Global/Quest_SavingGoobers.lua	651	1	메시지
 maw-01815df34c43	translated	status	+50 Fire Resistance temporary.	일시적으로 화염 저항 +50.		Scripts/Maps/7out01.lua	38	1	맵 상태 메시지
 maw-2b02e98e2e21	translated	status	Access have been destroyed	접근로가 파괴되었습니다		Scripts/Maps/outb3.lua	60	1	맵 상태 메시지
 maw-255db94bd445	translated	status	All 	정렬 완료: 		Scripts/General/zzMaw-Item-Sorter.lua	441	2	가방 정렬 메시지 조각
@@ -2327,13 +2339,13 @@ maw-f937820aa844	translated	status	Buff Disabled	버프 비활성화		Scripts/Ge
 maw-77695d57f84e	translated	status	Can't benefit anymore	더 이상 효과를 받을 수 없습니다		Scripts/General/zzAlchemy.lua	214	1	물약 상태 메시지
 maw-6b0adda8fe34	translated	status	Can't teleport now	지금은 순간이동할 수 없습니다		Scripts/General/zzMaw-Monsters.lua	2301	1	순간이동 상태 메시지
 maw-d028c57c59d4	translated	status	Charge has %s seconds of cooldown	돌진 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	762	1	기술 재사용 대기시간
-maw-3aecc9ff257a	untranslated	status	Charged. Insert request.			Scripts/Global/Quest_SavingGoobers.lua	649	1	
+maw-3aecc9ff257a	translated	status	Charged. Insert request.	충전 완료. 요청을 입력하십시오.		Scripts/Global/Quest_SavingGoobers.lua	649	1	메시지
 maw-0935b8f432c1	translated	status	Convert %s into %s? (U)	%s을(를) %s(으)로 변환하시겠습니까? (U)	%s %s	Scripts/General/zzMaw-Items.lua	4626	1	제작 변환 안내
 maw-508ef1cfc231	translated	status	Cover Disabled	엄호 비활성화		Scripts/General/zzMAW-Skills.lua	2144	1	전투 기술 상태 메시지
 maw-4c5ac167956e	translated	status	Cover Enabled	엄호 활성화		Scripts/General/zzMAW-Skills.lua	2147	1	전투 기술 상태 메시지
 maw-97b1074f4957	translated	status	Current map data reset.	현재 맵 데이터를 초기화했습니다.		Scripts/General/zzMaw-Stats.lua	46	1	맵 데이터 상태 메시지
 maw-75a2d72a0afc	translated	status	Curse Immunity	저주 면역		Scripts/General/zzAlchemy.lua	358	1	물약 효과 상태 메시지
-maw-38c79a160346	untranslated	status	Difficulty reverted to Hell			Scripts/General/zzMaw-Monsters.lua	2904	1	
+maw-38c79a160346	translated	status	Difficulty reverted to Hell	난이도가 지옥으로 되돌아갔습니다		Scripts/General/zzMaw-Monsters.lua	2904	1	메시지
 maw-885ce4e680cf	translated	status	Disease Immunity	질병 면역		Scripts/General/zzAlchemy.lua	383	1	물약 효과 상태 메시지
 maw-7a110a507d2d	translated	status	Disintegrated	소멸됨		Scripts/Global/zzMaw_Legendaries.lua	319	1	전투 상태 메시지
 maw-2654e90703c0	translated	status	Divine Protection saves you from lethal damage	신성한 보호가 치명적인 피해로부터 당신을 구했습니다		Scripts/Global/zzMaw_Legendaries.lua	293	1	전투 상태 메시지
@@ -2352,12 +2364,13 @@ maw-ab95ede4f854	translated	status	Fly is allowed without restrictions here	이�
 maw-210116f7c9cc	translated	status	Forced Sleep Immunity	강제 수면 면역		Scripts/General/zzAlchemy.lua	368	1	물약 효과 상태 메시지
 maw-f83016e2daac	translated	status	Gem power is not enough	보석의 힘이 부족합니다		Scripts/General/zzAlchemy.lua	856	1	제작 상태 메시지
 maw-9885872b58bc	translated	status	Goblin Reinforcements	고블린 증원군		Scripts/Maps/7out02.lua	109	1	맵 이벤트 메시지
-maw-28907fb4d447	untranslated	status	"Greeting adventurer!
-Your journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)"			Scripts/General/zzMaw-Monsters.lua	2913	1	
+maw-28907fb4d447	translated	status	"Greeting adventurer!
+Your journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)"	"모험가여, 환영합니다!
+여정이 곧 시작됩니다. 먼저 난이도 설정을 확인하세요. (ESC-->조작-->추가 설정(상단)-->강화 수치)"		Scripts/General/zzMaw-Monsters.lua	2913	1	시작 안내 메시지
 maw-023b822ca1fe	translated	status	Health Potion has %s seconds of cooldown remaining	생명력 물약 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	828	1	물약 재사용 대기시간
 maw-04a399d6543a	translated	status	Health Potion heals for %s hit points	생명력 물약으로 생명력 %s 회복	%s	Scripts/General/zzMAW-Skills.lua	825	1	물약 회복 메시지
 maw-d5ec674f63f1	translated	status	Host saved the game.	호스트가 게임을 저장했습니다.		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	287	1	멀티플레이 상태 메시지
-maw-19b6cd329a7d	untranslated	status	I wouldn't join in your reckless adventure, not even for all the wealth in the world.			Scripts/General/NPCFollowers.lua	250	1	
+maw-19b6cd329a7d	translated	status	I wouldn't join in your reckless adventure, not even for all the wealth in the world.	그 무모한 모험에는 세상의 모든 부를 준다 해도 함께하지 않겠소.		Scripts/General/NPCFollowers.lua	250	1	동료 거절 메시지
 maw-f7b693d91fe6	translated	status	In the night the deads rise	밤이 되면 망자들이 일어납니다		Scripts/Maps/7out05.lua	35	1	맵 이벤트 메시지
 maw-6be2751cd0b7	translated	status	Insanity Immunity	광기 면역		Scripts/General/zzAlchemy.lua	373	1	물약 효과 상태 메시지
 maw-b4e6a310890f	untranslated	status	Intro			Scripts/Global/Quest_SavingGoobers.lua	131	1	
@@ -2368,9 +2381,9 @@ maw-dea8c4a3a02a	untranslated	status	IsArena			Scripts/Core/events.lua	494	1
 maw-885835a02aaa	translated	status	It's a trap!	함정이다!		Scripts/Maps/7d21.lua	7	1	맵 이벤트 메시지
 maw-1e8cb084a138	translated	status	It's an ambush!	매복이다!		Scripts/Maps/7out02.lua	79	1	맵 이벤트 메시지
 maw-c30597514ae9	translated	status	Item power reached its limit	아이템 위력이 한계에 도달했습니다		Scripts/General/zzAlchemy.lua	960	1	제작 상태 메시지
-maw-cbd62b8042da	untranslated	status	Learned 			Scripts/General/zzClasses.lua	1567	1	
+maw-cbd62b8042da	translated	status	Learned 	습득: 		Scripts/General/zzClasses.lua	1567	1	습득 메시지 조각
 maw-39248f7f1de3	translated	status	Legendary power saves you from lethal damage	전설의 힘이 치명적인 피해로부터 당신을 구했습니다		Scripts/Global/zzMaw_Legendaries.lua	274	1	전투 상태 메시지
-maw-980d5e2dd44b	untranslated	status	Level 			Scripts/Global/zzMaw_Arena.lua	183	1	
+maw-980d5e2dd44b	translated	status	Level 	레벨 		Scripts/Global/zzMaw_Arena.lua	183	1	아레나 완료 메시지 조각
 maw-6d8f726dc6ae	translated	status	Loading now will count as death, are you sure to proceed?	지금 불러오면 사망으로 처리됩니다. 계속하시겠습니까?		Scripts/General/zzMaw-Monsters.lua	2639	1	난이도 경고 메시지
 maw-3e72bdcb83db	translated	status	Madness is not a place for cowards	광기는 겁쟁이가 올 곳이 아닙니다		Scripts/General/zzMaw-Spells.lua	3476	1	난이도 상태 메시지
 maw-9c709d615601	translated	status	Mana Potion has %s seconds of cooldown remaining	마나 물약 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	870	1	물약 재사용 대기시간
@@ -2390,7 +2403,7 @@ maw-33e71e1ad40f	untranslated	status	No saving on the Arena			Scripts/Core/event
 maw-08d096c3cbf9	translated	status	Noises from the throne room	왕좌실에서 소리가 들려옵니다		Scripts/Maps/7d29.lua	50	1	맵 이벤트 메시지
 maw-9a6a729b83ce	translated	status	Not enough disarm skill	함정 해제 기술이 부족합니다		Scripts/General/zzMaw-Items.lua	4525	1	아이템 상태 메시지
 maw-a7d5cacc3245	translated	status	Not enough food	식량이 부족합니다		Scripts/General/zzMaw-Monsters.lua	2268	1	게임 상태 메시지
-maw-6ab22af4436d	untranslated	status	Not enough gold.			Scripts/Global/zzMAWRespec.lua	47	1	
+maw-6ab22af4436d	translated	status	Not enough gold.	금화가 부족합니다.		Scripts/Global/zzMAWRespec.lua	47	1	메시지
 maw-1a4d4c0b8c42	translated	status	Not enough Hit Points	생명력이 부족합니다		Scripts/General/zzMaw-Spells.lua	2632	1	주문 상태 메시지
 maw-93a4358c0a88	translated	status	Not enough Mana	마나가 부족합니다		Scripts/General/zzMaw-Spells.lua	2636	1	주문 상태 메시지
 maw-363134f009ba	untranslated	status	NotAttune			Scripts/Global/Quest_SavingGoobers.lua	407	1	
@@ -2403,12 +2416,12 @@ maw-e4afef7c21dc	translated	status	Player must be active to consume the potion	�
 maw-a3079ec1873f	translated	status	Poison Immunity	독 면역		Scripts/General/zzAlchemy.lua	378	1	물약 효과 상태 메시지
 maw-b93a0425eadd	translated	status	Press R to refresh new items (20000 gold)	새 아이템 갱신: R (20,000 금화)		Scripts/General/zzMaw-Items.lua	4371	1	상점 갱신 안내
 maw-4478c439aac4	translated	status	Queen Arrived!	여왕이 도착했습니다!		Scripts/Maps/7d21.lua	18	1	맵 이벤트 메시지
-maw-5d0d5ed9e241	untranslated	status	Re-record: enter the data.			Scripts/Global/Quest_SavingGoobers.lua	708	3	
-maw-0299bc0ae98e	untranslated	status	Re-record: unable to locate.			Scripts/Global/Quest_SavingGoobers.lua	721	4	
+maw-5d0d5ed9e241	translated	status	Re-record: enter the data.	재기록: 데이터를 입력하십시오.		Scripts/Global/Quest_SavingGoobers.lua	708	3	메시지
+maw-0299bc0ae98e	translated	status	Re-record: unable to locate.	재기록: 위치를 찾을 수 없습니다.		Scripts/Global/Quest_SavingGoobers.lua	721	4	메시지
 maw-6c771e89183d	translated	status	Refreshing!	갱신 중!		Scripts/Maps/7out01.lua	29	1	맵 이벤트 메시지
 maw-f2a00fb671f3	translated	status	Repaired	수리 완료		Scripts/General/zzMAW-Skills.lua	1150	1	수리 상태 메시지
 maw-0b2eee706f6a	translated	status	Resistance Ignored	저항 무시		Scripts/Global/zzMaw_Mapping.lua	42	1	전투 상태 메시지
-maw-07df90117f8e	untranslated	status	Seraphim aren't able to dual wield			Scripts/General/zzClasses.lua	366	1	
+maw-07df90117f8e	translated	status	Seraphim aren't able to dual wield	세라핌은 쌍수 무기를 사용할 수 없습니다		Scripts/General/zzClasses.lua	366	1	메시지
 maw-25b8069f8448	translated	status	Shared Life heals for 	생명 공유 회복량: 		Scripts/General/zzMaw-Spells.lua	820	2	회복 메시지 조각
 maw-b6e05bcb545c	translated	status	SUPREME UNLOCKED!!!	최상위 숙련 해금!!!		Scripts/General/zzMAW-Skills.lua	2725	1	최상위 숙련 해금 메시지
 maw-7694fdee9a86	translated	status	Teleported 	순간이동: 		Scripts/General/zzMaw-Monsters.lua	4590	3	순간이동 상태 메시지 조각
@@ -2418,11 +2431,12 @@ maw-73ecdec3d0ad	translated	status	This skill has reached its limit	이 기술�
 maw-ce0b6b3b08f8	translated	status	This skill is already as good as it will ever get	이 기술은 이미 최대치입니다		Scripts/General/zzMAW-Skills.lua	956	1	기술 상태 메시지
 maw-a0af80748d88	translated	status	Unconscious Immunity	의식불명 면역		Scripts/General/zzAlchemy.lua	393	1	물약 효과 상태 메시지
 maw-fdca59bb6706	untranslated	status	Unknown attack message type			Scripts/General/zzMaw-Stats.lua	1254	1	
-maw-8e9ac396678f	untranslated	status	We have no more items to trade for kegs			Scripts/Global/GLOBAL.lua	648	3	
-maw-11927a925167	untranslated	status	We have no more items to trade for pyramids			Scripts/Global/GLOBAL.lua	522	3	
+maw-8e9ac396678f	translated	status	We have no more items to trade for kegs	술통으로 교환할 아이템이 더 이상 없습니다		Scripts/Global/GLOBAL.lua	648	3	교환 메시지
+maw-11927a925167	translated	status	We have no more items to trade for pyramids	피라미드로 교환할 아이템이 더 이상 없습니다		Scripts/Global/GLOBAL.lua	522	3	교환 메시지
 maw-81dae42075db	translated	status	Weakness Immunity	쇠약 면역		Scripts/General/zzAlchemy.lua	363	1	물약 효과 상태 메시지
-maw-2a354581708a	untranslated	status	"Welcome to the Nightmare...
-Good luck.. you will need"			Scripts/General/zzMaw-Monsters.lua	2901	1	
+maw-2a354581708a	translated	status	"Welcome to the Nightmare...
+Good luck.. you will need"	"악몽에 온 것을 환영합니다...
+행운을 빕니다... 필요할 겁니다"		Scripts/General/zzMaw-Monsters.lua	2901	1	난이도 메시지
 maw-8c4450b5f678	untranslated	status	WindowMessage			Scripts/Core/events.lua	766	1	
 maw-68072d0141a4	translated	status	You found 	획득: 		Scripts/General/zzMaw-Items.lua	1118	1	아이템 필터 메시지 조각
 maw-ae4483c65ea6	translated	status	You Heal for 	회복량: 		Scripts/General/zzMaw-Spells.lua	168	10	회복 메시지 조각
@@ -2435,7 +2449,7 @@ maw-cabdafc1e8e1	translated	status	You need a key to teleport to Evenmorn Island
 maw-6fa6ba69663b	translated	status	You need a key to use this hub. Talk to Illene Farswell.	이 허브를 사용하려면 열쇠가 필요합니다. 일린 파스웰과 대화하세요.		Scripts/Maps/7out02.lua	179	1	순간이동 허브 안내
 maw-fddf50e25dc8	translated	status	You need to gain more exp. to benefit from this potion	이 물약의 효과를 받으려면 경험치를 더 쌓아야 합니다		Scripts/General/zzAlchemy.lua	255	1	물약 상태 메시지
 maw-bdc15641585b	translated	status	Your level is too low (Level 	레벨이 너무 낮습니다 (필요 레벨 		Scripts/General/zzAlchemy.lua	841	2	필요 레벨 메시지 조각
-maw-58716be0dfb5	untranslated	status	Your skill points has been reset!			Scripts/Global/zzMAWRespec.lua	124	1	
+maw-58716be0dfb5	translated	status	Your skill points has been reset!	기술 포인트가 초기화되었습니다!		Scripts/Global/zzMAWRespec.lua	124	1	초기화 메시지
 maw-4ec5bd32dcb4	excluded	table	'Rules' text index			Data/Tables/House rules.txt	373	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-4287bda2092f	excluded	table	+ add			Data/Tables/Class Starting Stats.txt	3	7	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-8a5ddbbcf70f	excluded	table	2 handed sword			Data/Tables/ObjList.txt	4	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3009,7 +3023,7 @@ maw-8650729faa57	excluded	table	Master of Elements			Data/Tables/Class Extra.txt
 maw-2cc3f1e26e51	excluded	table	Master Wizard			Data/Tables/Class Extra.txt	53	4	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-2c2934cdcf11	excluded	table	MasterArcher			Data/Tables/Class HP SP.txt	4	3	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-db0caece5a39	excluded	table	Max level			Data/Tables/House rules.txt	343	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-3bf7a05074e7	untranslated	table	Meditation			Data/Tables/Class Skills.txt	30	7	
+maw-3bf7a05074e7	translated	table	Meditation	명상		Data/Tables/Class Skills.txt	30	7	주문 이름
 maw-86d631407a23	excluded	table	medium pile of coins			Data/Tables/ObjList.txt	86	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-1d3d4384a4a3	excluded	table	Memory Crystal			Data/Tables/ObjList.txt	413	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-cccadd7f1b0c	excluded	table	Mercenary Belt			Data/Tables/Complex item pictures.txt	115	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
@@ -3586,10 +3600,13 @@ maw-262bebfe470f	excluded	table	Zombie F (conditional portrait)			Data/Tables/Ch
 maw-6351d3abd7e9	excluded	table	Zombie M (conditional portrait)			Data/Tables/Character portraits.txt	61	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-0bdf28638a65	excluded	table	Zombie Troll 1			Data/Tables/Character portraits.txt	78	1	Audited structural Data/Tables key/reference/config text; not player-facing localization.
 maw-addb02e7a811	excluded	table	Zombie(10)			Data/Tables/Race Skills.txt	1	2	Audited structural Data/Tables key/reference/config text; not player-facing localization.
-maw-80dc19c8fa35	untranslated	tooltip	"
+maw-80dc19c8fa35	translated	tooltip	"
 
 Can benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50
-Current amount: "			Scripts/General/zzAlchemy.lua	449	1	
+Current amount: "	"
+
+이 방식으로 얻은 경험치가 기본 경험치의 25% 미만이고 상승한 레벨이 50 미만일 때만 효과를 받을 수 있습니다.
+현재 수치: "		Scripts/General/zzAlchemy.lua	449	1	경험치 물약 설명
 maw-c4d4148a3add	translated	tooltip	"
 
 Control Spell duration is reduced by monster resistances but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against "	"
@@ -3635,12 +3652,16 @@ maw-09ca3bd88609	translated	tooltip	"
 You need at least "	"
 
 이 책을 열려면 최소 "		Scripts/General/zzMaw-Spells.lua	3446	1	주문책 요구 조건 조각
-maw-650dfcafffc2	untranslated	tooltip	"
-Levels: "			Scripts/General/zzAlchemy.lua	449	1	
-maw-2729c11e8541	untranslated	tooltip	"
+maw-650dfcafffc2	translated	tooltip	"
+Levels: "	"
+레벨: "		Scripts/General/zzAlchemy.lua	449	1	경험치 물약 설명
+maw-2729c11e8541	translated	tooltip	"
 The Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.
 
-(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"			Scripts/General/zzAlchemy.lua	737	1	
+(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"	"
+천상의 오브는 한 아이템의 천상 정수를 다른 아이템으로 옮겨, 신성한 속성을 보존하면서 원래 아이템에서 그 축복을 제거할 수 있습니다.
+
+(천상 아이템을 우클릭하면 힘을 추출해 천상의 오브를 충전하고, 이후 천상이 아닌 아이템을 우클릭하면 그 힘을 이전합니다.)"		Scripts/General/zzAlchemy.lua	737	1	천상의 오브 설명
 maw-564868e32581	translated	tooltip	 bonus to Meditation skill for 6 hours.	 (6시간)		Scripts/General/zzAlchemy.lua	422	1	명상 보너스 조각
 maw-25b1dc1d2e83	translated	tooltip	 Combo Points to be casted.	 콤보 포인트가 필요합니다.		Scripts/General/zzClasses.lua	2150	1	연결형 암살자 능력 설명 후행 조각
 maw-a797649a8169	translated	tooltip	" resistance. Control duration against bosses is halved.
@@ -3660,37 +3681,56 @@ maw-3e09c757f9d4	translated	tooltip	"%s
 Increased by 50%% with Halberds"	"%s
 	070창 공격마다 물리 저항을 감소시켜 피해 증가: %s%%
 미늘창 사용 시 50%% 증가"	%s %s	Scripts/General/zzMAW-Skills.lua	1407	1	창 그랜드마스터 설명
-maw-90cd40051486	untranslated	tooltip	"%s
+maw-90cd40051486	translated	tooltip	"%s
 
-Bonus Melee/Bow Damage: %s%s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	383	1	
-maw-69cf69ba3f57	untranslated	tooltip	"%s
+Bonus Melee/Bow Damage: %s%s"	"%s
 
-Critical melee and bow strike damage bonus: %s%s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	414	1	
-maw-0620d75f6f68	untranslated	tooltip	"%s
+근접/활 추가 피해: %s%s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	383	1	능력치 툴팁
+maw-69cf69ba3f57	translated	tooltip	"%s
 
-Critical strike chance: %s%%"		%s %s	Scripts/General/zzMaw-Stats.lua	449	1	
-maw-e98fcbe15ac8	untranslated	tooltip	"%s
+Critical melee and bow strike damage bonus: %s%s"	"%s
 
-Critical strike chance: %s%%(%s%% with dagger)"		%s %s %s	Scripts/General/zzMaw-Stats.lua	452	1	
-maw-559446ad8360	untranslated	tooltip	"%s
+근접 및 활 치명타 피해 보너스: %s%s"	%s %s %s	Scripts/General/zzMaw-Stats.lua	414	1	능력치 툴팁
+maw-0620d75f6f68	translated	tooltip	"%s
 
-Dodge chance: %s%%"		%s %s	Scripts/General/zzMaw-Stats.lua	424	1	
-maw-d0c8b8eb718d	untranslated	tooltip	"%s
+Critical strike chance: %s%%"	"%s
+
+치명타 확률: %s%%"	%s %s	Scripts/General/zzMaw-Stats.lua	449	1	능력치 툴팁
+maw-e98fcbe15ac8	translated	tooltip	"%s
+
+Critical strike chance: %s%%(%s%% with dagger)"	"%s
+
+치명타 확률: %s%% (단검 사용 시 %s%%)"	%s %s %s	Scripts/General/zzMaw-Stats.lua	452	1	능력치 툴팁
+maw-559446ad8360	translated	tooltip	"%s
+
+Dodge chance: %s%%"	"%s
+
+회피 확률: %s%%"	%s %s	Scripts/General/zzMaw-Stats.lua	424	1	능력치 툴팁
+maw-d0c8b8eb718d	translated	tooltip	"%s
 
 Health bonus from Endurance: %s%s
 
-Flat HP bonus from Endurance: %s"		%s %s %s %s	Scripts/General/zzMaw-Stats.lua	408	1	
+Flat HP bonus from Endurance: %s"	"%s
+
+지구력으로 얻는 생명력 보너스: %s%s
+
+지구력으로 얻는 고정 생명력 보너스: %s"	%s %s %s %s	Scripts/General/zzMaw-Stats.lua	408	1	능력치 툴팁
 maw-bef2836ddf6b	translated	tooltip	A deadly spell capable to heal the caster upon hitting the target by an amount equal to double the Life leech enchant. Deals damage equal to 	대상을 적중하면 생명력 흡수 마법 부여 효과의 두 배만큼 시전자의 생명력을 회복시키는 치명적인 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1428	1	죽음의 고리 설명 앞부분
 maw-0d30277d7411	translated	tooltip	"A lethal explosion dealing huge damage to all monsters in the area. Can be used safely also in close combat.
 Deals damage equal to "	"치명적인 폭발을 일으켜 범위 내 모든 몬스터에게 막대한 피해를 줍니다. 근접전에서도 안전하게 사용할 수 있습니다.
 피해량은 무기 피해의 "		Scripts/General/zzClasses.lua	1443	1	죽음의 숨결 설명 조각
 maw-33a8b31d1d58	translated	tooltip	A poisonous cloud of noxious gases is formed in front of the caster and moves slowly away from your characters.  The cloud does %s points of damage plus 1-%s per point of skill in Dark Magic and lasts until something runs into it.	시전자 앞에 유독 가스 구름을 만들어 파티에서 천천히 멀어지게 합니다. 구름은 %s의 기본 피해와 어둠 마법 기술 포인트당 1-%s의 추가 피해를 주며, 대상과 충돌할 때까지 유지됩니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2119	1	독성 구름 주문 설명
-maw-d78b4b317e24	untranslated	tooltip	"A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)
+maw-d78b4b317e24	translated	tooltip	"A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)
 Ancient, Primordial and Legendary items have increased Max power.
 
 It is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.
 
-Max Power: "			Scripts/General/zzAlchemy.lua	716	1	
+Max Power: "	"아이템의 마법부여 강도를 높일 수 있는 특별한 보석입니다. (기본 마법부여가 있는 아이템을 우클릭하여 사용)
+고대, 태고, 전설 아이템은 최대 위력이 더 높습니다.
+
+인벤토리 화면에서 U 키를 누르면 보석 3개를 상위 등급 보석 1개로 업그레이드할 수 있습니다.
+
+최대 위력: "		Scripts/General/zzAlchemy.lua	716	1	강화 보석 설명
 maw-851b64999a9d	translated	tooltip	Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s points of damage plus 1-%s per point of skill.	단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 %s의 기본 피해와 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2100	1	산성 폭발 주문 설명
 maw-b121153d77b2	translated	tooltip	Acid burst squirts a jet of extremely caustic acid at a single victim.  It always hits and does %s%% of a melee attack damage.	단일 대상에게 강한 부식성 산을 분사합니다. 항상 명중하며 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2139	1	암살자 산성 폭발 설명
 maw-6c7f0c62397f	translated	tooltip	Activating this spell imbues the knight body with blood, leeching life upon attacking at the cost of 6 spell points.	이 주문을 활성화하면 기사의 몸에 피의 힘을 부여하여 공격할 때마다 생명력을 흡수합니다. 주문력 6을 소모합니다.		Scripts/General/zzClasses.lua	1406	1	죽음의 기사 피 흡수 설명
@@ -3701,7 +3741,7 @@ maw-1a085f2cee39	translated	tooltip	Asphyxiate the target deal damage equal to 	
 maw-79e5fe65b538	translated	tooltip	Calls stars from the heavens to smite and burn your enemies.  Twenty stars are called, and the damage for each star is %s points plus %s per point of skill in Air Magic. Try not to get caught in the blast! This spell only works outdoors.	하늘의 별을 불러 적을 강타하고 불태웁니다. 20개의 별이 떨어지며, 별 하나당 %s + 공기 마법 기술 포인트당 %s의 피해를 줍니다. 폭발에 휘말리지 않게 주의하십시오. 야외에서만 사용할 수 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2097	1	별폭발 주문 설명
 maw-c5ebafbe73a6	translated	tooltip	Calls upon the power of heaven to undo the evil magic that extends the lives of the undead, inflicting %s points of damage plus 1-%s per point of skill in Light Magic upon a single, unlucky target.  This spell only works on the undead.	천상의 힘으로 언데드의 생명을 연장하는 사악한 마법을 끊어, 단일 언데드 대상에게 %s + 빛 마법 기술 포인트당 1-%s의 피해를 줍니다. 언데드에게만 효과가 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2116	1	언데드 파괴 주문 설명
 maw-de573e54df84	translated	tooltip	Causes 1-%s points of damage per point of skill, 5 spikes maximum	기술 포인트당 1-%s의 피해를 주며, 화염 가시는 최대 5개까지 설치할 수 있습니다	%s	Scripts/General/zzMaw-Spells.lua	2085	3	화염 가시 숙련 설명
-maw-18ba1f5b2c6e	untranslated	tooltip	Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants			Scripts/General/zzMaw-Spells.lua	2952	1	
+maw-18ba1f5b2c6e	translated	tooltip	Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants	파티의 무기에 마법의 불꽃을 둘러 기존 마법부여와 별개로 화염 마법부여를 추가합니다.		Scripts/General/zzMaw-Spells.lua	2952	1	주문 설명
 maw-7d45f149038b	translated	tooltip	Celestial orb is charged and it's ready to grant celestial powers to any non-Artifact Equipment	천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다		Scripts/General/zzAlchemy.lua	739	1	천상 오브 설명
 maw-def4e8ac8c44	translated	tooltip	Charges: 	충전 횟수: 		Scripts/General/zzAlchemy.lua	457	1	연금술 툴팁
 maw-54a2be81842c	translated	tooltip	"Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.
@@ -3713,7 +3753,7 @@ maw-6bbad1895edc	translated	tooltip	Directly inflicts magical damage upon a sing
 maw-4a3a20b808c8	translated	tooltip	Dragon Breath empowers the caster to exhale a cloud of toxic vapors that targets a single monster and damage all creatures nearby, doing 1-%s points of damage per point of skill in Dark Magic.	시전자가 독성 증기를 내뿜어 한 몬스터를 지정하고 주변의 모든 생물에게 피해를 줍니다. 피해량은 어둠 마법 기술 포인트당 1-%s입니다.	%s	Scripts/General/zzMaw-Spells.lua	2121	1	드래곤 브레스 주문 설명
 maw-782466286030	translated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.		Scripts/General/zzMaw-Spells.lua	2084	1	화염 가시 주문 설명
 maw-5f2524678554	translated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered. Fire Spike does %s%% of a melee attack damage.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 발동할 때까지 유지됩니다. 화염 가시는 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2136	1	암살자 화염 가시 설명
-maw-a83369ab11f7	untranslated	tooltip	Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum.			Scripts/General/zzMaw-Spells.lua	3087	1	
+maw-a83369ab11f7	translated	tooltip	Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum.	파티의 무기에 흡혈 능력을 부여합니다. 몬스터에게 준 피해가 무기 사용자의 추가 생명력으로 전환되며, 원래의 최대 생명력을 넘을 수는 없습니다.		Scripts/General/zzMaw-Spells.lua	3087	1	흡혈의 오라 설명
 maw-fd9802058ff5	translated	tooltip	Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does %s%% of a melee attack damage.	단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2135	1	암살자 화염구 설명
 maw-569e321288de	translated	tooltip	Fires a ball of fire at a single target. When it hits, the ball explodes damaging all those nearby, including your characters if they're too close.  Fireball does 1-%s points of damage per point of skill in Fire Magic.	단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 화염 마법 기술 포인트당 1-%s의 피해를 줍니다.	%s	Scripts/General/zzMaw-Spells.lua	2082	1	화염구 주문 설명
 maw-cc4e12bf5bfd	translated	tooltip	Fires a ball of ice in the direction the caster is facing.  The ball will shatter when it hits something, launching 7 shards of ice in all directions except the caster's.  The shards will ricochet until they strike a creature or melt.  Each shard does %s points of damage plus 1-%s per point of skill in Water Magic.	시전자가 바라보는 방향으로 얼음 구체를 발사합니다. 충돌하면 산산이 부서져 시전자 방향을 제외한 모든 방향으로 7개의 얼음 파편을 날립니다. 파편은 생물에 맞거나 녹을 때까지 튕겨 다닙니다. 파편 하나당 %s의 기본 피해와 물 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2101	1	얼음 폭발 주문 설명
@@ -3742,7 +3782,7 @@ maw-90c0d611d15e	translated	tooltip	Heals 	생명력 회복: 		Scripts/General/z
 maw-7dcf7871f711	translated	tooltip	"Heroism increases the damage a character does on a successful attack by 10 + 1 point per point of skill in Spirit Magic. This spell affects the entire party at once.
 Lasts for 2 hours plus 1 hour per point of skill"	"영웅심은 공격 명중 시 주는 피해를 10 + 정신 마법 기술 포인트당 1만큼 증가시킵니다. 이 주문은 파티 전체에 적용됩니다.
 기본 2시간에 기술 포인트당 1시간 동안 지속됩니다."		Scripts/General/zzMaw-Spells.lua	720	1	영웅심 주문 설명
-maw-30dd1cb6f8b6	untranslated	tooltip	Host have closed the game			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	708	1	
+maw-30dd1cb6f8b6	translated	tooltip	Host have closed the game	호스트가 게임을 종료했습니다		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	708	1	멀티플레이 툴팁
 maw-59e7b4f19542	translated	tooltip	Implosion is a nasty spell that affects a single target by destroying the air around it, causing a sudden inrush from the surrounding air, a thunderclap, and %s points plus 1-%s points of damage per point of skill in Air Magic.	단일 대상 주변의 공기를 파괴해 급격한 공기 유입과 충격파를 일으킵니다. 피해량은 %s + 공기 마법 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2096	1	내파 주문 설명
 maw-1d74ca0611e0	translated	tooltip	Increases the weight of a single target enormously for an instant, causing internal damage equal to %s%% of a melee attack damage.	순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2142	1	암살자 질량 왜곡 설명
 maw-4f74c73b7424	translated	tooltip	Increases the weight of a single target enormously for an instant, causing internal damage equal to 15%% of the monster's hit points plus another 0.5%% per point of skill in Earth Magic. The bigger they are, the harder they fall.	순간적으로 단일 대상의 무게를 엄청나게 늘려 내부 피해를 줍니다. 몬스터 생명력의 15%% + 대지 마법 기술 포인트당 0.5%%만큼 피해를 줍니다. 몸집이 클수록 더 큰 피해를 받습니다.		Scripts/General/zzMaw-Spells.lua	2108	1	질량 왜곡 주문 설명
@@ -3762,87 +3802,134 @@ The spell then arcs to a second target, hitting it as well."	"번개 화살은 �
 
 그 후 번개가 두 번째 대상으로 튀어 추가로 명중합니다."	%s	Scripts/General/zzClasses.lua	2137	1	암살자 번개 화살 설명
 maw-14b7e8740fd0	translated	tooltip	Mistform allows the vampire to reduce physical damage by 75%.  However, a vampire in Mistform cannot perform any physical attacks.  Vampires in Mistform are able to use spells and abilities and are affected by spells and abilities.	안개 형상은 뱀파이어가 받는 물리 피해를 75% 줄입니다. 대신 안개 형상에서는 물리 공격을 할 수 없습니다. 주문과 능력은 사용할 수 있으며, 주문과 능력의 영향도 정상적으로 받습니다.		Scripts/General/zzMaw-Spells.lua	751	1	안개 형상 설명
-maw-5ab5c5730937	untranslated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
+maw-5ab5c5730937	translated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
 
-Adds the following legendary power to an item:"			Scripts/General/zzAlchemy.lua	730	1	
-maw-4fd500d1538e	untranslated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
+Adds the following legendary power to an item:"	"오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.
 
-Right click a legendary item to store its power"			Scripts/General/zzAlchemy.lua	728	1	
+다음 전설 능력을 아이템에 부여합니다:"		Scripts/General/zzAlchemy.lua	730	1	오라클의 오브 설명
+maw-4fd500d1538e	translated	tooltip	"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
+
+Right click a legendary item to store its power"	"오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.
+
+전설 아이템을 우클릭하면 그 능력을 저장합니다."		Scripts/General/zzAlchemy.lua	728	1	오라클의 오브 설명
 maw-121a00d89940	translated	tooltip	Power: 	위력: 		Scripts/General/zzAlchemy.lua	615	4	아이템 툴팁
 maw-cc56042a8cdb	translated	tooltip	Press alt to show craftable stats	제작 가능한 능력치를 보려면 Alt를 누르세요		Scripts/General/zzMaw-Items.lua	1819	1	아이템 툴팁
 maw-c9bec7b88407	translated	tooltip	Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken.	마법으로부터의 보호는 파티 전체에 적용되어 일부 주문과 몬스터 능력이 유발하는 약화 상태에 면역을 부여합니다. 대상 상태는 독, 질병, 석화, 마비, 약화입니다. 효과를 한 번 막을 때마다 주문이 약해집니다. 육체 마법 기술 포인트당 1회의 공격을 막을 수 있으며 최대 10회까지 유지되고, 그 뒤에는 효과가 사라집니다.		Scripts/General/zzMaw-Spells.lua	732	1	마법으로부터의 보호 설명
 maw-997847b4799b	translated	tooltip	Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.	마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2105	1	암석 폭발 주문 설명
-maw-8b2b08919ea9	untranslated	tooltip	"Reserve a flat amount of mana
+maw-8b2b08919ea9	translated	tooltip	"Reserve a flat amount of mana
 Invisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.
-This effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."			Scripts/General/zzMaw-Spells.lua	3106	1	
-maw-e8e0913b691a	untranslated	tooltip	"Reserve a flat amount of mana
+This effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."	"일정량의 마나를 점유합니다.
+투명화는 주변 생물의 정신에 작용해, 말을 걸거나 공격하지 않는 한 파티를 알아차리지 못하게 합니다. 명중 여부와 관계없이 공격하면 주문이 해제됩니다. 적대적인 몬스터가 주변에 있을 때는 시전할 수 없습니다.
+이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다."		Scripts/General/zzMaw-Spells.lua	3106	1	주문 설명
+maw-e8e0913b691a	translated	tooltip	"Reserve a flat amount of mana
 Only useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3118	1	
-maw-0462a6e994ec	untranslated	tooltip	"Reserve a flat amount of mana to grants the power of flight to your characters!  Only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3112	1	
-maw-cee49c469ae6	untranslated	tooltip	"Reserve a flat amount of mana to increase the radius of light surrounding your party in the dark.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3094	1	
-maw-befed424fc87	untranslated	tooltip	"Reserve a flat amount of mana to show the locations of monsters and other points of interest while outdoors in the minimap.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3100	1	
+This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유합니다.
+야외에서만 사용할 수 있으며, 수면 보행은 캐릭터가 가라앉지 않고 물 위를 걸을 수 있게 합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3118	1	주문 설명
+maw-0462a6e994ec	translated	tooltip	"Reserve a flat amount of mana to grants the power of flight to your characters!  Only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
+This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유해 캐릭터에게 비행 능력을 부여합니다! 야외에서만 작동하지만 매우 유용합니다. 비행 중에는 5분마다 주문력 1을 소모합니다(즉, 땅에 닿아 있지 않을 때).
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3112	1	주문 설명
+maw-cee49c469ae6	translated	tooltip	"Reserve a flat amount of mana to increase the radius of light surrounding your party in the dark.
+This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유해 어둠 속에서 파티 주변을 밝히는 빛의 범위를 넓힙니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3094	1	주문 설명
+maw-befed424fc87	translated	tooltip	"Reserve a flat amount of mana to show the locations of monsters and other points of interest while outdoors in the minimap.
+This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유해 야외에서 미니맵에 몬스터와 기타 주요 지점의 위치를 표시합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3100	1	주문 설명
 maw-813436567334	translated	tooltip	Reserve a mana percentage to surround your characters with a very hot fire that is only harmful to others.  The spell will deliver %s points of damage plus 1-%s per point of skill to all nearby monsters for as long as they remain in the area of effect.	마나의 일부를 예약해 파티 주변을 뜨거운 불길로 감쌉니다. 불길은 파티원에게는 해를 주지 않으며, 효과 범위 안의 주변 몬스터에게 %s + 기술 포인트당 1-%s의 피해를 지속적으로 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2090	1	제물 주문 설명
-maw-4878d6e18955	untranslated	tooltip	"Reserve a percentage of your mana to  tightly binds the soul to the body. This will delay death due to massive hit point loss, but will not stop a character from going unconscious. If a preserved character's hit points are too low when the spell wears off, he or she will die.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3068	1	
-maw-505cd7550356	untranslated	tooltip	"Reserve a percentage of your mana to affect the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, Weak, Death and Eradicated.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3074	1	
-maw-a1a41d1cca4c	untranslated	tooltip	"Reserve a percentage of your mana to enhance all of your party's Resistances by %s.
+maw-4878d6e18955	translated	tooltip	"Reserve a percentage of your mana to  tightly binds the soul to the body. This will delay death due to massive hit point loss, but will not stop a character from going unconscious. If a preserved character's hit points are too low when the spell wears off, he or she will die.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 영혼을 육체에 단단히 묶습니다. 막대한 생명력 손실로 인한 죽음을 늦추지만 의식불명은 막지 못합니다. 보존 효과가 끝날 때 캐릭터의 생명력이 지나치게 낮다면 사망합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3068	1	주문 설명
+maw-505cd7550356	translated	tooltip	"Reserve a percentage of your mana to affect the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, Weak, Death and Eradicated.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티 전체에 동시에 적용되며, 약화 상태를 유발하는 일부 주문과 몬스터 능력에 면역을 부여합니다. 해당 상태는 중독, 질병, 석화, 마비, 약화, 죽음, 소멸입니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3074	1	주문 설명
+maw-a1a41d1cca4c	translated	tooltip	"Reserve a percentage of your mana to enhance all of your party's Resistances by %s.
 While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."		%s	Scripts/General/zzMaw-Spells.lua	3056	1	
-maw-21d01d6eb18f	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Air Resistance and Speed by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 모든 저항을 %s만큼 높입니다.
+기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s	Scripts/General/zzMaw-Spells.lua	3056	1	주문 설명
+maw-21d01d6eb18f	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Air Resistance and Speed by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2958	1	
-maw-fda869d67a8c	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Armor Class by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 대기 저항과 속도를 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2958	1	주문 설명
+maw-fda869d67a8c	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Armor Class by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3006	1	
-maw-d0676e801688	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Attack and Accuracy.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 방어력을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3006	1	주문 설명
+maw-d0676e801688	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Attack and Accuracy.
 The enhancement equals a flat %s plus an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2988	1	
-maw-5ecc6056589d	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Body Resistance and Might by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 공격과 정확도를 높입니다.
+효과는 기본 %s에 시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2988	1	주문 설명
+maw-5ecc6056589d	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Body Resistance and Might by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2982	1	
-maw-d234a87c9a57	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Earth Resistance and Endurance by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 육체 저항과 힘을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2982	1	주문 설명
+maw-d234a87c9a57	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Earth Resistance and Endurance by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2970	1	
-maw-9a2a80283738	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Fire Resistance and Intellect by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 대지 저항과 지구력을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2970	1	주문 설명
+maw-9a2a80283738	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Fire Resistance and Intellect by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2946	1	
-maw-6328d86fd6d4	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Mind Resistance and Personality by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 화염 저항과 지력을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2946	1	주문 설명
+maw-6328d86fd6d4	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Mind Resistance and Personality by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2976	1	
-maw-ded4a0d15ffb	untranslated	tooltip	"Reserve a percentage of your mana to enhance your party's Water Resistance and Luck by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 정신 저항과 인격을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2976	1	주문 설명
+maw-ded4a0d15ffb	translated	tooltip	"Reserve a percentage of your mana to enhance your party's Water Resistance and Luck by %s.
 You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2964	1	
-maw-5481d4c5b8a2	untranslated	tooltip	"Reserve a percentage of your mana to increase critical chance of your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3019	1	
-maw-956859a3a07d	untranslated	tooltip	"Reserve a percentage of your mana to increase spell damage of your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3012	1	
-maw-2bd48f6e7947	untranslated	tooltip	"Reserve a percentage of your mana to increase your party health regen.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 물 저항과 행운을 %s만큼 높입니다.
+시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2964	1	주문 설명
+maw-5481d4c5b8a2	translated	tooltip	"Reserve a percentage of your mana to increase critical chance of your party by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 치명타 확률을 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3019	1	주문 설명
+maw-956859a3a07d	translated	tooltip	"Reserve a percentage of your mana to increase spell damage of your party by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 주문 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3012	1	주문 설명
+maw-2bd48f6e7947	translated	tooltip	"Reserve a percentage of your mana to increase your party health regen.
 Regen depends on the health pool, caster level and it's increased by %s%% per skill point, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s	Scripts/General/zzMaw-Spells.lua	3038	1	
-maw-0d875d9d0ba1	untranslated	tooltip	"Reserve a percentage of your mana to increase your party mana regen.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 생명력 재생을 높입니다.
+재생량은 최대 생명력과 시전자 레벨에 따라 달라지며, 기술 포인트당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s	Scripts/General/zzMaw-Spells.lua	3038	1	주문 설명
+maw-0d875d9d0ba1	translated	tooltip	"Reserve a percentage of your mana to increase your party mana regen.
 Regen depends on the mana pool, caster level and it's increased by %s%% per skill point, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s	Scripts/General/zzMaw-Spells.lua	3031	1	
-maw-53201cde6899	untranslated	tooltip	"Reserve a percentage of your mana to increase your party melee damage by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3025	1	
-maw-fcb4a53d9e62	untranslated	tooltip	"Reserve a percentage of your mana to increase your party Recovery speed by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	2994	1	
-maw-711b5289c33e	untranslated	tooltip	"Reserve a percentage of your mana to increase your party unarmed damage by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 마나 재생을 높입니다.
+재생량은 최대 마나와 시전자 레벨에 따라 달라지며, 기술 포인트당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s	Scripts/General/zzMaw-Spells.lua	3031	1	주문 설명
+maw-53201cde6899	translated	tooltip	"Reserve a percentage of your mana to increase your party melee damage by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 근접 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3025	1	주문 설명
+maw-fcb4a53d9e62	translated	tooltip	"Reserve a percentage of your mana to increase your party Recovery speed by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 회복 속도를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	2994	1	주문 설명
+maw-711b5289c33e	translated	tooltip	"Reserve a percentage of your mana to increase your party unarmed damage by %s%% plus %s%% per Skill Level, up to double bonus.
 Staves with GM skill and Unarmed is considered as unarmed as well.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3044	1	
-maw-027ebcc4cd11	untranslated	tooltip	"Reserve a percentage of your mana to increases all seven stats on all your characters by %s.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티의 맨손 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.
+지팡이 기술이 그랜드마스터이고 맨손 전투를 함께 사용하는 경우도 맨손으로 간주합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3044	1	주문 설명
+maw-027ebcc4cd11	translated	tooltip	"Reserve a percentage of your mana to increases all seven stats on all your characters by %s.
 While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."		%s	Scripts/General/zzMaw-Spells.lua	3050	1	
-maw-6a0d406bfd95	untranslated	tooltip	"Reserve a percentage of your mana to reduce any incoming magic damage to your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."		%s %s	Scripts/General/zzMaw-Spells.lua	3000	1	
-maw-276e5ccd9ba9	untranslated	tooltip	"Reserve a percentage of your mana to simultaneously casts Haste, Shield, Stone Skin, and Fate on all your characters.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 모든 캐릭터의 일곱 능력치를 %s만큼 높입니다.
+기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s	Scripts/General/zzMaw-Spells.lua	3050	1	주문 설명
+maw-6a0d406bfd95	translated	tooltip	"Reserve a percentage of your mana to reduce any incoming magic damage to your party by %s%% plus %s%% per Skill Level, up to double bonus.
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 파티가 받는 모든 마법 피해를 %s%% 줄이고, 기술 레벨당 %s%%를 추가로 줄여 최대 두 배의 보너스를 받습니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."	%s %s	Scripts/General/zzMaw-Spells.lua	3000	1	주문 설명
+maw-276e5ccd9ba9	translated	tooltip	"Reserve a percentage of your mana to simultaneously casts Haste, Shield, Stone Skin, and Fate on all your characters.
 While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."			Scripts/General/zzMaw-Spells.lua	3062	1	
-maw-643fc1ad80e5	untranslated	tooltip	"Reserve a percentage of your mana.
-When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."			Scripts/General/zzMaw-Spells.lua	3081	1	
+This effect remains active until deactivated or lose consciousness."	"마나의 일정 비율을 점유해 모든 캐릭터에게 가속, 방패, 돌가죽, 운명을 동시에 시전합니다.
+기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.
+이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다."		Scripts/General/zzMaw-Spells.lua	3062	1	주문 설명
+maw-643fc1ad80e5	translated	tooltip	"Reserve a percentage of your mana.
+When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."	"마나의 일정 비율을 점유합니다.
+고통 반사가 활성화된 캐릭터를 몬스터가 공격하면, 몬스터는 그 캐릭터에게 준 피해와 같은 양의 피해를 받습니다."		Scripts/General/zzMaw-Spells.lua	3081	1	주문 설명
 maw-1ba00dbce0f6	translated	tooltip	Restores 	주문력 회복: 		Scripts/General/zzAlchemy.lua	419	2	물약 설명 조각
 maw-3c7bacac8039	untranslated	tooltip	"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
 
@@ -3909,7 +3996,7 @@ It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminis
 maw-1ff214ae0f09	translated	tooltip	This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.	이 무시무시한 능력은 다크 엘프가 어둠과 화염의 힘을 결합한 위험한 다크파이어를 다루게 합니다. 다크파이어에 맞은 대상은 화염 저항과 어둠 저항 중 더 낮은 수치로 저항합니다. 피해량은 %s의 기본 피해 + 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2125	1	다크파이어 능력 설명
 maw-8601b402d801	translated	tooltip	This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.	시야 안의 모든 생물에게서 생명력을 빼앗습니다. 아군과 적군을 가리지 않습니다. 영혼 흡수는 공동 생명과 비슷한 방식으로 빼앗은 생명력을 파티에 나눠 줍니다. 피해량(및 회복량)은 %s + 기술 포인트당 1-%s입니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2123	1	영혼 흡수 주문 설명
 maw-fd4fc93cc199	translated	tooltip	This is the strongest single damage spell available to death knights and deals damage equal to 	죽음의 기사가 사용할 수 있는 가장 강력한 단일 대상 피해 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1385	1	동상 주문 설명 앞부분
-maw-86e05999e779	untranslated	tooltip	This potion has been removed			Scripts/General/zzAlchemy.lua	413	1	
+maw-86e05999e779	translated	tooltip	This potion has been removed	이 물약은 제거되었습니다		Scripts/General/zzAlchemy.lua	413	1	물약 설명
 maw-d4415bc2801b	translated	tooltip	This spell is exclusive to Death Knights and deals damage equal to 	죽음의 기사 전용 주문입니다. 피해량: 		Scripts/General/zzClasses.lua	1376	1	얼음의 손길 주문 설명 앞부분
 maw-d90c20c41d63	translated	tooltip	This spell is the town killer. Armageddon inflicts %s points of damage plus %s point of damage for every point of Dark skill your character has to every creature on the map, including all your characters. It can only be cast three times per day and only outdoors.	도시를 초토화하는 주문입니다. 아마겟돈은 맵의 모든 생물과 파티원 전원에게 %s + 캐릭터의 어둠 기술 포인트당 %s의 피해를 줍니다. 하루에 세 번만, 야외에서만 시전할 수 있습니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2122	1	아마겟돈 주문 설명
 maw-b1274cce740a	translated	tooltip	This spell weakens the link between a target's body and soul, causing %s + 2-%s points of damage per point of skill in Spirit Magic to all monsters near the caster.	대상의 육체와 영혼 사이의 연결을 약화시켜 시전자 주변의 모든 몬스터에게 %s + 영혼 마법 기술 포인트당 2-%s의 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2109	1	영혼 채찍 주문 설명
@@ -3938,13 +4025,19 @@ Healing Done in current Map:  "	"
 
 현재 맵 회복 집계:
 현재 맵 총 회복량:  "		Scripts/General/zzMaw-Stats.lua	711	1	현재 맵 회복 통계
-maw-ffd5f3ba3017	untranslated	ui	"
+maw-ffd5f3ba3017	translated	ui	"
 
 Damage is reduced by an amount equal to % shown.
 
 Light resistance is equal to the lowest between Mind and Body resistances.
 Dark resistance is equal to the lowest between elemental resistances.
-Energy resistance is equal to the lowest resistance."			Scripts/General/zzMaw-Stats.lua	743	1	
+Energy resistance is equal to the lowest resistance."	"
+
+표시된 % 수치만큼 피해가 감소합니다.
+
+빛 저항은 정신 저항과 육체 저항 중 낮은 값과 같습니다.
+어둠 저항은 원소 저항 중 가장 낮은 값과 같습니다.
+에너지 저항은 모든 저항 중 가장 낮은 값과 같습니다."		Scripts/General/zzMaw-Stats.lua	743	1	저항 툴팁
 maw-5470a2089a61	untranslated	ui	"
 
 Experience: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
@@ -3953,12 +4046,16 @@ maw-102d01da1368	translated	ui	"
 Levels gained in MM6: "	"
 
 MM6에서 획득한 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	대륙별 획득 레벨 UI
-maw-f0d7637e44ac	untranslated	ui	"
+maw-f0d7637e44ac	translated	ui	"
 
-Map percentage, Heal/Regen/Leech/Total:"			Scripts/General/zzMaw-Stats.lua	714	1	
-maw-825d4b45d1fb	untranslated	ui	"
+Map percentage, Heal/Regen/Leech/Total:"	"
 
-Only healing done when monsters are in the nearbies is counted"			Scripts/General/zzMaw-Stats.lua	645	2	
+지도 보정치, 치유/재생/흡수/합계:"		Scripts/General/zzMaw-Stats.lua	714	1	통계 UI
+maw-825d4b45d1fb	translated	ui	"
+
+Only healing done when monsters are in the nearbies is counted"	"
+
+주변에 몬스터가 있을 때 행한 치유만 집계됩니다"		Scripts/General/zzMaw-Stats.lua	645	2	통계 UI
 maw-14c5f3eda891	translated	ui	"
 
 Total average damage reduction: "	"
@@ -3976,9 +4073,11 @@ maw-18ba3028ddc5	translated	ui	"
 Total Levels gained: "	"
 
 총 획득 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	전체 획득 레벨 UI
-maw-91fba341a797	untranslated	ui	"
+maw-91fba341a797	translated	ui	"
 
-Total percentage, Heal/Regen/Leech/Total:"			Scripts/General/zzMaw-Stats.lua	619	1	
+Total percentage, Heal/Regen/Leech/Total:"	"
+
+전체 보정치, 치유/재생/흡수/합계:"		Scripts/General/zzMaw-Stats.lua	619	1	통계 UI
 maw-72b5003a7225	translated	ui	"
 Block chance vs same level monsters: "	"
 동레벨 몬스터 상대 막기 확률: "		Scripts/General/zzMaw-Stats.lua	513	1	방어 통계 UI
@@ -4021,18 +4120,28 @@ maw-7b618f6314b4	untranslated	ui	"""] =
 {[""Low""] = "			Scripts/General/zzMaw-Monsters.lua	2005	1	
 maw-ef6a39857a0b	untranslated	ui	%%d		%d	Scripts/General/zzMAW-Skills.lua	1796	1	
 maw-b34bcfd49892	untranslated	ui	%lu			Scripts/General/BountyHunt.lua	11	2	
-maw-fb7711e92c7f	untranslated	ui	"%s
+maw-fb7711e92c7f	translated	ui	"%s
 
 Bonus healing: %s%s
 
 Spell cost reduction: %s%s
 
-Increase the mana by 2 levels worth of mana per 5 personality"		%s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	401	1	
-maw-cef9507fa03a	untranslated	ui	"%s
+Increase the mana by 2 levels worth of mana per 5 personality"	"%s
+
+추가 치유량: %s%s
+
+주문 비용 감소: %s%s
+
+인격 5마다 2레벨 분량의 마나 증가"	%s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	401	1	능력치 툴팁
+maw-cef9507fa03a	translated	ui	"%s
 
 Bonus magic damage: %s%s
 
-Critical spell strike damage: %s%s"		%s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	390	1	
+Critical spell strike damage: %s%s"	"%s
+
+추가 마법 피해: %s%s
+
+주문 치명타 피해: %s%s"	%s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	390	1	능력치 툴팁
 maw-80043588deba	translated	ui	"%s
 
 CURRENT MAP DAMAGE RECOUNT
@@ -4060,14 +4169,20 @@ Base HP: %s
 기본 생명력: %s
 
 초당 생명력 재생: %s"	%s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	463	1	생명력 상세 통계; 자리표시자 보존
-maw-8c47c7bb76f8	untranslated	ui	"%s
+maw-8c47c7bb76f8	translated	ui	"%s
 
-Map percentage, Melee/Ranged/Total:"		%s	Scripts/General/zzMaw-Stats.lua	674	1	
-maw-00c3d1164018	untranslated	ui	"%s
+Map percentage, Melee/Ranged/Total:"	"%s
+
+지도 보정치, 근접/원거리/합계:"	%s	Scripts/General/zzMaw-Stats.lua	674	1	통계 UI
+maw-00c3d1164018	translated	ui	"%s
 
 Melee Haste:   %s%%
 Ranged Haste: %s%%
-Spell Haste:   %s%%"		%s %s %s %s	Scripts/General/zzMaw-Stats.lua	439	1	
+Spell Haste:   %s%%"	"%s
+
+근접 가속:   %s%%
+원거리 가속: %s%%
+주문 가속:   %s%%"	%s %s %s %s	Scripts/General/zzMaw-Stats.lua	439	1	능력치 툴팁
 maw-6d377eadc40b	translated	ui	"%s
 
 Physical damage reduction: %s%s"	"%s
@@ -4085,15 +4200,20 @@ Total Damage done: %s"	"%s
 
 전체 피해 집계
 총 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	576	1	전체 피해 통계; 자리표시자 보존
-maw-fc7f9bde95de	untranslated	ui	"%s
+maw-fc7f9bde95de	translated	ui	"%s
 
-Total percentage, Melee/Ranged/Total:"		%s	Scripts/General/zzMaw-Stats.lua	580	1	
-maw-48caeafafbe5	untranslated	ui	"%s
- %s	 %29s	%32s %s	%37s %s	%42s"		%29s %32s %37s %42s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	595	2	
-maw-9580d7f60deb	untranslated	ui	"%s
- %s	 %29s	%32s %s	%37s %s	%42s %s	%47s"		%29s %32s %37s %42s %47s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	638	2	
-maw-5a004da80629	untranslated	ui	"%s
-%s"		%s %s	Scripts/General/zzMaw-Stats.lua	523	1	
+Total percentage, Melee/Ranged/Total:"	"%s
+
+전체 보정치, 근접/원거리/합계:"	%s	Scripts/General/zzMaw-Stats.lua	580	1	통계 UI
+maw-48caeafafbe5	translated	ui	"%s
+ %s	 %29s	%32s %s	%37s %s	%42s"	"%s
+ %s	 %29s	%32s %s	%37s %s	%42s"	%29s %32s %37s %42s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	595	2	레이아웃 포맷 유지
+maw-9580d7f60deb	translated	ui	"%s
+ %s	 %29s	%32s %s	%37s %s	%42s %s	%47s"	"%s
+ %s	 %29s	%32s %s	%37s %s	%42s %s	%47s"	%29s %32s %37s %42s %47s %s %s %s %s %s	Scripts/General/zzMaw-Stats.lua	638	2	레이아웃 포맷 유지
+maw-5a004da80629	translated	ui	"%s
+%s"	"%s
+%s"	%s %s	Scripts/General/zzMaw-Stats.lua	523	1	레이아웃 포맷 유지
 maw-481765007a9a	translated	ui	"%s
 Ranged Damage done in current map: %s"	"%s
 현재 맵 원거리 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	672	1	현재 맵 피해 통계; 자리표시자 보존

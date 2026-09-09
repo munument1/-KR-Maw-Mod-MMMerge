@@ -363,7 +363,7 @@ function events.CalcDamageToMonster(t)
 		if item~=nil then
 			if item:T().Skill==1 then
 				t.Result=0
-				Message("Seraphim aren't able to dual wield")
+				Message("세라핌은 쌍수 무기를 사용할 수 없습니다")
 			end
 		end
 	end
@@ -1564,7 +1564,7 @@ function events.CalcDamageToMonster(t)
 						pl.Spells[spell2]=false
 					else
 						pl.Spells[spell2]=true
-						Message("Learned " .. Game.SpellsTxt[spell2].Name)
+						Message("습득: " .. Game.SpellsTxt[spell2].Name)
 					end
 				end
 			end

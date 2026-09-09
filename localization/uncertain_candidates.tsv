@@ -17,7 +17,6 @@ Expert	spell	2	4	internal_table_key_literal:2; uncertain_context:2	Scripts/Gener
 Temple	spell	2	5	comparison_control_literal:3; uncertain_context:2	Scripts/General/zzMaw-Spells.lua	exact	신전	"vars.mawbuff[spellId]=""Temple"""
 Grandmaster	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua	exact	그랜드마스터	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 Inferno	table	1	3	table_schema_not_reviewed:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua	exact	지옥불	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
-Meditation	table	1	7	table_schema_not_reviewed:6; uncertain_context:1	Scripts/General/zzMaw-Spells.lua	exact	명상	"sp.Name = ""Meditation"""
 Fire	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua	ambiguous	불 || 화염 마법 || 화염 저항	"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
 Air	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua	ambiguous	공기 저항 || 대기 마법	"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
 Body	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua	ambiguous	신체 마법 || 육체 저항	"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
@@ -46,18 +45,6 @@ GotItem	item	2	2	uncertain_context:2	Scripts/General/ExtraEvents.lua			"events.c
 Legendary	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
 Primordial	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
 Rare	item	2	2	uncertain_context:2	Scripts/General/zzMaw-Items.lua			"local tierList={""Common"", ""Uncom."", ""Rare"", ""Epic"", ""Ancient"", ""Primordial"", ""Legendary"", [0]=""OFF""}"
-"
-
-Item Bonus Power: "	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local txt=""\n\nItem Bonus Power: "" .. t.Item.MaxCharges .. ""/"" .. maxChargesCap"
-"
-
-Level Required: "	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local txt=""\n\nLevel Required: "" .. levelRequired"
-"
-
-Scale with player level, up to level 550."	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local txt=""\n\nScale with player level, up to level 550."""
-"
-
-Scale with player level, up to level 900."	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"txt=""\n\nScale with player level, up to level 900."""
  +X	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"txt=baseStatName[bonus] .. "" +X"""
  - Corrupted item #	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"txt = txt .. ""\n"" .. pl.Name .. "" - Corrupted item #"" .. bag .. "" in bag #"" .. key"
  Aura: adds 	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local txt=string.format(name[m] .. "" Aura: adds "" .. damage .. "" Fire Damage to any attack\n\n"")"
@@ -122,9 +109,6 @@ Melee	item	1	14	internal_table_key_literal:13; uncertain_context:1	Scripts/Gener
 Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[12]=""Might and accuracy enchantments give 40% bonus to intellect and personality. Intellect and personality enchantments give 40% bonus to might and accuracy"","
 ModifyItemDamage	item	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""ModifyItemDamage"", t)"
 MonsterDropItem	item	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.Call(""MonsterDropItem"", t)"
-"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
-
- Adds the following legendary power to an item:"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"txt[1067].Notes=""Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\n Adds the following legendary power to an item:"""
 Overhealing reduces recovery time equal to half overhealing amount	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[35]=""Overhealing reduces recovery time equal to half overhealing amount"","
 Overhealing refunds mana	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[34]=""Overhealing refunds mana"","
 paralysis	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[20] = { [12] = ""paralysis"", [23] = ""fear"" },"
@@ -138,12 +122,6 @@ Solarstone	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local
 spell drain	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[19] = { [5] = ""insanity"", [22] = ""spell drain"" },"
 stone	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[23] = { [15] = ""stone"", [21] = ""premature ageing"" },"
 Successfully covering an ally restores 3% of your HP	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[23]=""Successfully covering an ally restores 3% of your HP"","
-The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item.	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"txt[1066].Notes=""The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item."""
-"This Eye allows to add a Special enchant to any equipment that has already 2 base enchants
-(right-click on an item with a base enchant to use)"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"txt[1061].Notes=""This Eye allows to add a Special enchant to any equipment that has already 2 base enchants\n(right-click on an item with a base enchant to use)"""
-"This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant
-(right-click on an item with a base enchant to use)"	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"txt[1062].Notes=""This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant\n(right-click on an item with a base enchant to use)"""
-This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions.	item	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.ItemsTxt[1069].Notes=""This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions."""
 Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[30]=""Threshold HP to determine death/eradication depends on SP multiplied by mana shield efficiency instead, if higher"","
 Total corrupted items: 	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Item-Sorter.lua			"""Total corrupted items: "" .. brokenItems"
 Traditionally carried by the High Druid, but lost during struggles over religious doctrine, Merlin acts as a reservoir of spell power the wielder can draw upon at any time.  Merlin is enchanted with swiftness, and rains blows upon enemies much faster than an ordinary staff. (Special Powers:  Swiftness and +	item	1	1	uncertain_context:1	Scripts/General/zzMaw-Items.lua			"[2024]= ""Traditionally carried by the High Druid, but lost during struggles over religious doctrine, Merlin acts as a reservoir of spell power the wielder can draw upon at any time.  Merlin is enchanted with swiftness, and rains blows upon enemies much faster than an ordinary staff. (Special Powers:  Swiftness and +"" .. round(40*lvl) .. "" Spell Points)"","
@@ -634,36 +612,20 @@ TargetIndex	spell	2	2	uncertain_context:2	Scripts/General/zzMaw-Spells.lua			"lo
 "	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"BolsterTxt:write(""#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)\n"")"
 "% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
 Each point in the skill increases damage and increases recovery time by 3%."	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
-A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[975].Notes=""A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit."""
-A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[978].Notes=""A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light."""
-A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[971].Notes=""A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire."""
-Air Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[972].Name=""Air Magic Book"""
 AllowNewSpell	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"if ProcessFormula(MonKind, ""AllowNewSpell"", false) then"
 Base	spell	1	33	internal_table_key_literal:32; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"tab[i]=pl[stats[i] .. ""Base""] + pl[stats[i]  .. ""Bonus""]"
-Body Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[977].Name=""Body Magic Book"""
 CalcSpellDamage	spell	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""CalcSpellDamage"", t)"
 CanLearnSpell	spell	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""CanLearnSpell"", t)"
 checkMapCompletition	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Timers.lua			"MawAddTimer(""checkMapCompletition"", 10, checkMapCompletition) -- double-check this name/spelling"
 cmp dword ptr [eax + 0x19C], edx	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x425965, ""cmp dword ptr [eax + 0x19C], edx"")"
 cmp dword ptr [eax + 0x1A0], edx	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x42595B, ""cmp dword ptr [eax + 0x1A0], edx"")"
-Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[973].Notes=""Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back."""
-Dark Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[979].Name=""Dark Magic Book"""
 earth	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
-Earth Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[974].Name=""Earth Magic Book"""
-Empower Magic	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Name = ""Empower Magic"""
-Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[972].Notes=""Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air."""
-Fire Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[971].Name=""Fire Magic Book"""
 GetSpellSkill	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""GetSpellSkill"", t)"
 GM	spell	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
 HealingSpellPower	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"events.call(""HealingSpellPower"", t)"
-Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[974].Notes=""Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth."""
 Increases spell damage and healing at the expense of higher mana cost and cast time.	spell	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
-Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[979].Notes=""Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark."""
 jge absolute 0x42735B	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x4266D7, ""jge absolute 0x42735B"")"
 light	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
-Light Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[978].Name=""Light Magic Book"""
-Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[976].Notes=""Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it."""
-Mind Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[976].Name=""Mind Magic Book"""
 MonsterCanCastSpell	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""MonsterCanCastSpell"", t)"
 MonsterCastSpellM	spell	1	1	uncertain_context:1	Scripts/General/ExtraEvents.lua			"events.call(""MonsterCastSpellM"", t)"
 movzx ecx, word ptr [eax + 0x1A4]	spell	1	1	uncertain_context:1	Scripts/General/SpellsTweaks.lua			"asmpatch(0x42596D, ""movzx ecx, word ptr [eax + 0x1A4]"")"
@@ -686,21 +648,12 @@ single	spell	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/Gener
 SpellFirst	spell	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"simpleParam(""SpellFirst"", spellFirstEntry)"
 SpellSecond	spell	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"simpleParam(""SpellSecond"", spellSecondEntry)"
 spirit	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
-Spirit Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[975].Name=""Spirit Magic Book"""
 TargetRosterId	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
-Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[977].Notes=""Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners."""
-Vampiric Aura	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Name=""Vampiric Aura"""
 water	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"local names={""fire"",""air"",""water"",""earth"",""spirit"",""mind"",""body"",""light"",""dark""}"
-Water Magic Book	spell	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"txt[973].Name=""Water Magic Book"""
-Re-record: unable to locate.	status	4	4	uncertain_context:4	Scripts/Global/Quest_SavingGoobers.lua			"Message(""Re-record: unable to locate."")"
-Re-record: enter the data.	status	3	3	uncertain_context:3	Scripts/Global/Quest_SavingGoobers.lua			"Message(""Re-record: enter the data."")"
-We have no more items to trade for kegs	status	3	3	uncertain_context:3	Scripts/Global/GLOBAL.lua			"Message(""We have no more items to trade for kegs"")"
-We have no more items to trade for pyramids	status	3	3	uncertain_context:3	Scripts/Global/GLOBAL.lua			"Message(""We have no more items to trade for pyramids"")"
 %d+	status	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"Message(message:gsub(""%d+"", |contents| contents==tostring(learningRequirementsNormal[skillM]) and req or cost or contents))"
 "
 
 Realms: Detached. Time: Detached."	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"CurMes = ""Targets found. Realms: Attuned. Time: Attuned.\n\n"" .. table.concat(Messages, ""\n"") .. ""\n\nRealms: Detached. Time: Detached."""
- completed!	status	1	1	uncertain_context:1	Scripts/Global/zzMaw_Arena.lua			"Message(""Level "" .. currentArenaLevel .. "" completed!"")"
  is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there.	status	1	1	uncertain_context:1	Scripts/General/zzMaw-MultiBag.lua			"debug.Message(pl.Name .. ""'s bag number "" .. bag .. "" is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there."")"
 " might have been corrupted, contact Malekith on discord (or in bug report in discord) and copy paste this message and the following ones.
 Keep in mind that corrupted item might have been just some 'random' unexpected value with no actual consequences, so if you don't notice anything missing, you can continue playing normally.
@@ -713,7 +666,6 @@ Item data:
 %s shoots %s for %s points!%s	status	1	1	uncertain_context:1	Scripts/Global/zzMAWStatusMsg.lua			"msg=string.format(""%s shoots %s for %s points!%s"", name, monName, msgTxt, critMessage)"
 's bag number 	status	1	1	uncertain_context:1	Scripts/General/zzMaw-MultiBag.lua			"debug.Message(pl.Name .. ""'s bag number "" .. bag .. "" is corrupted. Bag has been resetted, otherwise game will crash. If you have a previous save you might want to load hope the bag is not broken there."")"
 's item from the bag 	status	1	1	uncertain_context:1	Scripts/General/zzMaw-MultiBag.lua			"debug.Message(""One of the "" .. pl.Name .. ""'s item from the bag "" .. bag .. "" might have been corrupted, contact Malekith on discord (or in bug report in discord) and copy paste this message and the following ones.\nKeep in mind that corrupted item might have been just some 'random' unexpected value with no actual consequences, so if you don't notice anything missing, you can continue playing normally.\n\nItem data:\n"" .. dump(it))"
-*You don't have any philosopher stone to charge the telelocator.*	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Message(""*You don't have any philosopher stone to charge the telelocator.*"")"
 Attune	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Message(TXT[""Attune"" .. CurStatName])"
 "Beyond Madness - a word of warning.
 
@@ -729,141 +681,14 @@ Run-wide tracking:
 - Loading or leaving the game while that counter is red counts as a death.
 
 If Insanity wasn't enough for you, you're in the right place."	status	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Message(""Beyond Madness - a word of warning.\n\nNo bolster here (except on starting maps).\n\nQuest timing matters:\n- Finish early: immediate power now, less XP.\n- Finish late: bigger XP later, no early power.\n\nRun-wide tracking:\n- On the character screen, you'll see a death counter shared across all saves of this run.\n- On the map, a red counter appears after you take damage and clears when no monsters are nearby.\n- Loading or leaving the game while that counter is red counts as a death."
-Charged. Insert request.	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Message(""Charged. Insert request."")"
-Difficulty reverted to Hell	status	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Message(""Difficulty reverted to Hell"")"
-"Greeting adventurer!
-Your journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)"	status	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Message(""Greeting adventurer!\nYour journey is about to start, but first make sure to check the difficulty settings (ESC-->Controls-->Extra Settings(on the top)-->Bolstering Power)"")"
-I wouldn't join in your reckless adventure, not even for all the wealth in the world.	status	1	1	uncertain_context:1	Scripts/General/NPCFollowers.lua			"Message(""I wouldn't join in your reckless adventure, not even for all the wealth in the world."")"
 Intro	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Message(TXT[""Intro"" .. tostring(QSet.GotIntro)])"
 IsArena	status	1	1	uncertain_context:1	Scripts/Core/events.lua			"If 'IsArena' is 'true', the ""No saving on the Arena"" message is displayed]]"
-Learned 	status	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Message(""Learned "" .. Game.SpellsTxt[spell2].Name)"
-Level 	status	1	1	uncertain_context:1	Scripts/Global/zzMaw_Arena.lua			"Message(""Level "" .. currentArenaLevel .. "" completed!"")"
 No saving on the Arena	status	1	1	uncertain_context:1	Scripts/Core/events.lua			"If 'IsArena' is 'true', the ""No saving on the Arena"" message is displayed]]"
-Not enough gold.	status	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Message(""Not enough gold."")"
 NotAttune	status	1	1	uncertain_context:1	Scripts/Global/Quest_SavingGoobers.lua			"Message(TXT[""NotAttune"" .. CurStatName])"
 One of the 	status	1	1	uncertain_context:1	Scripts/General/zzMaw-MultiBag.lua			"debug.Message(""One of the "" .. pl.Name .. ""'s item from the bag "" .. bag .. "" might have been corrupted, contact Malekith on discord (or in bug report in discord) and copy paste this message and the following ones.\nKeep in mind that corrupted item might have been just some 'random' unexpected value with no actual consequences, so if you don't notice anything missing, you can continue playing normally.\n\nItem data:\n"" .. dump(it))"
-Seraphim aren't able to dual wield	status	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Message(""Seraphim aren't able to dual wield"")"
 Unknown attack message type	status	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"error(""Unknown attack message type"")"
-"Welcome to the Nightmare...
-Good luck.. you will need"	status	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Message(""Welcome to the Nightmare...\nGood luck.. you will need"")"
 WindowMessage	status	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""WindowMessage"", t)"
-Your skill points has been reset!	status	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Message(""Your skill points has been reset!"")"
-"
-
-Can benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50
-Current amount: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=t.Description .. ""\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: "" .. str .. ""\nLevels: "" .. levelDiff"
-"
-Levels: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=t.Description .. ""\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: "" .. str .. ""\nLevels: "" .. levelDiff"
-"
-The Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.
-
-(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"""
-"%s
-
-Bonus Melee/Bow Damage: %s%s"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nBonus Melee/Bow Damage: %s%s"",Game.StatsDescriptions[0],might/10,""%"")"
-"%s
-
-Critical melee and bow strike damage bonus: %s%s"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nCritical melee and bow strike damage bonus: %s%s"",Game.StatsDescriptions[4],critDmg*100-100,""%"")"
-"%s
-
-Critical strike chance: %s%%"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nCritical strike chance: %s%%"",Game.StatsDescriptions[6],critChance)"
-"%s
-
-Critical strike chance: %s%%(%s%% with dagger)"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nCritical strike chance: %s%%(%s%% with dagger)"",Game.StatsDescriptions[6],critChance, daggerCritBonus)"
-"%s
-
-Dodge chance: %s%%"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nDodge chance: %s%%"",Game.StatsDescriptions[5],math.floor(dodgeChance*1000)/10)"
-"%s
-
-Health bonus from Endurance: %s%s
-
-Flat HP bonus from Endurance: %s"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nHealth bonus from Endurance: %s%s\n\nFlat HP bonus from Endurance: %s"",Game.StatsDescriptions[3],endurance/10,""%"",math.floor(endurance/5)*HPScaling)"
-"A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)
-Ancient, Primordial and Legendary items have increased Max power.
-
-It is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.
-
-Max Power: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description = ""A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)\nAncient, Primordial and Legendary items have increased Max power.\n\nIt is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.\n\nMax Power: """
-Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants"")"
 Description	tooltip	1	3	internal_table_key_literal:2; uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"name = ""Description"","
-Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum.	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = ""Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum."""
-Host have closed the game	tooltip	1	1	uncertain_context:1	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua			"CustomUI.DisplayTooltip(""Host have closed the game"", 20, 100, 160, 440, 0)"
-"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
-
-Adds the following legendary power to an item:"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nAdds the following legendary power to an item:"""
-"Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.
-
-Right click a legendary item to store its power"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nRight click a legendary item to store its power"""
-"Reserve a flat amount of mana
-Invisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.
-This effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."")"
-"Reserve a flat amount of mana
-Only useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a flat amount of mana\nOnly useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a flat amount of mana to grants the power of flight to your characters!  Only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a flat amount of mana to grants the power of flight to your characters!  Only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a flat amount of mana to increase the radius of light surrounding your party in the dark.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a flat amount of mana to increase the radius of light surrounding your party in the dark.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a flat amount of mana to show the locations of monsters and other points of interest while outdoors in the minimap.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a flat amount of mana to show the locations of monsters and other points of interest while outdoors in the minimap.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a percentage of your mana to  tightly binds the soul to the body. This will delay death due to massive hit point loss, but will not stop a character from going unconscious. If a preserved character's hit points are too low when the spell wears off, he or she will die.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to  tightly binds the soul to the body. This will delay death due to massive hit point loss, but will not stop a character from going unconscious. If a preserved character's hit points are too low when the spell wears off, he or she will die.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a percentage of your mana to affect the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, Weak, Death and Eradicated.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to affect the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, Weak, Death and Eradicated.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a percentage of your mana to enhance all of your party's Resistances by %s.
-While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance all of your party's Resistances by %s.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Air Resistance and Speed by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Air Resistance and Speed by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Armor Class by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Armor Class by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Attack and Accuracy.
-The enhancement equals a flat %s plus an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Attack and Accuracy.\nThe enhancement equals a flat %s plus an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Body Resistance and Might by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Body Resistance and Might by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Earth Resistance and Endurance by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Earth Resistance and Endurance by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Fire Resistance and Intellect by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Fire Resistance and Intellect by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Mind Resistance and Personality by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Mind Resistance and Personality by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to enhance your party's Water Resistance and Luck by %s.
-You get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to enhance your party's Water Resistance and Luck by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to increase critical chance of your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase critical chance of your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to increase spell damage of your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase spell damage of your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to increase your party health regen.
-Regen depends on the health pool, caster level and it's increased by %s%% per skill point, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase your party health regen.\nRegen depends on the health pool, caster level and it's increased by %s%% per skill point, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Scaling[1])"
-"Reserve a percentage of your mana to increase your party mana regen.
-Regen depends on the mana pool, caster level and it's increased by %s%% per skill point, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase your party mana regen.\nRegen depends on the mana pool, caster level and it's increased by %s%% per skill point, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Scaling[1])"
-"Reserve a percentage of your mana to increase your party melee damage by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase your party melee damage by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to increase your party Recovery speed by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase your party Recovery speed by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to increase your party unarmed damage by %s%% plus %s%% per Skill Level, up to double bonus.
-Staves with GM skill and Unarmed is considered as unarmed as well.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increase your party unarmed damage by %s%% plus %s%% per Skill Level, up to double bonus.\nStaves with GM skill and Unarmed is considered as unarmed as well.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to increases all seven stats on all your characters by %s.
-While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to increases all seven stats on all your characters by %s.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1], bf.Scaling[1])"
-"Reserve a percentage of your mana to reduce any incoming magic damage to your party by %s%% plus %s%% per Skill Level, up to double bonus.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to reduce any incoming magic damage to your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness."", bf.Base[1],bf.Scaling[1]/10)"
-"Reserve a percentage of your mana to simultaneously casts Haste, Shield, Stone Skin, and Fate on all your characters.
-While the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.
-This effect remains active until deactivated or lose consciousness."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana to simultaneously casts Haste, Shield, Stone Skin, and Fate on all your characters.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness."")"
-"Reserve a percentage of your mana.
-When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Spells.lua			"sp.Description = string.format(""Reserve a percentage of your mana.\nWhen a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."")"
 "Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
 
 Proficiency in Plate, Sword, Mace, and Shield (can't dual wield)
@@ -914,18 +739,10 @@ This skill fortifies their resilience, reducing physical damage taken by 1% per 
 Unholy:
 
 It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	tooltip	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
-This potion has been removed	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""This potion has been removed"""
 tooltip	tooltip	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Items.lua			"local damage=calcFireAuraDamage(pl, t.Item, 0, false, false, ""tooltip"")"
 TmblrOff	ui	3	3	uncertain_context:3	Scripts/General/MenuExtraSettings.lua			"IconDown	= ""TmblrOff"","
 TmblrOn	ui	3	4	comparison_control_literal:1; uncertain_context:3	Scripts/General/MenuExtraSettings.lua			"IconUp	 	= ""TmblrOn"","
-"
-
-Only healing done when monsters are in the nearbies is counted"	ui	2	2	uncertain_context:2	Scripts/General/zzMaw-Stats.lua			"t.Text = t.Text .. ""\n\nOnly healing done when monsters are in the nearbies is counted"""
 %lu	ui	2	2	uncertain_context:2	Scripts/General/BountyHunt.lua			"local text = Game.NPCText[133]:replace(""%lu"", tostring(RewardByMon(MonId)))"
-"%s
- %s	 %29s	%32s %s	%37s %s	%42s"	ui	2	2	uncertain_context:2	Scripts/General/zzMaw-Stats.lua			"t.Text = string.format(""%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s"", t.Text, Party[i].Name,"
-"%s
- %s	 %29s	%32s %s	%37s %s	%42s %s	%47s"	ui	2	2	uncertain_context:2	Scripts/General/zzMaw-Stats.lua			"t.Text = string.format(""%s\n %s\t %29s\t%32s %s\t%37s %s\t%42s %s\t%47s"", t.Text, Party[i].Name,"
 BolsterAmount	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
 ExtSetUp	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"IconDown	  = ""ExtSetUp"","
 Mode	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"local VarsToStore = {""UseMonsterBolster"", ""BolsterAmount"", ""ShowWeatherEffects"", ""ImprovedPathfinding"", ""freeProgression"", ""Mode""}"
@@ -934,50 +751,12 @@ Mode	ui	2	2	uncertain_context:2	Scripts/General/MenuExtraSettings.lua			"local V
 Current Health: "	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"t.EffectsHeader.Text=t.EffectsHeader.Text .. ""\n\nExperience: "" .. experienceAwarded .. ""\n\nCurrent Health: "" .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)"
 "
 
-Damage is reduced by an amount equal to % shown.
-
-Light resistance is equal to the lowest between Mind and Body resistances.
-Dark resistance is equal to the lowest between elemental resistances.
-Energy resistance is equal to the lowest resistance."	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=t.Text .. ""\n\nDamage is reduced by an amount equal to % shown.\n\nLight resistance is equal to the lowest between Mind and Body resistances.\nDark resistance is equal to the lowest between elemental resistances.\nEnergy resistance is equal to the lowest resistance."""
-"
-
 Experience: "	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"t.EffectsHeader.Text=t.EffectsHeader.Text .. ""\n\nExperience: "" .. experienceAwarded .. ""\n\nCurrent Health: "" .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)"
-"
-
-Map percentage, Heal/Regen/Leech/Total:"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text = t.Text .. ""\n\nMap percentage, Heal/Regen/Leech/Total:"""
-"
-
-Total percentage, Heal/Regen/Leech/Total:"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text = t.Text .. ""\n\nTotal percentage, Heal/Regen/Leech/Total:"""
 " , [""High""] = "	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"text=string.format(text .. '[""' .. Game.MapStats[i].Name .. '""] = \n{[""Low""] = ' .. a .. ' , [""Mid""] = ' .. b .. ' , [""High""] = ' .. c .. '},\n\n'  )"
 " , [""Mid""] = "	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"text=string.format(text .. '[""' .. Game.MapStats[i].Name .. '""] = \n{[""Low""] = ' .. a .. ' , [""Mid""] = ' .. b .. ' , [""High""] = ' .. c .. '},\n\n'  )"
 """] = 
 {[""Low""] = "	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"text=string.format(text .. '[""' .. Game.MapStats[i].Name .. '""] = \n{[""Low""] = ' .. a .. ' , [""Mid""] = ' .. b .. ' , [""High""] = ' .. c .. '},\n\n'  )"
 %%d	ui	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"t.Text=t.Text:gsub(""%d+"", ""%%d""):format(cost)"
-"%s
-
-Bonus healing: %s%s
-
-Spell cost reduction: %s%s
-
-Increase the mana by 2 levels worth of mana per 5 personality"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nBonus healing: %s%s\n\nSpell cost reduction: %s%s\n\nIncrease the mana by 2 levels worth of mana per 5 personality"",baseText,healingBonus,""%"",spellCostReduction,""%"")"
-"%s
-
-Bonus magic damage: %s%s
-
-Critical spell strike damage: %s%s"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nBonus magic damage: %s%s\n\nCritical spell strike damage: %s%s"",baseText,intellect/10,""%"",critDmg*100-100,""%"")"
-"%s
-
-Map percentage, Melee/Ranged/Total:"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text = string.format(""%s\n\nMap percentage, Melee/Ranged/Total:"", t.Text)"
-"%s
-
-Melee Haste:   %s%%
-Ranged Haste: %s%%
-Spell Haste:   %s%%"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nMelee Haste:   %s%%\nRanged Haste: %s%%\nSpell Haste:   %s%%"",t.Text,meleeHaste,bowHaste,spellSpeedEffect)"
-"%s
-
-Total percentage, Melee/Ranged/Total:"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text = string.format(""%s\n\nTotal percentage, Melee/Ranged/Total:"", t.Text)"
-"%s
-%s"	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n%s"",t.Text,txt)"
 446561746820436f756e743a20	ui	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"deathCounter.Text=_H""446561746820436f756e743a20""..vars.MadnessDeathCounter"
 \f00000	ui	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"text = ""\f00000"" .. text -- remove color (if bonus is not printed, ""color tag"" is not closed)"
 BolsterFineTuning	ui	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"local ScreenId = CustomUI.NewSettingsPage(""BolsterFineTuning"", ""MAW SETTINGS"", ""ExSetScr2"")"

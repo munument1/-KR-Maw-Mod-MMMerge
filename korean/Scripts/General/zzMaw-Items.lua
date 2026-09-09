@@ -1836,7 +1836,7 @@ function events.BuildItemInformationBox(t)
 				maxChargesCap=150
 			end
 			maxChargesCap=round(maxChargesCap)
-			local txt="\n\nItem Bonus Power: " .. t.Item.MaxCharges .. "/" .. maxChargesCap
+			local txt="\n\n아이템 보너스 위력: " .. t.Item.MaxCharges .. "/" .. maxChargesCap
 			t.Description =t.Description .. StrColor(100,100,100, txt)
 		end
 	end
@@ -2492,9 +2492,9 @@ function events.BuildItemInformationBox(t)
 		pattern = "(%d+)"
 		text=t.Description
 		t.Description = text:gsub(pattern, function(match) return replaceNumber(match, t.Item.BonusExpireTime) end)
-		local txt="\n\nScale with player level, up to level 550."
+		local txt="\n\n플레이어 레벨에 따라 성장하며, 최대 레벨 550까지 적용됩니다."
 		if vars.madnessMode then
-			txt="\n\nScale with player level, up to level 900."
+			txt="\n\n플레이어 레벨에 따라 성장하며, 최대 레벨 900까지 적용됩니다."
 		end
 		if t.Item.BonusExpireTime>=1 then
 			txt=StrColor(120, 240, 255,"\n\n유물 레벨: " .. t.Item.BonusExpireTime)
@@ -2799,7 +2799,7 @@ function events.BuildItemInformationBox(t)
 		if t.Description then
 			
 			local levelRequired=GetLevelRquirement(t.Item)
-			local txt="\n\nLevel Required: " .. levelRequired 
+			local txt="\n\n요구 레벨: " .. levelRequired 
 			local id=Game.CurrentPlayer
 			if id<0 or id>Party.High then
 				id=0

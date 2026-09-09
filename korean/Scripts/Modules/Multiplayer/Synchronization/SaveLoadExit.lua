@@ -705,7 +705,7 @@ end
 function events.HostLeft()
 	-- remove all clients, end game, leave to main menu, show explanation message
 	Multiplayer.close()
-	CustomUI.DisplayTooltip("Host have closed the game", 20, 100, 160, 440, 0)
+	CustomUI.DisplayTooltip("호스트가 게임을 종료했습니다", 20, 100, 160, 440, 0)
 	DoGameAction(132, 0, 0, true)
 	DoGameAction(132)
 end

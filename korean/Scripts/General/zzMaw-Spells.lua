@@ -2943,179 +2943,179 @@ function adjustSpellTooltips()
 		local id=3
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Fire Resistance and Intellect by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 화염 저항과 지력을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--fire aura
 		local id=4
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Causes your party weapons to burn with a magical fire, giving the weapons fire enchant, on top of any other enchants")
+		sp.Description = string.format("파티의 무기에 마법의 불꽃을 둘러 기존 마법부여와 별개로 화염 마법부여를 추가합니다.")
 		
 		--air resistance
 		local id=14
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Air Resistance and Speed by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 대기 저항과 속도를 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--water resistance
 		local id=25
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Water Resistance and Luck by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 물 저항과 행운을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--earth res
 		local id=36
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Earth Resistance and Endurance by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 대지 저항과 지구력을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--mind res
 		local id=58
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Mind Resistance and Personality by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 정신 저항과 인격을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--body res
 		local id=69
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Body Resistance and Might by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 육체 저항과 힘을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--Bless
 		local id=46
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Attack and Accuracy.\nThe enhancement equals a flat %s plus an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 공격과 정확도를 높입니다.\n효과는 기본 %s에 시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--Haste
 		local id=5
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase your party Recovery speed by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 회복 속도를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
 		
 		--Shield
 		local id=17
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to reduce any incoming magic damage to your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티가 받는 모든 마법 피해를 %s%% 줄이고, 기술 레벨당 %s%%를 추가로 줄여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
 		
 		--Stoneskin
 		local id=38
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance your party's Armor Class by %s.\nYou get an additional 1 point for every 2 caster levels, increased by %s%% per skill level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 방어력을 %s만큼 높입니다.\n시전자 레벨 2마다 1점이 추가되며, 기술 레벨당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1])
 		
 		--Empower Magic
 		local id=28
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase spell damage of your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
-		sp.Name = "Empower Magic"
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 주문 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Name = "마법 강화"
 		
 		--fate
 		local id=47
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase critical chance of your party by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 치명타 확률을 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
 		
 		--heroism
 		local id=51
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase your party melee damage by %s%% plus %s%% per Skill Level, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 근접 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
 		
 		--meditation
 		local id=56
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase your party mana regen.\nRegen depends on the mana pool, caster level and it's increased by %s%% per skill point, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Scaling[1])
-		sp.Name = "Meditation"
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 마나 재생을 높입니다.\n재생량은 최대 마나와 시전자 레벨에 따라 달라지며, 기술 포인트당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Scaling[1])
+		sp.Name = "명상"
 		
 		--regeneration
 		local id=71
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase your party health regen.\nRegen depends on the health pool, caster level and it's increased by %s%% per skill point, up to double bonus.\nThis effect remains active until deactivated or lose consciousness.", bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 생명력 재생을 높입니다.\n재생량은 최대 생명력과 시전자 레벨에 따라 달라지며, 기술 포인트당 %s%%씩 증가하여 최대 두 배의 보너스를 받습니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Scaling[1])
 		
 		--Hammerhands
 		local id=73
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increase your party unarmed damage by %s%% plus %s%% per Skill Level, up to double bonus.\nStaves with GM skill and Unarmed is considered as unarmed as well.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1],bf.Scaling[1]/10)
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 맨손 피해를 %s%% 높이고, 기술 레벨당 %s%%를 추가로 높여 최대 두 배의 보너스를 받습니다.\n지팡이 기술이 그랜드마스터이고 맨손 전투를 함께 사용하는 경우도 맨손으로 간주합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1],bf.Scaling[1]/10)
 		
 		--day of the gods
 		local id=83
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to increases all seven stats on all your characters by %s.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 모든 캐릭터의 일곱 능력치를 %s만큼 높입니다.\n기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--day of protection
 		local id=85
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to enhance all of your party's Resistances by %s.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness.", bf.Base[1], bf.Scaling[1])
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티의 모든 저항을 %s만큼 높입니다.\n기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.", bf.Base[1], bf.Scaling[1])
 		
 		--hour of power
 		local id=86
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to simultaneously casts Haste, Shield, Stone Skin, and Fate on all your characters.\nWhile the base effects remain consistent, each additional 3 levels in Light Magic will enhance the effects equivalently to only 2 levels.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("마나의 일정 비율을 점유해 모든 캐릭터에게 가속, 방패, 돌가죽, 운명을 동시에 시전합니다.\n기본 효과는 그대로 유지되며, 빛 마법 레벨이 추가로 3 오를 때마다 효과는 2레벨분만큼 증가합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		--preservation
 		local id=50
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to  tightly binds the soul to the body. This will delay death due to massive hit point loss, but will not stop a character from going unconscious. If a preserved character's hit points are too low when the spell wears off, he or she will die.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("마나의 일정 비율을 점유해 영혼을 육체에 단단히 묶습니다. 막대한 생명력 손실로 인한 죽음을 늦추지만 의식불명은 막지 못합니다. 보존 효과가 끝날 때 캐릭터의 생명력이 지나치게 낮다면 사망합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		--Protection from magic
 		local id=75
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana to affect the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, Weak, Death and Eradicated.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("마나의 일정 비율을 점유해 파티 전체에 동시에 적용되며, 약화 상태를 유발하는 일부 주문과 몬스터 능력에 면역을 부여합니다. 해당 상태는 중독, 질병, 석화, 마비, 약화, 죽음, 소멸입니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 
 		
 		--pain reflection
 		local id=95
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a percentage of your mana.\nWhen a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character.")
+		sp.Description = string.format("마나의 일정 비율을 점유합니다.\n고통 반사가 활성화된 캐릭터를 몬스터가 공격하면, 몬스터는 그 캐릭터에게 준 피해와 같은 양의 피해를 받습니다.")
 		
 		--vampiric aura
 		local id=91
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = "Enchants party weapons with the Vampiric ability.  Damage inflicted on monsters will be given to the weapon's wielder as extra hit points, up to his or her normal hit point maximum."
-		sp.Name="Vampiric Aura"
+		sp.Description = "파티의 무기에 흡혈 능력을 부여합니다. 몬스터에게 준 피해가 무기 사용자의 추가 생명력으로 전환되며, 원래의 최대 생명력을 넘을 수는 없습니다."
+		sp.Name="흡혈의 오라"
 		
 		--Torch
 		local id=1
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a flat amount of mana to increase the radius of light surrounding your party in the dark.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("일정량의 마나를 점유해 어둠 속에서 파티 주변을 밝히는 빛의 범위를 넓힙니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		--wizard eye
 		local id=12
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a flat amount of mana to show the locations of monsters and other points of interest while outdoors in the minimap.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("일정량의 마나를 점유해 야외에서 미니맵에 몬스터와 기타 주요 지점의 위치를 표시합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		--[[Invisibility
 		local id=19
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically.")
+		sp.Description = string.format("일정량의 마나를 점유합니다.\n투명화는 주변 생물의 정신에 작용해, 말을 걸거나 공격하지 않는 한 파티를 알아차리지 못하게 합니다. 명중 여부와 관계없이 공격하면 주문이 해제됩니다. 적대적인 몬스터가 주변에 있을 때는 시전할 수 없습니다.\n이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다.")
 		]]
 		--Fly
 		local id=21
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a flat amount of mana to grants the power of flight to your characters!  Only works outdoors, but it is very useful.  Fly will drain one spell point every five minutes it is in use (i.e. when you aren't touching the ground).\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("일정량의 마나를 점유해 캐릭터에게 비행 능력을 부여합니다! 야외에서만 작동하지만 매우 유용합니다. 비행 중에는 5분마다 주문력 1을 소모합니다(즉, 땅에 닿아 있지 않을 때).\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		--Water walk
 		local id=27
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("Reserve a flat amount of mana\nOnly useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.\nThis effect remains active until deactivated or lose consciousness.")
+		sp.Description = string.format("일정량의 마나를 점유합니다.\n야외에서만 사용할 수 있으며, 수면 보행은 캐릭터가 가라앉지 않고 물 위를 걸을 수 있게 합니다.\n이 효과는 해제하거나 의식을 잃을 때까지 유지됩니다.")
 		
 		
 	else
@@ -3396,24 +3396,24 @@ function events.GameInitialized2()
 	txt[977].Picture="sbbodyu"
 	txt[978].Picture="sblightu"
 	txt[979].Picture="sbdarku"
-	txt[971].Name="Fire Magic Book"
-	txt[972].Name="Air Magic Book"
-	txt[973].Name="Water Magic Book"
-	txt[974].Name="Earth Magic Book"
-	txt[975].Name="Spirit Magic Book"
-	txt[976].Name="Mind Magic Book"
-	txt[977].Name="Body Magic Book"
-	txt[978].Name="Light Magic Book"
-	txt[979].Name="Dark Magic Book"
-	txt[971].Notes="A scorched grimoire that radiates gentle heat; a heat-seal brands the cover, and the pages grow too hot to hold unless you're versed in Fire."
-	txt[972].Notes="Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air."
-	txt[973].Notes="Damp vellum where ink ripples like tides; a water-ward dissolves every character into droplets unless a Water adept calls them back."
-	txt[974].Notes="Heavy as quarried rock, grit packed in the spine; a stone-seal weighs the script down, rising into legible relief for those attuned to Earth."
-	txt[975].Notes="A calm glow lingers between the leaves; a spirit-binding sigil veils the prayers, and they fade to silence without skill in Spirit."
-	txt[976].Notes="Margins of tight glyphs that reorder themselves; a thought-lock scrambles the text into riddles unless a Mind disciple aligns it."
-	txt[977].Notes="Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners."
-	txt[978].Notes="A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light."
-	txt[979].Notes="Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark."
+	txt[971].Name="화염 마법서"
+	txt[972].Name="대기 마법서"
+	txt[973].Name="물 마법서"
+	txt[974].Name="대지 마법서"
+	txt[975].Name="영혼 마법서"
+	txt[976].Name="정신 마법서"
+	txt[977].Name="육체 마법서"
+	txt[978].Name="빛 마법서"
+	txt[979].Name="어둠 마법서"
+	txt[971].Notes="은은한 열기를 내뿜는 그을린 마도서입니다. 열기의 인장이 표지에 새겨져 있어, 화염 마법에 숙련되지 않으면 책장이 너무 뜨거워 잡을 수 없습니다."
+	txt[972].Notes="깃털처럼 가벼운 책장에서 정전기가 웅웅거립니다. 소용돌이치는 대기의 인장이 글줄을 바람에 흩뜨리지만, 대기 마법에 숙련된 자에게는 다시 제자리를 찾습니다."
+	txt[973].Notes="잉크가 물결처럼 일렁이는 축축한 양피지입니다. 물의 결계가 모든 글자를 물방울로 녹여 버리지만, 물 마법에 숙련된 자라면 다시 글자를 불러낼 수 있습니다."
+	txt[974].Notes="채석한 바위처럼 무겁고 책등에는 모래가 가득합니다. 돌의 인장이 글을 짓눌러 보이지 않게 하지만, 대지 마법에 조율된 자에게는 읽을 수 있는 돋을새김으로 떠오릅니다."
+	txt[975].Notes="책장 사이에 잔잔한 빛이 머뭅니다. 영혼을 묶는 인장이 기도문을 가리고 있어, 영혼 마법에 숙련되지 않으면 글귀가 고요히 사라집니다."
+	txt[976].Notes="여백을 빽빽하게 채운 문양이 스스로 순서를 바꿉니다. 사고의 자물쇠가 글을 수수께끼처럼 뒤섞지만, 정신 마법을 익힌 자라면 올바르게 정렬할 수 있습니다."
+	txt[977].Notes="약초 향이 나는 두꺼운 양피지가 맥박에 맞춰 따뜻해집니다. 활력의 결계가 책장을 뻣뻣하게 굳혀 두었지만, 육체 마법 수행자의 안정된 손길에는 부드럽게 풀립니다."
+	txt[978].Notes="표지 사이로 창백한 광휘가 새어 나옵니다. 태양의 인장이 너무 밝게 타올라 읽을 수 없지만, 빛 마법에 숙련된 자에게는 빛이 잦아들며 글이 선명해집니다."
+	txt[979].Notes="횃불빛마저 삼키는 밤의 웅덩이 같은 잉크입니다. 그림자의 결계가 글줄을 집어삼키며, 어둠 마법에 숙련된 독자에게만 글을 드러냅니다."
 	
 	for i=971, 979 do
 		Game.ItemsTxt[i].SpriteIndex=78

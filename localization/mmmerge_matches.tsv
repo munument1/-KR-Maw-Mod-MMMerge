@@ -53,6 +53,7 @@ This spell is as good as it will ever get!	이 주문은 이미 최고의 성능
 Charm	매혹	exact	safe_candidate	table	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dodging	회피	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Enslave	노예화	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Meditation	명상	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Paralyze	마비	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.	exact	safe_candidate	tooltip	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.	exact	safe_candidate	tooltip	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -567,7 +568,6 @@ Majestic Chain Mail	장엄한 사슬 갑옷	exact	no_patchable_occurrence	table	
 Mass Distortion	질량 왜곡	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Mass Fear	집단 공포	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Master Wizard	마스터 위저드	exact	no_patchable_occurrence	table	4	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Meditation	명상	exact	no_patchable_occurrence	table	7	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Mercenary Belt	용병의 허리띠	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Merchantman's Hat	상인의 모자	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Mercury	수은	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

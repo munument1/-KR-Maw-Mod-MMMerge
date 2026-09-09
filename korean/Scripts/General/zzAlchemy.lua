@@ -410,7 +410,7 @@ function events.BuildItemInformationBox(t)
 	if potionText[t.Item.Number] then
 		t.Description=potionText[t.Item.Number]--REMOVED .. "\n(To drink, pick the potion up and right-click over a character's portrait.  To mix, pick the potion up and right-click over another potion.)"
 	elseif t.Item.Number>=264 and t.Item.Number<=299 then
-		t.Description="This potion has been removed"
+		t.Description="이 물약은 제거되었습니다"
 	end
 	if t.Item.Number==222 then
 		t.Description=StrColor(255,255,153,"생명력 회복: " .. round(t.Item.Bonus^1.75)+10 .. " 생명력") .. "\n" .. t.Description
@@ -446,7 +446,7 @@ function events.BuildItemInformationBox(t)
 		local baseLevel=calcLevel(baseExp)
 		local currentLevel=calcLevel(pl.Exp)
 		local levelDiff=round(currentLevel-baseLevel)
-		t.Description=t.Description .. "\n\nCan benefit only if experience gained this way is less than 25% of base experience and level gained are less than 50\nCurrent amount: " .. str .. "\nLevels: " .. levelDiff
+		t.Description=t.Description .. "\n\n이 방식으로 얻은 경험치가 기본 경험치의 25% 미만이고 상승한 레벨이 50 미만일 때만 효과를 받을 수 있습니다.\n현재 수치: " .. str .. "\n레벨: " .. levelDiff
 	end
 		
 	if table.find(potionUsingCharges,t.Item.Number) then
@@ -713,7 +713,7 @@ function events.BuildItemInformationBox(t)
 			local rings = round(tier * 0.75 * 6)
 			
 			
-			t.Description = "A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)\nAncient, Primordial and Legendary items have increased Max power.\n\nIt is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.\n\nMax Power: " 
+			t.Description = "아이템의 마법부여 강도를 높일 수 있는 특별한 보석입니다. (기본 마법부여가 있는 아이템을 우클릭하여 사용)\n고대, 태고, 전설 아이템은 최대 위력이 더 높습니다.\n\n인벤토리 화면에서 U 키를 누르면 보석 3개를 상위 등급 보석 1개로 업그레이드할 수 있습니다.\n\n최대 위력: " 
 			.. StrColor(255, 128, 0, tostring(round(tier * 6))) --.. " (65% on AC)"
 			.. "\n보너스: " .. StrColor(255, 128, 0, tostring(power)) 
 			.. "\n\n아이템 보정치:\n양손 무기: " .. StrColor(255, 128, 0, twoHanded)
@@ -725,16 +725,16 @@ function events.BuildItemInformationBox(t)
 	if t.Item.Number==1067 then
 		if t.Description then
 			if t.Item.BonusStrength<10 or t.Item.BonusStrength>1000 then
-				t.Description="Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nRight click a legendary item to store its power"
+				t.Description="오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n전설 아이템을 우클릭하면 그 능력을 저장합니다."
 			else
-				t.Description="Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\nAdds the following legendary power to an item:"
+				t.Description="오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n다음 전설 능력을 아이템에 부여합니다:"
 			end
 			t.Description = t.Description .. "\n\n" .. StrColor(255,255,30,legendaryEffects[t.Item.BonusStrength])
 		end
 	end
 	if t.Item.Number==1068 then
 		if t.Description then				
-			t.Description="\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"
+			t.Description="\n천상의 오브는 한 아이템의 천상 정수를 다른 아이템으로 옮겨, 신성한 속성을 보존하면서 원래 아이템에서 그 축복을 제거할 수 있습니다.\n\n(천상 아이템을 우클릭하면 힘을 추출해 천상의 오브를 충전하고, 이후 천상이 아닌 아이템을 우클릭하면 그 힘을 이전합니다.)"
 			if t.Item.BonusStrength==1 then
 				t.Description = t.Description .. "\n\n" .. StrColor(120, 240, 255,"천상 오브의 충전이 완료되어 유물이 아닌 장비에 천상의 힘을 부여할 준비가 되었습니다")
 			end
@@ -1398,10 +1398,10 @@ local descNames={
 function events.GameInitialized2()
 	--special crafting items
 	local txt=Game.ItemsTxt
-	txt[1061].Notes="This Eye allows to add a Special enchant to any equipment that has already 2 base enchants\n(right-click on an item with a base enchant to use)"
-	txt[1062].Notes="This Hourglass allows to add a second base enchant to any equipment that has 1 base and a special enchant\n(right-click on an item with a base enchant to use)"
-	txt[1066].Notes="The Pearl of Memory is a mystical item valued for its power to erase one random enchant from any enchanted item."
-	txt[1067].Notes="Oracle's Orb is a mysterious and powerful artifact, a large, purple orb with a haunting face suspended within its core. This enigmatic relic is known for storing legendary abilities upon items it enchants.\n\n Adds the following legendary power to an item:"
+	txt[1061].Notes="이 눈은 기본 마법부여가 이미 2개 있는 장비에 특수 마법부여를 추가할 수 있게 합니다.\n(기본 마법부여가 있는 아이템을 우클릭하여 사용)"
+	txt[1062].Notes="이 모래시계는 기본 마법부여 1개와 특수 마법부여가 있는 장비에 두 번째 기본 마법부여를 추가할 수 있게 합니다.\n(기본 마법부여가 있는 아이템을 우클릭하여 사용)"
+	txt[1066].Notes="기억의 진주는 마법부여된 아이템에서 무작위 마법부여 하나를 지울 수 있는 힘을 지닌 신비한 아이템입니다."
+	txt[1067].Notes="오라클의 오브는 중심부에 섬뜩한 얼굴이 떠 있는 크고 보랏빛인 신비롭고 강력한 유물입니다. 이 수수께끼의 유물은 자신이 마법부여한 아이템에 전설 능력을 저장하는 것으로 알려져 있습니다.\n\n다음 전설 능력을 아이템에 부여합니다:"
 	for i=1, #names do
 		txt[i+1040].Picture=names[i]
 		txt[i+1040].Name=descNames[i]
@@ -1418,7 +1418,7 @@ function events.GameInitialized2()
 	--potion
 	Game.ItemsTxt[1069].Name="무한 물약"
 	Game.ItemsTxt[1069].NotIdentifiedName="물약병"
-	Game.ItemsTxt[1069].Notes="This items allows to increase the number of charges of Protection, Meditation, Regeneration, Magic Protection, Champion's, Paladin's, Divine Blessing and Divine Resistance potions."
+	Game.ItemsTxt[1069].Notes="이 아이템은 보호, 명상, 재생, 마법 보호, 챔피언, 팔라딘, 신성한 축복, 신성한 저항 물약의 사용 횟수를 늘릴 수 있게 합니다."
 	Game.ItemsTxt[1069].Picture="item280"
 	Game.ItemsTxt[1069].Skill=40
 	Game.ItemsTxt[1069].SpriteIndex=130
