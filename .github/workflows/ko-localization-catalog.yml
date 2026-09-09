@@ -15,6 +15,7 @@ on:
       - 'tools/promote_display_literals.py'
       - 'tools/promote_alchemy_tooltips.py'
       - 'tools/promote_monster_tooltips.py'
+      - 'tools/promote_map_item_tooltips.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -69,6 +70,9 @@ jobs:
 
       - name: Promote monster information labels
         run: python tools/promote_monster_tooltips.py --root .
+
+      - name: Promote map item tooltips
+        run: python tools/promote_map_item_tooltips.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
