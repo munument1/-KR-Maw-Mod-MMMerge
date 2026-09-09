@@ -1349,7 +1349,7 @@ function events.Tick()
 		local leech=getDragonRegenLeech(pl)
 		if leech>0 then
 			local leechNext=leech*(s+1)/s
-			txt = txt .. string.format("\n\nMelee Life Leech vs equal level: %s\nNext Level Bonus: %s\n(lower against higher level monsters)",
+			txt = txt .. string.format("\n\n동일 레벨 대상 근접 흡혈: %s\n다음 레벨 보너스: %s\n(더 높은 레벨의 몬스터에게는 효과 감소)",
 				StrColor(255,80,80,round(leech*1000)/10 .. "%"),
 				StrColor(255,80,80,"+" .. round((leechNext-leech)*1000)/10 .. "%\n"))
 		end
@@ -1383,7 +1383,7 @@ function events.Tick()
 		local masteryReduction = (1 - m * 0.125)
 		local manaMult = shortenNumber(round(((1+0.125*s)*1.04^s - 1) * masteryReduction *100),3)
 		local castMult = shortenNumber(round((1.015^s-1)*100),3)
-		txt = string.format("%s\n\nCurrent bonuses at skill %s:\n- Damage base: %s\n- Damage scaling: %s\n\n- Healing base: %s\n- Healing scaling: %s\n\n- Mana cost: %s\n- Cast time: %s\n",
+		txt = string.format("%s\n\n기술 %s의 현재 보너스:\n- 기본 피해: %s\n- 피해 배율: %s\n\n- 기본 치유량: %s\n- 치유 배율: %s\n\n- 마나 소모: %s\n- 시전 시간: %s\n",
 			baseAscStr, 
 			StrColor(255,255,100,s),
 			StrColor(0,255,0,"+"..dmgBaseMult.."%"),
@@ -2462,7 +2462,7 @@ function events.Action(t)
 			if m==3 then
 				txt=txt .. "Chance to Stun: " .. chance .. "%"
 			elseif m==4 then
-				txt=txt .. "Chance to Paralyze: " .. chance .. "%"
+				txt=txt .. "마비 확률: " .. chance .. "%"
 			end
 			Skillz.setDesc(6,5,maceGMtxt .. StrColor(0,0,0,txt))
 		end
@@ -2690,7 +2690,7 @@ function events.LoadMap()
 	local requirement=GetArmsmasterSupremeRequirement()
 	local descTxt=descTxt .. "\n기사는 최상위 단계까지 습득할 수 있으며, 해당 단계는 기술 레벨 " .. requirement .. ".\n"
 	Skillz.setDesc(35,1,descTxt)
-	local txt="Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"
+	local txt="기술 보너스: 피해 3, 공격 3, 속도 2%\n무기 전문가 기술 10포인트마다 모든 근접 무기 기술이 1 증가합니다."
 	Skillz.setDesc(35,6,txt)
 end
 

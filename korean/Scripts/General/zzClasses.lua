@@ -797,14 +797,14 @@ function dragonSkill(dragon, index)
 		pl=Party[index]
 		Skillz.setName(33, "송곳니")
 
-		local txt="Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n" .. "\n------------------------------------------------------------\n            Attack| Dmg|"
+		local txt="드래곤은 송곳니로 적에게 끔찍한 피해를 줄 수 있습니다. 피해량은 30 + 레벨당 2입니다(최대 600레벨). 송곳니 기술은 숙련도와 기술 레벨에 따라 이 피해를 일정 비율만큼 증가시킵니다.\n\n송곳니 기술이 드래곤 기술보다 낮으면 공격 시 몬스터를 밀쳐냅니다.\n기술 포인트마다 피해가 증가하고 회복 시간이 1.5% 증가합니다.\n" .. "\n------------------------------------------------------------\n            공격| 피해|"
 		Skillz.setDesc(33,1,txt)
 		Game.SkillDesNormal[33]=fangsNormal
 		Game.SkillDesExpert[33]=fangsExpert
 		Game.SkillDesMaster[33]=fangsMaster
 		Game.SkillDesGM[33]=fangsGM
 		Skillz.setName(32,"비늘")
-		txt="Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"
+		txt="드래곤의 비늘은 천연 갑옷 역할을 할 만큼 단단하며, 레벨당 40 + 1의 방어력을 얻습니다(최대 600레벨).\n비늘 기술은 강인함과 마법 피해 저항을 더욱 높여 방어력을 일정 비율만큼 증가시킵니다.\n\n------------------------------------------------------------\n          방어%| 저항%"
 		Skillz.setDesc(32,1,txt)
 		Game.SkillDesNormal[32]=scalesNormal
 		Game.SkillDesExpert[32]=scalesExpert
@@ -1033,30 +1033,30 @@ local function shamanSkills(isShaman, id)
 		local m7, bodyMastery=SplitSkill(pl.Skills[const.Skills.Body])
 		local txt
 		local fireDamage=m1/10
-		txt=baseSchoolsTxt[12] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra " .. fireDamage .. "% of monster Hit points as fire damage."
+		txt=baseSchoolsTxt[12] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n근접 공격은 몬스터 생명력의 " .. fireDamage .. "%만큼 추가 화염 피해를 줍니다."
 		Skillz.setDesc(12,1,txt)
 		local airReduction=round((1-1/(m2/100+1))*1000)/10
-		txt=baseSchoolsTxt[13] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by " .. airReduction .. "%\n"
+		txt=baseSchoolsTxt[13] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n받는 모든 피해 감소: " .. airReduction .. "%\n"
 		Skillz.setDesc(13,1,txt)
 		local lvl=getPartyLevel(4)
 		
 		local _,_,_,avgRed=getPlayerEstimatedVitality(lvl+1)
 		local waterReduction=round(getMonsterDamage(false,(lvl+1))*(m3/lvl^0.65)/avgRed*0.99^(lvl^0.65)/2) --on average 1/2 of a B monster
 		 --waterReduction=round(getMonsterDamage(false,(lvl+1)^0.325*m3)^0.7)
-		txt=baseSchoolsTxt[14] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by " .. waterReduction .. "(calculated after resistances)\n"
+		txt=baseSchoolsTxt[14] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n받는 모든 피해 감소: " .. waterReduction .. "(저항 적용 후 계산)\n"
 		Skillz.setDesc(14,1,txt)
 		local armsmasterDamage=earthMastery*m4
-		txt=baseSchoolsTxt[15] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level\n"
+		txt=baseSchoolsTxt[15] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n대지 마법 레벨당 근접 피해가 1-2-3-4(초보-전문가-마스터-그랜드마스터) 증가합니다.\n"
 		Skillz.setDesc(15,1,txt)
 		local spelldh=m5
-		txt=baseSchoolsTxt[16] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage by " .. spelldh .. "%\n"
+		txt=baseSchoolsTxt[16] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n근접 피해 증가: " .. spelldh .. "%\n"
 		Skillz.setDesc(16,1,txt)
 		SPLEECH=round(m6^1.25)
-		txt=baseSchoolsTxt[17] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore " .. SPLEECH .. " Spell Points\n"
+		txt=baseSchoolsTxt[17] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n근접 공격 시 회복: " .. SPLEECH .. " 주문력\n"
 		Skillz.setDesc(17,1,txt)
 		local FHP=pl:GetFullHP()
 		local leech=math.max(round(FHP^0.5* m7^1.5/70 * (1+bodyMastery/2)),m7)
-		txt=baseSchoolsTxt[18] .. "\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore " .. leech .. " Hit Points\n"
+		txt=baseSchoolsTxt[18] .. "\n\n기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.\n근접 공격 시 회복: " .. leech .. " 생명력\n"
 		Skillz.setDesc(18,1,txt)
 	else
 		for i=12,18 do
@@ -1451,12 +1451,12 @@ function dkSkills(isDK, id)
 		Skillz.setName(18, "혈마법")
 		Skillz.setName(20, "사악함")
 		local txt
-		txt="This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.\n"
+		txt="죽음의 기사만 사용할 수 있는 기술입니다. 피해가 0.5-1-1.5(초보-전문가-마스터) 증가하고 기술 포인트당 공격 속도가 2% 증가합니다.\n"
 		Skillz.setDesc(14,1,txt)
 		local leech=round(bloodS/round(pl.LevelBase^0.7)*5*100)/100
-		txt="This skill is only available to death knights and reduces physical damage taken.\n" .. "Current Reduction: " .. round((1-1/(bloodS/100+1))*1000)/10 .."%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: " .. leech .. "%\n"            
+		txt="죽음의 기사만 사용할 수 있는 기술입니다. 받는 물리 피해가 감소합니다.\n" .. "현재 피해 감소: " .. round((1-1/(bloodS/100+1))*1000)/10 .."%\n\n추가로 총 생명력에 비례하여 공격 시 생명력을 흡수합니다.\n\n동일 레벨 몬스터 대상 현재 흡혈량: " .. leech .. "%\n"            
 		Skillz.setDesc(18,1,txt)
-		txt="This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n" .. "Current Reduction: " .. round((1-1/(unholyS/100+1))*1000)/10 .."%\n"
+		txt="죽음의 기사만 사용할 수 있는 기술입니다. 피해가 0.5-1-1.5(초보-전문가-마스터) 증가하고 받는 마법 피해가 감소합니다.\n" .. "현재 피해 감소: " .. round((1-1/(unholyS/100+1))*1000)/10 .."%\n"
 		Skillz.setDesc(20,1,txt)
 		Skillz.setDesc(14,5,"효과는 주문마다 다릅니다")
 		Skillz.setDesc(18,5,"효과는 주문마다 다릅니다")

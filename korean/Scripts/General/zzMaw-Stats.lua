@@ -372,7 +372,7 @@ end
 
 --body building description
 function events.GameInitialized2()
-	txt=Skillz.getDesc(27,1) .. "\n\nHit Points are also increased 2-3-4-5% per skill point, depending on mastery."
+	txt=Skillz.getDesc(27,1) .. "\n\n숙련도에 따라 기술 포인트당 생명력이 2-3-4-5% 추가로 증가합니다."
 	Skillz.setDesc(27,1,txt)
 end
 

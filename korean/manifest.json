@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 570,
-  "translated_entries_with_patchable_occurrences": 568,
-  "patchable_occurrences_targeted": 760,
+  "translated_entries": 592,
+  "translated_entries_with_patchable_occurrences": 590,
+  "patchable_occurrences_targeted": 785,
   "skipped_unpatchable_occurrences_for_translated_sources": 79,
   "changed_files": [
     {
@@ -24,11 +24,11 @@
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 157
+      "replacements": 177
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 129
+      "replacements": 133
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -52,7 +52,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
-      "replacements": 43
+      "replacements": 44
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",

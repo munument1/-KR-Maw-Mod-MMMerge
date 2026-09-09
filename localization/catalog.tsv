@@ -40,7 +40,7 @@ maw-15b04565ed76	translated	class	" (applied after resistances)
 "		Scripts/General/zzClasses.lua	401	1	세라프 피해 감소 설명 조각
 maw-2c39ec4a0977	untranslated	class	%s      %s|		%s %s	Scripts/General/zzClasses.lua	667	4	
 maw-8306811ab44f	untranslated	class	%s     %s|		%s %s	Scripts/General/zzClasses.lua	669	4	
-maw-f554a37086c3	untranslated	class	%s    %s		%s %s	Scripts/General/zzClasses.lua	673	8	
+maw-f554a37086c3	excluded	class	%s    %s		%s %s	Scripts/General/zzClasses.lua	673	8	스킬 설명 정렬용 서식 문자열
 maw-2b4ccc7581b3	untranslated	class	%s  %s|		%s %s	Scripts/General/zzClasses.lua	672	8	
 maw-b1fb3bec6fdb	untranslated	class	AC			Scripts/General/AdaptiveMonstersStats.lua	714	2	
 maw-1b81f28b5afb	translated	class	Attack	근접		Scripts/General/zzClasses.lua	461	5	Game.GlobalTxt 근접 공격 표시
@@ -86,11 +86,15 @@ maw-e573ad9a62ae	translated	class	Damage reduction: 	피해 감소: 		Scripts/Ge
 maw-08f0a732529a	untranslated	class	DamageMult			Scripts/General/zzClasses.lua	2180	22	
 maw-d1e85b725202	untranslated	class	directionX			Scripts/General/zzClasses.lua	866	1	
 maw-4c7f9ddae830	untranslated	class	directionY			Scripts/General/zzClasses.lua	866	1	
-maw-ee2cd572baee	untranslated	class	"Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).
+maw-ee2cd572baee	translated	class	"Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).
 Scales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.
 
 ------------------------------------------------------------
-          AC%| Res%"			Scripts/General/zzClasses.lua	807	1	
+          AC%| Res%"	"드래곤의 비늘은 천연 갑옷 역할을 할 만큼 단단하며, 레벨당 40 + 1의 방어력을 얻습니다(최대 600레벨).
+비늘 기술은 강인함과 마법 피해 저항을 더욱 높여 방어력을 일정 비율만큼 증가시킵니다.
+
+------------------------------------------------------------
+          방어%| 저항%"		Scripts/General/zzClasses.lua	807	1	드래곤 비늘 기술 설명
 maw-5d3f344b5bd2	untranslated	class	duration			Scripts/General/zzClasses.lua	866	1	
 maw-9d6d1bb8b10c	translated	class	Elder 	원로 		Scripts/General/zzClasses.lua	96	1	클래스명 접두어
 maw-0fb88bcef8a5	untranslated	class	GetArmorClass			Scripts/General/AdaptiveMonstersStats.lua	1041	1	
@@ -1344,22 +1348,34 @@ Balancing power and vitality leads to the highest damage.
 
 위력과 활력을 균형 있게 높이면 가장 높은 피해를 낼 수 있습니다.
 "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 설명
-maw-2b7c4fd09217	untranslated	skill	"
+maw-2b7c4fd09217	translated	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
 Increases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level
-"			Scripts/General/zzClasses.lua	1049	1	
-maw-b5285078828f	untranslated	skill	"
+"	"
+
+기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.
+대지 마법 레벨당 근접 피해가 1-2-3-4(초보-전문가-마스터-그랜드마스터) 증가합니다.
+"		Scripts/General/zzClasses.lua	1049	1	승천 대지 마법 설명
+maw-b5285078828f	translated	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Melee attacks deal an extra "			Scripts/General/zzClasses.lua	1036	1	
-maw-546b7e641c42	untranslated	skill	"
+Melee attacks deal an extra "	"
+
+기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.
+근접 공격은 몬스터 생명력의 "		Scripts/General/zzClasses.lua	1036	1	승천 화염 마법 설명 앞부분
+maw-546b7e641c42	translated	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Reduce all damage taken by "			Scripts/General/zzClasses.lua	1039	2	
-maw-56bbe4224d60	untranslated	skill	"
+Reduce all damage taken by "	"
 
-Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."			Scripts/General/zzMaw-Stats.lua	375	1	
+기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.
+받는 모든 피해 감소: "		Scripts/General/zzClasses.lua	1039	2	승천 피해 감소 설명 앞부분
+maw-56bbe4224d60	translated	skill	"
+
+Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."	"
+
+숙련도에 따라 기술 포인트당 생명력이 2-3-4-5% 추가로 증가합니다."		Scripts/General/zzMaw-Stats.lua	375	1	생명력 기술 설명 추가문
 maw-4522e2803e51	translated	skill	"
 
 Master will grant 1% to drop random reagents from Monsters.
@@ -1367,11 +1383,15 @@ At GM this chance is doubled."	"
 
 마스터 단계에서는 몬스터에게서 무작위 재료가 떨어질 확률이 1% 생깁니다.
 그랜드마스터 단계에서는 이 확률이 두 배가 됩니다."		Scripts/General/zzAlchemy.lua	686	1	연금술 기술 설명
-maw-7c3efcea2530	untranslated	skill	"
+maw-7c3efcea2530	translated	skill	"
 
 Melee Life Leech vs equal level: %s
 Next Level Bonus: %s
-(lower against higher level monsters)"		%s %s	Scripts/General/zzMAW-Skills.lua	1352	1	
+(lower against higher level monsters)"	"
+
+동일 레벨 대상 근접 흡혈: %s
+다음 레벨 보너스: %s
+(더 높은 레벨의 몬스터에게는 효과 감소)"	%s %s	Scripts/General/zzMAW-Skills.lua	1352	1	흡혈 기술 동적 설명
 maw-0c00f6a83ef5	translated	skill	"
 
 Press M to enable/disable"	"
@@ -1382,9 +1402,11 @@ maw-04249a82123e	translated	skill	"
 Total Damage: "	"
 
 총 피해: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 피해 표시
-maw-ef99b6292346	untranslated	skill	"
+maw-ef99b6292346	translated	skill	"
 ------------------------------------------------------------
-            Attack| Dmg|"			Scripts/General/zzClasses.lua	800	1	
+            Attack| Dmg|"	"
+------------------------------------------------------------
+            공격| 피해|"		Scripts/General/zzClasses.lua	800	1	드래곤 송곳니 표 머리글
 maw-a312328e3e40	translated	skill	"
 Currently disabled
 "	"
@@ -1459,24 +1481,29 @@ maw-70332ae6ff69	translated	skill	 atk	 공격		Scripts/General/zzMAW-Skills.lua
 maw-0180dbb97f1a	translated	skill	 atk, 	 공격, 		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-7e1bd9ca7323	translated	skill	 dmg and 	 피해, 		Scripts/General/zzMAW-Skills.lua	691	1	무기 전문가 숙련 설명 조각
 maw-7aa77166c8f7	translated	skill	 dmg, 	 피해, 		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
-maw-e3f4d0063c3d	untranslated	skill	" Hit Points
-"			Scripts/General/zzClasses.lua	1059	1	
-maw-3a4e4d25a545	untranslated	skill	"%
+maw-e3f4d0063c3d	translated	skill	" Hit Points
+"	" 생명력
+"		Scripts/General/zzClasses.lua	1059	1	승천 생명력 회복 설명 후행 조각
+maw-3a4e4d25a545	translated	skill	"%
 
 Additionally it will make your attacks to leech damage based on your total HP.
 
-Current leech vs. same level monsters: "			Scripts/General/zzClasses.lua	1457	1	
+Current leech vs. same level monsters: "	"%
+
+추가로 총 생명력에 비례하여 공격 시 생명력을 흡수합니다.
+
+동일 레벨 몬스터 대상 현재 흡혈량: "		Scripts/General/zzClasses.lua	1457	1	죽음의 기사 혈마법 설명 후행 조각
 maw-07ee0aeb6aee	untranslated	skill	"%
 
 Press P to enable/disable
 "			Scripts/General/zzMAW-Skills.lua	2097	2	
-maw-f5cb16b30cd5	untranslated	skill	% of monster Hit points as fire damage.			Scripts/General/zzClasses.lua	1036	1	
+maw-f5cb16b30cd5	translated	skill	% of monster Hit points as fire damage.	%만큼 추가 화염 피해를 줍니다.		Scripts/General/zzClasses.lua	1036	1	승천 화염 피해 설명 후행 조각
 maw-41559b59261e	translated	skill	%% speed	%% 속도		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-347cd9c53ff7	excluded	skill	%s		%s	Scripts/General/zzMAW-Skills.lua	565	7	숫자 이름 string.format 서식 전용
-maw-539335ea1fbf	untranslated	skill	"%s	"		%s	Scripts/General/zzMAW-Skills.lua	527	28	
+maw-539335ea1fbf	excluded	skill	"%s	"		%s	Scripts/General/zzMAW-Skills.lua	527	28	스킬 설명 표 정렬용 서식 문자열
 maw-f9cac35ff8e0	untranslated	skill	"%s	0"		%s	Scripts/General/zzMAW-Skills.lua	526	1	
 maw-33af5cacd7e6	untranslated	skill	"%s	075AC|"		%s	Scripts/General/zzMAW-Skills.lua	611	2	
-maw-245e64ea1852	untranslated	skill	"%s
+maw-245e64ea1852	translated	skill	"%s
 
 Current bonuses at skill %s:
 - Damage base: %s
@@ -1487,7 +1514,18 @@ Current bonuses at skill %s:
 
 - Mana cost: %s
 - Cast time: %s
-"		%s %s %s %s %s %s %s %s	Scripts/General/zzMAW-Skills.lua	1386	1	
+"	"%s
+
+기술 %s의 현재 보너스:
+- 기본 피해: %s
+- 피해 배율: %s
+
+- 기본 치유량: %s
+- 치유 배율: %s
+
+- 마나 소모: %s
+- 시전 시간: %s
+"	%s %s %s %s %s %s %s %s	Scripts/General/zzMAW-Skills.lua	1386	1	승천 현재 보너스 설명
 maw-4f7c505f10c4	translated	skill	"%s
 
 Current HP Regeneration: %s
@@ -1523,8 +1561,9 @@ maw-29bafc9a3c98	untranslated	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	5
 maw-f9b26d772d4f	untranslated	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	
 maw-908093bbf3f4	untranslated	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	
 maw-84d1ceb266d3	untranslated	skill	([^%s]+)		%s	Scripts/General/BountyHunt.lua	215	13	
-maw-4b7ec923d00c	untranslated	skill	"(calculated after resistances)
-"			Scripts/General/zzClasses.lua	1046	1	
+maw-4b7ec923d00c	translated	skill	"(calculated after resistances)
+"	"(저항 적용 후 계산)
+"		Scripts/General/zzClasses.lua	1046	1	승천 피해 감소 설명 후행 조각
 maw-75446e835954	translated	skill	Absorb up to 25% damage	피해를 최대 25% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2478	1	마나 방패 숙련 효과
 maw-edaf46202584	translated	skill	Absorb up to 50% damage	피해를 최대 50% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2479	1	마나 방패 숙련 효과
 maw-b53ba9e43224	translated	skill	Absorb up to 75% damage	피해를 최대 75% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2480	1	마나 방패 숙련 효과
@@ -1592,7 +1631,7 @@ Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipp
 
 사슬 갑옷을 장비하면 사슬 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	592	1	사슬 갑옷 기술 설명
 maw-826b07e8e3ae	untranslated	skill	Chance			Scripts/General/zzMAW-Skills.lua	1083	2	
-maw-df5e8635a295	untranslated	skill	Chance to Paralyze: 			Scripts/General/zzMAW-Skills.lua	2465	1	
+maw-df5e8635a295	translated	skill	Chance to Paralyze: 	마비 확률: 		Scripts/General/zzMAW-Skills.lua	2465	1	철퇴 마비 확률 표시
 maw-c713960107a1	untranslated	skill	Chance to Stun: 			Scripts/General/zzMAW-Skills.lua	2463	1	
 maw-af169bb89cfb	translated	skill	Combat	전투		Scripts/General/zzClasses.lua	2104	1	암살자 스킬명
 maw-57b5a5dea337	translated	skill	"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
@@ -1633,16 +1672,20 @@ Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something
 
 Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2099	1	
 maw-3711ef38c87d	translated	skill	Current Damage reduction per Mana: 	마나당 현재 피해 감소: 		Scripts/General/zzMAW-Skills.lua	2118	2	마나 방패 수치 표시
-maw-baa7b94348d2	untranslated	skill	Current Reduction: 			Scripts/General/zzClasses.lua	1457	2	
+maw-baa7b94348d2	translated	skill	Current Reduction: 	현재 피해 감소: 		Scripts/General/zzClasses.lua	1457	2	죽음의 기사 피해 감소 표시
 maw-b3ec68d9a6c8	translated	skill	Dark Magic	어둠 마법		Scripts/General/zzClasses.lua	1474	1	Skillz.setName 표시명
 maw-a8e6075e3936	untranslated	skill	Dmg%%|			Scripts/General/zzMAW-Skills.lua	542	1	
 maw-2398296e3634	untranslated	skill	Dmg|			Scripts/General/zzMAW-Skills.lua	549	1	
 maw-a45908c888a2	translated	skill	Double healing effect	회복 효과가 2배가 됩니다		Scripts/General/zzClasses.lua	432	1	스킬 숙련 효과
-maw-eac1e2011194	untranslated	skill	"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
+maw-eac1e2011194	translated	skill	"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
 
 Whenever this skill is below dragon skill it will push monsters away
 Each point in the skill increases damage and increases recovery time by 1.5%.
-"			Scripts/General/zzClasses.lua	800	1	
+"	"드래곤은 송곳니로 적에게 끔찍한 피해를 줄 수 있습니다. 피해량은 30 + 레벨당 2입니다(최대 600레벨). 송곳니 기술은 숙련도와 기술 레벨에 따라 이 피해를 일정 비율만큼 증가시킵니다.
+
+송곳니 기술이 드래곤 기술보다 낮으면 공격 시 몬스터를 밀쳐냅니다.
+기술 포인트마다 피해가 증가하고 회복 시간이 1.5% 증가합니다.
+"		Scripts/General/zzClasses.lua	800	1	드래곤 송곳니 기술 설명
 maw-0ad6e75c517a	translated	skill	Earth Magic	대지 마법		Scripts/General/zzClasses.lua	2168	1	Skillz.setName 표시명
 maw-78112dc2690b	translated	skill	Enlightenment	깨달음		Scripts/General/zzMAW-Skills.lua	2508	1	MAW 마나 스킬명
 maw-42d86cfd50b6	untranslated	skill	Exploding			Scripts/General/zzMaw-Monsters.lua	3177	2	
@@ -1773,8 +1816,9 @@ maw-ec9f630c8693	untranslated	skill	Skill			Data/Tables/Extra Skillz.txt	1	7
 maw-595e6f796a09	untranslated	skill	Skill reset info			Scripts/Global/zzMAWRespec.lua	14	1	
 maw-e09212c7d3ea	untranslated	skill	Skills			Scripts/General/zzMaw-Monsters.lua	3147	1	
 maw-04ad3555eeac	translated	skill	Skills adds 	기술 보너스: 		Scripts/General/zzMAW-Skills.lua	691	4	무기 전문가 숙련 설명 조각
-maw-c1c7f7e81f44	untranslated	skill	"Skills adds 3 dmg, 3 atk, 2% speed
-Each 10 points in armsmaster increase all the melee weapon skills by 1"			Scripts/General/zzMAW-Skills.lua	2693	1	
+maw-c1c7f7e81f44	translated	skill	"Skills adds 3 dmg, 3 atk, 2% speed
+Each 10 points in armsmaster increase all the melee weapon skills by 1"	"기술 보너스: 피해 3, 공격 3, 속도 2%
+무기 전문가 기술 10포인트마다 모든 근접 무기 기술이 1 증가합니다."		Scripts/General/zzMAW-Skills.lua	2693	1	무기 전문가 동적 설명
 maw-7707f6812879	untranslated	skill	SP			Scripts/General/zzMAW-Skills.lua	865	2	
 maw-3d0e83b4f7be	untranslated	skill	Speed|			Scripts/General/zzMAW-Skills.lua	534	1	
 maw-249f056b552d	untranslated	skill	Stacks			Scripts/General/zzMAW-Skills.lua	1121	12	
@@ -1792,12 +1836,15 @@ maw-19e9d2245f60	untranslated	skill	Summoner			Scripts/General/zzMaw-Monsters.lu
 maw-13529394f788	untranslated	skill	Swapper			Scripts/General/zzMaw-Monsters.lua	3177	3	
 maw-112ab020698e	untranslated	skill	Swift			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-d387f71bdbc2	untranslated	skill	TeachSkill			Scripts/General/zzMAW-Skills.lua	1752	1	
-maw-9695e5c63098	untranslated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
-"			Scripts/General/zzClasses.lua	1454	1	
-maw-347e88fe61c6	untranslated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.
-"			Scripts/General/zzClasses.lua	1459	1	
-maw-8c46bff5c136	untranslated	skill	"This skill is only available to death knights and reduces physical damage taken.
-"			Scripts/General/zzClasses.lua	1457	1	
+maw-9695e5c63098	translated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
+"	"죽음의 기사만 사용할 수 있는 기술입니다. 피해가 0.5-1-1.5(초보-전문가-마스터) 증가하고 기술 포인트당 공격 속도가 2% 증가합니다.
+"		Scripts/General/zzClasses.lua	1454	1	죽음의 기사 냉기 기술 설명
+maw-347e88fe61c6	translated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.
+"	"죽음의 기사만 사용할 수 있는 기술입니다. 피해가 0.5-1-1.5(초보-전문가-마스터) 증가하고 받는 마법 피해가 감소합니다.
+"		Scripts/General/zzClasses.lua	1459	1	죽음의 기사 사악함 기술 설명
+maw-8c46bff5c136	translated	skill	"This skill is only available to death knights and reduces physical damage taken.
+"	"죽음의 기사만 사용할 수 있는 기술입니다. 받는 물리 피해가 감소합니다.
+"		Scripts/General/zzClasses.lua	1457	1	죽음의 기사 혈마법 기술 설명
 maw-dc9dacafa603	untranslated	skill	Thorn			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-e88d3c5da733	translated	skill	Triple healing effect	회복 효과가 3배가 됩니다		Scripts/General/zzClasses.lua	433	1	스킬 숙련 효과
 maw-2a8dbafc6266	translated	skill	Unholy	사악함		Scripts/General/zzClasses.lua	1452	1	죽음의 기사 스킬명
@@ -1827,14 +1874,20 @@ maw-4c3ed26b6734	translated	spell	"
 Can't learn"	"
 
 습득 불가"		Scripts/General/zzMaw-Spells.lua	2312	1	주문 상태
-maw-58b40a5e7a2c	untranslated	spell	"
+maw-58b40a5e7a2c	translated	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
-Increases melee damage by "			Scripts/General/zzClasses.lua	1052	1	
-maw-e58bf5ff5a06	untranslated	spell	"
+Increases melee damage by "	"
+
+기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.
+근접 피해 증가: "		Scripts/General/zzClasses.lua	1052	1	승천 근접 피해 설명 앞부분
+maw-e58bf5ff5a06	translated	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
-Melee attacks restore "			Scripts/General/zzClasses.lua	1055	2	
+Melee attacks restore "	"
+
+기술 레벨이 7 오를 때마다 승천 레벨이 1 증가합니다.
+근접 공격 시 회복: "		Scripts/General/zzClasses.lua	1055	2	승천 회복 설명 앞부분
 maw-4662e610e43b	translated	spell	"
 
 Not Learned"	"
@@ -1850,8 +1903,9 @@ maw-8b72f4c9216e	translated	spell	"
 Not Active"	"
 비활성"		Scripts/General/zzMaw-Spells.lua	2243	2	주문 상태
 maw-478883517eb5	translated	spell	 Hit Points	 생명력		Scripts/General/zzAlchemy.lua	416	8	아이템/주문 설명 조각
-maw-b3c72c8ec255	untranslated	spell	" Spell Points
-"			Scripts/General/zzClasses.lua	1055	1	
+maw-b3c72c8ec255	translated	spell	" Spell Points
+"	" 주문력
+"		Scripts/General/zzClasses.lua	1055	1	승천 주문력 회복 설명 후행 조각
 maw-c5fb409edfff	untranslated	spell	"#	Note	Continent	Bolster kind	Spells	Summons	Level shift
 "			Scripts/General/AdaptiveMonstersStats.lua	171	1	
 maw-0978c0a32195	untranslated	spell	"#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)

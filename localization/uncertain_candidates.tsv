@@ -39,18 +39,12 @@ Unconscious	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua	a
 Master	spell	2	8	internal_table_key_literal:2; table_schema_not_reviewed:4; uncertain_context:2	Scripts/General/zzMaw-Spells.lua	ambiguous	달인 || 마스터	"masteryName={""Normal"", ""Expert"", ""Master"", ""GM"",[0]=""Normal""}"
 Earth	table	1	8	table_schema_not_reviewed:7; uncertain_context:1	Scripts/General/zzMaw-Items.lua	ambiguous	대지 마법 || 대지 저항	"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
 Water	table	1	8	table_schema_not_reviewed:7; uncertain_context:1	Scripts/General/zzMaw-Items.lua	ambiguous	물 || 물 마법 || 물 저항	"local stats={""Might"", ""Intellect"", ""Personality"", ""Endurance"", ""Accuracy"", ""Speed"", ""LUCK"", ""HP"", ""SP"", ""ArmorClass"", ""Fire"", ""Air"", ""Water"", ""Earth"", ""Mind"", ""Body""}"
-%s    %s	class	8	8	uncertain_context:8	Scripts/General/zzClasses.lua; Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s    %s"",normal,dragonScales.Resistances[1])"
 %s  %s|	class	8	8	uncertain_context:8	Scripts/General/zzClasses.lua; Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s  %s|"",normal,dragonScales.AC[1])"
 damage	class	7	9	comparison_control_literal:2; uncertain_context:7	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua; Scripts/Global/zzMaw_Legendaries.lua			"local damage1=calcFireAuraDamage(pl, it, 0, false, false, ""damage"")"
 %s      %s|	class	4	4	uncertain_context:4	Scripts/General/zzClasses.lua			"normal=string.format(""%s      %s|"",normal,dragonFang.Attack[1])"
 %s     %s|	class	4	4	uncertain_context:4	Scripts/General/zzClasses.lua			"normal=string.format(""%s     %s|"",normal,dragonFang.Damage[1])"
 Tick	class	3	3	uncertain_context:3	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Spells.lua			"events.Remove(""Tick"", 1)"
 Character %s has invalid class id: %s. Resetted to %s	class	1	1	uncertain_context:1	Scripts/General/NPCMercenaries.lua			"local msg = string.format(""Character %s has invalid class id: %s. Resetted to %s"", Char:GetIndex(), Char.Class, NewClass)"
-"Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).
-Scales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.
-
-------------------------------------------------------------
-          AC%| Res%"	class	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"""
 GetArmorClass	class	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"events.call(""GetArmorClass"", t)"
 Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	class	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"[234] = ""Increases Armor Class  by 5+(0.5 x Power) for 6 Hours"","
 Merc	class	1	1	uncertain_context:1	Scripts/General/NPCMercenaries.lua			"Quests[""Merc"" .. k].Texts.Ungive = string.format(Game.NPCText[1680], Char.Name, ClassSelfImpressions[math.min(math.ceil(Char.LevelBase/10), 5)], Game.ClassNames[Char.Class])"
@@ -794,15 +788,10 @@ Unsupported monster count type	monster	1	1	uncertain_context:1	Scripts/General/p
 Weakness	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"[6] = ""Poison 1"", [7] = ""Poison 2"", [8] = ""Poison 3"", [2] = ""Weakness"","
 Will ' O Wisp	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Game.MapStats[96].Monster2Pic=""Will ' O Wisp"""
 Wimpy Pirate Warrior Male	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"Monster2Pic = ""Wimpy Pirate Warrior Male"","
-"%s	"	skill	28	28	uncertain_context:28	Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s\t"" .. tab+32 .. ""%s|"",normal,skillAttack[i][1])"
 %s|	skill	16	16	uncertain_context:16	Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s\t"" .. tab+32 .. ""%s|"",normal,skillAttack[i][1])"
 ([^%s]+)	skill	13	13	uncertain_context:13	Scripts/General/BountyHunt.lua; Scripts/General/zzAlchemy.lua; Scripts/General/zzMAW-Skills.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Maps.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Stats.lua			"local monsterSkill = string.match(Entry.MonName, ""([^%s]+)"")"
 %s%%|	skill	4	4	uncertain_context:4	Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s\t"" .. tab+22 .. ""%s%%|"",normal,skillDamage[i][1])"
 Broodling	skill	3	8	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodling"""
-"
-
-Every 7 Skill level adds 1 level into ascension.
-Reduce all damage taken by "	skill	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[13] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. airReduction .. ""%\n"""
 "%
 
 Press P to enable/disable
@@ -810,54 +799,13 @@ Press P to enable/disable
 "%s	075AC|"	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t075AC|"",baseString)"
 "%s Res	000"	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s Res\t000"",baseString)"
 Broodlord	skill	2	3	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodlord"""
-Current Reduction: 	skill	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
 GetDiplomacyTotalSkill	skill	2	2	uncertain_context:2	Scripts/Core/events.lua			"SimplePlayerHook(0x4852D0, ""GetDiplomacyTotalSkill"")"
 GetDisarmTrapTotalSkill	skill	2	2	uncertain_context:2	Scripts/Core/events.lua			"SimplePlayerHook(mmv(0x4853E0, 0x4912A8, 0x49031C), ""GetDisarmTrapTotalSkill"")"
 GetLearningTotalSkill	skill	2	2	uncertain_context:2	Scripts/Core/events.lua			"SimplePlayerHook(mm78(0x49130F, 0x49036E), ""GetLearningTotalSkill"")"
 GetMerchantTotalSkill	skill	2	2	uncertain_context:2	Scripts/Core/events.lua			"SimplePlayerHook(mmv(0x485340, 0x4911EB, 0x49028F), ""GetMerchantTotalSkill"")"
 GetPerceptionTotalSkill	skill	2	2	uncertain_context:2	Scripts/Core/events.lua			"SimplePlayerHook(mm78(0x491252, 0x4902DF), ""GetPerceptionTotalSkill"")"
 Omnipotent	skill	2	17	comparison_control_literal:15; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Omnipotent"""
-"
-
-Every 7 Skill level adds 1 level into ascension.
-Increases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[15] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level\n"""
-"
-
-Every 7 Skill level adds 1 level into ascension.
-Melee attacks deal an extra "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
-"
-
-Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."	skill	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"txt=Skillz.getDesc(27,1) .. ""\n\nHit Points are also increased 2-3-4-5% per skill point, depending on mastery."""
-"
-
-Melee Life Leech vs equal level: %s
-Next Level Bonus: %s
-(lower against higher level monsters)"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt = txt .. string.format(""\n\nMelee Life Leech vs equal level: %s\nNext Level Bonus: %s\n(lower against higher level monsters)"","
-"
-------------------------------------------------------------
-            Attack| Dmg|"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
-" Hit Points
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
-"%
-
-Additionally it will make your attacks to leech damage based on your total HP.
-
-Current leech vs. same level monsters: "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
-% of monster Hit points as fire damage.	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
 "%s	0"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
-"%s
-
-Current bonuses at skill %s:
-- Damage base: %s
-- Damage scaling: %s
-
-- Healing base: %s
-- Healing scaling: %s
-
-- Mana cost: %s
-- Cast time: %s
-"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt = string.format(""%s\n\nCurrent bonuses at skill %s:\n- Damage base: %s\n- Damage scaling: %s\n\n- Healing base: %s\n- Healing scaling: %s\n\n- Mana cost: %s\n- Cast time: %s\n"","
 "%s
 ------------------------------------------------------------
 "	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\n------------------------------------------------------------\n"",	Skillz.getDesc(i,1))"
@@ -865,8 +813,6 @@ Current bonuses at skill %s:
 ------------------------------------------------------------
          "	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\n------------------------------------------------------------\n         "",	Skillz.getDesc(i,1))"
 %sRes	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%sRes"",baseString)"
-"(calculated after resistances)
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
 AC|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""AC|"",baseString)"
 Adamantite	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Attack|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
@@ -877,7 +823,6 @@ Once your skill grows to the necessary level, mastery of it shall be bestowed up
 
 For this service, a tribute of 1000 gold for each level you have achieved shall be required"	skill	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Ungive = ""By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required"""
 CalcStatBonusBySkills	skill	1	1	uncertain_context:1	Scripts/Core/events.lua			"events.cocalls(""CalcStatBonusBySkills"", t)"
-Chance to Paralyze: 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt=txt .. ""Chance to Paralyze: "" .. chance .. ""%"""
 Chance to Stun: 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt=txt .. ""Chance to Stun: "" .. chance .. ""%"""
 "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
@@ -895,11 +840,6 @@ Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something
 Current cover chance: "	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. chance .."
 Dmg%%|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""Dmg%%|"",baseString)"
 Dmg|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""Dmg|"",baseString)"
-"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
-
-Whenever this skill is below dragon skill it will push monsters away
-Each point in the skill increases damage and increases recovery time by 1.5%.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
 Exploding	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Fixator	skill	1	4	comparison_control_literal:3; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 GetPlayerSkillMastery	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"events.call(""GetPlayerSkillMastery"", t)"
@@ -915,17 +855,9 @@ Regenerating	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts
 RemoveSkillValueLimits	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"local LogId = ""RemoveSkillValueLimits"""
 Shadow	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Skill reset info	skill	1	1	uncertain_context:1	Scripts/Global/zzMAWRespec.lua			"Topic = ""Skill reset info"","
-"Skills adds 3 dmg, 3 atk, 2% speed
-Each 10 points in armsmaster increase all the melee weapon skills by 1"	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"local txt=""Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"""
 Speed|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
 Summoner	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Swapper	skill	1	3	comparison_control_literal:2; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.\n"""
-"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(unholyS/100+1))*1000)/10 ..""%\n"""
-"This skill is only available to death knights and reduces physical damage taken.
-"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
 Thorn	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Venomous	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 SpellPoints	spell	13	14	index_key_literal:1; uncertain_context:13	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua			"Game.Spells[key][""SpellPoints"" .. masteryName[i]]=value"
@@ -935,20 +867,10 @@ sbair3	spell	3	3	uncertain_context:3	Scripts/General/zzMaw-Spells.lua			"local b
 sbair4	spell	3	3	uncertain_context:3	Scripts/General/zzMaw-Spells.lua			"local booksPicGM={""sbair4"",""sbair4"",""sbair4""}"
 SpellMastery	spell	3	4	internal_table_key_literal:1; uncertain_context:3	Scripts/General/AdaptiveMonstersStats.lua			"Mas   = ProcessFormula(MonKind, ""SpellMastery"", SpellMastery)"
 SpellSkill	spell	3	4	internal_table_key_literal:1; uncertain_context:3	Scripts/General/AdaptiveMonstersStats.lua			"Skill = ProcessFormula(MonKind, ""SpellSkill"", SpellSkill)"
-"
-
-Every 7 Skill level adds 1 level into ascension.
-Melee attacks restore "	spell	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
 CanMonsterCastSpell	spell	2	2	uncertain_context:2	Scripts/Core/events.lua			"events.cocalls(""CanMonsterCastSpell"", t)"
 PlayerCastSpell	spell	2	2	uncertain_context:2	Scripts/General/ExtraEvents.lua			"events.call(""PlayerCastSpell"", t)"
 string	spell	2	10	comparison_control_literal:8; uncertain_context:2	Scripts/General/zzMaw-Items.lua			"require(""string"")"
 TargetIndex	spell	2	2	uncertain_context:2	Scripts/General/zzMaw-Spells.lua			"local targetIdKey = mmv(""TargetIndex"", ""TargetIndex"", ""TargetRosterId"")"
-"
-
-Every 7 Skill level adds 1 level into ascension.
-Increases melee damage by "	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[16] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage by "" .. spelldh .. ""%\n"""
-" Spell Points
-"	spell	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
 "#	Note	Continent	Bolster kind	Spells	Summons	Level shift
 "	spell	1	1	uncertain_context:1	Scripts/General/AdaptiveMonstersStats.lua			"BolsterTxt:write(""#	Note	Continent	Bolster kind	Spells	Summons	Level shift\n"")"
 "#	Note	Type	ExtraType	Creed	Style	Pref magic	NoArena	Allow ranged attacks	Allow spells	HP by size	Allow replicate	Allow summons	Summon Id	Extra points	Max HP Boost (%)

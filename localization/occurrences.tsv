@@ -2684,18 +2684,18 @@ maw-f554a37086c3	class	%s    %s	Scripts/General/zzClasses.lua	703	no	uncertain_c
 maw-70a1c0a505d3	skill	Fangs	Scripts/General/zzClasses.lua	798	yes	proven_skill_display_name	"Skillz.setName(33, ""Fangs"")"
 maw-ef99b6292346	skill	"
 ------------------------------------------------------------
-            Attack| Dmg|"	Scripts/General/zzClasses.lua	800	no	uncertain_context	"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
+            Attack| Dmg|"	Scripts/General/zzClasses.lua	800	yes	proven_display_variable_flow	"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
 maw-eac1e2011194	skill	"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
 
 Whenever this skill is below dragon skill it will push monsters away
 Each point in the skill increases damage and increases recovery time by 1.5%.
-"	Scripts/General/zzClasses.lua	800	no	uncertain_context	"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
+"	Scripts/General/zzClasses.lua	800	yes	proven_display_variable_flow	"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
 maw-0b414bdcb7b9	skill	Scales	Scripts/General/zzClasses.lua	806	yes	proven_skill_display_name	"Skillz.setName(32,""Scales"")"
 maw-ee2cd572baee	class	"Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).
 Scales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.
 
 ------------------------------------------------------------
-          AC%| Res%"	Scripts/General/zzClasses.lua	807	no	uncertain_context	"txt=""Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"""
+          AC%| Res%"	Scripts/General/zzClasses.lua	807	yes	proven_display_variable_flow	"txt=""Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 600).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%"""
 maw-560fe3e00686	class	"Damage
 
 
@@ -2741,39 +2741,39 @@ You can check following values by checking magic schools description in skills m
 maw-b5285078828f	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Melee attacks deal an extra "	Scripts/General/zzClasses.lua	1036	no	uncertain_context	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
-maw-f5cb16b30cd5	skill	% of monster Hit points as fire damage.	Scripts/General/zzClasses.lua	1036	no	uncertain_context	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
+Melee attacks deal an extra "	Scripts/General/zzClasses.lua	1036	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
+maw-f5cb16b30cd5	skill	% of monster Hit points as fire damage.	Scripts/General/zzClasses.lua	1036	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
 maw-546b7e641c42	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Reduce all damage taken by "	Scripts/General/zzClasses.lua	1039	no	uncertain_context	"txt=baseSchoolsTxt[13] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. airReduction .. ""%\n"""
+Reduce all damage taken by "	Scripts/General/zzClasses.lua	1039	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[13] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. airReduction .. ""%\n"""
 maw-546b7e641c42	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Reduce all damage taken by "	Scripts/General/zzClasses.lua	1046	no	uncertain_context	"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
+Reduce all damage taken by "	Scripts/General/zzClasses.lua	1046	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
 maw-4b7ec923d00c	skill	"(calculated after resistances)
-"	Scripts/General/zzClasses.lua	1046	no	uncertain_context	"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
+"	Scripts/General/zzClasses.lua	1046	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
 maw-2b7c4fd09217	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
 Increases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level
-"	Scripts/General/zzClasses.lua	1049	no	uncertain_context	"txt=baseSchoolsTxt[15] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level\n"""
+"	Scripts/General/zzClasses.lua	1049	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[15] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage 1-2-3-4 (at N-E-M-GM) per Earth Magic Level\n"""
 maw-58b40a5e7a2c	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
-Increases melee damage by "	Scripts/General/zzClasses.lua	1052	no	uncertain_context	"txt=baseSchoolsTxt[16] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage by "" .. spelldh .. ""%\n"""
+Increases melee damage by "	Scripts/General/zzClasses.lua	1052	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[16] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nIncreases melee damage by "" .. spelldh .. ""%\n"""
 maw-e58bf5ff5a06	spell	"
 
 Every 7 Skill level adds 1 level into ascension.
-Melee attacks restore "	Scripts/General/zzClasses.lua	1055	no	uncertain_context	"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
+Melee attacks restore "	Scripts/General/zzClasses.lua	1055	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
 maw-b3c72c8ec255	spell	" Spell Points
-"	Scripts/General/zzClasses.lua	1055	no	uncertain_context	"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
+"	Scripts/General/zzClasses.lua	1055	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
 maw-e58bf5ff5a06	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
-Melee attacks restore "	Scripts/General/zzClasses.lua	1059	no	uncertain_context	"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
+Melee attacks restore "	Scripts/General/zzClasses.lua	1059	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
 maw-e3f4d0063c3d	skill	" Hit Points
-"	Scripts/General/zzClasses.lua	1059	no	uncertain_context	"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
+"	Scripts/General/zzClasses.lua	1059	yes	proven_display_variable_flow	"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
 maw-b25c51ddac4f	tooltip	"This class combines the evil forces with brute power, making it powerful and versatile.
  Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
 
@@ -2869,18 +2869,18 @@ maw-6032a672e309	skill	Frost	Scripts/General/zzClasses.lua	1450	yes	proven_skill
 maw-24652e28b940	skill	Blood	Scripts/General/zzClasses.lua	1451	yes	proven_skill_display_name	"Skillz.setName(18, ""Blood"")"
 maw-2a8dbafc6266	skill	Unholy	Scripts/General/zzClasses.lua	1452	yes	proven_skill_display_name	"Skillz.setName(20, ""Unholy"")"
 maw-9695e5c63098	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
-"	Scripts/General/zzClasses.lua	1454	no	uncertain_context	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.\n"""
+"	Scripts/General/zzClasses.lua	1454	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.\n"""
 maw-3a4e4d25a545	skill	"%
 
 Additionally it will make your attacks to leech damage based on your total HP.
 
-Current leech vs. same level monsters: "	Scripts/General/zzClasses.lua	1457	no	uncertain_context	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
-maw-baa7b94348d2	skill	Current Reduction: 	Scripts/General/zzClasses.lua	1457	no	uncertain_context	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
+Current leech vs. same level monsters: "	Scripts/General/zzClasses.lua	1457	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
+maw-baa7b94348d2	skill	Current Reduction: 	Scripts/General/zzClasses.lua	1457	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
 maw-8c46bff5c136	skill	"This skill is only available to death knights and reduces physical damage taken.
-"	Scripts/General/zzClasses.lua	1457	no	uncertain_context	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
-maw-baa7b94348d2	skill	Current Reduction: 	Scripts/General/zzClasses.lua	1459	no	uncertain_context	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(unholyS/100+1))*1000)/10 ..""%\n"""
+"	Scripts/General/zzClasses.lua	1457	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
+maw-baa7b94348d2	skill	Current Reduction: 	Scripts/General/zzClasses.lua	1459	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(unholyS/100+1))*1000)/10 ..""%\n"""
 maw-347e88fe61c6	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.
-"	Scripts/General/zzClasses.lua	1459	no	uncertain_context	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(unholyS/100+1))*1000)/10 ..""%\n"""
+"	Scripts/General/zzClasses.lua	1459	yes	proven_display_variable_flow	"txt=""This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(unholyS/100+1))*1000)/10 ..""%\n"""
 maw-a6e1d9fa2b6b	spell	Effects vary per spell	Scripts/General/zzClasses.lua	1461	yes	proven_skill_display_description	"Skillz.setDesc(14,5,""Effects vary per spell"")"
 maw-a6e1d9fa2b6b	spell	Effects vary per spell	Scripts/General/zzClasses.lua	1462	yes	proven_skill_display_description	"Skillz.setDesc(18,5,""Effects vary per spell"")"
 maw-fb7fcba97ab8	skill	Water Magic	Scripts/General/zzClasses.lua	1472	yes	proven_skill_display_name	"Skillz.setName(14, ""Water Magic"")"
@@ -3148,14 +3148,14 @@ maw-908093bbf3f4	skill	%s|	Scripts/General/zzMAW-Skills.lua	560	no	uncertain_con
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	561	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+9 .. ""%s|"",gm,skillAC[i][4])"
 maw-908093bbf3f4	skill	%s|	Scripts/General/zzMAW-Skills.lua	561	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+9 .. ""%s|"",gm,skillAC[i][4])"
 maw-f9b26d772d4f	skill	%sRes	Scripts/General/zzMAW-Skills.lua	564	no	uncertain_context	"baseString=string.format(""%sRes"",baseString)"
-maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	565	no	uncertain_context	"normal=string.format(""%s\t"" .. tab+30 .. ""%s"",normal,skillResistance[i][1])"
-maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	565	no	uncertain_context	"normal=string.format(""%s\t"" .. tab+30 .. ""%s"",normal,skillResistance[i][1])"
-maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	566	no	uncertain_context	"expert=string.format(""%s\t"" .. tab+30 .. ""%s"",expert,skillResistance[i][2])"
-maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	566	no	uncertain_context	"expert=string.format(""%s\t"" .. tab+30 .. ""%s"",expert,skillResistance[i][2])"
-maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	567	no	uncertain_context	"master=string.format(""%s\t"" .. tab+30 .. ""%s"",master,skillResistance[i][3])"
-maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	567	no	uncertain_context	"master=string.format(""%s\t"" .. tab+30 .. ""%s"",master,skillResistance[i][3])"
-maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	568	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+30 .. ""%s"",gm,skillResistance[i][4])"
-maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	568	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+30 .. ""%s"",gm,skillResistance[i][4])"
+maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	565	yes	proven_display_variable_flow	"normal=string.format(""%s\t"" .. tab+30 .. ""%s"",normal,skillResistance[i][1])"
+maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	565	yes	proven_display_variable_flow	"normal=string.format(""%s\t"" .. tab+30 .. ""%s"",normal,skillResistance[i][1])"
+maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	566	yes	proven_display_variable_flow	"expert=string.format(""%s\t"" .. tab+30 .. ""%s"",expert,skillResistance[i][2])"
+maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	566	yes	proven_display_variable_flow	"expert=string.format(""%s\t"" .. tab+30 .. ""%s"",expert,skillResistance[i][2])"
+maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	567	yes	proven_display_variable_flow	"master=string.format(""%s\t"" .. tab+30 .. ""%s"",master,skillResistance[i][3])"
+maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	567	yes	proven_display_variable_flow	"master=string.format(""%s\t"" .. tab+30 .. ""%s"",master,skillResistance[i][3])"
+maw-347cd9c53ff7	skill	%s	Scripts/General/zzMAW-Skills.lua	568	yes	proven_display_variable_flow	"gm=string.format(""%s\t"" .. tab+30 .. ""%s"",gm,skillResistance[i][4])"
+maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	568	yes	proven_display_variable_flow	"gm=string.format(""%s\t"" .. tab+30 .. ""%s"",gm,skillResistance[i][4])"
 maw-a6852004e745	skill	"Shield skill provides great defense against both physical and magical attacks.
 
 Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	Scripts/General/zzMAW-Skills.lua	590	yes	proven_skill_display_description	"Skillz.setDesc(8,1,""Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."")"
@@ -3188,10 +3188,10 @@ maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	652	no	uncertain
 maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	653	no	uncertain_context	"master=string.format(""%s  %s|"",master,ac[3])"
 maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	654	no	uncertain_context	"gm=string.format(""%s  %s|"",gm,ac[4])"
 maw-3f92a95e24aa	skill	"%s Res	000"	Scripts/General/zzMAW-Skills.lua	657	no	uncertain_context	"baseString=string.format(""%s Res\t000"",baseString)"
-maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	658	no	uncertain_context	"normal=string.format(""%s    %s"",normal,res[1])"
-maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	659	no	uncertain_context	"expert=string.format(""%s    %s"",expert,res[2])"
-maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	660	no	uncertain_context	"master=string.format(""%s    %s"",master,res[3])"
-maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	661	no	uncertain_context	"gm=string.format(""%s    %s"",gm,res[4])"
+maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	658	yes	proven_display_variable_flow	"normal=string.format(""%s    %s"",normal,res[1])"
+maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	659	yes	proven_display_variable_flow	"expert=string.format(""%s    %s"",expert,res[2])"
+maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	660	yes	proven_display_variable_flow	"master=string.format(""%s    %s"",master,res[3])"
+maw-f554a37086c3	skill	%s    %s	Scripts/General/zzMAW-Skills.lua	661	yes	proven_display_variable_flow	"gm=string.format(""%s    %s"",gm,res[4])"
 maw-415e2977544c	skill	%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger	Scripts/General/zzMAW-Skills.lua	673	yes	proven_skill_mastery_description	"Game.SkillDesGM[const.Skills.Axe]=string.format(""%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger"",Game.SkillDesGM[const.Skills.Axe])"
 maw-d19cba1e3297	skill	%s 2 arrows	Scripts/General/zzMAW-Skills.lua	674	yes	proven_skill_mastery_description	"Game.SkillDesMaster[const.Skills.Bow]=string.format(""%s 2 arrows"",Game.SkillDesMaster[const.Skills.Bow])"
 maw-00f2a94b750e	skill	%s shoots fire arrows, dealing highest between fire and physical damage	Scripts/General/zzMAW-Skills.lua	675	yes	proven_skill_mastery_description	"Game.SkillDesGM[const.Skills.Bow]=string.format(""%s shoots fire arrows, dealing highest between fire and physical damage"",Game.SkillDesGM[const.Skills.Bow])"
@@ -3267,7 +3267,7 @@ maw-7c3efcea2530	skill	"
 
 Melee Life Leech vs equal level: %s
 Next Level Bonus: %s
-(lower against higher level monsters)"	Scripts/General/zzMAW-Skills.lua	1352	no	uncertain_context	"txt = txt .. string.format(""\n\nMelee Life Leech vs equal level: %s\nNext Level Bonus: %s\n(lower against higher level monsters)"","
+(lower against higher level monsters)"	Scripts/General/zzMAW-Skills.lua	1352	yes	proven_display_variable_flow	"txt = txt .. string.format(""\n\nMelee Life Leech vs equal level: %s\nNext Level Bonus: %s\n(lower against higher level monsters)"","
 maw-3153fe797154	spell	"%s
 
 Increases spell points based on SP per level and mastery
@@ -3286,7 +3286,7 @@ Current bonuses at skill %s:
 
 - Mana cost: %s
 - Cast time: %s
-"	Scripts/General/zzMAW-Skills.lua	1386	no	uncertain_context	"txt = string.format(""%s\n\nCurrent bonuses at skill %s:\n- Damage base: %s\n- Damage scaling: %s\n\n- Healing base: %s\n- Healing scaling: %s\n\n- Mana cost: %s\n- Cast time: %s\n"","
+"	Scripts/General/zzMAW-Skills.lua	1386	yes	proven_display_variable_flow	"txt = string.format(""%s\n\nCurrent bonuses at skill %s:\n- Damage base: %s\n- Damage scaling: %s\n\n- Healing base: %s\n- Healing scaling: %s\n\n- Mana cost: %s\n- Cast time: %s\n"","
 maw-e00694b1e25c	skill	Melee	Scripts/General/zzMAW-Skills.lua	1399	no	internal_table_key_literal	"local mult=damageMultiplier[pl:GetIndex()][""Melee""]"
 maw-3e09c757f9d4	tooltip	"%s
 	070Each spear attack reduces physical resistance, increasing damage by: %s%%
@@ -3405,7 +3405,7 @@ maw-73ecdec3d0ad	status	This skill has reached its limit	Scripts/General/zzMAW-S
 maw-73ecdec3d0ad	status	This skill has reached its limit	Scripts/General/zzMAW-Skills.lua	2227	yes	status_text_call	"Game.ShowStatusText(""This skill has reached its limit"")"
 maw-0627ec58a510	skill	You don't meet the requirements, and cannot be taught until you do.	Scripts/General/zzMAW-Skills.lua	2276	yes	proven_game_display_assignment	"Game.NPCText[128]=""You don't meet the requirements, and cannot be taught until you do."""
 maw-c713960107a1	skill	Chance to Stun: 	Scripts/General/zzMAW-Skills.lua	2463	no	uncertain_context	"txt=txt .. ""Chance to Stun: "" .. chance .. ""%"""
-maw-df5e8635a295	skill	Chance to Paralyze: 	Scripts/General/zzMAW-Skills.lua	2465	no	uncertain_context	"txt=txt .. ""Chance to Paralyze: "" .. chance .. ""%"""
+maw-df5e8635a295	skill	Chance to Paralyze: 	Scripts/General/zzMAW-Skills.lua	2465	yes	proven_display_variable_flow	"txt=txt .. ""Chance to Paralyze: "" .. chance .. ""%"""
 maw-bf1e13de8fdf	skill	Mana Shield	Scripts/General/zzMAW-Skills.lua	2476	yes	proven_skill_display_name	"Skillz.setName(manaSkill, ""Mana Shield"")"
 maw-cbafc012d625	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
@@ -3449,7 +3449,7 @@ maw-c3ee137d4f22	skill	table	Scripts/General/zzMAW-Skills.lua	2678	no	comparison
 maw-565b2e1fded7	skill	"
 Knights can learn up to a Supreme level, which is learned automatically at skill level "	Scripts/General/zzMAW-Skills.lua	2691	yes	display_variable_assignment	"local descTxt=descTxt .. ""\nKnights can learn up to a Supreme level, which is learned automatically at skill level "" .. requirement .. "".\n"""
 maw-c1c7f7e81f44	skill	"Skills adds 3 dmg, 3 atk, 2% speed
-Each 10 points in armsmaster increase all the melee weapon skills by 1"	Scripts/General/zzMAW-Skills.lua	2693	no	uncertain_context	"local txt=""Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"""
+Each 10 points in armsmaster increase all the melee weapon skills by 1"	Scripts/General/zzMAW-Skills.lua	2693	yes	proven_display_variable_flow	"local txt=""Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"""
 maw-b6e05bcb545c	status	SUPREME UNLOCKED!!!	Scripts/General/zzMAW-Skills.lua	2725	yes	status_text_call	"Game.ShowStatusText(""SUPREME UNLOCKED!!!"")"
 maw-5200bdfc01a1	skill	HP	Scripts/General/zzMAW-Skills.lua	2726	no	uncertain_context	"evt[id].Add(""HP"", 0) --graphic"
 maw-44d25b5d1b6d	item	Items	Scripts/General/zzMaw-Item-Sorter.lua	9	no	engine_event_key_context	"evt.Add(""Items"", i+1)"
@@ -6152,7 +6152,7 @@ maw-b4c200bb0d1f	spell	Delay	Scripts/General/zzMaw-Stats.lua	215	no	uncertain_co
 maw-b4c200bb0d1f	spell	Delay	Scripts/General/zzMaw-Stats.lua	222	no	uncertain_context	"Game.Spells[spell][""Delay"" .. masteryName[m]]=getSpellDelay(t.Player,spell)"
 maw-56bbe4224d60	skill	"
 
-Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."	Scripts/General/zzMaw-Stats.lua	375	no	uncertain_context	"txt=Skillz.getDesc(27,1) .. ""\n\nHit Points are also increased 2-3-4-5% per skill point, depending on mastery."""
+Hit Points are also increased 2-3-4-5% per skill point, depending on mastery."	Scripts/General/zzMaw-Stats.lua	375	yes	proven_display_variable_flow	"txt=Skillz.getDesc(27,1) .. ""\n\nHit Points are also increased 2-3-4-5% per skill point, depending on mastery."""
 maw-90cd40051486	tooltip	"%s
 
 Bonus Melee/Bow Damage: %s%s"	Scripts/General/zzMaw-Stats.lua	383	no	uncertain_context	"t.Text=string.format(""%s\n\nBonus Melee/Bow Damage: %s%s"",Game.StatsDescriptions[0],might/10,""%"")"
