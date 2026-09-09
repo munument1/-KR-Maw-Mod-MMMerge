@@ -1,0 +1,55 @@
+source	translation	status	notes
+Elder 	원로 	translated	클래스명 접두어
+Ultimate 	궁극의 	translated	클래스명 접두어
+Telelocator	텔레로케이터	translated	NPC 표시명
+Absorb up to 25% damage	피해를 최대 25% 흡수합니다	translated	마나 방패 숙련 효과
+Absorb up to 50% damage	피해를 최대 50% 흡수합니다	translated	마나 방패 숙련 효과
+Absorb up to 75% damage	피해를 최대 75% 흡수합니다	translated	마나 방패 숙련 효과
+All damage is absorbed by mana	모든 피해를 마나로 흡수합니다	translated	마나 방패 숙련 효과
+Allow use to Cover Projectiles damage	투사체 피해도 엄호할 수 있습니다	translated	엄호 숙련 효과
+Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다	translated	엄호 숙련 효과
+Double healing effect	회복 효과가 2배가 됩니다	translated	스킬 숙련 효과
+Increase your regeneration by 1% per every 1% of hp lost	잃은 생명력 1%마다 재생량이 1% 증가합니다	translated	재생 숙련 효과
+Increased Attack speed by 1% per Skill	기술 포인트당 공격 속도가 1% 증가합니다	translated	스킬 숙련 효과
+Increased Attack speed by 2% per Skill	기술 포인트당 공격 속도가 2% 증가합니다	translated	스킬 숙련 효과
+Increased Attack speed by 3% per Skill	기술 포인트당 공격 속도가 3% 증가합니다	translated	스킬 숙련 효과
+Increased Attack speed by 4% per Skill	기술 포인트당 공격 속도가 4% 증가합니다	translated	스킬 숙련 효과
+Increases damage by 2 per Skill point	기술 포인트당 피해량이 2 증가합니다	translated	스킬 숙련 효과
+Increases damage by 3 per Skill point	기술 포인트당 피해량이 3 증가합니다	translated	스킬 숙련 효과
+Increases damage by 4 per Skill point	기술 포인트당 피해량이 4 증가합니다	translated	스킬 숙련 효과
+Increases your maximum energy by 10	최대 에너지가 10 증가합니다	translated	스킬 숙련 효과
+Increases your maximum energy by 20	최대 에너지가 20 증가합니다	translated	스킬 숙련 효과
+Increases your maximum energy by 30	최대 에너지가 30 증가합니다	translated	스킬 숙련 효과
+Increases your maximum energy by 40	최대 에너지가 40 증가합니다	translated	스킬 숙련 효과
+Killing a monster restores 10 energy	몬스터 처치 시 에너지 10을 회복합니다	translated	스킬 숙련 효과
+Killing a monster restores 15 energy	몬스터 처치 시 에너지 15를 회복합니다	translated	스킬 숙련 효과
+Killing a monster restores 20 energy	몬스터 처치 시 에너지 20을 회복합니다	translated	스킬 숙련 효과
+Killing a monster restores 25 energy	몬스터 처치 시 에너지 25를 회복합니다	translated	스킬 숙련 효과
+Mana is increased by 2% per skill level, cost divisor increased by 0.5	기술 레벨당 마나가 2% 증가하고 소모 비용 제수가 0.5 증가합니다	translated	깨달음 숙련 효과
+Mana is increased by 3% per skill level, cost divisor increased by 1	기술 레벨당 마나가 3% 증가하고 소모 비용 제수가 1 증가합니다	translated	깨달음 숙련 효과
+Mana is increased by 4% per skill level, cost divisor increased by 1.5	기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다	translated	깨달음 숙련 효과
+Mana is increased by 5% per skill level, cost divisor increased by 2	기술 레벨당 마나가 5% 증가하고 소모 비용 제수가 2 증가합니다	translated	깨달음 숙련 효과
+Melee attack costs 30 energy	근접 공격에 에너지 30을 소모합니다	translated	스킬 숙련 효과
+Melee attack costs 35 energy	근접 공격에 에너지 35를 소모합니다	translated	스킬 숙련 효과
+Melee attack costs 40 energy	근접 공격에 에너지 40을 소모합니다	translated	스킬 숙련 효과
+Melee attack costs 45 energy	근접 공격에 에너지 45를 소모합니다	translated	스킬 숙련 효과
+Melee attacks heal on hit	근접 공격 적중 시 생명력을 회복합니다	translated	스킬 숙련 효과
+Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit	반격은 최대 3회 중첩되며, 한 번의 강력한 공격으로 모든 중첩을 소모할 수 있습니다	translated	반격 숙련 효과
+Triple healing effect	회복 효과가 3배가 됩니다	translated	스킬 숙련 효과
+You don't meet the requirements, and cannot be taught until you do.	요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	translated	스킬 교육 거절 대사
+You regenerate 10 energy per second	초당 에너지 10을 회복합니다	translated	스킬 숙련 효과
+You regenerate 12 energy per second	초당 에너지 12를 회복합니다	translated	스킬 숙련 효과
+You regenerate 14 energy per second	초당 에너지 14를 회복합니다	translated	스킬 숙련 효과
+You regenerate 8 energy per second	초당 에너지 8을 회복합니다	translated	스킬 숙련 효과
+Your next attack deals additional damage, multiplied by skill level	다음 공격이 기술 레벨에 비례한 추가 피해를 줍니다	translated	반격 숙련 효과
+Your next attack has a 25% chance to stun the enemy for 2 seconds	다음 공격이 25% 확률로 적을 2초 동안 기절시킵니다	translated	반격 숙련 효과
+Your next attack recovery time is reduced by 30%	다음 공격의 회복 시간이 30% 감소합니다	translated	반격 숙련 효과
+Allow use to Cover Spells damage	주문 피해도 엄호할 수 있습니다	translated	엄호 숙련 효과
+Effects vary per spell	효과는 주문마다 다릅니다	translated	주문 숙련 공통 설명
+Grants 3 Accuracy to all party per skill point	기술 포인트당 파티 전체의 정확도가 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Endurance to all party per skill point	기술 포인트당 파티 전체의 인내력이 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Intellect to all party per skill point	기술 포인트당 파티 전체의 지능이 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Luck to all party per skill point	기술 포인트당 파티 전체의 운이 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Might to all party per skill point	기술 포인트당 파티 전체의 힘이 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Personality to all party per skill point	기술 포인트당 파티 전체의 인격이 3 증가합니다	translated	주문 숙련 효과
+Grants 3 Speed to all party per skill point	기술 포인트당 파티 전체의 민첩성이 3 증가합니다	translated	주문 숙련 효과
