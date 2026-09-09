@@ -1,0 +1,55 @@
+source	translation	status	notes
+damage		excluded	계산 모드/내부 분기 토큰; 표시 문자열 아님
+Inventory		excluded	evt Inventory 엔진 키; 표시명은 별도 데이터에서 처리
+%%([%w_]*)%%		excluded	코드 치환용 정규식 패턴
+%.10f		excluded	숫자 서식용 format 패턴
+\\x1B%c%c%c%s		excluded	멀티플레이 색상/프로토콜 바이트 서식
+Day-o-Gods		excluded	몬스터 주문 판별용 엔진 문자열
+no enchants		excluded	upgradeGem 반환 sentinel; 실제 표시문 No enchants와 별도
+Option 1		excluded	CustomSwitch 미사용 기본 옵션 placeholder
+Option 2		excluded	CustomSwitch 미사용 기본 옵션 placeholder
+sub dword [ds:0x509cac], 		excluded	어셈블리 패치 코드 조각
+ .. lowerLimit .. 		excluded	보정 데이터 생성 코드 조각
+ .. name .. 		excluded	보정 데이터 생성 코드 조각
+ .. upperLimit .. 		excluded	보정 데이터 생성 코드 조각
+=%d\n		excluded	시드 진단 데이터 파일 서식
+\\9\\9NoBolster\\9-\\9-\\9-\\9\\9\n		excluded	Bolster 설정 파일 출력 포맷
+broodlord		excluded	보스 생성 확률 분기용 소문자 내부 토큰
+cmd /c mkdir "%s" >nul 2>nul		excluded	Windows 디렉터리 생성 명령
+DemonFly		excluded	몬스터 스프라이트 리소스 ID
+mkdir -p "%s" 2>/dev/null		excluded	POSIX 디렉터리 생성 명령
+MonsterChooseAction		excluded	이벤트 디스패치 이름
+omnipotent		excluded	보스 생성 확률 분기용 소문자 내부 토큰
+Pic		excluded	몬스터 Picture 필드 조합용 내부 키 조각
+PlayerAC		excluded	보정 공식 내부 키
+#\tNote\tContinent\tBolster kind\tSpells\tSummons\tLevel shift\n		excluded	Bolster 설정 파일 헤더
+#\tNote\tType\tExtraType\tCreed\tStyle\tPref magic\tNoArena\tAllow ranged attacks\tAllow spells\tHP by size\tAllow replicate\tAllow summons\tSummon Id\tExtra points\tMax HP Boost (%)\n		excluded	Bolster 설정 파일 헤더
+CanMonsterCastSpell		excluded	이벤트 디스패치 이름
+checkMapCompletition		excluded	타이머 등록용 내부 함수 이름
+earth		excluded	마법 계열 내부 조회용 소문자 키
+GM		excluded	SpellPointsGM/설명 필드 조합용 내부 숙련 키
+Grandmaster	그랜드마스터	translated	주문서 요구 숙련도 표시
+light		excluded	마법 계열 내부 조회용 소문자 키
+Novice	초보	translated	주문서 요구 숙련도 표시
+shotgun		excluded	원소술사 주문 유형 내부 토큰
+single		excluded	원소술사 주문 유형 내부 토큰
+spell		excluded	피해 계산 타입 내부 토큰
+spirit		excluded	마법 계열 내부 조회용 소문자 키
+string		excluded	Lua 모듈/타입 판정 내부 문자열
+TargetIndex		excluded	MM 버전별 플레이어 대상 필드 키
+TargetRosterId		excluded	MM 버전별 플레이어 대상 필드 키
+Temple		excluded	버프 출처/신전 상태 내부 sentinel
+tooltip		excluded	아이템 계산 모드 내부 토큰
+water		excluded	마법 계열 내부 조회용 소문자 키
+BolsterAmount		excluded	설정 저장/게임 필드 이름
+BolsterFineTuning		excluded	CustomUI 화면 내부 ID
+ExSetScr		excluded	CustomUI 배경/화면 내부 ID
+ExSetScr2		excluded	CustomUI 화면 내부 ID
+ExtSetUp		excluded	CustomUI 아이콘 리소스 ID
+FrameLimit		excluded	Game 설정 필드 이름
+freeProgression		excluded	설정 저장 필드 이름
+ImprovedPathfinding		excluded	설정 저장 필드 이름
+MergeExtraSettings		excluded	CustomUI 화면 내부 ID
+Mode		excluded	설정 저장/게임 필드 이름
+ShowWeatherEffects		excluded	설정 저장 필드 이름
+UseMonsterBolster		excluded	설정 저장 필드 이름
