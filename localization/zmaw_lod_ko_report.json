@@ -1,0 +1,41 @@
+{
+  "base": "MAW MMMerge 4.5 zMaw.T.lod",
+  "mmmerge_repository": "munument1/-KR-MMMerge",
+  "mmmerge_commit": "01b13c9f3c3d4db33ee650ef489fbbdf58765d7e",
+  "archive_type": "mm8loclod",
+  "output_archive": "korean/Data/zzzMawKO.T.lod",
+  "files": [
+    "ITEMS.txt",
+    "MONSTERS.txt",
+    "POTION.TXT",
+    "POTNOTES.TXT",
+    "Placemon.txt",
+    "SPCITEMS.TXT",
+    "class.txt",
+    "mapstats.txt",
+    "rnditems.txt"
+  ],
+  "replacements": {
+    "ITEMS.txt": 6583,
+    "MONSTERS.txt": 651,
+    "Placemon.txt": 161,
+    "mapstats.txt": 207,
+    "class.txt": 106,
+    "SPCITEMS.TXT": 146,
+    "rnditems.txt": 0,
+    "POTION.TXT": 0,
+    "POTNOTES.TXT": 0
+  },
+  "total_localized_fields": 7854,
+  "untouched_pending_schema_review": [
+    "POTION.TXT",
+    "POTNOTES.TXT",
+    "rnditems.txt"
+  ],
+  "untouched_byte_preserved": [
+    "POTION.TXT",
+    "POTNOTES.TXT",
+    "rnditems.txt"
+  ],
+  "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit pinned MMMerge Korean runtime text; untouched tables are copied byte-for-byte; localized tables use the existing Korean CP949/DBCS encoding convention."
+}
