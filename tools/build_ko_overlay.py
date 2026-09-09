@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Build a patch-only Korean overlay from localization/catalog.tsv.
 
-Only ``status=translated`` sources at ``patchable=yes`` occurrences are applied.
-The source tree is never edited in place; patched copies are written under
-``korean/`` using the same relative paths.
+Global translations are applied only to ``status=translated`` sources at
+``patchable=yes`` occurrences. ``localization/scoped_overrides.tsv`` can target
+an explicitly reviewed file/source/context occurrence when the same English
+literal is also used as an internal key elsewhere. The source tree is never
+edited in place; patched copies are written under ``korean/``.
 """
 
 from __future__ import annotations
@@ -17,8 +19,28 @@ from pathlib import Path
 
 
 def read_tsv(path: Path):
+    if not path.exists():
+        return []
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f, delimiter="\t"))
+
+
+def decode_manual(text: str) -> str:
+    out = []
+    i = 0
+    while i < len(text):
+        if text[i] == "\\" and i + 1 < len(text):
+            nxt = text[i + 1]
+            if nxt == "n":
+                out.append("\n"); i += 2; continue
+            if nxt == "t":
+                out.append("\t"); i += 2; continue
+            if nxt == "r":
+                out.append("\r"); i += 2; continue
+            if nxt == "\\":
+                out.append("\\"); i += 2; continue
+        out.append(text[i]); i += 1
+    return "".join(out)
 
 
 def lua_string_spans(line: str):
@@ -102,6 +124,7 @@ def main() -> int:
     ap.add_argument("--root", type=Path, default=Path("."))
     ap.add_argument("--catalog", type=Path, default=Path("localization/catalog.tsv"))
     ap.add_argument("--occurrences", type=Path, default=Path("localization/occurrences.tsv"))
+    ap.add_argument("--scoped-overrides", type=Path, default=Path("localization/scoped_overrides.tsv"))
     ap.add_argument("--output", type=Path, default=Path("korean"))
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
@@ -109,6 +132,7 @@ def main() -> int:
     root = args.root.resolve()
     catalog = read_tsv(root / args.catalog)
     occurrences = read_tsv(root / args.occurrences)
+    scoped_rows = read_tsv(root / args.scoped_overrides)
     output = root / args.output
 
     translated = {
@@ -131,6 +155,35 @@ def main() -> int:
         line = int(occ["line"])
         target_lines[file][line][source] = translated[source]
         expected[source] += 1
+
+    scoped_errors = []
+    scoped_targets = 0
+    for idx, row in enumerate(scoped_rows, 2):
+        file = row.get("file", "").strip()
+        source = decode_manual(row.get("source", ""))
+        translation = decode_manual(row.get("translation", ""))
+        context_contains = decode_manual(row.get("context_contains", ""))
+        if not file or not source or not translation:
+            scoped_errors.append({"type": "invalid_scoped_override", "row": idx})
+            continue
+        matches = [
+            occ for occ in occurrences
+            if occ.get("file") == file
+            and occ.get("source") == source
+            and (not context_contains or context_contains in occ.get("context", ""))
+        ]
+        if not matches:
+            scoped_errors.append({
+                "type": "scoped_override_not_found",
+                "row": idx,
+                "file": file,
+                "source": source,
+                "context_contains": context_contains,
+            })
+            continue
+        for occ in matches:
+            target_lines[file][int(occ["line"])][source] = translation
+            scoped_targets += 1
 
     if output.exists():
         shutil.rmtree(output)
@@ -178,7 +231,7 @@ def main() -> int:
             dst.write_text("".join(lines), encoding="utf-8", newline="")
             changed_files.append({"file": rel, "replacements": changed})
 
-    errors = []
+    errors = list(scoped_errors)
     warnings = []
     for source in sorted(translated, key=str.casefold):
         if expected[source] == 0:
@@ -200,6 +253,8 @@ def main() -> int:
         "translated_entries": len(translated),
         "translated_entries_with_patchable_occurrences": sum(1 for s in translated if expected[s] > 0),
         "patchable_occurrences_targeted": sum(expected.values()),
+        "scoped_override_rows": len(scoped_rows),
+        "scoped_occurrences_targeted": scoped_targets,
         "skipped_unpatchable_occurrences_for_translated_sources": sum(skipped_unpatchable.values()),
         "changed_files": changed_files,
         "warnings": warnings,
