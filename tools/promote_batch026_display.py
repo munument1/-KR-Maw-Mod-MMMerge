@@ -30,7 +30,7 @@ BY_FILE = {
         "%\n\nPress P to enable/disable\n",
         "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: ",
         "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: ",
-        "Attack|", "AC|", "Dmg%%|", "Dmg|", "%sRes", "%s Res\t000",
+        "Attack|", "AC|", "Dmg%%|", "Dmg|", "%s Res\t000",
     },
     "Scripts/Global/zzMAWStatusMsg.lua": {
         "%s hits %s for %s points!%s",
