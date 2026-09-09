@@ -531,7 +531,7 @@ function events.GameInitialized2()
 			end
 			if recovery then
 				tab=tab+55
-				baseString=string.format("%s\t" .. tab .. "Speed|",baseString)
+				baseString=string.format("%s\t" .. tab .. "속도|",baseString)
 				normal=string.format("%s\t" .. tab+33 .. "%s|",normal,skillRecovery[i][1])
 				expert=string.format("%s\t" .. tab+33 .. "%s|",expert,skillRecovery[i][2])
 				master=string.format("%s\t" .. tab+33 .. "%s|",master,skillRecovery[i][3])
@@ -608,7 +608,7 @@ function events.Action(t)
 			end
 			
 			baseString="\n------------------------------------------------------------\n         "
-			baseString=string.format("%s\t075AC|",baseString)
+			baseString=string.format("%s\t075방어도|",baseString)
 			baseString=string.format("%s 저항\t000",baseString)
 			for i=8,11 do
 				Skillz.setDesc(i,1,string.format(Skillz.getDesc(i,1) .. baseString))
@@ -647,7 +647,7 @@ function events.GameInitialized2()
 				res=skillResistance[i]
 			end
 			if ac then
-				baseString=string.format("%s\t075AC|",baseString)
+				baseString=string.format("%s\t075방어도|",baseString)
 				normal=string.format("%s  %s|",normal,ac[1])
 				expert=string.format("%s  %s|",expert,ac[2])
 				master=string.format("%s  %s|",master,ac[3])
@@ -1332,7 +1332,7 @@ end
 function events.GameInitialized2()
 	baseRegStr=	Skillz.getDesc(30,1)
 	baseMedStr=	Skillz.getDesc(28,1)
-	baseAscStr= "Increases spell damage and healing at the expense of higher mana cost and cast time."
+	baseAscStr= "마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다."
 end
 function events.Tick()
 	if Game.CurrentCharScreen==101 and Game.CurrentScreen==7 then

@@ -2606,7 +2606,7 @@ Gods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added
 
 Holy Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)
 
-Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."	Scripts/General/zzClasses.lua	160	no	uncertain_context	"Game.ClassDescriptions[53]=""Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his pre"
+Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."	Scripts/General/zzClasses.lua	160	yes	reviewed_batch027_display	"Game.ClassDescriptions[53]=""Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his pre"
 maw-e00694b1e25c	class	Melee	Scripts/General/zzClasses.lua	273	no	internal_table_key_literal	"healValue=(bodyS^1.3*bodyM*2)*damageMultiplier[t.PlayerIndex][""Melee""]"
 maw-5200bdfc01a1	class	HP	Scripts/General/zzClasses.lua	300	no	uncertain_context	"evt[healTarget].Add(""HP"",healValue)"
 maw-07df90117f8e	status	Seraphim aren't able to dual wield	Scripts/General/zzClasses.lua	366	yes	proven_message_literal	"Message(""Seraphim aren't able to dual wield"")"
@@ -2660,7 +2660,7 @@ maw-b57a69a618e6	spell	Deals damage equal to 70% of breath damage	Scripts/Genera
 maw-55990b59f4f6	spell	Deals damage equal to 85% of breath damage	Scripts/General/zzClasses.lua	479	yes	proven_game_display_assignment	"Game.SpellsTxt[123].Master=""Deals damage equal to 85% of breath damage"""
 maw-59ce8a66facd	spell	Deals damage equal to 100% of breath damage	Scripts/General/zzClasses.lua	480	yes	proven_game_display_assignment	"Game.SpellsTxt[123].GM=""Deals damage equal to 100% of breath damage"""
 maw-04a318e009f9	spell	"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
-Each point in the skill increases damage and increases recovery time by 3%."	Scripts/General/zzClasses.lua	494	no	uncertain_context	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
+Each point in the skill increases damage and increases recovery time by 3%."	Scripts/General/zzClasses.lua	494	yes	reviewed_batch027_display	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
 maw-9785e1464ea2	spell	"Dragons are powerful creatures with innate abilities.
 Like the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.
 
@@ -2737,7 +2737,7 @@ You can check following values by checking magic schools description in skills m
  - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.
  - Each point in Earth will increase melee damage by a flat amount
  - Each point in Body will heal by flat amount
- - Each point in mind will restore a flat amount of mana"	Scripts/General/zzClasses.lua	966	no	uncertain_context	"Game.ClassDescriptions[59] = ""The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.\nYou can check following values by checking magic schools description in skills menu.\n - Each school will provide a unique bonus. There is strength in diversifying as well as specialization\n - Each point in Air will reduce damage a % pr rank reduced by level\n - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses "
+ - Each point in mind will restore a flat amount of mana"	Scripts/General/zzClasses.lua	966	yes	reviewed_batch027_display	"Game.ClassDescriptions[59] = ""The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.\nYou can check following values by checking magic schools description in skills menu.\n - Each school will provide a unique bonus. There is strength in diversifying as well as specialization\n - Each point in Air will reduce damage a % pr rank reduced by level\n - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses "
 maw-b5285078828f	skill	"
 
 Every 7 Skill level adds 1 level into ascension.
@@ -2787,7 +2787,7 @@ This skill fortifies their resilience, reducing physical damage taken by 1% per 
 
 Unholy:
 
-It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	Scripts/General/zzClasses.lua	1073	no	uncertain_context	"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
+It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	Scripts/General/zzClasses.lua	1073	yes	reviewed_batch027_display	"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
 maw-ec9f630c8693	skill	Skill	Scripts/General/zzClasses.lua	1103	no	internal_table_key_literal	"[26]={1,1,1.2,1.2,[""Skill""]=14},"
 maw-ec9f630c8693	skill	Skill	Scripts/General/zzClasses.lua	1104	no	internal_table_key_literal	"[29]={1.5,1.5,1.5,2,[""Skill""]=14},"
 maw-ec9f630c8693	skill	Skill	Scripts/General/zzClasses.lua	1105	no	internal_table_key_literal	"[32]={0.75,0.75,0.75,0.75,[""Skill""]=14},"
@@ -2895,7 +2895,7 @@ Mana Cost: 1 + 7.5% of the total.
 
 After a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.
 
-Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."	Scripts/General/zzClasses.lua	1521	no	uncertain_context	"Game.ClassDescriptions[62] = ""The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: 1 + 7.5% of the total"
+Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."	Scripts/General/zzClasses.lua	1521	yes	reviewed_batch027_display	"Game.ClassDescriptions[62] = ""The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: 1 + 7.5% of the total"
 maw-dd8090cb6ab7	status	Elementalists learn their spells through practice	Scripts/General/zzClasses.lua	1528	yes	status_text_call	"Game.ShowStatusText(""Elementalists learn their spells through practice"")"
 maw-cbd62b8042da	status	Learned 	Scripts/General/zzClasses.lua	1567	yes	proven_message_literal	"Message(""Learned "" .. Game.SpellsTxt[spell2].Name)"
 maw-ce0b1612aa71	spell	single	Scripts/General/zzClasses.lua	1668	no	comparison_control_literal	"if spellType==""single"" then"
@@ -3108,7 +3108,7 @@ maw-908093bbf3f4	skill	%s|	Scripts/General/zzMAW-Skills.lua	529	no	uncertain_con
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	530	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+32 .. ""%s|"",gm,skillAttack[i][4])"
 maw-908093bbf3f4	skill	%s|	Scripts/General/zzMAW-Skills.lua	530	no	uncertain_context	"gm=string.format(""%s\t"" .. tab+32 .. ""%s|"",gm,skillAttack[i][4])"
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	534	no	uncertain_context	"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
-maw-3d0e83b4f7be	skill	Speed|	Scripts/General/zzMAW-Skills.lua	534	no	uncertain_context	"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
+maw-3d0e83b4f7be	skill	Speed|	Scripts/General/zzMAW-Skills.lua	534	yes	reviewed_batch027_display	"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	535	no	uncertain_context	"normal=string.format(""%s\t"" .. tab+33 .. ""%s|"",normal,skillRecovery[i][1])"
 maw-908093bbf3f4	skill	%s|	Scripts/General/zzMAW-Skills.lua	535	no	uncertain_context	"normal=string.format(""%s\t"" .. tab+33 .. ""%s|"",normal,skillRecovery[i][1])"
 maw-539335ea1fbf	skill	"%s	"	Scripts/General/zzMAW-Skills.lua	536	no	uncertain_context	"expert=string.format(""%s\t"" .. tab+33 .. ""%s|"",expert,skillRecovery[i][2])"
@@ -3177,12 +3177,12 @@ maw-0968edf89220	item	"
 
 Bonus AC: "	Scripts/General/zzMAW-Skills.lua	605	yes	formatted_colored_text	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""\n\nBonus AC: "" .. StrColor(255,255,100,itemArmorClassBonus2) .. ""\n""))"
 maw-10e8a7da9eec	item	Bonus Resistances: 	Scripts/General/zzMAW-Skills.lua	606	yes	formatted_colored_text	"Skillz.setDesc(skill,1,string.format(Skillz.getDesc(skill,1) .. ""Bonus Resistances: "" .. StrColor(255,255,100,itemResistanceBonus2) .. ""\n""))"
-maw-33af5cacd7e6	skill	"%s	075AC|"	Scripts/General/zzMAW-Skills.lua	611	no	uncertain_context	"baseString=string.format(""%s\t075AC|"",baseString)"
+maw-33af5cacd7e6	skill	"%s	075AC|"	Scripts/General/zzMAW-Skills.lua	611	yes	reviewed_batch027_display	"baseString=string.format(""%s\t075AC|"",baseString)"
 maw-3f92a95e24aa	skill	"%s Res	000"	Scripts/General/zzMAW-Skills.lua	612	yes	reviewed_batch026_display	"baseString=string.format(""%s Res\t000"",baseString)"
 maw-a54a769ec702	skill	"%s
 ------------------------------------------------------------
          "	Scripts/General/zzMAW-Skills.lua	627	no	uncertain_context	"baseString=string.format(""%s\n------------------------------------------------------------\n         "",	Skillz.getDesc(i,1))"
-maw-33af5cacd7e6	skill	"%s	075AC|"	Scripts/General/zzMAW-Skills.lua	650	no	uncertain_context	"baseString=string.format(""%s\t075AC|"",baseString)"
+maw-33af5cacd7e6	skill	"%s	075AC|"	Scripts/General/zzMAW-Skills.lua	650	yes	reviewed_batch027_display	"baseString=string.format(""%s\t075AC|"",baseString)"
 maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	651	no	uncertain_context	"normal=string.format(""%s  %s|"",normal,ac[1])"
 maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	652	no	uncertain_context	"expert=string.format(""%s  %s|"",expert,ac[2])"
 maw-2b4ccc7581b3	skill	%s  %s|	Scripts/General/zzMAW-Skills.lua	653	no	uncertain_context	"master=string.format(""%s  %s|"",master,ac[3])"
@@ -3258,7 +3258,7 @@ maw-249f056b552d	skill	Stacks	Scripts/General/zzMAW-Skills.lua	1128	no	internal_
 maw-249f056b552d	skill	Stacks	Scripts/General/zzMAW-Skills.lua	1128	no	internal_table_key_literal	"vars.retaliation[id][""Stacks""]=math.min(vars.retaliation[id][""Stacks""],cap)"
 maw-f2a00fb671f3	status	Repaired	Scripts/General/zzMAW-Skills.lua	1150	yes	status_text_call	"Game.ShowStatusText(""Repaired"")"
 maw-53b0a1b2fadf	skill	number	Scripts/General/zzMAW-Skills.lua	1256	no	comparison_control_literal	"if (Cond == 18 or Cond == 17 or Cond < 14) and pl.Insane==0 and (not vars.MAWSETTINGS.buffRework==""ON"" or (vars.currentManaPool and type(vars.currentManaPool[i])==""number"")) then"
-maw-a36128b8bdaf	spell	Increases spell damage and healing at the expense of higher mana cost and cast time.	Scripts/General/zzMAW-Skills.lua	1335	no	uncertain_context	"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
+maw-a36128b8bdaf	spell	Increases spell damage and healing at the expense of higher mana cost and cast time.	Scripts/General/zzMAW-Skills.lua	1335	yes	reviewed_batch027_display	"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
 maw-4f7c505f10c4	skill	"%s
 
 Current HP Regeneration: %s
@@ -5170,7 +5170,7 @@ maw-e3cf5f38377e	monster	6465617468735f	Scripts/General/zzMaw-Monsters.lua	2478	
 maw-d518990045b5	monster	70656e64696e675f	Scripts/General/zzMaw-Monsters.lua	2479	no	reviewed_internal_api_literal	"for seed in pairs(st.pending) do lines[#lines+1]=(_H""70656e64696e675f""..""%""..""d=1\n""):format(seed) end"
 maw-4bfb95cf921b	monster	73656564206d7573742062652061206e756d626572	Scripts/General/zzMaw-Monsters.lua	2497	no	reviewed_internal_api_literal	"assert(type(seed)==""number"",_H""73656564206d7573742062652061206e756d626572"")"
 maw-53b0a1b2fadf	monster	number	Scripts/General/zzMaw-Monsters.lua	2497	no	comparison_control_literal	"assert(type(seed)==""number"",_H""73656564206d7573742062652061206e756d626572"")"
-maw-66934fbcd7ba	ui	446561746820436f756e743a20	Scripts/General/zzMaw-Monsters.lua	2617	no	uncertain_context	"deathCounter.Text=_H""446561746820436f756e743a20""..vars.MadnessDeathCounter"
+maw-66934fbcd7ba	ui	446561746820436f756e743a20	Scripts/General/zzMaw-Monsters.lua	2617	yes	reviewed_batch027_display	"deathCounter.Text=_H""446561746820436f756e743a20""..vars.MadnessDeathCounter"
 maw-6d8f726dc6ae	status	Loading now will count as death, are you sure to proceed?	Scripts/General/zzMaw-Monsters.lua	2639	yes	status_text_call	"Game.ShowStatusText(""Loading now will count as death, are you sure to proceed?"")"
 maw-8cf50dc5e339	status	Dungeon Completed!	Scripts/General/zzMaw-Monsters.lua	2722	yes	status_text_call	"Game.ShowStatusText(""Dungeon Completed!"")"
 maw-8cf50dc5e339	status	Dungeon Completed!	Scripts/General/zzMaw-Monsters.lua	2724	yes	esc_message_call	"Game.EscMessage(string.format(""Dungeon Completed!""))"

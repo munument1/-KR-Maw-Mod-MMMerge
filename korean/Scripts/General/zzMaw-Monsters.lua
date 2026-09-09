@@ -2609,7 +2609,7 @@ function events.Tick()
     local secondsLeft=math.max(math.ceil((vars.lastHitTime+const.Minute*5-Game.Time)/128),0)
     local txt=(secondsLeft>0) and StrColor(255,0,0,secondsLeft) or StrColor(0,255,0,secondsLeft)
     deathTimer.Text=txt
-    deathCounter.Text=_H"446561746820436f756e743a20"..vars.MadnessDeathCounter
+    deathCounter.Text=_H"ec82aceba79d20ed9a9fec88983a20"..vars.MadnessDeathCounter
     if vars.MadnessDeathCounter>9999 then
       deathCounter.X=450
     elseif vars.MadnessDeathCounter>999 then

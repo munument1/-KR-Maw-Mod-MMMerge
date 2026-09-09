@@ -948,6 +948,7 @@ P키로 활성화/비활성화
 "	translated	skill	2	reviewed_batch026_display:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. cha"
 % of monster Hit points as fire damage.	%만큼 추가 화염 피해를 줍니다.	translated	skill	1	proven_display_variable_flow:1	Scripts/General/zzClasses.lua	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
 %% speed	%% 속도	translated	skill	3	proven_skill_mastery_description:3	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesExpert[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[2] .. "" dmg, "" .. armsmasterSkill.Attack[2] .. "" atk, "" .. armsmasterSkill.Speed[2] .. ""%% speed"")"
+"%s	075AC|"	"%s	075방어도|"	translated	skill	2	reviewed_batch027_display:2	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t075AC|"",baseString)"
 "%s
 
 Current bonuses at skill %s:
@@ -1234,6 +1235,7 @@ Skills adds 	기술 보너스: 	translated	skill	4	proven_skill_mastery_descript
 "Skills adds 3 dmg, 3 atk, 2% speed
 Each 10 points in armsmaster increase all the melee weapon skills by 1"	"기술 보너스: 피해 3, 공격 3, 속도 2%
 무기 전문가 기술 10포인트마다 모든 근접 무기 기술이 1 증가합니다."	translated	skill	1	proven_display_variable_flow:1	Scripts/General/zzMAW-Skills.lua	"local txt=""Skills adds 3 dmg, 3 atk, 2% speed\nEach 10 points in armsmaster increase all the melee weapon skills by 1"""
+Speed|	속도|	translated	skill	1	reviewed_batch027_display:1	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t"" .. tab .. ""Speed|"",baseString)"
 Subtlety	기민함	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(13, ""Subtlety"")"
 "Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.
 
@@ -1312,6 +1314,9 @@ Not Active"	"
 " Spell Points
 "	" 주문력
 "	translated	spell	1	proven_display_variable_flow:1	Scripts/General/zzClasses.lua	"txt=baseSchoolsTxt[17] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. SPLEECH .. "" Spell Points\n"""
+"% at novice, expert, master and grandmaster rankings per point of skill in Dragon Ability.
+Each point in the skill increases damage and increases recovery time by 3%."	"%씩 증가합니다(드래곤 능력 기술의 초보, 전문가, 마스터, 그랜드마스터 단계에서 기술 포인트당).
+기술 포인트마다 피해가 증가하고 회복 시간이 3% 증가합니다."	translated	spell	1	reviewed_batch027_display:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
 % of Melee damage	% (근접 공격 피해 기준)	translated	spell	4	proven_game_display_assignment:4	Scripts/General/zzClasses.lua	"Game.SpellsTxt[26].Normal=""Deals damage equal to "" .. (mult26[1]*100) .. ""% of Melee damage"""
 "%s
 
@@ -1461,6 +1466,7 @@ Icy Touch	얼음의 손길	translated	spell	1	known_display_name_assignment:1	Sc
 Increases damage by 10 plus 1 per skill point	피해량이 10 + 기술 포인트당 1만큼 증가합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[51].Expert=""Increases damage by 10 plus 1 per skill point"""
 Increases damage by 10 plus 1.5 per skill point	피해량이 10 + 기술 포인트당 1.5만큼 증가합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[51].Master=""Increases damage by 10 plus 1.5 per skill point"""
 Increases damage by 10 plus 2 per skill point	피해량이 10 + 기술 포인트당 2만큼 증가합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[51].GM=""Increases damage by 10 plus 2 per skill point"""
+Increases spell damage and healing at the expense of higher mana cost and cast time.	마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.	translated	spell	1	reviewed_batch027_display:1	Scripts/General/zzMAW-Skills.lua	"baseAscStr= ""Increases spell damage and healing at the expense of higher mana cost and cast time."""
 "Increases spell damage and healing at the expense of higher mana cost and cast time.
 "	"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.
 "	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(const.Skills.Learning,1,""Increases spell damage and healing at the expense of higher mana cost and cast time.\n"")"
@@ -2006,6 +2012,29 @@ This effect remains active until deactivated or lose consciousness."	"마나의 
 When a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."	"마나의 일정 비율을 점유합니다.
 고통 반사가 활성화된 캐릭터를 몬스터가 공격하면, 몬스터는 그 캐릭터에게 준 피해와 같은 양의 피해를 받습니다."	translated	tooltip	1	proven_spelltxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"sp.Description = string.format(""Reserve a percentage of your mana.\nWhen a monster hits a character with Pain Reflection active, the monster takes damage equal to what it inflicted on the character."")"
 Restores 	주문력 회복: 	translated	tooltip	2	formatted_colored_text:2	Scripts/General/zzAlchemy.lua	"t.Description=StrColor(255,255,153,""Restores "" .. round(t.Item.Bonus^1.6*2/3)+10 .. "" Spell Points"") .. ""\n"" .. t.Description"
+"Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his presence on the battlefield is a testament to the will of the divine.
+
+Proficiency in Plate, Sword, Mace, and Shield (can't dual wield)
+3 HP and 1 mana points gained per level
+
+Abilities:
+
+Gods Wrath: Attacks deal extra magic damage based on Light skill (2 damage added per point in Light and Mind)
+
+Holy Strikes: Attacking will heal the most injured party member based on Body skill (2 points per point in Body and Spirit)
+
+Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."	"세라핌은 신들의 축복을 받아 범인과는 다른 초월적인 힘을 지닌 신성한 전사입니다. 그의 기원은 수수께끼에 싸여 있지만, 인간계에서 신들의 뜻을 수행하도록 선택받았다고 전해집니다. 어떤 이는 인간과 천사의 사이에서 태어났다고 수군거리고, 또 어떤 이는 신들이 직접 창조했다고 믿습니다. 기원이 무엇이든 세라핌이 휘두르는 힘은 부정할 수 없으며, 전장에서 그의 존재는 신의 의지를 증명합니다.
+
+판금 갑옷, 검, 철퇴, 방패에 능숙함 (쌍수 사용 불가)
+레벨당 생명력 3, 마나 1 획득
+
+능력:
+
+신의 분노: 공격 시 빛 기술에 따라 추가 마법 피해를 줍니다 (빛과 정신 기술 포인트당 피해 +2)
+
+신성한 일격: 공격 시 육체 기술에 따라 파티에서 가장 부상당한 아군을 치유합니다 (육체와 영혼 기술 포인트당 2)
+
+신성한 보호: 치명적인 공격을 받을 때 최대 생명력의 25%를 회복합니다. 재사용 대기시간 5분."	translated	tooltip	1	reviewed_batch027_display:1	Scripts/General/zzClasses.lua	"Game.ClassDescriptions[53]=""Seraphim is a divine warrior, blessed by the gods with otherworldly powers that set him apart from mortal fighters. His origins are shrouded in mystery, but it is said that he was chosen by the divine to carry out their will on the mortal plane. Some whisper that he was born from the union of a mortal and an angel, while others believe that he was created by the gods themselves. Regardless of his origins, there is no denying the power that Seraphim wields, and his pre"
 Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신 폭발과 비슷하지만 훨씬 강력한 정신 마법으로 단일 대상을 공격합니다. 정신 충격은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[65].Description=string.format(""Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic."",dmgAddTooltip(s, m,65),diceMaxTooltip(s, m,65))"
 Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic.	파티 전체에 화염, 공기, 물, 대지, 정신, 육체 보호와 낙하 완화, 마법의 눈을 동시에 시전합니다. 각 효과는 빛 마법 기술 수치의 두 배로 적용됩니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[85].Description=""Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic."""
 Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[34].Description=""Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell."""
@@ -2017,7 +2046,70 @@ Summons a swarm of biting, stinging insects to bedevil a single target.  The swa
 Summons flaming rocks from the sky which fall in a large radius surrounding your chosen target.  Try not to be near the victim when you use this spell.  A single meteor does %s points of damage plus %s per point of skill in Fire Magic.  This spell only works outdoors.	하늘에서 불타는 바위를 소환해 지정한 대상 주변의 넓은 범위에 떨어뜨립니다. 시전할 때 대상 가까이에 있지 않는 것이 좋습니다. 운석 하나당 %s + 화염 마법 기술 포인트당 %s의 피해를 줍니다. 야외에서만 사용할 수 있습니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[9].Description=string.format(""Summons flaming rocks from the sky which fall in a large radius surrounding your chosen target.  Try not to be near the victim when you use this spell.  A single meteor does %s points of damage plus %s per point of skill in Fire Magic.  This spell only works outdoors."",dmgAddTooltip(s, m,9),diceMaxTooltip(s, m,9))"
 Sunray is the second most devastating damage spell in the game. It does %s points of damage plus 1-%s points per point of skill in Light Magic, by concentrating the light of the sun on one unfortunate creature. Indoors it can be cast at any time; outdoors it only works during the day.	게임에서 두 번째로 강력한 피해 주문입니다. 태양빛을 한 대상에게 집중하여 %s의 기본 피해와 빛 마법 기술 포인트당 1-%s의 추가 피해를 줍니다. 실내에서는 언제든 시전할 수 있지만, 야외에서는 낮에만 사용할 수 있습니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[87].Description=string.format(""Sunray is the second most devastating damage spell in the game. It does %s points of damage plus 1-%s points per point of skill in Light Magic, by concentrating the light of the sun on one unfortunate creature. Indoors it can be cast at any time; outdoors it only works during the day."",dmgAddTooltip(s, m,87),diceMaxTooltip(s, m,87))"
 Temporarily increases all seven stats on all your characters by 1 per skill in Light Magic.  This spell lasts until you rest.	파티원 모두의 일곱 능력치를 빛 마법 기술 포인트당 1만큼 일시적으로 증가시킵니다. 휴식할 때까지 지속됩니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[83].Description=""Temporarily increases all seven stats on all your characters by 1 per skill in Light Magic.  This spell lasts until you rest."""
+"The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:
+
+Spell Damage: 10% per stack
+Spell Recovery Speed: 5% per stack
+Mana Cost: 1 + 7.5% of the total.
+
+After a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.
+
+Spells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells."	"원소술사는 가장 큰 마나량을 지닌 주문 시전자이며, 책이 아니라 같은 원소 계열의 주문을 직접 시전하면서 주문을 익힙니다. 승천을 직접 배울 수는 없지만 승천 레벨은 네 원소 계열 기술 레벨 합계를 4로 나눈 값에 따라 결정됩니다. 기본 주문 회복 시간은 50% 더 길지만, 마법을 시전하면 중첩을 얻어 다음 효과가 증가합니다:
+
+주문 피해: 중첩당 10%
+주문 회복 속도: 중첩당 5%
+마나 소모: 1 + 총량의 7.5%
+
+몇 초 동안 주문을 시전하지 않으면 중첩이 50%씩 감소합니다. 활이나 근접 무기로 피해를 주거나 주문서를 사용하면 집중이 깨져 모든 중첩이 즉시 초기화됩니다.
+
+주문은 무작위로 시전되지만 단일 대상, 광역 효과, 산탄형의 세 범주로 나뉩니다. 지정한 빠른 시전 주문에 따라 로테이션이 조정됩니다. 예를 들어 화염구를 빠른 시전 주문으로 설정하면 광역 주문을 자동으로 우선합니다."	translated	tooltip	1	reviewed_batch027_display:1	Scripts/General/zzClasses.lua	"Game.ClassDescriptions[62] = ""The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: 1 + 7.5% of the total"
+"The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.
+You can check following values by checking magic schools description in skills menu.
+ - Each school will provide a unique bonus. There is strength in diversifying as well as specialization
+ - Each point in Air will reduce damage a % pr rank reduced by level
+ - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses are already strong
+ - Each point in spirit will increase healing and spell damage by a %
+ - Fire will deal a % of current monster HP as fire damage, partially piercing this resistance. The bosskiller.
+ - Each point in Earth will increase melee damage by a flat amount
+ - Each point in Body will heal by flat amount
+ - Each point in mind will restore a flat amount of mana"	"주술사는 마법 지식으로 무예를 강화하는 신비한 전사입니다.
+기술 메뉴의 마법 계열 설명에서 다음 수치를 확인할 수 있습니다.
+ - 각 마법 계열은 고유한 보너스를 제공합니다. 여러 계열에 분산 투자하는 것과 한 계열에 집중하는 것 모두 장점이 있습니다.
+ - 공기 기술 포인트마다 받는 피해를 일정 비율 감소시키며, 효과는 레벨에 따라 감소합니다.
+ - 물 기술 포인트마다 받는 피해를 고정 수치로 감소시킵니다. 따라서 약한 적을 상대하거나 이미 방어력이 높은 경우 물이 더 효과적입니다.
+ - 영혼 기술 포인트마다 치유량과 주문 피해가 일정 비율 증가합니다.
+ - 화염은 몬스터의 현재 생명력에 비례한 화염 피해를 주며 저항을 일부 관통합니다. 보스 처치에 특화됩니다.
+ - 대지 기술 포인트마다 근접 피해가 고정 수치로 증가합니다.
+ - 육체 기술 포인트마다 고정 수치만큼 치유합니다.
+ - 정신 기술 포인트마다 고정 수치만큼 마나를 회복합니다."	translated	tooltip	1	reviewed_batch027_display:1	Scripts/General/zzClasses.lua	"Game.ClassDescriptions[59] = ""The Shaman is a mystical warrior whose knowledge of magic enhances his martial prowess.\nYou can check following values by checking magic schools description in skills menu.\n - Each school will provide a unique bonus. There is strength in diversifying as well as specialization\n - Each point in Air will reduce damage a % pr rank reduced by level\n - Each point in Water will reduce damage by a flat number, making water better for weaker enemies, or if your defenses "
 This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.	translated	tooltip	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua; Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[123].Description=""This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs."""
+"This class combines the evil forces with brute power, making it powerful and versatile.
+ Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.
+
+Frost:
+
+Increases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.
+
+Blood:
+
+This skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Additionally, it endows their attacks with a leech effect, converting a portion of the damage dealt into health recovery.
+
+Unholy:
+
+It amplifies damage by 1-2-3 (at Novice, Master, Grandmaster levels) and diminishes magical damage received by 1% for each skill point allocated."	"이 직업은 사악한 힘과 강인한 육체를 결합해 강력하면서도 다재다능합니다.
+ 냉기/혈기/부정 기술을 전문가/마스터/그랜드마스터로 올리면 새로운 주문을 자동으로 해금합니다. 단, 죽음의 기사는 주문서로 주문을 배울 수 없습니다.
+
+냉기:
+
+초보/마스터/그랜드마스터 단계에서 피해가 각각 1/2/3 증가하며, 투자한 기술 포인트마다 공격 속도가 1% 증가합니다.
+
+혈기:
+
+생존력을 강화해 기술 포인트당 받는 물리 피해를 1% 감소시킵니다. 또한 공격에 생명력 흡수 효과를 부여해 준 피해의 일부를 생명력으로 회복합니다.
+
+부정:
+
+초보/마스터/그랜드마스터 단계에서 피해가 각각 1/2/3 증가하며, 투자한 기술 포인트마다 받는 마법 피해가 1% 감소합니다."	translated	tooltip	1	reviewed_batch027_display:1	Scripts/General/zzClasses.lua	"Game.ClassDescriptions[56] = ""This class combines the evil forces with brute power, making it powerful and versatile.\n Learning Frost/Blood/Unholy E/M/GM will unlock automatically new spells. However death knight can't learn spells from books.\n\nFrost:\n\nIncreases damage by 1-2-3 (at Novice, Master, Grandmaster levels) and boosts attack speed by 1% for every skill point invested.\n\nBlood:\n\nThis skill fortifies their resilience, reducing physical damage taken by 1% per skill point. Addition"
 This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill.	이 무시무시한 능력은 다크 엘프가 어둠과 화염의 힘을 결합한 위험한 다크파이어를 다루게 합니다. 다크파이어에 맞은 대상은 화염 저항과 어둠 저항 중 더 낮은 수치로 저항합니다. 피해량은 %s의 기본 피해 + 기술 포인트당 1-%s입니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[103].Description=string.format(""This frightening ability grants the Dark Elf the power to wield Darkfire, a dangerous combination of the powers of Dark and Fire. Any target stricken by the Darkfire bolt resists with either its Fire or Dark resistance--whichever is lower. Damage is %s points of damage plus 1-%s per point of skill."",dmgAddTooltip(s, m,103),diceMaxTooltip(s, m,103))"
 This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill.	시야 안의 모든 생물에게서 생명력을 빼앗습니다. 아군과 적군을 가리지 않습니다. 영혼 흡수는 공동 생명과 비슷한 방식으로 빼앗은 생명력을 파티에 나눠 줍니다. 피해량(및 회복량)은 %s + 기술 포인트당 1-%s입니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[99].Description=string.format(""This horrible spell sucks the life from all creatures in sight, friend or enemy.  Souldrinker then transfers that life to your party in much the same fashion as Shared Life.  Damage (and healing) is %s + 1-%s per point of skill."",dmgAddTooltip(s, m,99),diceMaxTooltip(s, m,99))"
 This is the strongest single damage spell available to death knights and deals damage equal to 	죽음의 기사가 사용할 수 있는 가장 강력한 단일 대상 피해 주문입니다. 피해량: 	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[29].Description=""This is the strongest single damage spell available to death knights and deals damage equal to "" .. (mult29[1]*100) .. ""% of current weapon damage."""
@@ -2242,6 +2334,7 @@ Ranged Damage done in current map: %s"	"%s
 "%s
 Total Ranged Damage done: %s"	"%s
 총 원거리 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nTotal Ranged Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
+446561746820436f756e743a20	ec82aceba79d20ed9a9fec88983a20	translated	ui	1	reviewed_batch027_display:1	Scripts/General/zzMaw-Monsters.lua	"deathCounter.Text=_H""446561746820436f756e743a20""..vars.MadnessDeathCounter"
 "Beyond
 Madness"	"광란을
 넘어"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
