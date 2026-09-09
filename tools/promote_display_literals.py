@@ -113,6 +113,15 @@ def promote(row: dict[str, str]) -> bool:
     if re.search(r"\bSkillz\.setDesc\s*\(", context):
         return mark(row, "proven_skill_display_description")
 
+    # These four MMExtension tables are the text shown for Novice/Expert/Master/
+    # Grandmaster skill mastery effects. Quoted fragments on their assignment
+    # RHS are therefore safe player-facing localization targets.
+    if re.search(
+        r"Game\.SkillDes(?:Normal|Expert|Master|GM)\s*\[[^\]]+\]\s*=",
+        context,
+    ):
+        return mark(row, "proven_skill_mastery_description")
+
     # Item names/descriptions are shown in inventory/tooltips. Allow either the
     # canonical Game.ItemsTxt table or a local alias for NotIdentifiedName.
     if re.search(
