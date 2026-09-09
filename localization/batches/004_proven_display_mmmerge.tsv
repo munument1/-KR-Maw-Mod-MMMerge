@@ -1,0 +1,23 @@
+source	translation	status	notes
+Attack	근접	translated	Game.GlobalTxt 근접 공격 표시
+Damage	피해량	translated	Game.GlobalTxt 피해 표시
+Shoot	원거리	translated	Game.GlobalTxt 원거리 공격 표시
+Longsword	장검	translated	미감정 아이템 이름
+Potion Bottle	물약병	translated	미감정 아이템 이름
+Goblin King	고블린 왕	translated	Game.PlaceMonTxt 몬스터 이름
+Cleric of Baa	바의 성직자	translated	Game.PlaceMonTxt 몬스터 이름
+Priest of Baa	바의 사제	translated	Game.PlaceMonTxt 몬스터 이름
+Water Magic	물 마법	translated	Skillz.setName 표시명
+Air Magic	공기 마법	translated	Skillz.setName 표시명
+Body Magic	육체 마법	translated	Skillz.setName 표시명
+Dark Magic	어둠 마법	translated	Skillz.setName 표시명
+Earth Magic	대지 마법	translated	Skillz.setName 표시명
+Fire Magic	화염 마법	translated	Skillz.setName 표시명
+Book	책	translated	미감정 주문서 아이템 이름
+N/A		excluded	통용 약어이므로 원문 유지
+Quick Spell	퀵스펠	translated	Game.GlobalTxt 표시명
+This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	translated	주문 숙련 설명
+This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.	translated	용 숨결 주문 설명
+Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.	translated	화염 가시 주문 설명
+Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.	translated	기절 주문 설명
+Dodging	회피	translated	Skillz.setName 표시명
