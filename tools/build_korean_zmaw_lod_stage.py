@@ -42,6 +42,7 @@ EXPECTED = [
     "mapstats.txt",
     "rnditems.txt",
 ]
+UNTOUCHED = {"POTION.TXT", "POTNOTES.TXT", "rnditems.txt"}
 
 DBCS_RE = re.compile(br"[\xA1-\xAC\xB0-\xC8\xCA-\xFD][\xA0-\xFF](?!\x07)")
 
@@ -318,6 +319,8 @@ def main() -> int:
 
     docs: dict[str, TsvDocument] = {}
     for expected in EXPECTED:
+        if expected in UNTOUCHED:
+            continue
         src = find_casefold(source_dir, expected)
         docs[expected] = TsvDocument(read_source_text(src))
 
@@ -335,12 +338,16 @@ def main() -> int:
     replacements["SPCITEMS.TXT"] = apply_by_order(docs["SPCITEMS.TXT"], ko["spc_stats"], 0, spc_row, "BonusStat")
     replacements["SPCITEMS.TXT"] += apply_by_order(docs["SPCITEMS.TXT"], ko["spc_names"], 1, spc_row, "NameAdd")
 
-    for untouched in ("POTION.TXT", "POTNOTES.TXT", "rnditems.txt"):
+    for untouched in UNTOUCHED:
         replacements[untouched] = 0
 
     for expected in EXPECTED:
         out = stage_dir / expected
-        write_game_text(out, docs[expected])
+        src = find_casefold(source_dir, expected)
+        if expected in UNTOUCHED:
+            shutil.copyfile(src, out)
+        else:
+            write_game_text(out, docs[expected])
 
     report = {
         "base": "MAW MMMerge 4.5 zMaw.T.lod",
@@ -351,8 +358,9 @@ def main() -> int:
         "files": EXPECTED,
         "replacements": replacements,
         "total_localized_fields": sum(replacements.values()),
-        "untouched_pending_schema_review": ["POTION.TXT", "POTNOTES.TXT", "rnditems.txt"],
-        "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit pinned MMMerge Korean runtime text; output uses the existing Korean CP949/DBCS encoding convention.",
+        "untouched_pending_schema_review": sorted(UNTOUCHED),
+        "untouched_byte_preserved": sorted(UNTOUCHED),
+        "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit pinned MMMerge Korean runtime text; untouched tables are copied byte-for-byte; localized tables use the existing Korean CP949/DBCS encoding convention.",
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
