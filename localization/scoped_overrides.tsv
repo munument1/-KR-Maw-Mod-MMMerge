@@ -1,0 +1,4 @@
+file	source	translation	context_contains	notes
+Scripts/General/zzMAW-Skills.lua	%sRes	%s저항	baseString=string.format("%sRes",baseString)	기술 상세창 표시만 번역; 포맷 source 전역 치환 금지
+Scripts/General/zzMaw-Spells.lua	Expert	전문가	local mastery={"Novice","Expert","Master","Grandmaster"}	주문서 요구 숙련도 표시만 번역; SpellPoints 내부 키 유지
+Scripts/General/zzMaw-Spells.lua	Master	마스터	local mastery={"Novice","Expert","Master","Grandmaster"}	주문서 요구 숙련도 표시만 번역; SpellPoints 내부 키 유지
