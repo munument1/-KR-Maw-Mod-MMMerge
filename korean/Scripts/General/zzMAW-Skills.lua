@@ -523,7 +523,7 @@ function events.GameInitialized2()
 			local tab=0
 			if attack then
 				tab=tab+73
-				baseString=string.format("%s\t0" .. tab .. "Attack|",baseString)
+				baseString=string.format("%s\t0" .. tab .. "공격|",baseString)
 				normal=string.format("%s\t" .. tab+32 .. "%s|",normal,skillAttack[i][1])
 				expert=string.format("%s\t" .. tab+32 .. "%s|",expert,skillAttack[i][2])
 				master=string.format("%s\t" .. tab+32 .. "%s|",master,skillAttack[i][3])
@@ -539,14 +539,14 @@ function events.GameInitialized2()
 			end
 			if damage and i~=33 then
 				tab=tab+55
-				baseString=string.format("%s\t" .. tab .. "Dmg%%|",baseString)
+				baseString=string.format("%s\t" .. tab .. "피해%%|",baseString)
 				normal=string.format("%s\t" .. tab+22 .. "%s%%|",normal,skillDamage[i][1])
 				expert=string.format("%s\t" .. tab+22 .. "%s%%|",expert,skillDamage[i][2])
 				master=string.format("%s\t" .. tab+22 .. "%s%%|",master,skillDamage[i][3])
 				gm=string.format("%s\t" .. tab+22 .. "%s%%|",gm,skillDamage[i][4])
 			else --unarmed
 				tab=tab+55
-				baseString=string.format("%s\t" .. tab .. "Dmg|",baseString)
+				baseString=string.format("%s\t" .. tab .. "피해|",baseString)
 				normal=string.format("%s\t" .. tab+22 .. "%s|",normal,skillDamage[i][1])
 				expert=string.format("%s\t" .. tab+22 .. "%s|",expert,skillDamage[i][2])
 				master=string.format("%s\t" .. tab+22 .. "%s|",master,skillDamage[i][3])
@@ -554,7 +554,7 @@ function events.GameInitialized2()
 			end
 			if ac then
 				tab=tab+55
-				baseString=string.format("%s\t" .. tab .. "AC|",baseString)
+				baseString=string.format("%s\t" .. tab .. "방어도|",baseString)
 				normal=string.format("%s\t" .. tab+9 .. "%s|",normal,skillAC[i][1])
 				expert=string.format("%s\t" .. tab+9 .. "%s|",expert,skillAC[i][2])
 				master=string.format("%s\t" .. tab+9 .. "%s|",master,skillAC[i][3])
@@ -609,7 +609,7 @@ function events.Action(t)
 			
 			baseString="\n------------------------------------------------------------\n         "
 			baseString=string.format("%s\t075AC|",baseString)
-			baseString=string.format("%s Res\t000",baseString)
+			baseString=string.format("%s 저항\t000",baseString)
 			for i=8,11 do
 				Skillz.setDesc(i,1,string.format(Skillz.getDesc(i,1) .. baseString))
 			end
@@ -654,7 +654,7 @@ function events.GameInitialized2()
 				gm=string.format("%s  %s|",gm,ac[4])
 			end
 			if res then
-				baseString=string.format("%s Res\t000",baseString)
+				baseString=string.format("%s 저항\t000",baseString)
 				normal=string.format("%s    %s",normal,res[1])
 				expert=string.format("%s    %s",expert,res[2])
 				master=string.format("%s    %s",master,res[3])
@@ -2094,9 +2094,9 @@ function events.Tick()
 		end
 		local s= SplitSkill(Skillz.get(pl, 50))
 		local chance=math.min(10+s,40)
-		local txt="Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: " .. chance .. "%\n\nPress P to enable/disable\n"
+		local txt="엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.\n\n기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....\n\n현재 엄호 확률: " .. chance .. "%\n\nP키로 활성화/비활성화\n"
 		if vars.insanityMode then
-			txt="Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: " .. chance .. "%\n\nPress P to enable/disable\n"
+			txt="엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-30에서 습득합니다.\n\n기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....\n\n현재 엄호 확률: " .. chance .. "%\n\nP키로 활성화/비활성화\n"
 		end
 		if vars.covering[index] then
 			txt=txt .. StrColor(0,255,0,"\n현재 활성화됨\n")
@@ -2460,7 +2460,7 @@ function events.Action(t)
 			local chance=round(s/pl.LevelBase^0.65*1500*damageMultiplier[pl:GetIndex()].Melee/math.min(1+pl.LevelBase/150,3))/100
 			local txt="\n\n"
 			if m==3 then
-				txt=txt .. "Chance to Stun: " .. chance .. "%"
+				txt=txt .. "기절 확률: " .. chance .. "%"
 			elseif m==4 then
 				txt=txt .. "마비 확률: " .. chance .. "%"
 			end

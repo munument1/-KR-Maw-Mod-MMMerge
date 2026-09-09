@@ -252,15 +252,15 @@ function events.CalcDamageToMonster(t)
 		RunNextTick(function()
 			if id<=Map.Monsters.High and MSGdamage>0 then
 				if shoot=="shoots" then
-				msg=string.format("%s shoots %s for %s points!%s", name, monName, msgTxt, critMessage)
+				msg=string.format("%s이(가) %s에게 원거리 공격으로 %s의 피해를 입혔습니다!%s", name, monName, msgTxt, critMessage)
 				else
-					msg=string.format("%s hits %s for %s points!%s", name, monName, msgTxt, critMessage)
+					msg=string.format("%s이(가) %s에게 %s의 피해를 입혔습니다!%s", name, monName, msgTxt, critMessage)
 				end
 				if t.Monster.HP==0 then
-					msg=string.format("%s inflicts %s points killing %s!%s", name, msgTxt, monName, critMessage)
+					msg=string.format("%s이(가) %s의 피해를 입혀 %s을(를) 처치했습니다!%s", name, msgTxt, monName, critMessage)
 				end
 				if castedAoe then
-					msg=string.format("%s hits for a total of %s points!%s", name, msgTxt, critMessage)
+					msg=string.format("%s이(가) 총 %s의 피해를 입혔습니다!%s", name, msgTxt, critMessage)
 				end
 				Game.ShowStatusText(msg)
 				

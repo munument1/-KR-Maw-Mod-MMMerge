@@ -18,7 +18,7 @@ local function HuntText(MonId, MonName, MapFileName)
 	local function Yellow(x)
 		return StrColor(255, 255, 150, x)
 	end
-	local contents = Yellow(MonName or "monster")
+	local contents = Yellow(MonName or "몬스터")
 	if MapName then
 		contents = contents .. " in " .. Yellow(MapName)
 	end

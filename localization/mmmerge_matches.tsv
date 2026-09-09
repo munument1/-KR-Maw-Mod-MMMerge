@@ -35,6 +35,7 @@ Damage Halved	피해량 절반	exact	safe_candidate	monster	1	1	1	Exact MMMerge 
 Death	죽음	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Eradication	소멸	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Fear	공포	exact	safe_candidate	monster	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Insane	광기	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Melee Only	근접 공격 전용	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Priest of Baa	바의 사제	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Slow	감속	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -217,7 +218,6 @@ Harmondale	하몬데일	exact	no_patchable_occurrence	monster	2	0	1	Exact PO mat
 Hermit's Isle	은둔자의 섬	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Icewind Keep	아이스윈드 성채	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Ilsingore's Cave	일싱고어의 동굴	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Insane	광기	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Ironsand Desert	아이언샌드 사막	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Kriegspire	크리그스파이어	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Lair of the Wolf	늑대의 소굴	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

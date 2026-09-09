@@ -235,7 +235,7 @@ function events.GameInitialized2()
 	OnOffTumbler(ExSetScr, 95, 326, VarsToStore[4])
 	
 	-- Game mode
-	gameMode={[0]="보통", [2]="파멸", [4]="광기로 가는\n길",[6]="광기를\n넘어",[8]=" 절제" }
+	gameMode={[0]="보통", [2]="파멸", [4]="광기로 가는\n길",[6]="광란을\n넘어",[8]=" 절제" }
 	Game.Mode = Game.Mode or 0
 	NumberRegulator(21, 520, 20, "Mode",
 		function(t, val)

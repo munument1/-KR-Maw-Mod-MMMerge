@@ -3473,7 +3473,7 @@ function events.CanCastTownPortal(t)
 	if vars.madnessMode and (Party.EnemyDetectorYellow or Party.EnemyDetectorRed) then
 		t.CanCast=false
 		RunNextTick(function()
-			Game.ShowStatusText("광기는 겁쟁이가 올 곳이 아닙니다")
+			Game.ShowStatusText("광란은 겁쟁이가 올 곳이 아닙니다")
 		end)
 	end
 end

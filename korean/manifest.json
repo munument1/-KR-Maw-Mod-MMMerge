@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 1002,
-  "translated_entries_with_patchable_occurrences": 994,
-  "patchable_occurrences_targeted": 1297,
+  "translated_entries": 1022,
+  "translated_entries_with_patchable_occurrences": 1014,
+  "patchable_occurrences_targeted": 1319,
   "skipped_unpatchable_occurrences_for_translated_sources": 82,
   "changed_files": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "file": "Scripts/General/BountyHunt.lua",
-      "replacements": 2
+      "replacements": 3
     },
     {
       "file": "Scripts/General/MenuExtraSettings.lua",
@@ -20,7 +20,7 @@
     },
     {
       "file": "Scripts/General/NPCFollowers.lua",
-      "replacements": 3
+      "replacements": 4
     },
     {
       "file": "Scripts/General/zSERIOUSMAW.lua",
@@ -36,7 +36,7 @@
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 131
+      "replacements": 142
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -44,7 +44,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 241
+      "replacements": 242
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
@@ -52,7 +52,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 72
+      "replacements": 75
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
@@ -80,7 +80,7 @@
     },
     {
       "file": "Scripts/Global/Quest_SavingGoobers.lua",
-      "replacements": 25
+      "replacements": 26
     },
     {
       "file": "Scripts/Global/zzMAWPotions.lua",
@@ -92,7 +92,7 @@
     },
     {
       "file": "Scripts/Global/zzMAWStatusMsg.lua",
-      "replacements": 1
+      "replacements": 5
     },
     {
       "file": "Scripts/Global/zzMaw_Arena.lua",

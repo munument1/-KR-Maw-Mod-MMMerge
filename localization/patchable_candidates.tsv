@@ -254,6 +254,7 @@ Endless Potion	무한 물약	translated	item	1	known_display_name_assignment:1	S
 Endurance	인내력	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[4] = StrColor(0, 255, 0, ""Endurance"")"
 eradication	소멸	translated	item	1	reviewed_immunity_status_name:1	Scripts/General/zzMaw-Items.lua	"[25] = { [14] = ""death"", [16] = ""eradication"" },"
 Explosive Impact! (half damage)	폭발 충격! (피해 절반)	translated	item	2	proven_special_item_bonus_description:2	Scripts/General/zzMaw-Items.lua	"Game.SpcItemsTxt[2].BonusStat=""Explosive Impact! (half damage)"""
+fear	공포	translated	item	1	reviewed_short_display_literal:1	Scripts/General/zzMaw-Items.lua	"[20] = { [12] = ""paralysis"", [23] = ""fear"" },"
 Fire	화염	translated	item	1	proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"local name={""Fire"",""Flame"",""Inferno"",""Hell"",[0]=""""}"
 Fire Magic Skill +	화염 마법 기술 +	translated	item	1	proven_item_enchant_description:1	Scripts/General/zzMaw-Items.lua	"[30] = ""Fire Magic Skill +"" .. math.floor(MaxCharges/4)+5,"
 Fire Resistance	화염 저항	translated	item	2	formatted_colored_text:1; proven_item_enchantment_label:1	Scripts/General/zzMaw-Items.lua	"itemStatName[11] = StrColor(255, 70, 70, ""Fire Resistance"")"
@@ -475,6 +476,7 @@ Captain Finch	핀치 대장	translated	misc	1	reviewed_monster_display_name:1	Sc
 Captain Sharp-Tooth	날카로운 이빨 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[201]=""Captain Sharp-Tooth"""
 Captain Strong-Scale	단단한 비늘 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[202]=""Captain Strong-Scale"""
 Celestial Orb	천상의 구체	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Celestial Orb"","
+Charge telelocator	텔레로케이터 충전	translated	misc	1	reviewed_batch026_display:1	Scripts/Global/Quest_SavingGoobers.lua	"Topic	= ""Charge telelocator"","
 Creator's Hourglass	창조자의 모래시계	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Creator's Hourglass"","
 "Cures and prevent Stoned condition for 6 hours.
 Require 20 power to work.
@@ -505,6 +507,7 @@ Require 50 power to work.
 "	"캐릭터의 나이를 60세로 고정합니다.
 작동하려면 위력 50이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
+Following you would be foolish	당신을 따라가는 건 어리석은 짓이겠군	translated	misc	1	reviewed_batch026_display:1	Scripts/General/NPCFollowers.lua	"Game.NPCTopic[1680]=""Following you would be foolish"""
 Gemcutter's Ruby	보석세공사의 루비	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Gemcutter's Ruby"","
 Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[259] = ""Grant 500 Experience point per Power to the player."","
 Healing reduced by 	치유량 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[31]=""Healing reduced by "" .. getMapAffixPower(31, power) .. ""%"","
@@ -761,8 +764,11 @@ Disease 3	질병 3	translated	monster	1	proven_monster_info_label:1	Scripts/Gene
 Eradication	소멸	translated	monster	1	proven_monster_info_label:1	Scripts/General/zzMaw-Monsters.lua	"[14] = ""Death"", [16] = ""Eradication"","
 Fear	공포	translated	monster	2	proven_monster_info_label:2	Scripts/General/zzMaw-Monsters.lua	"[const.MonsterBuff.Fear] = ""Fear"","
 High Cardinal	고위 추기경	translated	monster	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Monsters.lua	"Game.PlaceMonTxt[214]=""High Cardinal"""
+Insane	광기	translated	monster	1	reviewed_batch026_display:1	Scripts/General/zzMaw-Monsters.lua	"MAWBOLSTER[600]=""Insane"""
 Locate monster	몬스터 찾기	translated	monster	1	reviewed_telelocator_ui:1	Scripts/Global/Quest_SavingGoobers.lua	"Topic	= ""Locate monster"","
+Mad.	광란	translated	monster	1	reviewed_batch026_display:1	Scripts/General/zzMaw-Monsters.lua	"MAWBOLSTER[600]=""Mad."""
 Melee Only	근접 공격 전용	translated	monster	1	proven_monster_info_label:1	Scripts/General/zzMaw-Monsters.lua	"[const.MonsterBuff.MeleeOnly] = ""Melee Only"","
+monster	몬스터	translated	monster	1	reviewed_batch026_display:1	Scripts/General/BountyHunt.lua	"local contents = Yellow(MonName or ""monster"")"
 Monsters deal 	몬스터가 	translated	monster	2	proven_map_item_tooltip:2	Scripts/General/zzMaw-Maps.lua	"[1]=""Monsters deal "" .. getMapAffixPower(1, power) .. ""% increased damage"","
 Monsters have 	몬스터: 	translated	monster	11	proven_map_item_tooltip:11	Scripts/General/zzMaw-Maps.lua	"[2]=""Monsters have "" .. getMapAffixPower(2, power) .. ""% critical chance"","
 Monsters reflect 	몬스터가 	translated	monster	2	proven_map_item_tooltip:2	Scripts/General/zzMaw-Maps.lua	"[5]=""Monsters reflect "" .. getMapAffixPower(5, power) .. ""% of physical damage"","
@@ -933,6 +939,13 @@ Current leech vs. same level monsters: "	"%
 추가로 총 생명력에 비례하여 공격 시 생명력을 흡수합니다.
 
 동일 레벨 몬스터 대상 현재 흡혈량: "	translated	skill	1	proven_display_variable_flow:1	Scripts/General/zzClasses.lua	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
+"%
+
+Press P to enable/disable
+"	"%
+
+P키로 활성화/비활성화
+"	translated	skill	2	reviewed_batch026_display:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. cha"
 % of monster Hit points as fire damage.	%만큼 추가 화염 피해를 줍니다.	translated	skill	1	proven_display_variable_flow:1	Scripts/General/zzClasses.lua	"txt=baseSchoolsTxt[12] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks deal an extra "" .. fireDamage .. ""% of monster Hit points as fire damage."""
 %% speed	%% 속도	translated	skill	3	proven_skill_mastery_description:3	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesExpert[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[2] .. "" dmg, "" .. armsmasterSkill.Attack[2] .. "" atk, "" .. armsmasterSkill.Speed[2] .. ""%% speed"")"
 "%s
@@ -979,6 +992,7 @@ Next Level Bonus: %s HP Regen"	"%s
 %s rec. pen. halved	%s 회복 페널티 절반	translated	skill	1	proven_skill_mastery_description:1	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesExpert[const.Skills.Plate]=string.format(""%s rec. pen. halved"",Game.SkillDesExpert[const.Skills.Plate])"
 %s recovery penalty eliminated	%s 회복 페널티 제거	translated	skill	3	proven_skill_mastery_description:3	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesExpert[const.Skills.Leather]=string.format(""%s recovery penalty eliminated"",Game.SkillDesExpert[const.Skills.Leather])"
 %s recovery penalty halved	%s 회복 페널티 절반	translated	skill	1	proven_skill_mastery_description:1	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesExpert[const.Skills.Chain]=string.format(""%s recovery penalty halved"",Game.SkillDesExpert[const.Skills.Chain])"
+"%s Res	000"	"%s 저항	000"	translated	skill	2	reviewed_batch026_display:2	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s Res\t000"",baseString)"
 %s shoots fire arrows, dealing highest between fire and physical damage	%s 화염 화살을 발사하며 화염 피해와 물리 피해 중 더 높은 피해 적용	translated	skill	1	proven_skill_mastery_description:1	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesGM[const.Skills.Bow]=string.format(""%s shoots fire arrows, dealing highest between fire and physical damage"",Game.SkillDesGM[const.Skills.Bow])"
 %s usable with Leather Armor	%s 가죽 갑옷 착용 시 사용 가능	translated	skill	1	proven_skill_mastery_description:1	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesMaster[const.Skills.Dodging]=string.format(""%s usable with Leather Armor"",Game.SkillDesGM[const.Skills.Dodging])"
 %s usable with Unarm.	%s 맨손 전투와 함께 사용 가능	translated	skill	1	proven_skill_mastery_description:1	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesGM[const.Skills.Staff]=string.format(""%s usable with Unarm."",Game.SkillDesGM[const.Skills.Staff])"
@@ -988,6 +1002,7 @@ Next Level Bonus: %s HP Regen"	"%s
 Absorb up to 25% damage	피해를 최대 25% 흡수합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(manaSkill, 2, ""Absorb up to 25% damage"")"
 Absorb up to 50% damage	피해를 최대 50% 흡수합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(manaSkill, 3, ""Absorb up to 50% damage"")"
 Absorb up to 75% damage	피해를 최대 75% 흡수합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(manaSkill, 4, ""Absorb up to 75% damage"")"
+AC|	방어도|	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t"" .. tab .. ""AC|"",baseString)"
 "After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
@@ -1028,6 +1043,7 @@ Damage added by armsmaster skill scales with your weapon skill, amplifying its i
 Ascension	승천	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setName(const.Skills.Learning, ""Ascension"")"
 Assassination	암살	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(15, ""Assassination"")"
 Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(coverSkill, 5, ""Attacking will increase you next Cover chance by 15%"")"
+Attack|	공격|	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
 Blood	혈마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(18, ""Blood"")"
 Body Magic	육체 마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(18, ""Body Magic"")"
 "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. 
@@ -1045,6 +1061,7 @@ Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipp
 
 사슬 갑옷을 장비하면 사슬 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(10,1,""Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.\n\nChain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."")"
 Chance to Paralyze: 	마비 확률: 	translated	skill	1	proven_display_variable_flow:1	Scripts/General/zzMAW-Skills.lua	"txt=txt .. ""Chance to Paralyze: "" .. chance .. ""%"""
+Chance to Stun: 	기절 확률: 	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"txt=txt .. ""Chance to Stun: "" .. chance .. ""%"""
 Combat	전투	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(12, ""Combat"")"
 "Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
 
@@ -1069,9 +1086,37 @@ Press P to enable/disable
 
 P키로 활성화/비활성화
 "	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(coverSkill, 1, ""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n"")"
+"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
+
+If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
+
+Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
+
+Current cover chance: "	"엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
+
+기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....
+
+현재 엄호 확률: "	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"local txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. cha"
+"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
+
+If available, Expert, Master and Grandmaster is learned at skill 8-20-30.
+
+Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
+
+Current cover chance: "	"엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-30에서 습득합니다.
+
+기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....
+
+현재 엄호 확률: "	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. chance .."
 Current Damage reduction per Mana: 	마나당 현재 피해 감소: 	translated	skill	2	formatted_colored_text:2	Scripts/General/zzMAW-Skills.lua	"local txt=""Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nMastery increase its mana efficience.\n"" .. ""Current Damage reduction per Mana: "" .. StrColor(178,255,255, efficiency) .. ""\n\nPress M to enable/disable"""
 Current Reduction: 	현재 피해 감소: 	translated	skill	2	proven_display_variable_flow:2	Scripts/General/zzClasses.lua	"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
 Dark Magic	어둠 마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(20, ""Dark Magic"")"
+Dmg%%|	피해%%|	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t"" .. tab .. ""Dmg%%|"",baseString)"
+Dmg|	피해|	translated	skill	1	reviewed_batch026_display:1	Scripts/General/zzMAW-Skills.lua	"baseString=string.format(""%s\t"" .. tab .. ""Dmg|"",baseString)"
 Double healing effect	회복 효과가 2배가 됩니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(18,3,""Double healing effect"")"
 "Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
 
@@ -1481,6 +1526,10 @@ Realms: Detached. Time: Detached."	"
  will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(Party[Game.CurrentPlayer].Name .. "" will now take alchemy items when sorting"")"
 %s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""%s casts Charge stunning the enemy"",Party[0].Name))"
 %s created	%s 제작 완료	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""%s created"", craftingNames[i+1]))"
+%s hits %s for %s points!%s	%s이(가) %s에게 %s의 피해를 입혔습니다!%s	translated	status	1	reviewed_batch026_display:1	Scripts/Global/zzMAWStatusMsg.lua	"msg=string.format(""%s hits %s for %s points!%s"", name, monName, msgTxt, critMessage)"
+%s hits for a total of %s points!%s	%s이(가) 총 %s의 피해를 입혔습니다!%s	translated	status	1	reviewed_batch026_display:1	Scripts/Global/zzMAWStatusMsg.lua	"msg=string.format(""%s hits for a total of %s points!%s"", name, msgTxt, critMessage)"
+%s inflicts %s points killing %s!%s	%s이(가) %s의 피해를 입혀 %s을(를) 처치했습니다!%s	translated	status	1	reviewed_batch026_display:1	Scripts/Global/zzMAWStatusMsg.lua	"msg=string.format(""%s inflicts %s points killing %s!%s"", name, msgTxt, monName, critMessage)"
+%s shoots %s for %s points!%s	%s이(가) %s에게 원거리 공격으로 %s의 피해를 입혔습니다!%s	translated	status	1	reviewed_batch026_display:1	Scripts/Global/zzMAWStatusMsg.lua	"msg=string.format(""%s shoots %s for %s points!%s"", name, monName, msgTxt, critMessage)"
 %s's poison effect expired	%s: 독 효과가 끝났습니다	translated	status	3	status_text_call:3	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""%s's poison effect expired"",Party[i].Name))"
 's bags sorted	의 모든 가방	translated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All "" .. name .. ""'s bags sorted"")"
 (CRIT!)	(치명타!)	translated	status	1	formatted_colored_text:1	Scripts/Global/zzMAWStatusMsg.lua	"critMessage=StrColor(255,255,30,""(CRIT!)"")"
@@ -1492,6 +1541,33 @@ All 	정렬 완료: 	translated	status	2	status_text_call:2	Scripts/General/zzMa
 All buffs have been removed	모든 버프가 제거되었습니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""All buffs have been removed"")"
 All inventories have been sorted	모든 인벤토리를 정렬했습니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All inventories have been sorted"")"
 All Party bags sorted	파티의 모든 가방을 정렬했습니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""All Party bags sorted"")"
+"Beyond Madness - a word of warning.
+
+No bolster here (except on starting maps).
+
+Quest timing matters:
+- Finish early: immediate power now, less XP.
+- Finish late: bigger XP later, no early power.
+
+Run-wide tracking:
+- On the character screen, you'll see a death counter shared across all saves of this run.
+- On the map, a red counter appears after you take damage and clears when no monsters are nearby.
+- Loading or leaving the game while that counter is red counts as a death.
+
+If Insanity wasn't enough for you, you're in the right place."	"광란을 넘어 - 경고.
+
+이곳에서는 보정이 적용되지 않습니다(시작 맵 제외).
+
+퀘스트 완료 시점이 중요합니다:
+- 일찍 완료: 즉시 강해지지만 경험치는 적습니다.
+- 늦게 완료: 초반 강화는 없지만 나중에 더 많은 경험치를 얻습니다.
+
+플레이 전체 추적:
+- 캐릭터 화면에는 이번 플레이의 모든 저장 파일에서 공유되는 사망 횟수가 표시됩니다.
+- 맵에서는 피해를 입은 뒤 빨간 카운터가 나타나며, 주변에 몬스터가 없으면 사라집니다.
+- 카운터가 빨간 상태에서 게임을 불러오거나 종료하면 사망 1회로 계산됩니다.
+
+광기 모드로도 부족했다면 제대로 찾아왔습니다."	translated	status	1	reviewed_batch026_display:1	Scripts/General/zzMaw-Monsters.lua	"Message(""Beyond Madness - a word of warning.\n\nNo bolster here (except on starting maps).\n\nQuest timing matters:\n- Finish early: immediate power now, less XP.\n- Finish late: bigger XP later, no early power.\n\nRun-wide tracking:\n- On the character screen, you'll see a death counter shared across all saves of this run.\n- On the map, a red counter appears after you take damage and clears when no monsters are nearby.\n- Loading or leaving the game while that counter is red counts as a death."
 Bow Disabled	활 사용 비활성화	translated	status	1	status_text_call:1	Scripts/General/zz_Maw-initialize.lua	"Game.ShowStatusText(""Bow Disabled"")"
 Bow Enabled	활 사용 활성화	translated	status	1	status_text_call:1	Scripts/General/zz_Maw-initialize.lua	"Game.ShowStatusText(""Bow Enabled"")"
 Buff Disabled	버프 비활성화	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Buff Disabled"")"
@@ -1541,7 +1617,7 @@ Learned 	습득: 	translated	status	1	proven_message_literal:1	Scripts/General/z
 Legendary power saves you from lethal damage	전설의 힘이 치명적인 피해로부터 당신을 구했습니다	translated	status	1	status_text_call:1	Scripts/Global/zzMaw_Legendaries.lua	"Game.ShowStatusText(""Legendary power saves you from lethal damage"")"
 Level 	레벨 	translated	status	1	proven_message_literal:1	Scripts/Global/zzMaw_Arena.lua	"Message(""Level "" .. currentArenaLevel .. "" completed!"")"
 Loading now will count as death, are you sure to proceed?	지금 불러오면 사망으로 처리됩니다. 계속하시겠습니까?	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Loading now will count as death, are you sure to proceed?"")"
-Madness is not a place for cowards	광기는 겁쟁이가 올 곳이 아닙니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Madness is not a place for cowards"")"
+Madness is not a place for cowards	광란은 겁쟁이가 올 곳이 아닙니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Spells.lua	"Game.ShowStatusText(""Madness is not a place for cowards"")"
 Mana Potion has %s seconds of cooldown remaining	마나 물약 재사용 대기시간이 %s초 남았습니다	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Mana Potion has %s seconds of cooldown remaining"",vars.manaPotionCooldown))"
 Mana Potion restores %s mana	마나 물약으로 마나 %s 회복	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""Mana Potion restores %s mana"",spAmount))"
 Mana Shield Disabled	마나 방패 비활성화	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""Mana Shield Disabled"")"
@@ -2167,7 +2243,7 @@ Ranged Damage done in current map: %s"	"%s
 Total Ranged Damage done: %s"	"%s
 총 원거리 피해량: %s"	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=string.format(""%s\nTotal Ranged Damage done: %s"",t.Text,StrColor(255,255,100,round(damage)))"
 "Beyond
-Madness"	"광기를
+Madness"	"광란을
 넘어"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
 Bounty	현상금	translated	ui	1	proven_bounty_ui_field:1	Scripts/General/BountyHunt.lua	"Note.Text=""Bounty"""
 "Cold\01200000	070"	"냉기\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[3].Text=string.format(""Cold\01200000	070"" .. res[2])"

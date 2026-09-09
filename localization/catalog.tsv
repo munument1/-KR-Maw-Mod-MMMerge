@@ -38,11 +38,11 @@ Seraphim healing upon attack increases depending on Body magic, scaling with per
 maw-15b04565ed76	translated	class	" (applied after resistances)
 "	" (저항 적용 후 계산)
 "		Scripts/General/zzClasses.lua	401	1	세라프 피해 감소 설명 조각
-maw-2c39ec4a0977	untranslated	class	%s      %s|		%s %s	Scripts/General/zzClasses.lua	667	4	
-maw-8306811ab44f	untranslated	class	%s     %s|		%s %s	Scripts/General/zzClasses.lua	669	4	
+maw-2c39ec4a0977	excluded	class	%s      %s|		%s %s	Scripts/General/zzClasses.lua	667	4	서식 전용 문자열; 번역 불필요
+maw-8306811ab44f	excluded	class	%s     %s|		%s %s	Scripts/General/zzClasses.lua	669	4	서식 전용 문자열; 번역 불필요
 maw-f554a37086c3	excluded	class	%s    %s		%s %s	Scripts/General/zzClasses.lua	673	8	스킬 설명 정렬용 서식 문자열
-maw-2b4ccc7581b3	untranslated	class	%s  %s|		%s %s	Scripts/General/zzClasses.lua	672	8	
-maw-b1fb3bec6fdb	untranslated	class	AC			Scripts/General/AdaptiveMonstersStats.lua	714	2	
+maw-2b4ccc7581b3	excluded	class	%s  %s|		%s %s	Scripts/General/zzClasses.lua	672	8	서식 전용 문자열; 번역 불필요
+maw-b1fb3bec6fdb	excluded	class	AC			Scripts/General/AdaptiveMonstersStats.lua	714	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-1b81f28b5afb	translated	class	Attack	근접		Scripts/General/zzClasses.lua	461	5	Game.GlobalTxt 근접 공격 표시
 maw-5b4786e077ad	translated	class	Attack         +	근접         +		Scripts/General/zzClasses.lua	828	1	능력치 패널 근접 공격 표시
 maw-3854c81b2cf3	excluded	class	Character %s has invalid class id: %s. Resetted to %s		%s %s %s	Scripts/General/NPCMercenaries.lua	742	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -99,7 +99,7 @@ maw-5d3f344b5bd2	excluded	class	duration			Scripts/General/zzClasses.lua	866	1	I
 maw-9d6d1bb8b10c	translated	class	Elder 	원로 		Scripts/General/zzClasses.lua	96	1	클래스명 접두어
 maw-0fb88bcef8a5	excluded	class	GetArmorClass			Scripts/General/AdaptiveMonstersStats.lua	1041	1	Internal engine/control literal only; not player-facing localization.
 maw-8a3559daa477	translated	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours	6시간 동안 방어력이 5 + (0.5 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	482	1	물약 효과 툴팁
-maw-1c6884f089f2	untranslated	class	Merc			Scripts/General/NPCMercenaries.lua	756	1	
+maw-1c6884f089f2	excluded	class	Merc			Scripts/General/NPCMercenaries.lua	756	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-eeec8e860233	excluded	class	Resistances			Scripts/General/zzClasses.lua	472	1	Internal engine/control literal only; not player-facing localization.
 maw-b301c10b3d0a	translated	class	Shoot	원거리		Scripts/General/zzClasses.lua	833	2	Game.GlobalTxt 원거리 공격 표시
 maw-edea0f29be7d	translated	class	Shoot         +	원거리         +		Scripts/General/zzClasses.lua	829	1	능력치 패널 원거리 공격 표시
@@ -226,7 +226,7 @@ maw-a7c94b10b666	excluded	item	Ancient			Scripts/General/zzMaw-Items.lua	461	2	I
 maw-d1745b2ab5cc	translated	item	Ancient 	고대 		Scripts/General/zzMaw-Items.lua	1733	1	아이템 등급 접두어
 maw-8261e56f515b	translated	item	Armor Class	방어력		Scripts/General/zzMaw-Items.lua	1869	2	기존 MMMerge 능력치 용어
 maw-ff2b4cfa1b74	translated	item	Armor: +	방어력: +		Scripts/General/zzMaw-Items.lua	1478	2	아이템 정보창 기본 수치
-maw-1b811f3888ba	untranslated	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	
+maw-1b811f3888ba	excluded	item	ArmorClass			Scripts/General/zzMaw-Items.lua	4258	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-65e9268e6bfb	translated	item	Armsmaster skill	무기 전문가 기술		Scripts/General/zzMaw-Items.lua	1881	2	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-0487dae31788	translated	item	Ascended Amber	승천한 호박		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
 maw-58750c204795	translated	item	Ascended Amethyst	승천한 자수정		Scripts/General/zzMaw-Items.lua	4565	1	승천 제작 보석
@@ -285,11 +285,12 @@ maw-cf6427142652	translated	item	Endurance	인내력		Data/Tables/Class Starting
 maw-b3efd0d2dd50	excluded	item	Epic			Scripts/General/zzMaw-Items.lua	461	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-1c32a92d0070	translated	item	eradication	소멸		Scripts/General/zzMaw-Items.lua	1261	1	면역 발동 상태 메시지의 동적 상태명
 maw-54c81b0a7634	translated	item	Explosive Impact! (half damage)	폭발 충격! (피해 절반)		Scripts/General/zzMaw-Items.lua	1274	2	특수 아이템 효과 설명
+maw-865a39232acd	translated	item	fear	공포		Scripts/General/zzMaw-Items.lua	1257	1	면역 보호 상태 메시지에 동적으로 삽입되는 표시 문자열
 maw-78baebfcb4b5	translated	item	Fire	화염		Scripts/General/zzMaw-Items.lua	4258	2	공통 화염 표기; 능력치/오라 양쪽에 안전
 maw-135db21bffe1	translated	item	Fire Magic Skill +	화염 마법 기술 +		Scripts/General/zzMaw-Items.lua	2036	1	아이템 마법부여 기술 보너스
 maw-a31e37313d09	translated	item	Fire Resistance	화염 저항		Data/Tables/Spells2.txt	5	3	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-245eb6d90c4a	translated	item	Flame	불꽃		Scripts/General/zzMaw-Items.lua	4696	1	화염 오라 단계명
-maw-cb147017e84e	untranslated	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	
+maw-cb147017e84e	excluded	item	FullHP,ArmorClass,MoveSpeed,Attack2Chance,Spell,Spell2,SpellChance,SpellSkill,Spell2Chance,Spell2Skill,SpecialA,SpecialB,SpecialC,SpecialD,Experience,TreasureItemPercent,TreasureItemLevel,Level			Scripts/General/AdaptiveMonstersStats.lua	459	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-fc1a8c583492	excluded	item	GenerateItem			Scripts/Core/events.lua	2192	1	Internal engine/control literal only; not player-facing localization.
 maw-030499ca0810	excluded	item	GetItemName			Scripts/Structs/extraEditableDescriptions.lua	310	1	Internal engine/control literal only; not player-facing localization.
 maw-72a7fd92863d	excluded	item	GotItem			Scripts/General/ExtraEvents.lua	112	2	Internal engine/control literal only; not player-facing localization.
@@ -521,7 +522,7 @@ maw-7c0cbbce6ef8	excluded	map	crclstr			Scripts/Maps/BrBase.lua	443	1	Internal e
 maw-f67cdd14635c	excluded	map	crys5			Scripts/Maps/BrBase.lua	443	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-8fdbfd4d6bc8	excluded	map	crys6			Scripts/Maps/BrBase.lua	443	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-29053702324a	excluded	map	crystl0			Scripts/Maps/BrBase.lua	443	1	Internal engine/control/comment literal only; not player-facing localization.
-maw-4fc0e2bc8073	untranslated	map	Current			Scripts/Global/NPCFollowersSkills.lua	328	7	
+maw-4fc0e2bc8073	excluded	map	Current			Scripts/Global/NPCFollowersSkills.lua	328	7	Internal engine/control/comment literal only; not player-facing localization.
 maw-249fcdba2be6	excluded	map	Data generated (MazeLevel: %s, MoveDirection: %s)		%s %s	Scripts/Maps/BrBase.lua	1154	1	Internal engine/control literal only; not player-facing localization.
 maw-ec8c7c497efe	excluded	map	dec57			Scripts/Maps/BrBase.lua	955	1	Internal engine/control literal only; not player-facing localization.
 maw-b9cea5b77b89	excluded	map	dec61			Scripts/Maps/BrBase.lua	445	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -632,7 +633,7 @@ maw-5a2c485d7ed9	excluded	misc	%1%%d		%1% %d	Scripts/General/NPCFollowers.lua	91
 maw-32bdec8af86b	excluded	misc	%6s		%6s	Scripts/General/zzMaw-Stats.lua	1058	2	폭 지정 숫자 서식; 번역 금지
 maw-964cbd0f1639	excluded	misc	%code% %p%, ecx, eax		%p	Scripts/Core/events.lua	645	1	Internal engine/control literal only; not player-facing localization.
 maw-550b8663ac2f	excluded	misc	%code% %p%, edx, edi		%p	Scripts/Core/events.lua	643	2	Internal engine/control literal only; not player-facing localization.
-maw-8c986ccf14ec	untranslated	misc	"%d:	reason: %s		x: %d	y: %d	z: %d"		%d %d %d %d %s	Scripts/General/pseudoSpawnpoint.lua	103	1	
+maw-8c986ccf14ec	excluded	misc	"%d:	reason: %s		x: %d	y: %d	z: %d"		%d %d %d %d %s	Scripts/General/pseudoSpawnpoint.lua	103	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-7d0b2d311ab6	translated	misc	%s (speaking with %s)	%s (대화 상대: %s)	%s %s	Scripts/Modules/Multiplayer/UI/House.lua	25	1	멀티플레이 집 UI
 maw-74db3d6c0d4f	excluded	misc	%s hits %s for %s points!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	241	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-6f83e775a593	excluded	misc	%s inflicts %s points killing %s!		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	244	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -643,10 +644,10 @@ Targets' status: in %s.
 대상 상태: %s에 있음.
 "	%s %s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	783	1	텔레로케이터 아이템 검색 결과
 maw-efc3a23cca83	translated	misc	%s. World: Enroth. Realm: %s. Landmark: %s. Year: %s.	%s. 세계: 엔로스. 영역: %s. 지점: %s. 연도: %s.	%s %s %s %s	Scripts/Global/Quest_SavingGoobers.lua	734	1	텔레로케이터 인물 검색 결과
-maw-d9cd377026b0	untranslated	misc	%s: %s		%s %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	131	1	
+maw-d9cd377026b0	excluded	misc	%s: %s		%s %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	131	1	플레이어명/맵명 구분 포맷; 번역 요소 없음
 maw-0048f7a3bc1f	translated	misc	%s: %s grants you %s exp.	%s: %s에게서 경험치 %s을 획득했습니다.	%s %s %s	Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua	75	1	멀티플레이 퀘스트 경험치 알림
-maw-131caaf5aa47	untranslated	misc	%s: invalid player pointer in GetPlayerFromPtr - 0x%X		%X %s	Scripts/Structs/After/RemoveSkillValueLimits.lua	14	1	
-maw-652fe0e19471	untranslated	misc	%s: x:%d, y:%d		%d %d %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	129	1	
+maw-131caaf5aa47	excluded	misc	%s: invalid player pointer in GetPlayerFromPtr - 0x%X		%X %s	Scripts/Structs/After/RemoveSkillValueLimits.lua	14	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-652fe0e19471	excluded	misc	%s: x:%d, y:%d		%d %d %s	Scripts/Modules/Multiplayer/UI/GlobalMap.lua	129	1	멀티플레이 좌표 포맷; 번역 요소 없음
 maw-8bee13bb62c8	excluded	misc	'): fn must be a function, got 			Scripts/General/zzMaw-Timers.lua	52	1	Internal engine/control literal only; not player-facing localization.
 maw-c5bf10e53b42	excluded	misc	(%d+)%-(%d+)		%d %d	Scripts/General/pseudoSpawnpoint.lua	4	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-233b77e8d179	excluded	misc	([^%%])%%lu			Scripts/General/NPCFollowers.lua	919	1	Internal engine/control/comment literal only; not player-facing localization.
@@ -656,28 +657,28 @@ maw-b0724dc76229	translated	misc	(host save) 	(호스트 저장) 		Scripts/Modul
 maw-751c71701653	translated	misc	(last choice) 	(마지막 선택) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	474	1	멀티플레이 저장 선택
 maw-81221f371890	translated	misc	(Most relevant) 	(가장 관련 높음) 		Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	604	1	멀티플레이 저장 선택
 maw-ce850e3d4ae5	excluded	misc	*a			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	26	2	Internal engine/control literal only; not player-facing localization.
-maw-735631aad579	untranslated	misc	0x%X		%X	Scripts/Structs/After/RemoveSkillValueLimits.lua	43	14	
-maw-7a842fbeda72	untranslated	misc	6Flower01			Scripts/General/zzMaw-Maps.lua	24	1	
-maw-83ae2d073840	untranslated	misc	6Flower02			Scripts/General/zzMaw-Maps.lua	25	1	
-maw-9d64c8d330a1	untranslated	misc	6Flower03			Scripts/General/zzMaw-Maps.lua	26	1	
-maw-30849e666394	untranslated	misc	6Flower04			Scripts/General/zzMaw-Maps.lua	27	1	
-maw-2ca8a800f215	untranslated	misc	6Flower05			Scripts/General/zzMaw-Maps.lua	28	1	
-maw-1eed7b1b3ba1	untranslated	misc	6Flower06			Scripts/General/zzMaw-Maps.lua	29	1	
-maw-9974ed4fd6a2	untranslated	misc	6Flower07			Scripts/General/zzMaw-Maps.lua	30	1	
-maw-5eb92b9963e4	untranslated	misc	6Flower08			Scripts/General/zzMaw-Maps.lua	31	1	
-maw-339ff678b879	untranslated	misc	6Flower09			Scripts/General/zzMaw-Maps.lua	32	1	
-maw-ca03950ade45	untranslated	misc	6Flower10			Scripts/General/zzMaw-Maps.lua	33	1	
-maw-c0d677e8119e	untranslated	misc	6Flower11			Scripts/General/zzMaw-Maps.lua	34	1	
-maw-d45e665e8f26	untranslated	misc	6Flower12			Scripts/General/zzMaw-Maps.lua	35	1	
-maw-d5759a0bc77f	untranslated	misc	6Flower13			Scripts/General/zzMaw-Maps.lua	36	1	
+maw-735631aad579	excluded	misc	0x%X		%X	Scripts/Structs/After/RemoveSkillValueLimits.lua	43	14	Internal engine/control/comment literal only; not player-facing localization.
+maw-7a842fbeda72	excluded	misc	6Flower01			Scripts/General/zzMaw-Maps.lua	24	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-83ae2d073840	excluded	misc	6Flower02			Scripts/General/zzMaw-Maps.lua	25	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-9d64c8d330a1	excluded	misc	6Flower03			Scripts/General/zzMaw-Maps.lua	26	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-30849e666394	excluded	misc	6Flower04			Scripts/General/zzMaw-Maps.lua	27	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-2ca8a800f215	excluded	misc	6Flower05			Scripts/General/zzMaw-Maps.lua	28	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-1eed7b1b3ba1	excluded	misc	6Flower06			Scripts/General/zzMaw-Maps.lua	29	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-9974ed4fd6a2	excluded	misc	6Flower07			Scripts/General/zzMaw-Maps.lua	30	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-5eb92b9963e4	excluded	misc	6Flower08			Scripts/General/zzMaw-Maps.lua	31	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-339ff678b879	excluded	misc	6Flower09			Scripts/General/zzMaw-Maps.lua	32	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-ca03950ade45	excluded	misc	6Flower10			Scripts/General/zzMaw-Maps.lua	33	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-c0d677e8119e	excluded	misc	6Flower11			Scripts/General/zzMaw-Maps.lua	34	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d45e665e8f26	excluded	misc	6Flower12			Scripts/General/zzMaw-Maps.lua	35	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d5759a0bc77f	excluded	misc	6Flower13			Scripts/General/zzMaw-Maps.lua	36	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-357416a0b5d8	excluded	misc	?ptr			Scripts/Core/events.lua	221	36	Internal engine/control literal only; not player-facing localization.
 maw-9dd79059b4ce	excluded	misc	?size			Scripts/Core/events.lua	221	21	Internal engine/control literal only; not player-facing localization.
-maw-232f017d7944	untranslated	misc	[%03d] %s  (nid=%d, id=%d %s)		%03d %d %d %s %s	Scripts/General/zzBossSync.lua	334	1	
-maw-2d24e9fdb3ba	untranslated	misc	[%03d] %s  (nid=%d, id=%d %s)%s		%03d %d %d %s %s %s	Scripts/General/zzBossSync.lua	346	1	
-maw-8574e0f54589	untranslated	misc	[%s] %s — %d boss | checksum=%d		%d %d %s %s	Scripts/General/zzBossSync.lua	425	1	
-maw-1ce73898a5ba	untranslated	misc	[0x40CAC1]			Scripts/Core/events.lua	1317	1	
-maw-a1cdafa54b70	untranslated	misc	[0x410FB2]			Scripts/Core/events.lua	1428	1	
-maw-95e69bc16b31	untranslated	misc	[0x41336B]			Scripts/Core/events.lua	1428	1	
+maw-232f017d7944	excluded	misc	[%03d] %s  (nid=%d, id=%d %s)		%03d %d %d %s %s	Scripts/General/zzBossSync.lua	334	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-2d24e9fdb3ba	excluded	misc	[%03d] %s  (nid=%d, id=%d %s)%s		%03d %d %d %s %s %s	Scripts/General/zzBossSync.lua	346	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-8574e0f54589	excluded	misc	[%s] %s — %d boss | checksum=%d		%d %d %s %s	Scripts/General/zzBossSync.lua	425	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-1ce73898a5ba	excluded	misc	[0x40CAC1]			Scripts/Core/events.lua	1317	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-a1cdafa54b70	excluded	misc	[0x410FB2]			Scripts/Core/events.lua	1428	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-95e69bc16b31	excluded	misc	[0x41336B]			Scripts/Core/events.lua	1428	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-521bf2e82dcf	excluded	misc	[BossDebug] 			Scripts/General/zzBossSync.lua	422	1	Internal engine/control literal only; not player-facing localization.
 maw-8122ec4dfb8f	excluded	misc	[BossDebug] %s @ %s — count=%d checksum=%d		%d %d %s %s	Scripts/General/zzBossSync.lua	421	1	Internal engine/control literal only; not player-facing localization.
 maw-c29c400cc1c8	excluded	misc	[realloc text] assertion failed! Text %q (length %d) is same as before, but allocated size is smaller (%d)		%d %d %q	Scripts/Structs/extraEditableDescriptions.lua	131	1	Internal engine/control literal only; not player-facing localization.
@@ -713,8 +714,8 @@ maw-bfb1d6833e66	translated	misc	Ascended Queen's Diamond	승천한 여왕의 �
 maw-ffb5b015dc26	translated	misc	Ascended Royal Amethyst	승천한 왕실 자수정		Scripts/General/zzAlchemy.lua	1383	1	승천 제작 아이템 이름
 maw-bbd6905c8bde	translated	misc	Ascended Solarstone	승천한 태양석		Scripts/General/zzAlchemy.lua	1385	2	승천 제작 보석
 maw-77d2a7b7868c	excluded	misc	Asking server for possibly saved character data (save id: %s).		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	612	1	Internal engine/control literal only; not player-facing localization.
-maw-676112784baf	untranslated	misc	Aucun boss détecté.			Scripts/General/zzBossSync.lua	390	1	
-maw-0495f7740210	untranslated	misc	BOSS %d/%d — %s		%d %d %s	Scripts/General/zzBossSync.lua	393	1	
+maw-676112784baf	excluded	misc	Aucun boss détecté.			Scripts/General/zzBossSync.lua	390	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-0495f7740210	excluded	misc	BOSS %d/%d — %s		%d %d %s	Scripts/General/zzBossSync.lua	393	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-b3f3cc38b4b5	excluded	misc	BOSS DEBUG 			Scripts/General/zzBossSync.lua	437	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-121ace02a4b1	translated	misc	Boss density increased by 	보스 밀도 증가: 		Scripts/General/zzMaw-Maps.lua	2111	1	지도 어픽스 설명 조각
 maw-48563408570f	translated	misc	Bosses have 	보스: 		Scripts/General/zzMaw-Maps.lua	2113	1	지도 어픽스 설명 조각
@@ -727,8 +728,8 @@ maw-19392061eef2	translated	misc	Captain Sharp-Tooth	날카로운 이빨 대장	
 maw-415b97f18bb9	translated	misc	Captain Strong-Scale	단단한 비늘 대장		Scripts/General/zSERIOUSMAW.lua	9	1	Game.PlaceMonTxt 몬스터명
 maw-28a4eb69540a	translated	misc	Celestial Orb	천상의 구체		Scripts/General/zzAlchemy.lua	1396	1	제작 아이템 이름
 maw-0ccd534dede1	excluded	misc	Character choice made.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	530	1	Internal engine/control literal only; not player-facing localization.
-maw-034631d65fae	untranslated	misc	Charge telelocator			Scripts/Global/Quest_SavingGoobers.lua	640	1	
-maw-d2a04d71301a	untranslated	misc	client			Scripts/General/zzBossSync.lua	191	1	
+maw-034631d65fae	translated	misc	Charge telelocator	텔레로케이터 충전		Scripts/Global/Quest_SavingGoobers.lua	640	1	텔레로케이터 NPC 토픽
+maw-d2a04d71301a	excluded	misc	client			Scripts/General/zzBossSync.lua	191	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-f07ca70f58e8	excluded	misc	Client data saved, game id: %s.		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	257	1	Internal engine/control literal only; not player-facing localization.
 maw-9d188ed1f96e	excluded	misc	Could not open file %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	733	2	Internal engine/control literal only; not player-facing localization.
 maw-fcba7969dfc4	excluded	misc	Could not open file: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	35	2	Internal engine/control literal only; not player-facing localization.
@@ -747,20 +748,20 @@ maw-367b80c6e31b	translated	misc	Currently Active Legendary effects:	현재 활�
 maw-bbc5432a15ee	translated	misc	Damage on Friendly Units	아군 피해		Scripts/General/zz_Maw-initialize.lua	559	1	MAW 설정 화면 헤더
 maw-9ae2b0cfdd1b	excluded	misc	Damage: 1d1+1			Scripts/Structs/extraEditableDescriptions.lua	22	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-c5a1bf33495a	untranslated	misc	Day-o-Gods			Scripts/General/MiscTweaks.lua	190	1	
-maw-df653779161b	untranslated	misc	débil			Scripts/General/zzMaw-Multiplayer.lua	206	1	
+maw-df653779161b	excluded	misc	débil			Scripts/General/zzMaw-Multiplayer.lua	206	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-47aa9a09e447	translated	misc	Emerald of Power	힘의 에메랄드		Scripts/General/zzAlchemy.lua	1393	1	제작 아이템 이름
 maw-dd399f98d057	translated	misc	Empty Barrel	빈 통		Scripts/General/zzMaw-Maps.lua	202	1	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-16d5a6e22e05	translated	misc	Endless Arena	끝없는 투기장		Scripts/Global/zzMaw_Arena.lua	28	1	투기장 토픽
 maw-100a74eeab74	translated	misc	Enter the data.	데이터를 입력하세요.		Scripts/Global/Quest_SavingGoobers.lua	705	3	퀘스트 질문
 maw-d4788aabcb87	translated	misc	Erathian Sapphire	에라시아 사파이어		Scripts/General/zzAlchemy.lua	1377	2	제작 보석 상태 메시지
-maw-3f826de2410f	untranslated	misc	Error in HitPlayer handler: invalid player slot: %s / [0, %s]		%s %s	Scripts/Core/events.lua	2620	1	
+maw-3f826de2410f	excluded	misc	Error in HitPlayer handler: invalid player slot: %s / [0, %s]		%s %s	Scripts/Core/events.lua	2620	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-448ef6b2ab89	excluded	misc	Error loading settings file, using fallback defaults...			Scripts/General/zz_Maw-initialize.lua	256	1	Internal engine/control literal only; not player-facing localization.
 maw-fe0a5dcac0c5	excluded	misc	"Error while decoding %s:
 %s"		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	761	1	Internal engine/control literal only; not player-facing localization.
 maw-cb4e21f329a9	excluded	misc	Error while loading Multiplayer Global data from file: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	32	1	Internal engine/control literal only; not player-facing localization.
 maw-7b4835401911	excluded	misc	Error: Could not create MAWSettings.lua file			Scripts/General/zz_Maw-initialize.lua	237	1	Internal engine/control literal only; not player-facing localization.
 maw-39e381e0962b	translated	misc	Erudite Crystal	현자의 수정		Scripts/General/zzAlchemy.lua	1376	2	제작 보석 상태 메시지
-maw-26ba32c4f7e7	untranslated	misc	evtnpc-b			Scripts/General/NPCFollowers.lua	369	3	
+maw-26ba32c4f7e7	excluded	misc	evtnpc-b			Scripts/General/NPCFollowers.lua	369	3	Internal engine/control/comment literal only; not player-facing localization.
 maw-95000bbd422e	excluded	misc	Executing MoveToMap callback.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	517	1	Internal engine/control literal only; not player-facing localization.
 maw-e647d6120b93	excluded	misc	Existing game id is invalid (%s), replacing it by new one: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	114	1	Internal engine/control literal only; not player-facing localization.
 maw-bf4ad099524a	excluded	misc	Existing save id is invalid (%s), replacing it by new one: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	134	1	Internal engine/control literal only; not player-facing localization.
@@ -778,7 +779,7 @@ Require 50 power to work.
 "	"캐릭터의 나이를 60세로 고정합니다.
 작동하려면 위력 50이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	506	1	물약 효과 툴팁
-maw-b9a44faa0600	untranslated	misc	Following you would be foolish			Scripts/General/NPCFollowers.lua	491	1	
+maw-b9a44faa0600	translated	misc	Following you would be foolish	당신을 따라가는 건 어리석은 짓이겠군		Scripts/General/NPCFollowers.lua	491	1	고난도 모드 NPC 고용 토픽
 maw-3e53e030126e	excluded	misc	Game id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	110	1	Internal engine/control literal only; not player-facing localization.
 maw-29dbcc161804	excluded	misc	Game id set, old: %s, new: %s		%s %s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	102	1	Internal engine/control literal only; not player-facing localization.
 maw-d3ec207ca65b	excluded	misc	Gathering game data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	187	1	Internal engine/control literal only; not player-facing localization.
@@ -797,8 +798,8 @@ maw-bf2e4c5b2c9d	excluded	misc	I'm host. Closing the game.			Scripts/Modules/Mul
 maw-40741c97004d	excluded	misc	I'm host. Loading saved game.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	427	1	Internal engine/control literal only; not player-facing localization.
 maw-4e1ab704b005	excluded	misc	imul eax, eax, 0xa			Scripts/General/MiscTweaks.lua	17	1	Internal engine/control literal only; not player-facing localization.
 maw-3638ea580343	excluded	misc	inc dword [			Scripts/Core/events.lua	805	1	Internal engine/control literal only; not player-facing localization.
-maw-a7e96bb7ef09	untranslated	misc	inc dword [ebp - 0x14]			Scripts/Structs/extraEditableDescriptions.lua	235	1	
-maw-574f64df1253	untranslated	misc	inc dword [ebp - 8]			Scripts/Structs/extraEditableDescriptions.lua	215	1	
+maw-a7e96bb7ef09	excluded	misc	inc dword [ebp - 0x14]			Scripts/Structs/extraEditableDescriptions.lua	235	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-574f64df1253	excluded	misc	inc dword [ebp - 8]			Scripts/Structs/extraEditableDescriptions.lua	215	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-b2101e31e077	translated	misc	Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	6시간 동안 모든 저항이 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	511	1	물약 효과 툴팁
 maw-67dc4ffe54f0	translated	misc	Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	6시간 동안 7대 능력치가 모두 10 + (1 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	505	1	물약 효과 툴팁
 maw-19fbf83e718c	translated	misc	Increases Attack by 5+(0.5 x Power) for 6 Hours	6시간 동안 공격력이 5 + (0.5 × 위력)만큼 증가합니다.		Scripts/General/zzAlchemy.lua	478	1	물약 효과 툴팁
@@ -806,8 +807,8 @@ maw-a554f12eaab5	translated	misc	Increases Melee damage by 5+(0.5 x Power) for 6
 maw-abd499ecf794	translated	misc	Increases Speed for 6 Hours	6시간 동안 속도가 증가합니다.		Scripts/General/zzAlchemy.lua	476	1	물약 효과 툴팁
 maw-8db72e2f2f04	translated	misc	Increases temporary Fire, Air, Water and Earth resistance. (Dark)	화염, 공기, 물, 대지 저항을 일시적으로 증가시킵니다. (어둠)		Scripts/General/zzAlchemy.lua	497	1	물약 효과 툴팁
 maw-5e1a8bc9afac	translated	misc	Increases temporary Mind and Body resistance. (Light)	정신 및 육체 저항을 일시적으로 증가시킵니다. (빛)		Scripts/General/zzAlchemy.lua	498	1	물약 효과 툴팁
-maw-3a329e5c2a67	untranslated	misc	Init finished: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	960	1	
-maw-3db41f99e546	untranslated	misc	Init started: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	3	1	
+maw-3a329e5c2a67	excluded	misc	Init finished: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	960	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-3db41f99e546	excluded	misc	Init started: %s		%s	Scripts/Structs/After/RemoveSkillValueLimits.lua	3	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-5b4e36d25e6c	translated	misc	It looks like you've never tried the Endless Waves mode before. In this mode, waves of enemies will keep appearing, growing stronger over time. Everytime you clear a level, your progress is saved, and you can start from the latest checkpoint. Prepare yourself for a relentless challenge!	끝없는 파도 모드는 처음인 것 같군요. 이 모드에서는 적의 무리가 계속 나타나며 시간이 갈수록 강해집니다. 레벨을 하나 클리어할 때마다 진행 상황이 저장되고, 가장 최근 체크포인트에서 다시 시작할 수 있습니다. 끝없는 도전에 대비하십시오!		Scripts/Global/zzMaw_Arena.lua	22	1	끝없는 투기장 안내
 maw-14ca9edbc960	excluded	misc	jmp 0x447def - 0x447dba			Scripts/General/MiscTweaks.lua	26	1	Internal engine/control literal only; not player-facing localization.
 maw-761909de0133	excluded	misc	jmp 0x454FC6 - 0x454FB2			Scripts/Core/events.lua	1000	1	Internal engine/control literal only; not player-facing localization.
@@ -818,7 +819,7 @@ maw-402d3898e5a8	excluded	misc	jmp absolute 			Scripts/General/BountyHunt.lua	27
 maw-c055d3bed8dc	excluded	misc	jmp absolute %d		%d	Scripts/Core/events.lua	1022	1	Internal engine/control literal only; not player-facing localization.
 maw-38aa05eede79	excluded	misc	jmp absolute 0x410ec8			Scripts/General/MiscTweaks.lua	47	1	Internal engine/control literal only; not player-facing localization.
 maw-10b347fb2648	excluded	misc	jmp absolute 0x41bd57			Scripts/General/NPCFollowers.lua	914	1	Internal engine/control literal only; not player-facing localization.
-maw-89ed4304c7c7	untranslated	misc	jmp absolute 0x41E0EF			Scripts/Structs/extraEditableDescriptions.lua	713	1	
+maw-89ed4304c7c7	excluded	misc	jmp absolute 0x41E0EF			Scripts/Structs/extraEditableDescriptions.lua	713	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-24b21379d8c2	excluded	misc	jmp absolute 0x447dad			Scripts/General/MiscTweaks.lua	32	1	Internal engine/control literal only; not player-facing localization.
 maw-d01a2c55645e	excluded	misc	jmp absolute 0x4482eb			Scripts/General/MiscTweaks.lua	33	1	Internal engine/control literal only; not player-facing localization.
 maw-3a823670020a	excluded	misc	jmp absolute 0x48e890			Scripts/General/MiscTweaks.lua	40	1	Internal engine/control literal only; not player-facing localization.
@@ -830,8 +831,8 @@ maw-754db38e2607	translated	misc	Let's get started!	시작하지!		Scripts/Globa
 maw-464e644f9fdf	excluded	misc	Loading MAW settings from 			Scripts/General/zz_Maw-initialize.lua	249	1	Internal engine/control literal only; not player-facing localization.
 maw-b28cfe6e81db	translated	misc	Locate person	사람 찾기		Scripts/Global/Quest_SavingGoobers.lua	866	1	텔레로케이터 NPC 토픽
 maw-bcf88a2c0113	translated	misc	Loot Filter	전리품 필터		Scripts/General/zz_Maw-initialize.lua	560	1	MAW 설정 화면 헤더
-maw-3fb1e21dd9e0	untranslated	misc	luadata.bin			Scripts/Core/events.lua	960	1	
-maw-d68bc2d8f542	untranslated	misc	luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0			Scripts/Core/events.lua	900	1	
+maw-3fb1e21dd9e0	excluded	misc	luadata.bin			Scripts/Core/events.lua	960	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d68bc2d8f542	excluded	misc	luadata.bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0			Scripts/Core/events.lua	900	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-80006c438938	translated	misc	Lunar Shard	달의 파편		Scripts/General/zzAlchemy.lua	1369	2	제작 보석 상태 메시지
 maw-05e15f37331b	translated	misc	M&M6 Projectiles	M&M6 투사체		Scripts/General/zz_Maw-initialize.lua	557	1	MAW 설정 화면 헤더
 maw-6bb62125199b	translated	misc	"M/R/S:%s/%s/%s
@@ -868,19 +869,19 @@ maw-b3786fc6d1db	excluded	misc	Map differs, changing map.			Scripts/Modules/Mult
 maw-6d1848d53de8	excluded	misc	Map is same, requesting host data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	338	1	Internal engine/control literal only; not player-facing localization.
 maw-8ac08679e128	translated	misc	Map Level: 	지도 레벨: 		Scripts/General/zzMaw-Maps.lua	2068	1	지도 아이템 레벨 표시
 maw-1a602dec7edf	excluded	misc	MawAddTimer('			Scripts/General/zzMaw-Timers.lua	52	1	Internal engine/control literal only; not player-facing localization.
-maw-bf7e78fb3aa1	untranslated	misc	mawBossNamesReq			Scripts/General/zzBossSync.lua	191	1	
+maw-bf7e78fb3aa1	excluded	misc	mawBossNamesReq			Scripts/General/zzBossSync.lua	191	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-4527d8e08e83	excluded	misc	MAWSettings.lua not found, creating default file...			Scripts/General/zz_Maw-initialize.lua	260	1	Internal engine/control literal only; not player-facing localization.
 maw-9f0953eb3a47	excluded	misc	Missing game_id in server init data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	651	1	Internal engine/control literal only; not player-facing localization.
 maw-03a503e013e8	excluded	misc	Missing text			Scripts/Structs/extraEditableDescriptions.lua	596	2	Internal engine/control literal only; not player-facing localization.
 maw-032ed6be6753	translated	misc	Mountain Man	산사람		Scripts/General/zSERIOUSMAW.lua	13	1	Game.PlaceMonTxt 몬스터명
-maw-c3d0682617af	untranslated	misc	mov [%p%], eax		%p	Scripts/Core/events.lua	685	1	
+maw-c3d0682617af	excluded	misc	mov [%p%], eax		%p	Scripts/Core/events.lua	685	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-731520ee36ed	excluded	misc	mov eax, ecx			Scripts/Core/events.lua	1148	1	Internal engine/control literal only; not player-facing localization.
 maw-42a420da0db8	excluded	misc	mov edx, dword [ds:0xB2155C]			Scripts/General/MiscTweaks.lua	82	1	Internal engine/control literal only; not player-facing localization.
-maw-6e9a86524f7f	untranslated	misc	mov edx, eax			Scripts/Structs/extraEditableDescriptions.lua	213	1	
+maw-6e9a86524f7f	excluded	misc	mov edx, eax			Scripts/Structs/extraEditableDescriptions.lua	213	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-0ec9fdc7af44	excluded	misc	movzx eax, word [ds:edi+0x4c]			Scripts/General/MiscTweaks.lua	20	1	Internal engine/control literal only; not player-facing localization.
-maw-91b8f0b72cb2	untranslated	misc	MUI_			Scripts/General/zz_Maw-initialize.lua	470	1	
+maw-91b8f0b72cb2	excluded	misc	MUI_			Scripts/General/zz_Maw-initialize.lua	470	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-6b717c68429a	translated	misc	Naga Empress	나가 여제		Scripts/General/zSERIOUSMAW.lua	16	1	Game.PlaceMonTxt 몬스터명
-maw-9cba2131e8e6	untranslated	misc	Negative attacker ref in events.lua Who(i, action): %s		%s	Scripts/Core/events.lua	2470	1	
+maw-9cba2131e8e6	excluded	misc	Negative attacker ref in events.lua Who(i, action): %s		%s	Scripts/Core/events.lua	2470	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-a390180a7a3b	excluded	misc	NewBountyHuntCreated			Scripts/General/BountyHunt.lua	237	1	Internal engine/control literal only; not player-facing localization.
 maw-834b79bc4037	excluded	misc	No data by this id.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	398	1	Internal engine/control literal only; not player-facing localization.
 maw-8be99f7a7111	untranslated	misc	no enchants			Scripts/General/zzAlchemy.lua	820	2	
@@ -1041,20 +1042,20 @@ Require 40 power to work.
 "	"죽음과 소멸을 제외한 모든 상태 이상을 제거하고 6시간 동안 방지합니다.
 작동하려면 위력 40이 필요합니다.
 "		Scripts/General/zzAlchemy.lua	494	1	물약 효과 툴팁
-maw-7f000fb0d62e	untranslated	misc	resetting			Scripts/General/zzMaw-Maps.lua	114	2	
+maw-7f000fb0d62e	excluded	misc	resetting			Scripts/General/zzMaw-Maps.lua	114	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-e327189cc78d	translated	misc	Royal Amethyst	왕실 자수정		Scripts/General/zzAlchemy.lua	1373	2	제작 보석 상태 메시지
 maw-e2cb58c6600a	excluded	misc	Save id generated: %s		%s	Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	131	1	Internal engine/control literal only; not player-facing localization.
-maw-17ec106941ee	untranslated	misc	Saves/MultiplayerAutosave.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	10	1	
-maw-febcc382b490	untranslated	misc	Saves/MultiplayerGames.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	9	1	
+maw-17ec106941ee	excluded	misc	Saves/MultiplayerAutosave.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	10	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-febcc382b490	excluded	misc	Saves/MultiplayerGames.bin			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	9	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-7c779c370257	excluded	misc	Saving multiplayer global data.			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	56	1	Internal engine/control literal only; not player-facing localization.
 maw-6e7c817c5a46	excluded	misc	sendBossToHost			Scripts/General/zzMaw-Multiplayer.lua	818	1	Internal engine/control literal only; not player-facing localization.
 maw-7ae1313e5144	translated	misc	Serpent Mother	뱀의 어머니		Scripts/General/zSERIOUSMAW.lua	4	1	Game.PlaceMonTxt 몬스터명
-maw-4d976c303caf	untranslated	misc	SG_Activate!			Scripts/Global/Quest_SavingGoobers.lua	513	1	
+maw-4d976c303caf	excluded	misc	SG_Activate!			Scripts/Global/Quest_SavingGoobers.lua	513	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-950baa8f936f	excluded	misc	ShareMapvarsToHost			Scripts/General/zzzOnlineVariableSender.lua	421	1	Internal engine/control literal only; not player-facing localization.
 maw-4372d664c31f	translated	misc	Start Level 	도전 레벨 		Scripts/Global/zzMaw_Arena.lua	40	1	투기장 시작 토픽 접두어
 maw-d9d7aed80bfd	untranslated	misc	sub dword [ds:0x509cac], 			Scripts/General/MiscTweaks.lua	537	1	
-maw-8535b82f6998	untranslated	misc	SV1_			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	87	1	
-maw-65f82b3122c0	untranslated	misc	Synchronization/%s		%s	Scripts/Modules/Multiplayer/Synchronization.lua	1	1	
+maw-8535b82f6998	excluded	misc	SV1_			Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua	87	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-65f82b3122c0	excluded	misc	Synchronization/%s		%s	Scripts/Modules/Multiplayer/Synchronization.lua	1	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-e96b06f09b6b	translated	misc	"Targets found. Realms: Attuned. Time: Attuned.
 
 "	"대상을 찾았습니다. 영역: 동조됨. 시간: 동조됨.
@@ -1117,21 +1118,21 @@ maw-ceed6fe6e754	translated	monster	% of magic damage	%의 마법 피해를 반�
 maw-ca4557c883fa	translated	monster	% of physical damage	%의 물리 피해를 반사		Scripts/General/zzMaw-Maps.lua	2100	1	지도 어픽스 설명 조각
 maw-c1a5c33c4a70	translated	monster	% of player hp as damage	%의 플레이어 생명력을 피해로 줌		Scripts/General/zzMaw-Maps.lua	2105	1	지도 어픽스 설명 조각
 maw-d2f7095b04b3	translated	monster	%HP per second	% 생명력 재생		Scripts/General/zzMaw-Maps.lua	2102	1	지도 어픽스 설명 조각
-maw-932438202666	untranslated	monster	%s: Monster with incorrect Id (%s) at %s %s %s		%s %s %s %s %s	Scripts/General/AdaptiveMonstersStats.lua	854	1	
+maw-932438202666	excluded	monster	%s: Monster with incorrect Id (%s) at %s %s %s		%s %s %s %s %s	Scripts/General/AdaptiveMonstersStats.lua	854	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-d9a8b676271a	excluded	monster	(%-?%d+)$		%d	Scripts/General/zzMaw-Monsters.lua	2453	2	Internal engine/control/comment literal only; not player-facing localization.
-maw-13ed9932366c	untranslated	monster	, type: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	
-maw-177ea6d1cb82	untranslated	monster	2e746d70			Scripts/General/zzMaw-Monsters.lua	2465	1	
-maw-fd3ef7ad1133	untranslated	monster	4d6f64756c6573			Scripts/General/zzMaw-Monsters.lua	2404	1	
-maw-2ebd846a6d4a	untranslated	monster	4d756c7469706c61796572			Scripts/General/zzMaw-Monsters.lua	2404	1	
-maw-2955d0bca685	untranslated	monster	506c61796572446174612e747874			Scripts/General/zzMaw-Monsters.lua	2405	1	
-maw-4721ffb963de	untranslated	monster	506c6179657273			Scripts/General/zzMaw-Monsters.lua	2404	1	
-maw-61e6e9c730e2	untranslated	monster	53796e6368726f6e697a6174696f6e			Scripts/General/zzMaw-Monsters.lua	2404	1	
-maw-acf392e7eff3	untranslated	monster	63757272656e745f73656564			Scripts/General/zzMaw-Monsters.lua	2450	2	
-maw-e3cf5f38377e	untranslated	monster	6465617468735f			Scripts/General/zzMaw-Monsters.lua	2453	2	
-maw-2178a5c1bbcc	untranslated	monster	6c6673			Scripts/General/zzMaw-Monsters.lua	2432	1	
-maw-08125feb6de9	untranslated	monster	6d6b646972202225732220323e6e756c			Scripts/General/zzMaw-Monsters.lua	2439	1	
-maw-d082dfde2638	untranslated	monster	6d6b646972202d70202225732220323e2f6465762f6e756c6c			Scripts/General/zzMaw-Monsters.lua	2439	1	
-maw-d518990045b5	untranslated	monster	70656e64696e675f			Scripts/General/zzMaw-Monsters.lua	2454	2	
+maw-13ed9932366c	excluded	monster	, type: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-177ea6d1cb82	excluded	monster	2e746d70			Scripts/General/zzMaw-Monsters.lua	2465	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-fd3ef7ad1133	excluded	monster	4d6f64756c6573			Scripts/General/zzMaw-Monsters.lua	2404	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-2ebd846a6d4a	excluded	monster	4d756c7469706c61796572			Scripts/General/zzMaw-Monsters.lua	2404	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-2955d0bca685	excluded	monster	506c61796572446174612e747874			Scripts/General/zzMaw-Monsters.lua	2405	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-4721ffb963de	excluded	monster	506c6179657273			Scripts/General/zzMaw-Monsters.lua	2404	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-61e6e9c730e2	excluded	monster	53796e6368726f6e697a6174696f6e			Scripts/General/zzMaw-Monsters.lua	2404	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-acf392e7eff3	excluded	monster	63757272656e745f73656564			Scripts/General/zzMaw-Monsters.lua	2450	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-e3cf5f38377e	excluded	monster	6465617468735f			Scripts/General/zzMaw-Monsters.lua	2453	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-2178a5c1bbcc	excluded	monster	6c6673			Scripts/General/zzMaw-Monsters.lua	2432	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-08125feb6de9	excluded	monster	6d6b646972202225732220323e6e756c			Scripts/General/zzMaw-Monsters.lua	2439	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d082dfde2638	excluded	monster	6d6b646972202d70202225732220323e2f6465762f6e756c6c			Scripts/General/zzMaw-Monsters.lua	2439	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d518990045b5	excluded	monster	70656e64696e675f			Scripts/General/zzMaw-Monsters.lua	2454	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-4bfb95cf921b	excluded	monster	73656564206d7573742062652061206e756d626572			Scripts/General/zzMaw-Monsters.lua	2497	1	Internal engine/control literal only; not player-facing localization.
 maw-e7e0c9de7e44	excluded	monster	7772697465206f70656e206661696c65643a20			Scripts/General/zzMaw-Monsters.lua	2467	1	Internal engine/control literal only; not player-facing localization.
 maw-b836abf5f354	untranslated	monster	"=%d
@@ -1144,9 +1145,9 @@ maw-16fe9d74a144	excluded	monster	Abandoned Temple			Scripts/General/zzMaw-Monst
 maw-fe083a07b90e	excluded	monster	AfterMapBolster			Scripts/General/AdaptiveMonstersStats.lua	873	1	Internal engine/control literal only; not player-facing localization.
 maw-2d39a523ff65	excluded	monster	AfterMonsterAttacked			Scripts/Core/events.lua	2560	1	Internal engine/control literal only; not player-facing localization.
 maw-db011eb5913d	excluded	monster	Agar's Laboratory			Scripts/General/zzMaw-Monsters.lua	1637	2	Internal engine/control literal only; not player-facing localization.
-maw-3ad0e3698278	untranslated	monster	Allow			Scripts/Structs/extraEditableDescriptions.lua	694	1	
-maw-5fdef7f7dcde	untranslated	monster	AllowReplicate			Scripts/General/AdaptiveMonstersStats.lua	788	1	
-maw-2e233791dd2c	untranslated	monster	AllowSummons			Scripts/General/AdaptiveMonstersStats.lua	798	1	
+maw-3ad0e3698278	excluded	monster	Allow			Scripts/Structs/extraEditableDescriptions.lua	694	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-5fdef7f7dcde	excluded	monster	AllowReplicate			Scripts/General/AdaptiveMonstersStats.lua	788	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-2e233791dd2c	excluded	monster	AllowSummons			Scripts/General/AdaptiveMonstersStats.lua	798	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-08c8b634dc95	excluded	monster	Alvar			Scripts/General/zzMaw-Monsters.lua	1142	2	Internal engine/control literal only; not player-facing localization.
 maw-e6a64f50a4cd	excluded	monster	Ancient Troll Home			Scripts/General/zzMaw-Monsters.lua	1286	2	Internal engine/control literal only; not player-facing localization.
 maw-1a4ba8221918	excluded	monster	Arena			Scripts/General/zzMaw-Monsters.lua	659	2	Internal engine/control literal only; not player-facing localization.
@@ -1209,7 +1210,7 @@ maw-1875e58c3df5	excluded	monster	Colony Zod			Scripts/General/zzMaw-Monsters.lu
 maw-c312449c8d61	excluded	monster	Control Center			Scripts/General/zzMaw-Monsters.lua	1685	2	Internal engine/control literal only; not player-facing localization.
 maw-d77cfa46681b	excluded	monster	Corlagon's Estate			Scripts/General/zzMaw-Monsters.lua	1613	2	Internal engine/control literal only; not player-facing localization.
 maw-de8e3bdabfd3	excluded	monster	Couatl (winged snake)			Scripts/General/zzMaw-Monsters.lua	855	1	Internal engine/control/comment literal only; not player-facing localization.
-maw-0ea3594a0725	untranslated	monster	Creed			Scripts/General/AdaptiveMonstersStats.lua	131	1	
+maw-0ea3594a0725	excluded	monster	Creed			Scripts/General/AdaptiveMonstersStats.lua	131	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-0b3d98d5a8a2	translated	monster	Curse	저주		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
 maw-2aca5d3f2495	excluded	monster	Cyclops Larder			Scripts/General/zzMaw-Monsters.lua	1199	2	Internal engine/control literal only; not player-facing localization.
 maw-cb8c7a4794fe	excluded	monster	Dagger Wound Island			Scripts/General/zzMaw-Monsters.lua	856	5	Internal engine/control/comment literal only; not player-facing localization.
@@ -1226,7 +1227,7 @@ maw-8d392f56d616	excluded	monster	directory			Scripts/General/zzMaw-Monsters.lua
 maw-c0bb11650c87	translated	monster	Disease 1	질병 1		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
 maw-2d8c4c11c859	translated	monster	Disease 2	질병 2		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
 maw-882da54dbee7	translated	monster	Disease 3	질병 3		Scripts/General/zzMaw-Monsters.lua	3845	1	몬스터 정보창 상태명
-maw-0bddd8fc5799	untranslated	monster	DoDebug			Scripts/General/zzMaw-Monsters.lua	3468	1	
+maw-0bddd8fc5799	excluded	monster	DoDebug			Scripts/General/zzMaw-Monsters.lua	3468	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-4b157a7fdd3e	excluded	monster	Dragon Cave			Scripts/General/zzMaw-Monsters.lua	1208	2	Internal engine/control literal only; not player-facing localization.
 maw-c4e593205df0	excluded	monster	Dragon Hunter's Camp			Scripts/General/zzMaw-Monsters.lua	1205	2	Internal engine/control literal only; not player-facing localization.
 maw-996606112c63	excluded	monster	Dragon's Lair			Scripts/General/zzMaw-Monsters.lua	1694	2	Internal engine/control literal only; not player-facing localization.
@@ -1238,10 +1239,10 @@ maw-bd902f508bc5	excluded	monster	Eel Infested Waters			Scripts/General/zzMaw-Mo
 maw-1cf6937c2ef9	translated	monster	Emerald Island	에메랄드 섬		Scripts/General/zzMaw-Monsters.lua	1108	5	MMMerge PO 정확 일치 + 표시 문맥 확인
 maw-9441f6c1c8d6	translated	monster	Eradication	소멸		Scripts/General/zzMaw-Monsters.lua	3849	1	몬스터 정보창 상태명
 maw-2ec744a3dc22	excluded	monster	Erathia			Scripts/General/zzMaw-Monsters.lua	1399	2	Internal engine/control literal only; not player-facing localization.
-maw-c7c88ab8c2a3	untranslated	monster	Error in attacker recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2498	1	
-maw-b66386e1567c	untranslated	monster	Error in monster under attack recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2539	1	
-maw-ed4e425c7e15	untranslated	monster	"Errors in ""Bolster - monsters.txt"":
-"			Scripts/General/AdaptiveMonstersStats.lua	154	2	
+maw-c7c88ab8c2a3	excluded	monster	Error in attacker recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2498	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-b66386e1567c	excluded	monster	Error in monster under attack recognition handler: invalid monster id: %s / %s		%s %s	Scripts/Core/events.lua	2539	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-ed4e425c7e15	excluded	monster	"Errors in ""Bolster - monsters.txt"":
+"			Scripts/General/AdaptiveMonstersStats.lua	154	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-8027abd935a8	excluded	monster	Escaton's Crystal			Scripts/General/zzMaw-Monsters.lua	1190	2	Internal engine/control literal only; not player-facing localization.
 maw-85a50b424c9c	excluded	monster	Escaton's Palace			Scripts/General/zzMaw-Monsters.lua	1262	2	Internal engine/control literal only; not player-facing localization.
 maw-083ffaefb058	excluded	monster	Evenmorn Island			Scripts/General/zzMaw-Monsters.lua	1411	2	Internal engine/control literal only; not player-facing localization.
@@ -1265,7 +1266,7 @@ maw-b1a5954a483f	excluded	monster	High			Scripts/General/zzMaw-Monsters.lua	1125
 maw-31caf8315083	translated	monster	High Cardinal	고위 추기경		Scripts/General/zzMaw-Monsters.lua	3798	1	몬스터 표시명
 maw-2c0a5410f9b9	excluded	monster	Icewind Keep			Scripts/General/zzMaw-Monsters.lua	1625	2	Internal engine/control literal only; not player-facing localization.
 maw-d5a79bf5499c	excluded	monster	Ilsingore's Cave			Scripts/General/zzMaw-Monsters.lua	1298	2	Internal engine/control literal only; not player-facing localization.
-maw-73b63648d495	untranslated	monster	Insane			Scripts/General/zzMaw-Monsters.lua	3940	1	
+maw-73b63648d495	translated	monster	Insane	광기		Scripts/General/zzMaw-Monsters.lua	3940	1	Insanity 난이도 표시 라벨
 maw-cefe70bf4275	excluded	monster	Invalid MonsterIndex in MonsterChooseAIState event (%s, monsters count: %s).		%s %s	Scripts/Modules/Multiplayer/Synchronization/Monsters/Ownership.lua	156	2	Internal engine/control literal only; not player-facing localization.
 maw-2aaa7323888d	excluded	monster	Ironsand Desert			Scripts/General/zzMaw-Monsters.lua	1145	2	Internal engine/control literal only; not player-facing localization.
 maw-6619660b128a	excluded	monster	IsMonsterOfKind			Scripts/General/ExtraEvents.lua	746	1	Internal engine/control literal only; not player-facing localization.
@@ -1275,23 +1276,23 @@ maw-04af9933a58b	excluded	monster	Lair of the Wolf			Scripts/General/zzMaw-Monst
 maw-7c7f5d049fad	excluded	monster	Level			Scripts/General/zzMaw-Monsters.lua	3144	1	Internal engine/control literal only; not player-facing localization.
 maw-31500c6def68	excluded	monster	Lizardmen Warrior			Scripts/General/zzMaw-Monsters.lua	853	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-2d3e36d2481c	excluded	monster	LoadMap			Scripts/General/zzMaw-Monsters.lua	3459	1	Internal engine/control literal only; not player-facing localization.
-maw-6c6b189003d5	untranslated	monster	loadstring			Scripts/General/zzMaw-Monsters.lua	3469	1	
+maw-6c6b189003d5	excluded	monster	loadstring			Scripts/General/zzMaw-Monsters.lua	3469	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-31ab8d86e807	translated	monster	Locate monster	몬스터 찾기		Scripts/Global/Quest_SavingGoobers.lua	876	1	텔레로케이터 NPC 토픽
 maw-785ca397a09a	excluded	monster	Lord Markham's Manor			Scripts/General/zzMaw-Monsters.lua	1429	2	Internal engine/control literal only; not player-facing localization.
 maw-a124947cbd2d	excluded	monster	Low			Scripts/General/zzMaw-Monsters.lua	1125	210	Internal engine/control literal only; not player-facing localization.
 maw-997b9784da28	excluded	monster	Mad Necromancer's Lab 			Scripts/General/zzMaw-Monsters.lua	1217	2	Internal engine/control literal only; not player-facing localization.
-maw-df8b8908e8ea	untranslated	monster	Mad.			Scripts/General/zzMaw-Monsters.lua	3938	1	
-maw-e6791be7eed7	untranslated	monster	Magic			Scripts/General/AdaptiveMonstersStats.lua	134	1	
-maw-9c18e50806f2	untranslated	monster	MaxDamage			Scripts/General/AdaptiveMonstersStats.lua	718	2	
+maw-df8b8908e8ea	translated	monster	Mad.	광란		Scripts/General/zzMaw-Monsters.lua	3938	1	Madness 난이도 표시 라벨
+maw-e6791be7eed7	excluded	monster	Magic			Scripts/General/AdaptiveMonstersStats.lua	134	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-9c18e50806f2	excluded	monster	MaxDamage			Scripts/General/AdaptiveMonstersStats.lua	718	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-f30d43e8bf29	translated	monster	Melee Only	근접 공격 전용		Scripts/General/zzMaw-Monsters.lua	2217	1	몬스터 정보창 디버프명
 maw-0da00826b6ca	excluded	monster	Merchant House of Alvar			Scripts/General/zzMaw-Monsters.lua	1187	1	Internal engine/control literal only; not player-facing localization.
 maw-9a6af7cd96b7	excluded	monster	Mid			Scripts/General/zzMaw-Monsters.lua	1125	210	Internal engine/control literal only; not player-facing localization.
 maw-c44daab7db61	excluded	monster	Mire of the Damned			Scripts/General/zzMaw-Monsters.lua	1562	2	Internal engine/control literal only; not player-facing localization.
 maw-d12f770f52ed	excluded	monster	Misty Islands			Scripts/General/zzMaw-Monsters.lua	1577	2	Internal engine/control literal only; not player-facing localization.
 maw-44bde829fa93	untranslated	monster	"mkdir -p ""%s"" 2>/dev/null"		%s	Scripts/General/zzMaw-Monsters.lua	2421	1	
-maw-0e818bfa0679	untranslated	monster	monster			Scripts/General/BountyHunt.lua	21	1	
-maw-e63d88bd7bf3	untranslated	monster	Monster			Scripts/General/zzMaw-Monsters.lua	588	2	
-maw-8d8a7267fdb0	untranslated	monster	monster generated in a wall			Scripts/General/pseudoSpawnpoint.lua	87	1	
+maw-0e818bfa0679	translated	monster	monster	몬스터		Scripts/General/BountyHunt.lua	21	1	현상금 UI의 몬스터 이름 fallback
+maw-e63d88bd7bf3	excluded	monster	Monster			Scripts/General/zzMaw-Monsters.lua	588	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-8d8a7267fdb0	excluded	monster	monster generated in a wall			Scripts/General/pseudoSpawnpoint.lua	87	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-9dfbbadf6ffc	excluded	monster	MonsterAction			Scripts/General/zzMaw-Monsters.lua	4042	1	Internal engine/control literal only; not player-facing localization.
 maw-225bd51a83ee	excluded	monster	MonsterAttacked			Scripts/Core/events.lua	2555	1	Internal engine/control literal only; not player-facing localization.
 maw-0e4c7e042681	untranslated	monster	MonsterChooseAction			Scripts/Core/events.lua	2454	2	
@@ -1307,9 +1308,9 @@ maw-5954770f5e24	translated	monster	Monsters regenerate 	몬스터가 초당 		S
 maw-da7a3a129e3d	translated	monster	Monsters resistances are increased by 	몬스터 저항 증가: 		Scripts/General/zzMaw-Maps.lua	2107	1	지도 어픽스 설명 조각
 maw-a6644d832c3d	excluded	monster	MonsterSpriteScale			Scripts/General/zMaw-hooks.lua	13	1	Internal engine/control literal only; not player-facing localization.
 maw-1488d3f760af	excluded	monster	MonstersProcessed			Scripts/General/ExtraEvents.lua	713	1	Internal engine/control literal only; not player-facing localization.
-maw-c467d78cbc9f	untranslated	monster	MonsterType			Scripts/General/AdaptiveMonstersStats.lua	129	2	
+maw-c467d78cbc9f	excluded	monster	MonsterType			Scripts/General/AdaptiveMonstersStats.lua	129	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-10e69cc51f48	excluded	monster	Mount Nighon			Scripts/General/zzMaw-Monsters.lua	1501	2	Internal engine/control literal only; not player-facing localization.
-maw-ad079c30b355	untranslated	monster	MoveSpeed			Scripts/General/AdaptiveMonstersStats.lua	749	1	
+maw-ad079c30b355	excluded	monster	MoveSpeed			Scripts/General/AdaptiveMonstersStats.lua	749	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-30f0e1f202ba	excluded	monster	Murmurwoods			Scripts/General/zzMaw-Monsters.lua	1157	2	Internal engine/control literal only; not player-facing localization.
 maw-fc956f358e2b	excluded	monster	Naga Vault			Scripts/General/zzMaw-Monsters.lua	1211	2	Internal engine/control literal only; not player-facing localization.
 maw-e653fd725b23	excluded	monster	NameId			Scripts/General/zzMaw-Monsters.lua	3143	1	Internal engine/control literal only; not player-facing localization.
@@ -1355,10 +1356,10 @@ maw-f1f58062154d	excluded	monster	Ravenshore			Scripts/General/zzMaw-Monsters.lu
 maw-30fccb31f329	excluded	monster	Reactor			Scripts/General/zzMaw-Monsters.lua	1095	1	Internal engine/control literal only; not player-facing localization.
 maw-7ae2bae3e306	excluded	monster	Regna			Scripts/General/zzMaw-Monsters.lua	1175	2	Internal engine/control literal only; not player-facing localization.
 maw-c7d70eb0b0e6	translated	monster	Resurrected 	부활한 		Scripts/General/zzMaw-Monsters.lua	2316	1	부활 몬스터 이름 접두어
-maw-63143b6f8007	untranslated	monster	return			Scripts/General/AdaptiveMonstersStats.lua	227	1	
-maw-d1873e7a36cc	untranslated	monster	return 			Scripts/General/AdaptiveMonstersStats.lua	230	1	
-maw-b3c9422cbf28	untranslated	monster	return false			Scripts/General/AdaptiveMonstersStats.lua	226	1	
-maw-78ad7a619d75	untranslated	monster	safeGetMonsterLevel			Scripts/General/zzMaw-Stats.lua	5	1	
+maw-63143b6f8007	excluded	monster	return			Scripts/General/AdaptiveMonstersStats.lua	227	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d1873e7a36cc	excluded	monster	return 			Scripts/General/AdaptiveMonstersStats.lua	230	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-b3c9422cbf28	excluded	monster	return false			Scripts/General/AdaptiveMonstersStats.lua	226	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-78ad7a619d75	excluded	monster	safeGetMonsterLevel			Scripts/General/zzMaw-Stats.lua	5	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-be757b803915	excluded	monster	Shadow Guild			Scripts/General/zzMaw-Monsters.lua	1604	2	Internal engine/control literal only; not player-facing localization.
 maw-33295c8b17dc	excluded	monster	Shadow Guild Hideout			Scripts/General/zzMaw-Monsters.lua	1589	2	Internal engine/control literal only; not player-facing localization.
 maw-0138e0add7d1	excluded	monster	Shadowspire			Scripts/General/zzMaw-Monsters.lua	1154	2	Internal engine/control literal only; not player-facing localization.
@@ -1375,7 +1376,7 @@ maw-78e36c2df317	excluded	monster	Snergle's Caverns			Scripts/General/zzMaw-Mons
 maw-d4ce04df4d31	excluded	monster	Snergle's Iron Mines			Scripts/General/zzMaw-Monsters.lua	1607	2	Internal engine/control literal only; not player-facing localization.
 maw-029690b00bcd	translated	monster	Stone	석화		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
 maw-5a8593eec62b	excluded	monster	Stone City			Scripts/General/zzMaw-Monsters.lua	1396	2	Internal engine/control literal only; not player-facing localization.
-maw-99a0efc6cfd8	untranslated	monster	Style			Scripts/General/AdaptiveMonstersStats.lua	133	1	
+maw-99a0efc6cfd8	excluded	monster	Style			Scripts/General/AdaptiveMonstersStats.lua	133	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-7ca74ff14f5e	excluded	monster	Superior Temple of Baa			Scripts/General/zzMaw-Monsters.lua	1661	2	Internal engine/control literal only; not player-facing localization.
 maw-8717694beb13	excluded	monster	Supreme Temple of Baa			Scripts/General/zzMaw-Monsters.lua	1658	2	Internal engine/control literal only; not player-facing localization.
 maw-958cb28c542e	excluded	monster	Sweet Water			Scripts/General/zzMaw-Monsters.lua	1538	2	Internal engine/control literal only; not player-facing localization.
@@ -1432,9 +1433,9 @@ maw-7f8c32900206	excluded	monster	totMult			Scripts/General/zzMaw-Monsters.lua	4
 maw-02d5aeecc649	excluded	monster	Troll Tomb			Scripts/General/zzMaw-Monsters.lua	1148	2	Internal engine/control literal only; not player-facing localization.
 maw-99b24a103b84	excluded	monster	Tunnels to Eeofol			Scripts/General/zzMaw-Monsters.lua	1504	2	Internal engine/control literal only; not player-facing localization.
 maw-2701a94c0eb5	excluded	monster	Tutorial			Scripts/General/zzMaw-Monsters.lua	1181	1	Internal engine/control literal only; not player-facing localization.
-maw-93b9e289e284	untranslated	monster	Types			Scripts/General/AdaptiveMonstersStats.lua	185	1	
+maw-93b9e289e284	excluded	monster	Types			Scripts/General/AdaptiveMonstersStats.lua	185	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-9cee094cba21	translated	monster	Unconscious	의식불명		Scripts/General/zzMaw-Monsters.lua	3848	1	몬스터 정보창 상태명
-maw-6448d1095c7b	untranslated	monster	Undefined property, line: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	
+maw-6448d1095c7b	excluded	monster	Undefined property, line: 			Scripts/General/AdaptiveMonstersStats.lua	102	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-c04888dcb0ae	excluded	monster	Unicorn			Scripts/General/zzMaw-Monsters.lua	1033	1	Internal engine/control literal only; not player-facing localization.
 maw-bc7819b34ff8	excluded	monster	Unknown			Scripts/Global/Quest_SavingGoobers.lua	845	1	Internal engine/control literal only; not player-facing localization.
 maw-b8e6d99bded5	excluded	monster	Unsupported monster count type			Scripts/General/pseudoSpawnpoint.lua	44	1	Internal engine/control literal only; not player-facing localization.
@@ -1604,10 +1605,13 @@ Current leech vs. same level monsters: "	"%
 추가로 총 생명력에 비례하여 공격 시 생명력을 흡수합니다.
 
 동일 레벨 몬스터 대상 현재 흡혈량: "		Scripts/General/zzClasses.lua	1457	1	죽음의 기사 혈마법 설명 후행 조각
-maw-07ee0aeb6aee	untranslated	skill	"%
+maw-07ee0aeb6aee	translated	skill	"%
 
 Press P to enable/disable
-"			Scripts/General/zzMAW-Skills.lua	2097	2	
+"	"%
+
+P키로 활성화/비활성화
+"		Scripts/General/zzMAW-Skills.lua	2097	2	엄호 기술 토글 안내; 선행 % 보존
 maw-f5cb16b30cd5	translated	skill	% of monster Hit points as fire damage.	%만큼 추가 화염 피해를 줍니다.		Scripts/General/zzClasses.lua	1036	1	승천 화염 피해 설명 후행 조각
 maw-41559b59261e	translated	skill	%% speed	%% 속도		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-347cd9c53ff7	excluded	skill	%s		%s	Scripts/General/zzMAW-Skills.lua	565	7	숫자 이름 string.format 서식 전용
@@ -1644,12 +1648,12 @@ Next Level Bonus: %s HP Regen"	"%s
 
 현재 생명력 재생: %s
 다음 레벨 보너스: 생명력 재생 %s"	%s %s %s	Scripts/General/zzMAW-Skills.lua	1347	1	생명력 재생 기술 설명; 자리표시자 보존
-maw-058cca31afa4	untranslated	skill	"%s
+maw-058cca31afa4	excluded	skill	"%s
 ------------------------------------------------------------
-"		%s	Scripts/General/zzMAW-Skills.lua	499	1	
-maw-a54a769ec702	untranslated	skill	"%s
+"		%s	Scripts/General/zzMAW-Skills.lua	499	1	기술 UI 구분선 서식; 번역 불필요
+maw-a54a769ec702	excluded	skill	"%s
 ------------------------------------------------------------
-         "		%s	Scripts/General/zzMAW-Skills.lua	627	1	
+         "		%s	Scripts/General/zzMAW-Skills.lua	627	1	기술 UI 구분선/여백 서식; 번역 불필요
 maw-da596ebf60c7	translated	skill	%s 0.5%% dodge chance	%s 회피 확률 +0.5%%	%s	Scripts/General/zzMAW-Skills.lua	696	1	회피 그랜드마스터 효과
 maw-415e2977544c	translated	skill	%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger	%s 방어력을 절반으로 만들 확률 1%%, 기술 포인트당 치명타 피해 +5%%. 몬스터가 강해질수록 효과 확률 감소	%s	Scripts/General/zzMAW-Skills.lua	673	1	도끼 그랜드마스터 효과
 maw-c251631f5372	translated	skill	%s 1%% to stun	%s 기절 확률 +1%%	%s	Scripts/General/zzMAW-Skills.lua	681	1	지팡이 마스터 효과
@@ -1664,13 +1668,13 @@ maw-7a69e955bfeb	translated	skill	%s rec. pen. elim.	%s 회복 페널티 제거	
 maw-1dfd8c6da9a8	translated	skill	%s rec. pen. halved	%s 회복 페널티 절반	%s	Scripts/General/zzMAW-Skills.lua	687	1	판금 숙련 축약 효과
 maw-06af20f3aede	translated	skill	%s recovery penalty eliminated	%s 회복 페널티 제거	%s	Scripts/General/zzMAW-Skills.lua	684	3	방어구 숙련 효과
 maw-8927ee350cbb	translated	skill	%s recovery penalty halved	%s 회복 페널티 절반	%s	Scripts/General/zzMAW-Skills.lua	685	1	사슬 갑옷 숙련 효과
-maw-3f92a95e24aa	untranslated	skill	"%s Res	000"		%s	Scripts/General/zzMAW-Skills.lua	612	2	
+maw-3f92a95e24aa	translated	skill	"%s Res	000"	"%s 저항	000"	%s	Scripts/General/zzMAW-Skills.lua	612	2	기술 상세 표 저항 라벨; %s/탭 보존
 maw-00f2a94b750e	translated	skill	%s shoots fire arrows, dealing highest between fire and physical damage	%s 화염 화살을 발사하며 화염 피해와 물리 피해 중 더 높은 피해 적용	%s	Scripts/General/zzMAW-Skills.lua	675	1	활 그랜드마스터 효과
 maw-bd2aa1daab14	translated	skill	%s usable with Leather Armor	%s 가죽 갑옷 착용 시 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	695	1	회피 마스터 효과
 maw-b814f42a8c77	translated	skill	%s usable with Unarm.	%s 맨손 전투와 함께 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	682	1	지팡이 그랜드마스터 효과
-maw-29bafc9a3c98	untranslated	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	543	4	
+maw-29bafc9a3c98	excluded	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	543	4	수치/퍼센트 서식 전용 문자열
 maw-f9b26d772d4f	untranslated	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	
-maw-908093bbf3f4	untranslated	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	
+maw-908093bbf3f4	excluded	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	서식 전용 문자열
 maw-84d1ceb266d3	excluded	skill	([^%s]+)		%s	Scripts/General/BountyHunt.lua	215	13	Internal engine/control/comment literal only; not player-facing localization.
 maw-4b7ec923d00c	translated	skill	"(calculated after resistances)
 "	"(저항 적용 후 계산)
@@ -1678,8 +1682,8 @@ maw-4b7ec923d00c	translated	skill	"(calculated after resistances)
 maw-75446e835954	translated	skill	Absorb up to 25% damage	피해를 최대 25% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2478	1	마나 방패 숙련 효과
 maw-edaf46202584	translated	skill	Absorb up to 50% damage	피해를 최대 50% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2479	1	마나 방패 숙련 효과
 maw-b53ba9e43224	translated	skill	Absorb up to 75% damage	피해를 최대 75% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2480	1	마나 방패 숙련 효과
-maw-80cc252aa544	untranslated	skill	AC|			Scripts/General/zzMAW-Skills.lua	557	1	
-maw-89736fc25d09	untranslated	skill	Adamantite			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-80cc252aa544	translated	skill	AC|	방어도|		Scripts/General/zzMAW-Skills.lua	557	1	기술 상세 표 방어도 라벨
+maw-89736fc25d09	excluded	skill	Adamantite			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-1b684e0e7237	translated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
 
 Expert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.
@@ -1720,7 +1724,7 @@ Damage added by armsmaster skill scales with your weapon skill, amplifying its i
 maw-2de8f87cb665	translated	skill	Ascension	승천		Scripts/General/zzMAW-Skills.lua	1464	1	MAW 스킬명
 maw-01c14ed50231	translated	skill	Assassination	암살		Scripts/General/zzClasses.lua	2107	1	MAW 스킬명
 maw-4c6ddbffd5ce	translated	skill	Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다		Scripts/General/zzMAW-Skills.lua	2051	1	엄호 숙련 효과
-maw-dd933dd88d68	untranslated	skill	Attack|			Scripts/General/zzMAW-Skills.lua	526	1	
+maw-dd933dd88d68	translated	skill	Attack|	공격|		Scripts/General/zzMAW-Skills.lua	526	1	기술 상세 표 공격 라벨
 maw-c8fa8bc02696	excluded	skill	baseSpeedMelee			Scripts/General/zzMAW-Skills.lua	358	1	Internal engine/control literal only; not player-facing localization.
 maw-4265aa0579a1	excluded	skill	baseSpeedRanged			Scripts/General/zzMAW-Skills.lua	354	1	Internal engine/control literal only; not player-facing localization.
 maw-24652e28b940	translated	skill	Blood	혈마법		Scripts/General/zzClasses.lua	1451	1	죽음의 기사 스킬명
@@ -1747,7 +1751,7 @@ Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipp
 사슬 갑옷을 장비하면 사슬 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	592	1	사슬 갑옷 기술 설명
 maw-826b07e8e3ae	excluded	skill	Chance			Scripts/General/zzMAW-Skills.lua	1083	2	Internal engine/control literal only; not player-facing localization.
 maw-df5e8635a295	translated	skill	Chance to Paralyze: 	마비 확률: 		Scripts/General/zzMAW-Skills.lua	2465	1	철퇴 마비 확률 표시
-maw-c713960107a1	untranslated	skill	Chance to Stun: 			Scripts/General/zzMAW-Skills.lua	2463	1	
+maw-c713960107a1	translated	skill	Chance to Stun: 	기절 확률: 		Scripts/General/zzMAW-Skills.lua	2463	1	기술 툴팁 수치 라벨
 maw-af169bb89cfb	translated	skill	Combat	전투		Scripts/General/zzClasses.lua	2104	1	암살자 스킬명
 maw-57b5a5dea337	translated	skill	"Combat is the skill that allows you to endure prolonged fights by enhancing your energy recovery.
 
@@ -1772,25 +1776,37 @@ Press P to enable/disable
 
 P키로 활성화/비활성화
 "		Scripts/General/zzMAW-Skills.lua	2047	1	엄호 기술 설명
-maw-84a1cb449d28	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
+maw-84a1cb449d28	translated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 
 Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
 
-Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2097	1	
-maw-e3808a8b98b0	untranslated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
+Current cover chance: "	"엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
+
+기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....
+
+현재 엄호 확률: "		Scripts/General/zzMAW-Skills.lua	2097	1	엄호 기술 설명 6-12-20
+maw-e3808a8b98b0	translated	skill	"Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.
 
 If available, Expert, Master and Grandmaster is learned at skill 8-20-30.
 
 Grants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....
 
-Current cover chance: "			Scripts/General/zzMAW-Skills.lua	2099	1	
+Current cover chance: "	"엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.
+
+가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-30에서 습득합니다.
+
+기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....
+
+현재 엄호 확률: "		Scripts/General/zzMAW-Skills.lua	2099	1	엄호 기술 설명 8-20-30
 maw-3711ef38c87d	translated	skill	Current Damage reduction per Mana: 	마나당 현재 피해 감소: 		Scripts/General/zzMAW-Skills.lua	2118	2	마나 방패 수치 표시
 maw-baa7b94348d2	translated	skill	Current Reduction: 	현재 피해 감소: 		Scripts/General/zzClasses.lua	1457	2	죽음의 기사 피해 감소 표시
 maw-b3ec68d9a6c8	translated	skill	Dark Magic	어둠 마법		Scripts/General/zzClasses.lua	1474	1	Skillz.setName 표시명
-maw-a8e6075e3936	untranslated	skill	Dmg%%|			Scripts/General/zzMAW-Skills.lua	542	1	
-maw-2398296e3634	untranslated	skill	Dmg|			Scripts/General/zzMAW-Skills.lua	549	1	
+maw-a8e6075e3936	translated	skill	Dmg%%|	피해%%|		Scripts/General/zzMAW-Skills.lua	542	1	기술 상세 표 피해율 라벨; %% 보존
+maw-2398296e3634	translated	skill	Dmg|	피해|		Scripts/General/zzMAW-Skills.lua	549	1	기술 상세 표 피해 라벨
 maw-a45908c888a2	translated	skill	Double healing effect	회복 효과가 2배가 됩니다		Scripts/General/zzClasses.lua	432	1	스킬 숙련 효과
 maw-eac1e2011194	translated	skill	"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
 
@@ -1803,24 +1819,24 @@ Each point in the skill increases damage and increases recovery time by 1.5%.
 "		Scripts/General/zzClasses.lua	800	1	드래곤 송곳니 기술 설명
 maw-0ad6e75c517a	translated	skill	Earth Magic	대지 마법		Scripts/General/zzClasses.lua	2168	1	Skillz.setName 표시명
 maw-78112dc2690b	translated	skill	Enlightenment	깨달음		Scripts/General/zzMAW-Skills.lua	2508	1	MAW 마나 스킬명
-maw-42d86cfd50b6	untranslated	skill	Exploding			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-42d86cfd50b6	excluded	skill	Exploding			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-70a1c0a505d3	translated	skill	Fangs	송곳니		Scripts/General/zzClasses.lua	798	1	드래곤 스킬명
 maw-3bc42b4b8932	translated	skill	Fire Magic	화염 마법		Scripts/General/zzClasses.lua	2165	1	Skillz.setName 표시명
-maw-f95933ffb150	untranslated	skill	Fixator			Scripts/General/zzMAW-Skills.lua	1066	4	
+maw-f95933ffb150	excluded	skill	Fixator			Scripts/General/zzMAW-Skills.lua	1066	4	Internal engine/control/comment literal only; not player-facing localization.
 maw-35b259290ec3	excluded	skill	Food			Scripts/Global/NPCFollowersSkills.lua	328	1	Internal engine/control literal only; not player-facing localization.
 maw-6032a672e309	translated	skill	Frost	냉기		Scripts/General/zzClasses.lua	1450	1	죽음의 기사 스킬명
-maw-6f947783ef13	untranslated	skill	GetDiplomacyTotalSkill			Scripts/Core/events.lua	1956	2	
-maw-c06e767c2853	untranslated	skill	GetDisarmTrapTotalSkill			Scripts/Core/events.lua	1953	2	
+maw-6f947783ef13	excluded	skill	GetDiplomacyTotalSkill			Scripts/Core/events.lua	1956	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-c06e767c2853	excluded	skill	GetDisarmTrapTotalSkill			Scripts/Core/events.lua	1953	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-16b0a818dba4	excluded	skill	GetIndex			Scripts/General/zzMAW-Skills.lua	2616	1	Internal engine/control literal only; not player-facing localization.
-maw-54095085517d	untranslated	skill	GetLearningTotalSkill			Scripts/Core/events.lua	1959	2	
-maw-b685e98aff4a	untranslated	skill	GetMerchantTotalSkill			Scripts/Core/events.lua	1952	2	
-maw-9dd13a7dcc16	untranslated	skill	GetPerceptionTotalSkill			Scripts/Core/events.lua	1958	2	
+maw-54095085517d	excluded	skill	GetLearningTotalSkill			Scripts/Core/events.lua	1959	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-b685e98aff4a	excluded	skill	GetMerchantTotalSkill			Scripts/Core/events.lua	1952	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-9dd13a7dcc16	excluded	skill	GetPerceptionTotalSkill			Scripts/Core/events.lua	1958	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-7d2cde45714f	excluded	skill	GetPlayerSkillMastery			Scripts/Structs/After/RemoveSkillValueLimits.lua	144	1	Internal engine/control literal only; not player-facing localization.
 maw-f672c345dffe	excluded	skill	GetSkill			Scripts/Core/events.lua	1908	1	Internal engine/control literal only; not player-facing localization.
 maw-ebabbf34ceff	translated	skill	Grants bonus to Meditation skill for 6 hours.	6시간 동안 명상 기술에 보너스를 부여합니다.		Scripts/General/zzAlchemy.lua	480	1	물약 효과 툴팁
 maw-5200bdfc01a1	untranslated	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	
-maw-bc4de4436fe9	untranslated	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	
-maw-d777daa9c06f	untranslated	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	
+maw-bc4de4436fe9	excluded	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-d777daa9c06f	excluded	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-e8fbfeac40bd	translated	skill	Increase your regeneration by 1% per every 1% of hp lost	잃은 생명력 1%마다 재생량이 1% 증가합니다		Scripts/General/zzMAW-Skills.lua	2575	1	재생 숙련 효과
 maw-9f6c0df8b5f6	translated	skill	Increased Attack speed by 1% per Skill	기술 포인트당 공격 속도가 1% 증가합니다		Scripts/General/zzClasses.lua	436	1	스킬 숙련 효과
 maw-daab9922b845	translated	skill	Increased Attack speed by 2% per Skill	기술 포인트당 공격 속도가 2% 증가합니다		Scripts/General/zzClasses.lua	437	1	스킬 숙련 효과
@@ -1843,7 +1859,7 @@ maw-44c58b0340ce	translated	skill	"Leather armor is the lightest armor a charact
 Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."	"가죽 갑옷은 착용할 수 있는 가장 가벼운 방어구입니다. 사슬이나 판금 갑옷보다 보호력은 낮지만 행동 속도 감소도 가장 적습니다.
 
 가죽 갑옷을 장비하면 가죽 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	591	1	가죽 갑옷 기술 설명
-maw-7182aec4321c	untranslated	skill	Leecher			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-7182aec4321c	excluded	skill	Leecher			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-22fa84df37d6	translated	skill	Mana cost reduced by 12.5%.	마나 소모량 12.5% 감소.		Scripts/General/zzMAW-Skills.lua	1465	1	승천 숙련 효과
 maw-c338ab5388a4	translated	skill	Mana cost reduced by 25%	마나 소모량 25% 감소		Scripts/General/zzMAW-Skills.lua	1466	1	승천 숙련 효과
 maw-0a4e4b7336a4	translated	skill	Mana cost reduced by 37.5%	마나 소모량 37.5% 감소		Scripts/General/zzMAW-Skills.lua	1467	1	승천 숙련 효과
@@ -1894,7 +1910,7 @@ maw-bfc71b4321ca	translated	skill	Melee attack costs 45 energy	근접 공격에 
 maw-bc450c26c1e8	translated	skill	Melee attacks heal on hit	근접 공격 적중 시 생명력을 회복합니다		Scripts/General/zzClasses.lua	431	1	스킬 숙련 효과
 maw-0a893ece8e46	translated	skill	Misc	기타		Scripts/General/zzMAW-Skills.lua	2063	2	기타 기술 UI
 maw-cf844749e1e5	untranslated	skill	Omnipotent			Scripts/General/BountyHunt.lua	216	17	
-maw-8eacd5e0337a	untranslated	skill	Plagueborn			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-8eacd5e0337a	excluded	skill	Plagueborn			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-92e872e4e20e	translated	skill	"Plate armor is the heaviest armor type.  It provides the most protection, but it slows your character down more than leather or chain.
 
 Plate Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Plate Armor by a percent amount."	"판금 갑옷은 가장 무거운 방어구입니다. 가장 높은 보호력을 제공하지만 가죽이나 사슬 갑옷보다 행동을 더 느리게 만듭니다.
@@ -1910,18 +1926,18 @@ Each attack deals bonus water damage equal to 0.1% of the target's HP per skill 
 
 "		Scripts/General/zzClasses.lua	2111	1	독 기술 설명
 maw-b1990861729d	translated	skill	Poisons	독		Scripts/General/zzClasses.lua	2106	1	암살자 스킬명
-maw-176436bc329f	untranslated	skill	Puller			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-176436bc329f	excluded	skill	Puller			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-085171c8bf3e	translated	skill	Reduces traps and lava damage by 10%.	함정과 용암 피해가 10% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1470	1	지각 숙련 효과
 maw-96fa891e59df	translated	skill	Reduces traps and lava damage by 30%.	함정과 용암 피해가 30% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1471	1	지각 숙련 효과
 maw-b398b59387c0	translated	skill	Reduces traps and lava damage by 50%.	함정과 용암 피해가 50% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1472	1	지각 숙련 효과
 maw-25edbf756cff	translated	skill	Reduces traps and lava damage by 70%.	함정과 용암 피해가 70% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1473	1	지각 숙련 효과
-maw-078157762d2c	untranslated	skill	Reflecting			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-809f8bbcd185	untranslated	skill	Regenerating			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-73c6fffa68c4	untranslated	skill	RemoveSkillValueLimits			Scripts/Structs/After/RemoveSkillValueLimits.lua	1	1	
+maw-078157762d2c	excluded	skill	Reflecting			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-809f8bbcd185	excluded	skill	Regenerating			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-73c6fffa68c4	excluded	skill	RemoveSkillValueLimits			Scripts/Structs/After/RemoveSkillValueLimits.lua	1	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-c6b40b4993cf	translated	skill	Retaliation	반격		Scripts/General/zzMAW-Skills.lua	2539	1	MAW 방어 스킬명
 maw-a5b46b9f3ae4	translated	skill	Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit	반격은 최대 3회 중첩되며, 한 번의 강력한 공격으로 모든 중첩을 소모할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2544	1	반격 숙련 효과
 maw-0b414bdcb7b9	translated	skill	Scales	비늘		Scripts/General/zzClasses.lua	806	1	드래곤 스킬명
-maw-aa0e7e86b7aa	untranslated	skill	Shadow			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-aa0e7e86b7aa	excluded	skill	Shadow			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-a6852004e745	translated	skill	"Shield skill provides great defense against both physical and magical attacks.
 
 Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	"방패 기술은 물리 공격과 마법 공격 모두에 뛰어난 방어력을 제공합니다.
@@ -1947,9 +1963,9 @@ Energy consuming attack grants 1 stack, which increase your attack speed by 1% p
 에너지를 소모하는 공격은 중첩 1회를 부여하며, 중첩당 교묘함 기술 포인트마다 공격 속도가 1% 증가합니다. 최대 5회 중첩됩니다.
 
 "		Scripts/General/zzClasses.lua	2110	1	교묘함 기술 설명
-maw-19e9d2245f60	untranslated	skill	Summoner			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-13529394f788	untranslated	skill	Swapper			Scripts/General/zzMaw-Monsters.lua	3177	3	
-maw-112ab020698e	untranslated	skill	Swift			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-19e9d2245f60	excluded	skill	Summoner			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
+maw-13529394f788	excluded	skill	Swapper			Scripts/General/zzMaw-Monsters.lua	3177	3	Internal engine/control/comment literal only; not player-facing localization.
+maw-112ab020698e	excluded	skill	Swift			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-d387f71bdbc2	excluded	skill	TeachSkill			Scripts/General/zzMAW-Skills.lua	1752	1	Internal engine/control literal only; not player-facing localization.
 maw-9695e5c63098	translated	skill	"This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and increases attack speed by 2% per skill point.
 "	"죽음의 기사만 사용할 수 있는 기술입니다. 피해가 0.5-1-1.5(초보-전문가-마스터) 증가하고 기술 포인트당 공격 속도가 2% 증가합니다.
@@ -1960,7 +1976,7 @@ maw-347e88fe61c6	translated	skill	"This skill is only available to death knights
 maw-8c46bff5c136	translated	skill	"This skill is only available to death knights and reduces physical damage taken.
 "	"죽음의 기사만 사용할 수 있는 기술입니다. 받는 물리 피해가 감소합니다.
 "		Scripts/General/zzClasses.lua	1457	1	죽음의 기사 혈마법 기술 설명
-maw-dc9dacafa603	untranslated	skill	Thorn			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-dc9dacafa603	excluded	skill	Thorn			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-e88d3c5da733	translated	skill	Triple healing effect	회복 효과가 3배가 됩니다		Scripts/General/zzClasses.lua	433	1	스킬 숙련 효과
 maw-2a8dbafc6266	translated	skill	Unholy	사악함		Scripts/General/zzClasses.lua	1452	1	죽음의 기사 스킬명
 maw-f08ed9a7b187	translated	skill	"Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.
@@ -1974,7 +1990,7 @@ If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 
 가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.
 "		Scripts/General/zzMAW-Skills.lua	2509	1	깨달음 기술 설명
-maw-f9bb62f972ac	untranslated	skill	Venomous			Scripts/General/zzMaw-Monsters.lua	3177	2	
+maw-f9bb62f972ac	excluded	skill	Venomous			Scripts/General/zzMaw-Monsters.lua	3177	2	Internal engine/control/comment literal only; not player-facing localization.
 maw-fb7fcba97ab8	translated	skill	Water Magic	물 마법		Scripts/General/zzClasses.lua	1472	2	Skillz.setName 표시명
 maw-0627ec58a510	translated	skill	You don't meet the requirements, and cannot be taught until you do.	요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.		Scripts/General/zzMAW-Skills.lua	2276	1	스킬 교육 거절 대사
 maw-5c294ee8c995	translated	skill	You regenerate 10 energy per second	초당 에너지 10을 회복합니다		Scripts/General/zzClasses.lua	2122	1	스킬 숙련 효과
@@ -2090,7 +2106,7 @@ maw-247b27ca66b0	translated	spell	All stats increased by 10+1 per skill	모든 �
 maw-935d91b8e953	translated	spell	All stats increased by 15+1.5 per skill	모든 능력치가 15 + 기술 포인트당 1.5만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	742	1	주문 숙련 설명
 maw-e99c70428f3e	translated	spell	All stats increased by 20+2 per skill	모든 능력치가 20 + 기술 포인트당 2만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	743	1	주문 숙련 설명
 maw-554ad32ce774	translated	spell	Allow use to Cover Spells damage	주문 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2050	1	엄호 숙련 효과
-maw-f3762b6b3022	untranslated	spell	AllowNewSpell			Scripts/General/AdaptiveMonstersStats.lua	764	1	
+maw-f3762b6b3022	excluded	spell	AllowNewSpell			Scripts/General/AdaptiveMonstersStats.lua	764	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-512da2e32544	translated	spell	Asphyxiate	질식		Scripts/General/zzClasses.lua	1420	1	MAW 주문명
 maw-6000be5eddfc	translated	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
 Such attacks also grant 1 combo point, allowing the assassin to cast offensive spells.
@@ -2116,8 +2132,8 @@ maw-7f1d5575b816	untranslated	spell	CanMonsterCastSpell			Scripts/Core/events.lu
 maw-b1f1770d9a38	translated	spell	Chain Lightning	연쇄 번개		Scripts/General/zzMaw-Spells.lua	704	1	MAW 재정의 주문명
 maw-8757a00d5f02	excluded	spell	ChanceMult			Scripts/General/zzMaw-Spells.lua	1306	13	Internal engine/control literal only; not player-facing localization.
 maw-c1e392347e2e	untranslated	spell	checkMapCompletition			Scripts/General/zzMaw-Timers.lua	92	1	
-maw-f55add79d406	untranslated	spell	cmp dword ptr [eax + 0x19C], edx			Scripts/General/SpellsTweaks.lua	181	1	
-maw-27fa9916738c	untranslated	spell	cmp dword ptr [eax + 0x1A0], edx			Scripts/General/SpellsTweaks.lua	180	1	
+maw-f55add79d406	excluded	spell	cmp dword ptr [eax + 0x19C], edx			Scripts/General/SpellsTweaks.lua	181	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-27fa9916738c	excluded	spell	cmp dword ptr [eax + 0x1A0], edx			Scripts/General/SpellsTweaks.lua	180	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-64ae43e8fe76	excluded	spell	Cost			Scripts/General/zzClasses.lua	2180	61	Internal engine/control literal only; not player-facing localization.
 maw-ed4b8cc4289e	translated	spell	Cures %s + %s HP per point of skill	기술 포인트당 생명력 %s + %s 회복	%s %s	Scripts/General/zzMaw-Spells.lua	2201	1	주문 숙련 설명
 maw-41323a186eba	translated	spell	Damage Increased to 	피해량: 		Scripts/General/zzClasses.lua	1379	1	연결형 주문 피해 설명
@@ -2133,7 +2149,7 @@ maw-66fc89b25ff8	translated	spell	Death Breath	죽음의 숨결		Scripts/General
 maw-0a37ec4c0df7	translated	spell	Death Coil	죽음의 고리		Scripts/General/zzClasses.lua	1427	1	MAW 주문명
 maw-f22bb3958c52	translated	spell	Death Grasp	죽음의 손아귀		Scripts/General/zzClasses.lua	1434	1	MAW 주문명
 maw-0a8703f9c37d	excluded	spell	Debuff			Scripts/General/zzMaw-Spells.lua	1307	12	Internal engine/control literal only; not player-facing localization.
-maw-b4c200bb0d1f	untranslated	spell	Delay			Scripts/General/zzClasses.lua	1298	3	
+maw-b4c200bb0d1f	excluded	spell	Delay			Scripts/General/zzClasses.lua	1298	3	Internal engine/control/comment literal only; not player-facing localization.
 maw-9785e1464ea2	translated	spell	"Dragons are powerful creatures with innate abilities.
 Like the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.
 
@@ -2203,7 +2219,7 @@ maw-bcea47734e3b	translated	spell	"Increases spell damage and healing at the exp
 "		Scripts/General/zzMAW-Skills.lua	1463	1	승천 기술 설명
 maw-df83636b672f	translated	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	횃불빛마저 삼키는 밤의 웅덩이 같은 잉크입니다. 그림자의 결계가 글줄을 집어삼키며, 어둠 마법에 숙련된 독자에게만 글을 드러냅니다.		Scripts/General/zzMaw-Spells.lua	3416	1	어둠 마법서 설명
 maw-e0f25f1d61cb	translated	spell	Insanity	광기		Scripts/General/zzMaw-Monsters.lua	3846	1	몬스터 정보창 상태명
-maw-a47e171274de	untranslated	spell	jge absolute 0x42735B			Scripts/General/SpellsTweaks.lua	115	1	
+maw-a47e171274de	excluded	spell	jge absolute 0x42735B			Scripts/General/SpellsTweaks.lua	115	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-6b1f8ea0c3ce	translated	spell	Leech amount increased by 50%	흡수량 50% 증가		Scripts/General/zzClasses.lua	1431	1	주문 숙련 설명
 maw-790ca77669c6	translated	spell	Leeches 	생명력 흡수: 		Scripts/General/zzClasses.lua	1407	5	연결형 흡혈 설명
 maw-dfccc06f1441	untranslated	spell	light			Scripts/General/zzMaw-Spells.lua	3355	1	
@@ -2221,7 +2237,7 @@ maw-d25cbef0630c	translated	spell	Monster slows by 1/2 of speed	몬스터의 속
 maw-460675295db9	translated	spell	Monster slows by 1/4 of speed	몬스터의 속도가 25% 감소합니다		Scripts/General/zzClasses.lua	1380	1	주문 숙련 설명
 maw-ff94692bdcd4	excluded	spell	MonsterCanCastSpell			Scripts/General/ExtraEvents.lua	647	1	Internal engine/control literal only; not player-facing localization.
 maw-2129c79c892e	excluded	spell	MonsterCastSpellM			Scripts/General/ExtraEvents.lua	686	1	Internal engine/control literal only; not player-facing localization.
-maw-5b35277d4879	untranslated	spell	movzx ecx, word ptr [eax + 0x1A4]			Scripts/General/SpellsTweaks.lua	182	1	
+maw-5b35277d4879	excluded	spell	movzx ecx, word ptr [eax + 0x1A4]			Scripts/General/SpellsTweaks.lua	182	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-0036ba18480e	excluded	spell	MultiBuff			Scripts/General/zzMaw-Spells.lua	2402	2	Internal engine/control literal only; not player-facing localization.
 maw-08d2e98e6754	excluded	spell	N/A			Scripts/General/zzClasses.lua	1429	1	통용 약어이므로 원문 유지
 maw-709a23220f2c	excluded	spell	Name			Scripts/General/zzClasses.lua	1353	3	Internal engine/control literal only; not player-facing localization.
@@ -2262,15 +2278,15 @@ maw-3a0ee1cb6e6b	translated	spell	Spell drain	주문력 흡수		Scripts/General/
 maw-ab6dd36408dd	translated	spell	Spell hits up to 2 times	최대 2회 적중합니다		Scripts/General/zzClasses.lua	2144	2	주문 숙련 설명
 maw-8440e3cb3c6d	translated	spell	Spell hits up to 3 times	최대 3회 적중합니다		Scripts/General/zzClasses.lua	2145	2	주문 숙련 설명
 maw-a742d05a19a5	translated	spell	Spell hits up to 4 times	최대 4회 적중합니다		Scripts/General/zzClasses.lua	2146	2	주문 숙련 설명
-maw-e628e7dc1b0d	untranslated	spell	SpellFirst			Scripts/Structs/extraEditableDescriptions.lua	550	1	
-maw-e11663dfde25	untranslated	spell	SpellMastery			Scripts/General/AdaptiveMonstersStats.lua	733	4	
-maw-84301d0d3217	untranslated	spell	SpellPoints			Scripts/General/zzClasses.lua	1369	14	
+maw-e628e7dc1b0d	excluded	spell	SpellFirst			Scripts/Structs/extraEditableDescriptions.lua	550	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-e11663dfde25	excluded	spell	SpellMastery			Scripts/General/AdaptiveMonstersStats.lua	733	4	Internal engine/control/comment literal only; not player-facing localization.
+maw-84301d0d3217	excluded	spell	SpellPoints			Scripts/General/zzClasses.lua	1369	14	Internal engine/control/comment literal only; not player-facing localization.
 maw-11509485a262	untranslated	spell	SpellPointsExpert			Data/Tables/Spells2.txt	1	6	
 maw-507917d6e74d	untranslated	spell	SpellPointsGM			Data/Tables/Spells2.txt	1	11	
 maw-aabe239306fb	untranslated	spell	SpellPointsMaster			Data/Tables/Spells2.txt	1	8	
 maw-2cb9ecbb3f26	untranslated	spell	SpellPointsNormal			Data/Tables/Spells2.txt	1	5	
-maw-f2cbd9ebed77	untranslated	spell	SpellSecond			Scripts/Structs/extraEditableDescriptions.lua	553	1	
-maw-e2231a88184b	untranslated	spell	SpellSkill			Scripts/General/AdaptiveMonstersStats.lua	732	4	
+maw-f2cbd9ebed77	excluded	spell	SpellSecond			Scripts/Structs/extraEditableDescriptions.lua	553	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-e2231a88184b	excluded	spell	SpellSkill			Scripts/General/AdaptiveMonstersStats.lua	732	4	Internal engine/control/comment literal only; not player-facing localization.
 maw-b40d51318efc	untranslated	spell	spirit			Scripts/General/zzMaw-Spells.lua	3355	1	
 maw-493fda54af1e	translated	spell	Spirit Magic Book	영혼 마법서		Scripts/General/zzMaw-Spells.lua	3403	1	마법서 이름
 maw-ecb252044b5e	untranslated	spell	string			Scripts/General/zzMaw-Items.lua	2478	10	
@@ -2329,10 +2345,10 @@ maw-26995675bf1a	translated	status	 will now take alchemy items when sorting	 �
 maw-b30c9ccdc32b	untranslated	status	%d+		%d	Scripts/General/zzMAW-Skills.lua	1760	2	
 maw-ac5cf24fbebd	translated	status	%s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	%s	Scripts/General/zzMAW-Skills.lua	738	1	전투 기술 상태 메시지
 maw-2dce602f934a	translated	status	%s created	%s 제작 완료	%s	Scripts/General/zzMaw-Items.lua	4598	1	제작 상태 메시지
-maw-c71f2230e35f	untranslated	status	%s hits %s for %s points!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	257	1	
-maw-172bc1a2377a	untranslated	status	%s hits for a total of %s points!%s		%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	263	1	
-maw-ec872fba510a	untranslated	status	%s inflicts %s points killing %s!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	260	1	
-maw-306ecfe28808	untranslated	status	%s shoots %s for %s points!%s		%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	255	1	
+maw-c71f2230e35f	translated	status	%s hits %s for %s points!%s	%s이(가) %s에게 %s의 피해를 입혔습니다!%s	%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	257	1	실제 근접 전투 상태 메시지; 자리표시자 순서 보존
+maw-172bc1a2377a	translated	status	%s hits for a total of %s points!%s	%s이(가) 총 %s의 피해를 입혔습니다!%s	%s %s %s	Scripts/Global/zzMAWStatusMsg.lua	263	1	광역 공격 총 피해 상태 메시지; 자리표시자 보존
+maw-ec872fba510a	translated	status	%s inflicts %s points killing %s!%s	%s이(가) %s의 피해를 입혀 %s을(를) 처치했습니다!%s	%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	260	1	실제 처치 전투 상태 메시지; 자리표시자 순서 보존
+maw-306ecfe28808	translated	status	%s shoots %s for %s points!%s	%s이(가) %s에게 원거리 공격으로 %s의 피해를 입혔습니다!%s	%s %s %s %s	Scripts/Global/zzMAWStatusMsg.lua	255	1	실제 원거리 전투 상태 메시지; 자리표시자 순서 보존
 maw-b4b8cce29ba4	translated	status	%s's poison effect expired	%s: 독 효과가 끝났습니다	%s	Scripts/General/zzMaw-Items.lua	1325	3	독 효과 상태 메시지
 maw-ab165dc8650a	excluded	status	's bag number 			Scripts/General/zzMaw-MultiBag.lua	244	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-81c7c4f4c524	translated	status	's bags sorted	의 모든 가방		Scripts/General/zzMaw-Item-Sorter.lua	441	2	가방 정렬 메시지 조각
@@ -2346,8 +2362,8 @@ maw-255db94bd445	translated	status	All 	정렬 완료: 		Scripts/General/zzMaw-I
 maw-c4293d2f2192	translated	status	All buffs have been removed	모든 버프가 제거되었습니다		Scripts/General/zzMaw-Spells.lua	25	1	버프 상태 메시지
 maw-d9eb9116dd12	translated	status	All inventories have been sorted	모든 인벤토리를 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	46	1	인벤토리 정렬 메시지
 maw-7477dec54f0c	translated	status	All Party bags sorted	파티의 모든 가방을 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	692	1	가방 정렬 메시지
-maw-fe865f7d112f	untranslated	status	Attune			Scripts/Global/Quest_SavingGoobers.lua	402	1	
-maw-c866fe746723	untranslated	status	"Beyond Madness - a word of warning.
+maw-fe865f7d112f	excluded	status	Attune			Scripts/Global/Quest_SavingGoobers.lua	402	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-c866fe746723	translated	status	"Beyond Madness - a word of warning.
 
 No bolster here (except on starting maps).
 
@@ -2360,7 +2376,20 @@ Run-wide tracking:
 - On the map, a red counter appears after you take damage and clears when no monsters are nearby.
 - Loading or leaving the game while that counter is red counts as a death.
 
-If Insanity wasn't enough for you, you're in the right place."			Scripts/General/zzMaw-Monsters.lua	2877	1	
+If Insanity wasn't enough for you, you're in the right place."	"광란을 넘어 - 경고.
+
+이곳에서는 보정이 적용되지 않습니다(시작 맵 제외).
+
+퀘스트 완료 시점이 중요합니다:
+- 일찍 완료: 즉시 강해지지만 경험치는 적습니다.
+- 늦게 완료: 초반 강화는 없지만 나중에 더 많은 경험치를 얻습니다.
+
+플레이 전체 추적:
+- 캐릭터 화면에는 이번 플레이의 모든 저장 파일에서 공유되는 사망 횟수가 표시됩니다.
+- 맵에서는 피해를 입은 뒤 빨간 카운터가 나타나며, 주변에 몬스터가 없으면 사라집니다.
+- 카운터가 빨간 상태에서 게임을 불러오거나 종료하면 사망 1회로 계산됩니다.
+
+광기 모드로도 부족했다면 제대로 찾아왔습니다."		Scripts/General/zzMaw-Monsters.lua	2877	1	Beyond Madness 진입 경고
 maw-6f25995360a3	excluded	status	BossDebug AUTO: OFF			Scripts/General/zzBossSync.lua	473	1	개발자 보스 디버그 출력
 maw-094e0e67a1ac	excluded	status	BossDebug AUTO: ON			Scripts/General/zzBossSync.lua	473	1	개발자 보스 디버그 출력
 maw-5ffd168dd001	excluded	status	BossDebug: impossible d’écrire boss_dump.txt			Scripts/General/zzBossSync.lua	432	1	개발자 보스 디버그 출력
@@ -2405,7 +2434,7 @@ maw-d5ec674f63f1	translated	status	Host saved the game.	호스트가 게임을 �
 maw-19b6cd329a7d	translated	status	I wouldn't join in your reckless adventure, not even for all the wealth in the world.	그 무모한 모험에는 세상의 모든 부를 준다 해도 함께하지 않겠소.		Scripts/General/NPCFollowers.lua	250	1	동료 거절 메시지
 maw-f7b693d91fe6	translated	status	In the night the deads rise	밤이 되면 망자들이 일어납니다		Scripts/Maps/7out05.lua	35	1	맵 이벤트 메시지
 maw-6be2751cd0b7	translated	status	Insanity Immunity	광기 면역		Scripts/General/zzAlchemy.lua	373	1	물약 효과 상태 메시지
-maw-b4e6a310890f	untranslated	status	Intro			Scripts/Global/Quest_SavingGoobers.lua	131	1	
+maw-b4e6a310890f	excluded	status	Intro			Scripts/Global/Quest_SavingGoobers.lua	131	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-29c9c73400f5	translated	status	Invalid Item	잘못된 아이템		Scripts/General/zzAlchemy.lua	1118	1	아이템 상태 메시지
 maw-4d118c92089d	translated	status	Inventory number 	인벤토리 		Scripts/General/zzMaw-Item-Sorter.lua	417	2	인벤토리 정렬 메시지 조각
 maw-e466e0284119	translated	status	Inventory sorted	인벤토리를 정렬했습니다		Scripts/General/zzMaw-Item-Sorter.lua	43	1	인벤토리 정렬 메시지
@@ -2417,7 +2446,7 @@ maw-cbd62b8042da	translated	status	Learned 	습득: 		Scripts/General/zzClasses.
 maw-39248f7f1de3	translated	status	Legendary power saves you from lethal damage	전설의 힘이 치명적인 피해로부터 당신을 구했습니다		Scripts/Global/zzMaw_Legendaries.lua	274	1	전투 상태 메시지
 maw-980d5e2dd44b	translated	status	Level 	레벨 		Scripts/Global/zzMaw_Arena.lua	183	1	아레나 완료 메시지 조각
 maw-6d8f726dc6ae	translated	status	Loading now will count as death, are you sure to proceed?	지금 불러오면 사망으로 처리됩니다. 계속하시겠습니까?		Scripts/General/zzMaw-Monsters.lua	2639	1	난이도 경고 메시지
-maw-3e72bdcb83db	translated	status	Madness is not a place for cowards	광기는 겁쟁이가 올 곳이 아닙니다		Scripts/General/zzMaw-Spells.lua	3476	1	난이도 상태 메시지
+maw-3e72bdcb83db	translated	status	Madness is not a place for cowards	광란은 겁쟁이가 올 곳이 아닙니다		Scripts/General/zzMaw-Spells.lua	3476	1	QA: Madness=광란, Insanity=광기로 구분
 maw-9c709d615601	translated	status	Mana Potion has %s seconds of cooldown remaining	마나 물약 재사용 대기시간이 %s초 남았습니다	%s	Scripts/General/zzMAW-Skills.lua	870	1	물약 재사용 대기시간
 maw-f7af004188cc	translated	status	Mana Potion restores %s mana	마나 물약으로 마나 %s 회복	%s	Scripts/General/zzMAW-Skills.lua	867	1	물약 회복 메시지
 maw-c06b7acce5c9	translated	status	Mana Shield Disabled	마나 방패 비활성화		Scripts/General/zzMAW-Skills.lua	2156	1	전투 기술 상태 메시지
@@ -2438,7 +2467,7 @@ maw-a7d5cacc3245	translated	status	Not enough food	식량이 부족합니다		Sc
 maw-6ab22af4436d	translated	status	Not enough gold.	금화가 부족합니다.		Scripts/Global/zzMAWRespec.lua	47	1	메시지
 maw-1a4d4c0b8c42	translated	status	Not enough Hit Points	생명력이 부족합니다		Scripts/General/zzMaw-Spells.lua	2632	1	주문 상태 메시지
 maw-93a4358c0a88	translated	status	Not enough Mana	마나가 부족합니다		Scripts/General/zzMaw-Spells.lua	2636	1	주문 상태 메시지
-maw-363134f009ba	untranslated	status	NotAttune			Scripts/Global/Quest_SavingGoobers.lua	407	1	
+maw-363134f009ba	excluded	status	NotAttune			Scripts/Global/Quest_SavingGoobers.lua	407	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-cbba0c56cf18	excluded	status	One of the 			Scripts/General/zzMaw-MultiBag.lua	271	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-a85ccda3fbb3	translated	status	Out of range	사정거리 밖입니다		Scripts/General/zzMAW-Skills.lua	758	1	전투 기술 상태 메시지
 maw-72479ce6070c	translated	status	Paralysis Immunity	마비 면역		Scripts/General/zzAlchemy.lua	388	1	물약 효과 상태 메시지
@@ -3780,7 +3809,7 @@ maw-54a2be81842c	translated	tooltip	"Creator's Hourglass and Eye of the void can
 Using this map will teleport you to the entrance."	"창조자의 모래시계와 공허의 눈으로 새로운 어픽스를 해금할 수 있습니다. 판도라의 상자로 지도를 변경하고, 힘의 에메랄드로 지도 레벨을 높일 수 있습니다.
 이 지도를 사용하면 입구로 순간이동합니다."		Scripts/General/zzMaw-Maps.lua	2162	1	지도 아이템 사용법 설명
 maw-38be6c8c98ef	translated	tooltip	Damage 1-%s per point of skill	기술 포인트당 피해 1-%s	%s	Scripts/General/zzMaw-Spells.lua	2127	2	주문 숙련 설명
-maw-55f8ebc805e6	untranslated	tooltip	Description			Scripts/General/zzClasses.lua	1354	3	
+maw-55f8ebc805e6	excluded	tooltip	Description			Scripts/General/zzClasses.lua	1354	3	Internal engine/control/comment literal only; not player-facing localization.
 maw-6bbad1895edc	translated	tooltip	Directly inflicts magical damage upon a single creature.  Harm does %s points of damage plus 1-%s per point of skill in Body Magic.	단일 대상에게 직접 마법 피해를 줍니다. 해악은 %s의 기본 피해와 육체 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2112	1	해악 주문 설명
 maw-4a3a20b808c8	translated	tooltip	Dragon Breath empowers the caster to exhale a cloud of toxic vapors that targets a single monster and damage all creatures nearby, doing 1-%s points of damage per point of skill in Dark Magic.	시전자가 독성 증기를 내뿜어 한 몬스터를 지정하고 주변의 모든 생물에게 피해를 줍니다. 피해량은 어둠 마법 기술 포인트당 1-%s입니다.	%s	Scripts/General/zzMaw-Spells.lua	2121	1	드래곤 브레스 주문 설명
 maw-782466286030	translated	tooltip	Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.		Scripts/General/zzMaw-Spells.lua	2084	1	화염 가시 주문 설명
@@ -3977,11 +4006,11 @@ Holy Strikes: Attacking will heal the most injured party member based on Body sk
 Divine Protection: self-heals by 25% of your HP when facing lethal attacks, 5 minutes cooldown."			Scripts/General/zzClasses.lua	160	1	
 maw-913758904779	translated	tooltip	Similar to Mind Blast, Psychic Shock targets a single creature with mind damaging magic--only it has a much greater effect.  Psychic Shock does %s points of damage plus 1-%s per point of skill in Mind Magic.	정신 폭발과 비슷하지만 훨씬 강력한 정신 마법으로 단일 대상을 공격합니다. 정신 충격은 %s의 기본 피해와 정신 마법 기술 포인트당 1-%s의 추가 피해를 줍니다.	%s %s	Scripts/General/zzMaw-Spells.lua	2111	1	정신 충격 주문 설명
 maw-0a4e49ab66a5	translated	tooltip	Simultaneously casts Protection from Fire, Air, Water, Earth, Mind, and Body, plus Feather Fall and Wizard Eye on all your characters at two times your skill in Light Magic.	파티 전체에 화염, 공기, 물, 대지, 정신, 육체 보호와 낙하 완화, 마법의 눈을 동시에 시전합니다. 각 효과는 빛 마법 기술 수치의 두 배로 적용됩니다.		Scripts/General/zzMaw-Spells.lua	746	1	보호의 날 주문 설명
-maw-2f8051d794e2	untranslated	tooltip	SkillDescriptionsExpert			Scripts/Structs/extraEditableDescriptions.lua	43	1	
-maw-05ed19818b49	untranslated	tooltip	SkillDescriptionsGM			Scripts/Structs/extraEditableDescriptions.lua	41	1	
-maw-16455c7296c7	untranslated	tooltip	SkillDescriptionsMaster			Scripts/Structs/extraEditableDescriptions.lua	42	1	
-maw-adce8a79d886	untranslated	tooltip	SkillDescriptionsNovice			Scripts/Structs/extraEditableDescriptions.lua	44	1	
-maw-04b7ba7373af	untranslated	tooltip	SkillMasteryDescriptions			Scripts/Structs/extraEditableDescriptions.lua	40	1	
+maw-2f8051d794e2	excluded	tooltip	SkillDescriptionsExpert			Scripts/Structs/extraEditableDescriptions.lua	43	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-05ed19818b49	excluded	tooltip	SkillDescriptionsGM			Scripts/Structs/extraEditableDescriptions.lua	41	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-16455c7296c7	excluded	tooltip	SkillDescriptionsMaster			Scripts/Structs/extraEditableDescriptions.lua	42	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-adce8a79d886	excluded	tooltip	SkillDescriptionsNovice			Scripts/Structs/extraEditableDescriptions.lua	44	1	Internal engine/control/comment literal only; not player-facing localization.
+maw-04b7ba7373af	excluded	tooltip	SkillMasteryDescriptions			Scripts/Structs/extraEditableDescriptions.lua	40	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-7c5a179a26f4	translated	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell.	마법의 힘으로 괴물을 강타하여, 기절 상태에서 회복될 때까지 아무것도 할 수 없게 만듭니다. 기절은 괴물을 뒤로 밀쳐내어 도망칠 기회를 제공합니다. 대지 마법 숙련도가 높을수록 주문의 효과가 강력해집니다.		Scripts/General/zzMaw-Spells.lua	2102	1	기절 주문 설명
 maw-186004378d79	translated	tooltip	Slaps a monster with magical force, forcing it to recover from the stun spell before it can do anything else.  Stun also knocks monsters back a little, giving you a chance to get away while the getting is good.  The greater your skill in Earth Magic, the greater the effect of the spell. Stun does %s%% of a melee attack damage.	마법의 힘으로 괴물을 강타하여 기절에서 회복할 때까지 다른 행동을 하지 못하게 합니다. 또한 괴물을 조금 뒤로 밀쳐 도망칠 기회를 줍니다. 대지 마법 숙련도가 높을수록 효과가 강해집니다. 기절은 근접 공격 피해의 %s%%만큼 피해를 줍니다.	%s	Scripts/General/zzClasses.lua	2140	1	암살자 기절 주문 설명
 maw-731eb4cfeb01	translated	tooltip	Sparks fires small balls of lightning into the world that bounce around until they hit something or dissipate. It is hard to tell where they will go, so this spell is best used in a room crowded with small monsters. Each spark does 1-%s per point of skill in Air Magic.	작은 번개 구체 여러 개를 발사합니다. 구체는 무언가에 부딪히거나 사라질 때까지 튕겨 다니므로 이동 경로를 예측하기 어렵습니다. 작은 몬스터가 많은 방에서 특히 유용합니다. 구체 하나당 피해량은 공기 마법 기술 포인트당 1-%s입니다.	%s	Scripts/General/zzMaw-Spells.lua	2094	1	스파크 주문 설명
@@ -4257,10 +4286,10 @@ maw-d093cb076c31	translated	ui	"%s
 Total Ranged Damage done: %s"	"%s
 총 원거리 피해량: %s"	%s %s	Scripts/General/zzMaw-Stats.lua	578	1	전체 피해 통계; 자리표시자 보존
 maw-66934fbcd7ba	untranslated	ui	446561746820436f756e743a20			Scripts/General/zzMaw-Monsters.lua	2617	1	
-maw-959b2aad9b04	untranslated	ui	\f00000			Scripts/Structs/extraEditableDescriptions.lua	59	1	
+maw-959b2aad9b04	excluded	ui	\f00000			Scripts/Structs/extraEditableDescriptions.lua	59	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-3cfb15d89074	translated	ui	"Beyond
-Madness"	"광기를
-넘어"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
+Madness"	"광란을
+넘어"		Scripts/General/MenuExtraSettings.lua	238	1	QA: Madness=광란, Insanity=광기로 구분
 maw-5e1a584e9bbe	untranslated	ui	BolsterAmount			Scripts/General/MenuExtraSettings.lua	162	2	
 maw-8f7f6a656b06	untranslated	ui	BolsterFineTuning			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-48647474b89f	excluded	ui	boolean			Scripts/General/MenuExtraSettings.lua	135	1	Internal engine/control literal only; not player-facing localization.
@@ -4280,7 +4309,7 @@ maw-df174a3f2faa	translated	ui	Enabled	활성화		Scripts/General/zzClasses.lua	
 maw-92565cb20676	excluded	ui	ExitExtraSettingsMenu			Scripts/General/MenuExtraSettings.lua	48	1	Internal engine/control literal only; not player-facing localization.
 maw-57a2fc6d337a	untranslated	ui	ExSetScr			Scripts/General/MenuExtraSettings.lua	159	1	
 maw-dca8036a46ed	untranslated	ui	ExSetScr2			Scripts/General/AdaptiveMonstersStats.lua	434	1	
-maw-4e3c4231aecb	untranslated	ui	ExtSetDw			Scripts/General/MenuExtraSettings.lua	209	1	
+maw-4e3c4231aecb	excluded	ui	ExtSetDw			Scripts/General/MenuExtraSettings.lua	209	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-7ae26932a060	untranslated	ui	ExtSetUp			Scripts/General/MenuExtraSettings.lua	210	2	
 maw-32a4ead843a3	translated	ui	"Fire\01200000	070"	"화염\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2165	1	저항 표시; 제어 코드 보존
 maw-5370d182f7f5	untranslated	ui	FrameLimit			Scripts/General/MenuExtraSettings.lua	325	1	
@@ -4296,7 +4325,7 @@ maw-158b1f99e07b	translated	ui	Level:          	레벨:          		Scripts/Gener
 maw-3e7d000abd3c	translated	ui	"Magic\01200000	070"	"마법\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2172	1	저항 표시; 제어 코드 보존
 maw-5a70527da19c	excluded	ui	MAW			Scripts/General/MenuExtraSettings.lua	308	1	모드 고유명사; 번역하지 않음
 maw-cab34b294f08	translated	ui	MAW SETTINGS	MAW 설정		Scripts/General/AdaptiveMonstersStats.lua	434	1	추가 설정 화면 제목
-maw-33b934efaa4c	untranslated	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	
+maw-33b934efaa4c	excluded	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	Internal engine/control/comment literal only; not player-facing localization.
 maw-37342e60033c	untranslated	ui	MergeExtraSettings			Scripts/General/MenuExtraSettings.lua	159	1	
 maw-a7b93d2128e8	untranslated	ui	Mode			Scripts/General/MenuExtraSettings.lua	162	2	
 maw-5f618a2f7c06	translated	ui	"Night
@@ -4310,8 +4339,8 @@ insanity"	"광기로 가는
 길"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드
 maw-2ebaecd53665	translated	ui	Show players location	플레이어 위치 표시		Scripts/Modules/Multiplayer/UI/GlobalMap.lua	111	1	멀티플레이 지도 UI
 maw-37a99c3360fb	untranslated	ui	ShowWeatherEffects			Scripts/General/MenuExtraSettings.lua	162	1	
-maw-ca30c9d5d37a	untranslated	ui	TmblrOff			Scripts/General/MenuExtraSettings.lua	69	3	
-maw-eabb173bfed6	untranslated	ui	TmblrOn			Scripts/General/MenuExtraSettings.lua	62	4	
+maw-ca30c9d5d37a	excluded	ui	TmblrOff			Scripts/General/MenuExtraSettings.lua	69	3	Internal engine/control/comment literal only; not player-facing localization.
+maw-eabb173bfed6	excluded	ui	TmblrOn			Scripts/General/MenuExtraSettings.lua	62	4	Internal engine/control/comment literal only; not player-facing localization.
 maw-0c4709ec8d42	untranslated	ui	UseMonsterBolster			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-07725f68015e	translated	ui	Welcome to the arena, warriors! This might be different than you remember. Prepare yourselves, sharpen your skills, and brace for the challenge ahead. Get ready to showcase your strength, strategy, and determination. The battle awaits!	전사들이여, 투기장에 온 것을 환영합니다! 기억하던 모습과는 다를 수 있습니다. 각오를 다지고 기술을 연마해 눈앞의 도전에 대비하십시오. 힘과 전략, 의지를 증명할 준비를 하십시오. 전투가 기다립니다!		Scripts/Global/zzMaw_Arena.lua	4	1	MAW 투기장 안내
 maw-e2f9c26b7cd1	translated	ui	You need to clear the area COMPLETELY first.	먼저 이 지역을 완전히 정리해야 합니다.		Scripts/General/BountyHunt.lua	190	1	현상금 사냥 진행 안내

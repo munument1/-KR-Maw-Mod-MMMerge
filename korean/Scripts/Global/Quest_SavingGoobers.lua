@@ -637,7 +637,7 @@ end
 NPCTopic{NPC = TeleNPCId, Branch = "", Slot = 0, Topic = "", CanShow = CanShowTeleTopicsStd1}
 NPCTopic{NPC = TeleNPCId, Branch = "", Slot = 2, Topic = "", CanShow = CanShowTeleTopicsStd1}
 NPCTopic{
-	Topic	= "Charge telelocator",
+	Topic	= "텔레로케이터 충전",
 	NPC		= TeleNPCId,
 	Slot	= 1,
 	Branch	= "",

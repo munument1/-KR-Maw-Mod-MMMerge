@@ -2869,7 +2869,7 @@ end
 function nightmare()
 	if vars.madnessMode and not vars.introduction then
 		vars.introduction=true
-		Message("Beyond Madness - a word of warning.\n\nNo bolster here (except on starting maps).\n\nQuest timing matters:\n- Finish early: immediate power now, less XP.\n- Finish late: bigger XP later, no early power.\n\nRun-wide tracking:\n- On the character screen, you'll see a death counter shared across all saves of this run.\n- On the map, a red counter appears after you take damage and clears when no monsters are nearby.\n- Loading or leaving the game while that counter is red counts as a death.\n\nIf Insanity wasn't enough for you, you're in the right place.")
+		Message("광란을 넘어 - 경고.\n\n이곳에서는 보정이 적용되지 않습니다(시작 맵 제외).\n\n퀘스트 완료 시점이 중요합니다:\n- 일찍 완료: 즉시 강해지지만 경험치는 적습니다.\n- 늦게 완료: 초반 강화는 없지만 나중에 더 많은 경험치를 얻습니다.\n\n플레이 전체 추적:\n- 캐릭터 화면에는 이번 플레이의 모든 저장 파일에서 공유되는 사망 횟수가 표시됩니다.\n- 맵에서는 피해를 입은 뒤 빨간 카운터가 나타나며, 주변에 몬스터가 없으면 사라집니다.\n- 카운터가 빨간 상태에서 게임을 불러오거나 종료하면 사망 1회로 계산됩니다.\n\n광기 모드로도 부족했다면 제대로 찾아왔습니다.")
 
 	end
 	if vars.Mode==2 then
@@ -3930,9 +3930,9 @@ end
 
 function events.AfterLoadMap()
 	if vars.madnessMode then
-		MAWBOLSTER[600]="Mad."
+		MAWBOLSTER[600]="광란"
 	elseif vars.insanityMode then
-		MAWBOLSTER[600]="Insane"
+		MAWBOLSTER[600]="광기"
 	else
 		MAWBOLSTER[600]="Doom"
 	end

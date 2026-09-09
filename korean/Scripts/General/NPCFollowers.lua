@@ -488,7 +488,7 @@ function events.GameInitialized2()
 
 			Game.NPCTopic[NPCFollowers.DismissNPCTopic]	 = Game.NPCTopic[38]
 			if vars.Mode==2 and GetCurrentHouse()~=1466 and GetCurrentHouse()~=1486 then
-				Game.NPCTopic[1680]="Following you would be foolish"
+				Game.NPCTopic[1680]="당신을 따라가는 건 어리석은 짓이겠군"
 				Game.NPCTopic[NPCFollowers.HireNPCTopic]	 = Game.NPCTopic[1680]
 				Game.NPCTopic[NPCFollowers.HirePeasantEvent] = Game.NPCTopic[1680]
 			else
