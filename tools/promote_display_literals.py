@@ -32,6 +32,41 @@ def write_rows(path: Path, rows):
         writer.writerows(rows)
 
 
+def lua_string_values(line: str) -> set[str]:
+    """Decode ordinary quoted Lua strings from a one-line source context."""
+    values: set[str] = set()
+    i = 0
+    while i < len(line):
+        if line.startswith("--", i):
+            break
+        quote = line[i]
+        if quote not in ('"', "'"):
+            i += 1
+            continue
+        i += 1
+        out: list[str] = []
+        while i < len(line):
+            ch = line[i]
+            if ch == "\\" and i + 1 < len(line):
+                nxt = line[i + 1]
+                escapes = {
+                    "n": "\n", "r": "\r", "t": "\t", "\\": "\\",
+                    '"': '"', "'": "'",
+                }
+                out.append(escapes.get(nxt, "\\" + nxt))
+                i += 2
+                continue
+            if ch == quote:
+                i += 1
+                values.add("".join(out))
+                break
+            out.append(ch)
+            i += 1
+        else:
+            break
+    return values
+
+
 def mark(row: dict[str, str], reason: str) -> bool:
     row["patchable"] = "yes"
     row["reason"] = reason
@@ -45,45 +80,48 @@ def promote(row: dict[str, str]) -> bool:
     context = row.get("context", "")
     if not source:
         return False
-    q = re.escape(source)
+
+    literals = lua_string_values(context)
+    if source not in literals:
+        return False
 
     # All quoted fragments on the RHS of known player-visible text tables are
-    # display text. This catches fragments around concatenated numeric values.
+    # display text. Decoding literals first also handles sources containing
+    # escaped newlines/tabs such as "Damage\\n\\n..." correctly.
     if re.search(
-        rf"Game\.(?:GlobalTxt|PlaceMonTxt|NPCText|ClassNames)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
+        r"Game\.(?:GlobalTxt|PlaceMonTxt|NPCText|ClassNames)\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=",
         context,
     ):
         return mark(row, "proven_game_display_assignment")
 
     # Spell text fields are player-facing: Name, Description and mastery text.
     if re.search(
-        rf"Game\.SpellsTxt\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=.*['\"]{q}['\"]",
+        r"Game\.SpellsTxt\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=",
         context,
     ):
         return mark(row, "proven_game_display_assignment")
 
     # NPC names are displayed in dialogue and multiplayer UI.
-    if re.search(
-        rf"Game\.NPC\s*\[[^\]]+\]\.Name\s*=.*['\"]{q}['\"]",
-        context,
-    ):
+    if re.search(r"Game\.NPC\s*\[[^\]]+\]\.Name\s*=", context):
         return mark(row, "proven_npc_display_name")
 
-    # Skillz.setName/Skillz.setDesc feed the skills UI directly.
-    if re.search(rf"\bSkillz\.setName\s*\([^,]+,\s*['\"]{q}['\"]", context):
+    # Skillz.setName/Skillz.setDesc feed the skills UI directly. Because the
+    # source must already be one of the decoded quoted literals on this call's
+    # line, no text-value regex is needed here.
+    if re.search(r"\bSkillz\.setName\s*\(", context):
         return mark(row, "proven_skill_display_name")
-    if re.search(rf"\bSkillz\.setDesc\s*\(.*['\"]{q}['\"]", context):
+    if re.search(r"\bSkillz\.setDesc\s*\(", context):
         return mark(row, "proven_skill_display_description")
 
     # Item names/descriptions are shown in inventory/tooltips. Allow either the
     # canonical Game.ItemsTxt table or a local alias for NotIdentifiedName.
     if re.search(
-        rf"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=.*['\"]{q}['\"]",
+        r"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=",
         context,
     ):
         return mark(row, "proven_item_display_text")
     if re.search(
-        rf"[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\]\.NotIdentifiedName\s*=.*['\"]{q}['\"]",
+        r"[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\]\.NotIdentifiedName\s*=",
         context,
     ):
         return mark(row, "proven_item_display_name")
