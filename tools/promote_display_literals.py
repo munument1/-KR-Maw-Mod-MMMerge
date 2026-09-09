@@ -3,9 +3,9 @@
 
 This pass is intentionally conservative. It recognizes text written directly to
 MMExtension display tables/fields and Skillz display helpers; internal keys and
-control values remain unpatchable. For a proven display assignment, every quoted
-text fragment on the assignment RHS is display text, including fragments around
-a concatenated numeric value.
+control values remain unpatchable. It also follows a short, single-variable data
+flow when a string variable is passed directly to a proven skill-description
+sink before that variable is reassigned.
 """
 
 from __future__ import annotations
@@ -18,6 +18,7 @@ from collections import Counter
 from pathlib import Path
 
 FIELDS = ["id", "category", "source", "file", "line", "patchable", "reason", "context"]
+ASSIGN_RE = re.compile(r"^\s*(?:local\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=")
 
 
 def read_rows(path: Path):
@@ -67,13 +68,58 @@ def lua_string_values(line: str) -> set[str]:
     return values
 
 
+def display_sink_uses_var(line: str, var: str) -> bool:
+    q = re.escape(var)
+    if re.search(rf"\bSkillz\.setDesc\s*\([^)]*,\s*{q}\s*\)", line):
+        return True
+    if re.search(
+        rf"Game\.SkillDes(?:Normal|Expert|Master|GM)\s*\[[^\]]+\]\s*=.*\b{q}\b",
+        line,
+    ):
+        return True
+    return False
+
+
+def discover_display_variable_lines(root: Path) -> set[tuple[str, int]]:
+    """Find simple string assignments consumed soon by a proven display sink.
+
+    We only look forward 12 physical lines. If the same variable is reassigned
+    first, the candidate is rejected. This deliberately misses complex dataflow
+    rather than risking translation of internal/control strings.
+    """
+    safe: set[tuple[str, int]] = set()
+    scripts = root / "Scripts"
+    if not scripts.exists():
+        return safe
+
+    for path in sorted(scripts.rglob("*.lua")):
+        rel = str(path.relative_to(root)).replace("\\", "/")
+        try:
+            lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+        except OSError:
+            continue
+        for i, line in enumerate(lines):
+            m = ASSIGN_RE.match(line)
+            if not m or not lua_string_values(line):
+                continue
+            var = m.group(1)
+            reassignment = re.compile(rf"^\s*(?:local\s+)?{re.escape(var)}\s*=")
+            for j in range(i + 1, min(len(lines), i + 13)):
+                if reassignment.match(lines[j]):
+                    break
+                if display_sink_uses_var(lines[j], var):
+                    safe.add((rel, i + 1))
+                    break
+    return safe
+
+
 def mark(row: dict[str, str], reason: str) -> bool:
     row["patchable"] = "yes"
     row["reason"] = reason
     return True
 
 
-def promote(row: dict[str, str]) -> bool:
+def promote(row: dict[str, str], variable_display_lines: set[tuple[str, int]]) -> bool:
     if row.get("patchable") != "no" or row.get("reason") != "uncertain_context":
         return False
     source = row.get("source", "")
@@ -94,36 +140,33 @@ def promote(row: dict[str, str]) -> bool:
     ):
         return mark(row, "proven_game_display_assignment")
 
-    # Spell text fields are player-facing: Name, Description and mastery text.
     if re.search(
         r"Game\.SpellsTxt\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=",
         context,
     ):
         return mark(row, "proven_game_display_assignment")
 
-    # NPC names are displayed in dialogue and multiplayer UI.
     if re.search(r"Game\.NPC\s*\[[^\]]+\]\.Name\s*=", context):
         return mark(row, "proven_npc_display_name")
 
-    # Skillz.setName/Skillz.setDesc feed the skills UI directly. Because the
-    # source must already be one of the decoded quoted literals on this call's
-    # line, no text-value regex is needed here.
     if re.search(r"\bSkillz\.setName\s*\(", context):
         return mark(row, "proven_skill_display_name")
     if re.search(r"\bSkillz\.setDesc\s*\(", context):
         return mark(row, "proven_skill_display_description")
 
-    # These four MMExtension tables are the text shown for Novice/Expert/Master/
-    # Grandmaster skill mastery effects. Quoted fragments on their assignment
-    # RHS are therefore safe player-facing localization targets.
     if re.search(
         r"Game\.SkillDes(?:Normal|Expert|Master|GM)\s*\[[^\]]+\]\s*=",
         context,
     ):
         return mark(row, "proven_skill_mastery_description")
 
-    # Item names/descriptions are shown in inventory/tooltips. Allow either the
-    # canonical Game.ItemsTxt table or a local alias for NotIdentifiedName.
+    try:
+        key = (row.get("file", ""), int(row.get("line", "0")))
+    except ValueError:
+        key = ("", 0)
+    if key in variable_display_lines:
+        return mark(row, "proven_display_variable_flow")
+
     if re.search(
         r"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=",
         context,
@@ -149,20 +192,23 @@ def main() -> int:
     occ_path = root / args.occurrences
     report_path = root / args.report
     rows = read_rows(occ_path)
+    variable_display_lines = discover_display_variable_lines(root)
 
     promoted = 0
     for row in rows:
-        promoted += int(promote(row))
+        promoted += int(promote(row, variable_display_lines))
     write_rows(occ_path, rows)
 
     report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
     report["patchability_reasons"] = dict(sorted(Counter(r.get("reason", "") for r in rows).items()))
     report["proven_display_promotions"] = promoted
+    report["proven_display_variable_lines"] = len(variable_display_lines)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(json.dumps({
         "promoted_occurrences": promoted,
         "patchable_occurrences": sum(r.get("patchable") == "yes" for r in rows),
+        "display_variable_lines": len(variable_display_lines),
     }, ensure_ascii=False, indent=2))
     return 0
 
