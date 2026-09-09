@@ -11,8 +11,8 @@ function MakeRespecDude(npcID)
 	  Slot = 3,
 	  Ungive = function(t) changeToRespec(npcID) end,
       Texts = {
-          Topic = "Skill reset info",
-          Ungive = "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required"  
+          Topic = "기술 초기화 안내",
+          Ungive = "동의하면 보유한 모든 기술이 처음의 초보 단계로 돌아가며, 지금까지 투자한 모든 기술 포인트를 돌려받습니다.\n\n기술이 필요한 레벨에 다시 도달하면 이전에 획득했던 숙련도도 다시 부여됩니다.\n\n이 서비스를 이용하려면 현재 레벨당 1,000 금화를 지불해야 합니다."  
 	  }
   }
 
@@ -26,7 +26,7 @@ function changeToRespec(npcID)
   	  Slot = 3,
       Ungive = function(t) RespecSkills(npcID) end,
       Texts = {
-          Topic = "I want to reset",
+          Topic = "초기화하겠습니다",
           Ungive = [[Your skill points has been reset!]],
       }
   }

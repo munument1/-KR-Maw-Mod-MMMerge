@@ -443,18 +443,29 @@ Require 40 power to work.
 "	"무기에 무작위 2단계 원소 피해 마법부여를 추가합니다.
 작동하려면 위력 40이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[243] = ""Adds a random tier 2 elemental damage enchant to a weapon\nRequire 40 power to work.\n"","
-Amber Droplet	호박 방울	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Amethyst Chunk	자수정 덩어리	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Amber Droplet	호박 방울	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Amber Droplet"","
+Amethyst Chunk	자수정 덩어리	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Amethyst Chunk"","
+Archibald's Mirror	아치발드의 거울	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Archibald's Mirror"","
 Ascended 	승천한 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Name=StrColor(178,255,255, ""Ascended "" .. t.Name)"
-Ascended Amber Droplet	승천한 호박 방울	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Lunar Shard	승천한 달의 파편	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Ascended Solarstone	승천한 태양석	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Ascended Amber Droplet	승천한 호박 방울	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Ascended Amber Droplet"","
+Ascended Amethyst Chunk	승천한 자수정 덩어리	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Amethyst Chunk"","
+Ascended Erathian Sapphire	승천한 에라시아 사파이어	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Erathian Sapphire"","
+Ascended Erudite Crystal	승천한 현자의 수정	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Erudite Crystal"","
+Ascended Fire Topaz	승천한 화염 토파즈	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Fire Topaz"","
+Ascended Gemcutter's Ruby	승천한 보석세공사의 루비	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Gemcutter's Ruby"","
+Ascended Lunar Shard	승천한 달의 파편	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Ascended Lunar Shard"","
+Ascended Queen's Diamond	승천한 여왕의 다이아몬드	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Queen's Diamond"","
+Ascended Royal Amethyst	승천한 왕실 자수정	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Royal Amethyst"","
+Ascended Solarstone	승천한 태양석	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Ascended Solarstone"","
 Boss density increased by 	보스 밀도 증가: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[16]=""Boss density increased by "" .. getMapAffixPower(16, power) .. ""%"","
 Bosses have 	보스: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[18]=""Bosses have "" .. getMapAffixPower(18, power) .. ""% increased HP and damage"","
 Buff effects reduced by 	버프 효과 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[33]=""Buff effects reduced by "" .. getMapAffixPower(33, power) .. ""%"","
+Buff Rework	버프 개편	translated	misc	1	reviewed_maw_settings_header:1	Scripts/General/zz_Maw-initialize.lua	"createSwitch(180, ""Buff Rework"", ""buffRework"", {""ON"",""OFF""})"
 Captain Finch	핀치 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[203]=""Captain Finch"""
 Captain Sharp-Tooth	날카로운 이빨 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[201]=""Captain Sharp-Tooth"""
 Captain Strong-Scale	단단한 비늘 대장	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[202]=""Captain Strong-Scale"""
+Celestial Orb	천상의 구체	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Celestial Orb"","
+Creator's Hourglass	창조자의 모래시계	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Creator's Hourglass"","
 "Cures and prevent Stoned condition for 6 hours.
 Require 20 power to work.
 "	"석화를 치료하고 6시간 동안 석화를 방지합니다.
@@ -465,12 +476,15 @@ Cures and prevents Disease and Poison for 6 hours.	질병과 독을 치료하고
 Cures and prevents Fear and Insanity for 6 hours.	공포와 광기를 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[227] = ""Cures and prevents Fear and Insanity for 6 hours."","
 Cures and prevents Weakness and inducted Sleep for 6 hours.	약화와 강제 수면을 치료하고 6시간 동안 방지합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[224] = ""Cures and prevents Weakness and inducted Sleep for 6 hours."","
 Currently Active Legendary effects:	현재 활성화된 전설 효과:	translated	misc	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local legTxt=""Currently Active Legendary effects:"""
+Damage on Friendly Units	아군 피해	translated	misc	1	reviewed_maw_settings_header:1	Scripts/General/zz_Maw-initialize.lua	"createSwitch(300, ""Damage on Friendly Units"", ""friendlyDamage"", {""ON"",""OFF""})"
+Emerald of Power	힘의 에메랄드	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Emerald of Power"","
 Empty Barrel	빈 통	translated	misc	1	event_hint_assignment:1	Scripts/General/zzMaw-Maps.lua	"evt.hint[19999] = ""Empty Barrel"""
 Endless Arena	끝없는 투기장	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Topic = ""Endless Arena"","
 Enter the data.	데이터를 입력하세요.	translated	misc	3	question_call:3	Scripts/Global/Quest_SavingGoobers.lua	"Answer = Question(""Enter the data."")"
-Erathian Sapphire	에라시아 사파이어	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Erudite Crystal	현자의 수정	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
-Fire Topaz	화염 토파즈	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Erathian Sapphire	에라시아 사파이어	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Erathian Sapphire"","
+Erudite Crystal	현자의 수정	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Erudite Crystal"","
+Eye of Void	공허의 눈	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Eye of Void"","
+Fire Topaz	화염 토파즈	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Fire Topaz"","
 "Fix caracter age at 20.
 Require 50 power to work.
 "	"캐릭터의 나이를 20세로 고정합니다.
@@ -481,12 +495,14 @@ Require 50 power to work.
 "	"캐릭터의 나이를 60세로 고정합니다.
 작동하려면 위력 50이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[258] = ""Fix caracter age at 60.\nRequire 50 power to work.\n"","
-Gemcutter's Ruby	보석세공사의 루비	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Gemcutter's Ruby	보석세공사의 루비	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Gemcutter's Ruby"","
 Grant 500 Experience point per Power to the player.	플레이어에게 위력 1당 경험치 500을 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[259] = ""Grant 500 Experience point per Power to the player."","
 Healing reduced by 	치유량 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[31]=""Healing reduced by "" .. getMapAffixPower(31, power) .. ""%"","
 Heals based on the potion's power of hit points.	물약의 위력에 따라 생명력을 회복합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[247] = ""Heals based on the potion's power of hit points."","
 Health: 	생명력: 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzzOnlineVariableSender.lua	"StrColor(0,255,0,  ""Health: "" .. tostring(Party[0].HP) .. ""/"" .. tostring(round(maxHP))) .."
+Homing Projectiles	유도 투사체	translated	misc	1	reviewed_maw_settings_header:1	Scripts/General/zz_Maw-initialize.lua	"createSwitch(260, ""Homing Projectiles"", ""homingProjectiles"", {""ON"",""OFF""})"
 Huge Orc	거대 오크	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[304]=""Huge Orc"""
+I want to reset	초기화하겠습니다	translated	misc	1	reviewed_respec_ui:1	Scripts/Global/zzMAWRespec.lua	"Topic = ""I want to reset"","
 Increases all resistances temporarily by 10+ (1 x Power) for 6 hours.	6시간 동안 모든 저항이 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[263] = ""Increases all resistances temporarily by 10+ (1 x Power) for 6 hours."","
 Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours.	6시간 동안 7대 능력치가 모두 10 + (1 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[257] = ""Increases all Seven Statistics temporarily by 10+(1 x Power) for 6 hours."","
 Increases Attack by 5+(0.5 x Power) for 6 Hours	6시간 동안 공격력이 5 + (0.5 × 위력)만큼 증가합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[230] = ""Increases Attack by 5+(0.5 x Power) for 6 Hours"","
@@ -498,7 +514,9 @@ It looks like you've never tried the Endless Waves mode before. In this mode, wa
 Leech reduced by 	흡수량 감소: 	translated	misc	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[32]=""Leech reduced by "" .. getMapAffixPower(32, power) .. ""%"","
 Let's get started!	시작하지!	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Ungive = ""Let's get started!"","
 Locate person	사람 찾기	translated	misc	1	reviewed_telelocator_ui:1	Scripts/Global/Quest_SavingGoobers.lua	"Topic	= ""Locate person"","
-Lunar Shard	달의 파편	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Loot Filter	전리품 필터	translated	misc	1	reviewed_maw_settings_header:1	Scripts/General/zz_Maw-initialize.lua	"createSwitch(340, ""Loot Filter"", ""lootFilter"", {""OFF"",""Common"", ""Uncom."", ""Rare"", ""Epic"",""Ancient"",""Primordial""})"
+Lunar Shard	달의 파편	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Lunar Shard"","
+M&M6 Projectiles	M&M6 투사체	translated	misc	1	reviewed_maw_settings_header:1	Scripts/General/zz_Maw-initialize.lua	"createSwitch(220, ""M&M6 Projectiles"", ""restoreProjectiles"", {""ON"",""OFF""})"
 "M/R/S:%s/%s/%s
 
 
@@ -529,11 +547,15 @@ Lunar Shard	달의 파편	translated	misc	1	reviewed_crafting_status_name:1	Scri
 
 
 "	translated	misc	1	formatted_colored_text:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[47]=string.format(""M/R:%s/%s\n\n\n\n\n\n\n"",StrColor(255,0,0,DPS1),StrColor(200,200,0,DPS2))"
+Map Level: 	지도 레벨: 	translated	misc	1	reviewed_map_level_label:1	Scripts/General/zzMaw-Maps.lua	"t.Enchantment=""Map Level: "" .. it.MaxCharges*10+20+baseLevel"
 Mountain Man	산사람	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[204]=""Mountain Man"""
 Naga Empress	나가 여제	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[205]=""Naga Empress"""
 NPC %d	NPC %d	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"Label = strformat(""NPC %d"", i),"
 NPC PANEL	NPC 패널	translated	misc	1	display_field_assignment:1	Scripts/General/NPCFollowers.lua	"MF.RegisterExtraKeyBind({DefKey = 0x30, RegValue = ""xkey_npcpanel"", Label = ""NPC PANEL"","
+Orb of Creation	창조의 구체	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Orb of Creation"","
 Other players in house:	집 안의 다른 플레이어:	translated	misc	1	reviewed_multiplayer_house_ui:1	Scripts/Modules/Multiplayer/UI/House.lua	"ShowTextRight(""Other players in house:"", baseX + 76, baseY - (count - 1) * lineHeight - 20)"
+Pandora's Cube	판도라의 큐브	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Pandora's Cube"","
+Pearl of Memory	기억의 진주	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Pearl of Memory"","
 "Permanently adds 'of Darkness' property to a non-magic weapon.
 Require 100 power to work.
 "	"마법이 부여되지 않은 무기에 '어둠의' 속성을 영구적으로 추가합니다.
@@ -591,7 +613,7 @@ Require 20 power to work.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[235] = ""Prevents drowning damage for 6 hours.\nRequire 20 power to work.\n"","
 Provides Haste+Heroism+Bless.	신속 + 영웅심 + 축복 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[245] = ""Provides Haste+Heroism+Bless."","
 Provides Shield+Stone Skin+Preservation.	방패 + 돌 피부 + 보존 효과를 부여합니다.	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[251] = ""Provides Shield+Stone Skin+Preservation."","
-Queen's Diamond	여왕의 다이아몬드	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Queen's Diamond	여왕의 다이아몬드	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Queen's Diamond"","
 "Recipes:
 Add Orange: Champion's Potion
 Add Purple: Power Boost
@@ -665,7 +687,7 @@ Require 40 power to work.
 "	"죽음과 소멸을 제외한 모든 상태 이상을 제거하고 6시간 동안 방지합니다.
 작동하려면 위력 40이 필요합니다.
 "	translated	misc	1	proven_alchemy_item_tooltip:1	Scripts/General/zzAlchemy.lua	"[246] = ""Removes and prevents all conditions, except Dead and Eradication, for 6 hours.\nRequire 40 power to work.\n"","
-Royal Amethyst	왕실 자수정	translated	misc	1	reviewed_crafting_status_name:1	Scripts/General/zzMaw-Items.lua	"local craftingNames={""Lunar Shard"", ""Fire Topaz"", ""Amethyst Chunk"", ""Amber Droplet"", ""Royal Amethyst"", ""Gemcutter's Ruby"", ""Solarstone"", ""Erudite Crystal"", ""Erathian Sapphire"", ""Queen's Diamond"",""Ascended Lunar Shard"", ""Ascended Topaz"", ""Ascended Amethyst"", ""Ascended Amber"", ""Ascended Purple Amethyst"", ""Ascended Ruby"", ""Ascended Solarstone"", ""Ascended Amber Droplet"", ""Ascended Sapphire"", ""Ascended Diamond""}"
+Royal Amethyst	왕실 자수정	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Royal Amethyst"","
 Serpent Mother	뱀의 어머니	translated	misc	1	reviewed_monster_display_name:1	Scripts/General/zSERIOUSMAW.lua	"name[200]=""Serpent Mother"""
 Start Level 	도전 레벨 	translated	misc	1	reviewed_arena_ui:1	Scripts/Global/zzMaw_Arena.lua	"Topic = ""Start Level ""  .. vars.highestArenaWave+1,"
 "Targets found. Realms: Attuned. Time: Attuned.
@@ -700,6 +722,11 @@ Targets' status: %s, type: %s, state: %s.
 "	"세계: 엔로스. 영역: %s. 지점: %s. 연도: %s
 대상 상태: %s, 유형: %s, 상태: %s.
 "	translated	misc	1	reviewed_telelocator_ui:1	Scripts/Global/Quest_SavingGoobers.lua	"local FString	= ""World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n"""
+"
+Level Recommended:
+"	"
+권장 레벨:
+"	translated	monster	1	reviewed_recommended_level_label:1	Scripts/General/zzMaw-Monsters.lua	"Game.TransTxt[46+i]=string.format(Game.TransTxt[46+i] .. ""\nLevel Recommended:\n"" .. levelLow .. ""-"" .. levelHigh)"
 % be an higher tier	% 확률로 더 높은 등급이 됨	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[17]=""Monsters have "" .. getMapAffixPower(17, power) .. ""% be an higher tier"","
 % chance to become a boss	% 확률로 보스가 됨	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[19]=""Monsters have "" .. getMapAffixPower(19, power) .. ""% chance to become a boss"","
 % chance to cast dragon breath	% 확률로 드래곤 브레스 시전	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[4]=""Monsters have "" .. getMapAffixPower(4, power) .. ""% chance to cast dragon breath"","
@@ -998,6 +1025,15 @@ Assassination	암살	translated	skill	1	proven_skill_display_name:1	Scripts/Gene
 Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(coverSkill, 5, ""Attacking will increase you next Cover chance by 15%"")"
 Blood	혈마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(18, ""Blood"")"
 Body Magic	육체 마법	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzClasses.lua	"Skillz.setName(18, ""Body Magic"")"
+"By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. 
+
+Once your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.
+
+For this service, a tribute of 1000 gold for each level you have achieved shall be required"	"동의하면 보유한 모든 기술이 처음의 초보 단계로 돌아가며, 지금까지 투자한 모든 기술 포인트를 돌려받습니다.
+
+기술이 필요한 레벨에 다시 도달하면 이전에 획득했던 숙련도도 다시 부여됩니다.
+
+이 서비스를 이용하려면 현재 레벨당 1,000 금화를 지불해야 합니다."	translated	skill	1	reviewed_respec_ui:1	Scripts/Global/zzMAWRespec.lua	"Ungive = ""By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. \n\nOnce your skill grows to the necessary level, mastery of it shall be bestowed upon you once more, should you have achieved it before.\n\nFor this service, a tribute of 1000 gold for each level you have achieved shall be required"""
 "Chain armor is the medium armor type.  It provides more protection than leather and less than plate, but it also slows your character down more than leather.
 
 Chain Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Chain Armor by a percent amount."	"사슬 갑옷은 중간 무게의 방어구입니다. 가죽 갑옷보다 보호력이 높고 판금 갑옷보다는 낮지만, 가죽 갑옷보다 행동을 더 느리게 만듭니다.
@@ -1143,6 +1179,7 @@ Scales	비늘	translated	skill	1	proven_skill_display_name:1	Scripts/General/zzC
 Shield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."	"방패 기술은 물리 공격과 마법 공격 모두에 뛰어난 방어력을 제공합니다.
 
 방패 기술은 방패에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."	translated	skill	1	proven_skill_display_description:1	Scripts/General/zzMAW-Skills.lua	"Skillz.setDesc(8,1,""Shield skill provides great defense against both physical and magical attacks.\n\nShield Skill boosts the AC and Resistances gained from your Shield  by a percent amount."")"
+Skill reset info	기술 초기화 안내	translated	skill	1	reviewed_respec_ui:1	Scripts/Global/zzMAWRespec.lua	"Topic = ""Skill reset info"","
 Skills adds 	기술 보너스: 	translated	skill	4	proven_skill_mastery_description:4	Scripts/General/zzMAW-Skills.lua	"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
 "Skills adds 3 dmg, 3 atk, 2% speed
 Each 10 points in armsmaster increase all the melee weapon skills by 1"	"기술 보너스: 피해 3, 공격 3, 속도 2%

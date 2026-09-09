@@ -1,10 +1,10 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 964,
-  "translated_entries_with_patchable_occurrences": 963,
-  "patchable_occurrences_targeted": 1254,
-  "skipped_unpatchable_occurrences_for_translated_sources": 83,
+  "translated_entries": 989,
+  "translated_entries_with_patchable_occurrences": 988,
+  "patchable_occurrences_targeted": 1291,
+  "skipped_unpatchable_occurrences_for_translated_sources": 71,
   "changed_files": [
     {
       "file": "Scripts/General/AdaptiveMonstersStats.lua",
@@ -28,7 +28,7 @@
     },
     {
       "file": "Scripts/General/zzAlchemy.lua",
-      "replacements": 131
+      "replacements": 158
     },
     {
       "file": "Scripts/General/zzClasses.lua",
@@ -48,11 +48,11 @@
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
-      "replacements": 60
+      "replacements": 61
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 72
+      "replacements": 73
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
@@ -64,7 +64,7 @@
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
-      "replacements": 2
+      "replacements": 7
     },
     {
       "file": "Scripts/General/zzzOnlineVariableSender.lua",
@@ -88,7 +88,7 @@
     },
     {
       "file": "Scripts/Global/zzMAWRespec.lua",
-      "replacements": 3
+      "replacements": 6
     },
     {
       "file": "Scripts/Global/zzMAWStatusMsg.lua",

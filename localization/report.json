@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1687,
-    "translated": 964,
-    "untranslated": 374
+    "translated": 989,
+    "untranslated": 349
   },
   "categories": {
     "class": 37,
@@ -64,19 +64,24 @@
     "proven_spelltxt_alias_display": 32,
     "proven_stat_tooltip_text": 21,
     "question_call": 4,
+    "reviewed_alchemy_item_name": 27,
     "reviewed_arena_ui": 4,
     "reviewed_crafting_status_name": 20,
     "reviewed_internal_api_literal": 253,
     "reviewed_item_corruption_message": 8,
+    "reviewed_map_level_label": 1,
+    "reviewed_maw_settings_header": 5,
     "reviewed_monster_display_name": 7,
     "reviewed_multiplayer_experience_ui": 1,
     "reviewed_multiplayer_house_ui": 3,
+    "reviewed_recommended_level_label": 1,
+    "reviewed_respec_ui": 3,
     "reviewed_telelocator_ui": 12,
     "settings_display_table": 13,
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 592
+    "uncertain_context": 555
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -104,9 +109,9 @@
   "proven_item_enchantment_label_lines": 27,
   "proven_item_enchantment_label_promotions": 31,
   "proven_settings_header_promotions": 2,
-  "reviewed_bulk_display_promotions": 55,
-  "uncertain_review_unique_sources": 366,
-  "uncertain_review_occurrences": 536,
+  "reviewed_bulk_display_promotions": 92,
+  "uncertain_review_unique_sources": 341,
+  "uncertain_review_occurrences": 511,
   "uncertain_review_exact_mmmerge_matches": 15,
   "uncertain_review_ambiguous_mmmerge_matches": 7
 }

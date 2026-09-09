@@ -2065,7 +2065,7 @@ function events.BuildItemInformationBox(t)
 	if it.Number==290 and t.Enchantment then
 		local baseMap=mapLevels[Game.MapStats[it.BonusStrength].Name]
 		local baseLevel=round((baseMap.Low+baseMap.Mid+baseMap.High)/3)
-		t.Enchantment="Map Level: " .. it.MaxCharges*10+20+baseLevel
+		t.Enchantment="지도 레벨: " .. it.MaxCharges*10+20+baseLevel
 		local power=0
 		if it.Bonus==0 then
 			if it.BonusExpireTime>0 then
