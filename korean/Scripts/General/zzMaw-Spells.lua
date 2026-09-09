@@ -3421,7 +3421,7 @@ function events.GameInitialized2()
 
 end
 
-local mastery={"Novice","Expert","Master","Grandmaster"}
+local mastery={"초보","Expert","Master","그랜드마스터"}
 function events.BuildItemInformationBox(t)
 	local it=t.Item
 	if it.Number>=971 and it.Number<980 then

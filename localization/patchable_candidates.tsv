@@ -1443,6 +1443,7 @@ Empower Magic	마법 강화	translated	spell	1	proven_spelltxt_alias_display:1	S
 Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air.	깃털처럼 가벼운 책장에서 정전기가 웅웅거립니다. 소용돌이치는 대기의 인장이 글줄을 바람에 흩뜨리지만, 대기 마법에 숙련된 자에게는 다시 제자리를 찾습니다.	translated	spell	1	proven_itemtxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"txt[972].Notes=""Feather-light pages hum with static; a whirling air-sigil scatters the lines to the wind, settling only for one trained in Air."""
 Fire Magic Book	화염 마법서	translated	spell	1	proven_itemtxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"txt[971].Name=""Fire Magic Book"""
 Frostbite	동상	translated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[29].Name=""Frostbite"""
+Grandmaster	그랜드마스터	translated	spell	1	reviewed_batch028_mastery_display:1	Scripts/General/zzMaw-Spells.lua	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 "Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
 From 50 power on will protect also from death and eradication.
 "	"6시간 동안 마법 보호(주문과 동일) 효과를 5 + 물약 위력 10당 1만큼 부여합니다.
@@ -1487,6 +1488,7 @@ Monster slows by 1/2 of speed	몬스터의 속도가 50% 감소합니다	transla
 Monster slows by 1/4 of speed	몬스터의 속도가 25% 감소합니다	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[26].GM=""Monster slows by 1/4 of speed"""
 No additional effects	추가 효과 없음	translated	spell	2	proven_game_display_assignment:2	Scripts/General/zzClasses.lua	"Game.SpellsTxt[76].Master=""No additional effects"""
 Normal	보통	translated	spell	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Novice	초보	translated	spell	1	reviewed_batch028_mastery_display:1	Scripts/General/zzMaw-Spells.lua	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 Paralysis	마비	translated	spell	1	proven_monster_info_label:1	Scripts/General/zzMaw-Monsters.lua	"[5] = ""Insanity"", [22] = ""Spell drain"", [12] = ""Paralysis"", [23] = ""Fear"","
 Players spell recovery speed increased by 	플레이어 주문 회복 속도 증가: 	translated	spell	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[27]=""Players spell recovery speed increased by "" .. getMapAffixPower(27, power) .. ""%"","
 Quick Spell	퀵스펠	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Stats.lua	"Game.GlobalTxt[172]=""Quick Spell"""

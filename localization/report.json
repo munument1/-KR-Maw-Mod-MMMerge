@@ -68,6 +68,7 @@
     "reviewed_arena_ui": 4,
     "reviewed_batch026_display": 21,
     "reviewed_batch027_display": 10,
+    "reviewed_batch028_mastery_display": 2,
     "reviewed_crafting_status_name": 20,
     "reviewed_immunity_status_name": 17,
     "reviewed_internal_api_literal": 443,
@@ -84,7 +85,7 @@
     "status_text_call": 205,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 166
+    "uncertain_context": 164
   },
   "validation_errors": [],
   "reviewed_short_literal_supplements": 1,
@@ -118,6 +119,7 @@
   "reviewed_bulk_display_promotions": 108,
   "reviewed_batch026_display_promotions": 21,
   "reviewed_batch027_display_promotions": 10,
+  "reviewed_batch028_display_promotions": 2,
   "uncertain_review_unique_sources": 8,
   "uncertain_review_occurrences": 17,
   "uncertain_review_exact_mmmerge_matches": 2,

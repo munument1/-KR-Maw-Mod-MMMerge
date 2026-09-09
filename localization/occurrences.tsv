@@ -6134,9 +6134,9 @@ maw-d892a797ad07	spell	Thick, herb-scented vellum warm to the pulse; a vigor-war
 maw-62e736ba86bd	spell	A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light.	Scripts/General/zzMaw-Spells.lua	3415	yes	proven_itemtxt_alias_display	"txt[978].Notes=""A pale radiance seeps through the cover; a sun-seal flares too bright to read, dimming into clarity for those trained in Light."""
 maw-df83636b672f	spell	Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark.	Scripts/General/zzMaw-Spells.lua	3416	yes	proven_itemtxt_alias_display	"txt[979].Notes=""Ink like pooled night that drinks the torchglow; a shadow-ward devours the lines, revealing them only to readers skilled in Dark."""
 maw-d7a501f83242	spell	Expert	Scripts/General/zzMaw-Spells.lua	3424	no	uncertain_context	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
-maw-7fef960c0f73	spell	Grandmaster	Scripts/General/zzMaw-Spells.lua	3424	no	uncertain_context	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
+maw-7fef960c0f73	spell	Grandmaster	Scripts/General/zzMaw-Spells.lua	3424	yes	reviewed_batch028_mastery_display	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 maw-78f3842f0201	spell	Master	Scripts/General/zzMaw-Spells.lua	3424	no	uncertain_context	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
-maw-16ca44702a9b	spell	Novice	Scripts/General/zzMaw-Spells.lua	3424	no	uncertain_context	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
+maw-16ca44702a9b	spell	Novice	Scripts/General/zzMaw-Spells.lua	3424	yes	reviewed_batch028_mastery_display	"local mastery={""Novice"",""Expert"",""Master"",""Grandmaster""}"
 maw-09ca3bd88609	tooltip	"
 
 You need at least "	Scripts/General/zzMaw-Spells.lua	3446	yes	formatted_colored_text	"t.Description=t.Description .. StrColor(255,0,0, ""\n\nYou need at least "" .. mastery[m] .. "" skill in "" ..  name .. "" to open the book"")"
