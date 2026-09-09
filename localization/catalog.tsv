@@ -4015,9 +4015,11 @@ maw-24277300a2da	translated	ui	"
 Bolster Level in MM6: "	"
 
 MM6 보정 레벨: "		Scripts/General/zzMaw-Stats.lua	551	2	보정 레벨 UI
-maw-da710b5766cb	untranslated	ui	"
+maw-da710b5766cb	translated	ui	"
 
-Current Health: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
+Current Health: "	"
+
+현재 생명력: "		Scripts/General/zzMaw-Monsters.lua	2204	1	몬스터 감정창
 maw-dffb7b290206	translated	ui	"
 
 CURRENT MAP HEALING RECOUNT:
@@ -4038,9 +4040,11 @@ Energy resistance is equal to the lowest resistance."	"
 빛 저항은 정신 저항과 육체 저항 중 낮은 값과 같습니다.
 어둠 저항은 원소 저항 중 가장 낮은 값과 같습니다.
 에너지 저항은 모든 저항 중 가장 낮은 값과 같습니다."		Scripts/General/zzMaw-Stats.lua	743	1	저항 툴팁
-maw-5470a2089a61	untranslated	ui	"
+maw-5470a2089a61	translated	ui	"
 
-Experience: "			Scripts/General/zzMaw-Monsters.lua	2204	1	
+Experience: "	"
+
+경험치: "		Scripts/General/zzMaw-Monsters.lua	2204	1	몬스터 감정창
 maw-102d01da1368	translated	ui	"
 
 Levels gained in MM6: "	"
@@ -4228,13 +4232,13 @@ Madness"	"광기를
 maw-5e1a584e9bbe	untranslated	ui	BolsterAmount			Scripts/General/MenuExtraSettings.lua	162	2	
 maw-8f7f6a656b06	untranslated	ui	BolsterFineTuning			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-48647474b89f	untranslated	ui	boolean			Scripts/General/MenuExtraSettings.lua	135	1	
-maw-4b7a83f3be55	untranslated	ui	Bounty			Scripts/General/BountyHunt.lua	225	1	
-maw-f309b2d045c6	untranslated	ui	"Cold\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2168	1	
+maw-4b7a83f3be55	translated	ui	Bounty	현상금		Scripts/General/BountyHunt.lua	225	1	현상금 UI 제목
+maw-f309b2d045c6	translated	ui	"Cold\01200000	070"	"냉기\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2168	1	저항 표시; 제어 코드 보존
 maw-277dc4259f09	translated	ui	Debuffs:	디버프:		Scripts/General/zzMaw-Monsters.lua	2228	1	몬스터 상태 UI
 maw-f4f4473df8cb	translated	ui	Disabled	비활성화		Scripts/General/zzClasses.lua	1789	1	원소술사 로테이션 상태
 maw-b3e6719cf85f	translated	ui	Doom	파멸		Scripts/General/MenuExtraSettings.lua	238	3	게임 모드/난이도
 maw-00f03137e155	translated	ui	Easy	쉬움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
-maw-af131275db13	untranslated	ui	"Elec\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2167	1	
+maw-af131275db13	translated	ui	"Elec\01200000	070"	"전기\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2167	1	저항 표시; 제어 코드 보존
 maw-31bb56cf899a	translated	ui	"Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
 Press R to enable/disable random rotation.
 Currently "	"원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.
@@ -4246,7 +4250,7 @@ maw-57a2fc6d337a	untranslated	ui	ExSetScr			Scripts/General/MenuExtraSettings.lu
 maw-dca8036a46ed	untranslated	ui	ExSetScr2			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-4e3c4231aecb	untranslated	ui	ExtSetDw			Scripts/General/MenuExtraSettings.lua	209	1	
 maw-7ae26932a060	untranslated	ui	ExtSetUp			Scripts/General/MenuExtraSettings.lua	210	2	
-maw-32a4ead843a3	untranslated	ui	"Fire\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2165	1	
+maw-32a4ead843a3	translated	ui	"Fire\01200000	070"	"화염\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2165	1	저항 표시; 제어 코드 보존
 maw-5370d182f7f5	untranslated	ui	FrameLimit			Scripts/General/MenuExtraSettings.lua	325	1	
 maw-71b5b9cfb683	untranslated	ui	freeProgression			Scripts/General/MenuExtraSettings.lua	162	1	
 maw-20a89915f18c	translated	ui	Hard	어려움		Scripts/General/MenuExtraSettings.lua	308	1	난이도
@@ -4256,8 +4260,8 @@ maw-74e5aeffbd58	untranslated	ui	ImprovedPathfinding			Scripts/General/MenuExtra
 maw-a3076a891f59	translated	ui	"Intellect represents a character's ability to reason and understand complex, abstract concepts.
 Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.
 주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."		Scripts/General/zzMaw-Stats.lua	389	1	지능 능력치 설명
-maw-158b1f99e07b	untranslated	ui	Level:          			Scripts/General/zzMaw-Monsters.lua	2091	1	
-maw-3e7d000abd3c	untranslated	ui	"Magic\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2172	1	
+maw-158b1f99e07b	translated	ui	Level:          	레벨:          		Scripts/General/zzMaw-Monsters.lua	2091	1	몬스터 감정창; 정렬 공백 보존
+maw-3e7d000abd3c	translated	ui	"Magic\01200000	070"	"마법\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2172	1	저항 표시; 제어 코드 보존
 maw-5a70527da19c	excluded	ui	MAW			Scripts/General/MenuExtraSettings.lua	308	1	모드 고유명사; 번역하지 않음
 maw-cab34b294f08	untranslated	ui	MAW SETTINGS			Scripts/General/AdaptiveMonstersStats.lua	434	1	
 maw-33b934efaa4c	untranslated	ui	MergeExSet			Scripts/General/MenuExtraSettings.lua	216	1	
@@ -4268,7 +4272,7 @@ mare"	악몽		Scripts/General/MenuExtraSettings.lua	308	2	난이도
 maw-9ff6d323cc79	translated	ui	Norm.	보통		Scripts/General/MenuExtraSettings.lua	308	1	난이도 축약 표시
 maw-af0b5531fd66	untranslated	ui	OpenExtraSettingsMenu			Scripts/General/MenuExtraSettings.lua	226	1	
 maw-41dcd0d7840d	translated	ui	Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.	인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다.		Scripts/General/zzMaw-Stats.lua	400	1	인격 능력치 설명
-maw-46c13ceaddd4	untranslated	ui	"Poison\01200000	070"			Scripts/General/zzMaw-Monsters.lua	2169	1	
+maw-46c13ceaddd4	translated	ui	"Poison\01200000	070"	"중독\01200000	070"		Scripts/General/zzMaw-Monsters.lua	2169	1	저항 표시; 제어 코드 보존
 maw-424308c3b136	translated	ui	"Road to
 insanity"	"광기로 가는
 길"		Scripts/General/MenuExtraSettings.lua	238	1	게임 모드

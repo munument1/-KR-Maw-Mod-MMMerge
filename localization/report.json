@@ -8,8 +8,8 @@
   "unpatchable_occurrences": 5805,
   "status": {
     "excluded": 1198,
-    "translated": 871,
-    "untranslated": 956
+    "translated": 880,
+    "untranslated": 947
   },
   "categories": {
     "class": 37,
@@ -38,6 +38,7 @@
     "known_display_name_assignment": 20,
     "proven_alchemy_direct_description": 7,
     "proven_alchemy_item_tooltip": 67,
+    "proven_bounty_ui_field": 1,
     "proven_customui_tooltip": 1,
     "proven_display_variable_flow": 37,
     "proven_game_display_assignment": 181,
@@ -51,6 +52,7 @@
     "proven_map_item_tooltip": 53,
     "proven_message_literal": 25,
     "proven_monster_info_label": 28,
+    "proven_monster_inspection_field": 8,
     "proven_npc_display_name": 1,
     "proven_skill_display_description": 85,
     "proven_skill_display_name": 23,
@@ -63,7 +65,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 967
+    "uncertain_context": 958
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -85,8 +87,9 @@
   "proven_map_item_tooltip_lines": 36,
   "proven_map_item_tooltip_promotions": 53,
   "proven_direct_ui_promotions": 113,
-  "uncertain_review_unique_sources": 659,
-  "uncertain_review_occurrences": 898,
+  "proven_monster_ui_promotions": 9,
+  "uncertain_review_unique_sources": 650,
+  "uncertain_review_occurrences": 889,
   "uncertain_review_exact_mmmerge_matches": 18,
   "uncertain_review_ambiguous_mmmerge_matches": 8
 }

@@ -1797,6 +1797,11 @@ Bolster Level in MM6: "	"
 MM6 보정 레벨: "	translated	ui	2	formatted_colored_text:2	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text ..""\n\nTotal Levels gained: "" .. StrColor(255,255,153,round(getTotalLevel()*100)/100).. ""\n\nLevels gained in MM6: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[3]*100)/100) .. ""\nLevels gained in MM7: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[2]*100)/100) .. ""\nLevels gained in MM8: "" .. StrColor(255,255,153,round(vars.MultiplayerBolsterLevels[1]*100)/100) .. ""\n\nBolster Level in MM6: "" .. StrColor(255,255,153,round(bolsterLevel6)) ..""\nBolster"
 "
 
+Current Health: "	"
+
+현재 생명력: "	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text=t.EffectsHeader.Text .. ""\n\nExperience: "" .. experienceAwarded .. ""\n\nCurrent Health: "" .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)"
+"
+
 CURRENT MAP HEALING RECOUNT:
 Healing Done in current Map:  "	"
 
@@ -1815,6 +1820,11 @@ Energy resistance is equal to the lowest resistance."	"
 빛 저항은 정신 저항과 육체 저항 중 낮은 값과 같습니다.
 어둠 저항은 원소 저항 중 가장 낮은 값과 같습니다.
 에너지 저항은 모든 저항 중 가장 낮은 값과 같습니다."	translated	ui	1	proven_stat_tooltip_text:1	Scripts/General/zzMaw-Stats.lua	"t.Text=t.Text .. ""\n\nDamage is reduced by an amount equal to % shown.\n\nLight resistance is equal to the lowest between Mind and Body resistances.\nDark resistance is equal to the lowest between elemental resistances.\nEnergy resistance is equal to the lowest resistance."""
+"
+
+Experience: "	"
+
+경험치: "	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text=t.EffectsHeader.Text .. ""\n\nExperience: "" .. experienceAwarded .. ""\n\nCurrent Health: "" .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)"
 "
 
 Levels gained in MM6: "	"
@@ -1990,26 +2000,33 @@ Total Ranged Damage done: %s"	"%s
 "Beyond
 Madness"	"광기를
 넘어"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
+Bounty	현상금	translated	ui	1	proven_bounty_ui_field:1	Scripts/General/BountyHunt.lua	"Note.Text=""Bounty"""
+"Cold\01200000	070"	"냉기\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[3].Text=string.format(""Cold\01200000	070"" .. res[2])"
 Debuffs:	디버프:	translated	ui	1	formatted_colored_text:1	Scripts/General/zzMaw-Monsters.lua	"t.EffectsHeader.Text = t.EffectsHeader.Text .. ""\n\n"" .. StrColor(255,200,0, ""Debuffs:"" .. activeDebuffs)"
 Disabled	비활성화	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"enableDisableText = StrColor(255,0,0, ""Disabled"")"
 Doom	파멸	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"
 Easy	쉬움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
+"Elec\01200000	070"	"전기\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[2].Text=string.format(""Elec\01200000	070"" .. res[1])"
 "Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.
 Press R to enable/disable random rotation.
 Currently "	"원소술사의 공격 주문을 무작위로 시전하면 원소술사 중첩을 얻으며, 중첩에 따라 주문 피해, 속도, 비용이 증가합니다.
 R키로 무작위 로테이션을 활성화/비활성화합니다.
 현재 "	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local rotationText = StrColor(0,0,0,""Elementalist offensive spells, when casted randomly, grant elementalist stacks, which increase spell damage, speed and cost.\nPress R to enable/disable random rotation.\nCurrently "") .. enableDisableText .. ""\n\n"""
 Enabled	활성화	translated	ui	1	formatted_colored_text:1	Scripts/General/zzClasses.lua	"local enableDisableText = StrColor(0,255,0, ""Enabled"")"
+"Fire\01200000	070"	"화염\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[1].Text=string.format(""Fire\01200000	070"" .. res[0]%1000)"
 Hard	어려움	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Hell	지옥	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 If you seek to pursuit a new path and reset your skills, you have come to the right place.	새로운 길을 택해 기술을 초기화하려 한다면 제대로 찾아오셨습니다.	translated	ui	1	display_field_assignment:1	Scripts/Global/zzMAWRespec.lua	"Text = ""If you seek to pursuit a new path and reset your skills, you have come to the right place."""
 "Intellect represents a character's ability to reason and understand complex, abstract concepts.
 Spell Damage and Spell Critical Damage are based on Intellect."	"지능은 복잡하고 추상적인 개념을 추론하고 이해하는 능력을 나타냅니다.
 주문 피해와 주문 치명타 피해는 지능을 기반으로 합니다."	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Intellect represents a character's ability to reason and understand complex, abstract concepts.\nSpell Damage and Spell Critical Damage are based on Intellect."""
+Level:          	레벨:          	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.ArmorClass.Text=string.format(""Level:          "" .. lvl .. ""\n"" .. t.ArmorClass.Text)"
+"Magic\01200000	070"	"마법\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[4].Text=string.format(""Magic\01200000	070"" .. magicRes)"
 "Night
 mare"	악몽	translated	ui	2	settings_display_table:2	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Norm.	보통	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"MAWBOLSTER={[0]=""Easy"", [50]=""Norm."", [100]=""MAW"", [150]=""Hard"", [200]=""Hell"", [250]=""Night\nmare"", [300]=""Night\nmare"",[600]=""Doom""}"
 Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality.	인격은 의지력과 개인적인 매력을 모두 나타냅니다. 최대 주문력, 마나 비용, 회복 위력은 인격을 기반으로 합니다.	translated	ui	1	display_variable_assignment:1	Scripts/General/zzMaw-Stats.lua	"local baseText=""Personality represents both a character's strength of will and personal charm. Maximum spell points, Mana cost and Healing Power are based on Personality."""
+"Poison\01200000	070"	"중독\01200000	070"	translated	ui	1	proven_monster_inspection_field:1	Scripts/General/zzMaw-Monsters.lua	"t.Resistances[4].Text=string.format(""Poison\01200000	070"" .. res[10])"
 "Road to
 insanity"	"광기로 가는
 길"	translated	ui	1	settings_display_table:1	Scripts/General/MenuExtraSettings.lua	"gameMode={[0]=""Normal"", [2]=""Doom"", [4]=""Road to\ninsanity"",[6]=""Beyond\nMadness"",[8]="" Austerity"" }"

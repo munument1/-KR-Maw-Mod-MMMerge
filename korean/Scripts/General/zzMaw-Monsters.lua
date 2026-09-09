@@ -2088,7 +2088,7 @@ function events.BuildMonsterInformationBox(t)
 	mapvars.uniqueMonsterLevel=mapvars.uniqueMonsterLevel or {}
 	local lvl=getMonsterLevel(mon)
 	if t.IdentifiedHitPoints then
-		t.ArmorClass.Text=string.format("Level:          " .. lvl .. "\n" .. t.ArmorClass.Text)
+		t.ArmorClass.Text=string.format("레벨:          " .. lvl .. "\n" .. t.ArmorClass.Text)
 	end
 	--difficulty multiplier
 	local damage=getMonsterDamage(mon)
@@ -2160,14 +2160,14 @@ function events.BuildMonsterInformationBox(t)
 		if mon.Resistances[0]>=1000 then
 			local res=mon.Resistances
 			if t.IdentifiedResistances then
-				t.Resistances[1].Text=string.format("Fire\01200000	070" .. res[0]%1000)
+				t.Resistances[1].Text=string.format("화염\\01200000\t070" .. res[0]%1000)
 				if resistanceRework then
-					t.Resistances[2].Text=string.format("Elec\01200000	070" .. res[1])
-					t.Resistances[3].Text=string.format("Cold\01200000	070" .. res[2])
-					t.Resistances[4].Text=string.format("Poison\01200000	070" .. res[10])
+					t.Resistances[2].Text=string.format("전기\\01200000\t070" .. res[1])
+					t.Resistances[3].Text=string.format("냉기\\01200000\t070" .. res[2])
+					t.Resistances[4].Text=string.format("중독\\01200000\t070" .. res[10])
 					t.Resistances[5].Text=t.Resistances[10].Text
 					local magicRes=(res[3]+res[6]+res[7]+res[8]+res[9])/5
-					t.Resistances[4].Text=string.format("Magic\01200000	070" .. magicRes)
+					t.Resistances[4].Text=string.format("마법\\01200000\t070" .. magicRes)
 					for i=6,10 do
 						t.Resistances[i].Text=""
 					end
@@ -2196,7 +2196,7 @@ function events.BuildMonsterInformationBox(t)
 		local experienceAwarded=experience*healthRateo
 		local lvl=pl.LevelBase
 		experienceAwarded=round(math.min((lvl+1)*1000, experienceAwarded))
-		t.EffectsHeader.Text=t.EffectsHeader.Text .. "\n\nExperience: " .. experienceAwarded .. "\n\nCurrent Health: " .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)
+		t.EffectsHeader.Text=t.EffectsHeader.Text .. "\n\n경험치: " .. experienceAwarded .. "\n\n현재 생명력: " .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)
 		
 		-- Display active debuffs
 		local debuffNames = {

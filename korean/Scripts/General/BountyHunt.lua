@@ -222,7 +222,7 @@ local function SetCurrentHunt()
 			Note.Id=9999
 			Note.X=X
 			Note.Y=Y
-			Note.Text="Bounty"
+			Note.Text="현상금"
 		end
 
 		pseudoSpawnpoint{monster = MonId,  x = X, y = Y, z = Z, count = math.random(5,15), powerChances = {55, 30, 15}, radius = 1024, group = 2,transform = function(mon) mon.NPC_ID = 0 mon.Hostile = true mon.ShowAsHostile = true mon.Velocity=350 end}
