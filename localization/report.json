@@ -91,7 +91,7 @@
   "lua_comment_literal_occurrences": 66,
   "individual_literal_refinements": 4,
   "internal_only_unique_sources": 1771,
-  "internal_only_newly_excluded": 1,
+  "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable.",
   "uncertain_internal_refinements": 2185,
   "proven_display_promotions": 462,
