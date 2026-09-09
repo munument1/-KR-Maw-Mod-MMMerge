@@ -25,7 +25,7 @@
     "ui": 95
   },
   "patchability_reasons": {
-    "comparison_control_literal": 4,
+    "comparison_control_literal": 153,
     "display_field_assignment": 6,
     "display_variable_assignment": 10,
     "engine_event_key_context": 320,
@@ -33,13 +33,15 @@
     "event_hint_assignment": 8,
     "formatted_colored_text": 159,
     "index_key_literal": 1,
+    "internal_lookup_literal": 1,
+    "internal_table_key_literal": 1675,
     "known_display_name_assignment": 20,
     "question_call": 4,
     "settings_display_table": 13,
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 3517
+    "uncertain_context": 1692
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -48,10 +50,11 @@
   "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
   "individual_literal_refinements": 5,
   "internal_only_unique_sources": 1183,
-  "internal_only_newly_excluded": 43,
+  "internal_only_newly_excluded": 0,
   "internal_literal_policy": "Sources occurring only in proven engine/control contexts are excluded; mixed-context sources remain reviewable.",
-  "uncertain_review_unique_sources": 1531,
-  "uncertain_review_occurrences": 3464,
-  "uncertain_review_exact_mmmerge_matches": 257,
-  "uncertain_review_ambiguous_mmmerge_matches": 18
+  "uncertain_internal_refinements": 1825,
+  "uncertain_review_unique_sources": 1235,
+  "uncertain_review_occurrences": 1647,
+  "uncertain_review_exact_mmmerge_matches": 53,
+  "uncertain_review_ambiguous_mmmerge_matches": 15
 }
