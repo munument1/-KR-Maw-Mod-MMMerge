@@ -10,7 +10,7 @@ on:
       - 'tools/audit_zmaw_lod.py'
       - 'tools/build_korean_zmaw_lod_stage.py'
       - 'tools/export_zmaw_potion_display.py'
-      - 'tools/localize_zmaw_potion_tables.py'
+      - 'tools/build_korean_zmaw_potions.py'
       - '.github/workflows/zmaw-lod-audit.yml'
 
 permissions:
@@ -54,7 +54,7 @@ jobs:
         run: python tools/build_korean_zmaw_lod_stage.py --source-dir localization/zmaw_lod_source --stage-dir localization/zmaw_lod_ko_stage --report localization/zmaw_lod_ko_report.json
 
       - name: Localize potion display fields
-        run: python tools/localize_zmaw_potion_tables.py --stage-dir localization/zmaw_lod_ko_stage --audit localization/zmaw_potion_display.tsv --review localization/zmaw_potion_ko.tsv --report localization/zmaw_lod_ko_report.json
+        run: python tools/build_korean_zmaw_potions.py --stage-dir localization/zmaw_lod_ko_stage --audit localization/zmaw_potion_display.tsv --review localization/zmaw_potion_ko.tsv --report localization/zmaw_lod_ko_report.json
 
       - name: Create post-MAW Korean LOD
         shell: bash
