@@ -23,17 +23,15 @@
     "class.txt": 106,
     "SPCITEMS.TXT": 146,
     "POTION.TXT": 366,
-    "rnditems.txt": 0,
-    "POTNOTES.TXT": 366
+    "POTNOTES.TXT": 366,
+    "rnditems.txt": 0
   },
   "total_localized_fields": 8586,
-  "untouched_pending_schema_review": [
-    "rnditems.txt"
-  ],
+  "untouched_pending_schema_review": [],
   "untouched_byte_preserved": [
     "rnditems.txt"
   ],
-  "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit Korean text; POTION/POTNOTES localize only Name/Description/Effect while preserving recipe/control matrices; rnditems remains byte-for-byte MAW 4.5 data.",
+  "policy": "MAW 4.5 gameplay fields preserved; reviewed display fields inherit Korean text; POTION/POTNOTES localize only Name/Description/Effect while preserving recipe/control matrices; rnditems is reviewed non-localized data and remains byte-for-byte MAW 4.5 because its trailing English labels are documentation-only.",
   "potion_display_localization": {
     "rows_per_table": 122,
     "columns": [
@@ -44,5 +42,14 @@
     "matrix_columns_preserved": true,
     "validation_errors": [],
     "review_file": "localization/zmaw_potion_ko.tsv"
+  },
+  "reviewed_nonlocalized": {
+    "rnditems.txt": {
+      "reason": "Trailing English item/spell labels are documentation-only; runtime uses item/resource identifiers and six treasure-level weight fields.",
+      "recognized_data_rows": 2200,
+      "rows_with_nonempty_trailing_label": 2197,
+      "audit_report": "localization/zmaw_rnditems_report.json",
+      "byte_preserved": true
+    }
   }
 }
