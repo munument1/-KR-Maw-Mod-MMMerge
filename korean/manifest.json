@@ -222,5 +222,14 @@
     "Broodling": "[군체하수인]",
     "Broodlord": "[군체군주]",
     "Omnipotent": "[전능]"
-  }
+  },
+  "runtime_residual_fixes": [
+    {
+      "file": "Scripts/Maps/d22.lua",
+      "source": "test",
+      "translation": "문",
+      "reason": "Active event 452 opens door 1; replace developer placeholder hint with a neutral Korean door label.",
+      "replacements": 1
+    }
+  ]
 }

@@ -1,9 +1,7 @@
 {
   "scanned_lua_files": 89,
-  "high_confidence_runtime_english_occurrences": 1,
+  "high_confidence_runtime_english_occurrences": 0,
   "intentional_allowlisted_occurrences": 5,
-  "by_sink": {
-    "event_hint": 1
-  },
+  "by_sink": {},
   "policy": "Strict high-confidence scan of effective runtime Lua; explicit developer/debug and stable acronym exceptions are allowlisted."
 }
