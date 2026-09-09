@@ -26,7 +26,9 @@ OCCURRENCE_FIELDS = [
     "id", "category", "source", "file", "line", "patchable", "reason", "context",
 ]
 
-PRINTF_RE = re.compile(r"%(?:\d+\$)?[-+ #0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlLzjt]*[diuoxXfFeEgGaAcspq%]")
+# The negative lookahead avoids treating prose such as "% craft items" as the
+# printf token "% c" while preserving real placeholders such as %s, %d and %6s.
+PRINTF_RE = re.compile(r"%(?:\d+\$)?[-+ #0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlLzjt]*[diuoxXfFeEgGaAcspq%](?![A-Za-z])")
 WORD_RE = re.compile(r"[A-Za-z]")
 PATH_RE = re.compile(r"^[A-Za-z0-9_./\\ -]+\.(?:lua|txt|lod|odm|blv|bmp|pcx|png|jpg|jpeg|wav|mp3|dll|exe|ini|json|md|html)$", re.I)
 INTERNAL_RE = re.compile(r"^(?:[A-Za-z0-9]+_)+[A-Za-z0-9_]+$")
