@@ -223,6 +223,14 @@
     "Broodlord": "[군체군주]",
     "Omnipotent": "[전능]"
   },
+  "runtime_mapstats_key_compat": {
+    "file": "Scripts/General/zzMaw-Maps.lua",
+    "stable_key": "Game.MapStats[i].FileName",
+    "legacy_english_name_migration": true,
+    "localized_name_migration": true,
+    "replacements": 3,
+    "validation_errors": []
+  },
   "runtime_residual_fixes": [
     {
       "file": "Scripts/Maps/d22.lua",

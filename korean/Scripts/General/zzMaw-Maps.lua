@@ -121,14 +121,185 @@ function events.AfterLoadMap()
 	vars.resetDungeon=false
 end
 
+local MawDungeonLegacyEnglishNames = {
+    ["out01.odm"] = "Dagger Wound Island",
+    ["out02.odm"] = "Ravenshore",
+    ["out03.odm"] = "Alvar",
+    ["out04.odm"] = "Ironsand Desert",
+    ["out05.odm"] = "Garrote Gorge",
+    ["out06.odm"] = "Shadowspire",
+    ["out07.odm"] = "Murmurwoods",
+    ["out08.odm"] = "Ravage Roaming",
+    ["elema.odm"] = "Plane of Air",
+    ["eleme.blv"] = "Plane of Earth",
+    ["elemf.odm"] = "Plane of Fire",
+    ["elemw.odm"] = "Plane of Water",
+    ["out13.odm"] = "Regna",
+    ["pbp.odm"] = "Plane Between Planes",
+    ["d05.blv"] = "Abandoned Temple",
+    ["d06.blv"] = "Pirate Outpost",
+    ["d08.blv"] = "Dire Wolf Den",
+    ["d10.blv"] = "Escaton's Crystal",
+    ["d11.blv"] = "Wasp Nest",
+    ["d12.blv"] = "Ogre Fortress",
+    ["d13.blv"] = "Troll Tomb",
+    ["d14.blv"] = "Cyclops Larder",
+    ["d15.blv"] = "Chain of Fire",
+    ["d16.blv"] = "Dragon Hunter's Camp",
+    ["d17.blv"] = "Dragon Cave",
+    ["d18.blv"] = "Naga Vault",
+    ["d19.blv"] = "Necromancers' Guild",
+    ["d20.blv"] = "Mad Necromancer's Lab",
+    ["d21.blv"] = "Vampire Crypt",
+    ["d23.blv"] = "Druid Circle",
+    ["d25.blv"] = "Barbarian Fortress",
+    ["d26.blv"] = "The Crypt of Korbu",
+    ["d27.blv"] = "Castle of Air",
+    ["d29.blv"] = "Castle of Fire",
+    ["d30.blv"] = "War Camp",
+    ["d31.blv"] = "Pirate Stronghold",
+    ["d32.blv"] = "Abandoned Pirate Keep",
+    ["d33.blv"] = "Passage Under Regna",
+    ["d34.blv"] = "Small Sub Pen",
+    ["d35.blv"] = "Escaton's Palace",
+    ["d36.blv"] = "Prison of the Lord of Air",
+    ["d37.blv"] = "Prison of the Lord of Fire",
+    ["d38.blv"] = "Prison of the Lord of Water",
+    ["d40.blv"] = "Uplifted Library",
+    ["d41.blv"] = "Dark Dwarf Compound",
+    ["d43.blv"] = "Ancient Troll Home",
+    ["d44.blv"] = "Grand Temple of Eep",
+    ["d45.blv"] = "Chapel of Eep",
+    ["d46.blv"] = "Church of Eep",
+    ["7out01.odm"] = "Emerald Island",
+    ["7out02.odm"] = "Harmondale",
+    ["7out03.odm"] = "Erathia",
+    ["7out04.odm"] = "The Tularean Forest",
+    ["7out05.odm"] = "Deyja",
+    ["7out06.odm"] = "The Bracada Desert",
+    ["out09.odm"] = "Evenmorn Island",
+    ["out10.odm"] = "Mount Nighon",
+    ["out11.odm"] = "The Barrow Downs",
+    ["out12.odm"] = "The Land of the Giants",
+    ["7out13.odm"] = "Tatalia",
+    ["out14.odm"] = "Avlee",
+    ["d01.blv"] = "The Erathian Sewers",
+    ["d02.blv"] = "The Maze",
+    ["d03.blv"] = "Castle Gloaming",
+    ["d04.blv"] = "The Temple of Baa",
+    ["7d06.blv"] = "The Temple of the Moon",
+    ["7d07.blv"] = "Thunderfist Mountain",
+    ["7d08.blv"] = "The Tularean Caves",
+    ["7d09.blv"] = "The Titans' Stronghold",
+    ["7d10.blv"] = "The Breeding Zone",
+    ["7d11.blv"] = "The Walls of Mist",
+    ["7d12.blv"] = "Clanker's Laboratory",
+    ["7d13.blv"] = "Zokarr's Tomb",
+    ["7d14.blv"] = "The School of Sorcery",
+    ["7d15.blv"] = "Watchtower 6",
+    ["7d16.blv"] = "The Wine Cellar",
+    ["7d17.blv"] = "The Tidewater Caverns",
+    ["7d18.blv"] = "Lord Markham's Manor",
+    ["7d19.blv"] = "Grand Temple of the Moon",
+    ["7d20.blv"] = "The Mercenary Guild",
+    ["7d21.blv"] = "White Cliff Cave",
+    ["7d22.blv"] = "The Hall under the Hill",
+    ["7d23.blv"] = "The Lincoln",
+    ["7d27.blv"] = "Colony Zod",
+    ["7d30.blv"] = "Castle Lambent",
+    ["7d31.blv"] = "Fort Riverstride",
+    ["7d32.blv"] = "Castle Navan",
+    ["7d34.blv"] = "The Red Dwarf Mines",
+    ["7d35.blv"] = "Nighon Tunnels",
+    ["7d36.blv"] = "Tunnels to Eeofol",
+    ["7d37.blv"] = "The Haunted Mansion",
+    ["t01.blv"] = "Temple of the Light",
+    ["t02.blv"] = "Temple of the Dark",
+    ["t03.blv"] = "Grand Temple of the Sun",
+    ["outa1.odm"] = "Sweet Water",
+    ["outa2.odm"] = "Paradise Valley",
+    ["outa3.odm"] = "Hermit's Isle",
+    ["outb1.odm"] = "Kriegspire",
+    ["outb2.odm"] = "Blackshire",
+    ["outb3.odm"] = "Dragonsand",
+    ["outc1.odm"] = "Frozen Highlands",
+    ["outc2.odm"] = "Free Haven",
+    ["outc3.odm"] = "Mire of the Damned",
+    ["outd1.odm"] = "Silver Cove",
+    ["outd2.odm"] = "Bootleg Bay",
+    ["outd3.odm"] = "Castle Ironfist",
+    ["oute1.odm"] = "Eel Infested Waters",
+    ["oute2.odm"] = "Misty Islands",
+    ["oute3.odm"] = "New Sorpigal",
+    ["6d01.blv"] = "Goblinwatch",
+    ["6d02.blv"] = "The Abandoned Temple",
+    ["6d03.blv"] = "Shadow Guild Hideout",
+    ["6d04.blv"] = "Hall of the Fire Lord",
+    ["6d05.blv"] = "Snergle's Caverns",
+    ["6d06.blv"] = "Dragoons' Caverns",
+    ["6d07.blv"] = "Silver Helm Outpost",
+    ["6d08.blv"] = "Shadow Guild",
+    ["6d09.blv"] = "Snergle's Iron Mines",
+    ["6d10.blv"] = "Dragoons' Keep",
+    ["6d11.blv"] = "Corlagon's Estate",
+    ["6d12.blv"] = "Silver Helm Stronghold",
+    ["6d13.blv"] = "The Monolith",
+    ["6d14.blv"] = "Tomb of Ethric the Mad",
+    ["6d15.blv"] = "Icewind Keep",
+    ["6d16.blv"] = "Warlord's Fortress",
+    ["6d17.blv"] = "Lair of the Wolf",
+    ["6d18.blv"] = "Gharik's Forge",
+    ["6d19.blv"] = "Agar's Laboratory",
+    ["6d20.blv"] = "Caves of the Dragon Riders",
+    ["6t1.blv"] = "Temple of Baa",
+    ["6t2.blv"] = "Temple of the Fist",
+    ["6t3.blv"] = "Temple of Tsantsa",
+    ["6t4.blv"] = "Temple of the Sun",
+    ["6t5.blv"] = "Temple of the Moon",
+    ["6t6.blv"] = "Supreme Temple of Baa",
+    ["6t7.blv"] = "Superior Temple of Baa",
+    ["6t8.blv"] = "Temple of the Snake",
+    ["cd1.blv"] = "Castle Alamos",
+    ["cd2.blv"] = "Castle Darkmoor",
+    ["cd3.blv"] = "Castle Kriegspire",
+    ["sewer.blv"] = "Free Haven Sewer",
+    ["pyramid.blv"] = "Tomb of VARN",
+    ["sci-fi.blv"] = "Control Center",
+}
+
+local function MawDungeonState(stats)
+    vars.dungeonCompletedList = vars.dungeonCompletedList or {}
+    if not stats then return nil end
+    local key = stats.FileName
+    if not key or key == "" then return nil end
+    local value = vars.dungeonCompletedList[key]
+    if value == nil then
+        local englishName = MawDungeonLegacyEnglishNames[key]
+        if englishName and vars.dungeonCompletedList[englishName] ~= nil then
+            value = vars.dungeonCompletedList[englishName]
+            vars.dungeonCompletedList[key] = value
+        elseif stats.Name and vars.dungeonCompletedList[stats.Name] ~= nil then
+            value = vars.dungeonCompletedList[stats.Name]
+            vars.dungeonCompletedList[key] = value
+        end
+    end
+    return value
+end
+
+local function MawSetDungeonState(stats, value)
+    vars.dungeonCompletedList = vars.dungeonCompletedList or {}
+    if stats and stats.FileName and stats.FileName ~= "" then
+        vars.dungeonCompletedList[stats.FileName] = value
+    end
+end
+
 function canResetDungeon(mapFileName)
 	if vars.insanityMode then
 		return false
 	end
 	for i=1,Game.MapStats.High do
 		if Game.MapStats[i].FileName==mapFileName then
-			local name=Game.MapStats[i].Name
-			if vars.dungeonCompletedList[name]==true then
+			if MawDungeonState(Game.MapStats[i])==true then
 				return true
 			else
 				return false
@@ -149,7 +320,7 @@ function resetMap(dungeonId)
 			vars.resetDungeon=dungeonId
 			for i=1,Game.MapStats.High do
 				if Game.MapStats[i].FileName==vars.resetDungeon then
-					vars.dungeonCompletedList[Game.MapStats[i].Name]="resetting"
+					MawSetDungeonState(Game.MapStats[i], "resetting")
 					Game.MapStats[i].RefillDays=0
 					Game.ShowStatusText("입장하면 던전이 초기화됩니다")
 				end
@@ -1738,7 +1909,7 @@ function events.MonsterKilled(mon)
 	
 	possibleMaps={}
 	for i=1,#mapDungeons do
-		if vars.dungeonCompletedList[Game.MapStats[mapDungeons[i]].Name] then
+		if MawDungeonState(Game.MapStats[mapDungeons[i]]) then
 			table.insert(possibleMaps, mapDungeons[i])
 		end
 	end
