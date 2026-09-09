@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Build and validate the Korean localization catalog for MAW MMMerge.
 
-Human edits live in ``localization/translations.tsv``. Generated catalog files
-are refreshed from the 4.5 source tree and preserve translation decisions.
+Human edits live in ``localization/translations.tsv``. The extractor keeps a
+broad audit catalog, but each occurrence is separately classified as patchable
+or not. Only strong player-facing contexts are eligible for automatic overlay
+patching; engine keys and uncertain table fields stay visible for QA without
+being modified.
 """
 
 from __future__ import annotations
@@ -19,8 +22,9 @@ CATALOG_FIELDS = [
     "id", "status", "category", "source", "translation", "placeholders",
     "first_file", "first_line", "occurrences", "notes",
 ]
-OCCURRENCE_FIELDS = ["id", "category", "source", "file", "line", "context"]
-TRANSLATION_FIELDS = ["source", "translation", "status", "notes"]
+OCCURRENCE_FIELDS = [
+    "id", "category", "source", "file", "line", "patchable", "reason", "context",
+]
 
 PRINTF_RE = re.compile(r"%(?:\d+\$)?[-+ #0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlLzjt]*[diuoxXfFeEgGaAcspq%]")
 WORD_RE = re.compile(r"[A-Za-z]")
@@ -35,6 +39,22 @@ TARGET_HINTS = (
 )
 SKIP_PREFIXES = ("evt.", "Game.", "Party.", "Map.", "const.", "mem.")
 
+# Strong signals only. False negatives are acceptable here: they can be added
+# after review. False positives can corrupt game logic, so uncertain contexts
+# are deliberately non-patchable.
+UNSAFE_EVENT_KEY_RE = re.compile(
+    r"\bevt\.(?:Cmp|Set|Add|Subtract|ForPlayer|SetNPCTopic|SetDoorState)\s*[\{(]"
+)
+DISPLAY_FIELD_RE = re.compile(
+    r"(?:^|[,{\s])(?:Text|Description|Tooltip|tooltip|Label|Title|Hint)\s*="
+)
+DISPLAY_VAR_RE = re.compile(
+    r"\b[A-Za-z_][A-Za-z0-9_]*(?:Txt|Text|Message|Description|Tooltip|Label|Title|Hint)\s*="
+)
+DISPLAY_NAME_RE = re.compile(
+    r"\bGame\.(?:ItemsTxt|SpellsTxt|MonstersTxt|ClassNames)\s*\[[^\]]+\]\.Name\s*="
+)
+
 
 def stable_id(source: str) -> str:
     return "maw-" + hashlib.sha1(source.encode("utf-8")).hexdigest()[:12]
@@ -46,7 +66,6 @@ def normalize_placeholders(text: str) -> str:
 
 
 def decode_manual(text: str) -> str:
-    """Decode the small escape subset used in translations.tsv."""
     out = []
     i = 0
     while i < len(text):
@@ -65,14 +84,14 @@ def decode_manual(text: str) -> str:
 
 
 def lua_strings_from_line(line: str):
-    """Yield decoded Lua single/double quoted strings outside -- comments."""
+    """Yield decoded Lua strings outside ``--`` comments."""
     i = 0
     n = len(line)
     while i < n:
         if line.startswith("--", i):
             return
         ch = line[i]
-        if ch not in ("\"", "'"):
+        if ch not in ('"', "'"):
             i += 1
             continue
         quote = ch
@@ -83,7 +102,7 @@ def lua_strings_from_line(line: str):
             ch = line[i]
             if ch == "\\" and i + 1 < n:
                 nxt = line[i + 1]
-                escapes = {"n": "\n", "r": "\r", "t": "\t", "\\": "\\", "\"": "\"", "'": "'"}
+                escapes = {"n": "\n", "r": "\r", "t": "\t", "\\": "\\", '"': '"', "'": "'"}
                 out.append(escapes.get(nxt, "\\" + nxt))
                 i += 2
                 continue
@@ -123,6 +142,42 @@ def category_for(path: Path, line: str) -> str:
     return "misc"
 
 
+def patchability(path: Path, line: str) -> tuple[str, str]:
+    """Conservatively decide whether strings on this source line may be patched."""
+    rel = str(path).replace("\\", "/")
+    stripped = line.strip()
+
+    if rel.startswith("Data/Tables/"):
+        return "no", "table_schema_not_reviewed"
+    if UNSAFE_EVENT_KEY_RE.search(line):
+        return "no", "engine_event_key_context"
+    if re.search(r"\b(?:Game\.)?ShowStatusText\s*\(", line):
+        return "yes", "status_text_call"
+    if re.search(r"\b(?:Game\.)?EscMessage\s*\(", line):
+        return "yes", "esc_message_call"
+    if re.search(r"\bQuestion\s*\(", line):
+        return "yes", "question_call"
+    if re.search(r"\bevt\.hint\s*\[[^\]]+\]\s*=", line):
+        return "yes", "event_hint_assignment"
+    if re.search(r"\b(?:gameMode|MAWBOLSTER)\s*=\s*\{", line):
+        return "yes", "settings_display_table"
+    if re.search(r"\bStrColor\s*\(", line):
+        return "yes", "formatted_colored_text"
+    if DISPLAY_FIELD_RE.search(line):
+        return "yes", "display_field_assignment"
+    if DISPLAY_VAR_RE.search(line):
+        return "yes", "display_variable_assignment"
+    if DISPLAY_NAME_RE.search(line):
+        return "yes", "known_display_name_assignment"
+    if "CustomUI.CreateText" in line or "CustomUI.CreateButton" in line and "Text" in line:
+        return "yes", "custom_ui_text"
+    # A direct string returned by a UI/settings callback is display text. Limit
+    # this to menu files to avoid translating generic logic return values.
+    if "Menu" in rel and re.search(r"\breturn\s+['\"]", stripped):
+        return "yes", "menu_return_text"
+    return "no", "uncertain_context"
+
+
 def is_candidate(text: str, line: str, category: str) -> bool:
     t = text.strip()
     if not t or len(t) < 2 or not WORD_RE.search(t):
@@ -150,6 +205,7 @@ def scan_lua(root: Path):
             continue
         for lineno, line in enumerate(lines, 1):
             category = category_for(rel, line)
+            patchable, reason = patchability(rel, line)
             for text, _col in lua_strings_from_line(line):
                 if is_candidate(text, line, category):
                     yield {
@@ -157,6 +213,8 @@ def scan_lua(root: Path):
                         "source": text,
                         "file": str(rel).replace("\\", "/"),
                         "line": lineno,
+                        "patchable": patchable,
+                        "reason": reason,
                         "context": line.strip()[:500],
                     }
 
@@ -187,6 +245,8 @@ def scan_tables(root: Path):
                     "source": text,
                     "file": str(rel).replace("\\", "/"),
                     "line": lineno,
+                    "patchable": "no",
+                    "reason": "table_schema_not_reviewed",
                     "context": line[:500],
                 }
 
@@ -248,7 +308,7 @@ def main() -> int:
         old = existing.get(source, {})
         override = manual.get(source, {})
         categories = Counter(x["category"] for x in group)
-        category = override.get("category") or old.get("category") or categories.most_common(1)[0][0]
+        category = old.get("category") or categories.most_common(1)[0][0]
         translation = override.get("translation") if source in manual else old.get("translation", "")
         status = override.get("status") if source in manual else old.get("status", "")
         notes = override.get("notes") if source in manual else old.get("notes", "")
@@ -281,7 +341,9 @@ def main() -> int:
         for occ in group:
             occurrence_rows.append({
                 "id": row["id"], "category": occ["category"], "source": source,
-                "file": occ["file"], "line": occ["line"], "context": occ["context"],
+                "file": occ["file"], "line": occ["line"],
+                "patchable": occ["patchable"], "reason": occ["reason"],
+                "context": occ["context"],
             })
 
     active_sources = set(by_source)
@@ -292,8 +354,6 @@ def main() -> int:
         old["status"] = "excluded" if old.get("status") == "excluded" else "obsolete"
         catalog_rows.append({field: old.get(field, "") for field in CATALOG_FIELDS})
 
-    # Manual entries that do not exist in the current source are errors; this
-    # catches typos and stale escape sequences early.
     for source in manual:
         if source not in active_sources:
             errors.append({"type": "manual_source_not_found", "source": source})
@@ -305,13 +365,18 @@ def main() -> int:
 
     counts = Counter(row["status"] for row in catalog_rows)
     active_rows = [r for r in catalog_rows if r["status"] != "obsolete"]
+    patchable_rows = [r for r in occurrence_rows if r["patchable"] == "yes"]
     report = {
         "base": "MAW MMMerge 4.5",
         "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
         "unique_active_candidates": len(active_rows),
         "occurrences": len(occurrence_rows),
+        "patchable_occurrences": len(patchable_rows),
+        "patchable_unique_sources": len({r["source"] for r in patchable_rows}),
+        "unpatchable_occurrences": len(occurrence_rows) - len(patchable_rows),
         "status": dict(sorted(counts.items())),
         "categories": dict(sorted(Counter(r["category"] for r in active_rows).items())),
+        "patchability_reasons": dict(sorted(Counter(r["reason"] for r in occurrence_rows).items())),
         "validation_errors": errors,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
