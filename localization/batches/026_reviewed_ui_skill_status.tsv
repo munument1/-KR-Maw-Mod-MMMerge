@@ -1,0 +1,30 @@
+source	translation	status	notes
+Charge telelocator	텔레로케이터 충전	translated	텔레로케이터 NPC 토픽
+Following you would be foolish	당신을 따라가는 건 어리석은 짓이겠군	translated	고난도 모드 NPC 고용 토픽
+Insane	광기	translated	Insanity 난이도 표시 라벨
+Mad.	광란	translated	Madness 난이도 표시 라벨
+monster	몬스터	translated	현상금 UI의 몬스터 이름 fallback
+Chance to Stun: 	기절 확률: 	translated	기술 툴팁 수치 라벨
+%\n\nPress P to enable/disable\n	%\n\nP키로 활성화/비활성화\n	translated	엄호 기술 토글 안내; 선행 % 보존
+Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: 	엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 6-12-20에서 습득합니다.\n\n기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....\n\n현재 엄호 확률: 	translated	엄호 기술 설명 6-12-20
+Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 8-20-30.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: 	엄호 기술은 아군에게 향하는 피해를 대신 받아 동료를 보호하는 방어 기술입니다. 사용자는 적의 공격을 우선적으로 받아내어 피해에 취약한 동료를 지킵니다.\n\n가능한 경우 전문가, 마스터, 그랜드마스터 단계는 기술 레벨 8-20-30에서 습득합니다.\n\n기본 10%에 기술 포인트당 1%의 엄호 확률을 추가하며 최대 40%까지 증가합니다. 단, 최대 레벨에서는 특별한 일이 일어날 수도 있습니다....\n\n현재 엄호 확률: 	translated	엄호 기술 설명 8-20-30
+Attack|	공격|	translated	기술 상세 표 공격 라벨
+AC|	방어도|	translated	기술 상세 표 방어도 라벨
+Dmg%%|	피해%%|	translated	기술 상세 표 피해율 라벨; %% 보존
+Dmg|	피해|	translated	기술 상세 표 피해 라벨
+%sRes	%s저항	translated	기술 상세 표 저항 라벨; %s 보존
+%s Res\t000	%s 저항\t000	translated	기술 상세 표 저항 라벨; %s/탭 보존
+%s hits %s for %s points!%s	%s이(가) %s에게 %s의 피해를 입혔습니다!%s	translated	실제 근접 전투 상태 메시지; 자리표시자 순서 보존
+%s shoots %s for %s points!%s	%s이(가) %s에게 원거리 공격으로 %s의 피해를 입혔습니다!%s	translated	실제 원거리 전투 상태 메시지; 자리표시자 순서 보존
+%s inflicts %s points killing %s!%s	%s이(가) %s의 피해를 입혀 %s을(를) 처치했습니다!%s	translated	실제 처치 전투 상태 메시지; 자리표시자 순서 보존
+%s hits for a total of %s points!%s	%s이(가) 총 %s의 피해를 입혔습니다!%s	translated	광역 공격 총 피해 상태 메시지; 자리표시자 보존
+Beyond Madness - a word of warning.\n\nNo bolster here (except on starting maps).\n\nQuest timing matters:\n- Finish early: immediate power now, less XP.\n- Finish late: bigger XP later, no early power.\n\nRun-wide tracking:\n- On the character screen, you'll see a death counter shared across all saves of this run.\n- On the map, a red counter appears after you take damage and clears when no monsters are nearby.\n- Loading or leaving the game while that counter is red counts as a death.\n\nIf Insanity wasn't enough for you, you're in the right place.	광란을 넘어 - 경고.\n\n이곳에서는 보정이 적용되지 않습니다(시작 맵 제외).\n\n퀘스트 완료 시점이 중요합니다:\n- 일찍 완료: 즉시 강해지지만 경험치는 적습니다.\n- 늦게 완료: 초반 강화는 없지만 나중에 더 많은 경험치를 얻습니다.\n\n플레이 전체 추적:\n- 캐릭터 화면에는 이번 플레이의 모든 저장 파일에서 공유되는 사망 횟수가 표시됩니다.\n- 맵에서는 피해를 입은 뒤 빨간 카운터가 나타나며, 주변에 몬스터가 없으면 사라집니다.\n- 카운터가 빨간 상태에서 게임을 불러오거나 종료하면 사망 1회로 계산됩니다.\n\n광기 모드로도 부족했다면 제대로 찾아왔습니다.	translated	Beyond Madness 진입 경고
+%s      %s|		excluded	서식 전용 문자열; 번역 불필요
+%s     %s|		excluded	서식 전용 문자열; 번역 불필요
+%s  %s|		excluded	서식 전용 문자열; 번역 불필요
+%s%%|		excluded	수치/퍼센트 서식 전용 문자열
+%s|		excluded	서식 전용 문자열
+%s\n------------------------------------------------------------\n		excluded	기술 UI 구분선 서식; 번역 불필요
+%s\n------------------------------------------------------------\n         		excluded	기술 UI 구분선/여백 서식; 번역 불필요
+%s: %s		excluded	플레이어명/맵명 구분 포맷; 번역 요소 없음
+%s: x:%d, y:%d		excluded	멀티플레이 좌표 포맷; 번역 요소 없음
