@@ -34,6 +34,7 @@ on:
       - 'tools/export_untranslated_queue.py'
       - 'tools/import_mmmerge_memory.py'
       - 'tools/build_ko_overlay.py'
+      - 'tools/apply_korean_runtime_fixes.py'
       - 'tools/merge_translation_batches.py'
       - 'localization/**'
       - 'localization/batches/**'
@@ -140,6 +141,9 @@ jobs:
 
       - name: Build Korean overlay
         run: python tools/build_ko_overlay.py --root . --check
+
+      - name: Apply Korean runtime display fixes
+        run: python tools/apply_korean_runtime_fixes.py --root . --check
 
       - name: Check authored-file whitespace
         run: git diff --check -- . ':!localization/*.tsv' ':!korean/**'
