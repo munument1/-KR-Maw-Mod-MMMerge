@@ -1,0 +1,42 @@
+source	translation	status	notes
+ Map	 지도	translated	지도 아이템 이름 접미사
+% chance to miss attacks	% 확률로 공격이 빗나감	translated	지도 어픽스 설명 조각
+% increased HP and damage	% 생명력 및 피해 증가	translated	지도 어픽스 설명 조각
+Boss density increased by 	보스 밀도 증가: 	translated	지도 어픽스 설명 조각
+Bosses have 	보스: 	translated	지도 어픽스 설명 조각
+Buff effects reduced by 	버프 효과 감소: 	translated	지도 어픽스 설명 조각
+Healing reduced by 	치유량 감소: 	translated	지도 어픽스 설명 조각
+Leech reduced by 	흡수량 감소: 	translated	지도 어픽스 설명 조각
+Players armor reduced by 	플레이어 방어력 감소: 	translated	지도 어픽스 설명 조각
+Players attack speed reduced by 	플레이어 공격 속도 감소: 	translated	지도 어픽스 설명 조각
+Players critical chance reduced by 	플레이어 치명타 확률 감소: 	translated	지도 어픽스 설명 조각
+Players critical damage reduced by 	플레이어 치명타 피해 감소: 	translated	지도 어픽스 설명 조각
+Players have a 	플레이어는 	translated	지도 어픽스 설명 조각
+Players HP/SP regen reduced by 	플레이어 생명력/주문력 재생 감소: 	translated	지도 어픽스 설명 조각
+Players magic damage reduced by 	플레이어 마법 피해 감소: 	translated	지도 어픽스 설명 조각
+Players movement speed reduced by 	플레이어 이동 속도 감소: 	translated	지도 어픽스 설명 조각
+Players physical damage reduced by 	플레이어 물리 피해 감소: 	translated	지도 어픽스 설명 조각
+Players resistances reduced by 	플레이어 저항 감소: 	translated	지도 어픽스 설명 조각
+% be an higher tier	% 확률로 더 높은 등급이 됨	translated	지도 어픽스 설명 조각; 원문 문법 오류 보정
+% chance to become a boss	% 확률로 보스가 됨	translated	지도 어픽스 설명 조각
+% chance to cast dragon breath	% 확률로 드래곤 브레스 시전	translated	지도 어픽스 설명 조각
+% chance to cast fireball	% 확률로 화염구 시전	translated	지도 어픽스 설명 조각
+% chance to deal energy damage	% 확률로 에너지 피해를 줌	translated	지도 어픽스 설명 조각
+% chance to ignore status resistance	% 확률로 상태 저항 무시	translated	지도 어픽스 설명 조각
+% chance to summon a monster upon death	% 확률로 사망 시 몬스터 소환	translated	지도 어픽스 설명 조각
+% critical chance	% 치명타 확률	translated	지도 어픽스 설명 조각
+% extra chance to resist control effects	% 추가 제어 효과 저항 확률	translated	지도 어픽스 설명 조각
+% increased damage	% 증가한 피해를 줌	translated	지도 어픽스 설명 조각
+% increased HP	% 생명력 증가	translated	지도 어픽스 설명 조각
+% increased movement speed	% 이동 속도 증가	translated	지도 어픽스 설명 조각
+% of magic damage	%의 마법 피해를 반사	translated	지도 어픽스 설명 조각
+% of physical damage	%의 물리 피해를 반사	translated	지도 어픽스 설명 조각
+% of player hp as damage	%의 플레이어 생명력을 피해로 줌	translated	지도 어픽스 설명 조각
+%HP per second	% 생명력 재생	translated	지도 어픽스 설명 조각
+Monsters deal 	몬스터가 	translated	지도 어픽스 설명 조각
+Monsters have 	몬스터: 	translated	지도 어픽스 설명 조각
+Monsters reflect 	몬스터가 	translated	지도 어픽스 설명 조각
+Monsters regenerate 	몬스터가 초당 	translated	지도 어픽스 설명 조각
+Monsters resistances are increased by 	몬스터 저항 증가: 	translated	지도 어픽스 설명 조각
+Players spell recovery speed increased by 	플레이어 주문 회복 속도 증가: 	translated	지도 어픽스 설명 조각
+Creator's Hourglass and Eye of the void can be used to unlock new affixes, Pandora's Cube to change the Map and emerald of power to increase the map Level.\nUsing this map will teleport you to the entrance.	창조자의 모래시계와 공허의 눈으로 새로운 어픽스를 해금할 수 있습니다. 판도라의 상자로 지도를 변경하고, 힘의 에메랄드로 지도 레벨을 높일 수 있습니다.\n이 지도를 사용하면 입구로 순간이동합니다.	translated	지도 아이템 사용법 설명
