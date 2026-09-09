@@ -7,9 +7,9 @@
   "patchable_unique_sources": 308,
   "unpatchable_occurrences": 5805,
   "status": {
-    "excluded": 1687,
+    "excluded": 1760,
     "translated": 989,
-    "untranslated": 349
+    "untranslated": 276
   },
   "categories": {
     "class": 37,
@@ -25,15 +25,15 @@
     "ui": 95
   },
   "patchability_reasons": {
-    "comparison_control_literal": 153,
+    "comparison_control_literal": 155,
     "display_field_assignment": 6,
     "display_variable_assignment": 10,
-    "engine_event_key_context": 320,
+    "engine_event_key_context": 329,
     "esc_message_call": 6,
     "event_hint_assignment": 8,
     "formatted_colored_text": 159,
     "index_key_literal": 1,
-    "internal_lookup_literal": 1,
+    "internal_lookup_literal": 40,
     "internal_table_key_literal": 1675,
     "known_display_name_assignment": 20,
     "proven_alchemy_direct_description": 7,
@@ -67,7 +67,7 @@
     "reviewed_alchemy_item_name": 27,
     "reviewed_arena_ui": 4,
     "reviewed_crafting_status_name": 20,
-    "reviewed_internal_api_literal": 253,
+    "reviewed_internal_api_literal": 342,
     "reviewed_item_corruption_message": 8,
     "reviewed_map_level_label": 1,
     "reviewed_maw_settings_header": 5,
@@ -81,7 +81,7 @@
     "status_text_call": 213,
     "table_schema_not_reviewed": 69,
     "table_schema_structural": 1894,
-    "uncertain_context": 555
+    "uncertain_context": 416
   },
   "validation_errors": [],
   "structural_table_unique_sources": 1140,
@@ -89,10 +89,10 @@
   "structural_table_newly_excluded": 0,
   "table_policy": "Data/Tables-only strings are audited structural keys/reference/config text; sources also used in Lua remain reviewable.",
   "individual_literal_refinements": 5,
-  "internal_only_unique_sources": 1673,
-  "internal_only_newly_excluded": 0,
+  "internal_only_unique_sources": 1746,
+  "internal_only_newly_excluded": 73,
   "internal_literal_policy": "Sources occurring only in proven engine/control/comment contexts are excluded; mixed-context sources remain reviewable.",
-  "uncertain_internal_refinements": 2078,
+  "uncertain_internal_refinements": 2217,
   "proven_display_promotions": 464,
   "proven_display_variable_lines": 35,
   "proven_item_enchant_description_lines": 50,
@@ -110,8 +110,8 @@
   "proven_item_enchantment_label_promotions": 31,
   "proven_settings_header_promotions": 2,
   "reviewed_bulk_display_promotions": 92,
-  "uncertain_review_unique_sources": 341,
-  "uncertain_review_occurrences": 511,
-  "uncertain_review_exact_mmmerge_matches": 15,
-  "uncertain_review_ambiguous_mmmerge_matches": 7
+  "uncertain_review_unique_sources": 266,
+  "uncertain_review_occurrences": 379,
+  "uncertain_review_exact_mmmerge_matches": 10,
+  "uncertain_review_ambiguous_mmmerge_matches": 1
 }
