@@ -39,7 +39,6 @@ def write_rows(path: Path, rows):
 
 
 def lua_string_values(line: str) -> set[str]:
-    """Decode ordinary quoted Lua strings from a one-line source context."""
     values: set[str] = set()
     i = 0
     while i < len(line):
@@ -86,12 +85,6 @@ def display_sink_uses_var(line: str, var: str) -> bool:
 
 
 def discover_display_variable_lines(root: Path) -> set[tuple[str, int]]:
-    """Find simple string assignments consumed soon by a proven display sink.
-
-    We only look forward 12 physical lines. If the same variable is reassigned
-    first, the candidate is rejected. This deliberately misses complex dataflow
-    rather than risking translation of internal/control strings.
-    """
     safe: set[tuple[str, int]] = set()
     scripts = root / "Scripts"
     if not scripts.exists():
@@ -119,13 +112,6 @@ def discover_display_variable_lines(root: Path) -> set[tuple[str, int]]:
 
 
 def discover_item_enchant_description_lines(root: Path) -> set[tuple[str, int]]:
-    """Return lines belonging to MAW 4.5's proven ``bonus2txt`` tooltip table.
-
-    ``checktext(MaxCharges, bonus2, it)`` returns ``bonus2txt[bonus2]`` and its
-    callers append that value to ``t.Description``. We intentionally scope this
-    recognizer to the one known file/function/table instead of promoting generic
-    indexed string tables.
-    """
     rel = "Scripts/General/zzMaw-Items.lua"
     path = root / rel
     if not path.exists():
@@ -142,24 +128,20 @@ def discover_item_enchant_description_lines(root: Path) -> set[tuple[str, int]]:
 
     for i, line in enumerate(lines, 1):
         stripped = line.strip()
-
         if not in_checktext:
             if re.match(r"function\s+checktext\s*\(", stripped):
                 in_checktext = True
             continue
-
         if not in_bonus_table:
             if re.match(r"bonus2txt\s*=\s*\{", stripped):
                 in_bonus_table = True
             elif re.match(r"(?:local\s+)?function\s+", stripped):
                 break
             continue
-
         if stripped == "}":
             break
         if lua_string_values(line):
             safe.add((rel, i))
-
     return safe
 
 
@@ -169,18 +151,13 @@ def mark(row: dict[str, str], reason: str) -> bool:
     return True
 
 
-def promote(
-    row: dict[str, str],
-    variable_display_lines: set[tuple[str, int]],
-    item_enchant_lines: set[tuple[str, int]],
-) -> bool:
+def promote(row: dict[str, str], variable_display_lines: set[tuple[str, int]], item_enchant_lines: set[tuple[str, int]]) -> bool:
     if row.get("patchable") != "no" or row.get("reason") != "uncertain_context":
         return False
     source = row.get("source", "")
     context = row.get("context", "")
     if not source:
         return False
-
     literals = lua_string_values(context)
     if source not in literals:
         return False
@@ -190,30 +167,29 @@ def promote(
         context,
     ):
         return mark(row, "proven_game_display_assignment")
-
     if re.search(
         r"Game\.SpellsTxt\s*\[[^\]]+\](?:\.[A-Za-z_][A-Za-z0-9_]*)?\s*=",
         context,
     ):
         return mark(row, "proven_game_display_assignment")
-
-    # Special-enchant BonusStat is the item description text used by the
-    # information box when MAW's custom checktext() does not override it.
     if re.search(r"Game\.SpcItemsTxt\s*\[[^\]]+\]\.BonusStat\s*=", context):
         return mark(row, "proven_special_item_bonus_description")
 
+    # BuildItemInformationBox fields in zzMaw-Items.lua are rendered verbatim
+    # in the item information box. Keep this scoped to the MAW item script so a
+    # generic ``t.Type``/``t.BasicStat`` used by another event is not promoted.
+    if row.get("file") == "Scripts/General/zzMaw-Items.lua" and re.search(
+        r"\bt\.(?:Type|BasicStat)\s*=", context
+    ):
+        return mark(row, "proven_item_information_field")
+
     if re.search(r"Game\.NPC\s*\[[^\]]+\]\.Name\s*=", context):
         return mark(row, "proven_npc_display_name")
-
     if re.search(r"\bSkillz\.setName\s*\(", context):
         return mark(row, "proven_skill_display_name")
     if re.search(r"\bSkillz\.setDesc\s*\(", context):
         return mark(row, "proven_skill_display_description")
-
-    if re.search(
-        r"Game\.SkillDes(?:Normal|Expert|Master|GM)\s*\[[^\]]+\]\s*=",
-        context,
-    ):
+    if re.search(r"Game\.SkillDes(?:Normal|Expert|Master|GM)\s*\[[^\]]+\]\s*=", context):
         return mark(row, "proven_skill_mastery_description")
 
     try:
@@ -225,17 +201,10 @@ def promote(
     if key in item_enchant_lines:
         return mark(row, "proven_item_enchant_description")
 
-    if re.search(
-        r"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=",
-        context,
-    ):
+    if re.search(r"Game\.ItemsTxt\s*\[[^\]]+\]\.(?:Name|NotIdentifiedName|Description)\s*=", context):
         return mark(row, "proven_item_display_text")
-    if re.search(
-        r"[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\]\.NotIdentifiedName\s*=",
-        context,
-    ):
+    if re.search(r"[A-Za-z_][A-Za-z0-9_]*\s*\[[^\]]+\]\.NotIdentifiedName\s*=", context):
         return mark(row, "proven_item_display_name")
-
     return False
 
 
