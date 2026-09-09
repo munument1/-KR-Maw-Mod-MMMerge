@@ -13,6 +13,7 @@ on:
       - 'tools/classify_internal_literals.py'
       - 'tools/refine_uncertain_internal.py'
       - 'tools/promote_display_literals.py'
+      - 'tools/promote_alchemy_tooltips.py'
       - 'tools/refine_patchability.py'
       - 'tools/export_patchable_candidates.py'
       - 'tools/export_uncertain_candidates.py'
@@ -61,6 +62,9 @@ jobs:
 
       - name: Promote proven display assignments
         run: python tools/promote_display_literals.py --root .
+
+      - name: Promote alchemy item tooltips
+        run: python tools/promote_alchemy_tooltips.py --root .
 
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
