@@ -93,9 +93,9 @@ function checkPromo()
 				Game.Classes.HPFactor[i]=oldHP[i]*(0.75+0.25*totalPromotions)
 				Game.Classes.SPFactor[i]=oldSP[i]*(0.75+0.25*totalPromotions)
 				if totalPromotions==2 then
-					Game.ClassNames[i]=string.format("Elder " .. oldNames[i])
+					Game.ClassNames[i]=string.format("원로 " .. oldNames[i])
 				else
-					Game.ClassNames[i]=string.format("Ultimate " .. oldNames[i])
+					Game.ClassNames[i]=string.format("궁극의 " .. oldNames[i])
 				end
 			else
 				Game.Classes.HPFactor[i]=oldHP[i]
@@ -423,28 +423,28 @@ local function seraphSkills(isSeraph, id)
 		--Skillz.setDesc(16,4,"Triple healing effect")
 		--Skillz.setDesc(16,5,"n/a")
 		
-		Skillz.setDesc(17,2,"Increases damage by 2 per Skill point")
-		Skillz.setDesc(17,3,"Increases damage by 3 per Skill point")
-		Skillz.setDesc(17,4,"Increases damage by 4 per Skill point")
+		Skillz.setDesc(17,2,"기술 포인트당 피해량이 2 증가합니다")
+		Skillz.setDesc(17,3,"기술 포인트당 피해량이 3 증가합니다")
+		Skillz.setDesc(17,4,"기술 포인트당 피해량이 4 증가합니다")
 		Skillz.setDesc(17,5,"n/a")
 		
-		Skillz.setDesc(18,2,"Melee attacks heal on hit")
-		Skillz.setDesc(18,3,"Double healing effect")
-		Skillz.setDesc(18,4,"Triple healing effect")
+		Skillz.setDesc(18,2,"근접 공격 적중 시 생명력을 회복합니다")
+		Skillz.setDesc(18,3,"회복 효과가 2배가 됩니다")
+		Skillz.setDesc(18,4,"회복 효과가 3배가 됩니다")
 		Skillz.setDesc(18,5,"n/a")
 		
-		Skillz.setDesc(19,2,"Increased Attack speed by 1% per Skill")
-		Skillz.setDesc(19,3,"Increased Attack speed by 2% per Skill")
-		Skillz.setDesc(19,4,"Increased Attack speed by 3% per Skill")
-		Skillz.setDesc(19,5,"Increased Attack speed by 4% per Skill")
+		Skillz.setDesc(19,2,"기술 포인트당 공격 속도가 1% 증가합니다")
+		Skillz.setDesc(19,3,"기술 포인트당 공격 속도가 2% 증가합니다")
+		Skillz.setDesc(19,4,"기술 포인트당 공격 속도가 3% 증가합니다")
+		Skillz.setDesc(19,5,"기술 포인트당 공격 속도가 4% 증가합니다")
 	else
 		for key, value in pairs(baseSchoolsTxtSERAPH) do
 			Skillz.setDesc(key,1,value .. "\n")
-			Skillz.setDesc(key,2,"Effects vary per spell")
-			Skillz.setDesc(key,3,"Effects vary per spell")
-			Skillz.setDesc(key,4,"Effects vary per spell")
+			Skillz.setDesc(key,2,"효과는 주문마다 다릅니다")
+			Skillz.setDesc(key,3,"효과는 주문마다 다릅니다")
+			Skillz.setDesc(key,4,"효과는 주문마다 다릅니다")
 		end
-		Skillz.setDesc(19,5,"Effects vary per spell")
+		Skillz.setDesc(19,5,"효과는 주문마다 다릅니다")
 	end
 end
 
@@ -1458,8 +1458,8 @@ function dkSkills(isDK, id)
 		Skillz.setDesc(18,1,txt)
 		txt="This skill is only available to death knights and increases damage by 0.5-1-1.5 (at Novice, Expert, Master) and reduces magical damage taken.\n" .. "Current Reduction: " .. round((1-1/(unholyS/100+1))*1000)/10 .."%\n"
 		Skillz.setDesc(20,1,txt)
-		Skillz.setDesc(14,5,"Effects vary per spell")
-		Skillz.setDesc(18,5,"Effects vary per spell")
+		Skillz.setDesc(14,5,"효과는 주문마다 다릅니다")
+		Skillz.setDesc(18,5,"효과는 주문마다 다릅니다")
 	else
 		for key, value in pairs(baseSchoolsTxtDK) do
 			Skillz.setDesc(key,1,value)
@@ -1808,7 +1808,7 @@ local function elementalistSkills(isElementalist, id)
 		end
 	else
 		for i=12,15 do
-			Skillz.setDesc(i,5,"Effects vary per spell")		
+			Skillz.setDesc(i,5,"효과는 주문마다 다릅니다")		
 		end
 	end
 end
@@ -2112,25 +2112,25 @@ function assassinSkills(isAssassin, pl)
 		Skillz.setDesc(15,1,"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n");
 
 		
-		Skillz.setDesc(12,2,"Melee attack costs 45 energy")
-		Skillz.setDesc(13,2,"Killing a monster restores 10 energy")
-		Skillz.setDesc(14,2,"You regenerate 8 energy per second")
-		Skillz.setDesc(15,2,"Increases your maximum energy by 10")
+		Skillz.setDesc(12,2,"근접 공격에 에너지 45를 소모합니다")
+		Skillz.setDesc(13,2,"몬스터 처치 시 에너지 10을 회복합니다")
+		Skillz.setDesc(14,2,"초당 에너지 8을 회복합니다")
+		Skillz.setDesc(15,2,"최대 에너지가 10 증가합니다")
 		
-		Skillz.setDesc(12,3,"Melee attack costs 40 energy")
-		Skillz.setDesc(13,3,"Killing a monster restores 15 energy")
-		Skillz.setDesc(14,3,"You regenerate 10 energy per second")
-		Skillz.setDesc(15,3,"Increases your maximum energy by 20")
+		Skillz.setDesc(12,3,"근접 공격에 에너지 40을 소모합니다")
+		Skillz.setDesc(13,3,"몬스터 처치 시 에너지 15를 회복합니다")
+		Skillz.setDesc(14,3,"초당 에너지 10을 회복합니다")
+		Skillz.setDesc(15,3,"최대 에너지가 20 증가합니다")
 		
-		Skillz.setDesc(12,4,"Melee attack costs 35 energy")
-		Skillz.setDesc(13,4,"Killing a monster restores 20 energy")
-		Skillz.setDesc(14,4,"You regenerate 12 energy per second")
-		Skillz.setDesc(15,4,"Increases your maximum energy by 30")
+		Skillz.setDesc(12,4,"근접 공격에 에너지 35를 소모합니다")
+		Skillz.setDesc(13,4,"몬스터 처치 시 에너지 20을 회복합니다")
+		Skillz.setDesc(14,4,"초당 에너지 12를 회복합니다")
+		Skillz.setDesc(15,4,"최대 에너지가 30 증가합니다")
 		
-		Skillz.setDesc(12,5,"Melee attack costs 30 energy")
-		Skillz.setDesc(13,5,"Killing a monster restores 25 energy")
-		Skillz.setDesc(14,5,"You regenerate 14 energy per second")
-		Skillz.setDesc(15,5,"Increases your maximum energy by 40")
+		Skillz.setDesc(12,5,"근접 공격에 에너지 30을 소모합니다")
+		Skillz.setDesc(13,5,"몬스터 처치 시 에너지 25를 회복합니다")
+		Skillz.setDesc(14,5,"초당 에너지 14를 회복합니다")
+		Skillz.setDesc(15,5,"최대 에너지가 40 증가합니다")
 		
 		Game.SpellsTxt[6].Description=string.format("단일 대상에게 화염구를 발사합니다. 명중하면 폭발하여 주변 모두에게 피해를 주며, 너무 가까우면 파티원도 피해를 받습니다. 화염구는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[6].DamageMult*100)
 		Game.SpellsTxt[7].Description=string.format("지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 발동할 때까지 유지됩니다. 화염 가시는 근접 공격 피해의 %s%%만큼 피해를 줍니다.",assassinSpells[7].DamageMult*100)

@@ -77,7 +77,7 @@ Scales further enhance their toughness and resistance to magical damage, increas
 ------------------------------------------------------------
           AC%| Res%"			Scripts/General/zzClasses.lua	807	1	
 maw-5d3f344b5bd2	untranslated	class	duration			Scripts/General/zzClasses.lua	866	1	
-maw-9d6d1bb8b10c	untranslated	class	Elder 			Scripts/General/zzClasses.lua	96	1	
+maw-9d6d1bb8b10c	translated	class	Elder 	원로 		Scripts/General/zzClasses.lua	96	1	클래스명 접두어
 maw-0fb88bcef8a5	untranslated	class	GetArmorClass			Scripts/General/AdaptiveMonstersStats.lua	1041	1	
 maw-8a3559daa477	untranslated	class	Increases Armor Class  by 5+(0.5 x Power) for 6 Hours			Scripts/General/zzAlchemy.lua	482	1	
 maw-1c6884f089f2	untranslated	class	Merc			Scripts/General/NPCMercenaries.lua	756	1	
@@ -88,7 +88,7 @@ maw-1d87c39c6baa	untranslated	class	StackCost			Scripts/General/zzClasses.lua	21
 maw-aeddfe22a01f	untranslated	class	Tick			Scripts/General/zzClasses.lua	1484	3	
 maw-417ced4d83f0	untranslated	class	totalDuration			Scripts/General/zzClasses.lua	866	1	
 maw-b0b73dfa2619	untranslated	class	totalForce			Scripts/General/zzClasses.lua	866	1	
-maw-f099e38eb393	untranslated	class	Ultimate 			Scripts/General/zzClasses.lua	98	1	
+maw-f099e38eb393	translated	class	Ultimate 	궁극의 		Scripts/General/zzClasses.lua	98	1	클래스명 접두어
 maw-ae24a945c0d5	translated	item	"
 
 Artifact Level: "	"
@@ -934,7 +934,7 @@ maw-65f82b3122c0	untranslated	misc	Synchronization/%s		%s	Scripts/Modules/Multip
 maw-e96b06f09b6b	untranslated	misc	"Targets found. Realms: Attuned. Time: Attuned.
 
 "			Scripts/Global/Quest_SavingGoobers.lua	754	3	
-maw-f83b305141e4	untranslated	misc	Telelocator			Scripts/Global/Quest_SavingGoobers.lua	627	1	
+maw-f83b305141e4	translated	misc	Telelocator	텔레로케이터		Scripts/Global/Quest_SavingGoobers.lua	627	1	NPC 표시명
 maw-54a29ed6e03d	untranslated	misc	Temporarily increases by 10+(1 x Power) Endurance, Speed and Luck for 6 hours.			Scripts/General/zzAlchemy.lua	490	1	
 maw-5421d4f3edd5	untranslated	misc	Temporarily increases by 10+(1 x Power) Intellect and Personality for 6 hours.			Scripts/General/zzAlchemy.lua	489	1	
 maw-df9472ca68e2	untranslated	misc	Temporarily increases by 10+(1 x Power) Might and Accuracy for 6 hours.			Scripts/General/zzAlchemy.lua	488	1	
@@ -1484,9 +1484,9 @@ maw-908093bbf3f4	untranslated	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527
 maw-84d1ceb266d3	untranslated	skill	([^%s]+)		%s	Scripts/General/BountyHunt.lua	215	13	
 maw-4b7ec923d00c	untranslated	skill	"(calculated after resistances)
 "			Scripts/General/zzClasses.lua	1046	1	
-maw-75446e835954	untranslated	skill	Absorb up to 25% damage			Scripts/General/zzMAW-Skills.lua	2478	1	
-maw-edaf46202584	untranslated	skill	Absorb up to 50% damage			Scripts/General/zzMAW-Skills.lua	2479	1	
-maw-b53ba9e43224	untranslated	skill	Absorb up to 75% damage			Scripts/General/zzMAW-Skills.lua	2480	1	
+maw-75446e835954	translated	skill	Absorb up to 25% damage	피해를 최대 25% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2478	1	마나 방패 숙련 효과
+maw-edaf46202584	translated	skill	Absorb up to 50% damage	피해를 최대 50% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2479	1	마나 방패 숙련 효과
+maw-b53ba9e43224	translated	skill	Absorb up to 75% damage	피해를 최대 75% 흡수합니다		Scripts/General/zzMAW-Skills.lua	2480	1	마나 방패 숙련 효과
 maw-80cc252aa544	untranslated	skill	AC|			Scripts/General/zzMAW-Skills.lua	557	1	
 maw-89736fc25d09	untranslated	skill	Adamantite			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-1b684e0e7237	untranslated	skill	"After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.
@@ -1507,10 +1507,10 @@ Melee Power coefficient: "	"엄호의 경지에 이르러, 동료를 공격하�
 
 근접 위력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 본문
 maw-bbec938dae2f	translated	skill	Air Magic	공기 마법		Scripts/General/zzClasses.lua	2166	1	Skillz.setName 표시명
-maw-53ad7869dac0	untranslated	skill	All damage is absorbed by mana			Scripts/General/zzMAW-Skills.lua	2481	1	
+maw-53ad7869dac0	translated	skill	All damage is absorbed by mana	모든 피해를 마나로 흡수합니다		Scripts/General/zzMAW-Skills.lua	2481	1	마나 방패 숙련 효과
 maw-f9363b18c988	untranslated	skill	"Allow use to Cover Physical damage
 "			Scripts/General/zzMAW-Skills.lua	2048	1	
-maw-60b1f591790d	untranslated	skill	Allow use to Cover Projectiles damage			Scripts/General/zzMAW-Skills.lua	2049	1	
+maw-60b1f591790d	translated	skill	Allow use to Cover Projectiles damage	투사체 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2049	1	엄호 숙련 효과
 maw-04e874e5383b	untranslated	skill	Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.			Scripts/General/zzAlchemy.lua	688	1	
 maw-a672568b736a	untranslated	skill	Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.			Scripts/General/zzAlchemy.lua	687	1	
 maw-43a3e83ba69f	untranslated	skill	"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.
@@ -1520,7 +1520,7 @@ Damage added by armsmaster skill scales with your weapon skill, amplifying its i
 "			Scripts/General/zzMAW-Skills.lua	698	1	
 maw-2de8f87cb665	translated	skill	Ascension	승천		Scripts/General/zzMAW-Skills.lua	1464	1	MAW 스킬명
 maw-01c14ed50231	translated	skill	Assassination	암살		Scripts/General/zzClasses.lua	2107	1	MAW 스킬명
-maw-4c6ddbffd5ce	untranslated	skill	Attacking will increase you next Cover chance by 15%			Scripts/General/zzMAW-Skills.lua	2051	1	
+maw-4c6ddbffd5ce	translated	skill	Attacking will increase you next Cover chance by 15%	공격하면 다음 엄호 확률이 15% 증가합니다		Scripts/General/zzMAW-Skills.lua	2051	1	엄호 숙련 효과
 maw-dd933dd88d68	untranslated	skill	Attack|			Scripts/General/zzMAW-Skills.lua	526	1	
 maw-c8fa8bc02696	untranslated	skill	baseSpeedMelee			Scripts/General/zzMAW-Skills.lua	358	1	
 maw-4265aa0579a1	untranslated	skill	baseSpeedRanged			Scripts/General/zzMAW-Skills.lua	354	1	
@@ -1576,7 +1576,7 @@ maw-baa7b94348d2	untranslated	skill	Current Reduction: 			Scripts/General/zzClas
 maw-b3ec68d9a6c8	translated	skill	Dark Magic	어둠 마법		Scripts/General/zzClasses.lua	1474	1	Skillz.setName 표시명
 maw-a8e6075e3936	untranslated	skill	Dmg%%|			Scripts/General/zzMAW-Skills.lua	542	1	
 maw-2398296e3634	untranslated	skill	Dmg|			Scripts/General/zzMAW-Skills.lua	549	1	
-maw-a45908c888a2	untranslated	skill	Double healing effect			Scripts/General/zzClasses.lua	432	1	
+maw-a45908c888a2	translated	skill	Double healing effect	회복 효과가 2배가 됩니다		Scripts/General/zzClasses.lua	432	1	스킬 숙련 효과
 maw-eac1e2011194	untranslated	skill	"Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.
 
 Whenever this skill is below dragon skill it will push monsters away
@@ -1602,23 +1602,23 @@ maw-ebabbf34ceff	untranslated	skill	Grants bonus to Meditation skill for 6 hours
 maw-5200bdfc01a1	untranslated	skill	HP			Scripts/General/AdaptiveMonstersStats.lua	710	10	
 maw-bc4de4436fe9	untranslated	skill	Incorrect mastery %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	89	1	
 maw-d777daa9c06f	untranslated	skill	Incorrect skill value %d at JoinSkill()		%d	Scripts/Structs/After/RemoveSkillValueLimits.lua	85	1	
-maw-e8fbfeac40bd	untranslated	skill	Increase your regeneration by 1% per every 1% of hp lost			Scripts/General/zzMAW-Skills.lua	2575	1	
-maw-9f6c0df8b5f6	untranslated	skill	Increased Attack speed by 1% per Skill			Scripts/General/zzClasses.lua	436	1	
-maw-daab9922b845	untranslated	skill	Increased Attack speed by 2% per Skill			Scripts/General/zzClasses.lua	437	1	
-maw-6c0c573a0a4e	untranslated	skill	Increased Attack speed by 3% per Skill			Scripts/General/zzClasses.lua	438	1	
-maw-5ea4107586d3	untranslated	skill	Increased Attack speed by 4% per Skill			Scripts/General/zzClasses.lua	439	1	
-maw-49cb5d5ca418	untranslated	skill	Increases damage by 2 per Skill point			Scripts/General/zzClasses.lua	426	1	
-maw-f893dfeaa800	untranslated	skill	Increases damage by 3 per Skill point			Scripts/General/zzClasses.lua	427	1	
-maw-3cb0bec33487	untranslated	skill	Increases damage by 4 per Skill point			Scripts/General/zzClasses.lua	428	1	
-maw-c77d92241036	untranslated	skill	Increases your maximum energy by 10			Scripts/General/zzClasses.lua	2118	1	
-maw-6290f5d955e4	untranslated	skill	Increases your maximum energy by 20			Scripts/General/zzClasses.lua	2123	1	
-maw-802a1329ffc3	untranslated	skill	Increases your maximum energy by 30			Scripts/General/zzClasses.lua	2128	1	
-maw-3656b212d46e	untranslated	skill	Increases your maximum energy by 40			Scripts/General/zzClasses.lua	2133	1	
+maw-e8fbfeac40bd	translated	skill	Increase your regeneration by 1% per every 1% of hp lost	잃은 생명력 1%마다 재생량이 1% 증가합니다		Scripts/General/zzMAW-Skills.lua	2575	1	재생 숙련 효과
+maw-9f6c0df8b5f6	translated	skill	Increased Attack speed by 1% per Skill	기술 포인트당 공격 속도가 1% 증가합니다		Scripts/General/zzClasses.lua	436	1	스킬 숙련 효과
+maw-daab9922b845	translated	skill	Increased Attack speed by 2% per Skill	기술 포인트당 공격 속도가 2% 증가합니다		Scripts/General/zzClasses.lua	437	1	스킬 숙련 효과
+maw-6c0c573a0a4e	translated	skill	Increased Attack speed by 3% per Skill	기술 포인트당 공격 속도가 3% 증가합니다		Scripts/General/zzClasses.lua	438	1	스킬 숙련 효과
+maw-5ea4107586d3	translated	skill	Increased Attack speed by 4% per Skill	기술 포인트당 공격 속도가 4% 증가합니다		Scripts/General/zzClasses.lua	439	1	스킬 숙련 효과
+maw-49cb5d5ca418	translated	skill	Increases damage by 2 per Skill point	기술 포인트당 피해량이 2 증가합니다		Scripts/General/zzClasses.lua	426	1	스킬 숙련 효과
+maw-f893dfeaa800	translated	skill	Increases damage by 3 per Skill point	기술 포인트당 피해량이 3 증가합니다		Scripts/General/zzClasses.lua	427	1	스킬 숙련 효과
+maw-3cb0bec33487	translated	skill	Increases damage by 4 per Skill point	기술 포인트당 피해량이 4 증가합니다		Scripts/General/zzClasses.lua	428	1	스킬 숙련 효과
+maw-c77d92241036	translated	skill	Increases your maximum energy by 10	최대 에너지가 10 증가합니다		Scripts/General/zzClasses.lua	2118	1	스킬 숙련 효과
+maw-6290f5d955e4	translated	skill	Increases your maximum energy by 20	최대 에너지가 20 증가합니다		Scripts/General/zzClasses.lua	2123	1	스킬 숙련 효과
+maw-802a1329ffc3	translated	skill	Increases your maximum energy by 30	최대 에너지가 30 증가합니다		Scripts/General/zzClasses.lua	2128	1	스킬 숙련 효과
+maw-3656b212d46e	translated	skill	Increases your maximum energy by 40	최대 에너지가 40 증가합니다		Scripts/General/zzClasses.lua	2133	1	스킬 숙련 효과
 maw-4abf5e5a2ab2	untranslated	skill	IsConscious			Scripts/General/zzMAW-Skills.lua	2617	1	
-maw-40544d9bf0bd	untranslated	skill	Killing a monster restores 10 energy			Scripts/General/zzClasses.lua	2116	1	
-maw-f11808504cd5	untranslated	skill	Killing a monster restores 15 energy			Scripts/General/zzClasses.lua	2121	1	
-maw-c39a1eb5778a	untranslated	skill	Killing a monster restores 20 energy			Scripts/General/zzClasses.lua	2126	1	
-maw-1acaae4a2aff	untranslated	skill	Killing a monster restores 25 energy			Scripts/General/zzClasses.lua	2131	1	
+maw-40544d9bf0bd	translated	skill	Killing a monster restores 10 energy	몬스터 처치 시 에너지 10을 회복합니다		Scripts/General/zzClasses.lua	2116	1	스킬 숙련 효과
+maw-f11808504cd5	translated	skill	Killing a monster restores 15 energy	몬스터 처치 시 에너지 15를 회복합니다		Scripts/General/zzClasses.lua	2121	1	스킬 숙련 효과
+maw-c39a1eb5778a	translated	skill	Killing a monster restores 20 energy	몬스터 처치 시 에너지 20을 회복합니다		Scripts/General/zzClasses.lua	2126	1	스킬 숙련 효과
+maw-1acaae4a2aff	translated	skill	Killing a monster restores 25 energy	몬스터 처치 시 에너지 25를 회복합니다		Scripts/General/zzClasses.lua	2131	1	스킬 숙련 효과
 maw-44c58b0340ce	untranslated	skill	"Leather armor is the lightest armor a character can wear.  While leather provides less protection than chain or plate armor, it also slows your character down the least.
 
 Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equipping a Leather Armor by a percent amount."			Scripts/General/zzMAW-Skills.lua	591	1	
@@ -1627,10 +1627,10 @@ maw-22fa84df37d6	untranslated	skill	Mana cost reduced by 12.5%.			Scripts/Genera
 maw-c338ab5388a4	untranslated	skill	Mana cost reduced by 25%			Scripts/General/zzMAW-Skills.lua	1466	1	
 maw-0a4e4b7336a4	untranslated	skill	Mana cost reduced by 37.5%			Scripts/General/zzMAW-Skills.lua	1467	1	
 maw-01908de91882	untranslated	skill	Mana cost reduced by 50%			Scripts/General/zzMAW-Skills.lua	1468	1	
-maw-34785d352a98	untranslated	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5			Scripts/General/zzMAW-Skills.lua	2510	1	
-maw-0555f787e247	untranslated	skill	Mana is increased by 3% per skill level, cost divisor increased by 1			Scripts/General/zzMAW-Skills.lua	2511	1	
-maw-7302af587b8b	untranslated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5			Scripts/General/zzMAW-Skills.lua	2512	1	
-maw-b11a712a7bb7	untranslated	skill	Mana is increased by 5% per skill level, cost divisor increased by 2			Scripts/General/zzMAW-Skills.lua	2513	1	
+maw-34785d352a98	translated	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5	기술 레벨당 마나가 2% 증가하고 소모 비용 제수가 0.5 증가합니다		Scripts/General/zzMAW-Skills.lua	2510	1	깨달음 숙련 효과
+maw-0555f787e247	translated	skill	Mana is increased by 3% per skill level, cost divisor increased by 1	기술 레벨당 마나가 3% 증가하고 소모 비용 제수가 1 증가합니다		Scripts/General/zzMAW-Skills.lua	2511	1	깨달음 숙련 효과
+maw-7302af587b8b	translated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5	기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다		Scripts/General/zzMAW-Skills.lua	2512	1	깨달음 숙련 효과
+maw-b11a712a7bb7	translated	skill	Mana is increased by 5% per skill level, cost divisor increased by 2	기술 레벨당 마나가 5% 증가하고 소모 비용 제수가 2 증가합니다		Scripts/General/zzMAW-Skills.lua	2513	1	깨달음 숙련 효과
 maw-bf1e13de8fdf	translated	skill	Mana Shield	마나 방패		Scripts/General/zzMAW-Skills.lua	2476	1	MAW 방어 스킬명
 maw-cbafc012d625	untranslated	skill	"Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.
 
@@ -1661,11 +1661,11 @@ Mastery increase its mana efficience.
 숙련도가 높을수록 마나 효율이 증가합니다.
 "		Scripts/General/zzMAW-Skills.lua	2120	1	마나 방패 설명 8-20-32
 maw-696e3191948f	untranslated	skill	Mastery			Scripts/General/zzMAW-Skills.lua	1083	2	
-maw-7cacbad97aca	untranslated	skill	Melee attack costs 30 energy			Scripts/General/zzClasses.lua	2130	1	
-maw-1c9832330cfc	untranslated	skill	Melee attack costs 35 energy			Scripts/General/zzClasses.lua	2125	1	
-maw-7fdc3862734e	untranslated	skill	Melee attack costs 40 energy			Scripts/General/zzClasses.lua	2120	1	
-maw-bfc71b4321ca	untranslated	skill	Melee attack costs 45 energy			Scripts/General/zzClasses.lua	2115	1	
-maw-bc450c26c1e8	untranslated	skill	Melee attacks heal on hit			Scripts/General/zzClasses.lua	431	1	
+maw-7cacbad97aca	translated	skill	Melee attack costs 30 energy	근접 공격에 에너지 30을 소모합니다		Scripts/General/zzClasses.lua	2130	1	스킬 숙련 효과
+maw-1c9832330cfc	translated	skill	Melee attack costs 35 energy	근접 공격에 에너지 35를 소모합니다		Scripts/General/zzClasses.lua	2125	1	스킬 숙련 효과
+maw-7fdc3862734e	translated	skill	Melee attack costs 40 energy	근접 공격에 에너지 40을 소모합니다		Scripts/General/zzClasses.lua	2120	1	스킬 숙련 효과
+maw-bfc71b4321ca	translated	skill	Melee attack costs 45 energy	근접 공격에 에너지 45를 소모합니다		Scripts/General/zzClasses.lua	2115	1	스킬 숙련 효과
+maw-bc450c26c1e8	translated	skill	Melee attacks heal on hit	근접 공격 적중 시 생명력을 회복합니다		Scripts/General/zzClasses.lua	431	1	스킬 숙련 효과
 maw-0a893ece8e46	translated	skill	Misc	기타		Scripts/General/zzMAW-Skills.lua	2063	2	기타 기술 UI
 maw-cf844749e1e5	untranslated	skill	Omnipotent			Scripts/General/BountyHunt.lua	216	17	
 maw-8eacd5e0337a	untranslated	skill	Plagueborn			Scripts/General/zzMaw-Monsters.lua	3177	2	
@@ -1687,7 +1687,7 @@ maw-078157762d2c	untranslated	skill	Reflecting			Scripts/General/zzMaw-Monsters.
 maw-809f8bbcd185	untranslated	skill	Regenerating			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-73c6fffa68c4	untranslated	skill	RemoveSkillValueLimits			Scripts/Structs/After/RemoveSkillValueLimits.lua	1	1	
 maw-c6b40b4993cf	translated	skill	Retaliation	반격		Scripts/General/zzMAW-Skills.lua	2539	1	MAW 방어 스킬명
-maw-a5b46b9f3ae4	untranslated	skill	Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit			Scripts/General/zzMAW-Skills.lua	2544	1	
+maw-a5b46b9f3ae4	translated	skill	Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit	반격은 최대 3회 중첩되며, 한 번의 강력한 공격으로 모든 중첩을 소모할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2544	1	반격 숙련 효과
 maw-0b414bdcb7b9	translated	skill	Scales	비늘		Scripts/General/zzClasses.lua	806	1	드래곤 스킬명
 maw-aa0e7e86b7aa	untranslated	skill	Shadow			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-a6852004e745	untranslated	skill	"Shield skill provides great defense against both physical and magical attacks.
@@ -1719,7 +1719,7 @@ maw-347e88fe61c6	untranslated	skill	"This skill is only available to death knigh
 maw-8c46bff5c136	untranslated	skill	"This skill is only available to death knights and reduces physical damage taken.
 "			Scripts/General/zzClasses.lua	1457	1	
 maw-dc9dacafa603	untranslated	skill	Thorn			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-e88d3c5da733	untranslated	skill	Triple healing effect			Scripts/General/zzClasses.lua	433	1	
+maw-e88d3c5da733	translated	skill	Triple healing effect	회복 효과가 3배가 됩니다		Scripts/General/zzClasses.lua	433	1	스킬 숙련 효과
 maw-2a8dbafc6266	translated	skill	Unholy	사악함		Scripts/General/zzClasses.lua	1452	1	죽음의 기사 스킬명
 maw-f08ed9a7b187	untranslated	skill	"Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.
 
@@ -1729,14 +1729,14 @@ If available, Expert, Master and Grandmaster is learned at skill 6-12-20.
 "			Scripts/General/zzMAW-Skills.lua	2509	1	
 maw-f9bb62f972ac	untranslated	skill	Venomous			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-fb7fcba97ab8	translated	skill	Water Magic	물 마법		Scripts/General/zzClasses.lua	1472	2	Skillz.setName 표시명
-maw-0627ec58a510	untranslated	skill	You don't meet the requirements, and cannot be taught until you do.			Scripts/General/zzMAW-Skills.lua	2276	1	
-maw-5c294ee8c995	untranslated	skill	You regenerate 10 energy per second			Scripts/General/zzClasses.lua	2122	1	
-maw-7915063e5e14	untranslated	skill	You regenerate 12 energy per second			Scripts/General/zzClasses.lua	2127	1	
-maw-b051b32d9a1f	untranslated	skill	You regenerate 14 energy per second			Scripts/General/zzClasses.lua	2132	1	
-maw-37625d1989c3	untranslated	skill	You regenerate 8 energy per second			Scripts/General/zzClasses.lua	2117	1	
-maw-177e50af5d81	untranslated	skill	Your next attack deals additional damage, multiplied by skill level			Scripts/General/zzMAW-Skills.lua	2541	1	
-maw-f5cbe7ee2108	untranslated	skill	Your next attack has a 25% chance to stun the enemy for 2 seconds			Scripts/General/zzMAW-Skills.lua	2543	1	
-maw-b2d89e6f8305	untranslated	skill	Your next attack recovery time is reduced by 30%			Scripts/General/zzMAW-Skills.lua	2542	1	
+maw-0627ec58a510	translated	skill	You don't meet the requirements, and cannot be taught until you do.	요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.		Scripts/General/zzMAW-Skills.lua	2276	1	스킬 교육 거절 대사
+maw-5c294ee8c995	translated	skill	You regenerate 10 energy per second	초당 에너지 10을 회복합니다		Scripts/General/zzClasses.lua	2122	1	스킬 숙련 효과
+maw-7915063e5e14	translated	skill	You regenerate 12 energy per second	초당 에너지 12를 회복합니다		Scripts/General/zzClasses.lua	2127	1	스킬 숙련 효과
+maw-b051b32d9a1f	translated	skill	You regenerate 14 energy per second	초당 에너지 14를 회복합니다		Scripts/General/zzClasses.lua	2132	1	스킬 숙련 효과
+maw-37625d1989c3	translated	skill	You regenerate 8 energy per second	초당 에너지 8을 회복합니다		Scripts/General/zzClasses.lua	2117	1	스킬 숙련 효과
+maw-177e50af5d81	translated	skill	Your next attack deals additional damage, multiplied by skill level	다음 공격이 기술 레벨에 비례한 추가 피해를 줍니다		Scripts/General/zzMAW-Skills.lua	2541	1	반격 숙련 효과
+maw-f5cbe7ee2108	translated	skill	Your next attack has a 25% chance to stun the enemy for 2 seconds	다음 공격이 25% 확률로 적을 2초 동안 기절시킵니다		Scripts/General/zzMAW-Skills.lua	2543	1	반격 숙련 효과
+maw-b2d89e6f8305	translated	skill	Your next attack recovery time is reduced by 30%	다음 공격의 회복 시간이 30% 감소합니다		Scripts/General/zzMAW-Skills.lua	2542	1	반격 숙련 효과
 maw-4c3ed26b6734	translated	spell	"
 
 Can't learn"	"
@@ -1819,7 +1819,7 @@ maw-12a3d1a8ce31	translated	spell	All spells cast at 2 times skill	모든 주문
 maw-247b27ca66b0	translated	spell	All stats increased by 10+1 per skill	모든 능력치가 10 + 기술 포인트당 1만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	741	1	주문 숙련 설명
 maw-935d91b8e953	translated	spell	All stats increased by 15+1.5 per skill	모든 능력치가 15 + 기술 포인트당 1.5만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	742	1	주문 숙련 설명
 maw-e99c70428f3e	translated	spell	All stats increased by 20+2 per skill	모든 능력치가 20 + 기술 포인트당 2만큼 증가합니다		Scripts/General/zzMaw-Spells.lua	743	1	주문 숙련 설명
-maw-554ad32ce774	untranslated	spell	Allow use to Cover Spells damage			Scripts/General/zzMAW-Skills.lua	2050	1	
+maw-554ad32ce774	translated	spell	Allow use to Cover Spells damage	주문 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2050	1	엄호 숙련 효과
 maw-f3762b6b3022	untranslated	spell	AllowNewSpell			Scripts/General/AdaptiveMonstersStats.lua	764	1	
 maw-512da2e32544	translated	spell	Asphyxiate	질식		Scripts/General/zzClasses.lua	1420	1	MAW 주문명
 maw-6000be5eddfc	untranslated	spell	"Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 4-6-8-10 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).
@@ -1870,7 +1870,7 @@ maw-8a5fd00c1695	translated	spell	Each hit deals damage equal to 	타격당 피�
 maw-44d476274f1e	untranslated	spell	earth			Scripts/General/zzMaw-Spells.lua	3355	1	
 maw-4b580a9a8212	untranslated	spell	Earth Magic Book			Scripts/General/zzMaw-Spells.lua	3402	1	
 maw-29b59ba836d1	translated	spell	Effect is now passive	이제 효과가 지속 효과로 적용됩니다		Scripts/General/zzMaw-Spells.lua	737	1	주문 숙련 설명
-maw-a6e1d9fa2b6b	untranslated	spell	Effects vary per spell			Scripts/General/zzClasses.lua	443	7	
+maw-a6e1d9fa2b6b	translated	spell	Effects vary per spell	효과는 주문마다 다릅니다		Scripts/General/zzClasses.lua	443	7	주문 숙련 공통 설명
 maw-52396a9d6c9e	untranslated	spell	"Effects vary per spell 
 
 "			Scripts/General/zzClasses.lua	1804	2	
@@ -1891,13 +1891,13 @@ maw-7fef960c0f73	untranslated	spell	Grandmaster			Scripts/General/zzMaw-Spells.l
 maw-802ee15f32f0	untranslated	spell	"Grant 5 +1 per 10 potion power charges of Magic Protection (as the spell) for 6 hours.
 From 50 power on will protect also from death and eradication.
 "			Scripts/General/zzAlchemy.lua	485	1	
-maw-a31651504a5b	untranslated	spell	Grants 3 Accuracy to all party per skill point			Scripts/General/zzMaw-Spells.lua	3132	1	
-maw-a29c22df5527	untranslated	spell	Grants 3 Endurance to all party per skill point			Scripts/General/zzMaw-Spells.lua	3131	1	
-maw-e8009de5fe0c	untranslated	spell	Grants 3 Intellect to all party per skill point			Scripts/General/zzMaw-Spells.lua	3128	1	
-maw-5933401d96fe	untranslated	spell	Grants 3 Luck to all party per skill point			Scripts/General/zzMaw-Spells.lua	3130	1	
-maw-d00c6801dcb2	untranslated	spell	Grants 3 Might to all party per skill point			Scripts/General/zzMaw-Spells.lua	3134	1	
-maw-6954e37673ce	untranslated	spell	Grants 3 Personality to all party per skill point			Scripts/General/zzMaw-Spells.lua	3133	1	
-maw-0d372cbfa93c	untranslated	spell	Grants 3 Speed to all party per skill point			Scripts/General/zzMaw-Spells.lua	3129	1	
+maw-a31651504a5b	translated	spell	Grants 3 Accuracy to all party per skill point	기술 포인트당 파티 전체의 정확도가 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3132	1	주문 숙련 효과
+maw-a29c22df5527	translated	spell	Grants 3 Endurance to all party per skill point	기술 포인트당 파티 전체의 인내력이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3131	1	주문 숙련 효과
+maw-e8009de5fe0c	translated	spell	Grants 3 Intellect to all party per skill point	기술 포인트당 파티 전체의 지능이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3128	1	주문 숙련 효과
+maw-5933401d96fe	translated	spell	Grants 3 Luck to all party per skill point	기술 포인트당 파티 전체의 운이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3130	1	주문 숙련 효과
+maw-d00c6801dcb2	translated	spell	Grants 3 Might to all party per skill point	기술 포인트당 파티 전체의 힘이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3134	1	주문 숙련 효과
+maw-6954e37673ce	translated	spell	Grants 3 Personality to all party per skill point	기술 포인트당 파티 전체의 인격이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3133	1	주문 숙련 효과
+maw-0d372cbfa93c	translated	spell	Grants 3 Speed to all party per skill point	기술 포인트당 파티 전체의 민첩성이 3 증가합니다		Scripts/General/zzMaw-Spells.lua	3129	1	주문 숙련 효과
 maw-54c85f95e362	untranslated	spell	"Grants Preservation and Shield (as the spell) for 6 Hours
 Require 20 power to work.
 "			Scripts/General/zzAlchemy.lua	479	1	

@@ -59,14 +59,14 @@ Speed	민첩성 || 속도	ambiguous	ambiguous	item	6	1	2	Same msgid has multiple
 Enter	들어가기 || 입력 || 입장	ambiguous	ambiguous	map	3	0	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Experience	경험 || 경험치	ambiguous	ambiguous	map	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Gold	금 || 금화	ambiguous	ambiguous	map	13	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Telelocator	순간이동 장치 || 텔레로케이터	ambiguous	ambiguous	misc	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Telelocator	순간이동 장치 || 텔레로케이터	ambiguous	ambiguous	misc	1	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Berserk	광분 || 광폭화	ambiguous	ambiguous	monster	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Blackshire	블랙샤이어 || 블랙셔	ambiguous	ambiguous	monster	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 New Sorpigal	뉴 소르피갈 || 뉴 소피갈	ambiguous	ambiguous	monster	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Unconscious	기절 || 의식불명	ambiguous	ambiguous	monster	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Skills	기술 || 스킬	ambiguous	ambiguous	skill	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-You don't meet the requirements, and cannot be taught until you do.	요건을 충족하지 못했습니다. 충족하기 전에는 배울 수 없습니다. || 요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다. || 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	ambiguous	ambiguous	skill	1	0	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	ambiguous	spell	7	0	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+You don't meet the requirements, and cannot be taught until you do.	요건을 충족하지 못했습니다. 충족하기 전에는 배울 수 없습니다. || 요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다. || 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	ambiguous	ambiguous	skill	1	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	ambiguous	spell	7	7	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Master	달인 || 마스터	ambiguous	ambiguous	spell	8	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Amber	앰버 || 호박	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Anointed Herb Potion	기름 부은 약초 물약 || 축성된 약초 물약	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.

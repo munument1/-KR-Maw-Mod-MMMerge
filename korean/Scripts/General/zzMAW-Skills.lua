@@ -2046,9 +2046,9 @@ function events.GameInitialized2()
 	Skillz.setName(coverSkill, "엄호")
 	Skillz.setDesc(coverSkill, 1, "Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nGrants 10 plus 1% chance per skill point to Cover an ally, up to 40%, however, something might happen once at max level...\n\n\nPress P to enable/disable\n")
 	Skillz.setDesc(coverSkill, 2, "Allow use to Cover Physical damage\n")
-	Skillz.setDesc(coverSkill, 3, "Allow use to Cover Projectiles damage")
-	Skillz.setDesc(coverSkill, 4, "Allow use to Cover Spells damage")
-	Skillz.setDesc(coverSkill, 5, "Attacking will increase you next Cover chance by 15%")
+	Skillz.setDesc(coverSkill, 3, "투사체 피해도 엄호할 수 있습니다")
+	Skillz.setDesc(coverSkill, 4, "주문 피해도 엄호할 수 있습니다")
+	Skillz.setDesc(coverSkill, 5, "공격하면 다음 엄호 확률이 15% 증가합니다")
 	Skillz.learn_at(coverSkill, 30)
 end
 
@@ -2273,7 +2273,7 @@ end
 
 --fix for "yo" text
 function events.Action()
-	Game.NPCText[128]="You don't meet the requirements, and cannot be taught until you do."	
+	Game.NPCText[128]="요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다."	
 end
 
 --[[running
@@ -2475,10 +2475,10 @@ function events.GameInitialized2()
 	Skillz.new_armor(manaSkill)
 	Skillz.setName(manaSkill, "마나 방패")
 	Skillz.setDesc(manaSkill, 1, "Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20 (8-20-32 in insanity mode).\n\nMastery increase its mana efficience.\n")
-	Skillz.setDesc(manaSkill, 2, "Absorb up to 25% damage")
-	Skillz.setDesc(manaSkill, 3, "Absorb up to 50% damage")
-	Skillz.setDesc(manaSkill, 4, "Absorb up to 75% damage")
-	Skillz.setDesc(manaSkill, 5, "All damage is absorbed by mana")
+	Skillz.setDesc(manaSkill, 2, "피해를 최대 25% 흡수합니다")
+	Skillz.setDesc(manaSkill, 3, "피해를 최대 50% 흡수합니다")
+	Skillz.setDesc(manaSkill, 4, "피해를 최대 75% 흡수합니다")
+	Skillz.setDesc(manaSkill, 5, "모든 피해를 마나로 흡수합니다")
 	Skillz.learn_at(manaSkill, 3) --alchemy shop
 end
 
@@ -2507,10 +2507,10 @@ function events.GameInitialized2()
 	Skillz.new_magic(Enlightenment)
 	Skillz.setName(Enlightenment, "깨달음")
 	Skillz.setDesc(Enlightenment, 1, "Unlock the true potential of your mana reserves with Enlightenment, a transformative skill that increases your mana pool and reduces mana reserved by buffs, empowering you to cast more freely and frequently.\n\nThe cost of buffs is divided by the amount of mana you gain per level. As you reach higher mastery levels, the divisor increases, but your total mana pool remains the same.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n")
-	Skillz.setDesc(Enlightenment, 2, "Mana is increased by 2% per skill level, cost divisor increased by 0.5")
-	Skillz.setDesc(Enlightenment, 3, "Mana is increased by 3% per skill level, cost divisor increased by 1")
-	Skillz.setDesc(Enlightenment, 4, "Mana is increased by 4% per skill level, cost divisor increased by 1.5")
-	Skillz.setDesc(Enlightenment, 5, "Mana is increased by 5% per skill level, cost divisor increased by 2")
+	Skillz.setDesc(Enlightenment, 2, "기술 레벨당 마나가 2% 증가하고 소모 비용 제수가 0.5 증가합니다")
+	Skillz.setDesc(Enlightenment, 3, "기술 레벨당 마나가 3% 증가하고 소모 비용 제수가 1 증가합니다")
+	Skillz.setDesc(Enlightenment, 4, "기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다")
+	Skillz.setDesc(Enlightenment, 5, "기술 레벨당 마나가 5% 증가하고 소모 비용 제수가 2 증가합니다")
 	Skillz.learn_at(Enlightenment, 3) --alchemy shop
 end
 
@@ -2538,10 +2538,10 @@ function events.GameInitialized2()
 	Skillz.new_armor(Retaliation)
 	Skillz.setName(Retaliation, "반격")
 	Skillz.setDesc(Retaliation, 1, "After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after successfully covering an ally.\n\nExpert, Master and Grandmaster are learned automatically at skill 12, 30 and 50.\n")
-	Skillz.setDesc(Retaliation, 2, "Your next attack deals additional damage, multiplied by skill level")
-	Skillz.setDesc(Retaliation, 3, "Your next attack recovery time is reduced by 30%")
-	Skillz.setDesc(Retaliation, 4, "Your next attack has a 25% chance to stun the enemy for 2 seconds")
-	Skillz.setDesc(Retaliation, 5, "Retaliation can stack up to 3 times, allowing to consume all the stacks in 1 single powerful hit")
+	Skillz.setDesc(Retaliation, 2, "다음 공격이 기술 레벨에 비례한 추가 피해를 줍니다")
+	Skillz.setDesc(Retaliation, 3, "다음 공격의 회복 시간이 30% 감소합니다")
+	Skillz.setDesc(Retaliation, 4, "다음 공격이 25% 확률로 적을 2초 동안 기절시킵니다")
+	Skillz.setDesc(Retaliation, 5, "반격은 최대 3회 중첩되며, 한 번의 강력한 공격으로 모든 중첩을 소모할 수 있습니다")
 end
 
 function events.Action(t)
@@ -2572,7 +2572,7 @@ end
 
 --regeneration for Troll
 function events.GameInitialized2()
-	Skillz.setDesc(30, 5, "Increase your regeneration by 1% per every 1% of hp lost")
+	Skillz.setDesc(30, 5, "잃은 생명력 1%마다 재생량이 1% 증가합니다")
 end
 
 --disable arrows

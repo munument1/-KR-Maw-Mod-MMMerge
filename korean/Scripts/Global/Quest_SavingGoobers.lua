@@ -624,7 +624,7 @@ Quest{
 QSet.TeleCharged = QSet.TeleCharged == nil and true or QSet.TeleCharged
 
 Game.NPC[TeleNPCId].Pic  = 34
-Game.NPC[TeleNPCId].Name = "Telelocator"
+Game.NPC[TeleNPCId].Name = "텔레로케이터"
 
 local function CanShowTeleTopicsStd1()
 	return not QSet.TeleCharged

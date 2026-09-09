@@ -1,9 +1,9 @@
 {
   "base": "MAW MMMerge 4.5",
   "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 434,
-  "translated_entries_with_patchable_occurrences": 432,
-  "patchable_occurrences_targeted": 595,
+  "translated_entries": 488,
+  "translated_entries_with_patchable_occurrences": 486,
+  "patchable_occurrences_targeted": 655,
   "skipped_unpatchable_occurrences_for_translated_sources": 79,
   "changed_files": [
     {
@@ -24,11 +24,11 @@
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 107
+      "replacements": 142
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 49
+      "replacements": 66
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -48,7 +48,7 @@
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 165
+      "replacements": 172
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
@@ -68,7 +68,7 @@
     },
     {
       "file": "Scripts/Global/Quest_SavingGoobers.lua",
-      "replacements": 3
+      "replacements": 4
     },
     {
       "file": "Scripts/Global/zzMAWPotions.lua",

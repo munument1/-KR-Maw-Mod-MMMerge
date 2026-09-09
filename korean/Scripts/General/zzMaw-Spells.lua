@@ -3125,13 +3125,13 @@ function adjustSpellTooltips()
 		end
 		
 		--passive spell buffs
-		Skillz.setDesc(const.Skills.Fire,5,"Grants 3 Intellect to all party per skill point")
-		Skillz.setDesc(const.Skills.Air,5,"Grants 3 Speed to all party per skill point")
-		Skillz.setDesc(const.Skills.Water,5,"Grants 3 Luck to all party per skill point")
-		Skillz.setDesc(const.Skills.Earth,5,"Grants 3 Endurance to all party per skill point")
-		Skillz.setDesc(const.Skills.Spirit,5,"Grants 3 Accuracy to all party per skill point")
-		Skillz.setDesc(const.Skills.Mind,5,"Grants 3 Personality to all party per skill point")
-		Skillz.setDesc(const.Skills.Body,5,"Grants 3 Might to all party per skill point")	
+		Skillz.setDesc(const.Skills.Fire,5,"기술 포인트당 파티 전체의 지능이 3 증가합니다")
+		Skillz.setDesc(const.Skills.Air,5,"기술 포인트당 파티 전체의 민첩성이 3 증가합니다")
+		Skillz.setDesc(const.Skills.Water,5,"기술 포인트당 파티 전체의 운이 3 증가합니다")
+		Skillz.setDesc(const.Skills.Earth,5,"기술 포인트당 파티 전체의 인내력이 3 증가합니다")
+		Skillz.setDesc(const.Skills.Spirit,5,"기술 포인트당 파티 전체의 정확도가 3 증가합니다")
+		Skillz.setDesc(const.Skills.Mind,5,"기술 포인트당 파티 전체의 인격이 3 증가합니다")
+		Skillz.setDesc(const.Skills.Body,5,"기술 포인트당 파티 전체의 힘이 3 증가합니다")	
 		
 	end
 end	
