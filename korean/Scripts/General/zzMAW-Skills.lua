@@ -670,30 +670,30 @@ function events.GameInitialized2()
 	end
 	
 	--adjust tooltips with special effects
-	Game.SkillDesGM[const.Skills.Axe]=string.format("%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger",Game.SkillDesGM[const.Skills.Axe])
-	Game.SkillDesMaster[const.Skills.Bow]=string.format("%s 2 arrows",Game.SkillDesMaster[const.Skills.Bow])
-	Game.SkillDesGM[const.Skills.Bow]=string.format("%s shoots fire arrows, dealing highest between fire and physical damage",Game.SkillDesGM[const.Skills.Bow])
-	Game.SkillDesExpert[const.Skills.Dagger]=string.format("%s can dual wield",Game.SkillDesExpert[const.Skills.Dagger])
-	Game.SkillDesMaster[const.Skills.Dagger]=string.format("%s 5+1 crit%%/skill",Game.SkillDesMaster[const.Skills.Dagger])
-	Game.SkillDesMaster[const.Skills.Mace]=string.format("%s chance to stun",Game.SkillDesMaster[const.Skills.Mace])
-	Game.SkillDesGM[const.Skills.Mace]=string.format("%s chance to paralyze",Game.SkillDesGM[const.Skills.Mace])
-	Game.SkillDesMaster[const.Skills.Spear]=string.format("%s can hold with 1 hand",Game.SkillDesMaster[const.Skills.Spear])
-	Game.SkillDesMaster[const.Skills.Staff]=string.format("%s 1%% to stun",Game.SkillDesMaster[const.Skills.Staff])
-	Game.SkillDesGM[const.Skills.Staff]=string.format("%s usable with Unarm.",Game.SkillDesGM[const.Skills.Staff])
-	Game.SkillDesMaster[const.Skills.Sword]=string.format("%s can dual wield",Game.SkillDesMaster[const.Skills.Sword])
-	Game.SkillDesExpert[const.Skills.Leather]=string.format("%s recovery penalty eliminated",Game.SkillDesExpert[const.Skills.Leather])
-	Game.SkillDesExpert[const.Skills.Chain]=string.format("%s recovery penalty halved",Game.SkillDesExpert[const.Skills.Chain])
-	Game.SkillDesMaster[const.Skills.Chain]=string.format("%s recovery penalty eliminated",Game.SkillDesMaster[const.Skills.Chain])
-	Game.SkillDesExpert[const.Skills.Plate]=string.format("%s rec. pen. halved",Game.SkillDesExpert[const.Skills.Plate])
-	Game.SkillDesGM[const.Skills.Plate]=string.format("%s rec. pen. elim.",Game.SkillDesGM[const.Skills.Plate])
-	Game.SkillDesExpert[const.Skills.Shield]=string.format("%s recovery penalty eliminated",Game.SkillDesExpert[const.Skills.Shield])
-	Game.SkillDesGM[const.Skills.Shield]=string.format("%s 15%% Damage reduction",Game.SkillDesGM[const.Skills.Shield])
-	Game.SkillDesNormal[const.Skills.Armsmaster]=string.format("Skills adds " .. armsmasterSkill.Damage[1] .. " dmg and " .. armsmasterSkill.Attack[1] .. " atk")
-	Game.SkillDesExpert[const.Skills.Armsmaster]=string.format("Skills adds " .. armsmasterSkill.Damage[2] .. " dmg, " .. armsmasterSkill.Attack[2] .. " atk, " .. armsmasterSkill.Speed[2] .. "%% speed")
-	Game.SkillDesMaster[const.Skills.Armsmaster]=string.format("Skills adds " .. armsmasterSkill.Damage[3] .. " dmg, " .. armsmasterSkill.Attack[3] .. " atk, " .. armsmasterSkill.Speed[3] .. "%% speed")
-	Game.SkillDesGM[const.Skills.Armsmaster]=string.format("Skills adds " .. armsmasterSkill.Damage[4] .. " dmg, " .. armsmasterSkill.Attack[4] .. " atk, " .. armsmasterSkill.Speed[4] .. "%% speed")
-	Game.SkillDesMaster[const.Skills.Dodging]=string.format("%s usable with Leather Armor",Game.SkillDesGM[const.Skills.Dodging])
-	Game.SkillDesGM[const.Skills.Dodging]=string.format("%s 0.5%% dodge chance",Game.SkillDesGM[const.Skills.Dodging])
+	Game.SkillDesGM[const.Skills.Axe]=string.format("%s 방어력을 절반으로 만들 확률 1%%, 기술 포인트당 치명타 피해 +5%%. 몬스터가 강해질수록 효과 확률 감소",Game.SkillDesGM[const.Skills.Axe])
+	Game.SkillDesMaster[const.Skills.Bow]=string.format("%s 화살 2발 발사",Game.SkillDesMaster[const.Skills.Bow])
+	Game.SkillDesGM[const.Skills.Bow]=string.format("%s 화염 화살을 발사하며 화염 피해와 물리 피해 중 더 높은 피해 적용",Game.SkillDesGM[const.Skills.Bow])
+	Game.SkillDesExpert[const.Skills.Dagger]=string.format("%s 쌍수 무기 사용 가능",Game.SkillDesExpert[const.Skills.Dagger])
+	Game.SkillDesMaster[const.Skills.Dagger]=string.format("%s 치명타 확률 5+1%%/기술",Game.SkillDesMaster[const.Skills.Dagger])
+	Game.SkillDesMaster[const.Skills.Mace]=string.format("%s 기절 확률",Game.SkillDesMaster[const.Skills.Mace])
+	Game.SkillDesGM[const.Skills.Mace]=string.format("%s 마비 확률",Game.SkillDesGM[const.Skills.Mace])
+	Game.SkillDesMaster[const.Skills.Spear]=string.format("%s 한 손으로 사용 가능",Game.SkillDesMaster[const.Skills.Spear])
+	Game.SkillDesMaster[const.Skills.Staff]=string.format("%s 기절 확률 +1%%",Game.SkillDesMaster[const.Skills.Staff])
+	Game.SkillDesGM[const.Skills.Staff]=string.format("%s 맨손 전투와 함께 사용 가능",Game.SkillDesGM[const.Skills.Staff])
+	Game.SkillDesMaster[const.Skills.Sword]=string.format("%s 쌍수 무기 사용 가능",Game.SkillDesMaster[const.Skills.Sword])
+	Game.SkillDesExpert[const.Skills.Leather]=string.format("%s 회복 페널티 제거",Game.SkillDesExpert[const.Skills.Leather])
+	Game.SkillDesExpert[const.Skills.Chain]=string.format("%s 회복 페널티 절반",Game.SkillDesExpert[const.Skills.Chain])
+	Game.SkillDesMaster[const.Skills.Chain]=string.format("%s 회복 페널티 제거",Game.SkillDesMaster[const.Skills.Chain])
+	Game.SkillDesExpert[const.Skills.Plate]=string.format("%s 회복 페널티 절반",Game.SkillDesExpert[const.Skills.Plate])
+	Game.SkillDesGM[const.Skills.Plate]=string.format("%s 회복 페널티 제거",Game.SkillDesGM[const.Skills.Plate])
+	Game.SkillDesExpert[const.Skills.Shield]=string.format("%s 회복 페널티 제거",Game.SkillDesExpert[const.Skills.Shield])
+	Game.SkillDesGM[const.Skills.Shield]=string.format("%s 피해 감소 15%%",Game.SkillDesGM[const.Skills.Shield])
+	Game.SkillDesNormal[const.Skills.Armsmaster]=string.format("기술 보너스: " .. armsmasterSkill.Damage[1] .. " 피해, " .. armsmasterSkill.Attack[1] .. " 공격")
+	Game.SkillDesExpert[const.Skills.Armsmaster]=string.format("기술 보너스: " .. armsmasterSkill.Damage[2] .. " 피해, " .. armsmasterSkill.Attack[2] .. " 공격, " .. armsmasterSkill.Speed[2] .. "%% 속도")
+	Game.SkillDesMaster[const.Skills.Armsmaster]=string.format("기술 보너스: " .. armsmasterSkill.Damage[3] .. " 피해, " .. armsmasterSkill.Attack[3] .. " 공격, " .. armsmasterSkill.Speed[3] .. "%% 속도")
+	Game.SkillDesGM[const.Skills.Armsmaster]=string.format("기술 보너스: " .. armsmasterSkill.Damage[4] .. " 피해, " .. armsmasterSkill.Attack[4] .. " 공격, " .. armsmasterSkill.Speed[4] .. "%% 속도")
+	Game.SkillDesMaster[const.Skills.Dodging]=string.format("%s 가죽 갑옷 착용 시 사용 가능",Game.SkillDesGM[const.Skills.Dodging])
+	Game.SkillDesGM[const.Skills.Dodging]=string.format("%s 회피 확률 +0.5%%",Game.SkillDesGM[const.Skills.Dodging])
 	--Game.SkillDesGM[const.Skills.Unarmed]=string.format("%s 0.5%% dodge chance",Game.SkillDesGM[const.Skills.Unarmed])	
 	Skillz.setDesc(35,1,"무기 전문가 기술은 전사의 노련한 전투 기법을 나타내며, 지팡이를 제외한 모든 무기의 숙련도를 강화합니다.\n이 기술은 더 빠르고 매끄럽게 공격하며 더 강력한 타격을 가할 수 있게 합니다.\n\n무기 전문가 기술이 더하는 피해는 무기 기술에 비례하므로 숙련될수록 효과가 커집니다.\n")
 	baseSpearTooltip=Game.SkillDesGM[const.Skills.Spear]
@@ -1404,7 +1404,7 @@ function events.Tick()
 				damageIncrease=damageIncrease*1.5
 			end
 		end
-		Game.SkillDesGM[const.Skills.Spear]=string.format("%s\n\t070Each spear attack reduces physical resistance, increasing damage by: %s%%\nIncreased by 50%% with Halberds",baseSpearTooltip,damageIncrease)
+		Game.SkillDesGM[const.Skills.Spear]=string.format("%s\n\t070창 공격마다 물리 저항을 감소시켜 피해 증가: %s%%\n미늘창 사용 시 50%% 증가",baseSpearTooltip,damageIncrease)
 	end
 end
 
@@ -1462,15 +1462,15 @@ end
 function events.GameInitialized2()
 	Skillz.setDesc(const.Skills.Learning,1,"마나 소모량과 시전 시간이 늘어나는 대신 주문 피해와 치유량이 증가합니다.\n")
 	Skillz.setName(const.Skills.Learning, "승천")
-	Game.SkillDesNormal[const.Skills.Learning]= "Mana cost reduced by 12.5%."
-	Game.SkillDesExpert[const.Skills.Learning]= "Mana cost reduced by 25%"
-	Game.SkillDesMaster[const.Skills.Learning]= "Mana cost reduced by 37.5%"
-	Game.SkillDesGM[const.Skills.Learning]= "Mana cost reduced by 50%"
+	Game.SkillDesNormal[const.Skills.Learning]= "마나 소모량 12.5% 감소."
+	Game.SkillDesExpert[const.Skills.Learning]= "마나 소모량 25% 감소"
+	Game.SkillDesMaster[const.Skills.Learning]= "마나 소모량 37.5% 감소"
+	Game.SkillDesGM[const.Skills.Learning]= "마나 소모량 50% 감소"
 	
-	Game.SkillDesNormal[const.Skills.Perception]= "Reduces traps and lava damage by 10%."
-	Game.SkillDesExpert[const.Skills.Perception]= "Reduces traps and lava damage by 30%."
-	Game.SkillDesMaster[const.Skills.Perception]= "Reduces traps and lava damage by 50%."
-	Game.SkillDesGM[const.Skills.Perception]= "Reduces traps and lava damage by 70%."
+	Game.SkillDesNormal[const.Skills.Perception]= "함정과 용암 피해가 10% 감소합니다."
+	Game.SkillDesExpert[const.Skills.Perception]= "함정과 용암 피해가 30% 감소합니다."
+	Game.SkillDesMaster[const.Skills.Perception]= "함정과 용암 피해가 50% 감소합니다."
+	Game.SkillDesGM[const.Skills.Perception]= "함정과 용암 피해가 70% 감소합니다."
 end
 
 

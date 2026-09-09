@@ -1455,10 +1455,10 @@ This skill increases the damage gained from weapon, armsmaster, and special abil
 maw-cf74ce2f43ce	translated	skill	"
 Vitality coefficient: "	"
 활력 계수: "		Scripts/General/zzMAW-Skills.lua	2134	1	반격 기술 계수
-maw-70332ae6ff69	untranslated	skill	 atk			Scripts/General/zzMAW-Skills.lua	691	1	
-maw-0180dbb97f1a	untranslated	skill	 atk, 			Scripts/General/zzMAW-Skills.lua	692	3	
-maw-7e1bd9ca7323	untranslated	skill	 dmg and 			Scripts/General/zzMAW-Skills.lua	691	1	
-maw-7aa77166c8f7	untranslated	skill	 dmg, 			Scripts/General/zzMAW-Skills.lua	692	3	
+maw-70332ae6ff69	translated	skill	 atk	 공격		Scripts/General/zzMAW-Skills.lua	691	1	무기 전문가 숙련 설명 조각
+maw-0180dbb97f1a	translated	skill	 atk, 	 공격, 		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
+maw-7e1bd9ca7323	translated	skill	 dmg and 	 피해, 		Scripts/General/zzMAW-Skills.lua	691	1	무기 전문가 숙련 설명 조각
+maw-7aa77166c8f7	translated	skill	 dmg, 	 피해, 		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-e3f4d0063c3d	untranslated	skill	" Hit Points
 "			Scripts/General/zzClasses.lua	1059	1	
 maw-3a4e4d25a545	untranslated	skill	"%
@@ -1471,7 +1471,7 @@ maw-07ee0aeb6aee	untranslated	skill	"%
 Press P to enable/disable
 "			Scripts/General/zzMAW-Skills.lua	2097	2	
 maw-f5cb16b30cd5	untranslated	skill	% of monster Hit points as fire damage.			Scripts/General/zzClasses.lua	1036	1	
-maw-41559b59261e	untranslated	skill	%% speed			Scripts/General/zzMAW-Skills.lua	692	3	
+maw-41559b59261e	translated	skill	%% speed	%% 속도		Scripts/General/zzMAW-Skills.lua	692	3	무기 전문가 숙련 설명 조각
 maw-347cd9c53ff7	excluded	skill	%s		%s	Scripts/General/zzMAW-Skills.lua	565	7	숫자 이름 string.format 서식 전용
 maw-539335ea1fbf	untranslated	skill	"%s	"		%s	Scripts/General/zzMAW-Skills.lua	527	28	
 maw-f9cac35ff8e0	untranslated	skill	"%s	0"		%s	Scripts/General/zzMAW-Skills.lua	526	1	
@@ -1501,24 +1501,24 @@ maw-058cca31afa4	untranslated	skill	"%s
 maw-a54a769ec702	untranslated	skill	"%s
 ------------------------------------------------------------
          "		%s	Scripts/General/zzMAW-Skills.lua	627	1	
-maw-da596ebf60c7	untranslated	skill	%s 0.5%% dodge chance		%s	Scripts/General/zzMAW-Skills.lua	696	1	
-maw-415e2977544c	untranslated	skill	%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger		%s	Scripts/General/zzMAW-Skills.lua	673	1	
-maw-c251631f5372	untranslated	skill	%s 1%% to stun		%s	Scripts/General/zzMAW-Skills.lua	681	1	
-maw-1085d0411908	untranslated	skill	%s 15%% Damage reduction		%s	Scripts/General/zzMAW-Skills.lua	690	1	
-maw-d19cba1e3297	untranslated	skill	%s 2 arrows		%s	Scripts/General/zzMAW-Skills.lua	674	1	
-maw-90148d4fc180	untranslated	skill	%s 5+1 crit%%/skill		%s	Scripts/General/zzMAW-Skills.lua	677	1	
-maw-d61825e4d051	untranslated	skill	%s can dual wield		%s	Scripts/General/zzMAW-Skills.lua	676	2	
-maw-11ab2fd5f68b	untranslated	skill	%s can hold with 1 hand		%s	Scripts/General/zzMAW-Skills.lua	680	1	
-maw-060c34df1833	untranslated	skill	%s chance to paralyze		%s	Scripts/General/zzMAW-Skills.lua	679	1	
-maw-76097c4f8d15	untranslated	skill	%s chance to stun		%s	Scripts/General/zzMAW-Skills.lua	678	1	
-maw-7a69e955bfeb	untranslated	skill	%s rec. pen. elim.		%s	Scripts/General/zzMAW-Skills.lua	688	1	
-maw-1dfd8c6da9a8	untranslated	skill	%s rec. pen. halved		%s	Scripts/General/zzMAW-Skills.lua	687	1	
-maw-06af20f3aede	untranslated	skill	%s recovery penalty eliminated		%s	Scripts/General/zzMAW-Skills.lua	684	3	
-maw-8927ee350cbb	untranslated	skill	%s recovery penalty halved		%s	Scripts/General/zzMAW-Skills.lua	685	1	
+maw-da596ebf60c7	translated	skill	%s 0.5%% dodge chance	%s 회피 확률 +0.5%%	%s	Scripts/General/zzMAW-Skills.lua	696	1	회피 그랜드마스터 효과
+maw-415e2977544c	translated	skill	%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger	%s 방어력을 절반으로 만들 확률 1%%, 기술 포인트당 치명타 피해 +5%%. 몬스터가 강해질수록 효과 확률 감소	%s	Scripts/General/zzMAW-Skills.lua	673	1	도끼 그랜드마스터 효과
+maw-c251631f5372	translated	skill	%s 1%% to stun	%s 기절 확률 +1%%	%s	Scripts/General/zzMAW-Skills.lua	681	1	지팡이 마스터 효과
+maw-1085d0411908	translated	skill	%s 15%% Damage reduction	%s 피해 감소 15%%	%s	Scripts/General/zzMAW-Skills.lua	690	1	방패 그랜드마스터 효과
+maw-d19cba1e3297	translated	skill	%s 2 arrows	%s 화살 2발 발사	%s	Scripts/General/zzMAW-Skills.lua	674	1	활 마스터 효과
+maw-90148d4fc180	translated	skill	%s 5+1 crit%%/skill	%s 치명타 확률 5+1%%/기술	%s	Scripts/General/zzMAW-Skills.lua	677	1	단검 마스터 효과
+maw-d61825e4d051	translated	skill	%s can dual wield	%s 쌍수 무기 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	676	2	단검 숙련 효과
+maw-11ab2fd5f68b	translated	skill	%s can hold with 1 hand	%s 한 손으로 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	680	1	창 마스터 효과
+maw-060c34df1833	translated	skill	%s chance to paralyze	%s 마비 확률	%s	Scripts/General/zzMAW-Skills.lua	679	1	철퇴 그랜드마스터 효과
+maw-76097c4f8d15	translated	skill	%s chance to stun	%s 기절 확률	%s	Scripts/General/zzMAW-Skills.lua	678	1	철퇴 마스터 효과
+maw-7a69e955bfeb	translated	skill	%s rec. pen. elim.	%s 회복 페널티 제거	%s	Scripts/General/zzMAW-Skills.lua	688	1	판금 숙련 축약 효과
+maw-1dfd8c6da9a8	translated	skill	%s rec. pen. halved	%s 회복 페널티 절반	%s	Scripts/General/zzMAW-Skills.lua	687	1	판금 숙련 축약 효과
+maw-06af20f3aede	translated	skill	%s recovery penalty eliminated	%s 회복 페널티 제거	%s	Scripts/General/zzMAW-Skills.lua	684	3	방어구 숙련 효과
+maw-8927ee350cbb	translated	skill	%s recovery penalty halved	%s 회복 페널티 절반	%s	Scripts/General/zzMAW-Skills.lua	685	1	사슬 갑옷 숙련 효과
 maw-3f92a95e24aa	untranslated	skill	"%s Res	000"		%s	Scripts/General/zzMAW-Skills.lua	612	2	
-maw-00f2a94b750e	untranslated	skill	%s shoots fire arrows, dealing highest between fire and physical damage		%s	Scripts/General/zzMAW-Skills.lua	675	1	
-maw-bd2aa1daab14	untranslated	skill	%s usable with Leather Armor		%s	Scripts/General/zzMAW-Skills.lua	695	1	
-maw-b814f42a8c77	untranslated	skill	%s usable with Unarm.		%s	Scripts/General/zzMAW-Skills.lua	682	1	
+maw-00f2a94b750e	translated	skill	%s shoots fire arrows, dealing highest between fire and physical damage	%s 화염 화살을 발사하며 화염 피해와 물리 피해 중 더 높은 피해 적용	%s	Scripts/General/zzMAW-Skills.lua	675	1	활 그랜드마스터 효과
+maw-bd2aa1daab14	translated	skill	%s usable with Leather Armor	%s 가죽 갑옷 착용 시 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	695	1	회피 마스터 효과
+maw-b814f42a8c77	translated	skill	%s usable with Unarm.	%s 맨손 전투와 함께 사용 가능	%s	Scripts/General/zzMAW-Skills.lua	682	1	지팡이 그랜드마스터 효과
 maw-29bafc9a3c98	untranslated	skill	%s%%|		%s	Scripts/General/zzMAW-Skills.lua	543	4	
 maw-f9b26d772d4f	untranslated	skill	%sRes			Scripts/General/zzMAW-Skills.lua	564	1	
 maw-908093bbf3f4	untranslated	skill	%s|		%s	Scripts/General/zzMAW-Skills.lua	527	16	
@@ -1556,8 +1556,8 @@ maw-f9363b18c988	translated	skill	"Allow use to Cover Physical damage
 "	"물리 피해를 엄호할 수 있습니다
 "		Scripts/General/zzMAW-Skills.lua	2048	1	엄호 숙련 효과
 maw-60b1f591790d	translated	skill	Allow use to Cover Projectiles damage	투사체 피해도 엄호할 수 있습니다		Scripts/General/zzMAW-Skills.lua	2049	1	엄호 숙련 효과
-maw-04e874e5383b	untranslated	skill	Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.			Scripts/General/zzAlchemy.lua	688	1	
-maw-a672568b736a	untranslated	skill	Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.			Scripts/General/zzAlchemy.lua	687	1	
+maw-04e874e5383b	translated	skill	Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.	검은 물약을 만들 수 있습니다. 혼합 시 위력이 2배로 증가하며 기술 포인트당 물약 지속시간이 6분 증가합니다. 몬스터에게서 무한 물약이 떨어질 수 있으며, 그 위력은 연금술 레벨에 따라 결정됩니다.		Scripts/General/zzAlchemy.lua	688	1	연금술 그랜드마스터 효과
+maw-a672568b736a	translated	skill	Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.	흰색 물약을 만들 수 있습니다. 혼합 시 위력이 기술 포인트당 1.5만큼 증가합니다.		Scripts/General/zzAlchemy.lua	687	1	연금술 마스터 효과
 maw-43a3e83ba69f	translated	skill	"Armsmaster skill represents the warrior's tricks of the trade, enhancing your proficiency with all weapons-except staves.
 This skill allows you to strike faster, execute smoother attacks, and deal more powerful blows.
 
@@ -1686,10 +1686,10 @@ Leather Armor Skill boosts the AC and Resistances gained by ALL armors when equi
 
 가죽 갑옷을 장비하면 가죽 갑옷 기술이 모든 방어구에서 얻는 방어력과 저항을 일정 비율만큼 높입니다."		Scripts/General/zzMAW-Skills.lua	591	1	가죽 갑옷 기술 설명
 maw-7182aec4321c	untranslated	skill	Leecher			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-22fa84df37d6	untranslated	skill	Mana cost reduced by 12.5%.			Scripts/General/zzMAW-Skills.lua	1465	1	
-maw-c338ab5388a4	untranslated	skill	Mana cost reduced by 25%			Scripts/General/zzMAW-Skills.lua	1466	1	
-maw-0a4e4b7336a4	untranslated	skill	Mana cost reduced by 37.5%			Scripts/General/zzMAW-Skills.lua	1467	1	
-maw-01908de91882	untranslated	skill	Mana cost reduced by 50%			Scripts/General/zzMAW-Skills.lua	1468	1	
+maw-22fa84df37d6	translated	skill	Mana cost reduced by 12.5%.	마나 소모량 12.5% 감소.		Scripts/General/zzMAW-Skills.lua	1465	1	승천 숙련 효과
+maw-c338ab5388a4	translated	skill	Mana cost reduced by 25%	마나 소모량 25% 감소		Scripts/General/zzMAW-Skills.lua	1466	1	승천 숙련 효과
+maw-0a4e4b7336a4	translated	skill	Mana cost reduced by 37.5%	마나 소모량 37.5% 감소		Scripts/General/zzMAW-Skills.lua	1467	1	승천 숙련 효과
+maw-01908de91882	translated	skill	Mana cost reduced by 50%	마나 소모량 50% 감소		Scripts/General/zzMAW-Skills.lua	1468	1	승천 숙련 효과
 maw-34785d352a98	translated	skill	Mana is increased by 2% per skill level, cost divisor increased by 0.5	기술 레벨당 마나가 2% 증가하고 소모 비용 제수가 0.5 증가합니다		Scripts/General/zzMAW-Skills.lua	2510	1	깨달음 숙련 효과
 maw-0555f787e247	translated	skill	Mana is increased by 3% per skill level, cost divisor increased by 1	기술 레벨당 마나가 3% 증가하고 소모 비용 제수가 1 증가합니다		Scripts/General/zzMAW-Skills.lua	2511	1	깨달음 숙련 효과
 maw-7302af587b8b	translated	skill	Mana is increased by 4% per skill level, cost divisor increased by 1.5	기술 레벨당 마나가 4% 증가하고 소모 비용 제수가 1.5 증가합니다		Scripts/General/zzMAW-Skills.lua	2512	1	깨달음 숙련 효과
@@ -1753,10 +1753,10 @@ Each attack deals bonus water damage equal to 0.1% of the target's HP per skill 
 "		Scripts/General/zzClasses.lua	2111	1	독 기술 설명
 maw-b1990861729d	translated	skill	Poisons	독		Scripts/General/zzClasses.lua	2106	1	암살자 스킬명
 maw-176436bc329f	untranslated	skill	Puller			Scripts/General/zzMaw-Monsters.lua	3177	2	
-maw-085171c8bf3e	untranslated	skill	Reduces traps and lava damage by 10%.			Scripts/General/zzMAW-Skills.lua	1470	1	
-maw-96fa891e59df	untranslated	skill	Reduces traps and lava damage by 30%.			Scripts/General/zzMAW-Skills.lua	1471	1	
-maw-b398b59387c0	untranslated	skill	Reduces traps and lava damage by 50%.			Scripts/General/zzMAW-Skills.lua	1472	1	
-maw-25edbf756cff	untranslated	skill	Reduces traps and lava damage by 70%.			Scripts/General/zzMAW-Skills.lua	1473	1	
+maw-085171c8bf3e	translated	skill	Reduces traps and lava damage by 10%.	함정과 용암 피해가 10% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1470	1	지각 숙련 효과
+maw-96fa891e59df	translated	skill	Reduces traps and lava damage by 30%.	함정과 용암 피해가 30% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1471	1	지각 숙련 효과
+maw-b398b59387c0	translated	skill	Reduces traps and lava damage by 50%.	함정과 용암 피해가 50% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1472	1	지각 숙련 효과
+maw-25edbf756cff	translated	skill	Reduces traps and lava damage by 70%.	함정과 용암 피해가 70% 감소합니다.		Scripts/General/zzMAW-Skills.lua	1473	1	지각 숙련 효과
 maw-078157762d2c	untranslated	skill	Reflecting			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-809f8bbcd185	untranslated	skill	Regenerating			Scripts/General/zzMaw-Monsters.lua	3177	2	
 maw-73c6fffa68c4	untranslated	skill	RemoveSkillValueLimits			Scripts/Structs/After/RemoveSkillValueLimits.lua	1	1	
@@ -1772,7 +1772,7 @@ Shield Skill boosts the AC and Resistances gained from your Shield  by a percent
 maw-ec9f630c8693	untranslated	skill	Skill			Data/Tables/Extra Skillz.txt	1	7	
 maw-595e6f796a09	untranslated	skill	Skill reset info			Scripts/Global/zzMAWRespec.lua	14	1	
 maw-e09212c7d3ea	untranslated	skill	Skills			Scripts/General/zzMaw-Monsters.lua	3147	1	
-maw-04ad3555eeac	untranslated	skill	Skills adds 			Scripts/General/zzMAW-Skills.lua	691	4	
+maw-04ad3555eeac	translated	skill	Skills adds 	기술 보너스: 		Scripts/General/zzMAW-Skills.lua	691	4	무기 전문가 숙련 설명 조각
 maw-c1c7f7e81f44	untranslated	skill	"Skills adds 3 dmg, 3 atk, 2% speed
 Each 10 points in armsmaster increase all the melee weapon skills by 1"			Scripts/General/zzMAW-Skills.lua	2693	1	
 maw-7707f6812879	untranslated	skill	SP			Scripts/General/zzMAW-Skills.lua	865	2	
@@ -3524,9 +3524,11 @@ maw-cf27f2cd748c	translated	tooltip	% and making him unable to act for 4 seconds
 maw-af634980b8e7	translated	tooltip	% of current weapon damage.	% (현재 무기 피해 기준).		Scripts/General/zzClasses.lua	1376	3	연결형 무기 피해 설명 후행 조각
 maw-389c10ec5573	translated	tooltip	% of the base weapon damage	% (기본 무기 피해 기준)		Scripts/General/zzClasses.lua	1428	1	연결형 무기 피해 설명 후행 조각
 maw-23e4814d86f5	translated	tooltip	% of weapon damage	% (무기 피해 기준)		Scripts/General/zzClasses.lua	1443	1	연결형 무기 피해 설명 후행 조각
-maw-3e09c757f9d4	untranslated	tooltip	"%s
+maw-3e09c757f9d4	translated	tooltip	"%s
 	070Each spear attack reduces physical resistance, increasing damage by: %s%%
-Increased by 50%% with Halberds"		%s %s	Scripts/General/zzMAW-Skills.lua	1407	1	
+Increased by 50%% with Halberds"	"%s
+	070창 공격마다 물리 저항을 감소시켜 피해 증가: %s%%
+미늘창 사용 시 50%% 증가"	%s %s	Scripts/General/zzMAW-Skills.lua	1407	1	창 그랜드마스터 설명
 maw-90cd40051486	untranslated	tooltip	"%s
 
 Bonus Melee/Bow Damage: %s%s"		%s %s %s	Scripts/General/zzMaw-Stats.lua	383	1	

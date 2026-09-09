@@ -798,11 +798,6 @@ Wimpy Pirate Warrior Male	monster	1	1	uncertain_context:1	Scripts/General/zzMaw-
 %s|	skill	16	16	uncertain_context:16	Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s\t"" .. tab+32 .. ""%s|"",normal,skillAttack[i][1])"
 ([^%s]+)	skill	13	13	uncertain_context:13	Scripts/General/BountyHunt.lua; Scripts/General/zzAlchemy.lua; Scripts/General/zzMAW-Skills.lua; Scripts/General/zzMaw-Items.lua; Scripts/General/zzMaw-Maps.lua; Scripts/General/zzMaw-Monsters.lua; Scripts/General/zzMaw-Stats.lua			"local monsterSkill = string.match(Entry.MonName, ""([^%s]+)"")"
 %s%%|	skill	4	4	uncertain_context:4	Scripts/General/zzMAW-Skills.lua			"normal=string.format(""%s\t"" .. tab+22 .. ""%s%%|"",normal,skillDamage[i][1])"
-Skills adds 	skill	4	4	uncertain_context:4	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
- atk, 	skill	3	3	uncertain_context:3	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[2] .. "" dmg, "" .. armsmasterSkill.Attack[2] .. "" atk, "" .. armsmasterSkill.Speed[2] .. ""%% speed"")"
- dmg, 	skill	3	3	uncertain_context:3	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[2] .. "" dmg, "" .. armsmasterSkill.Attack[2] .. "" atk, "" .. armsmasterSkill.Speed[2] .. ""%% speed"")"
-%% speed	skill	3	3	uncertain_context:3	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[2] .. "" dmg, "" .. armsmasterSkill.Attack[2] .. "" atk, "" .. armsmasterSkill.Speed[2] .. ""%% speed"")"
-%s recovery penalty eliminated	skill	3	3	uncertain_context:3	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Leather]=string.format(""%s recovery penalty eliminated"",Game.SkillDesExpert[const.Skills.Leather])"
 Broodling	skill	3	8	comparison_control_literal:5; uncertain_context:3	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodling"""
 "
 
@@ -813,7 +808,6 @@ Reduce all damage taken by "	skill	2	2	uncertain_context:2	Scripts/General/zzCla
 Press P to enable/disable
 "	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"local txt=""Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 6-12-20.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: "" .. cha"
 "%s	075AC|"	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t075AC|"",baseString)"
-%s can dual wield	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Dagger]=string.format(""%s can dual wield"",Game.SkillDesExpert[const.Skills.Dagger])"
 "%s Res	000"	skill	2	2	uncertain_context:2	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s Res\t000"",baseString)"
 Broodlord	skill	2	3	comparison_control_literal:1; uncertain_context:2	Scripts/General/zzMaw-Monsters.lua			"skill = ""Broodlord"""
 Current Reduction: 	skill	2	2	uncertain_context:2	Scripts/General/zzClasses.lua			"txt=""This skill is only available to death knights and reduces physical damage taken.\n"" .. ""Current Reduction: "" .. round((1-1/(bloodS/100+1))*1000)/10 ..""%\n\nAdditionally it will make your attacks to leech damage based on your total HP.\n\nCurrent leech vs. same level monsters: "" .. leech .. ""%\n"""
@@ -843,8 +837,6 @@ Next Level Bonus: %s
 "
 ------------------------------------------------------------
             Attack| Dmg|"	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"local txt=""Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 600). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n"" .. ""\n------------------------------------------------------------\n            Attack| Dmg|"""
- atk	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
- dmg and 	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Armsmaster]=string.format(""Skills adds "" .. armsmasterSkill.Damage[1] .. "" dmg and "" .. armsmasterSkill.Attack[1] .. "" atk"")"
 " Hit Points
 "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[18] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nMelee attacks restore "" .. leech .. "" Hit Points\n"""
 "%
@@ -872,28 +864,11 @@ Current bonuses at skill %s:
 "%s
 ------------------------------------------------------------
          "	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\n------------------------------------------------------------\n         "",	Skillz.getDesc(i,1))"
-%s 0.5%% dodge chance	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Dodging]=string.format(""%s 0.5%% dodge chance"",Game.SkillDesGM[const.Skills.Dodging])"
-%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Axe]=string.format(""%s 1%% to halve AC and increases critical strike damage by 5%% per skill point, reduced up to 1%% as monsters get stronger"",Game.SkillDesGM[const.Skills.Axe])"
-%s 1%% to stun	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Staff]=string.format(""%s 1%% to stun"",Game.SkillDesMaster[const.Skills.Staff])"
-%s 15%% Damage reduction	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Shield]=string.format(""%s 15%% Damage reduction"",Game.SkillDesGM[const.Skills.Shield])"
-%s 2 arrows	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Bow]=string.format(""%s 2 arrows"",Game.SkillDesMaster[const.Skills.Bow])"
-%s 5+1 crit%%/skill	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Dagger]=string.format(""%s 5+1 crit%%/skill"",Game.SkillDesMaster[const.Skills.Dagger])"
-%s can hold with 1 hand	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Spear]=string.format(""%s can hold with 1 hand"",Game.SkillDesMaster[const.Skills.Spear])"
-%s chance to paralyze	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Mace]=string.format(""%s chance to paralyze"",Game.SkillDesGM[const.Skills.Mace])"
-%s chance to stun	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Mace]=string.format(""%s chance to stun"",Game.SkillDesMaster[const.Skills.Mace])"
-%s rec. pen. elim.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Plate]=string.format(""%s rec. pen. elim."",Game.SkillDesGM[const.Skills.Plate])"
-%s rec. pen. halved	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Plate]=string.format(""%s rec. pen. halved"",Game.SkillDesExpert[const.Skills.Plate])"
-%s recovery penalty halved	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Chain]=string.format(""%s recovery penalty halved"",Game.SkillDesExpert[const.Skills.Chain])"
-%s shoots fire arrows, dealing highest between fire and physical damage	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Bow]=string.format(""%s shoots fire arrows, dealing highest between fire and physical damage"",Game.SkillDesGM[const.Skills.Bow])"
-%s usable with Leather Armor	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Dodging]=string.format(""%s usable with Leather Armor"",Game.SkillDesGM[const.Skills.Dodging])"
-%s usable with Unarm.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Staff]=string.format(""%s usable with Unarm."",Game.SkillDesGM[const.Skills.Staff])"
 %sRes	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%sRes"",baseString)"
 "(calculated after resistances)
 "	skill	1	1	uncertain_context:1	Scripts/General/zzClasses.lua			"txt=baseSchoolsTxt[14] .. ""\n\nEvery 7 Skill level adds 1 level into ascension.\nReduce all damage taken by "" .. waterReduction .. ""(calculated after resistances)\n"""
 AC|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t"" .. tab .. ""AC|"",baseString)"
 Adamantite	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.SkillDesGM[const.Skills.Alchemy]=""Allows to make black potions. Power when mixing will be increased to 2 and increases potion duration by 6 Minutes per skill point. Allows the Endless potion to be dropped by monsters, which power is determined by Alchemy level."""
-Allows to make white potions. Power when mixing will be increased to 1.5 per skill point.	skill	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"Game.SkillDesMaster[const.Skills.Alchemy]=""Allows to make white potions. Power when mixing will be increased to 1.5 per skill point."""
 Attack|	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"baseString=string.format(""%s\t0"" .. tab .. ""Attack|"",baseString)"
 BuildSkillInformationBox	skill	1	1	uncertain_context:1	Scripts/Structs/extraEditableDescriptions.lua			"events.call(""BuildSkillInformationBox"", t)"
 "By agreeing to this, every skill you possess shall be returned to the beginning, to the level of a Novice, and all the points you've invested in these skills shall be returned to you. 
@@ -933,16 +908,8 @@ Grants bonus to Meditation skill for 6 hours.	skill	1	1	uncertain_context:1	Scri
 Incorrect mastery %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect mastery %d at JoinSkill()"", mastery)"
 Incorrect skill value %d at JoinSkill()	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"Log(Merge.Log.Error, ""Incorrect skill value %d at JoinSkill()"", skill)"
 Leecher	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-Mana cost reduced by 12.5%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Learning]= ""Mana cost reduced by 12.5%."""
-Mana cost reduced by 25%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Learning]= ""Mana cost reduced by 25%"""
-Mana cost reduced by 37.5%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Learning]= ""Mana cost reduced by 37.5%"""
-Mana cost reduced by 50%	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Learning]= ""Mana cost reduced by 50%"""
 Plagueborn	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Puller	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
-Reduces traps and lava damage by 10%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesNormal[const.Skills.Perception]= ""Reduces traps and lava damage by 10%."""
-Reduces traps and lava damage by 30%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesExpert[const.Skills.Perception]= ""Reduces traps and lava damage by 30%."""
-Reduces traps and lava damage by 50%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesMaster[const.Skills.Perception]= ""Reduces traps and lava damage by 50%."""
-Reduces traps and lava damage by 70%.	skill	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Perception]= ""Reduces traps and lava damage by 70%."""
 Reflecting	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 Regenerating	skill	1	2	comparison_control_literal:1; uncertain_context:1	Scripts/General/zzMaw-Monsters.lua			"SkillList={""Summoner"",""Venomous"",""Exploding"",""Thorn"",""Reflecting"",""Adamantite"",""Swapper"",""Regenerating"",""Puller"",""Leecher"",""Swift"",""Fixator"",""Shadow"",""Plagueborn""} --defensives"
 RemoveSkillValueLimits	skill	1	1	uncertain_context:1	Scripts/Structs/After/RemoveSkillValueLimits.lua			"local LogId = ""RemoveSkillValueLimits"""
@@ -1123,9 +1090,6 @@ Levels: "	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Des
 The Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.
 
 (right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"	tooltip	1	1	uncertain_context:1	Scripts/General/zzAlchemy.lua			"t.Description=""\nThe Celestial Orb allows the transfer of celestial essence from one item to another, preserving the divine property while freeing the original item of its blessing.\n\n(right-click on a celestial item to extract its power charging the Celestial orb, then right-click on a non celestial item to transfer its power.)"""
-"%s
-	070Each spear attack reduces physical resistance, increasing damage by: %s%%
-Increased by 50%% with Halberds"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMAW-Skills.lua			"Game.SkillDesGM[const.Skills.Spear]=string.format(""%s\n\t070Each spear attack reduces physical resistance, increasing damage by: %s%%\nIncreased by 50%% with Halberds"",baseSpearTooltip,damageIncrease)"
 "%s
 
 Bonus Melee/Bow Damage: %s%s"	tooltip	1	1	uncertain_context:1	Scripts/General/zzMaw-Stats.lua			"t.Text=string.format(""%s\n\nBonus Melee/Bow Damage: %s%s"",Game.StatsDescriptions[0],might/10,""%"")"
