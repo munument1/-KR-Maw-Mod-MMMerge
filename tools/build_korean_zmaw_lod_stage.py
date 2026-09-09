@@ -3,7 +3,7 @@
 
 The source of truth for gameplay data is the extracted MAW 4.5 zMaw.T.lod.
 Only reviewed display fields are inherited from the pinned Korean MMMerge
-runtime tables.  Every other field stays on the MAW 4.5 value so loading this
+runtime tables. Every other field stays on the MAW 4.5 value so loading this
 archive after the base Korean MMMerge patch cannot roll MAW balance data back.
 """
 from __future__ import annotations
@@ -217,18 +217,6 @@ def parse_items_overlay(text: str) -> dict[int, tuple[str, str, str]]:
     return result
 
 
-def set_direct(doc: TsvDocument, record_id: int, column: int, value: str) -> bool:
-    if not value:
-        return False
-    row = numeric_rows(doc).get(record_id)
-    if row is None:
-        return False
-    if len(row.fields) <= column:
-        raise ValueError(f"row {record_id} has no column {column}")
-    row.fields[column] = encode_field(value)
-    return True
-
-
 def apply_items(doc: TsvDocument, ko_text: str) -> int:
     changed = 0
     rows = numeric_rows(doc)
@@ -293,7 +281,15 @@ def apply_by_order(doc: TsvDocument, overlay_text: str, column: int,
 
 
 def write_game_text(path: Path, doc: TsvDocument) -> None:
-    plain = encode_mixed_text(doc.render())
+    rendered = doc.render()
+    bad = rendered.find("\ufffd")
+    if bad >= 0:
+        line = rendered.count("\n", 0, bad) + 1
+        start = max(0, bad - 80)
+        end = min(len(rendered), bad + 81)
+        context = rendered[start:end].replace("\r", "\\r").replace("\n", "\\n")
+        raise ValueError(f"{path.name}: U+FFFD at char {bad}, line {line}: {context!r}")
+    plain = encode_mixed_text(rendered)
     encoded = encode_dbcs_special(plain)
     if decode_dbcs_special(encoded) != plain:
         raise ValueError(f"DBCS round-trip failed for {path.name}")
@@ -339,9 +335,6 @@ def main() -> int:
     replacements["SPCITEMS.TXT"] = apply_by_order(docs["SPCITEMS.TXT"], ko["spc_stats"], 0, spc_row, "BonusStat")
     replacements["SPCITEMS.TXT"] += apply_by_order(docs["SPCITEMS.TXT"], ko["spc_names"], 1, spc_row, "NameAdd")
 
-    # These MAW tables are repacked to restore MAW 4.5 gameplay data after the
-    # base Korean LOD, but are not text-mutated until their display semantics
-    # have been reviewed separately.
     for untouched in ("POTION.TXT", "POTNOTES.TXT", "rnditems.txt"):
         replacements[untouched] = 0
 
