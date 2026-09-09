@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Audit MAW rnditems.txt without localizing documentation-only labels.
 
-MAW/MMMerge carries multiple random-item table layouts in one file.  The
-runtime-relevant part of each recognized data row is a resource/item key plus
-six numeric treasure-level weights.  A trailing English item/spell label is a
+The MAW 4.5/MMMerge table stores each recognized data row as:
+
+    numeric item id | resource id | level 1..6 weights | label
+
+The runtime-relevant fields are the item/resource identifiers and six numeric
+treasure-level weights.  The trailing English item/spell label is a
 human-readable aid and is intentionally preserved rather than localized.
 
-Recognized row layouts:
-  * 9 fields: numeric item id | resource id | level 1..6 weights | label
-  * 8 fields: resource id     | level 1..6 weights | label
-
-The audit validates the six weight columns while treating the final label as
-non-runtime documentation.  It does not modify rnditems.txt.
+For compatibility with related MM table variants the parser also recognizes an
+8-field resource-id form, but MAW 4.5 is not required to contain that variant.
+The audit never modifies rnditems.txt.
 """
 from __future__ import annotations
 
@@ -38,8 +38,8 @@ def is_int(value: str) -> bool:
 
 
 def classify(fields: list[str]) -> tuple[str, list[str]] | None:
-    # Keep the final field intact: it is the human-readable label we are
-    # explicitly proving is outside the six numeric treasure weights.
+    # The final field is deliberately kept outside the six numeric weights: it
+    # is the human-readable label whose non-runtime role this audit records.
     if len(fields) == 9 and is_int(fields[0]) and all(is_int(v) for v in fields[2:8]):
         return "item_id_resource_weights_label", fields[2:8]
     if len(fields) == 8 and fields[0].strip() and all(is_int(v) for v in fields[1:7]):
@@ -98,9 +98,8 @@ def main() -> int:
     errors: list[str] = []
     if data_rows == 0:
         errors.append("no recognized rnditems data rows")
-    for layout, count in layouts.items():
-        if count == 0:
-            errors.append(f"expected at least one {layout} row")
+    if layouts["item_id_resource_weights_label"] == 0:
+        errors.append("expected MAW item-id/resource/weights rows")
     if negative_weights:
         errors.append(f"found {negative_weights} negative treasure weights")
 
@@ -114,8 +113,8 @@ def main() -> int:
         "max_treasure_weight": max_weight,
         "negative_weight_fields": negative_weights,
         "trailing_label_runtime_role": "documentation_only_not_localized",
-        "runtime_fields": "item/resource key plus six numeric treasure-level weights",
-        "evidence": "Compatible MM8 loaders consume the key/id and six weight columns; the trailing item/spell label is outside those runtime fields.",
+        "runtime_fields": "numeric item id, resource id, and six numeric treasure-level weights",
+        "evidence": "Compatible MM8 loaders consume item/key data and six weight columns; the trailing item/spell label is outside those runtime fields.",
         "examples": examples,
         "validation_errors": errors,
     }
