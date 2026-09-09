@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refine uncertain Lua occurrences that are clearly internal syntax.
+"""Refine uncertain Lua occurrences that are clearly internal syntax or APIs.
 
 This pass is deliberately one-way: it only proves more occurrences are
 non-localizable. It does not promote display candidates to patchable status.
@@ -48,10 +48,48 @@ def refine(row: dict[str, str]) -> bool:
         row["reason"] = "comparison_control_literal"
         return True
 
-    # Common table.find lookups use string tokens/keys. Keep display-oriented
-    # functions out of this rule.
+    # Common table.find lookups use string tokens/keys.
     if re.search(rf"\btable\.find\s*\([^\n]*['\"]{q}['\"]", context):
         row["reason"] = "internal_lookup_literal"
+        return True
+
+    # Event names are dispatch keys, not player-facing labels.
+    if re.search(rf"\bevents\.(?:call|Call|cocall|cocalls|AddFirst|Remove)\s*\(\s*['\"]{q}['\"]", context):
+        row["reason"] = "reviewed_internal_api_literal"
+        return True
+
+    # Network/debug logging is diagnostic output rather than game localization.
+    if re.search(r"(?:Multiplayer\.utils\.)?LogEvent\s*\(", context):
+        row["reason"] = "reviewed_internal_api_literal"
+        return True
+
+    # Assembly patches and low-level hook snippets are executable/internal text.
+    if any(token in context for token in (
+        "mem.asmpatch", "mem.asmhook", "hooks.asmpatch", "hooks.asmhook",
+    )):
+        row["reason"] = "reviewed_internal_api_literal"
+        return True
+
+    # Map/network state keys.
+    if any(token in context for token in (
+        "mawmapvarsend(", "Multiplayer.broadcast_mapdata(", "SendToHost(",
+    )):
+        row["reason"] = "reviewed_internal_api_literal"
+        return True
+
+    # Resource identifiers: bitmap/movie/sky/picture names are not display text.
+    if any(token in context for token in (
+        "LoadBitmap(", "SetSkyTexture(", "evt.ShowMovie", ".Picture=", ".Picture =",
+        "Monster1Pic=", "Monster2Pic=", "Monster3Pic=", "booksPic=", "booksPicGM=",
+    )):
+        row["reason"] = "reviewed_internal_api_literal"
+        return True
+
+    # Runtime diagnostics, parser modes, and file access strings.
+    if any(token in context for token in (
+        "collectgarbage(", "file:read(", "io.open(", "error(", "assert(", "print(",
+    )):
+        row["reason"] = "reviewed_internal_api_literal"
         return True
 
     return False
