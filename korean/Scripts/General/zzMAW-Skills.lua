@@ -953,7 +953,7 @@ function events.Action(t)
 			end
 			if maxS>=10 and maxM==4 then
 				t.Handled=true
-				Game.ShowStatusText("이 기술은 이미 최대치입니다")
+				Game.ShowStatusText("This skill is already as good as it will ever get")
 			end
 		end
 		]]
@@ -2224,7 +2224,7 @@ function events.Action(t)
 			if s>=32 then 
 				t.Handled=true
 				local s,m=SplitSkill(Skillz.get(pl,51))
-				Game.ShowStatusText("이 기술은 한계에 도달했습니다")
+				Game.ShowStatusText("This skill has reached its limit")
 			end
 		end
 		]]

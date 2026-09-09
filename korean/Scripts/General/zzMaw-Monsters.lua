@@ -2916,7 +2916,7 @@ function events.GameInitialized2()
 		if mapLevels[name] then
 			levelLow=mapLevels[name].Low
 			levelHigh=mapLevels[name].High
-			Game.TransTxt[46+i]=string.format(Game.TransTxt[46+i] .. "\n권장 레벨:\n" .. levelLow .. "-" .. levelHigh)
+			Game.TransTxt[46+i]=string.format(Game.TransTxt[46+i] .. "\nLevel Recommended:\n" .. levelLow .. "-" .. levelHigh)
 		end
 	end
 end

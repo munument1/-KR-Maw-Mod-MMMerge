@@ -11,8 +11,6 @@ Subsequent spawn failure reasons:
 "		excluded	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
 "
 Couldn't spawn monster, spawnpoint data: "		excluded	status	1	display_variable_assignment:1	Scripts/General/pseudoSpawnpoint.lua	"local errorMessage = ""\nCouldn't spawn monster, spawnpoint data: "" .. dump(t) .. ""\n\nSubsequent spawn failure reasons:\n"" .. table.concat(t2, ""\n"")"
-BossDebug AUTO: OFF		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
-BossDebug AUTO: ON		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"Game.ShowStatusText(mapvars.bossDebugAuto and ""BossDebug AUTO: ON"" or ""BossDebug AUTO: OFF"")"
 BossDebug: impossible d’écrire boss_dump.txt		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: impossible d’écrire boss_dump.txt"") end"
 BossDebug: écrit dans boss_dump.txt		excluded	status	1	status_text_call:1	Scripts/General/zzBossSync.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""BossDebug: écrit dans boss_dump.txt"") end"
 MAW: ALL BUFFS NUKED (SAFE)		excluded	status	1	status_text_call:1	Scripts/General/zzMaw-Multiplayer.lua	"if Game and Game.ShowStatusText then Game.ShowStatusText(""MAW: ALL BUFFS NUKED (SAFE)"") end"
@@ -459,7 +457,6 @@ Require 40 power to work.
 Amber Droplet	호박 방울	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Amber Droplet"","
 Amethyst Chunk	자수정 덩어리	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Amethyst Chunk"","
 Archibald's Mirror	아치발드의 거울	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Archibald's Mirror"","
-Ascended 	승천한 	translated	misc	1	formatted_colored_text:1	Scripts/General/zzAlchemy.lua	"t.Name=StrColor(178,255,255, ""Ascended "" .. t.Name)"
 Ascended Amber Droplet	승천한 호박 방울	translated	misc	2	reviewed_alchemy_item_name:1; reviewed_crafting_status_name:1	Scripts/General/zzAlchemy.lua; Scripts/General/zzMaw-Items.lua	"""Ascended Amber Droplet"","
 Ascended Amethyst Chunk	승천한 자수정 덩어리	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Amethyst Chunk"","
 Ascended Erathian Sapphire	승천한 에라시아 사파이어	translated	misc	1	reviewed_alchemy_item_name:1	Scripts/General/zzAlchemy.lua	"""Ascended Erathian Sapphire"","
@@ -735,11 +732,6 @@ Targets' status: %s, type: %s, state: %s.
 "	"세계: 엔로스. 영역: %s. 지점: %s. 연도: %s
 대상 상태: %s, 유형: %s, 상태: %s.
 "	translated	misc	1	reviewed_telelocator_ui:1	Scripts/Global/Quest_SavingGoobers.lua	"local FString	= ""World: Enroth. Realm: %s. Landmark: %s. Year: %s\nTargets' status: %s, type: %s, state: %s.\n"""
-"
-Level Recommended:
-"	"
-권장 레벨:
-"	translated	monster	1	reviewed_recommended_level_label:1	Scripts/General/zzMaw-Monsters.lua	"Game.TransTxt[46+i]=string.format(Game.TransTxt[46+i] .. ""\nLevel Recommended:\n"" .. levelLow .. ""-"" .. levelHigh)"
 % be an higher tier	% 확률로 더 높은 등급이 됨	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[17]=""Monsters have "" .. getMapAffixPower(17, power) .. ""% be an higher tier"","
 % chance to become a boss	% 확률로 보스가 됨	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[19]=""Monsters have "" .. getMapAffixPower(19, power) .. ""% chance to become a boss"","
 % chance to cast dragon breath	% 확률로 드래곤 브레스 시전	translated	monster	1	proven_map_item_tooltip:1	Scripts/General/zzMaw-Maps.lua	"[4]=""Monsters have "" .. getMapAffixPower(4, power) .. ""% chance to cast dragon breath"","
@@ -1375,7 +1367,7 @@ Breath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total
 다크 엘프와 뱀파이어의 종족 능력처럼 드래곤 능력은 주문처럼 사용하지만 기술처럼 습득합니다. 드래곤은 처음부터 공포를 사용할 수 있고, 전문가·마스터·그랜드마스터 단계에서 두 번째 브레스 무기, 비행, 윙 버핏을 차례로 얻습니다.
 
 브레스 피해는 레벨당 20 + 2이며(최대 600레벨, 광기에서는 900레벨), 총 피해 증가율은 "	translated	spell	1	proven_skill_display_description:1	Scripts/General/zzClasses.lua	"Skillz.setDesc(23,1,""Dragons are powerful creatures with innate abilities.\nLike the racial abilities of Dark Elves and Vampires, Dragon abilities are cast like spells, but are acquired like skills. Dragons begin able to cast Fear, the gain a second breath weapon, Flight and Wing Bugget at expert, master and grandmaster rankings.\n\nBreath damage is 20 + 2 per level (up to level 600, or 900 in madness) and total damage is increased by "" .. dragonBreath.Damage[1] .. ""-"" .. dragonBreath.Damage[2] "
-Duration 15+1.5 minutes per point of skill	지속시간: 15분 + 기술 포인트당 1.5분	translated	spell	2	proven_game_display_assignment:2	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[19].Master=""Duration 15+1.5 minutes per point of skill"""
+Duration 15+1.5 minutes per point of skill	지속시간: 15분 + 기술 포인트당 1.5분	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[19].Master=""Duration 15+1.5 minutes per point of skill"""
 Duration 30+3 minutes per point of skill	지속시간: 30분 + 기술 포인트당 3분	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[19].GM=""Duration 30+3 minutes per point of skill"""
 Duration: %.1f seconds	지속시간: %.1f초	translated	spell	4	proven_game_display_assignment:4	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[key].Normal = string.format(""Duration: %.1f seconds"", durN)"
 Each hit deals damage equal to 	타격당 피해량: 	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[32].GM=""Each hit deals damage equal to "" .. (mult32[4]*100) .. ""% of Melee damage"""
@@ -1457,7 +1449,6 @@ Spirit Magic Book	영혼 마법서	translated	spell	1	proven_itemtxt_alias_displ
 Superior Blood Leech	상급 피 흡수	translated	spell	1	known_display_name_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[74].Name=""Superior Blood Leech"""
 Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners.	약초 향이 나는 두꺼운 양피지가 맥박에 맞춰 따뜻해집니다. 활력의 결계가 책장을 뻣뻣하게 굳혀 두었지만, 육체 마법 수행자의 안정된 손길에는 부드럽게 풀립니다.	translated	spell	1	proven_itemtxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"txt[977].Notes=""Thick, herb-scented vellum warm to the pulse; a vigor-ward stiffens the pages, relaxing only for the steady hands of Body practitioners."""
 This spell is as good as it will ever be!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzClasses.lua	"Game.SpellsTxt[97].GM=""This spell is as good as it will ever be!"""
-This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	translated	spell	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[22].Master=""This spell is as good as it will ever get!"""
 Vampiric Aura	흡혈의 오라	translated	spell	1	proven_spelltxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"sp.Name=""Vampiric Aura"""
 Water Magic Book	물 마법서	translated	spell	1	proven_itemtxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"txt[973].Name=""Water Magic Book"""
 "
@@ -1487,7 +1478,6 @@ Realms: Detached. Time: Detached."	"
  on attack activated	 공격 시 발동 활성화	translated	status	2	status_text_call:2	Scripts/General/zzClasses.lua	"Game.ShowStatusText(Game.SpellsTxt[t.Param].Name .. "" on attack activated"")"
  on attack disabled	 공격 시 발동 비활성화	translated	status	2	status_text_call:2	Scripts/General/zzClasses.lua	"Game.ShowStatusText(Game.SpellsTxt[t.Param].Name .. "" on attack disabled"")"
  required)	)	translated	status	2	status_text_call:2	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Your level is too low (Level "" .. levelRequired .. "" required)"")"
- will not be sorted with C	번은 C키 정렬에서 제외됩니다	translated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory number "" .. vars.mawbags[pl:GetIndex()].CurrentBag .. "" will not be sorted with C"""
  will now take alchemy items when sorting	 → 정렬 시 연금술 아이템 담당	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(Party[Game.CurrentPlayer].Name .. "" will now take alchemy items when sorting"")"
 %s casts Charge stunning the enemy	%s의 돌진이 적을 기절시킵니다	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(string.format(""%s casts Charge stunning the enemy"",Party[0].Name))"
 %s created	%s 제작 완료	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Items.lua	"Game.ShowStatusText(string.format(""%s created"", craftingNames[i+1]))"
@@ -1543,7 +1533,6 @@ I wouldn't join in your reckless adventure, not even for all the wealth in the w
 In the night the deads rise	밤이 되면 망자들이 일어납니다	translated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""In the night the deads rise"")"
 Insanity Immunity	광기 면역	translated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Insanity Immunity"")"
 Invalid Item	잘못된 아이템	translated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Invalid Item"")"
-Inventory number 	인벤토리 	translated	status	2	status_text_call:2	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory number "" .. vars.mawbags[pl:GetIndex()].CurrentBag .. "" will not be sorted with C"""
 Inventory sorted	인벤토리를 정렬했습니다	translated	status	1	status_text_call:1	Scripts/General/zzMaw-Item-Sorter.lua	"Game.ShowStatusText(""Inventory sorted"")"
 It's a trap!	함정이다!	translated	status	1	status_text_call:1	Scripts/Maps/7d21.lua	"Game.ShowStatusText(""It's a trap!"")"
 It's an ambush!	매복이다!	translated	status	1	status_text_call:1	Scripts/Maps/7out02.lua	"Game.ShowStatusText(""It's an ambush!"")"
@@ -1589,8 +1578,7 @@ SUPREME UNLOCKED!!!	최상위 숙련 해금!!!	translated	status	1	status_text_c
 Teleported 	순간이동: 	translated	status	3	status_text_call:3	Scripts/General/zzMaw-Monsters.lua	"Game.ShowStatusText(""Teleported "" .. count .. "" monsters"")"
 The night is dark and full of terrors	밤은 어둡고 공포로 가득하다	translated	status	1	status_text_call:1	Scripts/Maps/7out05.lua	"Game.ShowStatusText(""The night is dark and full of terrors"")"
 This potion has not enough power	이 물약의 위력이 부족합니다	translated	status	5	status_text_call:5	Scripts/General/zzAlchemy.lua; Scripts/Global/zzMAWPotions.lua	"Game.ShowStatusText(""This potion has not enough power"")"
-This skill has reached its limit	이 기술은 한계에 도달했습니다	translated	status	3	status_text_call:3	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""This skill has reached its limit"")"
-This skill is already as good as it will ever get	이 기술은 이미 최대치입니다	translated	status	1	status_text_call:1	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""This skill is already as good as it will ever get"")"
+This skill has reached its limit	이 기술은 한계에 도달했습니다	translated	status	2	status_text_call:2	Scripts/General/zzMAW-Skills.lua	"Game.ShowStatusText(""This skill has reached its limit"")"
 Unconscious Immunity	의식불명 면역	translated	status	1	status_text_call:1	Scripts/General/zzAlchemy.lua	"Game.ShowStatusText(""Unconscious Immunity"")"
 We have no more items to trade for kegs	술통으로 교환할 아이템이 더 이상 없습니다	translated	status	3	proven_message_literal:3	Scripts/Global/GLOBAL.lua	"Message(""We have no more items to trade for kegs"")"
 We have no more items to trade for pyramids	피라미드로 교환할 아이템이 더 이상 없습니다	translated	status	3	proven_message_literal:3	Scripts/Global/GLOBAL.lua	"Message(""We have no more items to trade for pyramids"")"
@@ -1832,11 +1820,6 @@ Power: 	위력: 	translated	tooltip	2	formatted_colored_text:2	Scripts/General/z
 Press alt to show craftable stats	제작 가능한 능력치를 보려면 Alt를 누르세요	translated	tooltip	1	formatted_colored_text:1	Scripts/General/zzMaw-Items.lua	"t.Description = t.Description .. ""\n\n"" .. StrColor(100,100,100,""Press alt to show craftable stats"")"
 Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken.	마법으로부터의 보호는 파티 전체에 적용되어 일부 주문과 몬스터 능력이 유발하는 약화 상태에 면역을 부여합니다. 대상 상태는 독, 질병, 석화, 마비, 약화입니다. 효과를 한 번 막을 때마다 주문이 약해집니다. 육체 마법 기술 포인트당 1회의 공격을 막을 수 있으며 최대 10회까지 유지되고, 그 뒤에는 효과가 사라집니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[75].Description=""Protection from Magic affects the entire party at once, granting immunity to certain spells and monster abilities that cause debilitation conditions.  These are:  Poison, Disease, Stone, Paralyze, and Weak.  Every time this spell saves a character from an effect, it weakens.  The spell can survive 1 attack per point of skill in body magic up to 10 attacks--after that, Protection from Magic is broken."""
 Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic.	마법의 돌을 발사합니다. 생물과 충돌하거나 일정 시간이 지나면 폭발합니다. 돌은 멈출 때까지 튕기고 굴러가므로 폭발에 휘말리지 않게 주의하십시오. 폭발 피해량은 %s + 대지 마법 기술 포인트당 1-%s입니다.	translated	tooltip	1	proven_game_display_assignment:1	Scripts/General/zzMaw-Spells.lua	"Game.SpellsTxt[41].Description=string.format(""Releases a magical stone into the world that will explode when it comes into contact with a creature or enough time passes.  The rock will bounce and roll until it finds a resting spot, so be careful not to be caught in the blast.  The explosion causes %s points of damage plus 1-%s points of damage per point of skill in Earth Magic."",dmgAddTooltip(s, m,41),diceMaxTooltip(s, m,41))"
-"Reserve a flat amount of mana
-Invisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.
-This effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."	"일정량의 마나를 점유합니다.
-투명화는 주변 생물의 정신에 작용해, 말을 걸거나 공격하지 않는 한 파티를 알아차리지 못하게 합니다. 명중 여부와 관계없이 공격하면 주문이 해제됩니다. 적대적인 몬스터가 주변에 있을 때는 시전할 수 없습니다.
-이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다."	translated	tooltip	1	proven_spelltxt_alias_display:1	Scripts/General/zzMaw-Spells.lua	"sp.Description = string.format(""Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically."")"
 "Reserve a flat amount of mana
 Only useful outdoors, Water Walk lets your characters walk along the surface of water without sinking.
 This effect remains active until deactivated or lose consciousness."	"일정량의 마나를 점유합니다.

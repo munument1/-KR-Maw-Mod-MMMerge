@@ -692,7 +692,7 @@ function events.BuildItemInformationBox(t)
 		--[[
 		if t.Name then
 			if t.Item.BonusStrength==1 then
-				t.Name=StrColor(178,255,255, "승천한 " .. t.Name) 
+				t.Name=StrColor(178,255,255, "Ascended " .. t.Name) 
 			end
 		end
 		]]

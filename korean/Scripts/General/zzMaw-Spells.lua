@@ -3103,7 +3103,7 @@ function adjustSpellTooltips()
 		local id=19
 		local sp=Game.SpellsTxt[id]
 		local bf=buffPower[id]
-		sp.Description = string.format("일정량의 마나를 점유합니다.\n투명화는 주변 생물의 정신에 작용해, 말을 걸거나 공격하지 않는 한 파티를 알아차리지 못하게 합니다. 명중 여부와 관계없이 공격하면 주문이 해제됩니다. 적대적인 몬스터가 주변에 있을 때는 시전할 수 없습니다.\n이 효과는 해제하거나 공격하거나 의식을 잃을 때까지 유지됩니다. 활성화된 동안 주변에 몬스터가 없으면 자동으로 다시 시전됩니다.")
+		sp.Description = string.format("Reserve a flat amount of mana\nInvisibility works on the minds of nearby creatures, making them unable to notice the party unless spoken to or attacked.  Any attack you make, regardless of whether or not it hits or misses, will break this spell. This spell can't be cast while hostile monsters are nearby.\nThis effect remains active until deactivated, attacking or lose consciousness. While active and no monster is in the nearbies, it gets casted automatically.")
 		]]
 		--Fly
 		local id=21
@@ -3297,12 +3297,12 @@ function events.LoadMap()
 			Game.ItemsTxt[starburstBooks[i] ].Picture=booksPic[i]
 		end
 		Game.SpellsTxt[19].Master="n/a"
-		Game.SpellsTxt[22].Master="이 주문은 이미 최고의 성능을 발휘하고 있습니다!"
+		Game.SpellsTxt[22].Master="This spell is as good as it will ever get!"
 	else
 		for i=1,3 do
 			Game.ItemsTxt[invisBooks[i] ].Picture=booksPic[i]
 			Game.ItemsTxt[starburstBooks[i] ].Picture=booksPicGM[i]
-			Game.SpellsTxt[19].Master="지속시간: 15분 + 기술 포인트당 1.5분"
+			Game.SpellsTxt[19].Master="Duration 15+1.5 minutes per point of skill"
 			Game.SpellsTxt[22].Master="n/a"
 		end
 	end

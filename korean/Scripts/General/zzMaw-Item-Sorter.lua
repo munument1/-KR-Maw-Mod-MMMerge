@@ -414,10 +414,10 @@ function events.KeyDown(t)
 			vars.inventoryLocked[Game.CurrentPlayer]=vars.inventoryLocked[Game.CurrentPlayer] or {}
 			if vars.mawbags[pl:GetIndex()] and vars.mawbags[pl:GetIndex()].CurrentBag then
 				table.insert(vars.inventoryLocked[Game.CurrentPlayer], vars.mawbags[pl:GetIndex()].CurrentBag)
-				Game.ShowStatusText("인벤토리 " .. vars.mawbags[pl:GetIndex()].CurrentBag .. "번은 C키 정렬에서 제외됩니다"
+				Game.ShowStatusText("Inventory number " .. vars.mawbags[pl:GetIndex()].CurrentBag .. " will not be sorted with C"
 			else
 				table.insert(vars.inventoryLocked[Game.CurrentPlayer],1)
-				Game.ShowStatusText("인벤토리 " .. 1 .. "번은 C키 정렬에서 제외됩니다")
+				Game.ShowStatusText("Inventory number " .. 1 .. " will not be sorted with C")
 			end
 		end
 	end

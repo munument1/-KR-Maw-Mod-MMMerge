@@ -50,7 +50,6 @@ Book	책	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least o
 N/A	N/A	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Normal	노멀	exact	safe_candidate	spell	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Quick Spell	퀵스펠	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Charm	매혹	exact	safe_candidate	table	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dodging	회피	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Enslave	노예화	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -344,6 +343,7 @@ Grandmaster	그랜드마스터	exact	no_patchable_occurrence	spell	1	0	1	Exact P
 Name	이름	exact	no_patchable_occurrence	spell	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 School	학교	exact	no_patchable_occurrence	spell	12	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Temple	신전	exact	no_patchable_occurrence	spell	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	exact	no_patchable_occurrence	spell	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Acid Burst	산성 폭발	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Alchemy	연금술	exact	no_patchable_occurrence	table	6	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Almighty Crown	전능의 왕관	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
