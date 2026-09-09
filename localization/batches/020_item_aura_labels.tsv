@@ -2,6 +2,6 @@ source	translation	status	notes
  +X	 +X	translated	마법부여 미리보기 형식 토큰 유지
  Aura: adds 	 오라: 모든 공격에 	translated	화염 오라 조합 문자열
  Fire Damage to any attack\n\n	 화염 피해 추가\n\n	translated	화염 오라 조합 문자열; 줄바꿈 유지
-Fire	불꽃	translated	화염 오라 단계명
-Flame	화염	translated	화염 오라 단계명
+Fire	화염	translated	공통 화염 표기; 능력치/오라 양쪽에 안전
+Flame	불꽃	translated	화염 오라 단계명
 Inferno	지옥불	translated	화염 오라 단계명
