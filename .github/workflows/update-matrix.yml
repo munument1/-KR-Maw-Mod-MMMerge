@@ -59,6 +59,7 @@ jobs:
           fi
 
       - name: Checkout Wiki
+        if: github.repository == 'Malekitsu/Maw-Mod-MMMerge'
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}.wiki
@@ -66,10 +67,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy generated files to Wiki
+        if: github.repository == 'Malekitsu/Maw-Mod-MMMerge'
         run: |
           cp Class-Skills-Matrix.md wiki/
 
       - name: Update Home page
+        if: github.repository == 'Malekitsu/Maw-Mod-MMMerge'
         run: |
           cd wiki
           echo "# Welcome to the Class Skills Wiki" > Home.md
