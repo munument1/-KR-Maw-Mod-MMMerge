@@ -1,12 +1,42 @@
 ----------------------------------------------------
 --Empower Monsters
 ----------------------------------------------------
---function to calculate the level you are (float number) give x amount of experience
-function calcLevel(x)
-	return (25+(5*x+625)^0.5)/50
-end 
-function calcExp(lvl)
-	return lvl*(lvl-1)*500
+
+function bolsteredLevel(floor, levels)
+	floor = math.max(floor, 0)
+	if levels <= 0 then
+		return floor + levels
+	end
+	local top = floor + levels
+	local oldExpClimbed = 500*(top*(top-1) - floor*(floor-1))
+	return calcLevel(calcExp(floor) + oldExpClimbed)
+end
+
+--Monsters come in families of three (A/B/C). Every stat is read off the B
+--variant and the A/C difference is carried by their own multipliers, so this is
+--the id anything level-related should look up.
+function MawTierB(id)
+	if id%3==1 then
+		return id+1
+	elseif id%3==0 then
+		return id-1
+	end
+	return id
+end
+
+BOSS_HP_BASE = 1			--worth before any level scaling
+BOSS_HP_LEVEL_DIVISOR = 255	--levels per extra point of multiplier
+AUSTERITY_BOSS_FLATTEN = 4	--Austerity divides both the level term and the roll
+
+function MawBossLevel(id)
+	local lvl=totalLevel and totalLevel[id]
+	if not lvl then
+		return nil
+	end
+	if id%3==0 then
+		return lvl + (lvl - (totalLevel[id-1] or lvl))
+	end
+	return totalLevel[id+1] or lvl
 end
 
 function events.GameInitialized2()
@@ -33,13 +63,19 @@ end
 -- (aucun fallback, aucun changement de formules, on ne touche rien si un champ manque)
 
 -- Helper function to get list of player-controlled monsters in multiplayer
+-- by marker, not by session: a puppet left behind in a save is still a puppet
 local function getPlayerControlledMonsters()
-	if not (Multiplayer and Multiplayer.in_game) then
-		return {}
+	local puppets = {}
+	local aitype = Multiplayer and Multiplayer.PUPPET_AITYPE
+	if not aitype then
+		return puppets
 	end
-	-- Use Multiplayer.client_monsters() to get player-controlled monster indices
-	local clientMonsters = Multiplayer.client_monsters()
-	return clientMonsters or {}
+	for i = 0, Map.Monsters.High do
+		if Map.Monsters[i].AIType == aitype then
+			table.insert(puppets, i)
+		end
+	end
+	return puppets
 end
 
 function events.AfterLoadMap()
@@ -64,8 +100,7 @@ function events.AfterLoadMap()
       if basetable and round and m.Level and m.Id and m.Resistances and basetable[m.Id]
          and basetable[m.Id].Level and basetable[m.Id].Resistances then
 
-		local level=getMonsterLevel(m)
-        local bolsterRes = math.max(round((level - basetable[m.Id].Level) / 2), 0)
+        local bolsterRes = 0
         for v = 0, 10 do
           if v ~= 5 then
             if v == 0 and m.Resistances[v] and m.Resistances[v] < 65000 then
@@ -150,38 +185,28 @@ function recalculateMawMonster()
 	if Map.Name=="d42.blv" then
 		return
 	end
+	local puppets=getPlayerControlledMonsters()
 	
 	for i=0, Map.Monsters.High do
 		local mon=Map.Monsters[i]
 		
-		if mon.NameId==0 then
+		if mon.NameId==0 and not table.find(puppets, i) then
 			local txt=Game.MonstersTxt[mon.Id]
 			for v=0,10 do
 				if v~=5 then
 					mon.Resistances[v]=	txt.Resistances[v]
 				end
 			end
-			if mapvars.spearDamageIncrease and mapvars.spearDamageIncrease[i] then
-				local reduction=calcSpearResReduction(mapvars.spearDamageIncrease[i])
-				mon.Resistances[4]=mon.Resistances[4]-reduction
-			end
 			local currentHPPercentage=mon.HP/mon.FullHitPoints
-			local hp=round(getMonsterHealth(mon))
-			hpOvercap=0
-			while hp>32500 do
-				hp=round(hp/2)
-				hpOvercap=hpOvercap+1
-			end
-			mon.Resistances[0]=mon.Resistances[0]%1000+hpOvercap*1000
-			mon.FullHitPoints=hp
-			mon.HP=mon.FullHitPoints*currentHPPercentage
+			mon.Resistances[0]=mon.Resistances[0]%1000
+			MawSetMonsterHP(mon, getMonsterHealth(mon), currentHPPercentage)
 			mon.Attack1.DamageAdd, mon.Attack1.DamageDiceSides, mon.Attack1.DamageDiceCount = txt.Attack1.DamageAdd, txt.Attack1.DamageDiceSides, txt.Attack1.DamageDiceCount
 			mon.Attack2.DamageAdd, mon.Attack2.DamageDiceSides, mon.Attack2.DamageDiceCount = txt.Attack2.DamageAdd, txt.Attack2.DamageDiceSides, txt.Attack2.DamageDiceCount
 			mon.Level=txt.Level
 			mon.Attack2Chance=txt.Attack2Chance
 			mon.Experience=txt.Experience
 		end
-		if mon.AIType~=1 then
+		if mon.AIType~=1 and not table.find(puppets, i) then
 			mon.AIType=0
 		end
 	end
@@ -239,7 +264,7 @@ function recalculateMawMonster()
 				local name=Game.MapStats[Map.MapStatsIndex].Name
 				if Game.freeProgression==false then
 					if not horizontalMaps[name] then
-						partyLvl=oldTable.Level*2
+						partyLvl=oldTable.Level*1.5 --keeps uniques at base*2.5 like the trash multiplier
 					end
 				end
 				if vars.madnessMode then
@@ -249,24 +274,19 @@ function recalculateMawMonster()
 						partyLvl=oldTable.Level*2
 					end
 				end
-				--level increase 
+				--level increase
 				oldLevel=oldTable.Level
 				mapvars.uniqueMonsterLevel=mapvars.uniqueMonsterLevel or {}
-				mapvars.uniqueMonsterLevel[i]=oldTable.Level+partyLvl
+				if not vars.madnessMode and not (Game.freeProgression==false and not horizontalMaps[name]) then
+					mapvars.uniqueMonsterLevel[i]=bolsteredLevel(partyLvl, oldTable.Level)
+				else
+					mapvars.uniqueMonsterLevel[i]=oldTable.Level+partyLvl
+				end
 				mon.Level=math.min(mapvars.uniqueMonsterLevel[i],255)
 				--HP calculated using the proper getMonsterHealth function
-				local HP=round(getMonsterHealth(mon))
-				
-				hpOvercap=0
-				while HP>32500 do
-					HP=round(HP/2)
-					hpOvercap=hpOvercap+1
-				end
-				
-				mon.Resistances[0]=mon.Resistances[0]%1000+hpOvercap*1000
+				mon.Resistances[0]=mon.Resistances[0]%1000
 				local HPproportion=mon.HP/mon.FullHP
-				mon.FullHP=HP
-				mon.HP=mon.FullHP*HPproportion
+				MawSetMonsterHP(mon, getMonsterHealth(mon), HPproportion)
 
 			elseif mon.NameId>=220 and mon.NameId<300 then
 				local txt=Game.MonstersTxt[mon.Id]
@@ -289,21 +309,9 @@ function recalculateMawMonster()
 				if mapvars.uniqueMonsterLevel and mapvars.uniqueMonsterLevel[index] then
 					mon.Level=math.min(mapvars.uniqueMonsterLevel[index],255)
 				end
-				local totalHP=mon.HP*2^(math.floor(mon.Resistances[0]/1000))
-				local austerityMod=1
-				if vars.AusterityMode then
-					austerityMod=4
-				end
-				local HP=round(getMonsterHealth(mon))
-				local hpOvercap=0
-				while HP>32500 do
-					HP=round(HP/2)
-					hpOvercap=hpOvercap+1
-				end
-				mon.Resistances[0]=round(txt.Resistances[0]*5)/5%1000+1000*hpOvercap
+				mon.Resistances[0]=round(txt.Resistances[0]*5)/5%1000
 				local HPproportion=mon.HP/mon.FullHP
-				mon.FullHP=HP
-				mon.HP=mon.FullHP*HPproportion
+				MawSetMonsterHP(mon, getMonsterHealth(mon), HPproportion)
 			end
 		end
 	end	
@@ -373,176 +381,9 @@ function events.AfterLoadMap()
 	end
 end
 
---MONSTER BOLSTERING
-function events.BeforeNewGameAutosave()
-	vars.MMLVL = {0, 0, 0, 0}
-	vars.EXPBEFORE = 0
-	vars.LVLBEFORE = 0
-end
-
-function events.BeforeLoadMap(wasInGame)
-	if not wasInGame then
-		-- migrate from old saves lacking EXPBEFORE
-		vars.EXPBEFORE = vars.EXPBEFORE or calcExp(vars.LVLBEFORE or 1)
-		if  not vars.MMLVL then
-			-- migrate to refactored MMLVL
-			vars.MMLVL = {vars.MM8LVL, vars.MM7LVL, vars.MM6LVL, vars.MMMLVL}
-			vars.MM8LVL = nil
-			vars.MM7LVL = nil
-			vars.MM6LVL = nil
-			vars.MMMLVL = nil
-		end
-	end
-end
-
-function addBolsterExp(experience)
-	local currentWorld = TownPortalControls.MapOfContinent(Map.MapStatsIndex)
-	vars.EXPBEFORE = vars.EXPBEFORE + experience
-	local currentLvl = calcLevel(vars.EXPBEFORE)
-	vars.MMLVL[currentWorld] = vars.MMLVL[currentWorld] + currentLvl - vars.LVLBEFORE
-	vars.LVLBEFORE = currentLvl
-end
-
-
-function getTotalLevel() 
-	if Multiplayer and Multiplayer.in_game then
-		if not Multiplayer.im_host() and vars.MultiplayerBolsterLevels then
-			local lvl=0
-			for i=1,4 do
-				lvl = lvl + vars.MultiplayerBolsterLevels[i]
-			end
-			return lvl
-		end
-	end
-	local result = 0
-	for i=1,4 do
-		result = result + vars.MMLVL[i]
-	end
-	
-	ShareBolster()
-	
-	return result
-end
-
-function getTotalExp()
-	return calcExp(getTotalLevel()+1)
-end
-
-function getPartyLevel(currentWorld)
-	currentWorld = currentWorld or TownPortalControls.MapOfContinent(Map.MapStatsIndex) 
-	if Multiplayer and Multiplayer.in_game then
-		if not Multiplayer.im_host() and vars.MultiplayerBolsterLevels then
-			local lvl=0
-			for i=1,4 do
-				if currentWorld ~= i then
-					lvl = lvl + vars.MultiplayerBolsterLevels[i]
-				end
-			end
-			return lvl
-		end
-	end
-	local result = 0
-	for i=1,4 do
-		if currentWorld ~= i then
-			result = result + vars.MMLVL[i]
-		end
-	end
-	
-	ShareBolster()
-	
-	return result
-end
-
-function getPartyExp(currentWorld)
-	return calcExp(getPartyLevel(currentWorld)+1)
-end
-
-function events.MonsterKillExp(t)
-
-	--online handled in maw-multiplayer file
-	--[[if vars.onlineMode then 
-		t.Handled=true
-		t.Exp=0
-		return
-	end 
-	]]
-	
-	if Multiplayer and Multiplayer.in_game then
-		t.Exp=0
-		return
-	end
-	if vars.madnessMode then 
-		if mapvars.mawBounty or Map.Name=="zarena.blv" or Map.Name=="d42.blv" or Map.Name=="7d05.blv" then
-			t.Exp=0
-			return
-		end
-	end
-	local partyLvl=getTotalLevel()
-	local mon=t.Monster
-	
-	
-	if vars.insanityMode and mon.NameId>300 then 
-		t.Handled=true
-		t.Exp=0
-		return
-	end
-	
-	local monLvl=getMonsterLevel(mon)
-	t.Handled=true
-
-	local bolsterExp=0
-	
-	
-	local partyCount=0
-	for i=0, Party.High do
-		if Party[i].Dead==0 and Party[i].Eradicated==0 then
-			partyCount=partyCount+1
-		end
-	end
-	partyCount=math.max(1,partyCount)
-	local experience=round(t.Exp/partyCount)
-	
-	local monHealth=getMonsterHealth(mon)
-	--local monDamage=getMonsterDamage(mon)
-	
-	for i=0, Party.High do
-		if Party[i].Dead==0 and Party[i].Eradicated==0 then
-			local playerLevel=math.min(calcLevel(Party[i].Experience),partyLvl) --accounts for the cases which you want to level a low lvl character
-			--[[
-			local multiplier1=((monLvl+10)/(playerLevel+5))^2
-			local multiplier2=1+(monLvl^0.5)-(playerLevel^0.5)
-			mult=math.min(math.max(multiplier1,multiplier2),3)
-			if mult<1 then
-				multiplier2=1+(playerLevel^0.5)-(monLvl^0.5)
-				mult=math.max(math.max(multiplier1,1/multiplier2),1/3)
-			end
-			]]
-			local healthRateo=monHealth/getMonsterHealth(false,playerLevel)
-			--local damageRateo=monDamage/getMonsterDamage(false,playerLevel)
-			local mult=healthRateo --*damageRateo
-						
-			local experienceAwarded=experience*mult
-			local lvl=Party[i].LevelBase
-			experienceAwarded=math.min((lvl+1)*1000, experienceAwarded)
-			--debug.Message(mult .. "  " .. experienceAwarded)
-			Party[i].Experience=math.min(Party[i].Experience+experienceAwarded, 2^32-3982296)
-			
-			--calculate again based for bolster
-			playerLevel=partyLvl
-			bolsterExp=bolsterExp+experience*mult
-		end
-	end
-	
-	--no bolster from arena
-	if Map.Name=="d42.blv" then
-		return
-	end
-	
-	addBolsterExp(bolsterExp/5)
-	
-	vars.lastPartyExperience={Party[0]:GetIndex(),Party[0].Experience}
-	for i=0, Party.High do
-		Party[i].Exp=math.min(Party[i].Exp, 2^32-3982296)
+function events.BeforeLoadMap()
+	if vars.MMLVL then
+		recalculateMonsterTable()
 	end
 end
 
@@ -567,16 +408,20 @@ function recalculateMonsterTable()
 	
 	--madness, used to calculate gold
 	local name=Game.MapStats[Map.MapStatsIndex].Name
-	if vars.madnessMode and madnessMapLevels[name] then
+	local fixedMadnessLevel = vars.madnessMode and madnessMapLevels[name]
+		and not madnessStartingMaps[name]
+	if fixedMadnessLevel then
 		bolsterLevel=madnessMapLevels[name]
-	end	
-	
+	end
+
 	bolsterLevel=bolsterLevel+bonus
-	
+
 	if mapvars.mapAffixes then
 		bolsterLevel=mapvars.mapAffixes.Power*10+20
 	end
-	
+
+	local partyBolster = not fixedMadnessLevel and not mapvars.mapAffixes
+
 	bolsterLevel2=bolsterLevel --used for loot
 	
 	--check for current map monsters
@@ -609,7 +454,6 @@ function recalculateMonsterTable()
 		mon=Game.MonstersTxt[i]
 		base=basetable[i]		
 		LevelB=BLevel[i]
-		
 		
 		
 		mon.Level=math.min(base.Level+bolsterLevel,255)
@@ -662,13 +506,22 @@ function recalculateMonsterTable()
 		end
 		mon.Level=math.min(mon.Level+extraBolster,255)
 		totalLevel=totalLevel or {}
-		totalLevel[i]=basetable[i].Level+bolsterLevel+extraBolster
-		
+		if partyBolster then
+			totalLevel[i]=bolsteredLevel(bolsterLevel, basetable[i].Level+extraBolster)
+			mon.Level=math.min(totalLevel[i],255)
+		else
+			totalLevel[i]=basetable[i].Level+bolsterLevel+extraBolster
+		end
+
 		--horizontal progression
 		local name=Game.MapStats[Map.MapStatsIndex].Name
 		if Game.freeProgression==false and not mapvars.mapAffixes then
-			horizontalMultiplier=3
-			local level=math.max(math.min((base.Level+extraBolster)*horizontalMultiplier,base.Level+bolsterLevel+extraBolster+bonus),1)
+			horizontalMultiplier=2.5
+			local cap=base.Level+bolsterLevel+extraBolster+bonus
+			if partyBolster then
+				cap=bolsteredLevel(bolsterLevel+bonus, base.Level+extraBolster)
+			end
+			local level=math.max(math.min((base.Level+extraBolster)*horizontalMultiplier,cap),1)
 			totalLevel[i]=level
 			mon.Level=math.min(totalLevel[i],255)
 			if not horizontalMaps[name] then
@@ -684,8 +537,8 @@ function recalculateMonsterTable()
 		
 	
 		--madness
-		if vars.madnessMode and not madnessStartingMaps[name] and not mapvars.mapAffixes then
-			local baseLevel=madnessMapLevels[name] or 0
+		if fixedMadnessLevel and not mapvars.mapAffixes then
+			local baseLevel=madnessMapLevels[name]
 			local withinMapDifference=(baseMapLevel-mean)*2
 			local tierModifier=(base.Level-LevelB)*2
 			local level=baseLevel+withinMapDifference+tierModifier
@@ -718,12 +571,7 @@ function recalculateMonsterTable()
 		--Create a mock monster object to pass the correct ID and level
 		local mockMon = {Id = i, Level = totalLevel[i]}
 		HPtable[i] = round(getMonsterHealth(mockMon, totalLevel[i]))
-		--resistances 
-		bolsterRes=math.max(round((totalLevel[i]-basetable[i].Level)/10)*5,0)
-		--mapping
-		if getMapAffixPower(12) then
-			bolsterRes=bolsterRes+getMapAffixPower(12)
-		end
+		bolsterRes=getMapAffixPower(12) or 0
 		for v=0,10 do
 			if v~=5 then
 				mon.Resistances[v]=math.min(bolsterRes+basetable[i].Resistances[v],bolsterRes+200,999)
@@ -738,34 +586,21 @@ function recalculateMonsterTable()
 		if currentWorld==2 then
 			mon.Experience = math.min(mon.Experience*2, mon.Experience+1000)
 		end
-		--true nightmare nerf
-		if Game.BolsterAmount==300 then
-			mon.Experience=mon.Experience*0.67
-		end
-		if vars.Mode==2 then
-			mon.Experience=mon.Experience*0.5
-		end
-		if vars.insanityMode then
-			mon.Experience=mon.Experience*0.8
-		end
+		mon.Experience=mon.Experience*GetMonsterExpMult()
 		mon.ArmorClass=base.ArmorClass*((totalLevel[i]+10)/(LevelB+10))
 	end
 	
+	-- templates hold a capped proxy HP; the real pool is registered per map
+	-- monster through MawSetMonsterHP at the recalc sites (MawCore.MonsterHP)
 	for i=1, 651 do
 		local mon=Game.MonstersTxt[i]
-		hpOvercap=0
-		actualHP=HPtable[i]
-		while actualHP>32500 do
-			actualHP=round(actualHP/2)
-			hpOvercap=hpOvercap+1
+		mon.Resistances[0]=mon.Resistances[0]%1000
+		local hp=math.min(round(HPtable[i]), 32000)
+		if hp>1000 then
+			hp=round(hp/10)*10
 		end
-		mon.Resistances[0]=mon.Resistances[0]%1000+hpOvercap*1000
-		mon.HP=actualHP
-		mon.FullHP=actualHP
-		if mon.FullHP>1000 then
-			mon.FullHP=round(mon.FullHP/10)*10
-			mon.HP=round(mon.HP/10)*10
-		end
+		mon.HP=hp
+		mon.FullHP=hp
 	end
 	
 	--add ranged attack
@@ -800,6 +635,7 @@ function recalculateMonsterTable()
 			HPtable[i]=HPtable[i]*(1+getMapAffixPower(15)/100)
 		end
 	end
+	monsterTableMap=Map.MapStatsIndex
 end
 
 
@@ -905,6 +741,33 @@ function events.BeforeLoadMap()
 	AdjustMonsterDensity()
 end
 
+REFERENCE_SPAWN_HI = 3
+monsterDensity = {
+	[1] = {Low=1, Hi=3},	--bolster 40
+	[2] = {Low=1, Hi=3},	--bolster 70
+	[3] = {Low=1, Hi=3},	--bolster 100, baseline
+	[4] = {Low=1, Hi=4},	--bolster 150
+	[5] = {Low=1, Hi=4},	--bolster 200
+	[6] = {Low=2, Hi=4},	--bolster 300
+	[7] = {Low=2, Hi=5},	--doom
+	[8] = {Low=3, Hi=5},	--road to insanity
+	[9] = {Low=3, Hi=6},	--beyond madness
+}
+
+function GetDensitySpread(difficulty)
+	local s = monsterDensity[difficulty or GetDifficulty()] or monsterDensity[3]
+	return s.Low, s.Hi - REFERENCE_SPAWN_HI
+end
+
+function GetDensityMean(difficulty)
+	local s = monsterDensity[difficulty or GetDifficulty()] or monsterDensity[3]
+	return (s.Low + s.Hi)/2
+end
+
+function GetMonsterExpMult(difficulty)
+	return (GetDensityMean(3)/GetDensityMean(difficulty))^0.5
+end
+
 function AdjustMonsterDensity()
 	--add difficulty related damage
 	if Game.BolsterAmount%50~=0 then
@@ -923,107 +786,91 @@ function AdjustMonsterDensity()
 		end
 	end
 	
-	--Hard
-	if Game.BolsterAmount==150 then
+	if Game.BolsterAmount==150 or Game.BolsterAmount==200 then
+		local low, bonus = GetDensitySpread(Game.BolsterAmount==150 and 4 or 5)
 		for i=1,Game.MapStats.High do
+			Game.MapStats[i].Mon1Low=math.max(BackupMapStats[i].Mon1Low,low)
+			Game.MapStats[i].Mon2Low=math.max(BackupMapStats[i].Mon2Low,low)
+			Game.MapStats[i].Mon3Low=math.max(BackupMapStats[i].Mon3Low,low)
 			if Game.MapStats[i].Mon1Hi<=3 then
-				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+1
-			end 
-			if Game.MapStats[i].Mon2Hi<=3 then
-				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+1
-			end 
-			if Game.MapStats[i].Mon3Hi<=3 then
-				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+1
-			end 
-		end
-	end
-	
-	--Hell
-	if Game.BolsterAmount==200 then
-		for i=1,Game.MapStats.High do
-			if Game.MapStats[i].Mon1Low==1 then
-				Game.MapStats[i].Mon1Low=2
-			end
-			if Game.MapStats[i].Mon1Hi<=3 then
-				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+1
-			end 
-			if Game.MapStats[i].Mon2Low==1 then
-				Game.MapStats[i].Mon2Low=2
+				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+bonus
 			end
 			if Game.MapStats[i].Mon2Hi<=3 then
-				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+1
-			end 
-			if Game.MapStats[i].Mon3Low==1 then
-				Game.MapStats[i].Mon3Low=2
+				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+bonus
 			end
 			if Game.MapStats[i].Mon3Hi<=3 then
-				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+1
-			end 
+				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+bonus
+			end
 		end
 	end
-	
+
 	if Game.BolsterAmount==300 then
+		local low, bonus = GetDensitySpread(6)
 		for i=1,Game.MapStats.High do
-			if Game.MapStats[i].Mon1Hi>1 then
-				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+3
-			end 
-			if Game.MapStats[i].Mon2Hi>1 then
-				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+3
-			end 
-			if Game.MapStats[i].Mon3Hi>1 then
-				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+3
-			end 
+			if BackupMapStats[i].Mon1Hi>1 then
+				Game.MapStats[i].Mon1Low=math.max(BackupMapStats[i].Mon1Low,low)
+				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+bonus
+			end
+			if BackupMapStats[i].Mon2Hi>1 then
+				Game.MapStats[i].Mon2Low=math.max(BackupMapStats[i].Mon2Low,low)
+				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+bonus
+			end
+			if BackupMapStats[i].Mon3Hi>1 then
+				Game.MapStats[i].Mon3Low=math.max(BackupMapStats[i].Mon3Low,low)
+				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+bonus
+			end
 			Game.MapStats[i].Mon1Dif=math.min(BackupMapStats[i].Mon1Dif+1,5)
 			Game.MapStats[i].Mon2Dif=math.min(BackupMapStats[i].Mon2Dif+1,5)
 			Game.MapStats[i].Mon3Dif=math.min(BackupMapStats[i].Mon3Dif+1,5)
 		end
 	end
-	
+
 	if vars.Mode==2 then
+		local low, bonus = GetDensitySpread(7)
 		for i=1,Game.MapStats.High do
-			if Game.MapStats[i].Mon1Hi>1 then
-				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+4
-			end 
-			if Game.MapStats[i].Mon2Hi>1 then
-				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+4
-			end 
-			if Game.MapStats[i].Mon3Hi>1 then
-				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+4
-			end 
+			if BackupMapStats[i].Mon1Hi>1 then
+				Game.MapStats[i].Mon1Low=math.max(BackupMapStats[i].Mon1Low,low)
+				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+bonus
+			end
+			if BackupMapStats[i].Mon2Hi>1 then
+				Game.MapStats[i].Mon2Low=math.max(BackupMapStats[i].Mon2Low,low)
+				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+bonus
+			end
+			if BackupMapStats[i].Mon3Hi>1 then
+				Game.MapStats[i].Mon3Low=math.max(BackupMapStats[i].Mon3Low,low)
+				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+bonus
+			end
 			Game.MapStats[i].Mon1Dif=math.min(BackupMapStats[i].Mon1Dif+1,5)
 			Game.MapStats[i].Mon2Dif=math.min(BackupMapStats[i].Mon2Dif+1,5)
 			Game.MapStats[i].Mon3Dif=math.min(BackupMapStats[i].Mon3Dif+1,5)
 		end
 	end
 	if vars.insanityMode then
+		local low = GetDensitySpread(8)
 		for i=1,Game.MapStats.High do
-			if Game.MapStats[i].Mon1Hi>1 then
-				Game.MapStats[i].Mon1Low=3
-				Game.MapStats[i].Mon2Low=3
-				Game.MapStats[i].Mon3Low=3
+			--all three floors are gated on slot 1's Hi, as they always were
+			if BackupMapStats[i].Mon1Hi>1 then
+				Game.MapStats[i].Mon1Low=math.max(BackupMapStats[i].Mon1Low,low)
+				Game.MapStats[i].Mon2Low=math.max(BackupMapStats[i].Mon2Low,low)
+				Game.MapStats[i].Mon3Low=math.max(BackupMapStats[i].Mon3Low,low)
 			end
 		end
 	end
 	if vars.madnessMode then
+		local low, bonus = GetDensitySpread(9)
 		for i=1,Game.MapStats.High do
-			if Game.MapStats[i].Mon1Hi>1 then
-				Game.MapStats[i].Mon1Low=5
+			if BackupMapStats[i].Mon1Hi>1 then
+				Game.MapStats[i].Mon1Low=math.max(BackupMapStats[i].Mon1Low,low)
+				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+bonus
 			end
-			if Game.MapStats[i].Mon2Hi>1 then
-				Game.MapStats[i].Mon2Low=5
+			if BackupMapStats[i].Mon2Hi>1 then
+				Game.MapStats[i].Mon2Low=math.max(BackupMapStats[i].Mon2Low,low)
+				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+bonus
 			end
-			if Game.MapStats[i].Mon3Hi>1 then
-				Game.MapStats[i].Mon3Low=5
+			if BackupMapStats[i].Mon3Hi>1 then
+				Game.MapStats[i].Mon3Low=math.max(BackupMapStats[i].Mon3Low,low)
+				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+bonus
 			end
-			if Game.MapStats[i].Mon1Hi>1 then
-				Game.MapStats[i].Mon1Hi=BackupMapStats[i].Mon1Hi+6
-			end 
-			if Game.MapStats[i].Mon2Hi>1 then
-				Game.MapStats[i].Mon2Hi=BackupMapStats[i].Mon2Hi+6
-			end 
-			if Game.MapStats[i].Mon3Hi>1 then
-				Game.MapStats[i].Mon3Hi=BackupMapStats[i].Mon3Hi+6
-			end 
 		end
 	end
 	
@@ -1034,46 +881,6 @@ function AdjustMonsterDensity()
 	Game.MapStats[96].Mon3Low=1
 	Game.MapStats[96].Mon3Hi=3
 
-	--make bigger monsters more rare
-	if vars.Mode==2 then
-		for i=1,Game.MapStats.High do
-			local map=Game.MapStats[i]
-			local name1=map.Monster1Pic
-			local name2=map.Monster2Pic
-			local name3=map.Monster3Pic
-			local divisor=18
-			if vars.madnessMode then
-				divisor=10
-			elseif vars.insanityMode then
-				divisor=14
-			end
-			local level1=math.floor(monsterPicTable[name1]/divisor)
-			local level2=math.floor(monsterPicTable[name2]/divisor)
-			local level3=math.floor(monsterPicTable[name3]/divisor)
-			for j=1,level1 do
-				if j%3==0 then
-					map.Mon1Low=math.max(map.Mon1Low-1, 1)
-				else
-					map.Mon1Hi=math.max(map.Mon1Hi-1, 1)
-				end
-			end
-			for j=1,level2 do
-				if j%3==0 then
-					map.Mon2Low=math.max(map.Mon2Low-1, 1)
-				else
-					map.Mon2Hi=math.max(map.Mon2Hi-1, 1)
-				end
-			end
-			for j=1,level3 do
-				if j%3==0 then
-					map.Mon3Low=math.max(map.Mon3Low-1, 1)
-				else
-					map.Mon3Hi=math.max(map.Mon3Hi-1, 1)
-				end
-			end
-		end
-	end
-			
 	--mapping fix
 	if mapMonsterDensity then
 		local map=Game.MapStats[mapMonsterDensity[1]]
@@ -1081,6 +888,14 @@ function AdjustMonsterDensity()
 		map.Mon2Hi=round(map.Mon2Hi*mapMonsterDensity[2])
 		map.Mon3Hi=round(map.Mon3Hi*mapMonsterDensity[2])
 		mapMonsterDensity=nil
+	end
+
+	--safeguard against /0 crash
+	for i=1,Game.MapStats.High do
+		local map=Game.MapStats[i]
+		map.Mon1Low=math.min(map.Mon1Low, map.Mon1Hi)
+		map.Mon2Low=math.min(map.Mon2Low, map.Mon2Hi)
+		map.Mon3Low=math.min(map.Mon3Low, map.Mon3Hi)
 	end
 end
 
@@ -1122,7 +937,7 @@ madnessStartingMaps={["Dagger Wound Island"] =true,
 mapLevels={
 --MM8
 ["Dagger Wound Island"] = 
-{["Low"] = 5 , ["Mid"] = 6 , ["High"] = 6},
+{["Low"] = 3 , ["Mid"] = 4 , ["High"] = 4},
 
 ["Abandoned Temple"] = 
 {["Low"] = 5 , ["Mid"] = 6 , ["High"] = 7},
@@ -1307,7 +1122,7 @@ mapLevels={
 
 --MM7
 ["Emerald Island"] = 
-{["Low"] = 5 , ["Mid"] = 5 , ["High"] = 5},
+{["Low"] = 4 , ["Mid"] = 4 , ["High"] = 4},
 
 ["The Temple of the Moon"] = 
 {["Low"] = 5 , ["Mid"] = 6 , ["High"] = 8},
@@ -1578,7 +1393,7 @@ mapLevels={
 {["Low"] = 5 , ["Mid"] = 5 , ["High"] = 5},
 
 ["New Sorpigal"] = 
-{["Low"] = 6 , ["Mid"] = 6 , ["High"] = 6},
+{["Low"] = 4 , ["Mid"] = 4 , ["High"] = 4},
 
 ["Goblinwatch"] = 
 {["Low"] = 4 , ["Mid"] = 4 , ["High"] = 6},
@@ -1839,6 +1654,7 @@ local mm7MapProgression={
   ["Stone City"] = 15,
   ["Deyja"] = 16,
   ["The Tidewater Caverns"] = 18,
+  ["Lord Markham's Manor"] = 18,
   ["Evenmorn Island"] = 19,
   ["The Bracada Desert"] = 20,
   ["The Red Dwarf Mines"] = 21,
@@ -1849,7 +1665,6 @@ local mm7MapProgression={
   ["The Tularean Caves"] = 26,
   ["Fort Riverstride"] = 26,
   ["Nighon Tunnels"] = 27,
-  ["Lord Markham's Manor"] = 28,
   ["Wromthrax's Cave"] = 29,
   ["The Hall of the Pit"] = 30,
   ["The Breeding Zone"] = 31,
@@ -1943,17 +1758,24 @@ local mm8MapProgression={
   ["Prison of the Lord of Fire"] = 58,
 }
 
+MADNESS_TOP_LEVEL = 500
+MADNESS_CURVE = 1.2
+
+local function madnessLevel(position, campaignLength)
+	return round(MADNESS_TOP_LEVEL*(position/campaignLength)^MADNESS_CURVE)
+end
+
 madnessMapLevels={}
 for key, value in pairs(mm6MapProgression) do
-	madnessMapLevels[key]=round(((value/54)*100)^1.5)
+	madnessMapLevels[key]=madnessLevel(value, 54)
 end
 
 for key, value in pairs(mm7MapProgression) do
-	madnessMapLevels[key]=round(((value/52)*100)^1.5)
+	madnessMapLevels[key]=madnessLevel(value, 52)
 end
 
 for key, value in pairs(mm8MapProgression) do
-	madnessMapLevels[key]=round(((value/58)*100)^1.5)
+	madnessMapLevels[key]=madnessLevel(value, 58)
 end
 
 madnessMapLevels["Basement of the Breach"] = 1100
@@ -2046,6 +1868,46 @@ function getMonsterLevel(mon)
 	return lvl
 end
 
+local function staticMapDropLevel()
+	local name=Game.MapStats[Map.MapStatsIndex].Name
+	local mp=mapLevels[name] or {Low=0, Mid=0, High=0}
+	local mapSum=mp.Low+mp.Mid+mp.High
+
+	local bonus=(vars.mapResetCount and vars.mapResetCount[Map.Name] or 0)*20
+	local currentWorld=TownPortalControls.MapOfContinent(Map.MapStatsIndex)
+	local partyLevel=getPartyLevel()+bonus
+	local mapLevel=mapSum
+
+	if mp.Low~=0 then
+		--the map declares its own monsters: they set the level
+		partyLevel, mapLevel = mapSum, 0
+	elseif not Game.freeProgression then
+		partyLevel = getPartyLevel(4)*0.75
+	else
+		partyLevel = partyLevel+math.min((vars.MMLVL[currentWorld]+bonus)/2, 54)
+		mapLevel = 0
+	end
+	if vars.madnessMode then
+		partyLevel = madnessMapLevels[name] or (mapSum/3)^1.5
+		mapLevel = 0
+	end
+	if mapvars.mapAffixes then
+		partyLevel = mapvars.mapAffixes.Power*10+20
+	end
+	return MawCore.ItemLevel.ForDrop(nil, partyLevel, mapLevel)
+end
+
+function MawMapDropLevel()
+	local natives=currentMapMonsters
+	if monsterTableMap==Map.MapStatsIndex and totalLevel and natives and #natives>0 then
+		local lvl=totalLevel[natives[math.ceil(#natives/2)]]
+		if lvl and lvl>0 then
+			return lvl
+		end
+	end
+	return staticMapDropLevel()
+end
+
 function events.GameInitialized2()
 	monsterSpellMultiplierList={
 		[const.Spells.FireBolt]=0.75,
@@ -2084,6 +1946,13 @@ function events.BuildMonsterInformationBox(t)
 	local id=Mouse:GetTarget().Index
 	if id>Map.Monsters.High then return end
 	local mon=Map.Monsters[id]
+	--real HP for monsters over the engine cap (MawCore.MonsterHP ledger)
+	if t.IdentifiedHitPoints and MawCore and MawCore.MonsterHP then
+		local cur=MawCore.MonsterHP.max(mon)
+		if cur~=mon.HP then
+			t.HitPoints.Text="Hit Points \t100" .. shortenNumber(round(cur), 3, true)
+		end
+	end
 	--show level Below HP
 	mapvars.uniqueMonsterLevel=mapvars.uniqueMonsterLevel or {}
 	local lvl=getMonsterLevel(mon)
@@ -2196,7 +2065,7 @@ function events.BuildMonsterInformationBox(t)
 		local experienceAwarded=experience*healthRateo
 		local lvl=pl.LevelBase
 		experienceAwarded=round(math.min((lvl+1)*1000, experienceAwarded))
-		t.EffectsHeader.Text=t.EffectsHeader.Text .. "\n\nExperience: " .. experienceAwarded .. "\n\nCurrent Health: " .. shortenNumber(round(mon.HP*2^math.floor(mon.Resistances[0]/1000)), 4)
+		t.EffectsHeader.Text=t.EffectsHeader.Text .. "\n\nExperience: " .. experienceAwarded .. "\n\nCurrent Health: " .. shortenNumber(MawCore.MonsterHP.current(mon), 4)
 		
 		-- Display active debuffs
 		local debuffNames = {
@@ -2219,6 +2088,15 @@ function events.BuildMonsterInformationBox(t)
 				activeDebuffs = activeDebuffs .. "\n" .. buffName .. ": " .. remaining .. "s"
 			end
 		end
+		local monIndex = mon:GetIndex()
+		local spearStack = mapvars.spearDamageIncrease and mapvars.spearDamageIncrease[monIndex] or 0
+		if spearStack > 0 then
+			activeDebuffs = activeDebuffs .. "\nPhysical damage taken: +" .. round(spearStack) .. "%"
+		end
+		local legendaryStack = mapvars.legendaryDamageTaken and mapvars.legendaryDamageTaken[monIndex] or 0
+		if legendaryStack > 0 then
+			activeDebuffs = activeDebuffs .. "\nAll damage taken: +" .. round(legendaryStack) .. "%"
+		end
 		if activeDebuffs ~= "" then
 			t.EffectsHeader.Text = t.EffectsHeader.Text .. "\n\n" .. StrColor(255,200,0, "Debuffs:" .. activeDebuffs)
 		end
@@ -2230,11 +2108,6 @@ end
 function events.LoadMap()
 	vars.ExtraSettings.UseMonsterBolster=false
 	Game.UseMonsterBolster=false
-end
-
---disable base monster Resistances
-function events.CalcDamageToMonster(t)
-	t.Result=t.Damage
 end
 
 --TRUE NIGHTMARE MODE
@@ -2327,7 +2200,7 @@ function events.LoadMap()
 	end
 end
 function events.LeaveMap()
-	if (Game.BolsterAmount~=300 or Game.BolsterAmount~=600) and vars.Mode~=2 then return end
+	if Game.BolsterAmount~=300 and Game.BolsterAmount~=600 and vars.Mode~=2 then return end
 	if Map.IndoorOrOutdoor==1 and mapvars.monsterMap and mapvars.monsterMap.cleared==false then
 		if Map.Monsters.Count==0 then return end
 		-- Get list of player-controlled monsters once
@@ -2572,14 +2445,8 @@ function events.LeaveMap()
 	vars.lastHitTime=0
 	SeedDeaths.clear_pending_for_current()
 end
-function events.CalcDamageToPlayer(t)
-  if vars.madnessMode and vars.MadnessDeathSeed then
-    vars.lastHitTime=Game.Time
-    SeedDeaths.mark_pending_for_current()
-  end
-end
 
-function events.Tick()
+function mawTick_DeathSeedTimeout()
   if not vars then return end
   if vars.madnessMode and vars.MadnessDeathSeed then
     vars.lastHitTime=vars.lastHitTime or 0
@@ -2604,7 +2471,7 @@ deathCounter=CustomUI.CreateText{
   Layer=1, Screen=7, AlignLeft=true, Width=300, Height=16, X=470, Y=1
 }
 
-function events.Tick()
+function mawTick_DeathCounterUI()
   if vars and vars.madnessMode and vars.lastHitTime and vars.MadnessDeathSeed and showDeathCounter then
     local secondsLeft=math.max(math.ceil((vars.lastHitTime+const.Minute*5-Game.Time)/128),0)
     local txt=(secondsLeft>0) and StrColor(255,0,0,secondsLeft) or StrColor(0,255,0,secondsLeft)
@@ -2653,6 +2520,24 @@ function events.MonsterKilled(mon)
 	monsterKilled=false
 end
 
+local forceMapCompletion=false
+local function shareMapCompletion()
+	if MawCore.Sync.inGame() and not forceMapCompletion then
+		Multiplayer.broadcast_mapdata({DataType="MawMapCompleted"}, "MawMapCompleted")
+	end
+end
+
+function events.MultiplayerInitialized()
+	Multiplayer.allow_remote_event("MawMapCompleted")
+end
+
+function events.MawMapCompleted()
+	if mapvars.completed==nil then
+		forceMapCompletion=true
+		checkMapCompletition()
+		forceMapCompletion=false
+	end
+end
 
 function checkMapCompletition()
 	--retroactive fix, can remove this code after a while
@@ -2704,7 +2589,7 @@ function checkMapCompletition()
 			txt=StrColor(255,0,0,text)
 		end
 		completition.Text=txt
-		if m/n>=requiredRateo then
+		if m/n>=requiredRateo or forceMapCompletion then
 			local name=Game.MapStats[Map.MapStatsIndex].Name
 			local bolster=getPartyLevel()
 			
@@ -2726,8 +2611,9 @@ function checkMapCompletition()
 						end
 					end
 					mapvars.completed=true
+					shareMapCompletion()
 				end
-				if mapvars.mapAffixes then
+				if mapvars.mapAffixes and dimensionMapsUnlocked() then
 					evt.Add("Items", 290)
 					assignedAffixes = {} --don't make it local
 					
@@ -2806,7 +2692,7 @@ function checkMapCompletition()
 				evt.ForPlayer(0)
 				evt.Add{"Gold", Value = gold}
 				if mapvars.mapAffixes then
-					local rewards={1063,1061,1062,1065,[0]=0}
+					local rewards={1070,1061,1062,1065,[0]=0}
 					local nAff=0
 					for i=1,4 do
 						if mapvars.mapAffixes[i]>0 then
@@ -2815,28 +2701,23 @@ function checkMapCompletition()
 					end
 					evt.Add("Items",rewards[nAff])
 				elseif not vars.AusterityMode then
-					local gemTier=math.ceil((mapLevel+bolster)/25+0.5)
-					if gemTier>20 then
-						for i=1, math.floor(gemTier/10) do
-							evt.Add("Items", 1063)
-						end
-					else
-						evt.Add("Items",1040+gemTier)
-						evt.Add("Items",1040+gemTier)
-					end
+					evt.Add("Items", 1070)
+					local gemTier=math.min(math.ceil((mapLevel+bolster)/25+0.5),GEM_DROP_MAX_TIER)
+					evt.Add("Items",1040+gemTier)
+					evt.Add("Items",1040+gemTier)
 				end
 				--bolster code
 				addBolsterExp(experience)
-				vars.lastPartyExperience={Party[0]:GetIndex(),Party[0].Experience}
 				--end
 				experience=round(experience*5/Party.Count/1000)*1000
-				if Multiplayer and Multiplayer.in_game then
+				if MawCore.Sync.inGame() then
 					experience=round(experience / math.min(PlayersInGame(),5)/1000)*1000
 				end
 				for i=0,Party.High do
 					Party[i].Experience=math.min(Party[i].Experience+experience, 2^32-3982296)
 				end
 				mapvars.completed=true
+				shareMapCompletion()
 				vars.dungeonCompletedList=vars.dungeonCompletedList or {}
 				vars.dungeonCompletedList[name]=true
 				if mapvars.monsterMap then
@@ -2933,9 +2814,9 @@ teleport behind party
 
 
 -- === AFTER LOAD MAP (host generates; clients do not generate) ===
-function events.AfterLoadMap()
-	local IN_MULTI  = Multiplayer and Multiplayer.in_game
-	local IS_HOST   = IN_MULTI and Multiplayer.im_host and Multiplayer.im_host()
+local function mawBossesOnMapReady()
+	local IN_MULTI  = MawCore.Sync.inGame()
+	local IS_HOST   = MawCore.Sync.isHost()
 
 	-- Multi-client: block local generation; the zzBossSync module will request a snapshot.
 	if IN_MULTI and not IS_HOST then
@@ -2962,6 +2843,7 @@ function events.AfterLoadMap()
 					end
 				end
 
+				local puppets = getPlayerControlledMonsters()
 				local possibleMonsters = {}
 				local bossSpawns = math.ceil((Map.Monsters.Count - 30) / 150)
 				if vars.Mode == 2 then 
@@ -2972,15 +2854,17 @@ function events.AfterLoadMap()
 				end
 				if getMapAffixPower(17) then
 					for i = 0, Map.Monsters.High do
-						if Map.Monsters[i].Id % 3 ~= 0 and math.random() < getMapAffixPower(17) / 100 then
-							Map.Monsters[i].Id = Map.Monsters[i].Id + 1
+						if Map.Monsters[i].Id % 3 ~= 0 and not table.find(puppets, i) and math.random() < getMapAffixPower(17) / 100 then
+							local mon = Map.Monsters[i]
+							mon:SetId(mon.Id + 1)
+							mon:LoadFramesAndSounds()
 						end
 					end
 				end
 				if getMapAffixPower(19) then
 					for i = 0, Map.Monsters.High do
 						local id = Map.Monsters[i].Id
-						if id % 3 ~= 0 and Game.MonstersTxt[id].AIType ~= 1 and Map.Monsters[i].NameId == 0 and math.random() < getMapAffixPower(19) / 100 then
+						if id % 3 ~= 0 and Game.MonstersTxt[id].AIType ~= 1 and Map.Monsters[i].NameId == 0 and not table.find(puppets, i) and math.random() < getMapAffixPower(19) / 100 then
 							generateBoss(i)
 						end
 					end
@@ -2988,7 +2872,7 @@ function events.AfterLoadMap()
 
 				for i = 0, Map.Monsters.High do
 					local id = Map.Monsters[i].Id
-					if id % 3 == 0 and Game.MonstersTxt[id].AIType ~= 1 and Map.Monsters[i].NameId == 0 then
+					if id % 3 == 0 and Game.MonstersTxt[id].AIType ~= 1 and Map.Monsters[i].NameId == 0 and not table.find(puppets, i) then
 						table.insert(possibleMonsters, i)
 					end
 				end
@@ -3024,6 +2908,16 @@ function events.AfterLoadMap()
   end
 end
 
+function events.AfterLoadMap()
+	if MawCore.Sync.inGame() then return end
+	mawBossesOnMapReady()
+end
+
+function events.MultiplayerMapDataProcessed()
+	if not MawCore.Sync.inGame() then return end
+	mawBossesOnMapReady()
+end
+
 
 -- === GENERATE BOSS (remplit bossNames + bossSet) ===
 function generateBoss(index, nameIndex, skillType)
@@ -3053,17 +2947,16 @@ function generateBoss(index, nameIndex, skillType)
 	mon.NameId = nameIndex
 
 
-	local lvl = totalLevel[mon.Id] or mon.Level
-	if lvl > 100 then
-		lvl = round(lvl + math.random() * 20 + 10)
-	else
-		lvl = round(lvl * (1.1 + math.random() * 0.2))
-	end
+	local lvl = round(MawBossLevel(mon.Id) or mon.Level)
 	mon.Level = math.min(lvl, 255)
 	
 
-	local austerityMod = vars.AusterityMode and 4 or 1
-	local hpMult= 2 * (0.75 + mon.Level / 85 / austerityMod) * (1 + math.random() / austerityMod)
+	--Austerity flattens bosses in two ways at once: a quarter of the level
+	--scaling, and a quarter of the roll's spread.
+	local flatten = vars.AusterityMode and AUSTERITY_BOSS_FLATTEN or 1
+	local fromLevel = BOSS_HP_BASE + mon.Level/BOSS_HP_LEVEL_DIVISOR/flatten
+	local roll = 1 + math.random() * 0.5 /flatten
+	local hpMult = 2.5*fromLevel*roll
 	if getMapAffixPower(18) then
 		hpMult = hpMult * (1 + getMapAffixPower(18) / 100)
 	end
@@ -3074,7 +2967,7 @@ function generateBoss(index, nameIndex, skillType)
 	mon.TreasureItemType		= math.random(1, 12)
 	mon.TreasureItemLevel	 = math.min(mon.TreasureItemLevel + 1, 6)
 
-	local dmgMult = 1.5 + math.random() * 0.5
+	local dmgMult = 1.2 + math.random() * 0.2
 
 	-- skill / nom
 	local skill=skillType
@@ -3108,15 +3001,15 @@ function generateBoss(index, nameIndex, skillType)
 			skill = SkillList[math.random(1, #SkillList)]
 			if math.random() < 0.01 * chanceMult and not generatedByBroodlord then
 				skill = "Broodlord"
-				hpMult=hpMult*2
-				dmgMult = dmgMult * 1.5
+				hpMult=hpMult*1.5
+				dmgMult = 1.5 + math.random() * 0.3
 			end
 			if generatedByBroodlord then
 				skill = "Broodling"
 			end
 			if math.random() < 0.001 * chanceMult then
 				skill = "Omnipotent"
-				dmgMult = dmgMult * 2
+				dmgMult = 2 + math.random()*0.5
 				hpMult=hpMult*4
 			end
 		end
@@ -3143,15 +3036,8 @@ function generateBoss(index, nameIndex, skillType)
 	}
 	
 	-- Calculate health using the centralized getMonsterHealth function
-	local HP = round(getMonsterHealth(mon, lvl))
-	local hpOvercap = 0
-	while HP > 32500 do
-		HP = round(HP / 2)
-		hpOvercap = hpOvercap + 1
-	end
-	mon.Resistances[0] = mon.Resistances[0]%1000 + 1000 * hpOvercap
-	mon.FullHP = HP
-	mon.HP = mon.FullHP
+	mon.Resistances[0] = mon.Resistances[0]%1000
+	MawSetMonsterHP(mon, getMonsterHealth(mon, lvl))
 	
 	-- Maintain compatibility with boss sync system
 	mapvars.bossNames = mapvars.bossNames or {}
@@ -3164,6 +3050,9 @@ function generateBoss(index, nameIndex, skillType)
 	-- Generate and assign loot seed for this boss
 	if generateBossLootSeed then
 		generateBossLootSeed(index, mon.Id)
+	end
+	if type(BossSync_BroadcastBoss)=="function" then
+		BossSync_BroadcastBoss(index)
 	end
 end
 
@@ -3296,102 +3185,6 @@ function checkPityProtectedBoss(seed, chanceMult, generatedByBroodlord)
 	return skill, hpMult, dmgMult
 end
 function events.GameInitialized2() --to make the after all the other code
-	function events.CalcDamageToPlayer(t)
-		local data=mawCustomMonObj or WhoHitPlayer()
-		if data and data.Monster and data.Monster.NameId>=220 and data.Monster.NameId<300 then
-			mon=data.Monster
-			skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
-			if skill=="Summoner" then
-				if math.random()<0.4 or t.DamageKind==4 then
-					pseudoSpawnpoint{monster = math.ceil(mon.Id/3)*3-2, x = (Party.X+mon.X)/2, y = (Party.Y+mon.Y)/2, z = Party.Z, count = 1, powerChances = {75, 25, 0}, radius = 64, group = 1,transform = function(mon) mon.Hostile = true mon.ShowAsHostile = true mon.Velocity=350 end}
-				end
-			elseif skill=="Venomous" then
-				t.Player.Poison3=Game.Time
-			elseif skill=="Plagueborn" then
-				t.Player.Disease3=Game.Time
-			elseif skill=="Fixator" then
-				t.Player.Weak=Game.Time
-			elseif skill=="Swapper" then	
-				Game.ShowStatusText("*Swap*")
-				Party.X, Party.Y, Party.Z, mon.X, mon.Y, mon.Z = mon.X, mon.Y, mon.Z, Party.X, Party.Y, Party.Z
-				Party.Direction, mon.Direction=mon.Direction, Party.Direction
-			elseif skill=="Puller" then
-				local direction=calculateDirection(Party.X, Party.Y,mon.X,mon.Y)
-				evt.Jump{Direction = direction, ZAngle = 128, Speed = 1000}
-			end
-			
-			if skill=="Omnipotent" then
-				if math.random()<0.4 or t.DamageKind==4 then
-					pseudoSpawnpoint{monster = math.ceil(mon.Id/3)*3-2, x = (Party.X+mon.X)/2, y = (Party.Y+mon.Y)/2, z = Party.Z, count = 1, powerChances = {75, 25, 0}, radius = 64, group = 1,transform = function(mon) mon.Hostile = true mon.ShowAsHostile = true mon.Velocity=350 end}
-				end
-				t.Player.Poison3=Game.Time
-				t.Player.Disease3=Game.Time
-				t.Player.Weak=Game.Time
-				Game.ShowStatusText("*Swap*")
-				Party.X, Party.Y, Party.Z, mon.X, mon.Y, mon.Z = mon.X, mon.Y, mon.Z, Party.X, Party.Y, Party.Z
-				Party.Direction, mon.Direction=mon.Direction, Party.Direction
-				local direction=calculateDirection(Party.X, Party.Y,mon.X,mon.Y)
-				evt.Jump{Direction = direction, ZAngle = 128, Speed = 1000}
-			end
-		end
-	end
-
-	--on damage taken
-	function events.CalcDamageToMonster(t)
-		if t.Monster.NameId>=220 and t.Monster.NameId<300 then
-			if t.Player then
-				local id=t.Player:GetIndex()
-				for i=0,Party.High do
-					if Party[i]:GetIndex()==id then
-						index=i
-					end
-				end
-				skill = string.match(Game.PlaceMonTxt[t.Monster.NameId], "([^%s]+)")
-				if skill=="Thorn" or skill=="Omnipotent" then
-					if t.DamageKind==4 then
-						reflectedDamage=true
-						Party[index]:DoDamage(t.Result,4)
-						reflectedDamage=false
-					end
-				end
-				if skill=="Reflecting" or skill=="Omnipotent" then
-					if t.DamageKind~=4 then
-						local damageKind = t.DamageKind
-						if damageKind==50 then --transform dragon damage into energy
-							damageKind = 12
-						end
-						reflectedDamage=true
-						Party[index]:DoDamage(t.Result,damageKind) 
-						reflectedDamage=false
-					end
-				end
-				if skill=="Adamantite" or skill=="Omnipotent" then
-					t.Result=round(math.max(t.Result-t.Monster.Level^1.15*4,t.Result/4))
-				end
-				if skill=="Swapper" or skill=="Omnipotent" then
-					for i=0,Map.Monsters.High do
-						mon=Map.Monsters[i]
-						if mon.HP>0 and mon.AIState==const.AIState.Active and mon.ShowOnMap and mon.ShowAsHostile and (mon.NameId<220 or mon.NameId>300) then
-							t.Result=0
-							Game.ShowStatusText("*Swap*")
-							mon.X, mon.Y, mon.Z, t.Monster.X, t.Monster.Y, t.Monster.Z = t.Monster.X, t.Monster.Y, t.Monster.Z, mon.X, mon.Y, mon.Z
-						end
-					end
-				end
-				if skill=="Regenerating" or skill=="Omnipotent" then
-					id=t.Monster:GetIndex()
-					mapvars.regenerating=mapvars.regenerating or {}
-					mapvars.regenerating[id] = mapvars.regenerating[id] or 0
-					mapvars.regenerating[id] = mapvars.regenerating[id] + 1
-					RunNextTick(function()
-						if t.Monster.HP<=0 then
-							mapvars.regenerating[id]=-1
-						end
-					end)
-				end
-			end
-		end
-	end
 end
 --leecher drain
 local a1, b1, c1, d1
@@ -3597,7 +3390,7 @@ end
 -- =========================
 -- Swift (mob affixe/skill)
 -- =========================
-function events.Tick()
+function mawTick_SwiftBosses()
   -- Swift via boss data (iterate only bossData keys, not all monsters)
   if mapvars and mapvars.bossData then
     swiftLocation = swiftLocation or {}
@@ -3612,7 +3405,8 @@ function events.Tick()
               loc = { mon.X or 0, mon.Y or 0 }
               swiftLocation[mid] = loc
             end
-            if math.abs((mon.X or 0) - loc[1]) < 100 and math.abs((mon.Y or 0) - loc[2]) < 100 then
+            if math.abs((mon.X or 0) - loc[1]) < 100 and math.abs((mon.Y or 0) - loc[2]) < 100
+              and MawCore.Sync.drivesMonster(mid) then
               mon.X = (mon.X or 0) + ((mon.X or 0) - loc[1])
               mon.Y = (mon.Y or 0) + ((mon.Y or 0) - loc[2])
             end
@@ -3635,7 +3429,8 @@ function events.Tick()
           loc = { mon.X or 0, mon.Y or 0 }
           swiftLocation[i] = loc
         end
-        if math.abs((mon.X or 0) - loc[1]) < 100 and math.abs((mon.Y or 0) - loc[2]) < 100 then
+        if math.abs((mon.X or 0) - loc[1]) < 100 and math.abs((mon.Y or 0) - loc[2]) < 100
+          and MawCore.Sync.drivesMonster(i) then
           local k = (aff or 0) / 100
           mon.X = (mon.X or 0) + ((mon.X or 0) - loc[1]) * k
           mon.Y = (mon.Y or 0) + ((mon.Y or 0) - loc[2]) * k
@@ -3773,7 +3568,7 @@ end
 local resizeList={
 	207,208,209, --behemoth
 	300,301,302, --minotaur
-	578,579,560, --minotaur mm6
+	578,579,580, --minotaur mm6
 	498,499,500, --demons mm6
 	501,502,503, --demons mm6
 }
@@ -3817,7 +3612,7 @@ function events.BeforeLoadMap()
 end
 
 --nerf to movement speed in doom
-function events.Tick()
+function mawTick_TurnbasedMoveLimit()
 	if Game.TurnBased then
 		if vars.Mode==2 or vars.AusterityMode then
 			turnBaseStartPositionX=turnBaseStartPositionX or Party.X
@@ -3833,7 +3628,6 @@ function events.Tick()
 		end
 	end
 end
-
 
 
 effectNames={
@@ -3974,175 +3768,51 @@ local transform={
 		[555]=736,
 		[1010]=712
 }
-local explosions={
-		[734]=723,
-		[739]=721,
-		[712]=711,
-		[732]=718,
-		[740]=715,
-		[737]=719,
-		[736]=722,
-}
 local transformedList={734,739,712,732,740,737,736}
+--AutoCollision spawns the row at type+1 as the explosion; keyed by that
+--wrong value, mapped to the right row. 740/737 are also flying projectiles,
+--hence the zero-velocity gate at the use site (NOTES.md).
+local explosionRemap={
+		[735]=723,	--ElecBall's
+		[740]=721,	--RockBlast's
+		[713]=711,	--FireBolt's
+		[733]=718,	--Cold's
+		[741]=715,	--LightBall's
+		[738]=719,	--DarkBall's
+		[737]=722,	--PurpleBall's
+}
 
-function events.Tick()
+--Game.MissileSetup[type].AutoCollision (Merge switch, hooks in
+--Structs/After/Spells.lua): explosion + sound + Monster/PlayerAttacked on
+--real collisions. Details: MawCore/NOTES.md "Projectile impacts".
+function MawEnableProjectileImpact(objType)
+	if Game.MissileSetup.count < objType + 1 then
+		Game.MissileSetup.count = objType + 1
+	end
+	Game.MissileSetup[objType].AutoCollision = true
+end
+
+function events.GameInitialized2()
+	for _, objType in ipairs(transformedList) do
+		MawEnableProjectileImpact(objType)
+	end
+end
+
+function mawTick_RestoreProjectiles()
 	if vars.MAWSETTINGS.restoreProjectiles=="OFF" then return end
-	if Multiplyer and Multiplayer.in_game then return end
+	if MawCore.Sync.inGame() then return end
 	for i=0, Map.Objects.High do
 		local obj=Map.Objects[i]
 		if transform[obj.Type] and obj.Owner%8==3 and obj.Spell==0 then
 			obj.Type=transform[obj.Type]
 			obj.TypeIndex=obj.Type-160
 			obj.LightMultiplier=0
-		end		
-	end
-	
-	if Game.Paused then return end
-	
-	for i=0, Map.Objects.High do
-		local obj=Map.Objects[i]
-		lastLocation=lastLocation or {}
-		lastLocation[i]=lastLocation[i] or {math.huge,math.huge}
-		local dist=getDistance(obj.X,obj.Y,obj.Z-120)
-		if table.find(transformedList, obj.Type) and (dist<128 or (obj.X==lastLocation[i][1] and obj.Y==lastLocation[i][2])) and obj.Spell==0 then
-			local triggeredByPlayer=false
-			if dist<128 then
-				triggeredByPlayer=true
-			end
-			obj.Type=explosions[obj.Type]
-			obj.TypeIndex=obj.Type-160
-			obj.VelocityX=0
-			obj.VelocityY=0
-			obj.VelocityZ=0
-			obj.Velocity[1]=0
-			obj.Velocity[2]=0
-			obj.Velocity[0]=0
-			obj.Age=0
-			lastLocation[i]={math.huge,math.huge}
-			--get data
-			local id=math.floor(obj.Owner/8)
-			if triggeredByPlayer then
-				--calculate damage
-				local id=math.floor(obj.Owner/8)
-				local mon=Map.Monsters[math.floor(obj.Owner/8)]
-				local action=0
-				if mon.Attack1.Missile==0 and mon.Attack2.Missile>0 then
-					action=1
-				end
-				if obj.Spell~=0 then
-					action=2
-				end
-				mawCustomMonObj={["Monster"]=mon, 
-								["Object"]=obj,
-								["MonsterAction"]=action,
-								["MonsterIndex"]=id,
-								["ObjectIndex"]=i,
-								["Spell"]=obj.Spell,
-								["SpellMastery"]=obj.SpellMastery,
-								["SpellSkill"]=obj.SpellSkill,
-								}
-				
-				obj.X=obj.X+(Party.X-obj.X)/3
-				obj.Y=obj.Y+(Party.Y-obj.Y)/3
-				obj.Z=obj.Z+10
-				--cover code
-				
-				local list={}
-				for k=0,Party.High do
-					if Party[k]:IsConscious() then
-						table.insert(list,k)
-					end
-				end
-				
-				local target=math.random(1,#list)
-				target=list[target] or 0
-				local masteryRequired=2
-				if not vars.covering then
-					vars.covering={}
-					for i=0,4 do
-						vars.covering[i]=true
-					end
-				end
-				cover={}
-				for i=0,Party.High do
-					local s, m= SplitSkill(Skillz.get(Party[i], 50))
-					if s>0 and vars.covering[i] and m>=masteryRequired and i~=target then
-						cover[i]={["Chance"]=1-(0.99^s-0.05),["Mastery"]= m}
-						if coverBonus[i] then
-							cover[i].Chance=cover[i].Chance+0.3
-							coverBonus[i]=false
-						end
-					else
-						cover[i]=false
-					end
-				end
-				
-				--roll once per player with player and pick the one with max hp
-				coverPlayerIndex=-1
-				lastMaxHp=0
-				covered=false
-				for i=0,#cover-1 do
-					if cover[i] then
-						local hp=Party[i].HP/Party[i]:GetFullHP()
-						if cover[i].Chance>math.random() and hp>lastMaxHp then
-							lastMaxHp=hp
-							coverPlayerIndex=i
-							covered=true
-						end
-					end
-				end
-				
-				local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
-				if skill=="Fixator" then
-					covered=false
-					local lowestHPId=0
-					local lowestHP=math.huge
-					for i=0,Party.High do
-						local totHP=Party[i]:GetFullHP()
-						if Party[i]:IsConscious() and totHP<lowestHP then
-							lowestHP=totHP
-							lowestHPId=i
-						end
-					end
-					target=lowestHPId
-				end
-				
-				if covered then
-					mem.call(0x4A6FCE, 1, mem.call(0x42D747, 1, mem.u4[0x75CE00]), const.Spells.Shield, target)
-					Party[coverPlayerIndex]:ShowFaceAnimation(14)
-					Game.ShowStatusText(Party[coverPlayerIndex].Name .. " cover " .. Party[target].Name)
-					target=coverPlayerIndex
-					local pl=Party[target]
-					local id=pl:GetIndex()
-					if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 23) then
-						evt[target].Add("HP", Party[target]:GetFullHP()*0.03)
-					end
-					
-					--retaliation code
-					local s,m=Skillz.get(pl,53)
-					if s/100>=math.random() then
-						vars.retaliation=vars.retaliation or {}
-						vars.retaliation[id]=vars.retaliation[id] or {}
-						vars.retaliation[id]["Stacks"]=vars.retaliation[id]["Stacks"] or 0
-						vars.retaliation[id]["Time"]=vars.retaliation[id]["Time"] or Game.Time
-						vars.retaliation[id]["Stacks"]=vars.retaliation[id]["Stacks"]+1
-						local cap=1
-						if m==4 then
-							cap=3
-						end
-						vars.retaliation[id]["Stacks"]=math.min(vars.retaliation[id]["Stacks"],cap)
-					end						
-				end		
-				
-				
-				--apply damage
-				Party[target]:DoDamage(10000,mon.Attack1.Type)
-				mawCustomMonObj=false
-			end
-		else
-			lastLocation[i]={obj.X, obj.Y}
 		end
-		
+		local fix=explosionRemap[obj.Type]
+		if fix and obj.VelocityX==0 and obj.VelocityY==0 and obj.VelocityZ==0 then
+			obj.Type=fix
+			obj.TypeIndex=fix-160
+		end
 		--MAKE GM BOW SHOOTING FIRE ARROW
 		if obj.Type==545 and obj.Owner%8==4 then
 			local id=math.floor(obj.Owner/8)
@@ -4150,7 +3820,7 @@ function events.Tick()
 				if Party[j]:GetIndex()==id then
 					local pl=Party[j]
 					local s,m=SplitSkill(pl.Skills[const.Skills.Bow])
-					if m==4 then
+					if m>=4 then
 						obj.Type=550
 						obj.TypeIndex=427
 					end
@@ -4158,6 +3828,134 @@ function events.Tick()
 			end
 		end
 	end
+end
+
+--targeting, cover, retaliation and pipeline damage, verbatim from the
+--old landing branch; the engine now tells us WHICH player was hit
+function events.PlayerAttacked(t)
+	local obj=t.Attacker and t.Attacker.Object
+	local mon=t.Attacker and t.Attacker.Monster
+	if not (obj and mon and obj.Spell==0 and table.find(transformedList, obj.Type)) then return end
+	if t.Handled then return end
+	t.Handled=true --we pick the target and drive damage through the pipeline
+	local id=t.Attacker.MonsterIndex
+	local action=0
+	if mon.Attack1.Missile==0 and mon.Attack2.Missile>0 then
+		action=1
+	end
+	MawCore.DamageState.setCustomAttacker({["Monster"]=mon,
+					["Object"]=obj,
+					["MonsterAction"]=action,
+					["MonsterIndex"]=id,
+					["Spell"]=obj.Spell,
+					["SpellMastery"]=obj.SpellMastery,
+					["SpellSkill"]=obj.SpellSkill,
+					})
+
+	--cover code
+
+	local list={}
+	for k=0,Party.High do
+		if Party[k]:IsConscious() then
+			table.insert(list,k)
+		end
+	end
+
+	local target=math.random(1,#list)
+	target=list[target] or 0
+	local masteryRequired=2
+	if not vars.covering then
+		vars.covering={}
+		for i=0,4 do
+			vars.covering[i]=true
+		end
+	end
+	--solo: the only candidate IS the target, so the "not yourself" rule has to
+	--go or the skill can never fire. What lands is a halved hit instead of a
+	--redirected one (MawCore/Formulas.soloCoverDamageTaken).
+	local solo=Party.Count==1
+	cover={}
+	for i=0,Party.High do
+		local s, m= SplitSkill(Skillz.get(Party[i], 50))
+		if s>0 and vars.covering[i] and m>=masteryRequired and (solo or i~=target) then
+			cover[i]={["Chance"]=1-(0.99^s-0.05),["Mastery"]= m}
+			if MawCore.DamageState.takeCoverBonus(i) then
+				cover[i].Chance=cover[i].Chance+0.3
+			end
+		else
+			cover[i]=false
+		end
+	end
+
+	--roll once per player with player and pick the one with max hp
+	coverPlayerIndex=-1
+	lastMaxHp=0
+	covered=false
+	for i=0,#cover-1 do
+		if cover[i] then
+			local hp=Party[i].HP/Party[i]:GetFullHP()
+			if cover[i].Chance>math.random() and hp>lastMaxHp then
+				lastMaxHp=hp
+				coverPlayerIndex=i
+				covered=true
+			end
+		end
+	end
+
+	local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")
+	if skill=="Fixator" then
+		covered=false
+		local lowestHPId=0
+		local lowestHP=math.huge
+		for i=0,Party.High do
+			local totHP=Party[i]:GetFullHP()
+			if Party[i]:IsConscious() and totHP<lowestHP then
+				lowestHP=totHP
+				lowestHPId=i
+			end
+		end
+		target=lowestHPId
+	end
+
+	if covered then
+		mem.call(0x4A6FCE, 1, mem.call(0x42D747, 1, mem.u4[0x75CE00]), const.Spells.Shield, target)
+		Party[coverPlayerIndex]:ShowFaceAnimation(14)
+		if solo then
+			--the target does not move; the pipeline cuts the hit instead
+			MawCore.DamageState.setSoloCover()
+			Game.ShowStatusText(Party[coverPlayerIndex].Name .. " covers the blow")
+		else
+			Game.ShowStatusText(Party[coverPlayerIndex].Name .. " cover " .. Party[target].Name)
+			target=coverPlayerIndex
+		end
+		local pl=Party[target]
+		local id=pl:GetIndex()
+		if vars.legendaries and vars.legendaries[id] and table.find(vars.legendaries[id], 23) then
+			evt[target].Add("HP", Party[target]:GetFullHP()*0.03)
+		end
+
+		--retaliation code
+		--Skillz.get returns ONE packed value: unsplit, the roll always passed
+		--and the "if m>=4" below compared nil (same fix as zzMAW-Skills)
+		local s,m=SplitSkill(Skillz.get(pl,53))
+		if s/100>=math.random() then
+			vars.retaliation=vars.retaliation or {}
+			vars.retaliation[id]=vars.retaliation[id] or {}
+			vars.retaliation[id]["Stacks"]=vars.retaliation[id]["Stacks"] or 0
+			vars.retaliation[id]["Time"]=Game.Time
+			vars.retaliation[id]["Stacks"]=vars.retaliation[id]["Stacks"]+1
+			local cap=1
+			if m>=4 then
+				cap=3
+			end
+			vars.retaliation[id]["Stacks"]=math.min(vars.retaliation[id]["Stacks"],cap)
+		end						
+	end		
+
+
+	--apply damage
+	Party[target]:DoDamage(10000,mon.Attack1.Type)
+	MawCore.DamageState.clearCustomAttacker()
 end
 --[[
 function events.GameInitialized2()
@@ -4229,16 +4027,8 @@ function events.MonsterKilled(mon)
 	if currentWorld==2 then
 		mon.Experience = math.min(mon.Experience*2, mon.Experience+1000)
 	end
-	--true nightmare nerf
-	if Game.BolsterAmount==300 then
-		mon.Experience=mon.Experience*0.67
-	end
-	if vars.Mode==2 then
-		mon.Experience=mon.Experience*0.5
-	end
-	if vars.insanityMode then
-		mon.Experience=mon.Experience*0.8
-	end
+	--same density pricing as the bulk recalc above
+	mon.Experience=mon.Experience*GetMonsterExpMult()
 	
 	local data=WhoHitMonster()
 	if data and data.Monster and data.Monster.Ally==9999 and Multiplayer and not Multiplayer.in_game then
@@ -4284,6 +4074,19 @@ function events.MonsterKilled(mon)
 	
 end
 
+function mawForgetBoss(index)
+	if mapvars.bossData and mapvars.bossData[index] then
+		mapvars.bossData[index]=nil
+	end
+	if mapvars.bossSet then
+		for i=#mapvars.bossSet,1,-1 do
+			if mapvars.bossSet[i][1]==index then
+				table.remove(mapvars.bossSet, i)
+			end
+		end
+	end
+end
+
 function events.PickCorpse(t)
 	local mon=t.Monster
 	if vars.insanityMode and mon.NameId>300 then
@@ -4292,8 +4095,9 @@ function events.PickCorpse(t)
 		mon.TreasureDiceCount=0
 	end
 	local index=t.MonsterIndex
-	if mapvars.bossData and mapvars.bossData[index] then
-		mapvars.bossData[index]=nil
+	mawForgetBoss(index)
+	if type(BossSync_BroadcastBossRemoved)=="function" then
+		BossSync_BroadcastBossRemoved(index)
 	end
 	RunNextTick(function()
 		if mon.AIState==11 then
@@ -4349,110 +4153,135 @@ function getMonsterDamage(lvl,calcType) --NO LONGER USED
 end
 ]]
 
-function events.MonstersProcessed()
-	if not Game.TurnBased and Map.IsIndoor() then
-		for i=0,Map.Monsters.High do
-			local mon=Map.Monsters[i]
-			if mon.AIState==0 and mon.ShowOnMap and getDistance(mon.X,mon.Y,mon.Z)<350 then
-				local midZ=(mon.Z+Party.Z)/2+50
-				local distanceX=mon.X-Party.X
-				local distanceY=mon.Y-Party.Y
-				local requiresHandling=false
-				local j=0
-				while not requiresHandling and j<9 do
-					j=j+1
-					local x=Party.X+distanceX*(0.1*j)
-					local y=Party.Y+distanceY*(0.1*j)
-					if Map.RoomFromPoint(x, y, midZ) == 0 then
-						requiresHandling=true
-					end
-				end
-				
-				if requiresHandling then
-					-- Get relative position of monster to party
-					local dx = mon.X - Party.X
-					local dy = mon.Y - Party.Y
-					
-					-- Calculate angle in radians
-					local angle = math.atan2(dy, dx) -- atan2 gives angle in range -pi to pi
-					
-					-- Calculate theoretical positions
-					local clockwise_angle = angle - math.pi / 2 -- Rotate clockwise
-					local counterclockwise_angle = angle + math.pi / 2 -- Rotate counterclockwise
-					
-					-- Define movement distance
-					local move_distance = 300
-					
-					-- Theoretical coordinates after moving
-					local directionFound=false
-					while not directionFound and move_distance>50 do
-						local clockwise_x = mon.X + math.cos(clockwise_angle) * move_distance
-						local clockwise_y = mon.Y + math.sin(clockwise_angle) * move_distance
-						local counterclockwise_x = mon.X + math.cos(counterclockwise_angle) * move_distance
-						local counterclockwise_y = mon.Y + math.sin(counterclockwise_angle) * move_distance
-						if Map.RoomFromPoint(clockwise_x, clockwise_y, midZ) == 0 then
-							if Map.RoomFromPoint(counterclockwise_x, counterclockwise_y, midZ) ~= 0 then
-								clockwise=false
-								directionFound=true
-							end
-						else
-							clockwise=true
-							directionFound=true
-						end
-						move_distance = move_distance-50
-					end
-					if not directionFound then
-						return
-					end
-					-- Set the final angle based on the chosen direction
-					if clockwise then
-						angle = clockwise_angle
-					else
-						angle = counterclockwise_angle
-					end
-					
-					-- Normalize angle to range [0, 2*pi]
-					if angle < 0 then
-						angle = angle + 2 * math.pi
-					end
-					
-					-- Convert angle to the game's direction format (0 to 2048)
-					local direction=math.floor(angle / (2 * math.pi) * 2048)
-					mon.Direction = direction
-					
-					-- Set velocity
-					local speed = mon.Velocity -- This is the monster's movement speed
-					local speedX=math.cos(angle) * speed
-					local speedY=math.sin(angle) * speed
-					mon.VelocityX = speedX
-					mon.VelocityY = speedY
-					
-					mon.AIState = 6
-					
-					local calls=10
-					function events.Tick()
-						calls=calls-1
-						if not calls or calls<0 then
-							events.Remove("Tick",1)	
-						end
-						if mon:GetIndex()>Map.Monsters.High then
-							return
-						end
-						local midX=(mon.X+Party.X)/2
-						local midY=(mon.Y+Party.Y)/2
-						local midZ=(mon.Z+Party.Z)/2
-						if mon.AIState==6 and Map.RoomFromPoint(midX, midY, midZ) == 0 then
-							mon.VelocityX = speedX
-							mon.VelocityY = speedY
-						end
-					end
-				end
+local function nudgeMonsterAroundCorner(mon)
+	local midZ=(mon.Z+Party.Z)/2+50
+	local distanceX=mon.X-Party.X
+	local distanceY=mon.Y-Party.Y
+	local requiresHandling=false
+	local j=0
+	while not requiresHandling and j<9 do
+		j=j+1
+		local x=Party.X+distanceX*(0.1*j)
+		local y=Party.Y+distanceY*(0.1*j)
+		if Map.RoomFromPoint(x, y, midZ) == 0 then
+			requiresHandling=true
+		end
+	end
+	if not requiresHandling then
+		return
+	end
+
+	-- Get relative position of monster to party
+	local dx = mon.X - Party.X
+	local dy = mon.Y - Party.Y
+
+	-- Calculate angle in radians
+	local angle = math.atan2(dy, dx) -- atan2 gives angle in range -pi to pi
+
+	-- Calculate theoretical positions
+	local clockwise_angle = angle - math.pi / 2 -- Rotate clockwise
+	local counterclockwise_angle = angle + math.pi / 2 -- Rotate counterclockwise
+
+	-- Define movement distance
+	local move_distance = 300
+
+	-- Theoretical coordinates after moving
+	local clockwise=false
+	local directionFound=false
+	while not directionFound and move_distance>50 do
+		local clockwise_x = mon.X + math.cos(clockwise_angle) * move_distance
+		local clockwise_y = mon.Y + math.sin(clockwise_angle) * move_distance
+		local counterclockwise_x = mon.X + math.cos(counterclockwise_angle) * move_distance
+		local counterclockwise_y = mon.Y + math.sin(counterclockwise_angle) * move_distance
+		if Map.RoomFromPoint(clockwise_x, clockwise_y, midZ) == 0 then
+			if Map.RoomFromPoint(counterclockwise_x, counterclockwise_y, midZ) ~= 0 then
+				clockwise=false
+				directionFound=true
 			end
+		else
+			clockwise=true
+			directionFound=true
+		end
+		move_distance = move_distance-50
+	end
+	if not directionFound then
+		return
+	end
+	-- Set the final angle based on the chosen direction
+	if clockwise then
+		angle = clockwise_angle
+	else
+		angle = counterclockwise_angle
+	end
+
+	-- Normalize angle to range [0, 2*pi]
+	if angle < 0 then
+		angle = angle + 2 * math.pi
+	end
+
+	-- Convert angle to the game's direction format (0 to 2048)
+	local direction=math.floor(angle / (2 * math.pi) * 2048)
+	mon.Direction = direction
+
+	-- Set velocity
+	local speed = mon.Velocity -- This is the monster's movement speed
+	local speedX=math.cos(angle) * speed
+	local speedY=math.sin(angle) * speed
+	mon.VelocityX = speedX
+	mon.VelocityY = speedY
+
+	--writing AIState on its own does not stick: the engine picks a new action as
+	--soon as CurrentActionStep reaches CurrentActionLength, and a standing
+	--monster is usually already past it, so the pursue lasted one frame. This
+	--sets state, animation and the animation's own length together -- the same
+	--thing the DLL pathfinder does through its SetMonAction.
+	Multiplayer.SyncMonsters.set_mon_action(mon, const.AIState.Pursue)
+
+	local calls=10
+	function events.Tick()
+		calls=calls-1
+		if calls<=0 then
+			events.Remove("Tick",1)
+		end
+		--GetIndex returns nil, not a number, once the monster is out of the
+		--array -- comparing that against High is what used to throw here
+		if not mon:GetIndex() then
+			events.Remove("Tick",1)
+			return
+		end
+		local midX=(mon.X+Party.X)/2
+		local midY=(mon.Y+Party.Y)/2
+		local midZ=(mon.Z+Party.Z)/2
+		if mon.AIState==const.AIState.Pursue and Map.RoomFromPoint(midX, midY, midZ) == 0 then
+			mon.VelocityX = speedX
+			mon.VelocityY = speedY
+		end
+	end
+end
+
+function events.MonstersProcessed()
+	if Game.TurnBased or not Map.IsIndoor() then
+		return
+	end
+	for i=0,Map.Monsters.High do
+		local mon=Map.Monsters[i]
+		--ShowOnMap only means "the party has seen it once", so neutrals and
+		--allies were being shoved too; this is the pair the rest of Maw uses to
+		--mean "actively an enemy"
+		if mon.AIState==0 and mon.ShowAsHostile and mon.Hostile
+			and getDistance(mon.X,mon.Y,mon.Z)<350 and MawCore.Sync.drivesMonster(i) then
+			nudgeMonsterAroundCorner(mon)
 		end
 	end
 end
 
 --translate mapLevels table
+--mapLevels and madnessMapLevels are keyed by English map names. A localization
+--renames Game.MapStats in GameInitialized2 after this handler (LocalizeTables.lua
+--registers itself last), so the English names are kept here and a lookup by a
+--localized name falls back to its English key. A metatable rather than copies made
+--in BeforeLoadMap: the BeforeLoadMap handler above that recalculates the monster
+--table runs first, so on the first map load it found no entry and crashed.
 function events.GameInitialized2()
 	engLocalizedMap={}
 	for i=0, Game.MapStats.High do
@@ -4460,28 +4289,34 @@ function events.GameInitialized2()
 	end	
 end
 
-function events.BeforeLoadMap()
-	for i=1, #engLocalizedMap do
-		if mapLevels[engLocalizedMap[i]] then
-			local tab=mapLevels[engLocalizedMap[i]]
-			mapLevels[Game.MapStats[i].Name]={}
-			mapLevels[Game.MapStats[i].Name]["Low"]=tab.Low
-			mapLevels[Game.MapStats[i].Name]["Mid"]=tab.Mid
-			mapLevels[Game.MapStats[i].Name]["High"]=tab.High
-		end
-	end
-end
-
-function events.CalcDamageToMonster(t)
-	if Map.IsIndoor() and vars.Mode==2 then
-		for i=0, Map.Monsters.High do
-			local mon = Map.Monsters[i]
-			if getDistances(t.Monster, mon)<256 then
-				mon.ShowOnMap = true
+local localizedToEnglish
+local function englishMapName(name)
+	if not localizedToEnglish then
+		local map, count={}, 0
+		for i=0, Game.MapStats.High do
+			local eng=engLocalizedMap[i]
+			if eng and Game.MapStats[i].Name~=eng then
+				map[Game.MapStats[i].Name]=eng
+				count=count+1
 			end
 		end
+		--nothing renamed (an English game, or asked before the localization ran):
+		--do not keep an empty table, look again next time
+		if count==0 then return nil end
+		localizedToEnglish=map
 	end
+	return localizedToEnglish[name]
 end
+
+local function aliasLocalizedNames(t)
+	setmetatable(t, {__index=function(tab, name)
+		if type(name)~="string" or not engLocalizedMap then return nil end
+		local eng=englishMapName(name)
+		return eng and rawget(tab, eng)
+	end})
+end
+aliasLocalizedNames(mapLevels)
+aliasLocalizedNames(madnessMapLevels)
 
 function getDistances(unit1,unit2)
 	distance=((unit1.X-unit2.X)^2+(unit1.Y-unit2.Y)^2+(unit1.Z-unit2.Z)^2)^0.5
@@ -4545,17 +4380,6 @@ function events.PickCorpse(t)
 end
 
 
-function events.CalcDamageToMonster(t)
-	local data=WhoHitMonster()
-	if data and data.Monster then
-		local mon=data.Monster
-		local damage=getMonsterDamage(mon)/3 --1/3 of damage
-		local res=t.Monster.Resistances[4]%1000
-		local damage=round(damage/2^(res/100))
-		t.Result=damage
-	end
-end
-
 local teleportKey=teleportDeadMonstersAndCraftingKey or 75 --K as default
 function events.KeyDown(t)
 	if t.Key==teleportKey then
@@ -4589,4 +4413,14 @@ function events.KeyDown(t)
 			Game.ShowStatusText("Teleported " .. count .. " monsters and " .. objCount .. " crafting items")
 		end
 	end
+end
+
+--Tick handlers above run as MawCore scheduler tasks (ms; 0=frame, -1=poke only)
+function events.GameInitialized2()
+	local every=MawCore.Scheduler.every
+	every("monsters/death-seed-timeout", 0, mawTick_DeathSeedTimeout)
+	every("monsters/death-counter-ui", 250, mawTick_DeathCounterUI)
+	every("monsters/swift-bosses", 0, mawTick_SwiftBosses)
+	every("monsters/turnbased-move-limit", 0, mawTick_TurnbasedMoveLimit)
+	every("monsters/restore-projectiles", 0, mawTick_RestoreProjectiles)
 end

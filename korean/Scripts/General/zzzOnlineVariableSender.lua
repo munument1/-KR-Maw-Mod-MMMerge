@@ -48,7 +48,7 @@ local function getDistance(x, y, z)
 end
 _G.getDistance = _G.getDistance or getDistance
 
-local SEC = (const and const.Second) or 1
+local SEC = const.Minute/2
 local function NOW() return (Game and Game.Time) or 0 end
 local _net_quiet_until = 0
 local function NetQuiet(secs) _net_quiet_until = math.max(_net_quiet_until, NOW() + (secs or 2.5)*SEC) end
@@ -360,7 +360,7 @@ function OnlineLowestHealthPercentage()
   local lowestPercentage, LPpartyId, LPplayerId = 3, -1, -1
   if Multiplayer and Multiplayer.in_game then
     for PartyId, party in pairs(vars.online.partyHealthMana.Parties) do
-      if party.Map == Map.Name and getDistance(party.X, party.Y, party.Z) < 4000 then
+      if PartyId ~= Multiplayer.my_id and party.Map == Map.Name and getDistance(party.X, party.Y, party.Z) < 4000 then
         for i=0, (party.High or -1) do
           local p = party[i]
           if p and p.Dead==0 and p.Eradicated==0 and (p.FHP or 0) > 0 then

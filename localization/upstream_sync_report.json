@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-08",
+  "old_korean_commit": "9e4038c5",
+  "upstream_base": "342f34edf73dbd72808422cc56f4602959a94030",
+  "upstream_commit": "26cf80b43ca36a6d9021f5bb349a6faf2d6c55f0",
+  "upstream_commits": 279,
+  "new_or_modified_catalog_translations": 289,
+  "reused_active_catalog_translations": 923,
+  "runtime_only_display_fixes": 8,
+  "unresolved_display_strings": 0,
+  "retired_translation_memory_entries": 102,
+  "validation": [
+    "full localization generation pipeline PASS",
+    "145 effective Lua files: high-confidence English residuals 0",
+    "64 overlay Lua files: LuaJIT 5.1+goto syntax PASS",
+    "catalog placeholders PASS",
+    "MapStats legacy save key migration preserved",
+    "multiplayer localized input header keys decoupled from labels"
+  ],
+  "limitations": [
+    "In-game Windows/MMExtension multiplayer session not manually exercised"
+  ]
+}

@@ -1,12 +1,13 @@
 source	translation	match_status	inheritance_status	category	occurrences	patchable_occurrences	variant_count	notes
-Attack	근접	exact	safe_candidate	class	5	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Damage	피해량	exact	safe_candidate	class	5	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Attack	근접	exact	safe_candidate	class	6	3	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Damage	피해량	exact	safe_candidate	class	6	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Shoot	원거리	exact	safe_candidate	class	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Accuracy	정확도	exact	safe_candidate	item	4	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Air Resistance	공기 저항	exact	safe_candidate	item	3	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Alchemy skill	연금술 기술	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Armsmaster skill	무기 전문가 기술	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Body Resistance	육체 저항	exact	safe_candidate	item	3	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Cold	냉기	exact	safe_candidate	item	3	3	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Disarm skill	함정 해제 기술	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dodge skill	회피 기술	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Earth Resistance	대지 저항	exact	safe_candidate	item	3	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -24,7 +25,7 @@ Spell Points	주문력	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match wi
 Unarmed skill	맨손 전투 기술	exact	safe_candidate	item	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Water Resistance	물 저항	exact	safe_candidate	item	3	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Antagarich	안타개릭	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Enroth	엔로스	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Enroth	엔로스	exact	safe_candidate	map	3	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Goblin King	고블린 왕	exact	safe_candidate	map	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Jadame	제이덤	exact	safe_candidate	map	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Empty Barrel	빈 통	exact	safe_candidate	misc	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -37,25 +38,24 @@ Eradication	소멸	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match wit
 Fear	공포	exact	safe_candidate	monster	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Insane	광기	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Melee Only	근접 공격 전용	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Poison	중독	exact	safe_candidate	monster	3	3	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Priest of Baa	바의 사제	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Slow	감속	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Stone	돌	exact	safe_candidate	monster	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Stone	돌	exact	safe_candidate	monster	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Air Magic	공기 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Body Magic	육체 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dark Magic	어둠 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Earth Magic	대지 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Fire Magic	화염 마법	exact	safe_candidate	skill	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Misc	기타	exact	safe_candidate	skill	2	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Misc	기타	exact	safe_candidate	skill	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Water Magic	물 마법	exact	safe_candidate	skill	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Book	책	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Grandmaster	그랜드마스터	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 N/A	N/A	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Normal	노멀	exact	safe_candidate	spell	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
+Normal	노멀	exact	safe_candidate	spell	6	4	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Quick Spell	퀵스펠	exact	safe_candidate	spell	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Charm	매혹	exact	safe_candidate	table	5	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Dodging	회피	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Enslave	노예화	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
-Inferno	지옥불	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Meditation	명상	exact	safe_candidate	table	7	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Paralyze	마비	exact	safe_candidate	table	3	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Drops a Fire Spike on the ground that waits for a creature to get near it before exploding.  Fire Spikes last until you leave the map or they are triggered.	지면에 화염 가시를 설치합니다. 근처에 적이 다가오면 폭발하며, 맵을 떠나거나 폭발할 때까지 유지됩니다.	exact	safe_candidate	tooltip	1	1	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
@@ -63,9 +63,9 @@ Slaps a monster with magical force, forcing it to recover from the stun spell be
 This ability is an upgraded version of the normal Dragon breath weapon attack.  It acts much like a fireball, striking its target and exploding out to hit everything near it, except the explosion does much more damage than most fireballs.	이 능력은 일반적인 용의 숨결 공격의 강화 버전입니다. 화염구와 비슷하게 작동하여 대상을 타격하고 폭발하여 근처의 모든 것을 공격하지만, 폭발 피해량은 대부분의 화염구보다 훨씬 강력합니다.	exact	safe_candidate	tooltip	2	2	1	Exact MMMerge PO match with at least one patchable display occurrence; still review MAW wording/context before approval.
 Air	공기 저항 || 대기 마법	ambiguous	ambiguous	item	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Armor Class	방어도 || 방어력	ambiguous	ambiguous	item	2	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Body	신체 마법 || 육체 저항	ambiguous	ambiguous	item	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Body	신체 마법 || 육체 저항	ambiguous	ambiguous	item	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Endurance	인내력 || 체력	ambiguous	ambiguous	item	4	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Fire	불 || 화염 마법 || 화염 저항	ambiguous	ambiguous	item	2	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Fire	불 || 화염 마법 || 화염 저항	ambiguous	ambiguous	item	4	3	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Intellect	지능 || 지력	ambiguous	ambiguous	item	4	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Luck	운 || 행운	ambiguous	ambiguous	item	2	2	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Mace	메이스 || 철퇴	ambiguous	ambiguous	item	1	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
@@ -79,10 +79,10 @@ Berserk	광분 || 광폭화	ambiguous	ambiguous	monster	2	1	2	Same msgid has mul
 Blackshire	블랙샤이어 || 블랙셔	ambiguous	ambiguous	monster	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 New Sorpigal	뉴 소르피갈 || 뉴 소피갈	ambiguous	ambiguous	monster	4	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Unconscious	기절 || 의식불명	ambiguous	ambiguous	monster	1	1	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Skills	기술 || 스킬	ambiguous	ambiguous	skill	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Skills	기술 || 스킬	ambiguous	ambiguous	skill	2	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 You don't meet the requirements, and cannot be taught until you do.	요건을 충족하지 못했습니다. 충족하기 전에는 배울 수 없습니다. || 요구 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다. || 조건을 충족하지 못했으므로, 조건을 갖출 때까지 배울 수 없습니다.	ambiguous	ambiguous	skill	1	1	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	ambiguous	spell	7	7	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
-Master	달인 || 마스터	ambiguous	ambiguous	spell	8	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Effects vary per spell	고위 주문 사용 및 효과 대폭 강화 || 궁극 주문 사용 및 효과 극대화 || 상위 주문 사용 및 효과 강화 || 주문 효과 및 지속시간 향상	ambiguous	ambiguous	spell	1	1	4	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
+Master	달인 || 마스터	ambiguous	ambiguous	spell	9	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Amber	앰버 || 호박	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Anointed Herb Potion	기름 부은 약초 물약 || 축성된 약초 물약	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Apollo	아폴로 || 아폴론	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
@@ -122,11 +122,12 @@ Warlock	워록 || 흑마법사	ambiguous	ambiguous	table	4	0	2	Same msgid has mu
 Water	물 || 물 마법 || 물 저항	ambiguous	ambiguous	table	8	0	3	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 Wheel of Frelandeau	프렐랑도 치즈 || 프렐랑도 치즈 한 덩이	ambiguous	ambiguous	table	1	0	2	Same msgid has multiple Korean translations in MMMerge PO; manual context review required.
 AC	방어	exact	no_patchable_occurrence	class	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Map	지도	exact	no_patchable_occurrence	class	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Resistances	저항	exact	no_patchable_occurrence	class	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Bonus	보너스	exact	no_patchable_occurrence	item	8	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Bow	활	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Charges	충전 횟수	exact	no_patchable_occurrence	item	7	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Condition	상태	exact	no_patchable_occurrence	item	7	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Condition	상태	exact	no_patchable_occurrence	item	8	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Hardened	강화됨	exact	no_patchable_occurrence	item	7	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Location	위치	exact	no_patchable_occurrence	item	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Spell	주문	exact	no_patchable_occurrence	item	8	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -241,7 +242,7 @@ Old Loeb's Cave	늙은 로브의 동굴	exact	no_patchable_occurrence	monster	2	
 Oracle of Enroth	엔로스의 오라클	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Paradise Valley	파라다이스 밸리	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Passage Under Regna	레그나 지하 통로	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-pending	pending	exact	no_patchable_occurrence	monster	12	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+pending	pending	exact	no_patchable_occurrence	monster	13	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Pirate Outpost	해적 전초기지	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Pirate Stronghold	해적 거점	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Plane Between Planes	차원 사이의 차원	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -315,7 +316,7 @@ The Tularean Forest	툴라리안 숲	exact	no_patchable_occurrence	monster	2	0	1
 The Walls of Mist	안개의 장벽	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 The Wine Cellar	와인 저장고	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Thunderfist Mountain	썬더피스트 산	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Time	시간	exact	no_patchable_occurrence	monster	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Time	시간	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Tomb of Ethric the Mad	광인 에스릭의 무덤	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Tomb of Lord Brinne	브린 경의 무덤	exact	no_patchable_occurrence	monster	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Tomb of VARN	VARN의 무덤	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -337,10 +338,10 @@ Yaardrake's Cave	야드드레이크의 동굴	exact	no_patchable_occurrence	mons
 Zokarr's Tomb	조카르의 무덤	exact	no_patchable_occurrence	monster	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Food	식량	exact	no_patchable_occurrence	skill	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 HP	생명력	exact	no_patchable_occurrence	skill	10	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-SP	주문력	exact	no_patchable_occurrence	skill	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+SP	주문력	exact	no_patchable_occurrence	skill	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Swift	[신속]	exact	no_patchable_occurrence	skill	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Expert	전문가	exact	no_patchable_occurrence	spell	4	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Name	이름	exact	no_patchable_occurrence	spell	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Expert	전문가	exact	no_patchable_occurrence	spell	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Name	이름	exact	no_patchable_occurrence	spell	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 School	학교	exact	no_patchable_occurrence	spell	12	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Temple	신전	exact	no_patchable_occurrence	spell	5	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 This spell is as good as it will ever get!	이 주문은 이미 최고의 성능을 발휘하고 있습니다!	exact	no_patchable_occurrence	spell	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -395,7 +396,7 @@ Chain	사슬 갑옷	exact	no_patchable_occurrence	table	6	0	1	Exact PO match exi
 Chain Mail	사슬 갑옷	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Chainmail	사슬 갑옷	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Citrine	황수정	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Class	직업	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Class	직업	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Cloak	망토	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Cloak of Baa	바의 망토	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Cloak of the Sheep	양의 망토	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -537,6 +538,7 @@ Idol of the Snake	뱀의 우상	exact	no_patchable_occurrence	table	1	0	1	Exact 
 Imperial Leather	제국 가죽 갑옷	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Implosion	내파	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Incinerate	소각	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Inferno	지옥불	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Invisibility	투명화	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Iolite	아이올라이트	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Iron-laced ore	철 함유 광석	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -709,7 +711,7 @@ Steel Chainmail	강철 사슬 갑옷	exact	no_patchable_occurrence	table	1	0	1	E
 Steel Helm	강철 투구	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Steel Plated Boots	강철판 장화	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Sterling Boots	순은 장화	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Stone Skin	돌가죽	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Stone Skin	돌가죽	exact	no_patchable_occurrence	table	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Stone to Flesh	석화 해제	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Strong Belt	튼튼한 허리띠	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Studded Leather	징 박힌 가죽 갑옷	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -760,7 +762,7 @@ Warlord Belt	군벌의 허리띠	exact	no_patchable_occurrence	table	1	0	1	Exact
 Warrior Mage	전투 마법사	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Wasp Stingers	말벌 침	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Wasp Wing	말벌 날개	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
-Water Breathing	수중 호흡	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Water Breathing	수중 호흡	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Water Walk	수면 보행	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Wealthy Hat	부자의 모자	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Wetsuit	잠수복	exact	no_patchable_occurrence	table	3	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
@@ -780,3 +782,4 @@ Wyvern Leather Belt	와이번 가죽 허리띠	exact	no_patchable_occurrence	tab
 Yellow Potion	노란색 물약	exact	no_patchable_occurrence	table	2	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Yoruba	요루바	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
 Zircon	지르콘	exact	no_patchable_occurrence	table	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.
+Grand	그랜드	exact	no_patchable_occurrence	tooltip	1	0	1	Exact PO match exists, but current MAW occurrences are not approved for patching.

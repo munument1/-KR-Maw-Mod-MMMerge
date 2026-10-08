@@ -30,7 +30,7 @@ OCCURRENCE_FIELDS = [
 # avoiding prose percentages such as "1% to drop" or "% of damage". MAW's
 # localization strings do not use C length modifiers, whose permissive parsing
 # made ordinary English text look like a placeholder (for example "% to").
-PRINTF_RE = re.compile(r"%(?:\d+\$)?[-+ #0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[diuoxXfFeEgGaAcspq%](?![A-Za-z])")
+PRINTF_RE = re.compile(r"%(?:\d+\$)?[-+ #0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[diuoxXfFeEgGaAcspq%](?:(?![A-Za-z])|(?=s\b))")
 WORD_RE = re.compile(r"[A-Za-z]")
 PATH_RE = re.compile(r"^[A-Za-z0-9_./\\ -]+\.(?:lua|txt|lod|odm|blv|bmp|pcx|png|jpg|jpeg|wav|mp3|dll|exe|ini|json|md|html)$", re.I)
 INTERNAL_RE = re.compile(r"^(?:[A-Za-z0-9]+_)+[A-Za-z0-9_]+$")
@@ -359,7 +359,7 @@ def main() -> int:
         catalog_rows.append({field: old.get(field, "") for field in CATALOG_FIELDS})
 
     for source in manual:
-        if source not in active_sources:
+        if source not in active_sources and source not in existing:
             errors.append({"type": "manual_source_not_found", "source": source})
 
     catalog_rows.sort(key=lambda r: (r.get("status") == "obsolete", r.get("category", ""), r.get("source", "").casefold()))
@@ -371,8 +371,8 @@ def main() -> int:
     active_rows = [r for r in catalog_rows if r["status"] != "obsolete"]
     patchable_rows = [r for r in occurrence_rows if r["patchable"] == "yes"]
     report = {
-        "base": "MAW MMMerge 4.5",
-        "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
+        "base": "MAW MMMerge 5.0",
+        "base_commit": "26cf80b43ca36a6d9021f5bb349a6faf2d6c55f0",
         "unique_active_candidates": len(active_rows),
         "occurrences": len(occurrence_rows),
         "patchable_occurrences": len(patchable_rows),

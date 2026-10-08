@@ -1,0 +1,290 @@
+source	translation	status	notes
+Only weapons and armor can be refined	무기와 방어구만 정련할 수 있습니다	translated	upstream 26cf80b review
+Item quality reached its limit	아이템 품질이 한계에 도달했습니다	translated	upstream 26cf80b review
+Item power reached the limit for your level (	현재 레벨에서 가능한 아이템 위력의 한계에 도달했습니다 (	translated	upstream 26cf80b review
+This skill has reached its limit (	이 기술이 한계에 도달했습니다 (	translated	upstream 26cf80b review
+No other completed dungeon to move this map to	이 지도를 옮길 수 있는 다른 완료된 던전이 없습니다	translated	upstream 26cf80b review
+\nQuality bonus: +	\n품질 보너스: +	translated	upstream 26cf80b review
+ covers the blow	의 엄호가 공격을 막아냈습니다	translated	upstream 26cf80b review
+Protection from Magic keeps %s conscious	마법 보호가 %s의 의식을 유지해 줍니다	translated	upstream 26cf80b review
+Spell Failed	주문 실패	translated	upstream 26cf80b review
+Slows the target on hit	명중 시 대상의 속도를 감소시킵니다	translated	upstream 26cf80b review
+Casts Fireball on hit	명중 시 화염구를 시전합니다	translated	upstream 26cf80b review
+Casts Lightning Bolt on hit	명중 시 번개 화살을 시전합니다	translated	upstream 26cf80b review
+Casts Acid Burst on hit	명중 시 산성 폭발을 시전합니다	translated	upstream 26cf80b review
+Minotaurs only	미노타우로스 전용	translated	upstream 26cf80b review
+Vampires only	뱀파이어 전용	translated	upstream 26cf80b review
+Dark Elves only	다크 엘프 전용	translated	upstream 26cf80b review
+Knights only	기사 전용	translated	upstream 26cf80b review
+Clerics only	성직자 전용	translated	upstream 26cf80b review
+Liches only	리치 전용	translated	upstream 26cf80b review
+Necromancers and Liches only	강령술사 및 리치 전용	translated	upstream 26cf80b review
+Elves only	엘프 전용	translated	upstream 26cf80b review
+Goblins only	고블린 전용	translated	upstream 26cf80b review
+Humans only	인간 전용	translated	upstream 26cf80b review
+Dwarves only	드워프 전용	translated	upstream 26cf80b review
+Men only	남성 전용	translated	upstream 26cf80b review
+Women only	여성 전용	translated	upstream 26cf80b review
+'s bag is no longer a crafting bag	의 가방이 제작 가방에서 해제됐습니다	translated	upstream 26cf80b review
+'s bag is now a crafting bag	의 가방이 제작 가방으로 지정됐습니다	translated	upstream 26cf80b review
+You found an item (	아이템을 발견했습니다 (	translated	upstream 26cf80b review
+This corpse has no more gold.	이 시체에는 더 이상 금화가 없습니다.	translated	upstream 26cf80b review
+All players on the map must be nearby to start rest.	휴식을 시작하려면 지도에 있는 모든 플레이어가 가까이 모여야 합니다.	translated	upstream 26cf80b review
+%s gave you %s potion.	%s 플레이어가 %s 물약을 건넸습니다.	translated	upstream 26cf80b review
+Player must be in 'touch' range to have item applied.	아이템을 사용하려면 플레이어가 접촉 거리 안에 있어야 합니다.	translated	upstream 26cf80b review
+This item cannot be applied to player remotely.	이 아이템은 다른 플레이어에게 원격으로 사용할 수 없습니다.	translated	upstream 26cf80b review
+Hide remote players UI	다른 플레이어 UI 숨기기	translated	upstream 26cf80b review
+Show remote players UI	다른 플레이어 UI 표시	translated	upstream 26cf80b review
+Apply to player:	사용할 플레이어:	translated	upstream 26cf80b review
+far away	멀리 있음	translated	upstream 26cf80b review
+touch	접촉 거리	translated	upstream 26cf80b review
+in combat	전투 중	translated	upstream 26cf80b review
+Target is too far away.	대상이 너무 멀리 있습니다.	translated	upstream 26cf80b review
+Target is out of sight.	대상이 시야 밖에 있습니다.	translated	upstream 26cf80b review
+Select remote player 	다른 플레이어 선택 	translated	upstream 26cf80b review
+Toggle remote players UI:	다른 플레이어 UI 전환:	translated	upstream 26cf80b review
+Placeholder name with class and condition	플레이어 이름·직업·상태	translated	upstream 26cf80b review
+Range: far away	거리: 멀리 있음	translated	upstream 26cf80b review
+HP: %s / %s pt.	생명력: %s / %s	translated	upstream 26cf80b review
+SP: %s / %s pt.	주문력: %s / %s	translated	upstream 26cf80b review
+taking turn...	차례 진행 중...	translated	upstream 26cf80b review
+SP: 	주문력: 	translated	upstream 26cf80b review
+HP: 	생명력: 	translated	upstream 26cf80b review
+Range: 	거리: 	translated	upstream 26cf80b review
+Display players despite distance:	거리와 관계없이 플레이어 표시:	translated	upstream 26cf80b review
+Show remote SP:	다른 플레이어의 주문력 표시:	translated	upstream 26cf80b review
+Clients:	접속자:	translated	upstream 26cf80b review
+add line	행 추가	translated	upstream 26cf80b review
+ Direct connect	 직접 연결	translated	upstream 26cf80b review
+Server list	서버 목록	translated	upstream 26cf80b review
+Enter server name	서버 이름 입력	translated	upstream 26cf80b review
+Enter server description	서버 설명 입력	translated	upstream 26cf80b review
+Enter server info:	서버 정보 입력:	translated	upstream 26cf80b review
+Open lobby	로비 열기	translated	upstream 26cf80b review
+Players: %d / %d	플레이어: %d / %d	translated	upstream 26cf80b review
+Version: 	버전: 	translated	upstream 26cf80b review
+Attempt %d. Waiting for response...	%d번째 시도. 응답을 기다리는 중...	translated	upstream 26cf80b review
+Timed out	시간 초과	translated	upstream 26cf80b review
+Connection to 	연결할 서버: 	translated	upstream 26cf80b review
+Server connection	서버 연결	translated	upstream 26cf80b review
+Join request rejected: 	참가 요청 거부: 	translated	upstream 26cf80b review
+Hide full	가득 찬 서버 숨기기	translated	upstream 26cf80b review
+Hide passworded	비밀번호 서버 숨기기	translated	upstream 26cf80b review
+Hide other versions	다른 버전 숨기기	translated	upstream 26cf80b review
+Show full	가득 찬 서버 표시	translated	upstream 26cf80b review
+Show passworded	비밀번호 서버 표시	translated	upstream 26cf80b review
+Show other versions	다른 버전 표시	translated	upstream 26cf80b review
+Druid Circlet	드루이드 머리띠	translated	upstream 26cf80b review
+Dimensional Maps	차원 지도	translated	upstream 26cf80b review
+Permanently grants Skill Points.	기술 포인트를 영구적으로 부여합니다.	translated	upstream 26cf80b review
+Permanently grants Skill Points. Requires 	기술 포인트를 영구적으로 부여합니다. 단계당 필요한 물약 위력: 	translated	upstream 26cf80b review
+ power per step to work.	 이상.	translated	upstream 26cf80b review
+Permanently grants 	영구적으로 부여하는 양: 	translated	upstream 26cf80b review
+ Skill Points (step 	 기술 포인트 (단계 	translated	upstream 26cf80b review
+).\nOnly the difference over the 	).\n기존에 마신 가장 강력한 물약과의 	translated	upstream 26cf80b review
+best one already drunk is granted.	차이만큼만 추가됩니다.	translated	upstream 26cf80b review
+\n\nBest step already taken: 	\n\n기존에 적용된 최고 단계: 	translated	upstream 26cf80b review
+ Skill Points)	 기술 포인트)	translated	upstream 26cf80b review
+Increases your Armor Class for 6 hours.	6시간 동안 방어력이 증가합니다.	translated	upstream 26cf80b review
+Increases your Attack Speed by 	공격 속도가 증가하는 양: 	translated	upstream 26cf80b review
+Increases your Melee Damage by 	근접 피해가 증가하는 양: 	translated	upstream 26cf80b review
+Increases your Attack, and your Accuracy by 	공격과 정확도가 증가하는 양: 	translated	upstream 26cf80b review
+% for 6 hours.	% (6시간 지속).	translated	upstream 26cf80b review
+%, for 6 hours.	% (6시간 지속).	translated	upstream 26cf80b review
+Reduces magic damage taken by 	받는 마법 피해가 감소하는 양: 	translated	upstream 26cf80b review
+% and grants Preservation for 6 hours.\nRequire 20 power to work.\n	%. 보존 효과도 부여합니다 (6시간 지속).\n물약 위력이 20 이상이어야 합니다.\n	translated	upstream 26cf80b review
+Grants Haste (+	가속 (공격 속도 +	translated	upstream 26cf80b review
+% Attack Speed), Heroism (+	%), 영웅심 (근접 피해 +	translated	upstream 26cf80b review
+% Melee Damage) and Bless (+	%), 축복 (정확도 +	translated	upstream 26cf80b review
+% Accuracy) for 6 hours.	%) 효과를 6시간 동안 부여합니다.	translated	upstream 26cf80b review
+Increases your Fire, Air, Water and Earth Resistance, and those stats by 	화염·공기·물·대지 저항과 해당 능력치가 증가하는 양: 	translated	upstream 26cf80b review
+Increases your Mind and Body Resistance, and those stats by 	정신·육체 저항과 해당 능력치가 증가하는 양: 	translated	upstream 26cf80b review
+Grants Shield (-	방패 (받는 마법 피해 -	translated	upstream 26cf80b review
+% magic damage taken), Stone Skin and Preservation for 6 hours.	%), 돌 피부, 보존 효과를 6시간 동안 부여합니다.	translated	upstream 26cf80b review
+Increases all seven of your Statistics by 	일곱 능력치가 모두 증가하는 양: 	translated	upstream 26cf80b review
+Increases every one of your Resistances by 	모든 저항이 증가하는 양: 	translated	upstream 26cf80b review
+ for 6 hours.	 (6시간 지속).	translated	upstream 26cf80b review
+Crafting Cube	제작 큐브	translated	upstream 26cf80b review
+Pandora's Cube refines the base damage of a weapon or the base armor of a piece of armor, up to 	판도라의 큐브는 무기의 기본 피해나 방어구의 기본 방어력을 정련합니다. 아이템 본래 가치 대비 최대 증가율: 	translated	upstream 26cf80b review
+% above what the item is worth.\nThe better the item, the less one Cube adds to it: 	%.\n품질이 좋은 아이템일수록 큐브 하나로 얻는 증가량이 적습니다. 일반 및 마법부여 아이템: 	translated	upstream 26cf80b review
+% on plain and enchanted items, 	%, 희귀: 	translated	upstream 26cf80b review
+% on rare, 	%, 영웅: 	translated	upstream 26cf80b review
+% on epic, 	%, 고대: 	translated	upstream 26cf80b review
+% on ancient, 	%, 태고 및 전설: 	translated	upstream 26cf80b review
+% on primordial and legendary, 	%, 유물: 	translated	upstream 26cf80b review
+% on artifacts, 	%, 천상: 	translated	upstream 26cf80b review
+% on celestial.\n(right-click on a weapon or armor to use)	%.\n(무기나 방어구를 우클릭하여 사용)	translated	upstream 26cf80b review
+The Crafting Cube raises the Item Bonus Power of any equipment by 	제작 큐브는 장비의 아이템 보너스 위력을 증가시킵니다. 기본 증가량: 	translated	upstream 26cf80b review
+ on weapons and body armor), up to 1 Bonus Power every 	 (무기와 몸통 방어구). 사용 캐릭터의 다음 레벨 간격마다 보너스 위력을 최대 1씩 높일 수 있습니다: 	translated	upstream 26cf80b review
+ levels of the character using it, max 	 레벨. 최대 보너스 위력: 	translated	upstream 26cf80b review
+ (the most a Primordial item can drop with). Each point of Bonus Power is worth 	 (태고 아이템에 붙을 수 있는 최대치). 보너스 위력 1당 환산 아이템 레벨: 	translated	upstream 26cf80b review
+ item levels.\nUsed on a Dimension Map, it moves the map to another dungeon you have already completed, of the same kind (outdoor or indoor).\n(right-click on an item or a map to use)	 레벨.\n차원 지도에 사용하면 같은 유형 (야외 또는 실내)의 다른 완료된 던전으로 지도를 옮깁니다.\n(아이템이나 지도를 우클릭하여 사용)	translated	upstream 26cf80b review
+\nMax Power: 	\n최대 위력: 	translated	upstream 26cf80b review
+\nSkills Max Power: 	\n기술 최대 위력: 	translated	upstream 26cf80b review
+ on skills)	 기술 보너스)	translated	upstream 26cf80b review
+: tiers 	단계까지만 드롭됩니다. 	translated	upstream 26cf80b review
+ can only be made by upgrading with U.\n\nTier: 	단계는 U 키를 눌러 합성해야만 만들 수 있습니다.\n\n등급: 	translated	upstream 26cf80b review
+ skill	 기술	translated	upstream 26cf80b review
+\n\nPress P to enable/disable\n	\n\nP 키로 활성화/비활성화\n	translated	upstream 26cf80b review
+% off its damage -- and Retaliation answers it all the same.	%만큼 피해를 줄이며, 이때도 반격이 발동합니다.	translated	upstream 26cf80b review
+Chance to Paralyze vs level 	마비 확률 (대상 레벨: 	translated	upstream 26cf80b review
+Chance to Stun vs level 	기절 확률 (대상 레벨: 	translated	upstream 26cf80b review
+Reduce all damage taken by 	받는 모든 피해 감소량: 	translated	upstream 26cf80b review
+Increases melee damage by 	근접 피해 증가량: 	translated	upstream 26cf80b review
+Increases melee damage 0.5-1-1.5-2 (at N-E-M-GM) per Earth Magic Level\n	대지 마법 기술 레벨당 근접 피해가 0.5-1-1.5-2 증가합니다 (초보-전문가-마스터-그랜드마스터).\n	translated	upstream 26cf80b review
+Melee attacks restore 	근접 공격 시 회복량: 	translated	upstream 26cf80b review
+Your attacks also leech 	또한 공격 시 흡수하는 생명력은 가한 물리 피해의 	translated	upstream 26cf80b review
+% of the physical damage you deal (	%입니다 (활 사용 시 	translated	upstream 26cf80b review
+% with a bow). This stacks with a weapon's vampiric enchant.\n	%의 생명력을 흡수합니다). 무기의 흡혈 마법부여와 중첩됩니다.\n	translated	upstream 26cf80b review
+ per skill point (at Novice, Expert, Master; Grand Master adds nothing)	 (기술 포인트당; 초보·전문가·마스터에 적용, 그랜드마스터는 추가 없음)	translated	upstream 26cf80b review
+ and increases attack speed by 1% per skill point.\n	 또한 기술 포인트당 공격 속도가 1% 증가합니다.\n	translated	upstream 26cf80b review
+ and reduces magical damage taken.\n	 또한 받는 마법 피해를 줄입니다.\n	translated	upstream 26cf80b review
+Increases damage by 1 per Skill point	기술 포인트당 피해가 1 증가합니다	translated	upstream 26cf80b review
+Increases damage by 1.5 per Skill point	기술 포인트당 피해가 1.5 증가합니다	translated	upstream 26cf80b review
+Increased Attack speed by 0.5% per Skill	기술 포인트당 공격 속도가 0.5% 증가합니다	translated	upstream 26cf80b review
+Increased Attack speed by 1.5% per Skill	기술 포인트당 공격 속도가 1.5% 증가합니다	translated	upstream 26cf80b review
+You regenerate 	재생하는 양: 	translated	upstream 26cf80b review
+ energy per second	 기력/초	translated	upstream 26cf80b review
+\n\nEvery 7 Skill level adds 1 level into ascension.\n	\n\n기술 레벨 7마다 승천 레벨이 1 증가합니다.\n	translated	upstream 26cf80b review
+\n\nHit Points are also increased 	\n\n생명력 추가 증가량: 	translated	upstream 26cf80b review
+% per skill point, depending on mastery.	% (기술 포인트당, 숙련도에 따라 달라짐).	translated	upstream 26cf80b review
+\nUnarmed combat deals 	\n맨손 전투의 추가 피해량: 	translated	upstream 26cf80b review
+ extra damage per skill point.\n	 (기술 포인트당).\n	translated	upstream 26cf80b review
+\nThis skill increases the damage gained from weapon by 	\n무기로 얻는 피해 증가율: 	translated	upstream 26cf80b review
+\nThis skill increases the damage gained from weapon, armsmaster, and special abilities by 	\n무기·무기 숙련·특수 능력으로 얻는 피해 증가율: 	translated	upstream 26cf80b review
+\nThis skill increases the damage gained from weapon +1 per skill point in the bow skill, by 	\n무기로 얻는 피해에 활 기술 포인트당 1을 추가한 뒤, 다음 비율로 증가시킵니다: 	translated	upstream 26cf80b review
+%s increases critical strike damage by %g%% per skill point	%s 기술 포인트당 치명타 피해가 %g%% 증가합니다	translated	upstream 26cf80b review
+%s %g%% to stun for %gs	%s %g%% 확률로 %g초 동안 기절	translated	upstream 26cf80b review
+%s stun lasts %gs	%s 기절 지속시간: %g초	translated	upstream 26cf80b review
+%s usable with Unarm., stun lasts %gs	%s 맨손 전투와 함께 사용 가능, 기절 지속시간: %g초	translated	upstream 26cf80b review
+\nIncrease your regeneration by 1% per every 1% of hp lost	\n잃은 생명력 1%마다 재생량이 1% 증가합니다	translated	upstream 26cf80b review
+Leech 10% of physical and magical damage	물리·마법 피해의 10%만큼 생명력을 흡수합니다	translated	upstream 26cf80b review
+Leech 10% of physical damage, increases attack speed	물리 피해의 10%만큼 생명력을 흡수하며 공격 속도가 증가합니다	translated	upstream 26cf80b review
+Leech 10% of magical damage, increases cast speed (does not stack)	마법 피해의 10%만큼 생명력을 흡수하며 시전 속도가 증가합니다 (중첩 불가)	translated	upstream 26cf80b review
+Increases damage from weapon enchants by 50%	무기 마법부여의 피해가 50% 증가합니다	translated	upstream 26cf80b review
+Meditation restores 1% more mana for each 1% of your mana reserved by buffs	버프에 할당한 주문력 1%마다 명상의 주문력 회복량이 1% 증가합니다	translated	upstream 26cf80b review
+Killing a Monster Restores 10% of Health and 5% of Mana	몬스터 처치 시 생명력의 10%와 주문력의 5%를 회복합니다	translated	upstream 26cf80b review
+Each attack makes the monster take 1% more damage of any kind, stacking until it dies	공격할 때마다 몬스터가 받는 모든 피해가 1% 증가하며, 죽을 때까지 중첩됩니다	translated	upstream 26cf80b review
+Goblin's Lieutenant	고블린 부관	translated	upstream 26cf80b review
+Target also loses the ability to attack at range	대상은 원거리 공격도 할 수 없게 됩니다	translated	upstream 26cf80b review
+Wrong Skill ID	잘못된 기술 ID	translated	upstream 26cf80b review
+Unnamed Skill	이름 없는 기술	translated	upstream 26cf80b review
+The pilgrims bound for the Druid Circle were seeking more than old stones. It is said the druids of the Ancients left a relic there, the Druid Circlet of Power. The Temple of the Sun wishes to keep it safe before it falls into the wrong hands. The Circle lies to the northeast of here. If you find the circlet, bring it to me, and the Temple will reward you.	드루이드의 원으로 향한 순례자들이 찾던 것은 그저 오래된 돌무더기가 아니었습니다. 고대인의 드루이드들이 그곳에 힘의 드루이드 머리띠라는 유물을 남겼다고 합니다. 태양의 신전에서는 그 유물이 악한 자들의 손에 들어가기 전에 안전하게 보관하려 합니다. 드루이드의 원은 여기서 북동쪽에 있습니다. 머리띠를 찾으면 제게 가져오십시오. 신전에서 보상해 드리겠습니다.	translated	upstream 26cf80b review
+You do not have the circlet. The Druid Circle lies to the northeast of here; look for it there.	머리띠가 없으시군요. 드루이드의 원은 여기서 북동쪽에 있으니, 그곳을 찾아보십시오.	translated	upstream 26cf80b review
+The Druid Circlet of Power! How many pilgrims gave their lives just to set eyes on it... The Temple of the Sun will keep it safe. Accept the Temple's gratitude, and this amulet.	힘의 드루이드 머리띠! 이 유물을 한 번 보려고 얼마나 많은 순례자들이 목숨을 잃었는지... 태양의 신전에서 안전하게 보관하겠습니다. 신전의 감사와 함께 이 부적을 받으십시오.	translated	upstream 26cf80b review
+The circlet is in safe hands. The Temple of the Sun will not forget your help.	머리띠는 안전하게 보관하고 있습니다. 태양의 신전은 여러분의 도움을 잊지 않을 것입니다.	translated	upstream 26cf80b review
+Find the Druid Circlet of Power in the Druid Circle and bring it to Dantillion in Murmurwoods.	드루이드의 원에서 힘의 드루이드 머리띠를 찾아 머머우드의 단틸리온에게 가져가십시오.	translated	upstream 26cf80b review
+The rifts between worlds open only for those who have walked far enough. Return to me when one of you has reached level %d.	세계 사이의 균열은 충분히 성장한 이들에게만 열립니다. 일행 중 한 명이 %d레벨에 도달하면 다시 찾아오십시오.	translated	upstream 26cf80b review
+I have looked beyond the veil and found a place the other side has rewritten. Take this map: it will open %s anew, filled with creatures from another dimension (Map Level %d). Clear it, then return to me.	장막 너머를 살펴보다가 반대편 세계의 영향으로 뒤바뀐 장소를 발견했습니다. 이 지도를 받으십시오. %s의 문을 다시 열면 다른 차원의 생물들이 기다리고 있을 것입니다 (지도 레벨 %d). 그곳을 정리한 뒤 돌아오십시오.	translated	upstream 26cf80b review
+The rift I showed you still stands. Clear it, then return to me.	제가 알려드린 균열은 아직 남아 있습니다. 그곳을 정리한 뒤 돌아오십시오.	translated	upstream 26cf80b review
+The rift in %s is sealed. Accept this reward: %d gold.	%s의 균열이 봉인됐군요. 보상으로 금화 %d개를 받으십시오.	translated	upstream 26cf80b review
+You have sealed every rift I could find. There is nothing more I can show you.	제가 찾은 균열을 모두 봉인하셨습니다. 더 알려드릴 곳이 없습니다.	translated	upstream 26cf80b review
+Closed hosts accept only direct connections.\n  \nOpen LAN hosts are discoverable in local network\n  \nOpen internet hosts publish themselves on accessible Lobby servers.	비공개 서버는 직접 연결만 허용합니다.\n  \n공개 LAN 서버는 로컬 네트워크에서 찾을 수 있습니다.\n  \n인터넷 공개 서버는 접속 가능한 로비 서버에 등록됩니다.	translated	upstream 26cf80b review
+A special Gem that allows to increase an item Enchant Strength (right-click on an item with a base enchant to use)\nMax Power is the highest Enchant Strength a Primordial item can roll, scaled by the gem tier.\n\nIt is possible to upgrade 3 gems into 1 of upper tier by pressing U in the inventory page.\nGems drop only up to tier 	아이템의 마법부여 강도를 높이는 특수 보석입니다 (기본 마법부여가 있는 아이템을 우클릭하여 사용).\n최대 위력은 태고 아이템에 붙을 수 있는 최대 마법부여 강도이며, 보석 등급에 따라 달라집니다.\n\n인벤토리 화면에서 U 키를 누르면 보석 3개를 상위 등급 1개로 합성할 수 있습니다.\n보석은 	translated	upstream 26cf80b review
+\n\nThere is only you and those who would harm you. With no one else to shield, every guard you raise is your own: a successful Cover turns the blow aside, taking 	\n\n홀로 여행할 때는 자신을 해치려는 적과 직접 맞서야 합니다. 보호할 동료가 없으므로 엄호는 자신을 지킵니다. 엄호 성공 시 공격을 막아 피해를 	translated	upstream 26cf80b review
+After mastering the art of covering, you have become capable delivering deadly counter attacks to those who dare try harm your allies. Retaliation has a 1% per skill point chance to activate after a successful Cover -- on an ally, or on yourself when you travel alone.\n\nExpert, Master and Grandmaster are learned automatically at skill 	엄호를 숙달한 당신은 동료를 해치려는 적에게 치명적인 반격을 가할 수 있습니다. 엄호 성공 시 기술 포인트당 1%의 확률로 반격이 발동합니다. 동료를 엄호할 때뿐 아니라 홀로 여행하며 자신을 엄호할 때도 적용됩니다.\n\n전문가·마스터·그랜드마스터는 다음 기술 레벨에서 자동으로 습득합니다: 	translated	upstream 26cf80b review
+.\n\nDamage done depends on 2 coefficients, multiplied then by skill level:\n\nMelee Power coefficient: 	.\n\n피해량은 두 계수를 곱한 뒤 기술 레벨을 곱해 결정됩니다.\n\n근접 위력 계수: 	translated	upstream 26cf80b review
+Cover Skill is a defensive prowess enabling a character to shield allies by intercepting incoming damage. This ability strategically positions the user as the primary target of enemy onslaughts, thereby protecting teammates who are more susceptible to damage.\n\nIf available, Expert, Master and Grandmaster is learned at skill 	엄호는 동료가 받을 피해를 대신 가로막는 방어 기술입니다. 적의 공격을 자신에게 집중시켜 취약한 동료를 보호합니다.\n\n습득 가능한 경우 전문가·마스터·그랜드마스터의 요구 기술 레벨: 	translated	upstream 26cf80b review
+.\n\nGrants 10 plus 1% chance per skill point to Cover, up to 40%, however, something might happen once at max level....\n\nCurrent cover chance: 	.\n\n엄호 확률은 기본 10%에 기술 포인트당 1%가 추가되며, 최대 40%입니다. 다만 최고 레벨에 도달하면 무언가 달라질 수도 있습니다...\n\n현재 엄호 확률: 	translated	upstream 26cf80b review
+Mana shield consume mana to reduce damage when an hit would take you below a certain threshold.\n\nIf available, Expert, Master and Grandmaster is learned at skill 	마나 방패는 공격으로 생명력이 일정 기준 아래로 떨어질 때 주문력을 소모하여 피해를 줄입니다.\n\n습득 가능한 경우 전문가·마스터·그랜드마스터의 요구 기술 레벨: 	translated	upstream 26cf80b review
+.\n\nMastery increase its mana efficience, which stops growing past skill 	.\n\n숙련도가 높아질수록 주문력 효율이 증가하며, 다음 기술 레벨을 넘으면 더 이상 증가하지 않습니다: 	translated	upstream 26cf80b review
+This skill is only available to death knights and increases damage by 	죽음의 기사만 사용할 수 있는 기술입니다. 피해 증가량: 	translated	upstream 26cf80b review
+Dragons can use their fangs to deal atrocious damage to enemies. Damage is 30 + 2 per level (up to level 	용은 송곳니로 적에게 막대한 피해를 줍니다. 기본 피해는 30이며 레벨당 2가 추가됩니다 (적용 레벨 상한: 	translated	upstream 26cf80b review
+). Fang skill increases this amount by a percentage based on mastery and skill level.\n\nWhenever this skill is below dragon skill it will push monsters away\nEach point in the skill increases damage and increases recovery time by 1.5%.\n	). 송곳니 기술은 숙련도와 기술 레벨에 따른 비율로 이 피해를 높입니다.\n\n이 기술이 용 기술보다 낮으면 몬스터를 밀쳐냅니다.\n기술 포인트마다 피해와 회복 시간이 1.5% 증가합니다.\n	translated	upstream 26cf80b review
+Dragons scales are hard enough to work as natural armor, gaining naturally 40 + 1 AC per level (up to level 	용의 비늘은 천연 방어구 역할을 합니다. 기본 방어력은 40이며 레벨당 1이 추가됩니다 (적용 레벨 상한: 	translated	upstream 26cf80b review
+).\nScales further enhance their toughness and resistance to magical damage, increasing the thoughness by a percentage.\n\n------------------------------------------------------------\n          AC%| Res%	).\n비늘은 강인함과 마법 피해 저항을 더욱 높이며, 강인함을 일정 비율로 증가시킵니다.\n\n------------------------------------------------------------\n          방어력%| 저항%	translated	upstream 26cf80b review
+Subtlety manipulates the boundary between life and death, granting you energy upon killing enemies and increasing your speed.\n\nEnergy consuming attack grants 1 stack, which increase your attack speed by 0.5% per skill point in Subtlety. Stacks up to 5 times.\n\n	기민함은 삶과 죽음의 경계를 다루어 적을 처치할 때 기력을 얻고 속도를 높여 줍니다.\n\n기력을 소모하는 공격은 중첩 효과를 1회 부여합니다. 중첩당 기민함 기술 포인트마다 공격 속도가 0.5% 증가하며, 최대 5회 중첩됩니다.\n\n	translated	upstream 26cf80b review
+Assassination focuses on eliminating isolated targets before they react. Attacks that spend energy or spells, have your damage increased by 2-3-4-5 per skill point, reduced by 20% for each target's nearby enemy (up to 4 enemies).\nSuch attacks also grant 1 combo point, allowing the assassin to cast offensive spells.\nBow has 50% chance and energy cost.\n\nHigher levels also grant more starting energy, ideal for high burst damage in short engagements.\n\n	암살은 고립된 대상을 반응하기 전에 제거하는 데 특화돼 있습니다. 기력을 소모하는 공격이나 주문의 피해가 기술 포인트당 2-3-4-5 증가합니다. 대상 근처의 적 하나당 증가량이 20% 감소하며, 최대 4명까지 적용됩니다.\n이러한 공격은 연계 포인트도 1 부여하여 암살자가 공격 주문을 시전할 수 있게 합니다.\n활은 발동 확률과 기력 소모량이 각각 50%입니다.\n\n레벨이 높아질수록 시작 기력도 증가하여 짧은 교전에서 폭발적인 피해를 주기 좋습니다.\n\n	translated	upstream 26cf80b review
+Creator's Hourglass and Eye of the void can be used to unlock new affixes, Crafting Cube to change the Map and emerald of power to increase the map Level.\nUsing this map will teleport you to the entrance.	창조자의 모래시계와 공허의 눈으로 새 속성을 해금하고, 제작 큐브로 지도를 변경하며, 힘의 에메랄드로 지도 레벨을 높일 수 있습니다.\n이 지도를 사용하면 입구로 순간이동합니다.	translated	upstream 26cf80b review
+Activating this spell imbues the knight's body with dark powers. Every melee hit costs %d spell points and leaves the target dealing %d%% less damage for %gs, refreshed on each hit.	이 주문을 활성화하면 기사의 몸에 어둠의 힘이 깃듭니다. 근접 공격이 명중할 때마다 주문력을 %d 소모하며, 대상이 주는 피해를 %d%% 감소시킵니다. 효과는 %g초 동안 지속되며 명중할 때마다 갱신됩니다.	translated	upstream 26cf80b review
+%s\n\nHP bonus from Endurance: %s\nHP bonus from Body building: %s\nHP bonus from items: %s\nBase HP: %s\n\n HP Regen per second: %s (%s)	%s\n\n인내력으로 얻는 생명력 보너스: %s\n육체 단련으로 얻는 생명력 보너스: %s\n아이템으로 얻는 생명력 보너스: %s\n기본 생명력: %s\n\n초당 생명력 재생: %s (%s)	translated	upstream 26cf80b review
+%s\n\nPhysical damage reduction vs level %s: %s%s	%s\n\n레벨 %s 상대 물리 피해 감소: %s%s	translated	upstream 26cf80b review
+%s\n\nHit chance: %s up to level %s monsters	%s\n\n명중률: %s (몬스터 레벨 %s까지)	translated	upstream 26cf80b review
+%s\n\nHit chance vs level %s monsters: %s%s	%s\n\n레벨 %s 몬스터 상대 명중률: %s%s	translated	upstream 26cf80b review
+%s\n\nMelee Haste:   %s%%\nRanged Haste: %s%%\nSpell Haste:   %s%%\n\nChance to Dodge Physical Attacks vs level %s: %s%%	%s\n\n근접 가속: %s%%\n원거리 가속: %s%%\n주문 가속: %s%%\n\n레벨 %s 상대 물리 공격 회피 확률: %s%%	translated	upstream 26cf80b review
+%s\n\nCritical strike chance vs level %s: %s%%(%s%% with dagger)	%s\n\n레벨 %s 상대 치명타 확률: %s%% (단검 사용 시 %s%%)	translated	upstream 26cf80b review
+%s\n\nCurrent HP Regeneration: %s (%s of your health per second)\nNext Level Bonus: %s HP Regen	%s\n\n현재 생명력 재생: %s (초당 최대 생명력의 %s)\n다음 레벨 보너스: 생명력 재생 %s	translated	upstream 26cf80b review
+%s\n\t070Each spear attack makes the target take %s%% more physical damage, stacking until it dies\nIncreased by 50%% with Halberds	%s\n\t070창 공격마다 대상이 받는 물리 피해가 %s%% 증가하며, 죽을 때까지 중첩됩니다.\n미늘창 사용 시 효과가 50%% 증가합니다	translated	upstream 26cf80b review
+%s\n\nCritical strike chance vs level %s: %s%%	%s\n\n레벨 %s 상대 치명타 확률: %s%%	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a staff.\nAt Grandmaster can combine staff and unarmed skill, increasing its damage with staff skill at half effect.\n\nYour full Staff Attack boosts AC and all Resistances by X% per skill point, counting an extra +10 points of skill. Resistances apply to the entire party.\n	% (기술 포인트당). 지팡이 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n그랜드마스터는 지팡이와 맨손 전투 기술을 함께 사용할 수 있으며, 지팡이 기술의 절반만큼 효과를 적용하여 맨손 피해를 높입니다.\n\n최종 지팡이 공격 수치는 기술 포인트당 X%만큼 방어력과 모든 저항을 높이며, 기술 레벨에 10을 더해 계산합니다. 저항 보너스는 파티 전체에 적용됩니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a sword.\n\nYour full Sword Attack boosts AC by X% per skill point, counting an extra +10 points of skill.\n	% (기술 포인트당). 검 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n\n최종 검 공격 수치는 기술 포인트당 X%만큼 방어력을 높이며, 기술 레벨에 10을 더해 계산합니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a dagger.\nCrit chance will get lower as monsters grow stronger, up to level 600.	% (기술 포인트당). 단검 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n몬스터가 강해질수록 치명타 확률이 감소하며, 최대 600레벨까지 적용됩니다.	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping an axe.\n	% (기술 포인트당). 도끼 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a spear.\n\nSpear skill raises AC by X% per skill point, counting an extra +10 effective skill.\n	% (기술 포인트당). 창 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n\n창 기술은 기술 포인트당 X%만큼 방어력을 높이며, 유효 기술 레벨에 10을 더해 계산합니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a bow.\n	% (기술 포인트당). 활 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a mace.\n	% (기술 포인트당). 철퇴 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n	translated	upstream 26cf80b review
+% per skill point, never less than 1 damage per point, when equipping a blaster.\n	% (기술 포인트당). 블래스터 장착 시 적용되며, 포인트당 피해가 최소 1 증가합니다.\n	translated	upstream 26cf80b review
+\n\nControl Spell duration is reduced by monster level but increased by Ascension; Recovery time is reduced by Spell Skill. Duration shown is against a level 	\n\n제어 주문의 지속시간은 몬스터 레벨에 따라 감소하고 승천으로 증가합니다. 회복 시간은 주문 기술에 따라 감소합니다. 표시된 지속시간의 대상 몬스터 레벨: 	translated	upstream 26cf80b review
+ monster. Control duration against bosses is halved.\n\nRecovery time: 	. 우두머리 상대 제어 지속시간은 절반입니다.\n\n회복 시간: 	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Fire Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Intellect by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 화염 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 지능 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Air Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Speed by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 공기 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 속도 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Water Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Luck by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 물 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 행운 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Earth Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Endurance by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 대지 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 인내력 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Mind Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Personality by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 정신 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 성격 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Body Resistance by %s (plus 1 for every 4 caster levels, increased by %s%% per skill level, up to double bonus) and Might by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 육체 저항을 %s 높입니다. 시전자 4레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 힘 능력치가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to enhance your party's Attack by a flat %s plus 1 for every 2 caster levels, increased by %s%% per skill level, up to double bonus, and Accuracy by 10%% of the total stat, plus 1%% every 5 skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 파티의 공격을 %s 높입니다. 시전자 2레벨마다 1이 추가되고 기술 레벨당 %s%% 증가하여 최대 두 배가 됩니다. 또한 정확도가 총합의 10%% 증가하며, 기술 5레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Reserve a percentage of your mana to increase all seven stats on all your characters by 10%% of the total stat, plus 1%% every 7 Light skill levels, up to 20%%.\nThis effect remains active until deactivated or lose consciousness.	주문력의 일정 비율을 할당하여 모든 캐릭터의 일곱 능력치를 총합의 10%%만큼 높입니다. 빛 마법 기술 7레벨마다 1%%가 추가되어 최대 20%%가 됩니다.\n비활성화하거나 의식을 잃을 때까지 지속됩니다.	translated	upstream 26cf80b review
+Melee attacks deal an extra 	근접 공격의 추가 피해: 	translated	upstream display review
+I have already bought an item like that.	이런 아이템은 이미 구매했습니다.	translated	upstream display review
+No bonus at this rank	이 숙련도에서는 보너스가 없습니다	translated	upstream 26cf80b display/context review
+Each skill point adds 	기술 점수당 보너스: 	translated	upstream 26cf80b display/context review
+\nKnights only. Each 10 points of armsmaster raise every melee weapon	\n기사 전용. 무기 달인 기술 10점마다 모든 근접 무기	translated	upstream 26cf80b display/context review
+ skill by 1, up to double its base value.	 기술이 1 증가합니다. 기본 수치의 두 배까지 증가합니다.	translated	upstream 26cf80b display/context review
+ gold.	 골드가 필요합니다.	translated	upstream 26cf80b display/context review
+ skill and 	 기술과 	translated	upstream 26cf80b display/context review
+Mana is increased by %s%% per skill level, cost divisor increased by %s	기술 레벨당 마나가 %s%% 증가하고, 비용 제수가 %s 증가합니다	translated	upstream 26cf80b display/context review
+Restores %s%% of your maximum health per second	초당 최대 체력의 %s%%를 회복합니다	translated	upstream 26cf80b display/context review
+Restores %s%% of your maximum mana per second	초당 최대 마나의 %s%%를 회복합니다	translated	upstream 26cf80b display/context review
+Killing a Monster restores %s%% of Health and %s%% of Mana, counted on the pool left after buffs reserve theirs	몬스터를 처치하면 체력의 %s%%와 마나의 %s%%를 회복합니다. 강화 효과가 마나를 점유한 뒤 남은 수치를 기준으로 계산합니다	translated	upstream 26cf80b display/context review
+Each attack makes the monster take %s%% more damage of any kind, stacking until it dies	공격할 때마다 몬스터가 받는 모든 피해가 %s%% 증가합니다. 몬스터가 죽을 때까지 중첩됩니다	translated	upstream 26cf80b display/context review
+ damage.	 피해를 추가합니다.	translated	upstream 26cf80b display/context review
+ points of 	점의 	translated	upstream 26cf80b display/context review
+Cold	냉기	translated	upstream 26cf80b display/context review
+Electrical	전기	translated	upstream 26cf80b display/context review
+Leech 10% of magical damage, increases cast speed (does not stack).	마법 피해의 10%를 흡수하고 시전 속도를 높입니다(중첩되지 않음).	translated	upstream 26cf80b display/context review
+Hit Points \t100	체력 \t100	translated	upstream 26cf80b display/context review
+\nPhysical damage taken: +	\n받는 물리 피해: +	translated	upstream 26cf80b display/context review
+\nAll damage taken: +	\n받는 모든 피해: +	translated	upstream 26cf80b display/context review
+%s, %d target%s	%s, 대상 %d명%s	translated	upstream 26cf80b display/context review
+\n\nPhysical Leech: %s\nMagical Leech: %s	\n\n물리 흡수: %s\n마법 흡수: %s	translated	upstream 26cf80b display/context review
+\nLeech done with bow is halved. Magical Leech also includes damage done with weapons enchants.	\n활의 흡수 효과는 절반으로 감소합니다. 마법 흡수에는 무기 마법 부여로 가하는 피해도 포함됩니다.	translated	upstream 26cf80b display/context review
+\nLeech counts health bars, not damage: take away 50% of a monster's health with 10% leech, and you heal 5% of your own.	\n흡수량은 피해 수치가 아닌 체력 비율로 계산합니다. 흡수율 10%로 몬스터 체력의 50%를 깎으면 자신의 체력 5%를 회복합니다.	translated	upstream 26cf80b display/context review
+\nEvery monster is measured with the bar of the middle variant of its family: weak variants leech for less, strong ones and bosses for more.	\n몬스터의 체력은 같은 계열의 중간 등급을 기준으로 계산합니다. 약한 변종에게서는 적게, 강한 변종과 우두머리에게서는 많이 흡수합니다.	translated	upstream 26cf80b display/context review
+mismatched installation; MAW settings will be unavailable.	설치 버전이 일치하지 않아 MAW 설정을 사용할 수 없습니다.	translated	upstream 26cf80b display/context review
+Disease	질병	translated	upstream 26cf80b display/context review
+Poison	독	translated	upstream 26cf80b display/context review
+ damage on hit	 피해를 가합니다	translated	upstream 26cf80b display/context review
+ damage vs 	배 피해를 가합니다. 대상: 	translated	upstream 26cf80b display/context review
+% skill in 	% 기술 보너스: 	translated	upstream 26cf80b display/context review
+Immune to 	면역: 	translated	upstream 26cf80b display/context review
+Shared Life: periodically transfers HP from party members with more current HP to the wearer.	생명 공유: 현재 체력이 더 많은 동료의 체력을 주기적으로 착용자에게 전달합니다.	translated	upstream 26cf80b display/context review
+Uses HP amounts, not percentages. Can revive the wearer from unconsciousness.	체력 비율이 아닌 수치를 기준으로 계산합니다. 의식불명 상태인 착용자를 깨울 수 있습니다.	translated	upstream 26cf80b display/context review
+ HP over time	 체력을 지속적으로 소모합니다	translated	upstream 26cf80b display/context review
+Negative drain life: 	역방향 생명 흡수: 	translated	upstream 26cf80b display/context review
+Item	아이템	translated	upstream 26cf80b display/context review
+  Damage: 	  피해: 	translated	upstream 26cf80b display/context review
+Could not read strings, stopped on 	문자열을 읽지 못했습니다. 중단된 필드: 	translated	upstream 26cf80b display/context review
+Size of binary data is less than minimal necessary: %d / %d	바이너리 데이터가 최소 필요 크기보다 작습니다: %d / %d	translated	upstream 26cf80b display/context review
+cannot resolve address to ip	주소를 IP로 변환할 수 없습니다	translated	upstream 26cf80b display/context review
+response timeout	응답 시간 초과	translated	upstream 26cf80b display/context review
+versions do not match, server version: 	버전이 일치하지 않습니다. 서버 버전: 	translated	upstream 26cf80b display/context review
+server full	서버가 가득 찼습니다	translated	upstream 26cf80b display/context review
+no relay access	중계 서버에 접속할 수 없습니다	translated	upstream 26cf80b display/context review
+%s is busy speaking with %s	%s 님은 %s 님과 대화 중입니다	translated	upstream 26cf80b display/context review
+other player	다른 플레이어	translated	upstream 26cf80b display/context review
+%s bounty hunt completed!	%s 님이 현상금 사냥을 완료했습니다!	translated	upstream 26cf80b display/context review
+%s eliminated bounty hunt target.	%s 님이 현상금 사냥 대상을 처치했습니다.	translated	upstream 26cf80b display/context review
+Another player picked that up first.	다른 플레이어가 먼저 가져갔습니다.	translated	upstream 26cf80b display/context review
+You have been defeated.\nPress ESC to accept death or wait for another player to revive you.	패배했습니다.\nESC를 눌러 죽음을 받아들이거나 다른 플레이어가 되살려 줄 때까지 기다리세요.	translated	upstream 26cf80b display/context review
+Party missing %s food to start rest.	휴식을 시작하려면 식량이 %s 더 필요합니다.	translated	upstream 26cf80b display/context review
+%s borrowed %s food from you!	%s 님이 당신에게서 식량 %s을 빌렸습니다!	translated	upstream 26cf80b display/context review
+%s casting Lloyd's Beacon... %s...	%s 님이 로이드의 봉화를 시전 중입니다... %s...	translated	upstream 26cf80b display/context review
+Turn-based mode is not available in multiplayer.	멀티플레이에서는 턴 기반 모드를 사용할 수 없습니다.	translated	upstream 26cf80b display/context review
+Name:       	이름:       	translated	upstream 26cf80b display/context review
+Password:   	비밀번호:   	translated	upstream 26cf80b display/context review
+Description:	설명:	translated	upstream 26cf80b display/context review
+The Elementalist is the caster with the highest mana pool, who learns spells not from the book, but from casting spells of the same elemental school. He can't learn Ascension, but his ascension level is directly tied to the sum of the school levels divided by 4. Baseline spell recovery time is 50% higher; however, when he casts Magic, he gains stacks, which increase:\n\nSpell Damage: 10% per stack\nSpell Recovery Speed: 5% per stack\nMana Cost: +1 to the spell's BASE cost, before ascension scaling, and +7.5% of the total.\n\nAfter a few seconds without casting, the stacks decay by 50%. Dealing damage with a bow, melee weapon, or from the spellbook will break concentration, instantly resetting all stacks.\n\nSpells are cast randomly but divided into three categories: Single Target, Area of Effect, and Shotgun. Depending on the chosen quick-cast spell, the rotation is adjusted accordingly. For example, setting Fireball as a quick-cast spell will automatically prioritize AoE spells.	원소술사는 마나가 가장 많은 마법사이며, 책 대신 같은 원소 계열의 주문을 시전하여 주문을 배웁니다. 승천 기술은 배울 수 없으며, 승천 레벨은 원소 마법 기술 레벨 합계의 4분의 1입니다. 기본 주문 회복 시간이 50% 길지만, 마법을 시전하면 중첩을 얻어 다음 효과가 증가합니다:\n\n주문 피해: 중첩당 10%\n주문 회복 속도: 중첩당 5%\n마나 비용: 승천 보정을 적용하기 전 기본 비용에 +1, 총비용에 +7.5%.\n\n몇 초 동안 시전하지 않으면 중첩이 50% 감소합니다. 활이나 근접 무기로 피해를 가하거나 주문서에서 시전하면 집중이 깨져 모든 중첩이 즉시 초기화됩니다.\n\n주문은 무작위로 시전되지만 단일 대상, 범위, 산탄의 세 유형으로 나뉩니다. 선택한 빠른 시전 주문에 따라 순환이 조정됩니다. 예를 들어 화염구를 빠른 시전 주문으로 지정하면 범위 주문을 우선합니다.	translated	upstream 26cf80b display/context review
+Shrinks even the grandest of monsters down to more manageable sizes. A shrunken monster deals %d%% less damage. Each impact covers one monster per mastery nearby, preferring those not already shrunk. Base duration %gs at every mastery, extended by Ascension. Does not stack with Dark Grasp.	아무리 거대한 몬스터라도 다루기 쉬운 크기로 축소합니다. 축소된 몬스터가 가하는 피해는 %d%% 감소합니다. 적중할 때마다 주변에서 숙련도당 한 마리를 축소하며, 아직 축소되지 않은 몬스터를 우선합니다. 모든 숙련도에서 기본 지속 시간은 %g초이며 승천으로 연장됩니다. 어둠의 손아귀와 중첩되지 않습니다.	translated	upstream 26cf80b display/context review
+This spell surrounds its target with the power of raw darkness, rendering it unable to fire missile attacks or cast spells. Further the target's movement is slowed, its armor class is halved and it deals %d%% less damage. Base duration %gs at Grandmaster, less below, extended by Ascension. Does not stack with Shrinking Ray.	순수한 어둠의 힘으로 대상을 감싸 원거리 공격과 주문 시전을 봉쇄합니다. 이동 속도가 느려지고 방어 등급이 절반으로 감소하며, 가하는 피해가 %d%% 감소합니다. 그랜드마스터에서 기본 지속 시간은 %g초이며 낮은 숙련도에서는 더 짧습니다. 승천으로 지속 시간이 연장됩니다. 축소 광선과 중첩되지 않습니다.	translated	upstream 26cf80b display/context review
+% speed	% 속도	translated	Reviewed armsmaster tooltip fragment
+No, no -- you will still need that %24. Come back once the task it is for is done.	안 됩니다. 그 %24은 아직 필요할 겁니다. 관련 일을 마치고 다시 오세요.	translated	Reviewed quest item refusal; keep engine %24 token

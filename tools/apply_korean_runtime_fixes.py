@@ -166,11 +166,6 @@ def patch_boss_monsters(root: Path, output: Path, errors: list[dict]) -> dict:
             "boss_parse_mon",
         ),
         (
-            'skill = string.match(Game.PlaceMonTxt[t.Monster.NameId], "([^%s]+)")',
-            'skill = GetMawBossSkill(t.Monster)',
-            "boss_parse_target_monster",
-        ),
-        (
             'local monsterSkill = string.match(Game.PlaceMonTxt[Map.Monsters[round(t.MonsterIndex)].NameId], "([^%s]+)")',
             'local monsterSkill = GetMawBossSkill(Map.Monsters[round(t.MonsterIndex)])',
             "boss_parse_scale",
@@ -206,12 +201,44 @@ def patch_simple_boss_parsers(root: Path, output: Path, errors: list[dict]) -> l
         "Scripts/General/zzAlchemy.lua": [
             ('local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")', 'local skill = GetMawBossSkill(mon)', "alchemy_broodling"),
         ],
-        "Scripts/General/zzMaw-Stats.lua": [
-            ('local skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")', 'local skill = GetMawBossSkill(mon)', "stats_omnipotent"),
+        "Scripts/Modules/MawCore/Damage.lua": [
+            ('skill = string.match(Game.PlaceMonTxt[t.Monster.NameId], "([^%s]+)")', 'skill = GetMawBossSkill(t.Monster)', "boss_parse_target_monster"),
+            ('skill = string.match(Game.PlaceMonTxt[mon.NameId], "([^%s]+)")', 'skill = GetMawBossSkill(mon)', "boss_parse_damage_mon"),
         ],
         "Scripts/General/BountyHunt.lua": [
             ('local monsterSkill = string.match(Entry.MonName, "([^%s]+)")', 'local monsterSkill = GetMawBossSkill(Hunt)', "bounty_omnipotent"),
             ('if MonName ~= Game.PlaceMonTxt[Monster.NameId] then', 'if CanonicalizeMawBossName(MonName) ~= CanonicalizeMawBossName(Game.PlaceMonTxt[Monster.NameId]) then', "bounty_old_save_name_compare"),
+        ],
+    }
+    results = []
+    for rel, pairs in specs.items():
+        path = ensure_overlay_file(root, output, rel)
+        text = path.read_text(encoding="utf-8")
+        total = 0
+        for old, new, label in pairs:
+            text, count = replace_required(text, old, new, label, errors)
+            total += count
+        path.write_text(text, encoding="utf-8", newline="")
+        results.append({"file": rel, "replacements": total})
+    return results
+
+
+def patch_multiplayer_ui(root: Path, output: Path, errors: list[dict]) -> list[dict]:
+    specs = {
+        "Scripts/Modules/Multiplayer/UI/Lobby.lua": [
+            ('values["Name:       "]', 'values[inputs[1].header]', 'lobby_name_key'),
+            ('values["Password:   "]', 'values[inputs[2].header]', 'lobby_password_key'),
+            ('values["Description:"]', 'values[inputs[3].header]', 'lobby_description_key'),
+            ('nil, "Open ", "Closed", false', 'nil, "열림 ", "닫힘", false', 'lobby_open_state'),
+            ('inputs, "  Open ", nil', 'inputs, "  열기 ", nil', 'lobby_open_button'),
+            ('header = "Password"', 'header = "비밀번호"', 'lobby_join_password'),
+            ('values["Password"]', 'values[Input[1].header]', 'lobby_join_password_key'),
+            ('Input, "Connect", nil', 'Input, "연결", nil', 'lobby_connect_button'),
+            ('empty = "none"', 'empty = "없음"', 'lobby_no_password'),
+        ],
+        "Scripts/Modules/Multiplayer/UI/RemotePlayers.lua": [
+            ('UI.Group("Remote players UI", "Remote players UI")', 'UI.Group("Remote players UI", "다른 플레이어 UI")', 'remote_group_label'),
+            ('StrColor(255, 255, 0, "spell")', 'StrColor(255, 255, 0, "주문 거리")', 'remote_spell_range'),
         ],
     }
     results = []
@@ -245,6 +272,7 @@ def main() -> int:
         fixes.append(patch_settings(root, output, errors))
         fixes.append(patch_boss_monsters(root, output, errors))
         fixes.extend(patch_simple_boss_parsers(root, output, errors))
+        fixes.extend(patch_multiplayer_ui(root, output, errors))
     except FileNotFoundError as exc:
         errors.append({"type": "runtime_fix_source_missing", "file": str(exc)})
 

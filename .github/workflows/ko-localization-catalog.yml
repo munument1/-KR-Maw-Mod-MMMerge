@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - korean-localization-4.5
+      - main
     paths:
       - 'Scripts/**'
       - 'Data/Tables/**'
@@ -54,7 +55,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: korean-localization-4.5
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -134,6 +135,9 @@ jobs:
       - name: Finalize reviewed non-runtime strings
         run: python tools/finalize_reviewed_nonruntime.py --root . --check
 
+      - name: Apply audited upstream display contexts
+        run: python tools/apply_reviewed_upstream_occurrences.py --root .
+
       - name: Export focused patchable queue
         run: python tools/export_patchable_candidates.py --root . --check
 
@@ -175,4 +179,4 @@ jobs:
             exit 0
           fi
           git commit -m 'chore: refresh MAW Korean overlay [skip ci]'
-          git push origin HEAD:korean-localization-4.5
+          git push origin HEAD:${{ github.ref_name }}

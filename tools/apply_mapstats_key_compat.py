@@ -141,8 +141,8 @@ def main() -> int:
                 "can_reset_key",
             ),
             (
-                "\t\t\t\t\tvars.dungeonCompletedList[Game.MapStats[i].Name]=\"resetting\"",
-                "\t\t\t\t\tMawSetDungeonState(Game.MapStats[i], \"resetting\")",
+                "\t\t\t\tvars.dungeonCompletedList[Game.MapStats[i].Name]=\"resetting\"",
+                "\t\t\t\tMawSetDungeonState(Game.MapStats[i], \"resetting\")",
                 "reset_set_key",
             ),
             (

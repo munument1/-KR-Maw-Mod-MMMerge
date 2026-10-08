@@ -1,12 +1,12 @@
 {
-  "base": "MAW MMMerge 4.5",
-  "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
-  "translated_entries": 1025,
-  "translated_entries_with_patchable_occurrences": 1025,
-  "patchable_occurrences_targeted": 1331,
+  "base": "MAW MMMerge 5.0",
+  "base_commit": "26cf80b43ca36a6d9021f5bb349a6faf2d6c55f0",
+  "translated_entries": 1212,
+  "translated_entries_with_patchable_occurrences": 1211,
+  "patchable_occurrences_targeted": 1512,
   "scoped_override_rows": 3,
   "scoped_occurrences_targeted": 3,
-  "skipped_unpatchable_occurrences_for_translated_sources": 68,
+  "skipped_unpatchable_occurrences_for_translated_sources": 66,
   "changed_files": [
     {
       "file": "Scripts/General/AdaptiveMonstersStats.lua",
@@ -30,15 +30,15 @@
     },
     {
       "file": "Scripts/General/zzAlchemy.lua",
-      "replacements": 157
+      "replacements": 179
     },
     {
       "file": "Scripts/General/zzClasses.lua",
-      "replacements": 184
+      "replacements": 25
     },
     {
       "file": "Scripts/General/zzMAW-Skills.lua",
-      "replacements": 147
+      "replacements": 109
     },
     {
       "file": "Scripts/General/zzMaw-Item-Sorter.lua",
@@ -46,27 +46,35 @@
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
-      "replacements": 242
+      "replacements": 203
     },
     {
       "file": "Scripts/General/zzMaw-Maps.lua",
-      "replacements": 61
+      "replacements": 4
     },
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
-      "replacements": 76
+      "replacements": 78
     },
     {
       "file": "Scripts/General/zzMaw-Spells.lua",
-      "replacements": 247
+      "replacements": 248
     },
     {
       "file": "Scripts/General/zzMaw-Stats.lua",
-      "replacements": 65
+      "replacements": 64
     },
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
-      "replacements": 7
+      "replacements": 8
+    },
+    {
+      "file": "Scripts/General/zzzMaw_Artifacts.lua",
+      "replacements": 38
+    },
+    {
+      "file": "Scripts/General/zzzMaw_CraftingBag.lua",
+      "replacements": 4
     },
     {
       "file": "Scripts/General/zzzOnlineVariableSender.lua",
@@ -93,16 +101,16 @@
       "replacements": 6
     },
     {
-      "file": "Scripts/Global/zzMAWStatusMsg.lua",
-      "replacements": 5
+      "file": "Scripts/Global/zzMAW_DruidCircletQuest.lua",
+      "replacements": 6
     },
     {
       "file": "Scripts/Global/zzMaw_Arena.lua",
       "replacements": 7
     },
     {
-      "file": "Scripts/Global/zzMaw_Legendaries.lua",
-      "replacements": 3
+      "file": "Scripts/Global/zzMaw_DimensionalMapsQuest.lua",
+      "replacements": 6
     },
     {
       "file": "Scripts/Global/zzMaw_Mapping.lua",
@@ -153,12 +161,88 @@
       "replacements": 1
     },
     {
+      "file": "Scripts/Modules/MawCore/Classes.lua",
+      "replacements": 85
+    },
+    {
+      "file": "Scripts/Modules/MawCore/Damage.lua",
+      "replacements": 12
+    },
+    {
+      "file": "Scripts/Modules/MawCore/SkillTooltip.lua",
+      "replacements": 111
+    },
+    {
+      "file": "Scripts/Modules/MawCore/Skills.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/MawCore/SkillsUI.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/MawCore/SpecialItems.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/MawCore/Tooltip.lua",
+      "replacements": 121
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Network/Lobby/Messages.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Network/STUN.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Packets.lua",
+      "replacements": 3
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Evt.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Monsters/BountyHunt.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Objects.lua",
+      "replacements": 1
+    },
+    {
       "file": "Scripts/Modules/Multiplayer/Synchronization/Players/Experience.lua",
       "replacements": 1
     },
     {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Players/Monster.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Players/Stats.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/RestScreen.lua",
+      "replacements": 3
+    },
+    {
       "file": "Scripts/Modules/Multiplayer/Synchronization/SaveLoadExit.lua",
       "replacements": 8
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/Spells.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Synchronization/TurnBased.lua",
+      "replacements": 1
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/ClientsTable.lua",
+      "replacements": 2
     },
     {
       "file": "Scripts/Modules/Multiplayer/UI/GlobalMap.lua",
@@ -167,6 +251,18 @@
     {
       "file": "Scripts/Modules/Multiplayer/UI/House.lua",
       "replacements": 3
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/Lobby.lua",
+      "replacements": 24
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/RemotePlayers.lua",
+      "replacements": 23
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/Utils.lua",
+      "replacements": 1
     }
   ],
   "lod_overlay": {
@@ -207,9 +303,15 @@
     ],
     "roundtrip_policy": "zMaw LOD workflow extracts the generated archive and byte-compares all 9 staged resources before committing it."
   },
-  "warnings": [],
+  "warnings": [
+    {
+      "type": "translated_source_has_no_patchable_occurrence",
+      "source": "Inferno",
+      "unpatchable_occurrences": 2
+    }
+  ],
   "validation_errors": [],
-  "install": "Install the Korean MMMerge base, then MAW MMMerge 4.5, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
+  "install": "Install the Korean MMMerge base, then MAW MMMerge 5.0, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
   "runtime_i18n_fixes": [
     {
       "file": "Scripts/General/zz_Maw-initialize.lua",
@@ -219,7 +321,7 @@
     {
       "file": "Scripts/General/zzMaw-Monsters.lua",
       "helper_insertions": 1,
-      "replacements": 7
+      "replacements": 5
     },
     {
       "file": "Scripts/General/zzMaw-Items.lua",
@@ -234,11 +336,19 @@
       "replacements": 1
     },
     {
-      "file": "Scripts/General/zzMaw-Stats.lua",
-      "replacements": 1
+      "file": "Scripts/Modules/MawCore/Damage.lua",
+      "replacements": 3
     },
     {
       "file": "Scripts/General/BountyHunt.lua",
+      "replacements": 2
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/Lobby.lua",
+      "replacements": 10
+    },
+    {
+      "file": "Scripts/Modules/Multiplayer/UI/RemotePlayers.lua",
       "replacements": 2
     }
   ],

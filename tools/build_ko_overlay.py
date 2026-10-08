@@ -310,8 +310,8 @@ def main() -> int:
         })
 
     manifest = {
-        "base": "MAW MMMerge 4.5",
-        "base_commit": "342f34edf73dbd72808422cc56f4602959a94030",
+        "base": "MAW MMMerge 5.0",
+        "base_commit": "26cf80b43ca36a6d9021f5bb349a6faf2d6c55f0",
         "translated_entries": len(translated),
         "translated_entries_with_patchable_occurrences": sum(1 for s in translated if expected[s] > 0),
         "patchable_occurrences_targeted": sum(expected.values()),
@@ -322,7 +322,7 @@ def main() -> int:
         "lod_overlay": lod_entry,
         "warnings": warnings,
         "validation_errors": errors,
-        "install": "Install the Korean MMMerge base, then MAW MMMerge 4.5, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
+        "install": "Install the Korean MMMerge base, then MAW MMMerge 5.0, then copy the contents of korean/ last so zzzMawKO.T.lod and Korean MAW scripts take final precedence.",
     }
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
